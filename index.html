@@ -1,0 +1,886 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Map of Australian process plants, upcoming SAF and renewable fuel projects, engineering jobs and industry news.">
+<meta name="theme-color" content="#ffffff">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Plants Atlas">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" href="icon-192.png">
+<link rel="manifest" href="manifest.webmanifest">
+<style>body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>Australian Process Plants Atlas</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600;700&display=swap">
+<style>
+/* Layout: white app shell. Desktop top bar with nav; phone bottom tab bar. One view at a time (map, industries, projects, jobs, companies, news).
+   Bold element: the sector spectrum — a stripe of every industry colour, sized by how many sites it has. Everything else stays white and quiet. */
+:root{
+  color-scheme:light;
+  --white:#ffffff; --surface:#f6f7f9; --line:#e7e9ee; --ink:#13203a; --soft:#5b6578; --faint:#8a93a3; --brand:#2a5bd7;
+  --c-eth:#f97316; --c-dist:#f59e0b; --c-saf:#0ea5e9; --c-bd:#22c55e; --c-wo:#64748b; --c-oil:#eab308; --c-sx:#14b8a6;
+  --c-sugar:#ec4899; --c-chem:#8b5cf6; --c-spec:#a855f7; --c-oleo:#84cc16; --c-ref:#ef4444; --c-lng:#3b82f6; --c-h2:#06b6d4;
+  --c-wtf:#10b981; --c-term:#94a3b8; --c-power:#d97706;
+  --s-cons:#f97316; --s-appr:#eab308; --s-feed:#8b5cf6; --s-prefeed:#6366f1; --s-feas:#0ea5e9; --s-concept:#94a3b8; --s-pilot:#14b8a6; --s-op:#22c55e;
+  --display:"Bricolage Grotesque","Avenir Next",system-ui,sans-serif;
+  --body:"Figtree",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --bar:64px; --tab:68px;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{background:var(--white);color:var(--ink);font:15px/1.5 var(--body);-webkit-font-smoothing:antialiased}
+a{color:var(--brand)}
+button{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--brand);outline-offset:2px}
+
+/* shell */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:1200;background:rgba(255,255,255,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:1201;background:#fff}
+.top-in{height:var(--bar);display:flex;align-items:center;gap:20px;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px));max-width:1320px;margin:0 auto}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);flex:none}
+.mark{width:30px;height:30px;border-radius:9px;display:grid;grid-template-columns:repeat(3,1fr);gap:2px;padding:5px;background:var(--ink)}
+.mark i{border-radius:50%}
+.brand b{font:800 19px/1 var(--display);letter-spacing:-.01em}
+.nav{display:flex;gap:2px;margin-left:12px}
+.nav a{display:flex;align-items:center;gap:7px;padding:8px 12px;border-radius:10px;text-decoration:none;color:var(--soft);font-weight:600;font-size:14.5px}
+.nav a:hover{background:var(--surface);color:var(--ink)}
+.nav a[aria-current="page"]{background:var(--ink);color:#fff}
+.nav svg,.tabbar svg{width:18px;height:18px;flex:none}
+.updated{margin-left:auto;color:var(--faint);font-size:13px;white-space:nowrap}
+.spectrum{display:flex;height:4px}
+.spectrum i{display:block}
+.tabbar{display:none}
+@media (max-width:860px){
+  .nav,.updated{display:none}
+  .tabbar{display:grid;grid-template-columns:repeat(6,1fr);position:fixed;left:0;right:0;bottom:0;z-index:1200;background:rgba(255,255,255,.97);backdrop-filter:blur(10px);border-top:1px solid var(--line);
+    padding-bottom:env(safe-area-inset-bottom,0px);padding-left:env(safe-area-inset-left,0px);padding-right:env(safe-area-inset-right,0px)}
+  .tabbar a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;height:var(--tab);text-decoration:none;color:var(--faint);font-size:11px;font-weight:600}
+  .tabbar a[aria-current="page"]{color:var(--ink)}
+  .tabbar a[aria-current="page"] svg{color:var(--brand)}
+  .view{padding-bottom:calc(var(--tab) + 24px + env(safe-area-inset-bottom,0px))!important}
+  #v-map{padding-bottom:0!important}
+}
+.view{max-width:1320px;margin:0 auto;padding:28px max(20px,env(safe-area-inset-right,0px)) 56px max(20px,env(safe-area-inset-left,0px))}
+.view[hidden]{display:none}
+.vhead{display:flex;flex-wrap:wrap;align-items:flex-end;gap:12px 24px;margin-bottom:22px}
+.vhead h1{font:800 clamp(30px,5vw,46px)/1.02 var(--display);letter-spacing:-.025em;margin:0;text-wrap:balance}
+.vhead p{margin:6px 0 0;color:var(--soft);max-width:62ch}
+.vhead .grow{flex:1 1 360px;min-width:0}
+
+/* chips & controls */
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{display:inline-flex;align-items:center;gap:7px;border:1px solid var(--line);background:#fff;border-radius:999px;padding:6px 12px;font-size:13.5px;font-weight:600;color:var(--soft);cursor:pointer;white-space:nowrap}
+.chip:hover{border-color:#cfd4dc;color:var(--ink)}
+.chip[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:#fff}
+.chip .d{width:9px;height:9px;border-radius:50%;background:var(--c)}
+.chip .n{font-weight:500;opacity:.65}
+.search{position:relative;flex:1 1 260px;max-width:420px}
+.search input{width:100%;border:1px solid var(--line);background:var(--surface);border-radius:12px;padding:11px 14px 11px 40px;font:15px var(--body);color:var(--ink)}
+.search input:focus{background:#fff;border-color:var(--brand);outline:none;box-shadow:0 0 0 3px rgba(42,91,215,.15)}
+.search svg{position:absolute;left:13px;top:50%;transform:translateY(-50%);width:17px;height:17px;color:var(--faint)}
+.btn{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);background:#fff;border-radius:10px;padding:7px 12px;font-size:13.5px;font-weight:600;cursor:pointer;text-decoration:none;color:var(--ink)}
+.btn:hover{border-color:#cfd4dc}
+.btn.primary{background:var(--ink);border-color:var(--ink);color:#fff}
+.scrollx{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;padding-bottom:2px}
+.scrollx::-webkit-scrollbar{display:none}
+
+/* map view */
+#v-map{max-width:none;padding:0}
+.mapshell{position:relative;height:calc(100dvh - var(--bar) - 4px - env(safe-area-inset-top,0px));min-height:420px}
+@media (max-width:860px){.mapshell{height:calc(100dvh - var(--bar) - 4px - var(--tab) - env(safe-area-inset-top,0px) - env(safe-area-inset-bottom,0px))}}
+#map{position:absolute;inset:0;background:#dfe7ec}
+.overlay{position:absolute;z-index:1000;pointer-events:none}
+.overlay>*{pointer-events:auto}
+.ov-top{top:14px;left:max(14px,env(safe-area-inset-left,0px));right:max(14px,env(safe-area-inset-right,0px));display:flex;flex-direction:column;gap:10px;align-items:flex-start}
+.ov-top .search{max-width:420px;width:100%}
+.ov-top .search input{background:#fff;box-shadow:0 6px 24px rgba(19,32,58,.14);border-color:transparent}
+.ov-top .scrollx{max-width:100%}
+.ov-top .chip{box-shadow:0 2px 10px rgba(19,32,58,.12);border-color:transparent}
+.ov-bl{left:max(14px,env(safe-area-inset-left,0px));bottom:22px;display:flex;flex-direction:column;gap:8px;align-items:flex-start}
+.seg{display:flex;background:#fff;border-radius:12px;padding:3px;box-shadow:0 2px 12px rgba(19,32,58,.14)}
+.seg button{border:0;background:none;padding:6px 11px;border-radius:9px;font-size:13px;font-weight:600;color:var(--soft);cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--ink);color:#fff}
+.keycard{background:#fff;border-radius:12px;padding:9px 12px;box-shadow:0 2px 12px rgba(19,32,58,.14);font-size:12.5px;color:var(--soft);display:grid;grid-template-columns:auto auto;gap:5px 14px}
+.keycard span{display:flex;align-items:center;gap:7px}
+.note{position:absolute;z-index:1000;left:14px;right:14px;bottom:110px;background:#fff;border-radius:12px;padding:10px 14px;box-shadow:0 2px 12px rgba(19,32,58,.14);font-size:13.5px;color:var(--soft);max-width:460px}
+@media (max-width:560px){.keycard{display:none}}
+
+/* markers */
+.pin{display:block;width:14px;height:14px;border-radius:50%;background:var(--c);border:2.5px solid #fff;box-shadow:0 1px 5px rgba(0,0,0,.45);position:relative}
+.pin.proj{border-radius:4px;transform:rotate(45deg);width:13px;height:13px}
+.pin.idle,.pin.closed{background:#fff;border:3px solid var(--c)}
+.pin.hire::after{content:"";position:absolute;inset:-7px;border-radius:50%;border:2px solid var(--c);opacity:.9;background:color-mix(in srgb,var(--c) 18%,transparent)}
+.pin.proj.hire::after{border-radius:5px}
+@media (prefers-reduced-motion:no-preference){.pin.hire::after{animation:pulse 2.6s ease-out infinite}}
+@keyframes pulse{0%{transform:scale(.7);opacity:.9}70%{transform:scale(1.25);opacity:0}100%{opacity:0}}
+
+/* popup content */
+.pop{display:flex;flex-direction:column;gap:9px;font:14px/1.45 var(--body);color:var(--ink)}
+.pop h3{font:700 19px/1.15 var(--display);margin:0;letter-spacing:-.01em;text-wrap:balance}
+.owner{color:var(--soft);margin:-4px 0 0;font-weight:500}
+.tags{display:flex;flex-wrap:wrap;gap:5px}
+.tag{display:inline-flex;align-items:center;gap:5px;font-size:12px;font-weight:600;border-radius:999px;padding:2px 9px;background:color-mix(in srgb,var(--c) 13%,#fff);color:color-mix(in srgb,var(--c) 70%,#13203a)}
+.tag .d{width:7px;height:7px;border-radius:50%;background:var(--c)}
+.facts{display:grid;grid-template-columns:92px minmax(0,1fr);gap:4px 10px;margin:0;font-size:13.5px}
+.facts dt{color:var(--faint)}
+.facts dd{margin:0}
+.pop p{margin:0}
+.warn{font-size:12.5px;color:#b45309}
+.joblist{display:flex;flex-direction:column;gap:6px;padding-top:10px;border-top:1px solid var(--line)}
+.joblist h4{margin:0;font:700 14px var(--body)}
+.mini{display:block;text-decoration:none;color:var(--ink);background:var(--surface);border-radius:10px;padding:8px 10px}
+.mini:hover{background:#eef1f6}
+.mini b{display:block;font-weight:600;color:var(--brand)}
+.mini span{font-size:12.5px;color:var(--soft)}
+.links{display:flex;flex-wrap:wrap;gap:6px}
+.links a{font-size:12.5px;font-weight:600;text-decoration:none;color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:4px 9px;background:#fff}
+.links a:hover{border-color:var(--brand);color:var(--brand)}
+.muted{color:var(--soft);font-size:13px}
+
+/* industries */
+.ind-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,250px),1fr));gap:14px}
+.ind{position:relative;text-align:left;border:1px solid var(--line);background:#fff;border-radius:18px;padding:18px;cursor:pointer;display:flex;flex-direction:column;gap:10px;min-height:190px;overflow:hidden}
+.ind:hover{border-color:color-mix(in srgb,var(--c) 50%,#fff);box-shadow:0 8px 28px color-mix(in srgb,var(--c) 18%,transparent)}
+.ind .orb{width:46px;height:46px;border-radius:14px;background:var(--c);display:grid;place-items:center;color:#fff;font:800 18px var(--display)}
+.ind h3{font:700 19px/1.15 var(--display);margin:0;letter-spacing:-.01em}
+.ind p{margin:0;color:var(--soft);font-size:14px}
+.ind .counts{margin-top:auto;display:flex;gap:14px;font-size:13px;color:var(--soft)}
+.ind .counts b{color:var(--ink);font-size:16px;font-family:var(--display);margin-right:3px}
+.ind::after{content:"";position:absolute;right:-30px;top:-30px;width:110px;height:110px;border-radius:50%;background:color-mix(in srgb,var(--c) 9%,transparent)}
+.ind-head{border-radius:22px;padding:26px;background:color-mix(in srgb,var(--c) 10%,#fff);display:flex;flex-direction:column;gap:10px;margin-bottom:22px}
+.ind-head h1{font:800 clamp(28px,5vw,42px)/1.05 var(--display);margin:0;letter-spacing:-.02em}
+.ind-head p{margin:0;color:var(--soft);max-width:62ch}
+.back{align-self:flex-start;border:0;background:#fff;border-radius:999px;padding:6px 12px;font-weight:600;font-size:13.5px;cursor:pointer;box-shadow:0 1px 4px rgba(19,32,58,.1)}
+.section-title{font:700 20px var(--display);margin:26px 0 12px;letter-spacing:-.01em}
+
+/* site/project rows */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,320px),1fr));gap:12px}
+.site{border:1px solid var(--line);border-radius:16px;padding:16px;display:flex;flex-direction:column;gap:8px;background:#fff;min-width:0}
+.site h4{margin:0;font:700 17px/1.2 var(--display);letter-spacing:-.005em}
+.site .where{color:var(--soft);font-size:13.5px}
+.site .row{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:auto;padding-top:4px}
+.stage{display:inline-flex;align-items:center;gap:6px;font-size:12.5px;font-weight:700;color:color-mix(in srgb,var(--sc) 75%,#13203a)}
+.stage::before{content:"";width:8px;height:8px;border-radius:2px;background:var(--sc)}
+.hiring{font-size:12.5px;font-weight:700;color:#047857;background:#ecfdf5;border-radius:999px;padding:2px 9px}
+
+/* projects pipeline */
+.pipeline{display:flex;height:14px;border-radius:999px;overflow:hidden;margin:4px 0 10px;background:var(--surface)}
+.pipeline i{display:block;background:var(--sc)}
+.legend{display:flex;flex-wrap:wrap;gap:8px 16px;font-size:13px;color:var(--soft);margin-bottom:8px}
+.legend span{display:flex;align-items:center;gap:6px}
+.legend i{width:10px;height:10px;border-radius:3px;background:var(--sc)}
+.stagegroup h2{display:flex;align-items:baseline;gap:10px;font:700 22px var(--display);margin:30px 0 4px;letter-spacing:-.01em}
+.stagegroup h2 i{width:12px;height:12px;border-radius:3px;background:var(--sc);align-self:center}
+.stagegroup h2 small{font:500 14px var(--body);color:var(--faint)}
+.stagegroup>p{margin:0 0 12px;color:var(--soft);font-size:14px}
+
+/* jobs */
+.jobs-layout{display:grid;grid-template-columns:240px minmax(0,1fr);gap:28px;align-items:start}
+@media (max-width:860px){.jobs-layout{grid-template-columns:minmax(0,1fr)}}
+.side{position:sticky;top:calc(var(--bar) + 20px);display:flex;flex-direction:column;gap:18px}
+@media (max-width:860px){.side{position:static}}
+.side h3{margin:0 0 8px;font:700 14px var(--body);color:var(--soft)}
+.job{display:grid;grid-template-columns:44px minmax(0,1fr) auto;gap:14px;align-items:center;padding:14px 16px;border:1px solid var(--line);border-radius:16px;background:#fff;text-decoration:none;color:var(--ink)}
+.job:hover{border-color:#cfd4dc;box-shadow:0 6px 20px rgba(19,32,58,.07)}
+.avatar{width:44px;height:44px;border-radius:12px;display:grid;place-items:center;font:800 17px var(--display);color:#fff;background:var(--c)}
+.job b{display:block;font-size:15.5px;font-weight:700;line-height:1.3}
+.job .sub{display:block;color:var(--soft);font-size:13.5px}
+.job .right{text-align:right;font-size:12.5px;color:var(--faint);display:flex;flex-direction:column;align-items:flex-end;gap:4px}
+.lvl{font-size:12px;font-weight:700;border-radius:999px;padding:2px 9px;background:var(--surface);color:var(--soft);white-space:nowrap}
+.lvl.senior{background:#eef2ff;color:#4338ca}.lvl.mid{background:#ecfeff;color:#0e7490}.lvl.junior{background:#f0fdf4;color:#15803d}.lvl.manager{background:#fff7ed;color:#c2410c}
+.joblist2{display:flex;flex-direction:column;gap:10px}
+@media (max-width:520px){.job{grid-template-columns:40px minmax(0,1fr)}.job .right{grid-column:2;flex-direction:row;align-items:center;text-align:left}.avatar{width:40px;height:40px}}
+
+/* companies */
+.co{border:1px solid var(--line);border-radius:18px;padding:18px;display:flex;flex-direction:column;gap:10px;background:#fff;min-width:0}
+.co-top{display:flex;gap:12px;align-items:center}
+.co h4{margin:0;font:700 18px/1.2 var(--display)}
+.co .kind{font-size:13px;color:var(--soft)}
+.co .fit{align-self:flex-start;font-size:12px;font-weight:700;border-radius:999px;padding:2px 10px;background:#fef3c7;color:#92400e}
+.co .fit.top{background:#dcfce7;color:#166534}
+.co .fit.hire{background:#dbeafe;color:#1e40af}
+
+/* news */
+.news-layout{display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:36px;align-items:start}
+@media (max-width:960px){.news-layout{grid-template-columns:minmax(0,1fr)}}
+.feed{display:flex;flex-direction:column}
+.story{display:grid;grid-template-columns:86px minmax(0,1fr);gap:18px;padding:18px 0;border-top:1px solid var(--line)}
+.story:first-child{border-top:0;padding-top:4px}
+.story time{font:700 15px/1.2 var(--display);color:var(--ink)}
+.story time small{display:block;font:500 12.5px var(--body);color:var(--faint);margin-top:3px}
+.story h3{margin:4px 0 6px;font:700 20px/1.2 var(--display);letter-spacing:-.01em;text-wrap:balance}
+.story p{margin:0 0 8px;color:var(--soft);max-width:66ch}
+.story .src{font-size:13.5px;font-weight:600;text-decoration:none}
+@media (max-width:520px){.story{grid-template-columns:minmax(0,1fr);gap:4px}}
+.watch{border-radius:20px;background:var(--surface);padding:20px;display:flex;flex-direction:column;gap:14px;position:sticky;top:calc(var(--bar) + 20px)}
+@media (max-width:960px){.watch{position:static}}
+.watch h3{margin:0;font:700 19px var(--display)}
+.ms{display:grid;grid-template-columns:54px minmax(0,1fr);gap:12px}
+.ms time{font:800 15px/1.1 var(--display);color:var(--brand)}
+.ms b{display:block;font-size:14.5px}
+.ms span{font-size:13px;color:var(--soft)}
+
+.empty{padding:30px;text-align:center;color:var(--soft);border:1px dashed var(--line);border-radius:16px}
+.foot{color:var(--faint);font-size:12.5px;margin-top:36px;max-width:80ch}
+
+
+/* CV match */
+.ring{width:46px;height:46px;border-radius:50%;display:grid;place-items:center;background:conic-gradient(var(--rc) calc(var(--p)*1%),#eef0f4 0);flex:none}
+.ring b{width:36px;height:36px;border-radius:50%;background:#fff;display:grid;place-items:center;font:800 14px var(--display);color:var(--ink)}
+.why{display:flex;flex-wrap:wrap;gap:4px;margin-top:5px}
+.why i{font-style:normal;font-size:11.5px;font-weight:600;color:var(--soft);background:var(--surface);border-radius:6px;padding:1px 7px}
+.tier{margin-bottom:26px}
+.tier h2{display:flex;align-items:center;gap:10px;font:700 21px var(--display);margin:0 0 2px;letter-spacing:-.01em}
+.tier h2 small{font:500 14px var(--body);color:var(--faint)}
+.tn{width:26px;height:26px;border-radius:8px;display:grid;place-items:center;background:var(--ink);color:#fff;font:800 13px var(--display)}
+.me{background:linear-gradient(135deg,#eef4ff,#f3fbf6);border-radius:16px;padding:14px}
+.me p{margin:0;font-size:13.5px;color:var(--ink)}
+/* Leaflet core (inlined) */
+.leaflet-pane,.leaflet-tile,.leaflet-marker-icon,.leaflet-marker-shadow,.leaflet-tile-container,.leaflet-pane>svg,.leaflet-pane>canvas,.leaflet-zoom-box,.leaflet-image-layer,.leaflet-layer{position:absolute;left:0;top:0}
+.leaflet-container{overflow:hidden;-webkit-tap-highlight-color:transparent;font:13px/1.4 var(--body)}
+.leaflet-tile,.leaflet-marker-icon,.leaflet-marker-shadow{user-select:none;-webkit-user-drag:none}
+.leaflet-container .leaflet-overlay-pane svg{max-width:none!important;max-height:none!important}
+.leaflet-container .leaflet-marker-pane img,.leaflet-container .leaflet-tile-pane img,.leaflet-container img.leaflet-image-layer,.leaflet-container .leaflet-tile{max-width:none!important;max-height:none!important;width:auto;padding:0}
+.leaflet-container.leaflet-touch-zoom{touch-action:pan-x pan-y}
+.leaflet-container.leaflet-touch-drag{touch-action:pinch-zoom}
+.leaflet-container.leaflet-touch-drag.leaflet-touch-zoom{touch-action:none}
+.leaflet-tile{filter:inherit;visibility:hidden}.leaflet-tile-loaded{visibility:inherit}
+.leaflet-zoom-box{width:0;height:0;box-sizing:border-box;z-index:800}
+.leaflet-pane{z-index:400}.leaflet-tile-pane{z-index:200}.leaflet-overlay-pane{z-index:400}.leaflet-shadow-pane{z-index:500}.leaflet-marker-pane{z-index:600}.leaflet-tooltip-pane{z-index:650}.leaflet-popup-pane{z-index:700}
+.leaflet-map-pane canvas{z-index:100}.leaflet-map-pane svg{z-index:200}
+.leaflet-control{position:relative;z-index:800;pointer-events:auto;float:left;clear:both}
+.leaflet-top,.leaflet-bottom{position:absolute;z-index:1000;pointer-events:none}
+.leaflet-top{top:0}.leaflet-right{right:0}.leaflet-bottom{bottom:0}.leaflet-left{left:0}
+.leaflet-right .leaflet-control{float:right}
+.leaflet-top .leaflet-control{margin-top:14px}.leaflet-bottom .leaflet-control{margin-bottom:0}.leaflet-right .leaflet-control{margin-right:14px}
+.leaflet-fade-anim .leaflet-popup{opacity:0;transition:opacity .2s linear}
+.leaflet-fade-anim .leaflet-map-pane .leaflet-popup{opacity:1}
+.leaflet-zoom-animated{transform-origin:0 0}
+svg.leaflet-zoom-animated{will-change:transform}
+.leaflet-zoom-anim .leaflet-zoom-animated{transition:transform .25s cubic-bezier(0,0,.25,1)}
+.leaflet-zoom-anim .leaflet-tile,.leaflet-pan-anim .leaflet-tile{transition:none}
+.leaflet-zoom-anim .leaflet-zoom-hide{visibility:hidden}
+.leaflet-interactive{cursor:pointer}.leaflet-grab{cursor:grab}
+.leaflet-dragging .leaflet-grab,.leaflet-dragging .leaflet-grab .leaflet-interactive{cursor:grabbing}
+.leaflet-marker-icon,.leaflet-marker-shadow,.leaflet-image-layer,.leaflet-pane>svg path,.leaflet-tile-container{pointer-events:none}
+.leaflet-marker-icon.leaflet-interactive,.leaflet-image-layer.leaflet-interactive,.leaflet-pane>svg path.leaflet-interactive{pointer-events:auto}
+.leaflet-bar{box-shadow:0 2px 12px rgba(19,32,58,.16);border-radius:12px;overflow:hidden}
+.leaflet-bar a{background:#fff;color:var(--ink);border-bottom:1px solid var(--line);width:40px;height:40px;line-height:40px;display:block;text-align:center;text-decoration:none;font:600 20px var(--body)}
+.leaflet-bar a:last-child{border-bottom:none}
+.leaflet-control-attribution{background:rgba(255,255,255,.85)!important;padding:0 6px;color:#555;font-size:10px;line-height:1.5;border-top-left-radius:6px}
+.leaflet-control-attribution a{color:#555;text-decoration:none}
+.leaflet-popup{position:absolute;text-align:center;margin-bottom:22px}
+.leaflet-popup-content-wrapper{text-align:left;border-radius:18px;background:#fff;box-shadow:0 12px 40px rgba(19,32,58,.25)}
+.leaflet-popup-content{margin:16px 18px;min-height:1px}
+.leaflet-popup-scrolled{overflow:auto}
+.leaflet-popup-tip-container{width:40px;height:20px;position:absolute;left:50%;margin-top:-1px;margin-left:-20px;overflow:hidden;pointer-events:none}
+.leaflet-popup-tip{width:17px;height:17px;padding:1px;margin:-10px auto 0;transform:rotate(45deg);background:#fff;box-shadow:0 3px 14px rgba(0,0,0,.2)}
+.leaflet-container a.leaflet-popup-close-button{position:absolute;top:8px;right:8px;width:30px;height:30px;border-radius:50%;background:var(--surface);text-align:center;font:18px/30px var(--body);color:var(--soft);text-decoration:none;z-index:2}
+.leaflet-div-icon{background:transparent;border:0}
+.outline{fill:#f2efe6}
+</style>
+
+</head>
+<body>
+<header class="top">
+  <div class="top-in">
+    <a class="brand" href="#map" aria-label="Plants Atlas home"><span class="mark" id="mark"></span><b>Plants Atlas</b></a>
+    <nav class="nav" id="nav"></nav>
+    <span class="updated" id="updated">Updated 29 Oct, 10:00 pm</span>
+  </div>
+  <div class="spectrum" id="spectrum" aria-hidden="true"></div>
+</header>
+
+<main>
+  <section class="view" id="v-map">
+    <div class="mapshell">
+      <div id="map" role="region" aria-label="Map of plants and projects"></div>
+      <div class="overlay ov-top">
+        <label class="search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input id="mq" type="search" placeholder="Search plants, projects, towns" aria-label="Search the map"></label>
+        <div class="scrollx" id="mapchips"></div>
+      </div>
+      <div class="overlay ov-bl">
+        <div class="keycard" aria-label="Map key">
+          <span><i class="pin" style="--c:#5b6578"></i>Operating plant</span>
+          <span><i class="pin proj" style="--c:#5b6578"></i>Upcoming project</span>
+          <span><i class="pin closed" style="--c:#5b6578"></i>Idle or closed</span>
+          <span><i class="pin" style="--c:#22c55e;box-shadow:0 0 0 4px #22c55e55"></i>Hiring engineers</span>
+        </div>
+        <div class="seg" id="basemaps"></div>
+      </div>
+      <div class="note" id="mapnote" hidden></div>
+    </div>
+  </section>
+
+  <section class="view" id="v-industries" hidden></section>
+  <section class="view" id="v-projects" hidden></section>
+  <section class="view" id="v-jobs" hidden></section>
+  <section class="view" id="v-companies" hidden></section>
+  <section class="view" id="v-news" hidden></section>
+</main>
+
+<nav class="tabbar" id="tabbar" aria-label="Sections"></nav>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>
+<script>
+/* ---------- reference data ---------- */
+const CATS={
+ eth:{l:"Ethanol",c:"--c-eth"}, dist:{l:"Distillation",c:"--c-dist"}, saf:{l:"SAF & renewable diesel",c:"--c-saf"},
+ bd:{l:"Biodiesel",c:"--c-bd"}, wo:{l:"Waste oil re-refining",c:"--c-wo"}, oil:{l:"Oilseed crushing",c:"--c-oil"},
+ sx:{l:"Solvent extraction",c:"--c-sx"}, sugar:{l:"Sugar refining",c:"--c-sugar"}, chem:{l:"Chemicals & fertiliser",c:"--c-chem"},
+ spec:{l:"Specialty chemicals",c:"--c-spec"}, oleo:{l:"Oleochemicals",c:"--c-oleo"}, ref:{l:"Oil refining",c:"--c-ref"},
+ lng:{l:"Gas & LNG",c:"--c-lng"}, h2:{l:"Hydrogen & e-fuels",c:"--c-h2"}, wtf:{l:"Waste-to-fuel & biogas",c:"--c-wtf"},
+ term:{l:"Fuel terminals",c:"--c-term"}, power:{l:"Power & green steel",c:"--c-power"}
+};
+const STAGES={concept:"Concept",feas:"Feasibility / development",prefeed:"Pre-FEED",feed:"FEED",appr:"Approvals",cons:"Construction",pilot:"Pilot / demo",op:"Operating (new)"};
+const STAGE_ORDER=["cons","appr","feed","prefeed","feas","concept","pilot","op"];
+const PST={op:"Operating",idle:"Idle",closed:"Closed",prop:"Proposed"};
+
+/* Operating plants */
+const PLANTS=[
+ {n:"Shoalhaven Starches",co:"manildra",loc:"Bomaderry, NSW",lat:-34.85,lon:150.61,cats:["eth","dist"],st:"op",cap:"About 300 ML/yr ethanol",feed:"Waste wheat starch",note:"Australia's largest ethanol producer. Manildra is studying renewable-fuel expansion here and building an ethanol export terminal at Port Kembla."},
+ {n:"Sarina Distillery",co:"wilmar",loc:"Sarina (Mackay), QLD",lat:-21.42,lon:149.22,cats:["eth","dist"],st:"op",cap:"Up to 60 ML/yr",feed:"Molasses",note:"Fuel-grade and industrial ethanol from sugar-mill molasses."},
+ {n:"Dalby Bio-Refinery",co:"united",loc:"Dalby, QLD",lat:-27.18,lon:151.26,cats:["eth","dist"],st:"idle",cap:"About 76–80 ML/yr nameplate",feed:"Sorghum",note:"Australia's only grain-to-ethanol plant, shut by United Petroleum. CSIRO has called for it to reopen."},
+ {n:"Rocky Point Distillery",co:"rockypoint",loc:"Woongoolba, QLD",lat:-27.73,lon:153.33,cats:["eth","dist"],st:"op",cap:"Small",feed:"Molasses",note:"Minor producer beside the Rocky Point mill. Current output not confirmed."},
+ {n:"Tarac Technologies",co:"tarac",loc:"Nuriootpa, SA",lat:-34.47,lon:138.99,cats:["dist","eth"],st:"op",cap:"Small",feed:"Grape marc",note:"Grape spirit distillation and tartaric acid recovery from winery residues."},
+ {n:"Barnawartha Biodiesel",co:"justbio",loc:"Barnawartha, VIC",lat:-36.10,lon:146.67,cats:["bd","oleo"],st:"op",cap:"About 50–55 ML/yr",feed:"Tallow, used cooking oil",note:"Australia's largest biodiesel plant. Your Victoria notes flag its operating status for reconfirmation."},
+ {n:"Narangba Biodiesel",co:"ecotech",loc:"Narangba, QLD",lat:-27.20,lon:152.96,cats:["bd","oleo"],st:"op",cap:"Confirm current capacity",feed:"Tallow, used oils",note:"Existing operation listed in the NSW bioenergy strategy. Capacity to confirm."},
+ {n:"Rutherford Biodiesel",co:"bia",loc:"Rutherford (Maitland), NSW",lat:-32.72,lon:151.51,cats:["bd"],st:"op",cap:"20 ML/yr (reported)",feed:"Lipid feedstocks",note:"Biodiesel Industries Australia. Capacity from the NSW Renewable Fuel Strategy; present status to verify."},
+ {n:"Port Adelaide Biodiesel",co:null,loc:"Largs Bay, SA",lat:-34.82,lon:138.50,cats:["bd"],st:"closed",cap:"About 45 ML/yr (former)",feed:"Tallow, UCO",note:"Former ARF plant sold by receivers in 2016."},
+ {n:"Lytton Refinery",co:"ampol",loc:"Lytton, Brisbane, QLD",lat:-27.42,lon:153.16,cats:["ref"],st:"op",cap:"109,000 bbl/day",feed:"Light sweet crude",note:"One of two remaining crude refineries. Host site for Ampol's renewable diesel and Brisbane Renewable Fuels projects. Wood runs maintenance services here."},
+ {n:"Geelong Refinery",co:"viva",loc:"Corio, Geelong, VIC",lat:-38.08,lon:144.37,cats:["ref","saf"],st:"op",cap:"120,000 bbl/day",feed:"Crude oil; lipids for co-processing",note:"Makes petrol, diesel, jet and avgas. Renewable diesel co-processing is in its initial phase (ISCC+ certified 2026). Major fire in April 2026."},
+ {n:"Kurnell Terminal (former refinery)",co:"ampol",loc:"Kurnell, Sydney, NSW",lat:-34.02,lon:151.21,cats:["ref","term"],st:"closed",cap:"Refining ended 2014",feed:"—",note:"Now an import terminal. A renewable fuels concept is listed for Kurnell."},
+ {n:"Kwinana Terminal (former refinery)",co:"bp",loc:"Kwinana, WA",lat:-32.23,lon:115.76,cats:["ref","term"],st:"closed",cap:"Refining ended 2021",feed:"—",note:"Now a fuel import terminal. BP's Kwinana Renewable Fuels project is proposed here."},
+ {n:"Altona Terminal (former refinery)",co:null,loc:"Altona, VIC",lat:-37.86,lon:144.81,cats:["ref","term"],st:"closed",cap:"Refining ended 2021",feed:"—",note:"ExxonMobil import terminal."},
+ {n:"Rutherford Waste Oil Refinery",co:"cleanaway",loc:"Rutherford (Maitland), NSW",lat:-32.70,lon:151.55,cats:["wo"],st:"op",cap:"Not published",feed:"Used lube oil",note:"Hydrogenation re-refinery making base oils. Runs 24/7."},
+ {n:"Wetherill Park Oil Processing",co:"cleanaway",loc:"Wetherill Park, NSW",lat:-33.85,lon:150.90,cats:["wo"],st:"op",cap:"Not published",feed:"Used oil",note:"Cleanaway PSO Category 1 waste oil facility."},
+ {n:"Southern Oil Refinery",co:"southernoil",loc:"Bomen, Wagga Wagga, NSW",lat:-35.06,lon:147.40,cats:["wo"],st:"op",cap:"Over 130 ML/yr with Gladstone",feed:"Waste lube oil",note:"Re-refining since 2001. A NSW-endorsed re-refinery and storage expansion is proposed."},
+ {n:"Northern Oil Refinery",co:"southernoil",loc:"Yarwun, Gladstone, QLD",lat:-23.82,lon:151.12,cats:["wo","saf"],st:"op",cap:"Up to 100 ML/yr",feed:"Waste lube oil",note:"Processes all of Queensland's waste lube oil. Site of Southern Oil's advanced biofuels pilot; expansion unverified."},
+ {n:"Wren Oil Re-refinery",co:"wren",loc:"Picton (Bunbury), WA",lat:-33.37,lon:115.69,cats:["wo"],st:"op",cap:"Not published",feed:"Used oil",note:"WA's only used-oil re-refiner."},
+ {n:"Newcastle Crush & Refinery",co:"cargill",loc:"Carrington, Newcastle, NSW",lat:-32.91,lon:151.77,cats:["oil","sx"],st:"op",cap:"Part of 700,000+ t/yr Cargill network",feed:"Canola, cottonseed",note:"Integrated crush plant and oil refinery on the port; likely solvent extraction."},
+ {n:"Tottenham Crush Plant",co:"cargill",loc:"Tottenham / Footscray, VIC",lat:-37.80,lon:144.86,cats:["oil","sx"],st:"op",cap:"Expanded 2024",feed:"Canola",note:"Cargill crush; upgrade status to verify per your Victoria notes."},
+ {n:"Narrabri Cottonseed Plant",co:"cargill",loc:"Narrabri, NSW",lat:-30.32,lon:149.79,cats:["oil"],st:"op",cap:"Restarted 2024",feed:"Cottonseed",note:"Dehulling plant feeding Newcastle."},
+ {n:"Numurkah Oilseed Plant",co:"graincorp",loc:"Numurkah, VIC",lat:-36.09,lon:145.44,cats:["oil","sx"],st:"op",cap:"About 500,000 t/yr",feed:"Canola",note:"Australia's biggest oilseed crush site."},
+ {n:"West Footscray Oil Refinery",co:"graincorp",loc:"West Footscray, VIC",lat:-37.80,lon:144.88,cats:["oil"],st:"op",cap:"Edible oil refining",feed:"Crude vegetable oils",note:"Quality, reliability and efficiency improvement programme under way."},
+ {n:"Pinjarra Oilseed Plant",co:"graincorp",loc:"Pinjarra, WA",lat:-32.63,lon:115.87,cats:["oil"],st:"op",cap:"Not published",feed:"Canola",note:"GrainCorp has considered replacing it with a larger WA plant."},
+ {n:"MSM Milling",co:"manildra",loc:"Manildra, NSW",lat:-33.18,lon:148.69,cats:["oil","sx"],st:"op",cap:"Not published",feed:"Canola",note:"Major canola crusher."},
+ {n:"Riverina Oils & BioEnergy",co:"robe",loc:"Bomen, Wagga Wagga, NSW",lat:-35.08,lon:147.42,cats:["oil","bd"],st:"op",cap:"Not published",feed:"Canola",note:"Canola crushing with a biodiesel link."},
+ {n:"Olympic Dam",co:"bhp",loc:"Roxby Downs, SA",lat:-30.44,lon:136.88,cats:["sx"],st:"op",cap:"Copper, uranium, gold",feed:"Ore",note:"Hydrometallurgical plant using solvent extraction."},
+ {n:"Racecourse Sugar Refinery",co:["sugaraus","wilmar"],loc:"Mackay, QLD",lat:-21.16,lon:149.13,cats:["sugar"],st:"op",cap:"Up to 450,000 t/yr",feed:"Raw sugar",note:"Australia's largest sugar refinery."},
+ {n:"Yarraville Sugar Refinery",co:["sugaraus","wilmar"],loc:"Yarraville, VIC",lat:-37.82,lon:144.90,cats:["sugar"],st:"op",cap:"Not published",feed:"Queensland raw sugar",note:"Operating since 1873."},
+ {n:"Harwood Sugar Refinery",co:"sunshine",loc:"Harwood, NSW",lat:-29.42,lon:153.24,cats:["sugar"],st:"op",cap:"Not published",feed:"NSW cane",note:"Beside the Harwood mill."},
+ {n:"Millaquin Refinery",co:"bundaberg",loc:"Bundaberg, QLD",lat:-24.87,lon:152.36,cats:["sugar"],st:"op",cap:"Not published",feed:"Raw sugar",note:"Current operations to verify."},
+ {n:"Orica Kooragang Island",co:"orica",loc:"Newcastle, NSW",lat:-32.87,lon:151.75,cats:["chem"],st:"op",cap:"Ammonia, nitric acid, AN",feed:"Natural gas",note:"One ammonia, three nitric acid and two ammonium nitrate plants."},
+ {n:"Orica Yarwun",co:"orica",loc:"Gladstone, QLD",lat:-23.84,lon:151.17,cats:["chem"],st:"op",cap:"Sodium cyanide, AN",feed:"Natural gas",note:"Fitted with nitrous oxide abatement."},
+ {n:"Orica Botany",co:"orica",loc:"Botany, NSW",lat:-33.97,lon:151.21,cats:["chem"],st:"op",cap:"Limited operations",feed:"—",note:"Historic chlor-alkali site focused on remediation."},
+ {n:"CSBP Kwinana",co:"csbp",loc:"Kwinana, WA",lat:-32.25,lon:115.78,cats:["chem","spec"],st:"op",cap:"Ammonia, AN, sodium cyanide",feed:"Natural gas",note:"WesCEF's main complex. Upgrade projects not verified."},
+ {n:"Coogee Kwinana",co:"coogee",loc:"Kwinana Beach, WA",lat:-32.22,lon:115.76,cats:["chem","spec"],st:"op",cap:"Industrial chemicals",feed:"Various",note:"Runs four Major Hazard Facilities nationally."},
+ {n:"Coogee Mount Isa",co:"coogee",loc:"Mount Isa, QLD",lat:-20.73,lon:139.49,cats:["spec"],st:"op",cap:"Xanthates, reagents",feed:"—",note:"Reagent plants for the Mount Isa mines."},
+ {n:"Yara Pilbara",co:"yara",loc:"Burrup, Karratha, WA",lat:-20.62,lon:116.80,cats:["chem"],st:"op",cap:"Ammonia and TAN",feed:"Natural gas",note:"Ammonia plant plus technical ammonium nitrate plant."},
+ {n:"Dyno Nobel Moranbah",co:"dyno",loc:"Moranbah, QLD",lat:-22.00,lon:148.05,cats:["chem"],st:"op",cap:"Ammonia, AN",feed:"Coal seam gas",note:"Supplies Bowen Basin mines."},
+ {n:"Queensland Nitrates",co:["csbp","dyno"],loc:"Moura, QLD",lat:-24.57,lon:149.97,cats:["chem"],st:"op",cap:"Ammonia, AN",feed:"Natural gas",note:"CSBP and Dyno Nobel joint venture."},
+ {n:"Nufarm Laverton North",co:"nufarm",loc:"Laverton North, VIC",lat:-37.83,lon:144.77,cats:["spec"],st:"op",cap:"Herbicide actives",feed:"—",note:"Major Hazard Facility. Capital projects not verified."},
+ {n:"Ixom Laverton",co:"ixom",loc:"Laverton North, VIC",lat:-37.85,lon:144.79,cats:["chem","spec"],st:"op",cap:"Chlorine, caustic soda",feed:"Salt",note:"Chlor-alkali plant; details not confirmed."},
+ {n:"Symex Shepparton",co:"symex",loc:"Shepparton, VIC",lat:-36.38,lon:145.40,cats:["oleo"],st:"op",cap:"Not published",feed:"Fats and oils",note:"Status to verify."},
+ {n:"Karratha Gas Plant & Pluto LNG",co:"woodside",loc:"Burrup, WA",lat:-20.58,lon:116.74,cats:["lng"],st:"op",cap:"Multiple LNG trains",feed:"Offshore gas",note:"North West Shelf and Pluto."},
+ {n:"Gorgon LNG",co:"chevron",loc:"Barrow Island, WA",lat:-20.78,lon:115.42,cats:["lng"],st:"op",cap:"Three trains",feed:"Offshore gas",note:"Includes carbon capture and storage."},
+ {n:"Wheatstone LNG",co:"chevron",loc:"Onslow, WA",lat:-21.68,lon:115.03,cats:["lng"],st:"op",cap:"Two trains",feed:"Offshore gas",note:"Onshore LNG and domestic gas."},
+ {n:"Ichthys LNG",co:"inpex",loc:"Bladin Point, Darwin, NT",lat:-12.52,lon:130.88,cats:["lng"],st:"op",cap:"Two trains",feed:"Browse Basin gas",note:"Fed by an 890 km pipeline."},
+ {n:"Darwin LNG",co:"santos",loc:"Wickham Point, Darwin, NT",lat:-12.56,lon:130.85,cats:["lng"],st:"op",cap:"One train",feed:"Barossa gas",note:"Now supplied from Barossa."},
+ {n:"Curtis Island LNG",co:["santos","shell"],loc:"Gladstone, QLD",lat:-23.76,lon:151.19,cats:["lng"],st:"op",cap:"Six trains, three projects",feed:"Coal seam gas",note:"QCLNG, APLNG and GLNG side by side."}
+];
+
+/* Upcoming projects (src = public source; notes = your Oct 2026 intelligence PDFs) */
+const PROJECTS=[
+ {n:"Project Ulysses",co:"jetzero",loc:"Townsville, QLD",lat:-19.34,lon:146.76,cats:["saf","eth"],sg:"feed",cap:"About 113 ML/yr SAF and renewable diesel",inv:"$700M–$1B (your notes)",tl:"Environmental approval Dec 2025; FEED complete; FID planned 2026; construction 2026–28",epc:"FEED contractor appointed but not named publicly; EPC after FID. Your notes link Worley; unverified.",note:"Australia's first alcohol-to-jet plant, using Australian bioethanol and LanzaJet technology.",src:"https://www.argusmedia.com/en/news-and-insights/latest-market-news/2769034-jet-zero-wins-environmental-approval-for-saf-project"},
+ {n:"Project Mandala",co:"jetzero",loc:"Gladstone, QLD",lat:-23.90,lon:151.23,cats:["saf"],sg:"prefeed",cap:"About 402 ML/yr HEFA SAF and renewable diesel (concept)",inv:"Not published",tl:"Pre-FEED",epc:"Not publicly verified",note:"Jet Zero's lipid-based HEFA project.",src:"https://jetzero.com.au/projects"},
+ {n:"Ampol Renewable Diesel Co-processing",co:"ampol",loc:"Lytton, Brisbane, QLD",lat:-27.405,lon:153.175,cats:["saf"],sg:"appr",cap:"Up to 20 ML/yr renewable diesel (stage 1)",inv:"About $55M; $25M Queensland grant",tl:"Construction 2027; production 2028",epc:"Not publicly verified (Wood holds maintenance services at Lytton)",note:"Prescribed project with fast-tracked approvals. Tallow and canola oil co-processed with fossil diesel. About 40–46 construction jobs.",src:"https://www.abc.net.au/news/2026-04-22/queensland-funding-ampol-refinery-renewable-diesel/106591516"},
+ {n:"Brisbane Renewable Fuels",co:["ampol","graincorp"],loc:"Lytton, Brisbane, QLD",lat:-27.43,lon:153.145,cats:["saf"],sg:"prefeed",cap:"Up to 750 ML/yr SAF and renewable diesel",inv:"Multi-hundred million",tl:"Early 2030s; GrainCorp targets 2030 supply chain",epc:"Not publicly verified",note:"Ampol, IFM Investors and GrainCorp. HEFA refinery fed by canola oil, tallow and used cooking oil.",src:"https://energy.graincorp.com.au/renewable-fuels/"},
+ {n:"GrainCorp Greenfield Crush Plant",co:"graincorp",loc:"Site not decided (east or west coast)",lat:-27.62,lon:152.55,approx:true,cats:["oil","sx"],sg:"feas",cap:"Up to 1 Mt/yr oilseed crush",inv:"About $500M",tl:"Tied to Brisbane Renewable Fuels; 2030 target",epc:"Not announced",note:"Would supply canola oil to the Lytton renewable fuels refinery. Marker placed in SE Queensland only to show the link; GrainCorp has not named a site.",src:"https://www.farmweekly.com.au/story/9232886/qld-refining-move-is-this-he-moment-biofuel-actually-takes-off/"},
+ {n:"CQ Oilseeds Crush Plant",co:"aoh",loc:"Emerald, QLD",lat:-23.53,lon:148.16,cats:["oil"],sg:"cons",cap:"200 t/day oilseeds",inv:"$25M ($5M Queensland grant)",tl:"Build 2025–26; commissioning planned by Dec 2026 (status to verify)",epc:"Not published",note:"Australian Oilseeds Holdings / Energreen Nutrition. Central Queensland's first crush plant.",src:"https://www.graincentral.com/news/cq-crush-plant-build-clear-to-start-next-year/"},
+ {n:"Australian Oilseeds Narrabri Expansion",co:"aoh",loc:"Narrabri, NSW",lat:-30.35,lon:149.76,cats:["oil"],sg:"feas",cap:"Expansion",inv:"Not published",tl:"Expansion reported",epc:"Not verified",note:"From your July 2026 project list; stage not verified."},
+ {n:"Wildfire Energy MIHG",co:"wildfire",loc:"Brisbane, QLD",lat:-27.52,lon:153.02,approx:true,cats:["wtf","h2","saf"],sg:"pilot",cap:"Pilot plant",inv:"Not published",tl:"Pilot operating; commercial development",epc:"Not verified",note:"Waste gasification to hydrogen, syngas, methanol and SAF. Your notes rate it a top match for your profile.",src:null},
+ {n:"Licella Bundaberg Biorefinery",co:"licella",loc:"Bundaberg, QLD",lat:-24.90,lon:152.32,cats:["saf","wtf"],sg:"feas",cap:"About 60 ML/yr (your notes)",inv:"Not published",tl:"FEED / feasibility; pre-FID",epc:"Not verified",note:"Cat-HTR hydrothermal liquefaction of biomass to bio-crude and SAF.",src:null},
+ {n:"Licella Somersby Pilot",co:"licella",loc:"Somersby, NSW",lat:-33.37,lon:151.29,cats:["wtf","saf"],sg:"pilot",cap:"Pilot plant",inv:"—",tl:"Operating pilot",epc:"—",note:"Licella's technology development base.",src:null},
+ {n:"Wagner Sustainable Fuels",co:"wagner",loc:"Wellcamp, Toowoomba, QLD",lat:-27.56,lon:151.79,cats:["saf","term"],sg:"feas",cap:"SAF supply and blending",inv:"Not published",tl:"Development",epc:"Not verified",note:"SAF distribution and blending; your notes also list a Brisbane SAF refinery in development.",src:null},
+ {n:"Viva SAF Infrastructure",co:"viva",loc:"Brisbane Airport, QLD",lat:-27.385,lon:153.12,cats:["saf","term"],sg:"op",cap:"SAF supply infrastructure",inv:"—",tl:"Completed",epc:"—",note:"Infrastructure completed per your July 2026 list.",src:null},
+ {n:"Geelong Renewable Diesel Expansion",co:"viva",loc:"Corio, Geelong, VIC",lat:-38.06,lon:144.39,cats:["saf"],sg:"feas",cap:"Co-processing expansion",inv:"Not published",tl:"Initial phase operating; expansion study",epc:"Not verified",note:"ISCC+ certified in 2026.",src:"https://lowcarbonliquidfuels.com.au/projects/"},
+ {n:"Geelong Gas Terminal",co:"viva",loc:"Corio, Geelong, VIC",lat:-38.10,lon:144.40,cats:["lng","term"],sg:"appr",cap:"LNG import terminal",inv:"Not published",tl:"Development licence; further approvals",epc:"Not verified",note:"Viva Energy Gas Australia.",src:"https://www.epa.vic.gov.au/public-registers/permissions/DL000300084"},
+ {n:"HAMR Portland Renewable Methanol",co:"hamr",loc:"Portland, VIC",lat:-38.34,lon:141.60,cats:["h2","saf"],sg:"feas",cap:"Renewable methanol",inv:"Not published",tl:"Development",epc:"Not verified",note:"Biomass gasification. Worley is advertising a Senior Project Engineer in Portland (project not named).",src:null},
+ {n:"HAMR SAF Plant",co:"hamr",loc:"South Australia (site not selected)",lat:-33.6,lon:138.2,approx:true,cats:["saf"],sg:"feas",cap:"Methanol-to-jet SAF",inv:"$700–800M",tl:"Site selection",epc:"Not verified",note:"SA chosen to host the plant with state backing. Marker approximate.",src:"https://australianaviation.com.au/2026/03/south-australia-to-host-major-sustainable-aviation-fuel-plant/"},
+ {n:"Sky Renewables Gasification",co:"sky",loc:"Townsville, QLD",lat:-19.26,lon:146.90,approx:true,cats:["saf","wtf"],sg:"feas",cap:"SAF and biofuels from biomass",inv:"About $1B",tl:"Feasibility",epc:"Not verified",note:"From your biofuel project list.",src:null},
+ {n:"SACL Portland Biorefinery",co:"sacl",loc:"Portland, VIC",lat:-38.36,lon:141.57,approx:true,cats:["eth","wtf"],sg:"feas",cap:"Ethanol and bio-crude from wood",inv:"About $270M",tl:"Development",epc:"Not verified",note:"From your biofuel project list.",src:null},
+ {n:"Sydney Water Waste-to-Fuel",co:"sydneywater",loc:"Sydney, NSW",lat:-33.92,lon:151.05,approx:true,cats:["wtf"],sg:"feas",cap:"Biofuels and gas from organic waste",inv:"Not published",tl:"Procurement",epc:"In procurement",note:"From your biofuel project list; site approximate.",src:null},
+ {n:"Kurnell Renewable Fuels",co:"ampol",loc:"Kurnell, NSW",lat:-34.035,lon:151.225,cats:["saf"],sg:"concept",cap:"SAF and renewable diesel",inv:"Not published",tl:"Concept",epc:"—",note:"Owner not stated in your notes; Kurnell is Ampol's import terminal.",src:null},
+ {n:"Manildra Renewable Fuels",co:"manildra",loc:"Bomaderry, NSW",lat:-34.87,lon:150.63,cats:["eth","saf"],sg:"feas",cap:"Ethanol expansion and future SAF",inv:"Not published",tl:"Expansion studies",epc:"Not verified",note:"Builds on the 300 ML/yr ethanol plant.",src:null},
+ {n:"Gladstone Oil Refinery Proposal",co:"rea",loc:"Gladstone State Development Area, QLD",lat:-23.80,lon:151.05,cats:["ref"],sg:"concept",cap:"210,000 bbl/day; 60–70% diesel",inv:"About $11B",tl:"Proposal; build up to 4 years if approved",epc:"Not announced",note:"Resilient Energy Australia has secured 400 ha. Queensland is in talks with several developers.",src:"https://www.abc.net.au/news/2026-04-17/new-refinery-gladstone-proposal-oil-crisis/106576458"},
+ {n:"WA Oil Refinery Study",co:"perdaman",loc:"Western Australia (site not named)",lat:-20.74,lon:116.84,approx:true,cats:["ref"],sg:"feas",cap:"Not stated",inv:"$4M feasibility study (Federal + WA)",tl:"Feasibility study",epc:"—",note:"Would be Australia's first new refinery in over 60 years. Announced in Karratha; marker approximate.",src:"https://www.miningweekly.com/article/australia-plans-first-domestic-oil-refinery-in-60-years-to-boost-fuel-security-2026-07-28"},
+ {n:"Project Ceres Urea",co:["perdaman","clough"],loc:"Burrup, Karratha, WA",lat:-20.64,lon:116.76,cats:["chem"],sg:"cons",cap:"2.3 Mt/yr urea",inv:"Not stated in your notes",tl:"Construction 79% at Sep 2026; 85% overall",epc:"Saipem–Clough JV (EPC) — confirmed",note:"Perdaman is already hiring its operations team.",src:"https://perdamanchemicalsandfertilisers.com/project/project-ceres/"},
+ {n:"Perdaman Helios",co:"perdaman",loc:"Karratha, WA",lat:-20.70,lon:116.70,approx:true,cats:["h2","chem"],sg:"feas",cap:"Green ammonia / urea",inv:"Not published",tl:"Assessment",epc:"Not verified",note:"From your July 2026 list.",src:null},
+ {n:"BP Kwinana Renewable Fuels",co:"bp",loc:"Kwinana, WA",lat:-32.215,lon:115.745,cats:["saf"],sg:"appr",cap:"SAF and renewable diesel from lipids",inv:"Not published",tl:"Ministerial statement issued; execution not verified",epc:"Not verified",note:"Includes pretreatment and hydrogen units.",src:"https://epa.wa.gov.au/en/proposals/bp-kwinana-renewable-fuels-project"},
+ {n:"Hazer / CRV Clean Fuels Study",co:"hazer",loc:"Kwinana, WA",lat:-32.19,lon:115.80,cats:["saf","h2"],sg:"feas",cap:"SAF and renewable diesel",inv:"—",tl:"Feasibility (MOU)",epc:"—",note:"HEFA pathway using canola oil and hydrogen.",src:"https://www.argusmedia.com/zh/news-and-insights/latest-market-news/2825639-australia-s-hazer-crv-mull-saf-clean-fuels-plant"},
+ {n:"Kwinana Hydrogen Hub",co:null,loc:"Kwinana, WA",lat:-32.24,lon:115.81,cats:["h2"],sg:"feas",cap:"Hydrogen infrastructure and pilots",inv:"—",tl:"Development; construction to verify",epc:"Not verified",note:"Kwinana Energy Transformation Hub proponents.",src:null},
+ {n:"Kwinana K2 Gas Power",co:"agl",loc:"Kwinana, WA",lat:-32.26,lon:115.80,cats:["power"],sg:"cons",cap:"Gas-fired generation",inv:"—",tl:"Construction reported 2026",epc:"Not verified",note:"",src:null},
+ {n:"Kwinana Bulk Terminal Redevelopment",co:null,loc:"Kwinana, WA",lat:-32.20,lon:115.76,cats:["term"],sg:"feas",cap:"Bulk liquids and materials",inv:"—",tl:"Planning; environmental referral",epc:"Not verified",note:"",src:null},
+ {n:"Wagga Re-refinery Expansion",co:"southernoil",loc:"Wagga Wagga, NSW",lat:-35.045,lon:147.385,cats:["wo"],sg:"appr",cap:"Waste lube re-refining and storage",inv:"—",tl:"NSW government-endorsed proposal",epc:"Not announced",note:"One of five fuel-security projects endorsed by NSW.",src:"https://www.nsw.gov.au/ministerial-releases/five-projects-endorsed-strengthening-fuel-security"},
+ {n:"Bomen Biomethane",co:"bomen",loc:"Bomen, Wagga Wagga, NSW",lat:-35.07,lon:147.37,cats:["wtf"],sg:"appr",cap:"Biomethane from ag feedstocks",inv:"—",tl:"NSW government-endorsed proposal",epc:"Not announced",note:"",src:"https://www.nsw.gov.au/ministerial-releases/five-projects-endorsed-strengthening-fuel-security"},
+ {n:"Quantem Botany Expansion",co:"quantem",loc:"Port Botany, NSW",lat:-33.965,lon:151.225,cats:["term"],sg:"appr",cap:"Storage, blending, pipelines",inv:"—",tl:"NSW government-endorsed proposal",epc:"Not announced",note:"",src:"https://www.nsw.gov.au/ministerial-releases/five-projects-endorsed-strengthening-fuel-security"},
+ {n:"Vopak Sydney Aviation Fuel Expansion",co:"vopak",loc:"Port Botany, NSW",lat:-33.975,lon:151.235,cats:["term","saf"],sg:"appr",cap:"New tanks, SAF-capable",inv:"—",tl:"NSW government-endorsed proposal",epc:"Not announced",note:"",src:"https://www.nsw.gov.au/ministerial-releases/five-projects-endorsed-strengthening-fuel-security"},
+ {n:"Sydney Biomethane Injection",co:"jemena",loc:"Sydney, NSW",lat:-33.96,lon:151.25,approx:true,cats:["wtf"],sg:"op",cap:"Biomethane into gas network",inv:"—",tl:"Operating",epc:"—",note:"Your NSW notes list it as Western Sydney; Jemena's published project is at Malabar. Location approximate.",src:null},
+ {n:"Fortescue Gladstone Hydrogen",co:"fortescue",loc:"Gladstone, QLD",lat:-23.87,lon:151.28,cats:["h2"],sg:"feas",cap:"Green hydrogen",inv:"—",tl:"Selected projects progressing",epc:"Not verified",note:"From your July 2026 list.",src:null},
+ {n:"Gladstone Renewable Hydrogen",co:null,loc:"Gladstone, QLD",lat:-23.93,lon:151.20,approx:true,cats:["h2"],sg:"feas",cap:"Renewable hydrogen",inv:"—",tl:"Funding shortlisted",epc:"—",note:"",src:null},
+ {n:"HIF Tasmania e-Methanol",co:"hif",loc:"Bell Bay, TAS",lat:-41.13,lon:146.87,cats:["h2"],sg:"feas",cap:"e-Methanol",inv:"—",tl:"Funding shortlisted",epc:"—",note:"",src:null},
+ {n:"Murchison Hydrogen",co:null,loc:"Mid West, WA",lat:-27.75,lon:114.35,approx:true,cats:["h2"],sg:"feas",cap:"Hydrogen and ammonia",inv:"—",tl:"Funding shortlisted",epc:"—",note:"",src:null},
+ {n:"Whyalla Green Steel",co:null,loc:"Whyalla, SA",lat:-33.03,lon:137.58,cats:["power","h2"],sg:"feas",cap:"Green steel",inv:"—",tl:"Progressing",epc:"—",note:"",src:null},
+ {n:"Hysata Electrolyser Manufacturing",co:"hysata",loc:"Wollongong, NSW",lat:-34.43,lon:150.89,cats:["h2"],sg:"cons",cap:"Electrolyser manufacturing",inv:"—",tl:"Manufacturing expansion",epc:"—",note:"",src:null}
+];
+
+/* Companies: operators, developers and contractors */
+const CO={
+ manildra:{n:"Manildra Group",seek:"https://www.seek.com.au/Manildra-Group-jobs"},
+ wilmar:{n:"Wilmar Sugar & Energy",car:"https://careers.wilmarsugar-anz.com/search",seek:"https://www.seek.com.au/Wilmar-Sugar-jobs"},
+ united:{n:"United Petroleum"}, rockypoint:{n:"Rocky Point Sugar"}, tarac:{n:"Tarac Australia"}, justbio:{n:"Just Biodiesel"},
+ ecotech:{n:"Ecotech Biodiesel"}, bia:{n:"Biodiesel Industries Australia"}, ampol:{n:"Ampol"}, viva:{n:"Viva Energy",seek:"https://au.seek.com/Viva-Energy-jobs/in-Geelong-VIC-3220"},
+ bp:{n:"BP Australia"}, cleanaway:{n:"Cleanaway",car:"https://careers.pageuppeople.com/621/cw/en/listing/"},
+ southernoil:{n:"Southern Oil Refining"}, wren:{n:"Wren Oil"}, cargill:{n:"Cargill Australia",car:"https://careers.cargill.com/en/"},
+ graincorp:{n:"GrainCorp"}, robe:{n:"Riverina Oils & BioEnergy"}, bhp:{n:"BHP"}, sugaraus:{n:"Sugar Australia"}, sunshine:{n:"Sunshine Sugar"},
+ bundaberg:{n:"Bundaberg Sugar"}, orica:{n:"Orica",car:"https://careers.orica.com/"}, csbp:{n:"CSBP (WesCEF)"}, coogee:{n:"Coogee"},
+ yara:{n:"Yara Pilbara"}, dyno:{n:"Dyno Nobel"}, nufarm:{n:"Nufarm"}, ixom:{n:"Ixom"}, symex:{n:"Symex"}, woodside:{n:"Woodside"},
+ chevron:{n:"Chevron Australia"}, inpex:{n:"INPEX"}, santos:{n:"Santos"}, shell:{n:"Shell QGC"},
+ jetzero:{n:"Jet Zero Australia"}, aoh:{n:"Australian Oilseeds Holdings"}, wildfire:{n:"Wildfire Energy"}, licella:{n:"Licella"},
+ wagner:{n:"Wagner Sustainable Fuels"}, hamr:{n:"HAMR Energy"}, sky:{n:"Sky Renewables"}, sacl:{n:"SACL"}, sydneywater:{n:"Sydney Water"},
+ rea:{n:"Resilient Energy Australia"}, perdaman:{n:"Perdaman"}, clough:{n:"Clough (Webuild)"}, hazer:{n:"Hazer Group"}, agl:{n:"AGL"},
+ bomen:{n:"Bomen Bioenergy"}, quantem:{n:"Quantem"}, vopak:{n:"Vopak"}, jemena:{n:"Jemena"}, fortescue:{n:"Fortescue"}, hif:{n:"HIF Global"}, hysata:{n:"Hysata"},
+ worley:{n:"Worley"}, monadelphous:{n:"Monadelphous"}, lycopodium:{n:"Lycopodium"}, wood:{n:"Wood"}
+};
+const COMPANIES=[
+ {k:"wildfire",t:"Developer",hq:"Brisbane, QLD",f:"Waste gasification (MIHG) to hydrogen, syngas, methanol, SAF",tier:"Top match in your notes"},
+ {k:"licella",t:"Developer",hq:"Sydney / Somersby, NSW",f:"Cat-HTR hydrothermal liquefaction to bio-crude and SAF",tier:"Top match in your notes"},
+ {k:"hamr",t:"Developer",hq:"Melbourne / Portland, VIC",f:"Biomass gasification, renewable methanol, SAF",tier:"Top match in your notes"},
+ {k:"jetzero",t:"Developer",hq:"Queensland",f:"Alcohol-to-jet and HEFA SAF projects",tier:"Top match in your notes"},
+ {k:"viva",t:"Owner / operator",hq:"Melbourne / Geelong, VIC",f:"Refining, renewable diesel co-processing, SAF supply",tier:"Strong match"},
+ {k:"hazer",t:"Developer",hq:"Perth, WA",f:"Methane pyrolysis to hydrogen and graphite; SAF study",tier:"Strong match"},
+ {k:"ampol",t:"Owner / operator",hq:"Sydney / Brisbane",f:"Refining, renewable diesel, Brisbane Renewable Fuels",tier:"Strong match"},
+ {k:"perdaman",t:"Owner / developer",hq:"Perth, WA",f:"Project Ceres urea plant; WA refinery study",tier:"Hiring now"},
+ {k:"delorean",n:"Delorean Corporation",t:"Developer",hq:"Melbourne, VIC",f:"Anaerobic digestion, biogas, biomethane"},
+ {k:"lms",n:"LMS Energy",t:"Operator",hq:"Adelaide, SA",f:"Landfill gas recovery, electricity, RNG"},
+ {k:"calix",n:"Calix",t:"Technology",hq:"Sydney, NSW",f:"Industrial decarbonisation process technology"},
+ {k:"worley",t:"EPCM contractor",hq:"Sydney",f:"Refining, SAF, hydrogen; world-class EPCM for process plants",tier:"High salary potential"},
+ {k:"monadelphous",t:"Construction / SMP",hq:"Perth",f:"Leading SMP contractor for mining, oil & gas, renewables",tier:"Best fit for your background"},
+ {k:"lycopodium",t:"EPCM contractor",hq:"Perth",f:"Process plant engineering; small process plants and biofuels",tier:"Best fit for your background"},
+ {k:"clough",t:"EPC contractor",hq:"Perth",f:"LNG and process plant EPC; Project Ceres JV with Saipem",tier:"Best fit for your background"},
+ {k:"wood",t:"EPCM / maintenance",hq:"Global",f:"Refinery upgrades and maintenance; Ampol Lytton services",tier:"High salary potential"},
+ {k:"bechtel",n:"Bechtel",t:"EPC contractor",hq:"USA",f:"Mega projects, LNG, refining",tier:"High salary potential"},
+ {k:"fluor",n:"Fluor",t:"EPC contractor",hq:"Global",f:"Industrial EPC, large refinery builds",tier:"High salary potential"},
+ {k:"technip",n:"Technip Energies",t:"EPC / technology",hq:"Global",f:"Refinery technology, SAF, LNG",tier:"High salary potential"},
+ {k:"kbr",n:"KBR",t:"Engineering / technology",hq:"USA",f:"Hydroprocessing technology, SAF units"},
+ {k:"jacobs",n:"Jacobs",t:"Consultancy",hq:"Global",f:"FEED, energy transition, early-stage design"},
+ {k:"ugl",n:"UGL",t:"Contractor",hq:"Sydney",f:"Industrial, utilities and process plant projects",tier:"Best fit for your background"},
+ {k:"civmec",n:"Civmec",t:"Construction / SMP",hq:"Perth",f:"Heavy SMP construction and shutdowns",tier:"Best fit for your background"},
+ {k:"downer",n:"Downer Group",t:"Maintenance",hq:"Sydney",f:"Industrial maintenance and utility projects"},
+ {k:"hatch",n:"Hatch",t:"Consultancy",hq:"Global",f:"Process engineering consultancy"},
+ {k:"srg",n:"SRG Global",t:"Maintenance",hq:"Perth",f:"Shutdowns, maintenance, asset integrity"},
+ {k:"primero",n:"Primero Group",t:"EPC contractor",hq:"Perth",f:"Mining and process EPC"},
+ {k:"altrad",n:"Altrad",t:"Maintenance",hq:"Global",f:"Industrial maintenance and shutdowns"},
+ {k:"johnholland",n:"John Holland",t:"Contractor",hq:"Melbourne",f:"Growing industrial and energy work"},
+ {k:"lor",n:"Laing O'Rourke",t:"Contractor",hq:"Sydney",f:"Heavy industrial and infrastructure"},
+ {k:"cimic",n:"CIMIC Group",t:"Contractor",hq:"Sydney",f:"Large mining and infrastructure group"}
+];
+
+/* Live engineering roles (Indeed / LinkedIn), Aug–Oct 2026 */
+const JOBS=[
+ {co:"cleanaway",t:"Reliability & Plant Maintenance Supervisor",loc:"Western Sydney MRF, Rooty Hill NSW",d:"2026-10-29",u:"https://lnkd.in/gYmd2ESw",lvl:"Mid / lead",src:"LinkedIn"},
+ {co:"cleanaway",t:"Process Engineer",loc:"Kemps Creek NSW",d:"2026-10-22",u:"https://to.indeed.com/aakbzsg6tpzv",lvl:"Mid",src:"Indeed"},
+ {co:"nufarm",t:"Project Mechanical Engineer",loc:"Laverton North VIC",d:"2026-10-28",u:"https://to.indeed.com/aax4bjmw9qj9",lvl:"Mid",src:"Indeed"},
+ {co:"nufarm",t:"Shutdown Planner – E&I",loc:"Laverton North VIC",d:"2026-10-21",u:"https://to.indeed.com/aagyptwmdt6z",lvl:"Mid",src:"Indeed"},
+ {co:"nufarm",t:"Maintenance Execution Manager",loc:"Laverton North VIC",d:"2026-09-16",u:"https://to.indeed.com/aacbw947y4zt",lvl:"Manager",src:"Indeed"},
+ {co:"bhp",t:"Specialist and Senior Engineer Civil",loc:"Greater Adelaide SA",d:"2026-10-28",u:"https://to.indeed.com/aasdtfff4ybh",lvl:"Senior",src:"Indeed"},
+ {co:"bhp",t:"Mine Scheduling Engineer – Olympic Dam",loc:"Olympic Dam SA",d:"2026-10-26",u:"https://to.indeed.com/aa2kknq4lmqp",lvl:"Mid",src:"Indeed"},
+ {co:"santos",t:"Senior Staff Process Engineer",loc:"Brisbane QLD",d:"2026-10-20",u:"https://to.indeed.com/aavyd8rlp4mz",lvl:"Senior",src:"Indeed"},
+ {co:"santos",t:"Senior Mechanical Engineer",loc:"Brisbane QLD",d:"2026-10-16",u:"https://to.indeed.com/aa9dr96z76v8",lvl:"Senior",src:"Indeed"},
+ {co:"santos",t:"Senior Rotating Equipment Engineer",loc:"Brisbane QLD",d:"2026-10-16",u:"https://to.indeed.com/aacjtg28drbs",lvl:"Senior",src:"Indeed"},
+ {co:"dyno",t:"Senior MPU Engineer",loc:"Brisbane QLD",d:"2026-10-19",u:"https://to.indeed.com/aanvr9jddcpg",lvl:"Senior",src:"Indeed"},
+ {co:"ixom",t:"Reliability Engineer",loc:"Hallam VIC",d:"2026-10-19",u:"https://to.indeed.com/aapjwhnhy4y4",lvl:"Mid",src:"Indeed"},
+ {co:"ixom",t:"Junior Process Engineer",loc:"Matraville NSW",d:"2026-10-11",u:"https://to.indeed.com/aa48bvmgmd6t",lvl:"Junior",src:"Indeed"},
+ {co:"orica",t:"Engineer – Product Development",loc:"Lutwyche QLD",d:"2026-10-13",u:"https://to.indeed.com/aafmjywb2mk2",lvl:"Mid",src:"Indeed"},
+ {co:"orica",t:"Mechanical Engineer – Product Development",loc:"Welshpool WA",d:"2026-10-06",u:"https://to.indeed.com/aaq79fqv8w7d",lvl:"Mid",src:"Indeed"},
+ {co:"orica",t:"Mechanical Engineer",loc:"Lutwyche QLD",d:"2026-09-24",u:"https://to.indeed.com/aagtpdp9vhvc",lvl:"Mid",src:"Indeed"},
+ {co:"orica",t:"Engineer – Field Support",loc:"Richmond NSW",d:"2026-09-22",u:"https://to.indeed.com/aaltmfvj862q",lvl:"Mid",src:"Indeed"},
+ {co:"ampol",t:"Electrical Maintenance Planner (Wood)",loc:"Lytton QLD",d:"2026-10-11",u:"https://to.indeed.com/aa2gtnlpchfs",lvl:"Mid",src:"Indeed"},
+ {co:"ampol",t:"Area Maintenance Scheduler (Wood)",loc:"Lytton QLD",d:"2026-09-17",u:"https://to.indeed.com/aahxw77x7ny2",lvl:"Mid",src:"Indeed"},
+ {co:"graincorp",t:"Project Engineer",loc:"Numurkah VIC",d:"2026-10-06",u:"https://to.indeed.com/aaqtjjbynssn",lvl:"Mid",src:"Indeed"},
+ {co:"coogee",t:"Electrical and Instrumentation Manager",loc:"Kwinana Beach WA",d:"2026-10-01",u:"https://to.indeed.com/aatkkrqhdwf4",lvl:"Manager",src:"Indeed"},
+ {co:"perdaman",t:"Inspection & Condition Monitoring Senior Engineer",loc:"Karratha WA",d:"2026-09-30",u:"https://to.indeed.com/aavsn8ldpd77",lvl:"Senior",src:"Indeed"},
+ {co:"perdaman",t:"Instrument Engineer – Urea & Offsites",loc:"Karratha WA",d:"2026-09-30",u:"https://to.indeed.com/aadjnxqvkc4f",lvl:"Mid",src:"Indeed"},
+ {co:"clough",t:"Mechanical Supervisor",loc:"Perth WA",d:"2026-09-08",u:"https://to.indeed.com/aaxghkcqv9jc",lvl:"Mid / lead",src:"Indeed"},
+ {co:"clough",t:"Piping Supervisor",loc:"Perth WA",d:"2026-09-08",u:"https://to.indeed.com/aa7jp49mhnxr",lvl:"Mid / lead",src:"Indeed"},
+ {co:"worley",t:"Senior Mechanical Engineer",loc:"Greater Adelaide SA",d:"2026-09-23",u:"https://to.indeed.com/aamvy2trbrbf",lvl:"Senior",src:"Indeed"},
+ {co:"worley",t:"Senior Mechanical Engineer",loc:"Bunbury WA",d:"2026-08-26",u:"https://to.indeed.com/aapv8vzhcqk8",lvl:"Senior",src:"Indeed"},
+ {co:"worley",t:"Senior Piping Engineer",loc:"Brisbane QLD",d:"2026-08-24",u:"https://to.indeed.com/aays6bnn7pdl",lvl:"Senior",src:"Indeed"},
+ {co:"worley",t:"Senior Project Engineer",loc:"Portland VIC",d:"2026-08-23",u:"https://to.indeed.com/aasddvx2jdrh",lvl:"Senior",src:"Indeed"},
+ {co:"monadelphous",t:"Project Engineer",loc:"Perth WA",d:"2026-10-27",u:"https://to.indeed.com/aagj4h4wgbsv",lvl:"Mid",src:"Indeed"},
+ {co:"monadelphous",t:"Project Engineer",loc:"Karratha WA",d:"2026-10-20",u:"https://to.indeed.com/aabvbn2z6gfb",lvl:"Mid",src:"Indeed"},
+ {co:"monadelphous",t:"Senior E&I Project Engineer",loc:"Brisbane QLD",d:"2026-09-16",u:"https://to.indeed.com/aagnf2vxry6m",lvl:"Senior",src:"Indeed"},
+ {co:"monadelphous",t:"SMP Project Engineer",loc:"Brisbane QLD",d:"2026-08-18",u:"https://to.indeed.com/aavnqjmypxyj",lvl:"Mid",src:"Indeed"},
+ {co:"lycopodium",t:"Lead/Senior Project Engineers",loc:"Perth WA",d:"2026-10-02",u:"https://to.indeed.com/aaqd7l2ntlzy",lvl:"Senior / lead",src:"Indeed"},
+ {co:"lycopodium",t:"Senior / Lead Project Engineer",loc:"Brisbane QLD",d:"2026-09-24",u:"https://to.indeed.com/aavr7nppwwjn",lvl:"Senior / lead",src:"Indeed"},
+ {co:"lycopodium",t:"Senior Process Engineer",loc:"Perth WA",d:"2026-09-01",u:"https://to.indeed.com/aadqyjst46qp",lvl:"Senior",src:"Indeed"},
+ {co:"lycopodium",t:"Lead Mechanical Engineer",loc:"Perth WA",d:"2026-08-21",u:"https://to.indeed.com/aav2zkgt6rmm",lvl:"Lead",src:"Indeed"},
+ {co:"idt",cn:"IDT Australia",t:"Project Engineer",loc:"Boronia VIC",d:"2026-10-22",u:"https://to.indeed.com/aa2k2jqy8wf2",lvl:"Mid",src:"Indeed"},
+ {co:"bega",cn:"Bega Cheese",t:"Mechanical Engineer",loc:"Wetherill Park NSW",d:"2026-10-23",u:"https://to.indeed.com/aajkj869t8kn",lvl:"Mid",src:"Indeed"},
+ {co:"psc",cn:"PSC Biotech",t:"Commissioning and Qualification (C&Q) Engineer",loc:"Melbourne VIC",d:"2026-10-21",u:"https://to.indeed.com/aad4wvynbg6s",lvl:"Mid",src:"Indeed"},
+ {co:"psc",cn:"PSC Biotech",t:"Process Engineer – Utilities (contract)",loc:"Melbourne VIC",d:"2026-09-17",u:"https://to.indeed.com/aahybx6pkd97",lvl:"Mid",src:"Indeed"},
+ {co:"app",cn:"All Purpose Pumps",t:"Mechanical Engineer",loc:"Hoppers Crossing VIC",d:"2026-10-05",u:"https://to.indeed.com/aac7ptp9hmqn",lvl:"Mid",src:"Indeed"},
+ {co:"visy",cn:"Visy",t:"Process Engineer",loc:"North Melbourne VIC",d:"2026-09-24",u:"https://to.indeed.com/aatmvnvzkl72",lvl:"Mid",src:"Indeed"},
+ {co:"hdr",cn:"HDR",t:"Commissioning Engineer – Mechanical",loc:"Melbourne VIC",d:"2026-09-11",u:"https://to.indeed.com/aa9yplcs9wnv",lvl:"Mid",src:"Indeed"},
+ {co:"jci",cn:"Johnson Controls (Gordon Brothers)",t:"Project Engineer – Industrial Refrigeration",loc:"Melbourne VIC",d:"2026-08-27",u:"https://to.indeed.com/aay24phtcnmk",lvl:"Mid",src:"Indeed"},
+ {co:"sulzer",cn:"Sulzer",t:"Project Engineer",loc:"Melbourne VIC",d:"2026-08-12",u:"https://to.indeed.com/aaqrdk47fjhy",lvl:"Mid",src:"Indeed"},
+ {co:"cpb",cn:"CPB Contractors",t:"Project Engineer, Mechanical – MEI (North East Link)",loc:"Melbourne VIC",d:"2026-10-29",u:"https://to.indeed.com/aanffndfwc67",lvl:"Mid",src:"Indeed"},
+ {co:"lycopodium",t:"Process Engineers (All Levels)",loc:"Brisbane QLD",d:"2026-07-12",u:"https://to.indeed.com/aac9b6d464yd",lvl:"All levels",src:"Indeed"}
+];
+
+
+
+/* ---------- extra content ---------- */
+const SECTOR_TEXT={
+ eth:"Fermenting starch, grain and molasses into fuel and industrial alcohol.",
+ dist:"Separating liquids by boiling point: spirits, solvents and ethanol dehydration.",
+ saf:"Hydroprocessed oils and alcohol-to-jet routes to drop-in aviation fuel and diesel.",
+ bd:"Turning tallow and used cooking oil into FAME biodiesel.",
+ wo:"Recovering base oils from used lubricants.",
+ oil:"Crushing canola, cottonseed and soy into oil and protein meal.",
+ sx:"Hexane extraction of oilseeds, and SX circuits in metals plants.",
+ sugar:"Refining raw cane sugar for food and industry.",
+ chem:"Ammonia, nitric acid, ammonium nitrate, cyanide and urea.",
+ spec:"Agrochemicals, chlor-alkali and mining reagents.",
+ oleo:"Fatty acids, glycerine and methyl esters from fats and oils.",
+ ref:"Crude oil refining, new refinery proposals and import terminals.",
+ lng:"Gas processing and liquefaction for export and domestic supply.",
+ h2:"Electrolysis, green ammonia, methanol and e-fuels.",
+ wtf:"Gasification, hydrothermal liquefaction and biogas from waste.",
+ term:"Bulk fuel storage, blending and SAF-ready tanks.",
+ power:"Gas-fired power and green steel."
+};
+const STAGE_TEXT={cons:"On site now. Hiring construction, mechanical, piping and commissioning engineers.",appr:"Waiting on permits or funding. Owner's teams are hiring ahead of construction.",feed:"Detailed design under way. Design engineers and owner's engineers are in demand.",prefeed:"Early engineering. Small owner teams and consultants.",feas:"Studies, site selection and partner talks.",concept:"Announced ideas without a committed study.",pilot:"Demonstration plants proving the technology.",op:"Recently commissioned or in an initial operating phase."};
+const NEWS=[
+ {d:"2026-10-10",tag:"chem",h:"Project Ceres passes 79% construction",p:"Perdaman's 2.3 Mt/yr urea plant on the Burrup is 85% complete overall, with the Saipem–Clough joint venture as EPC contractor. Perdaman is now recruiting its operations engineers.",src:"https://perdamanchemicalsandfertilisers.com/project/project-ceres/",s:"Perdaman"},
+ {d:"2026-10-10",tag:"saf",h:"Viva's Geelong renewable diesel gains ISCC+ certification",p:"Co-processing of renewable feedstocks at the Geelong refinery is in its initial phase, with an expansion study under way.",src:"https://lowcarbonliquidfuels.com.au/projects/",s:"Low Carbon Liquid Fuels"},
+ {d:"2026-10-10",tag:"term",h:"NSW endorses five fuel-security projects",p:"Southern Oil's Wagga re-refinery, Bomen biomethane, Quantem's Botany expansion and Vopak's SAF-capable aviation fuel tanks are among the projects backed by the state.",src:"https://www.nsw.gov.au/ministerial-releases/five-projects-endorsed-strengthening-fuel-security",s:"NSW Government"},
+ {d:"2026-07-28",tag:"ref",h:"Australia to study its first new oil refinery in 60 years",p:"The federal and WA governments are funding a $4 million feasibility study with Perdaman for a refinery in Western Australia. No site has been named.",src:"https://www.miningweekly.com/article/australia-plans-first-domestic-oil-refinery-in-60-years-to-boost-fuel-security-2026-07-28",s:"Mining Weekly"},
+ {d:"2026-07-23",tag:"saf",h:"ARENA backs forestry by-products for jet fuel",p:"Up to $32 million in conditional funding for a project converting forestry residues into sustainable aviation fuel.",src:"https://www.australianmanufacturing.com.au/tag/sustainable-aviation-fuel/",s:"Australian Manufacturing"},
+ {d:"2026-05-15",tag:"saf",h:"ARENA to run the $1.1 billion Cleaner Fuels Program",p:"The program funds local production of renewable diesel and SAF over the next decade, aimed at freight, aviation and heavy transport.",src:"https://www.hydrocarbonprocessing.com/news/2026/05/arena-to-drive-australias-11-b-cleaner-fuels-program/",s:"Hydrocarbon Processing"},
+ {d:"2026-04-27",tag:"oil",h:"GrainCorp eyes a $500 million crush plant to feed Lytton",p:"GrainCorp is weighing sites for a plant of up to 1 Mt/yr to supply canola oil to the proposed Brisbane Renewable Fuels refinery with Ampol and IFM.",src:"https://www.farmweekly.com.au/story/9232886/qld-refining-move-is-this-he-moment-biofuel-actually-takes-off/",s:"Farm Weekly"},
+ {d:"2026-04-22",tag:"saf",h:"Queensland puts $25 million into Ampol's renewable diesel",p:"Lytton will co-process tallow and canola oil into up to 20 ML/yr of renewable diesel from 2028, with construction from 2027. A second stage could reach 750 ML/yr in the early 2030s.",src:"https://www.abc.net.au/news/2026-04-22/queensland-funding-ampol-refinery-renewable-diesel/106591516",s:"ABC News"},
+ {d:"2026-04-17",tag:"ref",h:"An $11 billion refinery is proposed for Gladstone",p:"Resilient Energy Australia has secured 400 ha for a 210,000 bbl/day refinery producing mostly diesel. Queensland is in talks with several developers.",src:"https://www.abc.net.au/news/2026-04-17/new-refinery-gladstone-proposal-oil-crisis/106576458",s:"ABC News"},
+ {d:"2026-04-15",tag:"ref",h:"Fire hits the Geelong refinery",p:"A fire at Viva Energy's Corio refinery, one of only two left in Australia, slowed production during a global fuel shock.",src:"https://www.portnews.com.au/story/9225113/fuel-production-slows-as-flames-engulf-refinery/",s:"AAP via Port News"},
+ {d:"2026-03-20",tag:"ref",h:"Ampol pushes back the Lytton turnaround",p:"Scheduled maintenance at the 109,000 bbl/day refinery moves to August 2026 for about six weeks.",src:"https://www.argusmedia.com/en/news-and-insights/latest-market-news/2803760-australia-s-ampol-to-delay-lytton-refinery-turnaround",s:"Argus"},
+ {d:"2026-03-10",tag:"saf",h:"South Australia to host HAMR's SAF plant",p:"HAMR Energy's planned $700–800 million methanol-to-jet facility has state government backing. The site is still being selected.",src:"https://australianaviation.com.au/2026/03/south-australia-to-host-major-sustainable-aviation-fuel-plant/",s:"Australian Aviation"},
+ {d:"2026-01-22",tag:"oil",h:"Cargill lodges plans for a 1.1 Mt canola plant in WA",p:"Project Crux would sit next to CBH's Kwinana Grain Terminal. WA grows more than half of Australia's canola but crushes only about a tenth of it.",src:"https://www.graincentral.com/news/cargill-progresses-plans-for-1-1mt-wa-crush-plant/",s:"Grain Central"},
+ {d:"2025-12-23",tag:"saf",h:"Jet Zero's Project Ulysses wins environmental approval",p:"The 113 ML/yr alcohol-to-jet plant in Townsville would be Australia's first. Jet Zero is targeting a final investment decision in 2026.",src:"https://www.argusmedia.com/en/news-and-insights/latest-market-news/2769034-jet-zero-wins-environmental-approval-for-saf-project",s:"Argus"}
+];
+const MILESTONES=[
+ {w:"2026",h:"Jet Zero FID on Project Ulysses",s:"Townsville alcohol-to-jet plant"},
+ {w:"Dec 26",h:"CQ Oilseeds commissioning",s:"Emerald crush plant, if on schedule"},
+ {w:"2027",h:"Ampol renewable diesel construction",s:"Lytton co-processing, stage 1"},
+ {w:"2028",h:"First renewable diesel at Lytton",s:"Up to 20 ML/yr"},
+ {w:"2030",h:"GrainCorp feedstock supply chain",s:"For Brisbane Renewable Fuels"},
+ {w:"Early 2030s",h:"Lytton scales to 750 ML/yr",s:"SAF and renewable diesel"}
+];
+
+/* ---------- helpers ---------- */
+const $=s=>document.querySelector(s);
+const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const enc=encodeURIComponent;
+const cos=x=>x.co?[].concat(x.co):[];
+const coName=k=>(CO[k]&&CO[k].n)||(COMPANIES.find(c=>c.k===k)||{}).n||k;
+const jobsOf=keys=>JOBS.filter(j=>keys.includes(j.co)).sort((a,b)=>b.d.localeCompare(a.d));
+const fmtD=s=>new Date(s+"T00:00:00").toLocaleDateString("en-AU",{day:"numeric",month:"short"});
+const col=c=>`var(${CATS[c].c})`;
+const CONTRACTORS=new Set(["worley","monadelphous","lycopodium","clough","wood","bechtel","fluor","technip","kbr","jacobs","ugl","civmec","downer","hatch","srg","primero","altrad","johnholland","lor","cimic"]);
+const PALETTE=["#f97316","#0ea5e9","#8b5cf6","#22c55e","#ec4899","#eab308","#14b8a6","#ef4444","#3b82f6","#a855f7"];
+const coColor=k=>{let h=0;for(const ch of k)h=(h*31+ch.charCodeAt(0))>>>0;return PALETTE[h%PALETTE.length]};
+const initials=n=>n.replace(/\(.*?\)/g,"").split(/\s+/).filter(Boolean).slice(0,2).map(w=>w[0]).join("").toUpperCase();
+const lvlClass=l=>/senior|lead|principal/i.test(l)?"senior":/manager/i.test(l)?"manager":/junior|graduate/i.test(l)?"junior":"mid";
+function searchLinks(k){const c=CO[k]||{};const nm=coName(k);const q=enc(nm+" engineer");return `<div class="links">${c.car?`<a href="${c.car}" target="_blank" rel="noopener">Careers site</a>`:""}<a href="${c.seek||"https://www.seek.com.au/jobs?keywords="+enc(nm)}" target="_blank" rel="noopener">Seek</a><a href="https://www.linkedin.com/jobs/search/?keywords=${q}&location=Australia" target="_blank" rel="noopener">LinkedIn</a><a href="https://au.indeed.com/jobs?q=${q}&l=Australia" target="_blank" rel="noopener">Indeed</a></div>`}
+
+const ITEMS=[...PLANTS.map(p=>({...p,kind:"plant"})),...PROJECTS.map(p=>({...p,kind:"project",st:"prop"}))];
+ITEMS.forEach((it,i)=>{it.i=i;it.jobs=jobsOf(cos(it));});
+
+function stageTag(it){return it.kind==="plant"?`<span class="stage" style="--sc:${it.st==="op"?"#22c55e":it.st==="idle"?"#eab308":"#ef4444"}">${PST[it.st]} plant</span>`:`<span class="stage" style="--sc:var(--s-${it.sg})">${STAGES[it.sg]}</span>`}
+function popupHTML(it){
+  const owners=cos(it);
+  const facts=it.kind==="plant"
+   ?`<dt>Location</dt><dd>${esc(it.loc)}</dd><dt>Capacity</dt><dd>${esc(it.cap)}</dd><dt>Feedstock</dt><dd>${esc(it.feed)}</dd>`
+   :`<dt>Location</dt><dd>${esc(it.loc)}</dd><dt>Scale</dt><dd>${esc(it.cap)}</dd><dt>Investment</dt><dd>${esc(it.inv)}</dd><dt>Timeline</dt><dd>${esc(it.tl)}</dd><dt>Contractor</dt><dd>${esc(it.epc)}</dd>`;
+  return `<div class="pop">${stageTag(it)}<h3>${esc(it.n)}</h3><p class="owner">${owners.length?owners.map(coName).map(esc).join(", "):"Owner not stated"}</p>
+   <div class="tags">${it.cats.map(c=>`<span class="tag" style="--c:${col(c)}"><i class="d"></i>${CATS[c].l}</span>`).join("")}</div>
+   <dl class="facts">${facts}</dl>${it.note?`<p>${esc(it.note)}</p>`:""}${it.approx?`<p class="warn">Map position is approximate.</p>`:""}
+   ${it.src?`<a class="muted" href="${it.src}" target="_blank" rel="noopener">Read the source</a>`:it.kind==="project"?`<span class="muted">Source: your October 2026 project notes</span>`:""}
+   <div class="joblist"><h4>${it.jobs.length?`${it.jobs.length} engineering job${it.jobs.length>1?"s":""} open`:"No engineering ads found this month"}</h4>
+   ${it.jobs.map(j=>`<a class="mini" href="${j.u}" target="_blank" rel="noopener"><b>${esc(j.t)}</b><span>${esc(jobCo(j))}, ${esc(j.loc)}, ${fmtD(j.d)}</span></a>`).join("")}
+   ${owners.map(k=>(owners.length>1?`<span class="muted">Search ${esc(coName(k))}</span>`:"")+searchLinks(k)).join("")}</div></div>`;
+}
+function siteCard(it){
+  return `<article class="site">${stageTag(it)}<h4>${esc(it.n)}</h4><div class="where">${esc(cos(it).map(coName).join(", ")||"Owner not stated")}<br>${esc(it.loc)}</div>
+   <div class="tags">${it.cats.map(c=>`<span class="tag" style="--c:${col(c)}"><i class="d"></i>${CATS[c].l}</span>`).join("")}</div>
+   ${it.kind==="project"?`<dl class="facts"><dt>Scale</dt><dd>${esc(it.cap)}</dd><dt>Timeline</dt><dd>${esc(it.tl)}</dd></dl>`:`<dl class="facts"><dt>Capacity</dt><dd>${esc(it.cap)}</dd></dl>`}
+   <div class="row">${it.jobs.length?`<span class="hiring">${it.jobs.length} job${it.jobs.length>1?"s":""} open</span>`:"<span></span>"}<button class="btn" data-go="${it.i}">View on map</button></div></article>`;
+}
+
+/* ---------- shell: nav, spectrum, mark ---------- */
+const ICONS={
+ map:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2-6-2Z"/><path d="M9 4v14M15 6v14"/></svg>',
+ industries:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M3 21V10l5 3V10l5 3V6l8 4v11Z"/><path d="M7 17h2M12 17h2M17 17h1"/></svg>',
+ projects:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 20h16M6 20V9l6-5 6 5v11"/><path d="M10 20v-5h4v5"/></svg>',
+ jobs:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2M3 13h18"/></svg>',
+ companies:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M4 21V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v16M16 9h2a2 2 0 0 1 2 2v10M8 7h4M8 11h4M8 15h4M2 21h20"/></svg>',
+ news:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M4 5h13v14a2 2 0 0 0 2 2H6a2 2 0 0 1-2-2Z"/><path d="M17 9h3v10a2 2 0 0 1-2 2M8 9h5M8 13h5M8 17h3"/></svg>'
+};
+const VIEWS=[["map","Map"],["industries","Industries"],["projects","Projects"],["jobs","Jobs"],["companies","Companies"],["news","News"]];
+$("#nav").innerHTML=VIEWS.map(([k,l])=>`<a href="#${k}" data-v="${k}">${ICONS[k]}${l}</a>`).join("");
+$("#tabbar").innerHTML=VIEWS.map(([k,l])=>`<a href="#${k}" data-v="${k}">${ICONS[k]}${l}</a>`).join("");
+$("#mark").innerHTML=["eth","saf","bd","chem","sugar","lng","oil","h2","ref"].map(c=>`<i style="background:${col(c)}"></i>`).join("");
+$("#spectrum").innerHTML=Object.keys(CATS).map(c=>{const n=ITEMS.filter(i=>i.cats[0]===c).length;return n?`<i style="flex:${n};background:${col(c)}" title="${CATS[c].l}"></i>`:""}).join("");
+
+/* ---------- router ---------- */
+let current=null;
+function route(){
+  const h=(location.hash||"#map").slice(1);const v=VIEWS.some(([k])=>k===h)?h:"map";
+  current=v;
+  VIEWS.forEach(([k])=>{$("#v-"+k).hidden=k!==v});
+  document.querySelectorAll("[data-v]").forEach(a=>{if(a.dataset.v===v)a.setAttribute("aria-current","page");else a.removeAttribute("aria-current")});
+  if(v==="map"&&map)setTimeout(()=>map.invalidateSize(),30);
+  if(v!=="map")window.scrollTo(0,0);
+}
+window.addEventListener("hashchange",route);
+
+/* ---------- map ---------- */
+let map=null, mapFilter={kind:"all",cat:null,hire:false,q:""};
+const AUS=[[142.5,-10.7],[143.5,-12.5],[143.8,-14],[145.3,-14.9],[145.4,-16.4],[146.1,-17.8],[146.3,-19],[147.4,-19.4],[148.7,-20.3],[149.5,-21.5],[150.8,-22.5],[151.2,-23.8],[152.9,-25.3],[153.1,-26.5],[153.6,-28.2],[153.4,-29.5],[153,-31],[152.5,-32.4],[151.3,-33.6],[151,-34.4],[150.6,-35.5],[150,-36.6],[149.9,-37.5],[148.2,-37.8],[146.4,-39.1],[145,-38.5],[144.5,-38.2],[143.5,-38.8],[141.5,-38.4],[140,-37.5],[139.6,-36.5],[138.9,-35.6],[138.5,-35],[138.1,-34.2],[137.6,-35],[137,-35.2],[137.5,-34],[137.8,-32.5],[137,-33.6],[136,-34.6],[135.8,-34.8],[135.2,-33.6],[134.2,-32.7],[132.5,-31.9],[131,-31.5],[129,-31.7],[127,-32.3],[125,-32.8],[123.6,-33.9],[121.9,-33.9],[120,-33.9],[118.5,-34.6],[117.5,-35.1],[116,-34.9],[115,-34.4],[115.6,-33.4],[115.7,-32],[115,-30],[114.9,-29],[114.2,-27.8],[113.4,-26],[113.7,-24.5],[113.5,-23],[114.1,-21.8],[116,-20.8],[117,-20.6],[118.8,-20.3],[121,-19.5],[122.2,-18],[123,-16.4],[124.5,-15.5],[125.5,-14.5],[126.9,-13.8],[128.2,-15],[129.5,-14.9],[130,-13.5],[130.8,-12.4],[132,-11.4],[133,-11.8],[135,-12.2],[136.7,-12.1],[136,-13.5],[135.5,-15],[137,-16],[138.5,-16.8],[140.8,-17.4],[141.5,-15],[141.6,-13],[142,-11.5]];
+const TAS=[[144.6,-40.7],[146,-41.1],[148.3,-40.9],[148.3,-42.2],[147.8,-43.2],[146.9,-43.6],[146,-43.5],[145.2,-42.2],[144.7,-41.2]];
+const ESRI="https://server.arcgisonline.com/ArcGIS/rest/services/";
+const BASES={
+ Satellite:()=>L.layerGroup([L.tileLayer(ESRI+"World_Imagery/MapServer/tile/{z}/{y}/{x}",{maxZoom:19,attribution:"Imagery © Esri, Maxar, Earthstar Geographics"}),L.tileLayer(ESRI+"Reference/World_Boundaries_and_Places/MapServer/tile/{z}/{y}/{x}",{maxZoom:19})]),
+ Light:()=>L.layerGroup([L.tileLayer(ESRI+"Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}",{maxZoom:16,attribution:"© Esri and data partners"}),L.tileLayer(ESRI+"Canvas/World_Light_Gray_Reference/MapServer/tile/{z}/{y}/{x}",{maxZoom:16})]),
+ Street:()=>L.tileLayer(ESRI+"World_Street_Map/MapServer/tile/{z}/{y}/{x}",{maxZoom:19,attribution:"© Esri and data partners"})
+};
+let base=null,tileOk=false,tileErr=0,outline=null;
+function setBase(name){
+  if(!map)return;if(base)map.removeLayer(base);base=BASES[name]().addTo(map);
+  const watch=l=>{l.on("tileload",()=>{tileOk=true;$("#mapnote").hidden=true});l.on("tileerror",()=>{tileErr++;if(!tileOk&&tileErr>3)useOutline()})};
+  base.eachLayer?base.eachLayer(watch):watch(base);
+  document.querySelectorAll("#basemaps button").forEach(b=>b.setAttribute("aria-pressed",b.textContent===name));
+}
+function useOutline(){if(outline)return;outline=L.layerGroup([AUS,TAS].map(r=>L.polygon(r.map(([lo,la])=>[la,lo]),{className:"outline",color:"#d6cfbd",weight:1.2,fillOpacity:1,interactive:false}))).addTo(map);
+  const n=$("#mapnote");n.textContent="Map imagery is blocked in this preview. Satellite, light and street views load on your published website.";n.hidden=false}
+function pinIcon(it){const cls=["pin",it.kind==="project"?"proj":"",it.kind==="plant"&&it.st!=="op"?it.st:"",it.jobs.length?"hire":""].join(" ");
+  return L.divIcon({className:"",html:`<span class="${cls}" style="--c:${col(it.cats[0])}"></span>`,iconSize:[16,16],iconAnchor:[8,8],popupAnchor:[0,-8]})}
+function mapVisible(it){const f=mapFilter;
+  if(f.kind==="plant"&&it.kind!=="plant")return false;if(f.kind==="project"&&it.kind!=="project")return false;
+  if(f.hire&&!it.jobs.length)return false;if(f.cat&&!it.cats.includes(f.cat))return false;
+  if(f.q){const hay=(it.n+" "+cos(it).map(coName).join(" ")+" "+it.loc+" "+it.cats.map(c=>CATS[c].l).join(" ")).toLowerCase();if(!hay.includes(f.q))return false}
+  return true}
+function drawMarkers(){if(!map)return;ITEMS.forEach(it=>{const v=mapVisible(it);if(v&&!map.hasLayer(it.m))it.m.addTo(map);if(!v&&map.hasLayer(it.m))map.removeLayer(it.m)})}
+function mapChips(){
+  const f=mapFilter;const c=(label,pressed,act,dot)=>`<button class="chip" aria-pressed="${pressed}" data-act="${act}">${dot?`<i class="d" style="--c:${dot}"></i>`:""}${label}</button>`;
+  $("#mapchips").innerHTML=c("Everything",f.kind==="all"&&!f.hire&&!f.cat,"all")+c("Plants",f.kind==="plant","kind:plant")+c("Projects",f.kind==="project","kind:project")+c("Hiring now",f.hire,"hire","#22c55e")+
+   (f.cat?c(CATS[f.cat].l+" ✕",true,"cat:",col(f.cat)):"")+
+   Object.keys(CATS).filter(k=>k!==f.cat).map(k=>c(CATS[k].l,false,"cat:"+k,col(k))).join("");
+}
+$("#mapchips").addEventListener("click",e=>{const b=e.target.closest("[data-act]");if(!b)return;const a=b.dataset.act;
+  if(a==="all")mapFilter={kind:"all",cat:null,hire:false,q:mapFilter.q};
+  else if(a.startsWith("kind:")){const k=a.slice(5);mapFilter.kind=mapFilter.kind===k?"all":k}
+  else if(a==="hire")mapFilter.hire=!mapFilter.hire;
+  else if(a.startsWith("cat:"))mapFilter.cat=a.slice(4)||null;
+  mapChips();drawMarkers()});
+$("#mq").addEventListener("input",e=>{mapFilter.q=e.target.value.trim().toLowerCase();drawMarkers()});
+function initMap(){
+  if(typeof L==="undefined"){$("#map").innerHTML='<p style="padding:90px 20px">The map could not load. Check your internet connection and reload the page.</p>';return}
+  map=L.map("map",{zoomControl:false,minZoom:3,maxBounds:[[-52,92],[2,178]]}).setView([-27,134],4);
+  L.control.zoom({position:"topright"}).addTo(map);map.attributionControl.setPrefix(false);
+  $("#basemaps").innerHTML=Object.keys(BASES).map(n=>`<button aria-pressed="false">${n}</button>`).join("");
+  $("#basemaps").onclick=e=>{const b=e.target.closest("button");if(b)setBase(b.textContent)};
+  setBase("Satellite");
+  const small=window.innerWidth<600;
+  ITEMS.forEach(it=>{it.m=L.marker([it.lat,it.lon],{icon:pinIcon(it),title:it.n,riseOnHover:true,zIndexOffset:it.kind==="project"?400:0});
+    it.m.bindPopup(()=>popupHTML(it),{maxWidth:small?290:350,minWidth:small?250:300,maxHeight:small?Math.round(window.innerHeight*.55):460,autoPanPaddingTopLeft:[20,120],autoPanPaddingBottomRight:[20,40]})});
+  drawMarkers();
+}
+function goTo(i){const it=ITEMS[i];location.hash="#map";
+  if(!mapVisible(it)){mapFilter={kind:"all",cat:null,hire:false,q:""};$("#mq").value="";mapChips();drawMarkers()}
+  setTimeout(()=>{if(!map)return;map.invalidateSize();map.flyTo([it.lat,it.lon],Math.max(map.getZoom(),11),{duration:.9});setTimeout(()=>it.m.openPopup(),950)},80)}
+document.addEventListener("click",e=>{const g=e.target.closest("[data-go]");if(g){e.preventDefault();goTo(+g.dataset.go)}});
+
+/* ---------- industries ---------- */
+let indOpen=null;
+function renderIndustries(){
+  const V=$("#v-industries");
+  if(indOpen){const k=indOpen,sites=ITEMS.filter(i=>i.cats.includes(k));const owners=[...new Set(sites.flatMap(cos))];const js=jobsOf(owners);
+    V.innerHTML=`<div class="ind-head" style="--c:${col(k)}"><button class="back" id="indback">All industries</button><h1>${CATS[k].l}</h1><p>${SECTOR_TEXT[k]}</p>
+      <div class="chips"><span class="tag" style="--c:${col(k)}">${sites.filter(s=>s.kind==="plant").length} plants</span><span class="tag" style="--c:${col(k)}">${sites.filter(s=>s.kind==="project").length} projects</span><span class="tag" style="--c:#22c55e">${js.length} jobs at these employers</span>
+      <button class="btn primary" id="indmap">Show on map</button></div></div>
+      ${sites.some(s=>s.kind==="project")?`<h2 class="section-title">Upcoming projects</h2><div class="grid">${sites.filter(s=>s.kind==="project").map(siteCard).join("")}</div>`:""}
+      ${sites.some(s=>s.kind==="plant")?`<h2 class="section-title">Operating plants</h2><div class="grid">${sites.filter(s=>s.kind==="plant").map(siteCard).join("")}</div>`:""}
+      <h2 class="section-title">Jobs at these employers</h2>${js.length?`<div class="joblist2">${js.map(jobRow).join("")}</div>`:`<div class="empty">No engineering ads found at these employers this month. Try their careers pages from any site card.</div>`}`;
+    $("#indback").onclick=()=>{indOpen=null;renderIndustries();window.scrollTo(0,0)};
+    $("#indmap").onclick=()=>{mapFilter={kind:"all",cat:k,hire:false,q:""};$("#mq").value="";mapChips();drawMarkers();location.hash="#map";setTimeout(()=>{if(map){map.invalidateSize();const b=L.latLngBounds(sites.map(s=>[s.lat,s.lon]));map.fitBounds(b,{padding:[60,60],maxZoom:9})}},80)};
+    return}
+  const keys=Object.keys(CATS).sort((a,b)=>ITEMS.filter(i=>i.cats.includes(b)).length-ITEMS.filter(i=>i.cats.includes(a)).length);
+  V.innerHTML=`<div class="vhead"><div class="grow"><h1>Industries</h1><p>Seventeen process sectors, from ethanol and sugar to hydrogen and LNG. Open one to see its plants, projects and the employers hiring in it.</p></div></div>
+   <div class="ind-grid">${keys.map(k=>{const s=ITEMS.filter(i=>i.cats.includes(k));const owners=[...new Set(s.flatMap(cos))];return `<button class="ind" style="--c:${col(k)}" data-ind="${k}">
+    <span class="orb">${CATS[k].l[0]}</span><h3>${CATS[k].l}</h3><p>${SECTOR_TEXT[k]}</p>
+    <span class="counts"><span><b>${s.filter(x=>x.kind==="plant").length}</b>plants</span><span><b>${s.filter(x=>x.kind==="project").length}</b>projects</span><span><b>${jobsOf(owners).length}</b>jobs</span></span></button>`}).join("")}</div>`;
+}
+$("#v-industries").addEventListener("click",e=>{const b=e.target.closest("[data-ind]");if(b){indOpen=b.dataset.ind;renderIndustries();window.scrollTo(0,0)}});
+
+/* ---------- projects ---------- */
+let projStage=null;
+function renderProjects(){
+  const V=$("#v-projects");const P=ITEMS.filter(i=>i.kind==="project");
+  const order=STAGE_ORDER;const counts=order.map(s=>[s,P.filter(p=>p.sg===s).length]).filter(c=>c[1]);
+  V.innerHTML=`<div class="vhead"><div class="grow"><h1>Upcoming projects</h1><p>${P.length} projects in the pipeline, sorted from closest to construction to earliest idea. Projects nearer the top hire sooner.</p></div></div>
+   <div class="pipeline" aria-hidden="true">${counts.map(([s,n])=>`<i style="--sc:var(--s-${s});flex:${n}"></i>`).join("")}</div>
+   <div class="chips" style="margin-bottom:6px"><button class="chip" aria-pressed="${!projStage}" data-stage="">All stages</button>${counts.map(([s,n])=>`<button class="chip" aria-pressed="${projStage===s}" data-stage="${s}"><i class="d" style="--c:var(--s-${s})"></i>${STAGES[s]} <span class="n">${n}</span></button>`).join("")}</div>
+   ${order.filter(s=>!projStage||projStage===s).map(s=>{const ps=P.filter(p=>p.sg===s);if(!ps.length)return"";return `<div class="stagegroup" style="--sc:var(--s-${s})"><h2><i></i>${STAGES[s]}<small>${ps.length}</small></h2><p>${STAGE_TEXT[s]}</p><div class="grid">${ps.map(siteCard).join("")}</div></div>`}).join("")}`;
+}
+$("#v-projects").addEventListener("click",e=>{const b=e.target.closest("[data-stage]");if(b){projStage=b.dataset.stage||null;renderProjects()}});
+
+/* ---------- jobs ---------- */
+/* ---------- CV matching (Shahin C P) ---------- */
+const PROFILE={name:"Shahin",summary:"Mechanical Project Engineer, 10+ years. EPCM and owner's-side capital projects in oilseeds, solvent extraction, edible oil refining, biodiesel, ethanol and renewable fuels. Commissioning, shutdowns, piping (AS4041), CMMS. Engineers Australia PEng. Australian PR."};
+const TITLE_FIT=[
+ [/mechanical project engineer|project mechanical engineer/i,34,"Mechanical project role"],
+ [/(senior|lead).*(mechanical|project) engineer|project engineers?\b.*(lead|senior)/i,32,"Senior project / mechanical role"],
+ [/project engineer/i,30,"Project engineering role"],
+ [/commissioning/i,30,"Commissioning role"],
+ [/mechanical engineer/i,28,"Mechanical engineering role"],
+ [/piping/i,26,"Piping role"],
+ [/reliability/i,24,"Reliability role"],
+ [/process engineer/i,18,"Process engineering role"],
+ [/shutdown|turnaround|maintenance (planner|execution|scheduler)|area maintenance/i,18,"Shutdown and maintenance planning"],
+ [/maintenance (supervisor)|plant maintenance|mechanical supervisor|inspection|condition monitoring/i,16,"Plant maintenance leadership"],
+ [/supervisor|superintendent/i,12,"Site supervision"],
+ [/manager/i,12,"Management role"],
+ [/e&i|electrical|instrument/i,4,"Electrical / instrumentation"],
+ [/civil|scheduling engineer|software|devsecops|developer|hvac/i,2,"Outside your discipline"]
+];
+const SECTOR_FIT={graincorp:[25,"Oilseeds, your core sector"],cargill:[25,"Oilseeds, your core sector"],manildra:[24,"Ethanol and oilseeds"],wilmar:[20,"Sugar and ethanol"],aoh:[25,"Oilseeds, your core sector"],
+ ampol:[22,"Refinery and renewable fuels"],viva:[22,"Refinery and renewable fuels"],jetzero:[24,"SAF and ethanol"],licella:[20,"Renewable fuels"],wildfire:[20,"Renewable fuels"],hamr:[20,"Renewable fuels"],bp:[20,"Renewable fuels"],
+ worley:[20,"EPCM like your De Smet role"],lycopodium:[20,"EPCM process plants"],monadelphous:[17,"SMP construction and shutdowns"],clough:[17,"Process plant EPC"],wood:[17,"Refinery maintenance and EPCM"],
+ orica:[17,"Chemical process plant"],nufarm:[18,"Chemical process plant"],ixom:[17,"Chemical process plant"],coogee:[17,"Chemical process plant"],perdaman:[19,"New process plant start-up"],dyno:[14,"Chemical process plant"],csbp:[17,"Chemical process plant"],
+ santos:[12,"Oil and gas"],woodside:[12,"Oil and gas"],chevron:[12,"Oil and gas"],inpex:[12,"Oil and gas"],cleanaway:[14,"Waste and resource recovery"],southernoil:[22,"Oil re-refining"],bhp:[8,"Mining"],justbio:[25,"Biodiesel, your sector"],
+ bega:[19,"Food processing plant"],idt:[14,"Pharma manufacturing"],psc:[13,"Pharma and biotech projects"],app:[13,"Pumps and rotating equipment"],visy:[15,"Manufacturing plant"],hdr:[10,"Building services"],jci:[13,"Industrial refrigeration"],sulzer:[16,"Pumps and rotating equipment"],cpb:[6,"Infrastructure"]};
+const TIERS=[
+ {k:1,l:"Victoria",d:"Your first choice"},
+ {k:2,l:"Sydney, Wollongong & Newcastle",d:"Your second choice"},
+ {k:3,l:"Brisbane & suburbs",d:"Your third choice"},
+ {k:4,l:"Perth & suburbs",d:"Your fourth choice"},
+ {k:5,l:"Other locations",d:"Outside your preferred areas"}
+];
+const NSW_METRO=/sydney|kemps creek|rooty hill|matraville|botany|richmond nsw|wetherill|kurnell|parramatta|newcastle|wollongong|port kembla|maitland|rutherford|hunter|kooragang|mayfield|carrington|cecil park|riverstone|alexandria|granville|greystanes|penrith|blacktown/i;
+const BNE=/brisbane|lutwyche|lytton|narangba|wynnum|pinkenba|ipswich|logan|redcliffe|eagle farm/i;
+const PER=/perth|kwinana|welshpool|rockingham|fremantle|malaga|kewdale|henderson|bibra lake/i;
+function tierOf(loc){const l=loc||"";if(/\bVIC\b|victoria/i.test(l))return 1;if(NSW_METRO.test(l))return 2;if(BNE.test(l))return 3;if(PER.test(l))return 4;return 5}
+function matchOf(j){
+  if(j._m)return j._m;
+  let t=[0,"Role not matched"];for(const [re,s,why] of TITLE_FIT){if(re.test(j.t)){t=[s,why];break}}
+  const s=SECTOR_FIT[j.co]||[8,"Process industry"];
+  const lv=lvlClass(j.lvl||"");const lvPts=lv==="senior"||lv==="mid"?10:lv==="manager"?5:0;
+  const score=Math.max(5,Math.min(99,Math.round((t[0]+s[0]+lvPts)/69*100)));
+  const tier=tierOf(j.loc);
+  const why=[t[1],s[1]];if(tier<5)why.push(TIERS[tier-1].l);
+  return j._m={score,tier,why};
+}
+function ring(score){const c=score>=80?"#16a34a":score>=65?"#2a5bd7":score>=45?"#d97706":"#94a3b8";
+  return `<span class="ring" style="--p:${score};--rc:${c}" title="${score}% match to your CV"><b>${score}</b></span>`}
+
+/* ---------- jobs ---------- */
+let jobF={type:"all",lvl:"all",q:"",sort:"match"};
+const jobCo=j=>j.cn||coName(j.co);
+function jobRow(j){const nm=jobCo(j);const m=matchOf(j);
+  return `<a class="job" href="${j.u}" target="_blank" rel="noopener">${jobF.sort==="match"?ring(m.score):`<span class="avatar" style="--c:${coColor(j.co)}">${initials(nm)}</span>`}<span><b>${esc(j.t)}</b><span class="sub">${esc(nm)}, ${esc(j.loc)}</span>${jobF.sort==="match"?`<span class="why">${m.why.slice(0,2).map(w=>`<i>${esc(w)}</i>`).join("")}</span>`:""}</span><span class="right"><span class="lvl ${lvlClass(j.lvl||"")}">${esc(j.lvl||"Level not stated")}</span><span>${fmtD(j.d)} on ${esc(j.src||"web")}</span></span></a>`}
+function renderJobs(){
+  const V=$("#v-jobs");
+  const base=[...JOBS].filter(j=>(jobF.type==="all"||(jobF.type==="con")===CONTRACTORS.has(j.co))&&(jobF.lvl==="all"||lvlClass(j.lvl||"")===jobF.lvl)&&(!jobF.q||(j.t+" "+jobCo(j)+" "+j.loc).toLowerCase().includes(jobF.q)));
+  const ch=(grp,val,label,cur)=>`<button class="chip" data-jf="${grp}:${val}" aria-pressed="${cur===val}">${label}</button>`;
+  let body="";
+  if(jobF.sort==="match"){
+    body=TIERS.map(t=>{const js=base.filter(j=>matchOf(j).tier===t.k).sort((a,b)=>matchOf(b).score-matchOf(a).score||b.d.localeCompare(a.d));if(!js.length)return"";
+      return `<section class="tier"><h2><span class="tn">${t.k}</span>${esc(t.l)}<small>${js.length} role${js.length>1?"s":""}</small></h2><p class="muted" style="margin:0 0 10px">${esc(t.d)}</p><div class="joblist2">${js.map(jobRow).join("")}</div></section>`}).join("")||`<div class="empty">No roles match. Clear a filter or search a different city.</div>`;
+  } else {
+    const js=base.sort((a,b)=>b.d.localeCompare(a.d));
+    body=js.length?`<div class="joblist2">${js.map(jobRow).join("")}</div>`:`<div class="empty">No roles match. Clear a filter or search a different city.</div>`;
+  }
+  V.innerHTML=`<div class="vhead"><div class="grow"><h1>Engineering jobs</h1><p>${JOBS.length} live roles at plant owners, project developers and EPC contractors. Ranked against your CV and grouped by your preferred locations. Refreshed automatically; last update ${esc(fmtUpdated())}.</p></div>
+    <label class="search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input id="jq" type="search" placeholder="Search roles, companies, cities" value="${esc(jobF.q)}" aria-label="Search jobs"></label></div>
+   <div class="jobs-layout"><aside class="side">
+     <div class="me"><h3>Matched to your CV</h3><p>${esc(PROFILE.summary)}</p><p class="muted" style="margin:6px 0 0">The score combines role fit, sector fit and seniority. Location sets the order of the groups.</p></div>
+     <div><h3>Order</h3><div class="chips">${ch("sort","match","Best for you",jobF.sort)}${ch("sort","new","Newest",jobF.sort)}</div></div>
+     <div><h3>Employer</h3><div class="chips">${ch("type","all","All",jobF.type)}${ch("type","own","Owners & developers",jobF.type)}${ch("type","con","Contractors",jobF.type)}</div></div>
+     <div><h3>Level</h3><div class="chips">${ch("lvl","all","All levels",jobF.lvl)}${ch("lvl","junior","Junior",jobF.lvl)}${ch("lvl","mid","Mid",jobF.lvl)}${ch("lvl","senior","Senior & lead",jobF.lvl)}${ch("lvl","manager","Manager",jobF.lvl)}</div></div>
+     <div><h3>Find recruiters</h3><div class="links">
+      <a href="https://www.linkedin.com/search/results/people/?keywords=process%20engineering%20recruiter%20Melbourne" target="_blank" rel="noopener">Melbourne process recruiters</a>
+      <a href="https://www.linkedin.com/search/results/people/?keywords=process%20engineering%20recruiter%20Sydney" target="_blank" rel="noopener">Sydney process recruiters</a>
+      <a href="https://www.linkedin.com/search/results/people/?keywords=SAF%20renewable%20fuels%20talent%20acquisition%20Australia" target="_blank" rel="noopener">Renewable fuels talent teams</a>
+      <a href="https://www.seek.com.au/mechanical-project-engineer-jobs/in-All-Melbourne-VIC" target="_blank" rel="noopener">Seek: Melbourne</a>
+      <a href="https://www.seek.com.au/mechanical-project-engineer-jobs/in-All-Sydney-NSW" target="_blank" rel="noopener">Seek: Sydney</a></div></div>
+   </aside><div>${body}</div></div>`;
+  const qi=$("#jq");qi.oninput=e=>{jobF.q=e.target.value.trim().toLowerCase();const pos=qi.selectionStart;renderJobs();const n=$("#jq");n.focus();n.setSelectionRange(pos,pos)};
+}
+$("#v-jobs").addEventListener("click",e=>{const b=e.target.closest("[data-jf]");if(!b)return;const[g,v]=b.dataset.jf.split(":");jobF[g]=v;renderJobs()});
+
+/* ---------- live data (refreshed by the scheduled task) ---------- */
+let UPDATED="2026-10-29T22:00:00+11:00";
+function fmtUpdated(){const d=new Date(UPDATED);return isNaN(d)?UPDATED:d.toLocaleString("en-AU",{day:"numeric",month:"short",hour:"numeric",minute:"2-digit"})}
+async function loadLive(){
+  try{const r=await fetch("data.json",{cache:"no-store"});if(!r.ok)return;const d=await r.json();
+    if(Array.isArray(d.jobs)&&d.jobs.length){JOBS.length=0;JOBS.push(...d.jobs)}
+    if(Array.isArray(d.news)&&d.news.length){NEWS.length=0;NEWS.push(...d.news.filter(n=>CATS[n.tag]))}
+    if(d.updated)UPDATED=d.updated;
+    ITEMS.forEach(it=>{it.jobs=jobsOf(cos(it));if(it.m)it.m.setIcon(pinIcon(it))});
+    const u=$("#updated");if(u)u.textContent="Updated "+fmtUpdated();
+    renderIndustries();renderProjects();renderJobs();renderCompanies();renderNews();
+  }catch(e){}
+}
+
+/* ---------- companies ---------- */
+let coF="all";
+function renderCompanies(){
+  const V=$("#v-companies");
+  const grp=c=>CONTRACTORS.has(c.k)?"con":/developer|technology/i.test(c.t)?"dev":"own";
+  const list=COMPANIES.filter(c=>coF==="all"||grp(c)===coF);
+  const ch=(v,l)=>`<button class="chip" data-cf="${v}" aria-pressed="${coF===v}">${l}</button>`;
+  V.innerHTML=`<div class="vhead"><div class="grow"><h1>Companies</h1><p>Developers, plant owners and EPC contractors from your research, with the sites they are tied to and the roles they have open.</p></div></div>
+   <div class="chips" style="margin-bottom:16px">${ch("all","All")}${ch("dev","Developers & technology")}${ch("own","Owners & operators")}${ch("con","EPC & EPCM contractors")}</div>
+   <div class="grid">${list.map(c=>{const nm=c.n||coName(c.k);const js=jobsOf([c.k]);const linked=ITEMS.filter(i=>cos(i).includes(c.k));
+    const fit=c.tier?`<span class="fit ${/top/i.test(c.tier)?"top":/hiring/i.test(c.tier)?"hire":""}">${esc(c.tier)}</span>`:"";
+    return `<article class="co"><div class="co-top"><span class="avatar" style="--c:${coColor(c.k)}">${initials(nm)}</span><div><h4>${esc(nm)}</h4><div class="kind">${esc(c.t)}, ${esc(c.hq)}</div></div></div>${fit}
+     <p style="margin:0;color:var(--soft)">${esc(c.f)}</p>
+     ${linked.length?`<div class="muted">On the map: ${linked.map(i=>`<a href="#map" data-go="${i.i}">${esc(i.n)}</a>`).join(", ")}</div>`:""}
+     ${js.length?`<div class="joblist" style="border:0;padding:0">${js.slice(0,3).map(j=>`<a class="mini" href="${j.u}" target="_blank" rel="noopener"><b>${esc(j.t)}</b><span>${esc(j.loc)}, ${fmtD(j.d)}</span></a>`).join("")}${js.length>3?`<span class="muted">and ${js.length-3} more in Jobs</span>`:""}</div>`:""}
+     ${searchLinks(c.k)}</article>`}).join("")}</div>`;
+}
+$("#v-companies").addEventListener("click",e=>{const b=e.target.closest("[data-cf]");if(b){coF=b.dataset.cf;renderCompanies()}});
+
+/* ---------- news ---------- */
+function renderNews(){
+  const V=$("#v-news");
+  V.innerHTML=`<div class="vhead"><div class="grow"><h1>News and updates</h1><p>The project announcements, approvals and setbacks behind the map, newest first.</p></div></div>
+   <div class="news-layout"><div class="feed">${NEWS.map(n=>{const d=new Date(n.d+"T00:00:00");return `<article class="story"><time datetime="${n.d}">${d.toLocaleDateString("en-AU",{day:"numeric",month:"short"})}<small>${d.getFullYear()}</small></time>
+     <div><span class="tag" style="--c:${col(n.tag)}"><i class="d"></i>${CATS[n.tag].l}</span><h3>${esc(n.h)}</h3><p>${esc(n.p)}</p><a class="src" href="${n.src}" target="_blank" rel="noopener">Read on ${esc(n.s)}</a></div></article>`}).join("")}</div>
+   <aside class="watch"><h3>Coming up</h3>${MILESTONES.map(m=>`<div class="ms"><time>${m.w}</time><div><b>${esc(m.h)}</b><span>${esc(m.s)}</span></div></div>`).join("")}
+    <p class="muted" style="margin:0">Dates are targets announced by the developers and may move.</p></aside></div>
+   <p class="foot">Plant and project data come from operator and government sources, Indeed and LinkedIn listings, and your October 2026 project intelligence notes. Items marked approximate or to verify are unconfirmed. Map imagery © Esri and its data partners.</p>`;
+}
+
+/* ---------- boot ---------- */
+mapChips();renderIndustries();renderProjects();renderJobs();renderCompanies();renderNews();initMap();route();loadLive();
+</script>
+
+</body>
+</html>
