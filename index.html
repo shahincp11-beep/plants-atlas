@@ -312,6 +312,14 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 .avatar img{position:absolute;inset:18%;width:64%;height:64%;object-fit:contain}
 .avatar.person img{inset:auto -1px -1px auto;width:18px;height:18px;background:#fff;border-radius:5px;border:1.5px solid #fff;box-shadow:0 0 0 1px var(--line)}
 .minilogo{width:16px;height:16px;border-radius:4px;vertical-align:-3px;margin-right:6px;object-fit:contain;background:#fff}
+
+.jobwrap{display:flex;flex-direction:column;border:1px solid var(--line);border-radius:16px;background:#fff;overflow:hidden}
+.jobwrap .job{border:0;border-radius:0}
+.cvbar{display:flex;gap:6px;flex-wrap:wrap;padding:8px 12px 10px 74px;border-top:1px dashed var(--line)}
+@media (max-width:520px){.cvbar{padding-left:12px}}
+.cvb{font-size:12.5px;font-weight:700;text-decoration:none;border-radius:999px;padding:5px 11px;background:#eef2ff;color:#3730a3}
+.cvb:nth-child(2){background:#ecfeff;color:#0e7490}.cvb:nth-child(3){background:#fef3c7;color:#92400e}
+.cvb:hover{filter:brightness(.96)}
 /* Leaflet core (inlined) */
 .leaflet-pane,.leaflet-tile,.leaflet-marker-icon,.leaflet-marker-shadow,.leaflet-tile-container,.leaflet-pane>svg,.leaflet-pane>canvas,.leaflet-zoom-box,.leaflet-image-layer,.leaflet-layer{position:absolute;left:0;top:0}
 .leaflet-container{overflow:hidden;-webkit-tap-highlight-color:transparent;font:13px/1.4 var(--body)}
@@ -1014,8 +1022,17 @@ function ring(score){const c=score>=80?"#16a34a":score>=65?"#2a5bd7":score>=45?"
 /* ---------- jobs ---------- */
 let jobF={type:"all",lvl:"all",q:"",sort:"match"};
 const jobCo=j=>j.cn||coName(j.co);
-function jobRow(j){const nm=jobCo(j);const m=matchOf(j);
-  return `<a class="job" href="${j.u}" target="_blank" rel="noopener">${jobF.sort==="match"?ring(m.score):`${coAvatar(j.co,nm)}`}<span><b>${esc(j.t)}</b><span class="sub">${miniLogo(j.co)}${esc(nm)}, ${esc(j.loc)}</span>${jobF.sort==="match"?`<span class="why">${m.why.slice(0,2).map(w=>`<i>${esc(w)}</i>`).join("")}</span>`:""}</span><span class="right"><span class="lvl ${lvlClass(j.lvl||"")}">${esc(j.lvl||"Level not stated")}</span><span>${fmtD(j.d)} on ${esc(j.src||"web")}</span></span></a>`}
+function cvPrompt(kind,j){const nm=jobCo(j);const job=`${j.t} at ${nm}, ${j.loc}. Job ad: ${j.u}`;
+  if(kind==="cv")return `Use my cv-builder skill. Create a tailored, ATS-friendly CV for this job: ${job}. Read the job description first (if you can't open the link, ask me to paste it), follow the skill's steps, and give me the CV as both a Word (.docx) and a PDF file.`;
+  if(kind==="cl")return `Use my cv-builder skill. Write a one-page cover letter for this job: ${job}. Read the job description first (if you can't open the link, ask me to paste it), follow the skill's cover letter steps, and give me it as both a Word (.docx) and a PDF file.`;
+  return `Use my cv-builder skill. Compare my CV with the job description for: ${job}. I'll attach the CV I want checked. Read the job description (ask me to paste it if the link doesn't open), then give me the match score, strengths, weak points, missing ATS keywords and the questions I should answer. After I answer, revise the CV and give me .docx and .pdf.`}
+function cvLink(kind,j){return "https://claude.ai/new?q="+enc(cvPrompt(kind,j))}
+function jobRow(j){const nm=jobCo(j);const m=matchOf(j);const id=JOBS.indexOf(j);
+  return `<div class="jobwrap"><a class="job" href="${j.u}" target="_blank" rel="noopener">${jobF.sort==="match"?ring(m.score):coAvatar(j.co,nm)}<span><b>${esc(j.t)}</b><span class="sub">${miniLogo(j.co)}${esc(nm)}, ${esc(j.loc)}</span>${jobF.sort==="match"?`<span class="why">${m.why.slice(0,2).map(w=>`<i>${esc(w)}</i>`).join("")}</span>`:""}</span><span class="right"><span class="lvl ${lvlClass(j.lvl||"")}">${esc(j.lvl||"Level not stated")}</span><span>${fmtD(j.d)} on ${esc(j.src||"web")}</span></span></a>
+   <div class="cvbar"><a class="cvb" data-cv="cv" data-j="${id}" href="${cvLink("cv",j)}" target="_blank" rel="noopener">Create CV</a><a class="cvb" data-cv="cl" data-j="${id}" href="${cvLink("cl",j)}" target="_blank" rel="noopener">Cover letter</a><a class="cvb" data-cv="cmp" data-j="${id}" href="${cvLink("cmp",j)}" target="_blank" rel="noopener">Compare with JD</a></div></div>`}
+document.addEventListener("click",e=>{const b=e.target.closest("[data-cv]");if(!b)return;const j=JOBS[+b.dataset.j];if(!j)return;const t=cvPrompt(b.dataset.cv,j);
+  try{navigator.clipboard&&navigator.clipboard.writeText(t).catch(()=>{})}catch(_){}
+  const o=b.textContent;b.textContent="Opening Claude…";setTimeout(()=>b.textContent=o,2500)});
 function renderJobs(){
   const V=$("#v-jobs");
   const base=[...JOBS].filter(j=>(jobF.type==="all"||(jobF.type==="con")===CONTRACTORS.has(j.co))&&(jobF.lvl==="all"||lvlClass(j.lvl||"")===jobF.lvl)&&(!jobF.q||(j.t+" "+jobCo(j)+" "+j.loc).toLowerCase().includes(jobF.q)));
