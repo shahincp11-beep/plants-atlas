@@ -367,6 +367,7 @@ svg.leaflet-zoom-animated{will-change:transform}
 .leaflet-container a.leaflet-popup-close-button{position:absolute;top:8px;right:8px;width:30px;height:30px;border-radius:50%;background:var(--surface);text-align:center;font:18px/30px var(--body);color:var(--soft);text-decoration:none;z-index:2}
 .leaflet-div-icon{background:transparent;border:0}
 .outline{fill:#f2efe6}
+.srcb.seek{color:#0d3880;background:#e8eefb;border-radius:6px;padding:1px 6px;font-weight:600}
 </style>
 
 </head>
@@ -1024,7 +1025,8 @@ function ring(score){const c=score>=80?"#16a34a":score>=65?"#2a5bd7":score>=45?"
   return `<span class="ring" style="--p:${score};--rc:${c}" title="${score}% match to your CV"><b>${score}</b></span>`}
 
 /* ---------- jobs ---------- */
-let jobF={type:"all",lvl:"all",q:"",sort:"match"};
+const SEEK_SEARCHES=[["Melbourne","https://www.seek.com.au/mechanical-project-engineer-jobs/in-All-Melbourne-VIC?daterange=14"],["Geelong","https://www.seek.com.au/project-engineer-jobs/in-Geelong-VIC?daterange=14"],["Sydney","https://www.seek.com.au/mechanical-project-engineer-jobs/in-All-Sydney-NSW?daterange=14"],["Newcastle & Hunter","https://www.seek.com.au/mechanical-engineer-jobs/in-Newcastle,-Maitland-&-Hunter-NSW?daterange=14"],["Wollongong","https://www.seek.com.au/mechanical-engineer-jobs/in-Wollongong,-Illawarra-&-South-Coast-NSW?daterange=14"],["Brisbane","https://www.seek.com.au/mechanical-project-engineer-jobs/in-All-Brisbane-QLD?daterange=14"],["Perth","https://www.seek.com.au/mechanical-project-engineer-jobs/in-All-Perth-WA?daterange=14"],["Maintenance planner, VIC","https://www.seek.com.au/maintenance-planner-jobs/in-Victoria-VIC?daterange=14"],["Shutdown planner, all AU","https://www.seek.com.au/shutdown-planner-jobs?daterange=14"]];
+let jobF={type:"all",lvl:"all",src:"all",q:"",sort:"match"};
 const jobCo=j=>j.cn||coName(j.co);
 const CVPKEY="pa_cvproj_v1";
 let CVPROJ=(()=>{try{return localStorage.getItem(CVPKEY)||""}catch(e){return ""}})();
@@ -1037,14 +1039,14 @@ function cvPrompt(kind,j){const nm=jobCo(j);
   return `${intro} Compare my CV with this job description. I'll attach the CV I want checked. Give me the match score, strengths, weak points, missing ATS keywords and the questions I should answer; after I answer, revise the CV and give me .docx and .pdf.\n\n${head}${jd}`}
 function cvLink(kind,j){const base=CVPROJ||"https://claude.ai/new";return base+(base.includes("?")?"&":"?")+"q="+enc(cvPrompt(kind,j))}
 function jobRow(j){const nm=jobCo(j);const m=matchOf(j);const id=JOBS.indexOf(j);
-  return `<div class="jobwrap"><a class="job" href="${j.u}" target="_blank" rel="noopener">${jobF.sort==="match"?ring(m.score):coAvatar(j.co,nm)}<span><b>${esc(j.t)}</b><span class="sub">${miniLogo(j.co)}${esc(nm)}, ${esc(j.loc)}</span>${jobF.sort==="match"?`<span class="why">${m.why.slice(0,2).map(w=>`<i>${esc(w)}</i>`).join("")}</span>`:""}</span><span class="right"><span class="lvl ${lvlClass(j.lvl||"")}">${esc(j.lvl||"Level not stated")}</span><span>${fmtD(j.d)} on ${esc(j.src||"web")}</span></span></a>
+  return `<div class="jobwrap"><a class="job" href="${j.u}" target="_blank" rel="noopener">${jobF.sort==="match"?ring(m.score):coAvatar(j.co,nm)}<span><b>${esc(j.t)}</b><span class="sub">${miniLogo(j.co)}${esc(nm)}, ${esc(j.loc)}</span>${jobF.sort==="match"?`<span class="why">${m.why.slice(0,2).map(w=>`<i>${esc(w)}</i>`).join("")}</span>`:""}</span><span class="right"><span class="lvl ${lvlClass(j.lvl||"")}">${esc(j.lvl||"Level not stated")}</span><span>${fmtD(j.d)} on <span class="srcb${j.src==="Seek"?" seek":""}">${esc(j.src||"web")}</span></span></span></a>
    <div class="cvbar"><a class="cvb" data-cv="cv" data-j="${id}" href="${cvLink("cv",j)}" target="_blank" rel="noopener">Create CV</a><a class="cvb" data-cv="cl" data-j="${id}" href="${cvLink("cl",j)}" target="_blank" rel="noopener">Cover letter</a><a class="cvb" data-cv="cmp" data-j="${id}" href="${cvLink("cmp",j)}" target="_blank" rel="noopener">Compare with JD</a></div></div>`}
 document.addEventListener("click",e=>{const b=e.target.closest("[data-cv]");if(!b)return;const j=JOBS[+b.dataset.j];if(!j)return;const t=cvPrompt(b.dataset.cv,j);
   try{navigator.clipboard&&navigator.clipboard.writeText(t).catch(()=>{})}catch(_){}
   const o=b.textContent;b.textContent="Opening Claude…";setTimeout(()=>b.textContent=o,2500)});
 function renderJobs(){
   const V=$("#v-jobs");
-  const base=[...JOBS].filter(j=>(jobF.type==="all"||(jobF.type==="con")===CONTRACTORS.has(j.co))&&(jobF.lvl==="all"||lvlClass(j.lvl||"")===jobF.lvl)&&(!jobF.q||(j.t+" "+jobCo(j)+" "+j.loc).toLowerCase().includes(jobF.q)));
+  const base=[...JOBS].filter(j=>(jobF.type==="all"||(jobF.type==="con")===CONTRACTORS.has(j.co))&&(jobF.lvl==="all"||lvlClass(j.lvl||"")===jobF.lvl)&&(jobF.src==="all"||(j.src||"").toLowerCase()===jobF.src)&&(!jobF.q||(j.t+" "+jobCo(j)+" "+j.loc).toLowerCase().includes(jobF.q)));
   const ch=(grp,val,label,cur)=>`<button class="chip" data-jf="${grp}:${val}" aria-pressed="${cur===val}">${label}</button>`;
   let body="";
   if(jobF.sort==="match"){
@@ -1062,12 +1064,13 @@ function renderJobs(){
      <div><h3>Order</h3><div class="chips">${ch("sort","match","Best for you",jobF.sort)}${ch("sort","new","Newest",jobF.sort)}</div></div>
      <div><h3>Employer</h3><div class="chips">${ch("type","all","All",jobF.type)}${ch("type","own","Owners & developers",jobF.type)}${ch("type","con","Contractors",jobF.type)}</div></div>
      <div><h3>Level</h3><div class="chips">${ch("lvl","all","All levels",jobF.lvl)}${ch("lvl","junior","Junior",jobF.lvl)}${ch("lvl","mid","Mid",jobF.lvl)}${ch("lvl","senior","Senior & lead",jobF.lvl)}${ch("lvl","manager","Manager",jobF.lvl)}</div></div>
+     <div><h3>Source</h3><div class="chips">${ch("src","all","All",jobF.src)}${["Seek","Indeed","LinkedIn"].map(s=>{const n=JOBS.filter(j=>j.src===s).length;return n?ch("src",s.toLowerCase(),`${s} <span class="n">${n}</span>`,jobF.src):""}).join("")}</div></div>
+     <div><h3>Search Seek</h3><div class="links">${SEEK_SEARCHES.map(([l,u])=>`<a href="${u}" target="_blank" rel="noopener">${l}</a>`).join("")}</div></div>
      <div><h3>Find recruiters</h3><div class="links">
       <a href="https://www.linkedin.com/search/results/people/?keywords=process%20engineering%20recruiter%20Melbourne" target="_blank" rel="noopener">Melbourne process recruiters</a>
       <a href="https://www.linkedin.com/search/results/people/?keywords=process%20engineering%20recruiter%20Sydney" target="_blank" rel="noopener">Sydney process recruiters</a>
       <a href="https://www.linkedin.com/search/results/people/?keywords=SAF%20renewable%20fuels%20talent%20acquisition%20Australia" target="_blank" rel="noopener">Renewable fuels talent teams</a>
-      <a href="https://www.seek.com.au/mechanical-project-engineer-jobs/in-All-Melbourne-VIC" target="_blank" rel="noopener">Seek: Melbourne</a>
-      <a href="https://www.seek.com.au/mechanical-project-engineer-jobs/in-All-Sydney-NSW" target="_blank" rel="noopener">Seek: Sydney</a></div></div>
+</div></div>
    </aside><div>${body}</div></div>`;
   const cs=$("#cvsave");if(cs)cs.onclick=()=>{const v=$("#cvproj").value.trim();if(v&&!/^https:\/\/claude\.ai\/project\//.test(v)){cs.textContent="Use a claude.ai/project link";return}CVPROJ=v;try{localStorage.setItem(CVPKEY,v)}catch(e){}renderJobs()};
   const qi=$("#jq");qi.oninput=e=>{jobF.q=e.target.value.trim().toLowerCase();const pos=qi.selectionStart;renderJobs();const n=$("#jq");n.focus();n.setSelectionRange(pos,pos)};
