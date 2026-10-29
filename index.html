@@ -782,14 +782,14 @@ const TIERS=[
  {k:4,l:"Perth & suburbs",d:"Your fourth choice"},
  {k:5,l:"Other locations",d:"Outside your preferred areas"}
 ];
-const NSW_METRO=/sydney|kemps creek|rooty hill|matraville|botany|richmond nsw|wetherill|kurnell|parramatta|newcastle|wollongong|port kembla|maitland|rutherford|hunter|kooragang|mayfield|carrington|cecil park|riverstone|alexandria|granville|greystanes|penrith|blacktown/i;
-const BNE=/brisbane|lutwyche|lytton|narangba|wynnum|pinkenba|ipswich|logan|redcliffe|eagle farm/i;
-const PER=/perth|kwinana|welshpool|rockingham|fremantle|malaga|kewdale|henderson|bibra lake/i;
+const NSW_METRO=/sydney|kemps creek|rooty hill|matraville|botany|richmond nsw|wetherill|kurnell|parramatta|newcastle|wollongong|port kembla|maitland|rutherford|hunter|kooragang|mayfield|carrington|cecil park|riverstone|alexandria|granville|greystanes|penrith|blacktown|illawarra|mascot|norwest|chipping norton|rydalmere/i;
+const BNE=/brisbane|lutwyche|lytton|narangba|wynnum|pinkenba|ipswich|logan|redcliffe|eagle farm|wacol|rocklea|springfield|northgate|milton|ipswich/i;
+const PER=/perth|kwinana|welshpool|rockingham|fremantle|malaga|kewdale|henderson|bibra lake|bayswater|osborne park|canning vale/i;
 function tierOf(loc){const l=loc||"";if(/\bVIC\b|victoria/i.test(l))return 1;if(NSW_METRO.test(l))return 2;if(BNE.test(l))return 3;if(PER.test(l))return 4;return 5}
 function matchOf(j){
   if(j._m)return j._m;
   let t=[0,"Role not matched"];for(const [re,s,why] of TITLE_FIT){if(re.test(j.t)){t=[s,why];break}}
-  const s=SECTOR_FIT[j.co]||[8,"Process industry"];
+  const s=SECTOR_FIT[j.co]||(j.sf?[j.sf,j.sw||"Process industry"]:[8,"Process industry"]);
   const lv=lvlClass(j.lvl||"");const lvPts=lv==="senior"||lv==="mid"?10:lv==="manager"?5:0;
   const score=Math.max(5,Math.min(99,Math.round((t[0]+s[0]+lvPts)/69*100)));
   const tier=tierOf(j.loc);

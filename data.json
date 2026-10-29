@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-29T22:20:00+11:00",
+ "updated": "2026-10-29T22:58:00+11:00",
  "jobs": [
   {
    "co": "cleanaway",
@@ -442,6 +442,213 @@
    "u": "https://to.indeed.com/aac9b6d464yd",
    "lvl": "All levels",
    "src": "Indeed"
+  },
+  {
+   "co": "lycopodium",
+   "t": "Senior Mechanical Engineer",
+   "loc": "Melbourne VIC",
+   "d": "2026-08-18",
+   "u": "https://to.indeed.com/aatxgkh8xlbw",
+   "lvl": "Senior",
+   "src": "Indeed"
+  },
+  {
+   "co": "psc",
+   "t": "Senior Process Engineer",
+   "loc": "Melbourne VIC",
+   "d": "2026-08-17",
+   "u": "https://to.indeed.com/aaxbkm4sfpmd",
+   "lvl": "Senior",
+   "src": "Indeed"
+  },
+  {
+   "co": "akzo",
+   "t": "Engineering Manager",
+   "loc": "Melbourne VIC",
+   "d": "2026-09-21",
+   "u": "https://to.indeed.com/aavvxftjw24y",
+   "lvl": "Manager",
+   "src": "Indeed",
+   "cn": "AkzoNobel",
+   "sf": 17,
+   "sw": "Chemical manufacturing plant"
+  },
+  {
+   "co": "sgs",
+   "t": "WWTP & Water Reuse Project Engineer (contract)",
+   "loc": "Bandiana VIC",
+   "d": "2026-10-13",
+   "u": "https://to.indeed.com/aayvygmbfvcr",
+   "lvl": "Mid",
+   "src": "Indeed",
+   "cn": "SGS",
+   "sf": 12,
+   "sw": "Water treatment projects"
+  },
+  {
+   "co": "clough",
+   "t": "Commissioning Engineer – Mechanical",
+   "loc": "Sydney NSW",
+   "d": "2026-09-21",
+   "u": "https://to.indeed.com/aa9tnhqhxwk8",
+   "lvl": "Mid",
+   "src": "Indeed"
+  },
+  {
+   "co": "weir",
+   "t": "Mechanical Engineer",
+   "loc": "Sydney NSW",
+   "d": "2026-09-27",
+   "u": "https://to.indeed.com/aajzdqdllb9l",
+   "lvl": "Mid",
+   "src": "Indeed",
+   "cn": "Weir",
+   "sf": 15,
+   "sw": "Minerals processing equipment"
+  },
+  {
+   "co": "airtrunk",
+   "t": "Senior Mechanical Engineer",
+   "loc": "Sydney NSW",
+   "d": "2026-10-06",
+   "u": "https://to.indeed.com/aap6k4hvhrs9",
+   "lvl": "Senior",
+   "src": "Indeed",
+   "cn": "AirTrunk",
+   "sf": 8,
+   "sw": "Data centre facilities"
+  },
+  {
+   "co": "soto",
+   "t": "Mechanical Engineer (5+ years)",
+   "loc": "Illawarra NSW",
+   "d": "2026-10-13",
+   "u": "https://to.indeed.com/aawk9slxd86s",
+   "lvl": "Mid",
+   "src": "Indeed",
+   "cn": "Soto Consulting Engineers",
+   "sf": 8,
+   "sw": "Engineering consultancy"
+  },
+  {
+   "co": "aggreko",
+   "t": "Mechanical Project Engineer",
+   "loc": "Wacol QLD",
+   "d": "2026-08-31",
+   "u": "https://to.indeed.com/aadgkmsl4fsm",
+   "lvl": "Mid",
+   "src": "Indeed",
+   "cn": "Aggreko",
+   "sf": 12,
+   "sw": "Power and temperature equipment"
+  },
+  {
+   "co": "dulux",
+   "t": "Project Engineer",
+   "loc": "Rocklea QLD",
+   "d": "2026-09-29",
+   "u": "https://to.indeed.com/aadgl8dsj4jn",
+   "lvl": "Mid",
+   "src": "Indeed",
+   "cn": "DuluxGroup",
+   "sf": 16,
+   "sw": "Paint manufacturing plant"
+  },
+  {
+   "co": "bakerhughes",
+   "t": "Engineering Senior Specialist – Customer Project Engineering",
+   "loc": "Springfield Central QLD",
+   "d": "2026-10-05",
+   "u": "https://to.indeed.com/aaqx77dxn8tl",
+   "lvl": "Senior",
+   "src": "Indeed",
+   "cn": "Baker Hughes",
+   "sf": 15,
+   "sw": "Oil and gas equipment"
+  },
+  {
+   "co": "acciona",
+   "t": "Project Engineer, Mechanical (contract)",
+   "loc": "Perth WA",
+   "d": "2026-10-23",
+   "u": "https://to.indeed.com/aaptfbwtqjlm",
+   "lvl": "Mid",
+   "src": "Indeed",
+   "cn": "Acciona",
+   "sf": 14,
+   "sw": "Water and energy infrastructure"
+  },
+  {
+   "co": "acciona",
+   "t": "Site Engineer, Commissioning (contract)",
+   "loc": "Perth WA",
+   "d": "2026-10-26",
+   "u": "https://to.indeed.com/aaknb48nvx6y",
+   "lvl": "Mid",
+   "src": "Indeed",
+   "cn": "Acciona",
+   "sf": 14,
+   "sw": "Water and energy infrastructure"
+  },
+  {
+   "co": "acciona",
+   "t": "Process Engineer (contract)",
+   "loc": "Perth WA",
+   "d": "2026-10-23",
+   "u": "https://to.indeed.com/aa4qqcn228bd",
+   "lvl": "Mid",
+   "src": "Indeed",
+   "cn": "Acciona",
+   "sf": 14,
+   "sw": "Water and energy infrastructure"
+  },
+  {
+   "co": "metso",
+   "t": "Project Engineer – Pumps (contract)",
+   "loc": "West Perth WA",
+   "d": "2026-10-06",
+   "u": "https://to.indeed.com/aamysxvzh4pw",
+   "lvl": "Mid",
+   "src": "Indeed",
+   "cn": "Metso",
+   "sf": 15,
+   "sw": "Minerals processing"
+  },
+  {
+   "co": "cres",
+   "t": "Project Engineer (Nitrogen)",
+   "loc": "Perth WA",
+   "d": "2026-10-06",
+   "u": "https://to.indeed.com/aa22p4rwqf4q",
+   "lvl": "Mid",
+   "src": "Indeed",
+   "cn": "Contract Resources",
+   "sf": 18,
+   "sw": "Refinery shutdown services"
+  },
+  {
+   "co": "civmec",
+   "t": "Project Engineer SMP (contract)",
+   "loc": "South West WA",
+   "d": "2026-10-27",
+   "u": "https://to.indeed.com/aan78y7dwllr",
+   "lvl": "Mid",
+   "src": "Indeed",
+   "cn": "Civmec",
+   "sf": 17,
+   "sw": "SMP construction and shutdowns"
+  },
+  {
+   "co": "civmec",
+   "t": "Senior Project Engineer",
+   "loc": "South West WA",
+   "d": "2026-10-27",
+   "u": "https://to.indeed.com/aaygqrw2tnnx",
+   "lvl": "Senior",
+   "src": "Indeed",
+   "cn": "Civmec",
+   "sf": 17,
+   "sw": "SMP construction and shutdowns"
   }
  ],
  "news": [
