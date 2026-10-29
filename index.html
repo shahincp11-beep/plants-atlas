@@ -57,9 +57,9 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 .tabbar{display:none}
 @media (max-width:860px){
   .nav,.updated{display:none}
-  .tabbar{display:grid;grid-template-columns:repeat(6,1fr);position:fixed;left:0;right:0;bottom:0;z-index:1200;background:rgba(255,255,255,.97);backdrop-filter:blur(10px);border-top:1px solid var(--line);
+  .tabbar{display:grid;grid-template-columns:repeat(7,1fr);position:fixed;left:0;right:0;bottom:0;z-index:1200;background:rgba(255,255,255,.97);backdrop-filter:blur(10px);border-top:1px solid var(--line);
     padding-bottom:env(safe-area-inset-bottom,0px);padding-left:env(safe-area-inset-left,0px);padding-right:env(safe-area-inset-right,0px)}
-  .tabbar a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;height:var(--tab);text-decoration:none;color:var(--faint);font-size:11px;font-weight:600}
+  .tabbar a{position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;height:var(--tab);text-decoration:none;color:var(--faint);font-size:10.5px;font-weight:600;min-width:0}
   .tabbar a[aria-current="page"]{color:var(--ink)}
   .tabbar a[aria-current="page"] svg{color:var(--brand)}
   .view{padding-bottom:calc(var(--tab) + 24px + env(safe-area-inset-bottom,0px))!important}
@@ -240,6 +240,35 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 .tn{width:26px;height:26px;border-radius:8px;display:grid;place-items:center;background:var(--ink);color:#fff;font:800 13px var(--display)}
 .me{background:linear-gradient(135deg,#eef4ff,#f3fbf6);border-radius:16px;padding:14px}
 .me p{margin:0;font-size:13.5px;color:var(--ink)}
+
+/* contacts */
+.contacts-layout{display:grid;grid-template-columns:minmax(0,1fr) 380px;gap:32px;align-items:start}
+@media (max-width:960px){.contacts-layout{grid-template-columns:minmax(0,1fr)}}
+.todo{border-radius:18px;background:linear-gradient(135deg,#eef4ff,#f5f3ff);padding:18px;display:flex;flex-direction:column;gap:10px}
+.todo h2{margin:0;font:700 20px var(--display)}
+.td{background:#fff;border-radius:12px;padding:10px 12px;display:flex;flex-direction:column;gap:3px;border-left:4px solid var(--brand)}
+.td span{font-size:13.5px;color:var(--soft)}
+.td-withdraw{border-left-color:#ef4444}.td-retry{border-left-color:#d97706}.td-message{border-left-color:#16a34a}.td-connect{border-left-color:#2a5bd7}
+.ct{border:1px solid var(--line);border-radius:18px;padding:16px;display:flex;flex-direction:column;gap:9px;background:#fff;min-width:0}
+.ct h4{margin:0;font:700 17px/1.2 var(--display)}
+.ct .kind{font-size:13px;color:var(--soft)}
+.cs{font-size:12px;font-weight:700;border-radius:999px;padding:2px 9px;color:var(--sc);background:color-mix(in srgb,var(--sc) 12%,#fff)}
+.acts{display:flex;flex-wrap:wrap;gap:6px}
+.acts .btn{padding:6px 10px;font-size:12.5px}
+.btn.ghost{color:var(--faint)}
+.emps{display:flex;flex-direction:column;gap:8px}
+.emp{border:1px solid var(--line);border-radius:14px;padding:10px 12px;display:flex;flex-direction:column;gap:8px;background:#fff}
+.emp-h{display:flex;gap:10px;align-items:center}
+.emp-h b{display:block;font-size:14.5px}
+.emp-h .muted{font-size:12.5px}
+.avatar.sm{width:32px;height:32px;border-radius:9px;font-size:12px}
+.linkbtn{font-size:12.5px;font-weight:600;border:1px dashed var(--brand);color:var(--brand);background:#fff;border-radius:8px;padding:4px 9px;cursor:pointer}
+.addform{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,240px),1fr));gap:10px;margin-top:12px;padding:16px;border:1px solid var(--line);border-radius:16px;background:var(--surface)}
+.addform label{display:flex;flex-direction:column;gap:4px;font-size:13px;font-weight:600;color:var(--soft)}
+.addform input,.addform select{font:15px var(--body);padding:9px 11px;border:1px solid var(--line);border-radius:10px;background:#fff;color:var(--ink)}
+.addform button{align-self:end}
+.badge{position:absolute;top:8px;right:calc(50% - 20px);min-width:16px;height:16px;border-radius:8px;background:#ef4444;color:#fff;font:700 10px/16px var(--body);text-align:center;padding:0 4px}
+.nav a{position:relative}.nav .badge{top:2px;right:2px}
 /* Leaflet core (inlined) */
 .leaflet-pane,.leaflet-tile,.leaflet-marker-icon,.leaflet-marker-shadow,.leaflet-tile-container,.leaflet-pane>svg,.leaflet-pane>canvas,.leaflet-zoom-box,.leaflet-image-layer,.leaflet-layer{position:absolute;left:0;top:0}
 .leaflet-container{overflow:hidden;-webkit-tap-highlight-color:transparent;font:13px/1.4 var(--body)}
@@ -320,6 +349,7 @@ svg.leaflet-zoom-animated{will-change:transform}
   <section class="view" id="v-industries" hidden></section>
   <section class="view" id="v-projects" hidden></section>
   <section class="view" id="v-jobs" hidden></section>
+  <section class="view" id="v-contacts" hidden></section>
   <section class="view" id="v-companies" hidden></section>
   <section class="view" id="v-news" hidden></section>
 </main>
@@ -639,9 +669,10 @@ const ICONS={
  projects:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 20h16M6 20V9l6-5 6 5v11"/><path d="M10 20v-5h4v5"/></svg>',
  jobs:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2M3 13h18"/></svg>',
  companies:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M4 21V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v16M16 9h2a2 2 0 0 1 2 2v10M8 7h4M8 11h4M8 15h4M2 21h20"/></svg>',
+ contacts:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0M16 4.5a3.5 3.5 0 0 1 0 7M18.5 14a6 6 0 0 1 3 6"/></svg>',
  news:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M4 5h13v14a2 2 0 0 0 2 2H6a2 2 0 0 1-2-2Z"/><path d="M17 9h3v10a2 2 0 0 1-2 2M8 9h5M8 13h5M8 17h3"/></svg>'
 };
-const VIEWS=[["map","Map"],["industries","Industries"],["projects","Projects"],["jobs","Jobs"],["companies","Companies"],["news","News"]];
+const VIEWS=[["map","Map"],["industries","Industries"],["projects","Projects"],["jobs","Jobs"],["contacts","Contacts"],["companies","Companies"],["news","News"]];
 $("#nav").innerHTML=VIEWS.map(([k,l])=>`<a href="#${k}" data-v="${k}">${ICONS[k]}${l}</a>`).join("");
 $("#tabbar").innerHTML=VIEWS.map(([k,l])=>`<a href="#${k}" data-v="${k}">${ICONS[k]}${l}</a>`).join("");
 $("#mark").innerHTML=["eth","saf","bd","chem","sugar","lng","oil","h2","ref"].map(c=>`<i style="background:${col(c)}"></i>`).join("");
@@ -850,7 +881,7 @@ async function loadLive(){
     if(d.updated)UPDATED=d.updated;
     ITEMS.forEach(it=>{it.jobs=jobsOf(cos(it));if(it.m)it.m.setIcon(pinIcon(it))});
     const u=$("#updated");if(u)u.textContent="Updated "+fmtUpdated();
-    renderIndustries();renderProjects();renderJobs();renderCompanies();renderNews();
+    renderIndustries();renderProjects();renderJobs();renderCompanies();renderNews();renderContacts();updateBadge();
   }catch(e){}
 }
 
@@ -884,8 +915,102 @@ function renderNews(){
    <p class="foot">Plant and project data come from operator and government sources, Indeed and LinkedIn listings, and your October 2026 project intelligence notes. Items marked approximate or to verify are unconfirmed. Map imagery © Esri and its data partners.</p>`;
 }
 
+/* ---------- contacts tracker (stored on this device) ---------- */
+const CKEY="pa_contacts_v1";
+const WITHDRAW_DAYS=14, RETRY_DAYS=21;
+const SEED_CONTACTS=[{id:"seed-sam",name:"Sam Edwards",title:"Strategic Talent Acquisition Partner",co:"cleanaway",url:"",follow:false,req:"none",reqDate:"",wdDate:"",note:"Posted the Western Sydney MRF Reliability & Plant Maintenance Supervisor role"}];
+function loadContacts(){try{const s=localStorage.getItem(CKEY);if(s)return JSON.parse(s)}catch(e){}return SEED_CONTACTS.map(c=>({...c}))}
+let CONTACTS=loadContacts();
+function saveContacts(){try{localStorage.setItem(CKEY,JSON.stringify(CONTACTS))}catch(e){}}
+const today=()=>new Date().toISOString().slice(0,10);
+const daysSince=d=>d?Math.floor((Date.now()-new Date(d+"T00:00:00").getTime())/864e5):0;
+const first=n=>(n||"").trim().split(/\s+/)[0]||"there";
+const coLabel=k=>{const j=JOBS.find(x=>x.co===k&&x.cn);return (j&&j.cn)||coName(k)};
+function liSearch(q){return "https://www.linkedin.com/search/results/people/?keywords="+enc(q)}
+function profileLink(c){return c.url||liSearch(c.name+" "+coLabel(c.co))}
+function bestJob(k){return JOBS.filter(j=>j.co===k).sort((a,b)=>matchOf(a).tier-matchOf(b).tier||matchOf(b).score-matchOf(a).score)[0]}
+function connectNote(c){return `Hi ${first(c.name)}, I'm a Mechanical Project Engineer (Engineers Australia PEng) with 10+ years in refinery and process plant capex: piping installation (ASME B31.3 / AS4041), commissioning, CMMS and shutdown planning. I'm keen on opportunities at ${coLabel(c.co)} and would like to connect. Thanks, Shahin`}
+function applyMsg(c){const j=bestJob(c.co);return `Hi ${first(c.name)},\n\nI've just applied for the ${j?j.t:"engineering"} role at ${coLabel(c.co)}${j?` (${j.loc})`:""}. I'm a Mechanical Project Engineer (PEng) with 10+ years delivering brownfield capex in refineries and process plants: equipment and piping installation to ASME B31.3 and AS4041, P&ID and drawing review, pressure/vacuum testing and commissioning support, plus building CMMS, maintenance and shutdown planning.\n\nI'd really value a short chat about the role or the team's upcoming projects.\n\nKind regards,\nShahin C P\n+61 489 206 909 | shahincp11@gmail.com`}
+function todoOf(c){
+  if(c.req==="pending"&&daysSince(c.reqDate)>=WITHDRAW_DAYS)return {k:"withdraw",t:`Withdraw your request to ${c.name}`,s:`Sent ${daysSince(c.reqDate)} days ago with no reply. Withdraw it on LinkedIn, then tap Withdrawn.`};
+  if(c.req==="withdrawn"&&daysSince(c.wdDate)>=RETRY_DAYS)return {k:"retry",t:`Try ${c.name} again`,s:`It's been ${daysSince(c.wdDate)} days since you withdrew. Follow them and send a fresh request.`};
+  if(c.req==="none")return {k:"connect",t:`Connect with ${c.name}`,s:`${coLabel(c.co)}. Follow first, then send a request with the note below.`};
+  if(c.req==="connected"&&JOBS.some(j=>j.co===c.co))return {k:"message",t:`Message ${c.name} about a role`,s:`${coLabel(c.co)} has ${JOBS.filter(j=>j.co===c.co).length} open role(s). Apply, then send the message below.`};
+  return null;
+}
+function statusChip(c){
+  const m={none:["Not connected","#94a3b8"],pending:[`Request sent ${daysSince(c.reqDate)}d ago`,"#d97706"],connected:["Connected","#16a34a"],withdrawn:[`Withdrawn ${daysSince(c.wdDate)}d ago`,"#ef4444"]}[c.req]||["",""];
+  return `<span class="cs" style="--sc:${m[1]}">${m[0]}</span>${c.follow?'<span class="cs" style="--sc:#2a5bd7">Following</span>':""}`;
+}
+function contactCard(c){
+  return `<article class="ct" data-id="${c.id}">
+   <div class="co-top"><span class="avatar" style="--c:${coColor(c.co)}">${initials(c.name)}</span><div style="min-width:0"><h4>${esc(c.name)}</h4><div class="kind">${esc(c.title||"")}${c.title?", ":""}${esc(coLabel(c.co))}</div></div></div>
+   <div class="tags">${statusChip(c)}</div>
+   ${c.note?`<p class="muted" style="margin:0">${esc(c.note)}</p>`:""}
+   <div class="links"><a href="${profileLink(c)}" target="_blank" rel="noopener">${c.url?"Open LinkedIn profile":"Find on LinkedIn"}</a></div>
+   <div class="acts">
+     <button class="btn" data-act="follow">${c.follow?"Not following":"I followed"}</button>
+     ${c.req==="none"||c.req==="withdrawn"?'<button class="btn" data-act="sent">Request sent</button>':""}
+     ${c.req==="pending"?'<button class="btn" data-act="accepted">Accepted</button><button class="btn" data-act="withdrawn">Withdrawn</button>':""}
+     ${c.req==="connected"?'<button class="btn" data-act="reset">Not connected</button>':""}
+     <button class="btn" data-act="copynote">Copy connect note</button>
+     <button class="btn" data-act="copymsg">Copy job message</button>
+     <button class="btn ghost" data-act="remove">Remove</button>
+   </div></article>`;
+}
+let addOpen=false;
+function renderContacts(){
+  const V=$("#v-contacts");
+  const todos=CONTACTS.map(c=>[c,todoOf(c)]).filter(x=>x[1]).sort((a,b)=>["withdraw","retry","message","connect"].indexOf(a[1].k)-["withdraw","retry","message","connect"].indexOf(b[1].k));
+  const emps=[...new Set(JOBS.map(j=>j.co))].map(k=>({k,best:bestJob(k),n:JOBS.filter(j=>j.co===k).length})).sort((a,b)=>matchOf(a.best).tier-matchOf(b.best).tier||matchOf(b.best).score-matchOf(a.best).score).slice(0,30);
+  V.innerHTML=`<div class="vhead"><div class="grow"><h1>Contacts</h1><p>The people to know at each employer you're targeting. Follow them, connect, and the app tells you when to message, withdraw a stale request (after ${WITHDRAW_DAYS} days) and try again (${RETRY_DAYS} days later). Your list is saved on this phone.</p></div></div>
+  <div class="contacts-layout"><div>
+   <section class="todo"><h2>To do</h2>${todos.length?todos.map(([c,t])=>`<div class="td td-${t.k}"><b>${esc(t.t)}</b><span>${esc(t.s)}</span><div class="links"><a href="${profileLink(c)}" target="_blank" rel="noopener">Open on LinkedIn</a></div></div>`).join(""):`<p class="muted" style="margin:0">Nothing due. Add people from the employer list to start.</p>`}</section>
+   <h2 class="section-title">Your people <small class="muted">${CONTACTS.length}</small></h2>
+   <div class="grid">${CONTACTS.map(contactCard).join("")||'<div class="empty">No contacts yet. Use "Find a recruiter" on any employer, then save the person here.</div>'}</div>
+   <div style="margin-top:14px"><button class="btn primary" id="addbtn">${addOpen?"Close":"Add a contact"}</button></div>
+   ${addOpen?`<form class="addform" id="addform">
+     <label>Name<input id="f-name" required placeholder="e.g. Sam Edwards"></label>
+     <label>Job title<input id="f-title" placeholder="e.g. Talent Acquisition Partner"></label>
+     <label>Company<select id="f-co">${emps.map(e=>`<option value="${e.k}">${esc(coLabel(e.k))}</option>`).join("")}<option value="other">Other</option></select></label>
+     <label>Other company name<input id="f-other" placeholder="Only if Other"></label>
+     <label>LinkedIn profile link<input id="f-url" type="url" placeholder="https://www.linkedin.com/in/…"></label>
+     <button class="btn primary" type="submit">Save contact</button></form>`:""}
+  </div>
+  <aside><h2 class="section-title" style="margin-top:0">Who to find at each employer</h2>
+   <p class="muted" style="margin:0 0 10px">Ordered by your best job match. Each button opens LinkedIn already searching that company.</p>
+   <div class="emps">${emps.map(e=>{const nm=coLabel(e.k);const m=matchOf(e.best);return `<div class="emp"><div class="emp-h"><span class="avatar sm" style="--c:${coColor(e.k)}">${initials(nm)}</span><div style="min-width:0"><b>${esc(nm)}</b><span class="muted">${e.n} role${e.n>1?"s":""}, best ${m.score}% (${esc(e.best.loc)})</span></div></div>
+     <div class="links"><a href="${liSearch("talent acquisition "+nm)}" target="_blank" rel="noopener">Find a recruiter</a><a href="${liSearch("engineering manager "+nm)}" target="_blank" rel="noopener">Engineering manager</a><a href="${liSearch("projects manager "+nm)}" target="_blank" rel="noopener">Projects manager</a><button class="linkbtn" data-addco="${e.k}">Save a person</button></div></div>`}).join("")}</div>
+  </aside></div>`;
+  const ab=$("#addbtn");if(ab)ab.onclick=()=>{addOpen=!addOpen;renderContacts()};
+  const f=$("#addform");if(f)f.onsubmit=e=>{e.preventDefault();let co=$("#f-co").value;const other=$("#f-other").value.trim();
+    if(co==="other"){co=other?other.toLowerCase().replace(/[^a-z0-9]+/g,""):"other";if(other)JOBS.find(j=>j.co===co)||(CO[co]={n:other})}
+    const url=$("#f-url").value.trim();
+    CONTACTS.unshift({id:"c"+Date.now(),name:$("#f-name").value.trim(),title:$("#f-title").value.trim(),co,url:/linkedin\.com\//i.test(url)?url:"",follow:false,req:"none",reqDate:"",wdDate:"",note:""});
+    saveContacts();addOpen=false;renderContacts();updateBadge()};
+}
+function copyText(t,btn){const done=()=>{const o=btn.textContent;btn.textContent="Copied";setTimeout(()=>btn.textContent=o,1500)};
+  if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(done).catch(()=>fallbackCopy(t,done))}else fallbackCopy(t,done)}
+function fallbackCopy(t,done){const ta=document.createElement("textarea");ta.value=t;ta.style.position="fixed";ta.style.opacity="0";document.body.appendChild(ta);ta.select();try{document.execCommand("copy");done()}catch(e){}ta.remove()}
+$("#v-contacts").addEventListener("click",e=>{
+  const ac=e.target.closest("[data-addco]");if(ac){addOpen=true;renderContacts();const s=$("#f-co");if(s)s.value=ac.dataset.addco;$("#addform").scrollIntoView({behavior:"smooth",block:"center"});return}
+  const b=e.target.closest("[data-act]");if(!b)return;const card=b.closest("[data-id]");const c=CONTACTS.find(x=>x.id===card.dataset.id);if(!c)return;
+  const a=b.dataset.act;
+  if(a==="copynote")return copyText(connectNote(c),b);
+  if(a==="copymsg")return copyText(applyMsg(c),b);
+  if(a==="follow")c.follow=!c.follow;
+  if(a==="sent"){c.req="pending";c.reqDate=today();c.follow=true}
+  if(a==="accepted")c.req="connected";
+  if(a==="withdrawn"){c.req="withdrawn";c.wdDate=today()}
+  if(a==="reset")c.req="none";
+  if(a==="remove"){if(b.dataset.confirm!=="1"){b.dataset.confirm="1";b.textContent="Tap again to remove";return}CONTACTS=CONTACTS.filter(x=>x!==c)}
+  saveContacts();renderContacts();updateBadge();
+});
+function updateBadge(){const n=CONTACTS.map(todoOf).filter(t=>t&&(t.k==="withdraw"||t.k==="retry"||t.k==="message")).length;
+  document.querySelectorAll('[data-v="contacts"]').forEach(a=>{let s=a.querySelector(".badge");if(n){if(!s){s=document.createElement("span");s.className="badge";a.appendChild(s)}s.textContent=n}else if(s)s.remove()})}
+
 /* ---------- boot ---------- */
-mapChips();renderIndustries();renderProjects();renderJobs();renderCompanies();renderNews();initMap();route();loadLive();
+mapChips();renderIndustries();renderProjects();renderJobs();renderCompanies();renderNews();renderContacts();initMap();route();updateBadge();loadLive();
 </script>
 
 </body>
