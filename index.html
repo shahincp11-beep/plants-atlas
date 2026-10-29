@@ -306,6 +306,12 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 .idform{display:flex;flex-wrap:wrap;gap:6px}
 .idform input{flex:1 1 160px}
 .pin.mine{width:16px;height:16px;border-radius:50% 50% 50% 0;transform:rotate(-45deg);border:2.5px solid #2a5bd7}
+
+.avatar{position:relative;overflow:hidden}
+.avatar.haslogo{background:#fff;border:1px solid var(--line);color:transparent}
+.avatar img{position:absolute;inset:18%;width:64%;height:64%;object-fit:contain}
+.avatar.person img{inset:auto -1px -1px auto;width:18px;height:18px;background:#fff;border-radius:5px;border:1.5px solid #fff;box-shadow:0 0 0 1px var(--line)}
+.minilogo{width:16px;height:16px;border-radius:4px;vertical-align:-3px;margin-right:6px;object-fit:contain;background:#fff}
 /* Leaflet core (inlined) */
 .leaflet-pane,.leaflet-tile,.leaflet-marker-icon,.leaflet-marker-shadow,.leaflet-tile-container,.leaflet-pane>svg,.leaflet-pane>canvas,.leaflet-zoom-box,.leaflet-image-layer,.leaflet-layer{position:absolute;left:0;top:0}
 .leaflet-container{overflow:hidden;-webkit-tap-highlight-color:transparent;font:13px/1.4 var(--body)}
@@ -812,7 +818,7 @@ function popupHTML(it){
   const facts=it.kind==="plant"
    ?`<dt>Location</dt><dd>${esc(it.loc)}</dd><dt>Capacity</dt><dd>${esc(it.cap)}</dd><dt>Feedstock</dt><dd>${esc(it.feed)}</dd>`
    :`<dt>Location</dt><dd>${esc(it.loc)}</dd><dt>Scale</dt><dd>${esc(it.cap)}</dd><dt>Investment</dt><dd>${esc(it.inv)}</dd><dt>Timeline</dt><dd>${esc(it.tl)}</dd><dt>Contractor</dt><dd>${esc(it.epc)}</dd>`;
-  return `<div class="pop">${stageTag(it)}<h3>${esc(it.n)}</h3><p class="owner">${owners.length?owners.map(coName).map(esc).join(", "):"Owner not stated"}</p>
+  return `<div class="pop">${stageTag(it)}<h3>${esc(it.n)}</h3><p class="owner">${owners.map(k=>miniLogo(k)).join("")}${owners.length?owners.map(coName).map(esc).join(", "):"Owner not stated"}</p>
    <div class="tags">${it.cats.map(c=>`<span class="tag" style="--c:${col(c)}"><i class="d"></i>${CATS[c].l}</span>`).join("")}</div>
    <dl class="facts">${facts}</dl>${it.note?`<p>${esc(it.note)}</p>`:""}${it.approx?`<p class="warn">Map position is approximate.</p>`:""}
    ${it.src?`<a class="muted" href="${it.src}" target="_blank" rel="noopener">Read the source</a>`:it.kind==="project"?`<span class="muted">Source: your October 2026 project notes</span>`:""}
@@ -827,6 +833,10 @@ function siteCard(it){
    <div class="row">${it.jobs.length?`<span class="hiring">${it.jobs.length} job${it.jobs.length>1?"s":""} open</span>`:"<span></span>"}<button class="btn" data-go="${it.i}">View on map</button></div></article>`;
 }
 
+const LOGO_DOMAINS={"cleanaway": "cleanaway.com.au", "nufarm": "nufarm.com", "bhp": "bhp.com", "santos": "santos.com", "dyno": "dynonobel.com", "ixom": "ixom.com", "orica": "orica.com", "ampol": "ampol.com.au", "graincorp": "graincorp.com.au", "coogee": "coogee.com.au", "perdaman": "perdaman.com.au", "worley": "worley.com", "monadelphous": "monadelphous.com.au", "lycopodium": "lycopodium.com", "wood": "woodplc.com", "cargill": "cargill.com.au", "manildra": "manildra.com.au", "wilmar": "wilmarsugar-anz.com", "viva": "vivaenergy.com.au", "bp": "bp.com", "jetzero": "jetzero.com.au", "licella": "licella.com.au", "southernoil": "sor.com.au", "csbp": "csbp.com.au", "woodside": "woodside.com", "chevron": "chevron.com", "inpex": "inpex.com.au", "justbio": "justbiodiesel.com.au", "bega": "begacheese.com.au", "visy": "visy.com.au", "sulzer": "sulzer.com", "cpb": "cpbcon.com.au", "ppg": "ppg.com", "asahi": "asahibeverages.com.au", "gfg": "gfgalliance.com", "ansto": "ansto.gov.au", "downer": "downergroup.com", "akzo": "akzonobel.com", "sgs": "sgs.com", "airtrunk": "airtrunk.com", "aggreko": "aggreko.com", "dulux": "dulux.com.au", "bakerhughes": "bakerhughes.com", "acciona": "acciona.com.au", "metso": "metso.com", "civmec": "civmec.com.au", "qenos": "qenos.com", "dow": "dow.com", "basf": "basf.com", "unilever": "unilever.com.au", "csl": "csl.com", "mondelez": "mondelezinternational.com", "bluescope": "bluescope.com", "alcoa": "alcoa.com", "fonterra": "fonterra.com", "saputo": "saputo.com", "spc": "spc.com.au", "opal": "opalanz.com", "agl": "agl.com.au", "ea": "energyaustralia.com.au", "esso": "exxonmobil.com.au", "origin": "originenergy.com.au", "tomago": "tomago.com.au", "rio": "riotinto.com", "glencore": "glencore.com", "diageo": "diageo.com", "tronox": "tronox.com", "albemarle": "albemarle.com", "jacobs": "jacobs.com", "ghd": "ghd.com", "wsp": "wsp.com", "aurecon": "aurecongroup.com", "hatch": "hatch.com", "ugl": "ugl.com.au", "ventia": "ventia.com", "nyrstar": "nyrstar.com", "sydneywater": "sydneywater.com.au", "melbwater": "melbournewater.com.au", "kellanova": "kellanova.com", "swagelok": "swagelok.com", "marand": "marand.com.au", "eurekaag": "eurekaag.com.au", "yara": "yara.com", "sugaraus": "sugaraustralia.com.au", "tarac": "tarac.com.au", "united": "unitedpetroleum.com.au", "shell": "shell.com.au", "hazer": "hazergroup.com.au", "fortescue": "fortescue.com", "vopak": "vopak.com", "jemena": "jemena.com.au", "barwon": "barwonwater.vic.gov.au", "geelongport": "geelongport.com.au", "weir": "global.weir", "clough": "webuildgroup.com", "primero": "primero.com.au", "mondelez2": "mondelez.com"};
+function logoSrc(k){const d=LOGO_DOMAINS[k];return d?`https://www.google.com/s2/favicons?domain=${d}&sz=128`:""}
+function coAvatar(k,name,cls){const s=logoSrc(k);return `<span class="avatar ${cls||""}${s?" haslogo":""}" style="--c:${coColor(k)}">${initials(name)}${s?`<img src="${s}" alt="" loading="lazy" onerror="this.parentNode.classList.remove('haslogo');this.remove()">`:""}</span>`}
+function miniLogo(k){const s=logoSrc(k);return s?`<img class="minilogo" src="${s}" alt="" loading="lazy" onerror="this.remove()">`:""}
 /* ---------- shell: nav, spectrum, mark ---------- */
 const ICONS={
  map:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2-6-2Z"/><path d="M9 4v14M15 6v14"/></svg>',
@@ -1005,7 +1015,7 @@ function ring(score){const c=score>=80?"#16a34a":score>=65?"#2a5bd7":score>=45?"
 let jobF={type:"all",lvl:"all",q:"",sort:"match"};
 const jobCo=j=>j.cn||coName(j.co);
 function jobRow(j){const nm=jobCo(j);const m=matchOf(j);
-  return `<a class="job" href="${j.u}" target="_blank" rel="noopener">${jobF.sort==="match"?ring(m.score):`<span class="avatar" style="--c:${coColor(j.co)}">${initials(nm)}</span>`}<span><b>${esc(j.t)}</b><span class="sub">${esc(nm)}, ${esc(j.loc)}</span>${jobF.sort==="match"?`<span class="why">${m.why.slice(0,2).map(w=>`<i>${esc(w)}</i>`).join("")}</span>`:""}</span><span class="right"><span class="lvl ${lvlClass(j.lvl||"")}">${esc(j.lvl||"Level not stated")}</span><span>${fmtD(j.d)} on ${esc(j.src||"web")}</span></span></a>`}
+  return `<a class="job" href="${j.u}" target="_blank" rel="noopener">${jobF.sort==="match"?ring(m.score):`${coAvatar(j.co,nm)}`}<span><b>${esc(j.t)}</b><span class="sub">${miniLogo(j.co)}${esc(nm)}, ${esc(j.loc)}</span>${jobF.sort==="match"?`<span class="why">${m.why.slice(0,2).map(w=>`<i>${esc(w)}</i>`).join("")}</span>`:""}</span><span class="right"><span class="lvl ${lvlClass(j.lvl||"")}">${esc(j.lvl||"Level not stated")}</span><span>${fmtD(j.d)} on ${esc(j.src||"web")}</span></span></a>`}
 function renderJobs(){
   const V=$("#v-jobs");
   const base=[...JOBS].filter(j=>(jobF.type==="all"||(jobF.type==="con")===CONTRACTORS.has(j.co))&&(jobF.lvl==="all"||lvlClass(j.lvl||"")===jobF.lvl)&&(!jobF.q||(j.t+" "+jobCo(j)+" "+j.loc).toLowerCase().includes(jobF.q)));
@@ -1062,7 +1072,7 @@ function renderCompanies(){
    <div class="chips" style="margin-bottom:16px">${ch("all","All")}${ch("dev","Developers & technology")}${ch("own","Owners & operators")}${ch("con","EPC & EPCM contractors")}</div>
    <div class="grid">${list.map(c=>{const nm=c.n||coName(c.k);const js=jobsOf([c.k]);const linked=ITEMS.filter(i=>cos(i).includes(c.k));
     const fit=c.tier?`<span class="fit ${/top/i.test(c.tier)?"top":/hiring/i.test(c.tier)?"hire":""}">${esc(c.tier)}</span>`:"";
-    return `<article class="co"><div class="co-top"><span class="avatar" style="--c:${coColor(c.k)}">${initials(nm)}</span><div><h4>${esc(nm)}</h4><div class="kind">${esc(c.t)}, ${esc(c.hq)}</div></div></div>${fit}
+    return `<article class="co"><div class="co-top">${coAvatar(c.k,nm)}<div><h4>${esc(nm)}</h4><div class="kind">${esc(c.t)}, ${esc(c.hq)}</div></div></div>${fit}
      <p style="margin:0;color:var(--soft)">${esc(c.f)}</p>
      ${linked.length?`<div class="muted">On the map: ${linked.map(i=>`<a href="#map" data-go="${i.i}">${esc(i.n)}</a>`).join(", ")}</div>`:""}
      ${js.length?`<div class="joblist" style="border:0;padding:0">${js.slice(0,3).map(j=>`<a class="mini" href="${j.u}" target="_blank" rel="noopener"><b>${esc(j.t)}</b><span>${esc(j.loc)}, ${fmtD(j.d)}</span></a>`).join("")}${js.length>3?`<span class="muted">and ${js.length-3} more in Jobs</span>`:""}</div>`:""}
@@ -1098,7 +1108,7 @@ const SECTOR_FEEDS=[["Refinery and renewable fuels","refinery project engineer A
 const ROLE_SEARCHES=[["Recruiters & HR","talent acquisition"],["Engineering managers","engineering manager"],["Project managers","project manager"],["Maintenance managers","maintenance manager"]];
 let peopleSeg="find";
 function personCard(p){const nm=coLabel(p.co);const j=bestJob(p.co);
-  return `<article class="ct"><div class="co-top"><span class="avatar" style="--c:${coColor(p.co||p.name)}">${initials(p.name)}</span><div style="min-width:0"><h4>${esc(p.name)}</h4><div class="kind">${esc(p.role||"")}${p.role?", ":""}${esc(nm)}</div></div></div>
+  return `<article class="ct"><div class="co-top"><span class="avatar person" style="--c:${coColor(p.co||p.name)}">${initials(p.name)}${miniLogo(p.co)}</span><div style="min-width:0"><h4>${esc(p.name)}</h4><div class="kind">${esc(p.role||"")}${p.role?", ":""}${esc(nm)}</div></div></div>
    ${p.why?`<p class="muted" style="margin:0">${esc(p.why)}</p>`:""}
    ${j?`<span class="hiring" style="align-self:flex-start">${esc(nm)} has ${JOBS.filter(x=>x.co===p.co).length} open role(s), best ${matchOf(j).score}%</span>`:""}
    <div class="links"><a class="li" href="${p.url||liPeople(p.name+" "+nm)}" target="_blank" rel="noopener">${p.url?"Open LinkedIn profile":"Open on LinkedIn"}</a><a href="${liPosts(p.name+" hiring")}" target="_blank" rel="noopener">Their recent posts</a>
@@ -1114,7 +1124,7 @@ function renderFind(){
    <div class="grid">${PEOPLE.map(personCard).join("")}</div></section>
   <section><h2 class="section-title">Right person at each employer</h2>
    <p class="muted" style="margin:0 0 12px">Ordered by your best job match. Each button opens LinkedIn showing that company's people in Australia.</p>
-   <div class="emps two">${emps.map(e=>{const nm=coLabel(e.k);const m=matchOf(e.best);return `<div class="emp"><div class="emp-h"><span class="avatar sm" style="--c:${coColor(e.k)}">${initials(nm)}</span><div style="min-width:0"><b>${esc(nm)}</b><span class="muted">${e.n} role${e.n>1?"s":""}, best ${m.score}% (${esc(e.best.loc)})</span></div></div>
+   <div class="emps two">${emps.map(e=>{const nm=coLabel(e.k);const m=matchOf(e.best);return `<div class="emp"><div class="emp-h">${coAvatar(e.k,nm,"sm")}<div style="min-width:0"><b>${esc(nm)}</b><span class="muted">${e.n} role${e.n>1?"s":""}, best ${m.score}% (${esc(e.best.loc)})</span></div></div>
     <div class="links">${ROLE_SEARCHES.map(([l,q])=>`<a class="li" href="${liPeople(q+" "+nm)}" target="_blank" rel="noopener">${l}</a>`).join("")}<a href="${liPosts(nm+" hiring engineer")}" target="_blank" rel="noopener">Their hiring posts</a><button class="linkbtn" data-addco="${e.k}">Save a person</button></div></div>`}).join("")}</div></section>`;
 }
 
@@ -1147,7 +1157,7 @@ function statusChip(c){
 }
 function contactCard(c){
   return `<article class="ct" data-id="${c.id}">
-   <div class="co-top"><span class="avatar" style="--c:${coColor(c.co)}">${initials(c.name)}</span><div style="min-width:0"><h4>${esc(c.name)}</h4><div class="kind">${esc(c.title||"")}${c.title?", ":""}${esc(coLabel(c.co))}</div></div></div>
+   <div class="co-top"><span class="avatar person" style="--c:${coColor(c.co)}">${initials(c.name)}${miniLogo(c.co)}</span><div style="min-width:0"><h4>${esc(c.name)}</h4><div class="kind">${esc(c.title||"")}${c.title?", ":""}${esc(coLabel(c.co))}</div></div></div>
    <div class="tags">${statusChip(c)}</div>
    ${c.note?`<p class="muted" style="margin:0">${esc(c.note)}</p>`:""}
    <div class="links"><a href="${profileLink(c)}" target="_blank" rel="noopener">${c.url?"Open LinkedIn profile":"Find on LinkedIn"}</a></div>
@@ -1296,7 +1306,7 @@ function liPanel(){
 }
 function knownPanel(){const k=knownAtTargets();if(!k.length)return "";
   return `<h2 class="section-title" style="margin-top:0">People you already know <small class="muted">${k.length}</small></h2><p class="muted" style="margin:0 0 10px">Your LinkedIn connections at employers with open roles. Save them to track and message.</p>
-   <div class="emps" style="margin-bottom:22px">${k.slice(0,25).map((c,i)=>`<div class="emp"><div class="emp-h"><span class="avatar sm" style="--c:${coColor(c.k)}">${initials(c.name)}</span><div style="min-width:0"><b>${esc(c.name)}</b><span class="muted">${esc(c.position||"")}${c.position?", ":""}${esc(c.company)}</span></div></div><div class="links">${c.url?`<a href="${c.url}" target="_blank" rel="noopener">Profile</a>`:""}<button class="linkbtn" data-savekn="${i}">Save as contact</button></div></div>`).join("")}</div>`}
+   <div class="emps" style="margin-bottom:22px">${k.slice(0,25).map((c,i)=>`<div class="emp"><div class="emp-h"><span class="avatar sm person" style="--c:${coColor(c.k)}">${initials(c.name)}${miniLogo(c.k)}</span><div style="min-width:0"><b>${esc(c.name)}</b><span class="muted">${esc(c.position||"")}${c.position?", ":""}${esc(c.company)}</span></div></div><div class="links">${c.url?`<a href="${c.url}" target="_blank" rel="noopener">Profile</a>`:""}<button class="linkbtn" data-savekn="${i}">Save as contact</button></div></div>`).join("")}</div>`}
 $("#v-contacts").addEventListener("change",async e=>{
   if(e.target.id!=="lifile"||!e.target.files.length)return;
   window._liMsg="Reading your LinkedIn file…";const r=$("#liresult");if(r)r.textContent=window._liMsg;
