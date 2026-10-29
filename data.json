@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-29T22:58:00+11:00",
+ "updated": "2026-10-29T23:10:00+11:00",
  "jobs": [
   {
    "co": "cleanaway",
@@ -470,7 +470,7 @@
    "lvl": "Manager",
    "src": "Indeed",
    "cn": "AkzoNobel",
-   "sf": 17,
+   "sf": 18,
    "sw": "Chemical manufacturing plant"
   },
   {
@@ -503,8 +503,8 @@
    "lvl": "Mid",
    "src": "Indeed",
    "cn": "Weir",
-   "sf": 15,
-   "sw": "Minerals processing equipment"
+   "sf": 19,
+   "sw": "Pumps, valves and minerals processing"
   },
   {
    "co": "airtrunk",
@@ -551,7 +551,7 @@
    "lvl": "Mid",
    "src": "Indeed",
    "cn": "DuluxGroup",
-   "sf": 16,
+   "sf": 18,
    "sw": "Paint manufacturing plant"
   },
   {
@@ -611,8 +611,8 @@
    "lvl": "Mid",
    "src": "Indeed",
    "cn": "Metso",
-   "sf": 15,
-   "sw": "Minerals processing"
+   "sf": 18,
+   "sw": "Pumps, valves and minerals processing"
   },
   {
    "co": "cres",
@@ -649,6 +649,134 @@
    "cn": "Civmec",
    "sf": 17,
    "sw": "SMP construction and shutdowns"
+  },
+  {
+   "co": "asahi",
+   "t": "Maintenance Planner",
+   "loc": "Melbourne VIC",
+   "d": "2026-09-30",
+   "u": "https://to.indeed.com/aak922zstplw",
+   "lvl": "Mid",
+   "src": "Indeed",
+   "cn": "Asahi Beverages"
+  },
+  {
+   "co": "ppg",
+   "t": "Maintenance Engineer",
+   "loc": "Clayton VIC",
+   "d": "2026-09-16",
+   "u": "https://to.indeed.com/aavjm7bxkqrt",
+   "lvl": "Mid",
+   "src": "Indeed",
+   "cn": "PPG"
+  },
+  {
+   "co": "ppg",
+   "t": "Maintenance Supervisor",
+   "loc": "Clayton VIC",
+   "d": "2026-09-17",
+   "u": "https://to.indeed.com/aahykrbnvqhp",
+   "lvl": "Mid / lead",
+   "src": "Indeed",
+   "cn": "PPG"
+  },
+  {
+   "co": "visy",
+   "t": "Reliability Engineer",
+   "loc": "North Melbourne VIC",
+   "d": "2026-08-12",
+   "u": "https://to.indeed.com/aaqxt2kxswkr",
+   "lvl": "Mid",
+   "src": "Indeed"
+  },
+  {
+   "co": "furmanite",
+   "t": "Design Engineer",
+   "loc": "Laverton North VIC",
+   "d": "2026-10-26",
+   "u": "https://to.indeed.com/aa9bljm7yxpt",
+   "lvl": "Mid",
+   "src": "Indeed",
+   "cn": "Furmanite Australia"
+  },
+  {
+   "co": "tdw",
+   "t": "Project Manager II",
+   "loc": "Melbourne VIC",
+   "d": "2026-10-28",
+   "u": "https://to.indeed.com/aacbtvr8r47v",
+   "lvl": "Manager",
+   "src": "Indeed",
+   "cn": "T.D. Williamson"
+  },
+  {
+   "co": "ansto",
+   "t": "Maintenance Planner",
+   "loc": "Lucas Heights NSW",
+   "d": "2026-10-29",
+   "u": "https://to.indeed.com/aadqnkvjpzpq",
+   "lvl": "Mid",
+   "src": "Indeed",
+   "cn": "ANSTO"
+  },
+  {
+   "co": "gfg",
+   "t": "Mechanical Planning Leader",
+   "loc": "Rooty Hill NSW",
+   "d": "2026-10-13",
+   "u": "https://to.indeed.com/aagyf6g9vcc2",
+   "lvl": "Lead",
+   "src": "Indeed",
+   "cn": "GFG Alliance"
+  },
+  {
+   "co": "gfg",
+   "t": "Maintenance Planner and Engineer",
+   "loc": "Mayfield NSW",
+   "d": "2026-10-02",
+   "u": "https://to.indeed.com/aaf2gzrxmtvh",
+   "lvl": "Mid",
+   "src": "Indeed",
+   "cn": "GFG Alliance"
+  },
+  {
+   "co": "downer",
+   "t": "Mechanical Supervisor – Eraring",
+   "loc": "Lake Macquarie NSW",
+   "d": "2026-10-25",
+   "u": "https://to.indeed.com/aa44nbw8fj66",
+   "lvl": "Mid / lead",
+   "src": "Indeed",
+   "cn": "Downer Group"
+  },
+  {
+   "co": "clough",
+   "t": "Engineer – Senior Mechanical Project",
+   "loc": "Cooma NSW",
+   "d": "2026-10-09",
+   "u": "https://to.indeed.com/aaf6nywc8p4m",
+   "lvl": "Senior",
+   "src": "Indeed"
+  },
+  {
+   "co": "kcb",
+   "t": "Senior Mechanical Engineer",
+   "loc": "West Perth WA",
+   "d": "2026-10-02",
+   "u": "https://to.indeed.com/aa8txlfv9ybq",
+   "lvl": "Senior",
+   "src": "Indeed",
+   "cn": "Klohn Crippen Berger"
+  },
+  {
+   "co": "downer",
+   "cn": "Downer Group",
+   "t": "Senior Planner | Major Projects",
+   "loc": "North Ryde NSW",
+   "d": "2026-10-19",
+   "u": "https://to.indeed.com/aadckb2fwbvp",
+   "lvl": "Senior",
+   "src": "Indeed"
   }
  ],
  "news": [

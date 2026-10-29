@@ -752,18 +752,24 @@ $("#v-projects").addEventListener("click",e=>{const b=e.target.closest("[data-st
 
 /* ---------- jobs ---------- */
 /* ---------- CV matching (Shahin C P) ---------- */
-const PROFILE={name:"Shahin",summary:"Mechanical Project Engineer, 10+ years. EPCM and owner's-side capital projects in oilseeds, solvent extraction, edible oil refining, biodiesel, ethanol and renewable fuels. Commissioning, shutdowns, piping (AS4041), CMMS. Engineers Australia PEng. Australian PR."};
+const PROFILE={name:"Shahin",summary:"Mechanical Project Engineer, 10+ years. Equipment and piping installation, brownfield capex in refineries and process plants. P&IDs, layouts and GA drawings; valves; pressure, vacuum and flushing tests with commissioning teams. ASME B31.3 and AS4041 piping. Built CMMS, asset hierarchy and maintenance and shutdown planning. WBS, project planning and scheduling; drawing and vendor document review. Oilseeds, renewable fuels, chemicals. Engineers Australia PEng, Australian PR."};
 const TITLE_FIT=[
- [/mechanical project engineer|project mechanical engineer/i,34,"Mechanical project role"],
+ [/mechanical project engineer|project mechanical engineer|senior mechanical project/i,34,"Mechanical project role"],
  [/(senior|lead).*(mechanical|project) engineer|project engineers?\b.*(lead|senior)/i,32,"Senior project / mechanical role"],
- [/project engineer/i,30,"Project engineering role"],
+ [/maintenance plann|planning lead|shutdown plann|turnaround|cmms|asset (engineer|management)|maintenance systems/i,31,"Maintenance planning, CMMS and shutdowns"],
+ [/piping/i,31,"Piping, ASME B31.3 / AS4041"],
+ [/project engineer|capital project/i,30,"Project engineering role"],
  [/commissioning/i,30,"Commissioning role"],
+ [/installation|construction engineer|brownfield/i,28,"Installation and brownfield work"],
  [/mechanical engineer/i,28,"Mechanical engineering role"],
- [/piping/i,26,"Piping role"],
- [/reliability/i,24,"Reliability role"],
+ [/maintenance engineer|plant engineer/i,27,"Plant maintenance engineering"],
+ [/reliability/i,26,"Reliability role"],
+ [/planning engineer|project control|project planner|senior planner|scheduler|wbs/i,26,"Project planning and scheduling"],
+ [/planner/i,22,"Planning role"],
+ [/engineering coordinator|document control|design review|drawing/i,20,"Drawing and document review"],
  [/process engineer/i,18,"Process engineering role"],
- [/shutdown|turnaround|maintenance (planner|execution|scheduler)|area maintenance/i,18,"Shutdown and maintenance planning"],
- [/maintenance (supervisor)|plant maintenance|mechanical supervisor|inspection|condition monitoring/i,16,"Plant maintenance leadership"],
+ [/maintenance (supervisor)|plant maintenance|mechanical supervisor|inspection|condition monitoring/i,18,"Plant maintenance leadership"],
+ [/design engineer/i,20,"Mechanical design and drawings"],
  [/supervisor|superintendent/i,12,"Site supervision"],
  [/manager/i,12,"Management role"],
  [/e&i|electrical|instrument/i,4,"Electrical / instrumentation"],
@@ -773,8 +779,8 @@ const SECTOR_FIT={graincorp:[25,"Oilseeds, your core sector"],cargill:[25,"Oilse
  ampol:[22,"Refinery and renewable fuels"],viva:[22,"Refinery and renewable fuels"],jetzero:[24,"SAF and ethanol"],licella:[20,"Renewable fuels"],wildfire:[20,"Renewable fuels"],hamr:[20,"Renewable fuels"],bp:[20,"Renewable fuels"],
  worley:[20,"EPCM like your De Smet role"],lycopodium:[20,"EPCM process plants"],monadelphous:[17,"SMP construction and shutdowns"],clough:[17,"Process plant EPC"],wood:[17,"Refinery maintenance and EPCM"],
  orica:[17,"Chemical process plant"],nufarm:[18,"Chemical process plant"],ixom:[17,"Chemical process plant"],coogee:[17,"Chemical process plant"],perdaman:[19,"New process plant start-up"],dyno:[14,"Chemical process plant"],csbp:[17,"Chemical process plant"],
- santos:[12,"Oil and gas"],woodside:[12,"Oil and gas"],chevron:[12,"Oil and gas"],inpex:[12,"Oil and gas"],cleanaway:[14,"Waste and resource recovery"],southernoil:[22,"Oil re-refining"],bhp:[8,"Mining"],justbio:[25,"Biodiesel, your sector"],
- bega:[19,"Food processing plant"],idt:[14,"Pharma manufacturing"],psc:[13,"Pharma and biotech projects"],app:[13,"Pumps and rotating equipment"],visy:[15,"Manufacturing plant"],hdr:[10,"Building services"],jci:[13,"Industrial refrigeration"],sulzer:[16,"Pumps and rotating equipment"],cpb:[6,"Infrastructure"]};
+ santos:[12,"Oil and gas"],woodside:[12,"Oil and gas"],chevron:[12,"Oil and gas"],inpex:[12,"Oil and gas"],cleanaway:[14,"Waste and resource recovery"],southernoil:[22,"Oil re-refining"],bhp:[8,"Mining"],justbio:[25,"Biodiesel, your sector"],furmanite:[19,"Valves and pressure equipment"],ppg:[18,"Chemical manufacturing plant"],asahi:[17,"Beverage processing plant"],gfg:[15,"Steel manufacturing"],ansto:[14,"Nuclear science facility"],downer:[14,"Power station maintenance"],tdw:[15,"Pipeline and pressure equipment"],kcb:[12,"Mining engineering consultancy"],
+ bega:[19,"Food processing plant"],idt:[14,"Pharma manufacturing"],psc:[13,"Pharma and biotech projects"],app:[18,"Pumps and fluid systems"],visy:[15,"Manufacturing plant"],hdr:[10,"Building services"],jci:[13,"Industrial refrigeration"],sulzer:[20,"Pumps, valves and fluid systems"],cpb:[6,"Infrastructure"]};
 const TIERS=[
  {k:1,l:"Victoria",d:"Your first choice"},
  {k:2,l:"Sydney, Wollongong & Newcastle",d:"Your second choice"},
@@ -782,7 +788,7 @@ const TIERS=[
  {k:4,l:"Perth & suburbs",d:"Your fourth choice"},
  {k:5,l:"Other locations",d:"Outside your preferred areas"}
 ];
-const NSW_METRO=/sydney|kemps creek|rooty hill|matraville|botany|richmond nsw|wetherill|kurnell|parramatta|newcastle|wollongong|port kembla|maitland|rutherford|hunter|kooragang|mayfield|carrington|cecil park|riverstone|alexandria|granville|greystanes|penrith|blacktown|illawarra|mascot|norwest|chipping norton|rydalmere/i;
+const NSW_METRO=/sydney|kemps creek|rooty hill|matraville|botany|richmond nsw|wetherill|kurnell|parramatta|newcastle|wollongong|port kembla|maitland|rutherford|hunter|kooragang|mayfield|carrington|cecil park|riverstone|alexandria|granville|greystanes|penrith|blacktown|illawarra|mascot|norwest|chipping norton|rydalmere|lucas heights|lake macquarie|eraring|north ryde|macquarie park/i;
 const BNE=/brisbane|lutwyche|lytton|narangba|wynnum|pinkenba|ipswich|logan|redcliffe|eagle farm|wacol|rocklea|springfield|northgate|milton|ipswich/i;
 const PER=/perth|kwinana|welshpool|rockingham|fremantle|malaga|kewdale|henderson|bibra lake|bayswater|osborne park|canning vale/i;
 function tierOf(loc){const l=loc||"";if(/\bVIC\b|victoria/i.test(l))return 1;if(NSW_METRO.test(l))return 2;if(BNE.test(l))return 3;if(PER.test(l))return 4;return 5}
