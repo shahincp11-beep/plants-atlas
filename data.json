@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-29T23:10:00+11:00",
+ "updated": "2026-10-29T23:58:00+11:00",
  "jobs": [
   {
    "co": "cleanaway",
@@ -803,6 +803,14 @@
    "p": "Southern Oil's Wagga re-refinery, Bomen biomethane, Quantem's Botany expansion and Vopak's SAF-capable aviation fuel tanks are among the projects backed by the state.",
    "src": "https://www.nsw.gov.au/ministerial-releases/five-projects-endorsed-strengthening-fuel-security",
    "s": "NSW Government"
+  },
+  {
+   "d": "2026-08-07",
+   "tag": "spec",
+   "h": "Nufarm to close Kwinana and expand Laverton",
+   "p": "Nufarm will stop manufacturing at Kwinana in WA by May 2027 and move about 20 million litres a year of production to its Laverton plant in Victoria.",
+   "src": "https://www.stockjournal.com.au/story/9325249/nufarm-kwinana-plant-closure-confirmed-production-shifts/",
+   "s": "Stock Journal"
   },
   {
    "d": "2026-07-28",
