@@ -287,6 +287,25 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 .fc-h{display:flex;align-items:center;gap:8px;font-size:15px}
 .links a.li{border-color:#c7d7fe;color:#1d4ed8;background:#f5f8ff}
 .emps.two{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,340px),1fr));gap:10px}
+
+/* What's here */
+.idbtn{border:0;border-radius:12px;padding:9px 14px;font-weight:700;font-size:14px;background:#2a5bd7;color:#fff;box-shadow:0 2px 12px rgba(19,32,58,.25);cursor:pointer}
+.idbtn[aria-pressed="true"]{background:#13203a}
+.idpanel{position:absolute;z-index:1100;right:14px;top:14px;bottom:14px;width:min(380px,calc(100% - 28px));background:#fff;border-radius:18px;box-shadow:0 12px 40px rgba(19,32,58,.25);padding:18px 16px;overflow:auto;display:flex;flex-direction:column;gap:10px}
+@media (max-width:640px){.idpanel{top:auto;left:10px;right:10px;width:auto;max-height:62%;bottom:10px}}
+.idpanel h3{margin:0;font:700 20px var(--display)}
+.idclose{position:absolute;top:10px;right:10px;width:32px;height:32px;border-radius:50%;border:0;background:var(--surface);font-size:20px;cursor:pointer;color:var(--soft)}
+.idsec{display:flex;flex-direction:column;gap:8px}
+.idsec>b{font-size:14px}
+.idrow{display:flex;align-items:center;gap:8px;border:1px solid var(--line);background:#fff;border-radius:10px;padding:8px 10px;text-align:left;cursor:pointer;font-weight:600}
+.idrow small,.idtop small{margin-left:auto;color:var(--faint);font-weight:500}
+.idrow .d,.idtop .d{width:9px;height:9px;border-radius:50%;background:var(--c);flex:none}
+.idcard{border:1px solid var(--line);border-radius:14px;padding:10px 12px;display:flex;flex-direction:column;gap:6px}
+.idtop{display:flex;align-items:center;gap:8px}
+.idcat,.idform input,.idform select{font:14px var(--body);border:1px solid var(--line);border-radius:9px;padding:6px 8px;background:#fff;color:var(--ink);max-width:100%}
+.idform{display:flex;flex-wrap:wrap;gap:6px}
+.idform input{flex:1 1 160px}
+.pin.mine{width:16px;height:16px;border-radius:50% 50% 50% 0;transform:rotate(-45deg);border:2.5px solid #2a5bd7}
 /* Leaflet core (inlined) */
 .leaflet-pane,.leaflet-tile,.leaflet-marker-icon,.leaflet-marker-shadow,.leaflet-tile-container,.leaflet-pane>svg,.leaflet-pane>canvas,.leaflet-zoom-box,.leaflet-image-layer,.leaflet-layer{position:absolute;left:0;top:0}
 .leaflet-container{overflow:hidden;-webkit-tap-highlight-color:transparent;font:13px/1.4 var(--body)}
@@ -858,14 +877,14 @@ function useOutline(){if(outline)return;outline=L.layerGroup([AUS,TAS].map(r=>L.
 function pinIcon(it){const cls=["pin",it.kind==="project"?"proj":"",it.office?"office":"",it.kind==="plant"&&it.st!=="op"?it.st:"",it.jobs.length?"hire":""].join(" ");
   return L.divIcon({className:"",html:`<span class="${cls}" style="--c:${col(it.cats[0])}"></span>`,iconSize:[16,16],iconAnchor:[8,8],popupAnchor:[0,-8]})}
 function mapVisible(it){const f=mapFilter;
-  if(f.kind==="plant"&&(it.kind!=="plant"||it.office))return false;if(f.kind==="office"&&!it.office)return false;if(f.kind==="project"&&it.kind!=="project")return false;
+  if(f.kind==="plant"&&(it.kind!=="plant"||it.office))return false;if(f.kind==="office"&&!it.office)return false;if(f.kind==="mine")return false;if(f.kind==="project"&&it.kind!=="project")return false;
   if(f.hire&&!it.jobs.length)return false;if(f.cat&&!it.cats.includes(f.cat))return false;
   if(f.q){const hay=(it.n+" "+cos(it).map(coName).join(" ")+" "+it.loc+" "+it.cats.map(c=>CATS[c].l).join(" ")).toLowerCase();if(!hay.includes(f.q))return false}
   return true}
-function drawMarkers(){if(!map)return;ITEMS.forEach(it=>{const v=mapVisible(it);if(v&&!map.hasLayer(it.m))it.m.addTo(map);if(!v&&map.hasLayer(it.m))map.removeLayer(it.m)})}
+function drawMarkers(){if(!map)return;ITEMS.forEach(it=>{const v=mapVisible(it);if(v&&!map.hasLayer(it.m))it.m.addTo(map);if(!v&&map.hasLayer(it.m))map.removeLayer(it.m)});if(typeof drawMySites==="function"&&typeof MYSITES!=="undefined")drawMySites()}
 function mapChips(){
   const f=mapFilter;const c=(label,pressed,act,dot)=>`<button class="chip" aria-pressed="${pressed}" data-act="${act}">${dot?`<i class="d" style="--c:${dot}"></i>`:""}${label}</button>`;
-  $("#mapchips").innerHTML=c("Everything",f.kind==="all"&&!f.hire&&!f.cat,"all")+c("Plants",f.kind==="plant","kind:plant")+c("Projects",f.kind==="project","kind:project")+c("Offices",f.kind==="office","kind:office")+c("Hiring now",f.hire,"hire","#22c55e")+
+  $("#mapchips").innerHTML=c("Everything",f.kind==="all"&&!f.hire&&!f.cat,"all")+c("Plants",f.kind==="plant","kind:plant")+c("Projects",f.kind==="project","kind:project")+c("Offices",f.kind==="office","kind:office")+c("My sites",f.kind==="mine","kind:mine","#2a5bd7")+c("Hiring now",f.hire,"hire","#22c55e")+
    (f.cat?c(CATS[f.cat].l+" ✕",true,"cat:",col(f.cat)):"")+
    Object.keys(CATS).filter(k=>k!==f.cat).map(k=>c(CATS[k].l,false,"cat:"+k,col(k))).join("");
 }
@@ -1296,8 +1315,101 @@ $("#v-contacts").addEventListener("change",async e=>{
 $("#v-contacts").addEventListener("click",e=>{const b=e.target.closest("[data-savekn]");if(!b)return;const c=knownAtTargets()[+b.dataset.savekn];if(!c)return;
   CONTACTS.unshift({id:"c"+Date.now(),name:c.name,title:c.position,co:c.k,url:c.url,follow:true,req:"connected",reqDate:"",wdDate:"",note:"Already a LinkedIn connection"});saveContacts();renderContacts();updateBadge()});
 
+/* ---------- "What's here?": tap the map to identify sites (OpenStreetMap) ---------- */
+const MKEY="pa_mysites_v1";
+let MYSITES=(()=>{try{return JSON.parse(localStorage.getItem(MKEY)||"[]")}catch(e){return []}})();
+const saveMySites=()=>{try{localStorage.setItem(MKEY,JSON.stringify(MYSITES))}catch(e){}};
+let identifyOn=false, probe=null, myLayer=null, lastFound=[];
+const OVERPASS=["https://overpass-api.de/api/interpreter","https://overpass.kumi.systems/api/interpreter"];
+function distM(a,b,c,d){const R=6371000,t=Math.PI/180;const x=(d-b)*t*Math.cos((a+c)/2*t),y=(c-a)*t;return Math.round(Math.sqrt(x*x+y*y)*R)}
+function guessCat(tags){const s=Object.entries(tags).map(([k,v])=>k+"="+v).join(" ").toLowerCase()+" "+(tags.name||"").toLowerCase()+" "+(tags.operator||"").toLowerCase();
+  const R=[[/refiner|petroleum|fuel|oil terminal|bulk liquid/, "ref"],[/biodiesel/,"bd"],[/ethanol|distill/,"eth"],[/oilseed|canola|crush|edible oil|vegetable oil|cargill|graincorp|cmp oil/,"oil"],[/sugar/,"sugar"],[/oleo|tallow|render/,"oleo"],
+   [/pharma|vaccin|biotech|csl|laborator/,"pharma"],[/paper|pulp|packag|cardboard|visy|opal/,"paper"],[/dairy|milk|cheese|food|bakery|brew|beverage|meat|abattoir|flour|mill/,"food"],
+   [/steel|alumin|smelt|metal|foundry|cement|quarry|lithium|nickel|zinc/,"metals"],[/water|sewage|wastewater|treatment plant/,"water"],[/chemical|paint|coating|fertili|ammonia|plastic|polymer|resin|adhesive|gas/,"chem"],
+   [/engineering|fabricat|machin|pump|valve|hydraulic|crane|contract/,"con"],[/power|generator|substation|solar|wind/,"power"]];
+  for(const [re,c] of R)if(re.test(s))return c;return "chem"}
+async function overpass(lat,lon,r){
+  const q=`[out:json][timeout:25];(nwr(around:${r},${lat},${lon})["man_made"="works"];nwr(around:${r},${lat},${lon})["industrial"];nwr(around:${r},${lat},${lon})["landuse"="industrial"]["name"];nwr(around:${r},${lat},${lon})["building"~"industrial|warehouse|factory|manufacture"]["name"];nwr(around:${r},${lat},${lon})["office"="company"]["name"];nwr(around:${r},${lat},${lon})["craft"]["name"];nwr(around:${r},${lat},${lon})["landuse"="industrial"]["operator"];);out center tags 60;`;
+  for(const url of OVERPASS){try{const res=await fetch(url,{method:"POST",body:"data="+encodeURIComponent(q),headers:{"Content-Type":"application/x-www-form-urlencoded"}});if(res.ok)return (await res.json()).elements||[]}catch(e){}}
+  throw new Error("lookup");
+}
+async function reverseGeo(lat,lon){try{const r=await fetch(`https://nominatim.openstreetmap.org/reverse?format=jsonv2&zoom=17&addressdetails=1&lat=${lat}&lon=${lon}`,{headers:{"Accept-Language":"en-AU"}});if(r.ok)return await r.json()}catch(e){}return null}
+async function wikiSummary(q){try{
+  const s=await fetch(`https://en.wikipedia.org/w/api.php?action=query&list=search&srlimit=1&format=json&origin=*&srsearch=${enc(q+" company Australia")}`).then(r=>r.json());
+  const t=s.query&&s.query.search&&s.query.search[0];if(!t)return null;const key=(q.toLowerCase().replace(/\b(pty|ltd|limited|australia|group|the|plant|site|factory|mill)\b/g,'').match(/[a-z0-9]{3,}/)||[''])[0];if(!key||!t.title.toLowerCase().includes(key))return null;
+  const p=await fetch(`https://en.wikipedia.org/api/rest_v1/page/summary/${enc(t.title)}`).then(r=>r.json());
+  return p&&p.extract?{title:p.title,text:p.extract,url:p.content_urls&&p.content_urls.desktop&&p.content_urls.desktop.page}:null}catch(e){return null}}
+function placeName(tags){return tags.name||tags.operator||tags.brand||tags["name:en"]||""}
+function panel(html){let p=$("#idpanel");if(!p){p=document.createElement("div");p.id="idpanel";p.className="idpanel";$(".mapshell").appendChild(p)}p.innerHTML=`<button class="idclose" aria-label="Close" data-idclose>×</button>`+html;p.hidden=false}
+function closePanel(){const p=$("#idpanel");if(p)p.hidden=true;if(probe&&map){map.removeLayer(probe);probe=null}}
+function setIdentify(on){identifyOn=on;const b=$("#idbtn");if(b){b.setAttribute("aria-pressed",on);b.textContent=on?"Tap the map…":"What's here?"}if(map)map.getContainer().style.cursor=on?"crosshair":""}
+async function identifyAt(lat,lon){
+  if(probe)map.removeLayer(probe);
+  probe=L.circle([lat,lon],{radius:600,color:"#2a5bd7",weight:2,fillOpacity:.06,interactive:false}).addTo(map);
+  panel(`<h3>Looking around this spot…</h3><p class="muted">Checking OpenStreetMap for factories, works and companies within 600 m.</p>`);
+  const near=ITEMS.filter(i=>distM(lat,lon,i.lat,i.lon)<1500).sort((a,b)=>distM(lat,lon,a.lat,a.lon)-distM(lat,lon,b.lat,b.lon)).slice(0,4);
+  let els=[],addr=null;
+  try{[els,addr]=await Promise.all([overpass(lat,lon,600),reverseGeo(lat,lon)])}catch(e){
+    panel(`<h3>Couldn't look up this spot</h3><p class="muted">The map data service didn't respond. This works on your published site, not inside Claude's preview. Try again in a moment.</p>${linksAt(lat,lon,"")}`);return}
+  const seen=new Set();const found=[];
+  els.forEach(e=>{const t=e.tags||{};const nm=placeName(t);if(!nm)return;const key=nm.toLowerCase();if(seen.has(key))return;seen.add(key);
+    const la=e.lat||(e.center&&e.center.lat),lo=e.lon||(e.center&&e.center.lon);if(la==null)return;
+    found.push({name:nm,operator:t.operator||"",product:t.product||t.industrial||t.man_made||t.craft||t.building||"",website:t.website||t["contact:website"]||"",lat:la,lon:lo,d:distM(lat,lon,la,lo),cat:guessCat(t)})});
+  found.sort((a,b)=>a.d-b.d);lastFound=found.slice(0,12);
+  const a=addr&&addr.address||{};const where=[a.road,a.suburb||a.town||a.city_district||a.city,a.state].filter(Boolean).join(", ");
+  panel(`<h3>What's here</h3><p class="muted" style="margin:0 0 8px">${esc(where||`${lat.toFixed(4)}, ${lon.toFixed(4)}`)}</p>
+    ${near.length?`<div class="idsec"><b>Already on your map</b>${near.map(i=>`<button class="idrow" data-go="${i.i}"><span class="d" style="--c:${col(i.cats[0])}"></span>${esc(i.n)}<small>${(distM(lat,lon,i.lat,i.lon)/1000).toFixed(1)} km</small></button>`).join("")}</div>`:""}
+    <div class="idsec"><b>${lastFound.length?`Found nearby (${lastFound.length})`:"Nothing named nearby in OpenStreetMap"}</b>
+    ${lastFound.map((f,k)=>`<div class="idcard" data-k="${k}"><div class="idtop"><span class="d" style="--c:${col(f.cat)}"></span><b>${esc(f.name)}</b><small>${f.d} m</small></div>
+      <div class="muted">${esc([f.operator&&f.operator!==f.name?f.operator:"",f.product].filter(Boolean).join(", ")||CATS[f.cat].l)}</div>
+      <div class="idresearch" id="idr-${k}"><span class="muted">Researching…</span></div>
+      ${linksAt(f.lat,f.lon,f.name,f.website)}
+      <div class="acts"><select class="idcat" aria-label="Industry">${Object.entries(CATS).map(([c,v])=>`<option value="${c}"${c===f.cat?" selected":""}>${v.l}</option>`).join("")}</select><button class="btn primary" data-addfound="${k}">Add to my list</button></div></div>`).join("")}</div>
+    <div class="idsec"><b>Not listed?</b><p class="muted" style="margin:2px 0 6px">Check the spot on Google Maps, then add it yourself.</p>${linksAt(lat,lon,"")}
+    <form class="idform" data-lat="${lat}" data-lon="${lon}"><input id="idname" placeholder="Company or site name" required><select id="idcat2">${Object.entries(CATS).map(([c,v])=>`<option value="${c}">${v.l}</option>`).join("")}</select><button class="btn" type="submit">Add this spot</button></form></div>`);
+  lastFound.forEach(async(f,k)=>{
+    const jobs=JOBS.filter(j=>{const n=jobCo(j).toLowerCase();const w=f.name.toLowerCase().split(/\s+/)[0];return w.length>2&&(n.includes(w)||f.name.toLowerCase().includes(n.split(/\s+/)[0]))});
+    const w=await wikiSummary(f.operator||f.name);const el=$("#idr-"+k);if(!el)return;
+    el.innerHTML=(w?`<p style="margin:4px 0">${esc(w.text.length>320?w.text.slice(0,317)+"…":w.text)}${w.url?` <a href="${w.url}" target="_blank" rel="noopener">Wikipedia</a>`:""}</p>`:`<span class="muted">No encyclopedia entry found; use the links below.</span>`)+
+      (jobs.length?`<p style="margin:4px 0"><span class="hiring">${jobs.length} matching job${jobs.length>1?"s":""} in your list</span></p>`:"");
+    f.summary=w?w.text.slice(0,400):"";
+  });
+}
+function linksAt(lat,lon,name,web){const q=name?enc(name):"";return `<div class="links">
+  <a href="https://www.google.com/maps/search/?api=1&query=${name?q+"%20":""}${lat},${lon}" target="_blank" rel="noopener">Google Maps</a>
+  ${name?`<a href="https://www.google.com/search?q=${q}%20manufacturing%20Australia" target="_blank" rel="noopener">Web search</a><a href="https://www.linkedin.com/search/results/companies/?keywords=${q}" target="_blank" rel="noopener">LinkedIn</a><a href="https://www.seek.com.au/jobs?keywords=${q}" target="_blank" rel="noopener">Seek jobs</a>`:""}
+  ${web?`<a href="${esc(web)}" target="_blank" rel="noopener">Website</a>`:""}</div>`}
+function addMySite(s){MYSITES.unshift({id:"m"+Date.now(),...s,added:today()});saveMySites();drawMySites()}
+function drawMySites(){
+  if(!map)return;if(myLayer)map.removeLayer(myLayer);myLayer=L.layerGroup();
+  if(mapFilter.kind==="all"||mapFilter.kind==="mine")MYSITES.forEach(s=>{
+    if(mapFilter.cat&&mapFilter.cat!==s.cat)return;
+    const m=L.marker([s.lat,s.lon],{icon:L.divIcon({className:"",html:`<span class="pin mine" style="--c:${col(s.cat)}"></span>`,iconSize:[18,18],iconAnchor:[9,9],popupAnchor:[0,-9]}),zIndexOffset:600,title:s.name});
+    m.bindPopup(()=>`<div class="pop"><span class="stage" style="--sc:#2a5bd7">My site</span><h3>${esc(s.name)}</h3><p class="owner">${CATS[s.cat]?CATS[s.cat].l:""}</p>${s.where?`<p class="muted">${esc(s.where)}</p>`:""}${s.summary?`<p>${esc(s.summary)}</p>`:""}${linksAt(s.lat,s.lon,s.name,s.website)}
+      <div class="acts"><button class="btn" data-copysite="${s.id}">Copy for Claude</button><button class="btn ghost" data-delsite="${s.id}">Remove</button></div><p class="muted" style="margin:0">Paste into Claude to research it fully and add it to everyone's map.</p></div>`,{maxWidth:300});
+    myLayer.addLayer(m)});
+  myLayer.addTo(map);
+}
+document.addEventListener("click",e=>{
+  if(e.target.closest("[data-idclose]")){closePanel();return}
+  const af=e.target.closest("[data-addfound]");if(af){const f=lastFound[+af.dataset.addfound];const sel=af.parentElement.querySelector(".idcat");
+    addMySite({name:f.name,cat:sel?sel.value:f.cat,lat:f.lat,lon:f.lon,website:f.website,summary:f.summary||"",where:f.operator||""});af.textContent="Added";af.disabled=true;return}
+  const cs=e.target.closest("[data-copysite]");if(cs){const s=MYSITES.find(x=>x.id===cs.dataset.copysite);if(s)copyText(`Please add this site to my Plants Atlas app (shahincp11-beep/plants-atlas) with full research: ${s.name}, ${CATS[s.cat]?CATS[s.cat].l:""}, at ${s.lat.toFixed(5)}, ${s.lon.toFixed(5)}${s.website?", website "+s.website:""}.`,cs);return}
+  const ds=e.target.closest("[data-delsite]");if(ds){if(ds.dataset.confirm!=="1"){ds.dataset.confirm="1";ds.textContent="Tap again to remove";return}MYSITES=MYSITES.filter(x=>x.id!==ds.dataset.delsite);saveMySites();map.closePopup();drawMySites();return}
+});
+document.addEventListener("submit",e=>{const f=e.target.closest(".idform");if(!f)return;e.preventDefault();
+  addMySite({name:$("#idname").value.trim(),cat:$("#idcat2").value,lat:+f.dataset.lat,lon:+f.dataset.lon,website:"",summary:"",where:""});
+  const b=f.querySelector("button");b.textContent="Added";b.disabled=true});
+function initIdentify(){
+  if(!map)return;
+  const ov=$(".ov-bl");const b=document.createElement("button");b.id="idbtn";b.className="idbtn";b.textContent="What's here?";b.setAttribute("aria-pressed","false");
+  b.onclick=()=>setIdentify(!identifyOn);ov.insertBefore(b,ov.firstChild);
+  map.on("click",e=>{if(!identifyOn)return;setIdentify(false);identifyAt(e.latlng.lat,e.latlng.lng)});
+  drawMySites();
+}
+
 /* ---------- boot ---------- */
-mapChips();renderIndustries();renderProjects();renderJobs();renderCompanies();renderNews();renderContacts();initMap();route();updateBadge();loadLive();
+mapChips();renderIndustries();renderProjects();renderJobs();renderCompanies();renderNews();renderContacts();initMap();initIdentify();route();updateBadge();loadLive();
 </script>
 
 </body>
