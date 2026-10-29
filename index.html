@@ -320,6 +320,10 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 .cvb{font-size:12.5px;font-weight:700;text-decoration:none;border-radius:999px;padding:5px 11px;background:#eef2ff;color:#3730a3}
 .cvb:nth-child(2){background:#ecfeff;color:#0e7490}.cvb:nth-child(3){background:#fef3c7;color:#92400e}
 .cvb:hover{filter:brightness(.96)}
+
+.cvset{background:#f5f3ff;border-radius:14px;padding:12px}
+.cvrow{display:flex;gap:6px}
+.cvrow input{flex:1;min-width:0;font:14px var(--body);border:1px solid var(--line);border-radius:9px;padding:7px 9px;background:#fff;color:var(--ink)}
 /* Leaflet core (inlined) */
 .leaflet-pane,.leaflet-tile,.leaflet-marker-icon,.leaflet-marker-shadow,.leaflet-tile-container,.leaflet-pane>svg,.leaflet-pane>canvas,.leaflet-zoom-box,.leaflet-image-layer,.leaflet-layer{position:absolute;left:0;top:0}
 .leaflet-container{overflow:hidden;-webkit-tap-highlight-color:transparent;font:13px/1.4 var(--body)}
@@ -1022,11 +1026,16 @@ function ring(score){const c=score>=80?"#16a34a":score>=65?"#2a5bd7":score>=45?"
 /* ---------- jobs ---------- */
 let jobF={type:"all",lvl:"all",q:"",sort:"match"};
 const jobCo=j=>j.cn||coName(j.co);
-function cvPrompt(kind,j){const nm=jobCo(j);const job=`${j.t} at ${nm}, ${j.loc}. Job ad: ${j.u}`;
-  if(kind==="cv")return `Use my cv-builder skill. Create a tailored, ATS-friendly CV for this job: ${job}. Read the job description first (if you can't open the link, ask me to paste it), follow the skill's steps, and give me the CV as both a Word (.docx) and a PDF file.`;
-  if(kind==="cl")return `Use my cv-builder skill. Write a one-page cover letter for this job: ${job}. Read the job description first (if you can't open the link, ask me to paste it), follow the skill's cover letter steps, and give me it as both a Word (.docx) and a PDF file.`;
-  return `Use my cv-builder skill. Compare my CV with the job description for: ${job}. I'll attach the CV I want checked. Read the job description (ask me to paste it if the link doesn't open), then give me the match score, strengths, weak points, missing ATS keywords and the questions I should answer. After I answer, revise the CV and give me .docx and .pdf.`}
-function cvLink(kind,j){return "https://claude.ai/new?q="+enc(cvPrompt(kind,j))}
+const CVPKEY="pa_cvproj_v1";
+let CVPROJ=(()=>{try{return localStorage.getItem(CVPKEY)||""}catch(e){return ""}})();
+function cvPrompt(kind,j){const nm=jobCo(j);
+  const head=`Job: ${j.t}\nEmployer: ${nm}\nLocation: ${j.loc}\nPosted: ${j.d} (${j.src||"web"})\nJob ad link: ${j.u}`;
+  const jd=j.jd?`\n\nJob description:\n${j.jd}`:`\n\n(The full job description isn't stored yet. Open the job ad link to read it; if it won't open, ask me to paste it.)`;
+  const intro=CVPROJ?"Follow this project's instructions and use my files in this project.":"Use my cv-builder skill.";
+  if(kind==="cv")return `${intro} Create a tailored, ATS-friendly CV for this job and give me it as both a Word (.docx) and a PDF file.\n\n${head}${jd}`;
+  if(kind==="cl")return `${intro} Write a one-page cover letter for this job and give me it as both a Word (.docx) and a PDF file.\n\n${head}${jd}`;
+  return `${intro} Compare my CV with this job description. I'll attach the CV I want checked. Give me the match score, strengths, weak points, missing ATS keywords and the questions I should answer; after I answer, revise the CV and give me .docx and .pdf.\n\n${head}${jd}`}
+function cvLink(kind,j){const base=CVPROJ||"https://claude.ai/new";return base+(base.includes("?")?"&":"?")+"q="+enc(cvPrompt(kind,j))}
 function jobRow(j){const nm=jobCo(j);const m=matchOf(j);const id=JOBS.indexOf(j);
   return `<div class="jobwrap"><a class="job" href="${j.u}" target="_blank" rel="noopener">${jobF.sort==="match"?ring(m.score):coAvatar(j.co,nm)}<span><b>${esc(j.t)}</b><span class="sub">${miniLogo(j.co)}${esc(nm)}, ${esc(j.loc)}</span>${jobF.sort==="match"?`<span class="why">${m.why.slice(0,2).map(w=>`<i>${esc(w)}</i>`).join("")}</span>`:""}</span><span class="right"><span class="lvl ${lvlClass(j.lvl||"")}">${esc(j.lvl||"Level not stated")}</span><span>${fmtD(j.d)} on ${esc(j.src||"web")}</span></span></a>
    <div class="cvbar"><a class="cvb" data-cv="cv" data-j="${id}" href="${cvLink("cv",j)}" target="_blank" rel="noopener">Create CV</a><a class="cvb" data-cv="cl" data-j="${id}" href="${cvLink("cl",j)}" target="_blank" rel="noopener">Cover letter</a><a class="cvb" data-cv="cmp" data-j="${id}" href="${cvLink("cmp",j)}" target="_blank" rel="noopener">Compare with JD</a></div></div>`}
@@ -1049,6 +1058,7 @@ function renderJobs(){
     <label class="search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input id="jq" type="search" placeholder="Search roles, companies, cities" value="${esc(jobF.q)}" aria-label="Search jobs"></label></div>
    <div class="jobs-layout"><aside class="side">
      <div class="me"><h3>Matched to your CV</h3><p>${esc(PROFILE.summary)}</p><p class="muted" style="margin:6px 0 0">The score combines role fit, sector fit and seniority. Location sets the order of the groups.</p></div>
+     <div class="cvset"><h3>Your CV project</h3>${CVPROJ?`<p class="muted" style="margin:0 0 6px">CV buttons open your Claude project.</p>`:`<p class="muted" style="margin:0 0 6px">Paste the link to your Claude CV project so the CV buttons open it.</p>`}<div class="cvrow"><input id="cvproj" type="url" placeholder="https://claude.ai/project/…" value="${esc(CVPROJ)}"><button class="btn" id="cvsave">${CVPROJ?"Update":"Save"}</button></div></div>
      <div><h3>Order</h3><div class="chips">${ch("sort","match","Best for you",jobF.sort)}${ch("sort","new","Newest",jobF.sort)}</div></div>
      <div><h3>Employer</h3><div class="chips">${ch("type","all","All",jobF.type)}${ch("type","own","Owners & developers",jobF.type)}${ch("type","con","Contractors",jobF.type)}</div></div>
      <div><h3>Level</h3><div class="chips">${ch("lvl","all","All levels",jobF.lvl)}${ch("lvl","junior","Junior",jobF.lvl)}${ch("lvl","mid","Mid",jobF.lvl)}${ch("lvl","senior","Senior & lead",jobF.lvl)}${ch("lvl","manager","Manager",jobF.lvl)}</div></div>
@@ -1059,6 +1069,7 @@ function renderJobs(){
       <a href="https://www.seek.com.au/mechanical-project-engineer-jobs/in-All-Melbourne-VIC" target="_blank" rel="noopener">Seek: Melbourne</a>
       <a href="https://www.seek.com.au/mechanical-project-engineer-jobs/in-All-Sydney-NSW" target="_blank" rel="noopener">Seek: Sydney</a></div></div>
    </aside><div>${body}</div></div>`;
+  const cs=$("#cvsave");if(cs)cs.onclick=()=>{const v=$("#cvproj").value.trim();if(v&&!/^https:\/\/claude\.ai\/project\//.test(v)){cs.textContent="Use a claude.ai/project link";return}CVPROJ=v;try{localStorage.setItem(CVPKEY,v)}catch(e){}renderJobs()};
   const qi=$("#jq");qi.oninput=e=>{jobF.q=e.target.value.trim().toLowerCase();const pos=qi.selectionStart;renderJobs();const n=$("#jq");n.focus();n.setSelectionRange(pos,pos)};
 }
 $("#v-jobs").addEventListener("click",e=>{const b=e.target.closest("[data-jf]");if(!b)return;const[g,v]=b.dataset.jf.split(":");jobF[g]=v;renderJobs()});
