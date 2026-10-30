@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-30T20:28:30+11:00",
+ "updated": "2026-10-30T21:24:59+11:00",
  "jobs": [
   {
    "co": "scalzo",
@@ -246,7 +246,10 @@
    "d": "2026-10-28",
    "u": "https://www.seek.com.au/job/95513591",
    "lvl": "Mid",
-   "src": "Seek"
+   "src": "Seek",
+   "sum": {
+    "sal": "$90,000 – $110,000 per year"
+   }
   },
   {
    "co": "snowy",
@@ -630,7 +633,10 @@
    "d": "2026-10-24",
    "u": "https://www.seek.com.au/job/95406860",
    "lvl": "Senior",
-   "src": "Seek"
+   "src": "Seek",
+   "sum": {
+    "sal": "Up to $240k salary package"
+   }
   },
   {
    "co": "abp",
@@ -1961,6 +1967,14 @@
    "s": "Australian Manufacturing"
   },
   {
+   "d": "2026-09-08",
+   "tag": "chem",
+   "h": "Grants back PPG Clayton expansion and five other south-east plants",
+   "p": "Victoria is sharing over $5 million in grants among six Melbourne south-east manufacturers, including PPG's Clayton site, supporting almost $70 million of investment and 312 jobs.",
+   "src": "https://www.australianmanufacturing.com.au/?p=195839",
+   "s": "Australian Manufacturing"
+  },
+  {
    "d": "2026-09-07",
    "tag": "saf",
    "h": "Jet Zero raises funds to finish FEED and approach FID",
@@ -2009,12 +2023,36 @@
    "s": "Australian Manufacturing"
   },
   {
+   "d": "2026-06-18",
+   "tag": "chem",
+   "h": "First carbon refinery opens on Kooragang Island, Newcastle",
+   "p": "MCI Carbon opened a plant capturing CO2 from Orica's ammonia operations and turning it into materials for concrete, paper and glass.",
+   "src": "https://www.miningweekly.com/article/australia-opens-first-carbon-refinery-making-new-products-from-captured-carbon-dioxide-2026-06-18",
+   "s": "Mining Weekly"
+  },
+  {
+   "d": "2026-06-02",
+   "tag": "chem",
+   "h": "Mapei invests about $60M in new Truganina plant",
+   "p": "Mapei is building an automated, solar-powered Truganina factory that will add more than 100 product lines for Australian construction projects.",
+   "src": "https://www.pulse.bot/supply-chain/news/from-truganina-to-major-projects-mapeis-push-to-localise-manufacturing-in-australia-a0368b21-101a-4631-b1d0-8e647185c959/",
+   "s": "Pulse"
+  },
+  {
    "d": "2026-05-15",
    "tag": "saf",
    "h": "ARENA to run the $1.1 billion Cleaner Fuels Program",
    "p": "The program funds local production of renewable diesel and SAF over the next decade, aimed at freight, aviation and heavy transport.",
    "src": "https://www.hydrocarbonprocessing.com/news/2026/05/arena-to-drive-australias-11-b-cleaner-fuels-program/",
    "s": "Hydrocarbon Processing"
+  },
+  {
+   "d": "2026-05-12",
+   "tag": "saf",
+   "h": "Hazer to supply hydrogen for 175 ML/yr SAF and renewable diesel project",
+   "p": "Hazer will provide methane-pyrolysis hydrogen to Continual Renewable Ventures' New Rise ANZ project targeting 175 million litres a year of SAF and renewable diesel.",
+   "src": "https://www.pulse.bot/energy/news/australias-hazer-crv-mull-saf-clean-fuels-plant-d8ab0fdf-a0a1-4960-8dd1-8f8136e0d78d/",
+   "s": "Pulse"
   },
   {
    "d": "2026-04-27",
@@ -2065,6 +2103,14 @@
    "s": "Argus"
   },
   {
+   "d": "2026-03-19",
+   "tag": "ref",
+   "h": "Canberra revises refiner support trigger for Lytton and Geelong",
+   "p": "The government kept the 1.8 c/L payment cap but changed the trigger for refinery support payments, helping Ampol's Lytton and Viva's Geelong refineries at no extra cost.",
+   "src": "https://www.pulse.bot/energy/news/australia-extends-subsidy-plan-for-refiners-to-2030-0b6aad49-8dcc-40e8-98ad-830d6772a4dd/",
+   "s": "Pulse"
+  },
+  {
    "d": "2026-03-10",
    "tag": "saf",
    "h": "South Australia to host HAMR's SAF plant",
@@ -2087,14 +2133,6 @@
    "p": "Project Crux would sit next to CBH's Kwinana Grain Terminal. WA grows more than half of Australia's canola but crushes only about a tenth of it.",
    "src": "https://www.graincentral.com/news/cargill-progresses-plans-for-1-1mt-wa-crush-plant/",
    "s": "Grain Central"
-  },
-  {
-   "d": "2025-12-23",
-   "tag": "saf",
-   "h": "Jet Zero's Project Ulysses wins environmental approval",
-   "p": "The 113 ML/yr alcohol-to-jet plant in Townsville would be Australia's first. Jet Zero is targeting a final investment decision in 2026.",
-   "src": "https://www.argusmedia.com/en/news-and-insights/latest-market-news/2769034-jet-zero-wins-environmental-approval-for-saf-project",
-   "s": "Argus"
   }
  ],
  "people": [
@@ -2110,6 +2148,29 @@
  ],
  "runs": [
   {
+   "at": "2026-10-30T21:24:59+11:00",
+   "added": 0,
+   "seek": 0,
+   "indeed": 0,
+   "removed": 0,
+   "news": 0,
+   "jd": 14,
+   "github": "ok (synced by Claude)",
+   "note": "Summary run: Indeed connector unavailable and Seek/LinkedIn/Indeed pages block fetching, so no new descriptions; all 14 existing descriptions already have summaries. Daily site research started: 12 sites and 3 companies added.",
+   "sites": 12
+  },
+  {
+   "at": "2026-10-30T21:13:36+11:00",
+   "added": 0,
+   "seek": 0,
+   "indeed": 0,
+   "removed": 0,
+   "news": 5,
+   "jd": 14,
+   "github": "failed: no push access (403, repo not authorized)",
+   "note": "Indeed connector unavailable; Seek emails had no new relevant roles; 2 Seek salaries added."
+  },
+  {
    "at": "2026-10-30T20:28:30+11:00",
    "added": 39,
    "seek": 3,
@@ -2119,6 +2180,311 @@
    "jd": 14,
    "github": "ok (synced by Claude)",
    "note": "Today's automatic updates had reached only the Claude copy; Claude synced them to your website."
+  }
+ ],
+ "sites": [
+  {
+   "n": "Tooheys Brewery Lidcombe",
+   "co": "lion",
+   "loc": "Lidcombe, Sydney, NSW",
+   "lat": -33.858,
+   "lon": 151.04,
+   "cats": [
+    "food"
+   ],
+   "kind": "plant",
+   "st": "op",
+   "cap": "Major brewery",
+   "feed": "Malt, hops",
+   "note": "Lion's main NSW brewery; Lion advertises brewing and engineering roles here.",
+   "src": "https://en.wikipedia.org/wiki/Tooheys_Brewery",
+   "approx": true,
+   "added": "2026-10-30"
+  },
+  {
+   "n": "McCain Foods Ballarat",
+   "co": "mccain",
+   "loc": "Ballarat, VIC",
+   "lat": -37.585,
+   "lon": 143.83,
+   "cats": [
+    "food"
+   ],
+   "kind": "plant",
+   "st": "op",
+   "cap": "Potato processing (french fries)",
+   "feed": "Potatoes",
+   "note": "McCain invested about $57M upgrading this plant.",
+   "src": "https://www.potatopro.com/node/82230",
+   "approx": true,
+   "added": "2026-10-30"
+  },
+  {
+   "n": "Nestlé Smithtown Factory",
+   "co": "nestle",
+   "loc": "Smithtown (Kempsey), NSW",
+   "lat": -31.02,
+   "lon": 152.95,
+   "cats": [
+    "food"
+   ],
+   "kind": "plant",
+   "st": "op",
+   "cap": "Milo and beverage powders",
+   "feed": "Milk, malt, cocoa",
+   "note": "Milo's original factory; Nestlé has made $32M and $40M investments here.",
+   "src": "https://www.nestle.com.au/en/media/pressreleases/40-million-investment-unveiled-at-nestles-smithtown-factory",
+   "approx": true,
+   "added": "2026-10-30"
+  },
+  {
+   "n": "Simplot Bathurst",
+   "co": "simplot",
+   "loc": "Kelso, Bathurst, NSW",
+   "lat": -33.42,
+   "lon": 149.61,
+   "cats": [
+    "food"
+   ],
+   "kind": "plant",
+   "st": "op",
+   "cap": "Vegetable processing",
+   "feed": "Vegetables",
+   "note": "Simplot has announced a major upgrade of this site; check current scope.",
+   "src": "https://www.freshplaza.com/oceania/article/9442338/simplot-australia-s-upgrade-to-bathurst-manufacturing-facility-will-transform-the-site/",
+   "approx": true,
+   "added": "2026-10-30"
+  },
+  {
+   "n": "Australian Vinyls Laverton North",
+   "co": "avinyls",
+   "loc": "Laverton North, VIC",
+   "lat": -37.84,
+   "lon": 144.78,
+   "cats": [
+    "chem"
+   ],
+   "kind": "plant",
+   "st": "op",
+   "cap": "PVC resin",
+   "feed": "VCM",
+   "note": "Australia's PVC resin maker. Verify current operating status.",
+   "src": "https://pipa.com.au/?p=2792",
+   "approx": true,
+   "added": "2026-10-30"
+  },
+  {
+   "n": "Circular Plastics Laverton",
+   "co": "pact",
+   "loc": "Laverton North, VIC",
+   "lat": -37.835,
+   "lon": 144.79,
+   "cats": [
+    "chem",
+    "wtf"
+   ],
+   "kind": "plant",
+   "st": "op",
+   "cap": "Plastic recycling (PET and HDPE)",
+   "feed": "Waste plastics",
+   "note": "$38M recycling plant from Pact Group and Cleanaway.",
+   "src": "https://pactgroup.com/news/new-38-million-laverton-plastic-recycling-plant-creates-new-jobs-and-reinvents-recycling-in-victoria/",
+   "approx": true,
+   "added": "2026-10-30"
+  },
+  {
+   "n": "MCI Carbon Kooragang",
+   "co": "mcicarbon",
+   "loc": "Kooragang Island, Newcastle, NSW",
+   "lat": -32.865,
+   "lon": 151.76,
+   "cats": [
+    "chem"
+   ],
+   "kind": "plant",
+   "st": "op",
+   "cap": "CO2 mineralisation",
+   "feed": "CO2 from Orica's ammonia plant",
+   "note": "Australia's first carbon refinery, opened June 2026.",
+   "src": "https://www.miningweekly.com/article/australia-opens-first-carbon-refinery-making-new-products-from-captured-carbon-dioxide-2026-06-18",
+   "approx": true,
+   "added": "2026-10-30"
+  },
+  {
+   "n": "Mapei Truganina Plant",
+   "co": "mapei",
+   "loc": "Truganina, VIC",
+   "lat": -37.82,
+   "lon": 144.74,
+   "cats": [
+    "chem",
+    "spec"
+   ],
+   "kind": "project",
+   "sg": "cons",
+   "cap": "Construction chemicals, 100+ product lines",
+   "inv": "About $60M",
+   "tl": "Reported June 2026; check current status",
+   "epc": "Not published",
+   "note": "Automated, solar-powered plant in Melbourne's west.",
+   "src": "https://www.pulse.bot/supply-chain/news/from-truganina-to-major-projects-mapeis-push-to-localise-manufacturing-in-australia-a0368b21-101a-4631-b1d0-8e647185c959/",
+   "approx": true,
+   "added": "2026-10-30"
+  },
+  {
+   "n": "Alfa Laval Oceania HQ",
+   "co": "alfalaval",
+   "loc": "Huntingwood, Sydney, NSW",
+   "lat": -33.8,
+   "lon": 150.88,
+   "cats": [
+    "con"
+   ],
+   "kind": "plant",
+   "st": "op",
+   "office": true,
+   "cap": "Heat exchangers, separators, pumps, valves",
+   "feed": "—",
+   "note": "Oceania headquarters and main Australian service centre.",
+   "src": "https://test03.alfalaval.com/en-au/about-us/our-company/alfa-laval-in-australia",
+   "approx": true,
+   "added": "2026-10-30"
+  },
+  {
+   "n": "Alfa Laval Melbourne",
+   "co": "alfalaval",
+   "loc": "Westmeadows, VIC",
+   "lat": -37.68,
+   "lon": 144.88,
+   "cats": [
+    "con"
+   ],
+   "kind": "plant",
+   "st": "op",
+   "office": true,
+   "cap": "Sales and service",
+   "feed": "—",
+   "note": "Victorian sales and service office.",
+   "src": "https://test03.alfalaval.com/en-au/about-us/our-company/alfa-laval-in-australia",
+   "approx": true,
+   "added": "2026-10-30"
+  },
+  {
+   "n": "KSB Australia HQ",
+   "co": "ksb",
+   "loc": "Bundamba, Ipswich, QLD",
+   "lat": -27.61,
+   "lon": 152.81,
+   "cats": [
+    "con"
+   ],
+   "kind": "plant",
+   "st": "op",
+   "office": true,
+   "cap": "Pumps, valves and service",
+   "feed": "—",
+   "note": "KSB's Australian head office and works.",
+   "src": "https://www.ksb.com/en-au/company",
+   "approx": true,
+   "added": "2026-10-30"
+  },
+  {
+   "n": "Wave International (HQ)",
+   "co": "wave",
+   "loc": "Perth, WA",
+   "lat": -31.951,
+   "lon": 115.858,
+   "cats": [
+    "eng"
+   ],
+   "kind": "plant",
+   "st": "op",
+   "office": true,
+   "cap": "Engineering, process and project delivery",
+   "feed": "—",
+   "note": "Also has Brisbane and Sydney offices.",
+   "src": "https://www.mining-technology.com/contractors/project-management-and-consultancy/wave-int/",
+   "approx": true,
+   "added": "2026-10-30"
+  }
+ ],
+ "companies": [
+  {
+   "k": "lion",
+   "n": "Lion (Tooheys)",
+   "dom": "lionco.com",
+   "added": "2026-10-30"
+  },
+  {
+   "k": "mccain",
+   "n": "McCain Foods Australia",
+   "dom": "mccain.com.au",
+   "added": "2026-10-30"
+  },
+  {
+   "k": "nestle",
+   "n": "Nestlé Australia",
+   "dom": "nestle.com.au",
+   "added": "2026-10-30"
+  },
+  {
+   "k": "simplot",
+   "n": "Simplot Australia",
+   "dom": "simplot.com.au",
+   "added": "2026-10-30"
+  },
+  {
+   "k": "avinyls",
+   "n": "Australian Vinyls",
+   "added": "2026-10-30"
+  },
+  {
+   "k": "pact",
+   "n": "Pact Group / Circular Plastics",
+   "dom": "pactgroup.com",
+   "added": "2026-10-30"
+  },
+  {
+   "k": "mcicarbon",
+   "n": "MCI Carbon",
+   "dom": "mcicarbon.com",
+   "added": "2026-10-30"
+  },
+  {
+   "k": "mapei",
+   "n": "Mapei Australia",
+   "dom": "mapei.com",
+   "added": "2026-10-30"
+  },
+  {
+   "k": "alfalaval",
+   "n": "Alfa Laval",
+   "dom": "alfalaval.com",
+   "list": true,
+   "t": "OEM / process technology",
+   "hq": "Huntingwood, NSW",
+   "f": "Heat exchangers, separators, pumps and valves for process plants",
+   "added": "2026-10-30"
+  },
+  {
+   "k": "ksb",
+   "n": "KSB Australia",
+   "dom": "ksb.com",
+   "list": true,
+   "t": "OEM / process technology",
+   "hq": "Bundamba, QLD",
+   "f": "Pumps, valves and pump service",
+   "added": "2026-10-30"
+  },
+  {
+   "k": "wave",
+   "n": "Wave International",
+   "dom": "waveinternational.com",
+   "list": true,
+   "t": "EPCM / engineering",
+   "hq": "Perth, WA",
+   "f": "Process engineering, studies and project delivery",
+   "added": "2026-10-30"
   }
  ]
 }
