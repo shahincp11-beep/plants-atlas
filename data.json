@@ -1,6 +1,292 @@
 {
- "updated": "2026-10-30T00:55:00+11:00",
+ "updated": "2026-10-30T20:28:30+11:00",
  "jobs": [
+  {
+   "co": "scalzo",
+   "cn": "Scalzo Food Industries",
+   "sf": 17,
+   "sw": "Food processing plant",
+   "t": "Project Engineer",
+   "loc": "Ravenhall, Melbourne VIC",
+   "d": "2026-10-30",
+   "u": "https://www.seek.com.au/job/95153031",
+   "lvl": "Mid",
+   "src": "Seek"
+  },
+  {
+   "co": "alcon",
+   "cn": "Alcon Laboratories",
+   "sf": 15,
+   "sw": "Eye-care manufacturing plant",
+   "t": "Production Engineer - 18 months contract",
+   "loc": "Mulgrave, Melbourne VIC",
+   "d": "2026-10-30",
+   "u": "https://www.seek.com.au/job/95546746",
+   "lvl": "Mid",
+   "src": "Seek"
+  },
+  {
+   "co": "kannegiesser",
+   "cn": "Kannegiesser Australia",
+   "sf": 14,
+   "sw": "Industrial machinery installation",
+   "t": "Project Engineer - Industrial Machinery",
+   "loc": "Melbourne VIC",
+   "d": "2026-10-29",
+   "u": "https://www.seek.com.au/job/95546573",
+   "lvl": "Mid",
+   "src": "Seek"
+  },
+  {
+   "co": "cleanaway",
+   "t": "Reliability & Plant Maintenance Supervisor",
+   "loc": "Western Sydney MRF, Rooty Hill NSW",
+   "d": "2026-10-29",
+   "u": "https://lnkd.in/gYmd2ESw",
+   "lvl": "Mid / lead",
+   "src": "LinkedIn"
+  },
+  {
+   "co": "cpb",
+   "cn": "CPB Contractors",
+   "t": "Project Engineer, Mechanical – MEI (North East Link)",
+   "loc": "Melbourne VIC",
+   "d": "2026-10-29",
+   "u": "https://to.indeed.com/aanffndfwc67",
+   "lvl": "Mid",
+   "src": "Indeed"
+  },
+  {
+   "co": "ansto",
+   "t": "Maintenance Planner",
+   "loc": "Lucas Heights NSW",
+   "d": "2026-10-29",
+   "u": "https://to.indeed.com/aadqnkvjpzpq",
+   "lvl": "Mid",
+   "src": "Indeed",
+   "cn": "ANSTO"
+  },
+  {
+   "co": "rokon",
+   "cn": "Rokon",
+   "sf": 8,
+   "sw": "Industrial design & construct builder",
+   "t": "Project Engineer",
+   "loc": "Wollert, Melbourne VIC",
+   "d": "2026-10-29",
+   "u": "https://www.seek.com.au/job/95532815",
+   "lvl": "Mid",
+   "src": "Seek"
+  },
+  {
+   "co": "regroup",
+   "cn": "Re.Group",
+   "sf": 12,
+   "sw": "Recycling and resource recovery plants",
+   "t": "Reliability Engineer",
+   "loc": "Dandenong VIC",
+   "d": "2026-10-29",
+   "u": "https://to.indeed.com/aarswd6hwjr8",
+   "lvl": "Mid",
+   "src": "Indeed",
+   "jd": "Re.Group is an Australian-owned company focused on providing solutions for recycling and recovery of resources from waste.\nAbout the Role: As a Reliability Engineer, you will be responsible for improving equipment reliability, maintenance systems, site performance and personnel capability, developing strategies to improve equipment availability, safety and maintenance processes.\nKey Responsibilities:\n- Collaborate across the maintenance function to continuously improve and optimise safety, maintenance processes, operational efficiency, productivity and R & M costs.\n- Improve equipment reliability through process improvement, monitoring and analysis of equipment operation, maintenance and failures, and bad actor analysis with a focus on leading KPIs.\n- Enhance the technical competency of the maintenance function to support increasing equipment complexity and new technologies.\n- Identify, assess and quantify opportunities to improve processes and equipment performance.\n- Support site operations by interpreting OEM technical manuals and drawings and provide data-driven planning and reporting using the MEX Computerised Maintenance Management System.\n- Lead RCA investigations for technical issues resulting in equipment issues and plant downtime.\n- Liaise with third-party suppliers to coordinate technical support, critical maintenance activities and onsite supervision; verify completed work and ensure equipment is safely handed over to operations.\n- Manage small local improvement projects as requested.\n- Ensure all PM and CM activities are accurately recorded in MEX.\n- Maintain the MEX asset register and stores module, ensuring asset details, maintenance schedules, inventory records and spare parts data are accurate and up to date.\n- Conduct monthly stocktakes, monitor stock levels and reorder points, and ensure critical spare parts are available.\nAbout You:\n- Strong health and safety focus.\n- Mechanical or Industrial Engineering qualifications.\n- 3+ years' maintenance experience in recycling, manufacturing or heavy mechanical industries.\n- Ability to read and interpret OEM equipment manuals, technical documents and drawings.\n- Ability to lead and motivate staff and third-party contractors.\n- Willing to work weekends during shutdowns and major project installations, equipment refurbishments and commissioning activities.\n- Excellent written and verbal communication skills."
+  },
+  {
+   "co": "boral",
+   "cn": "Boral",
+   "sf": 12,
+   "sw": "Quarries and building materials",
+   "t": "Maintenance Planner",
+   "loc": "Sydney NSW",
+   "d": "2026-10-29",
+   "u": "https://to.indeed.com/aagldv4fvs4w",
+   "lvl": "Mid",
+   "src": "Indeed",
+   "jd": "Supporting the NSW Assets Team, this role focuses on coordinating maintenance planning and work management activities across quarry operations. Working closely with Quarry Managers, Maintenance Supervisors and site teams, the successful candidate will assist with maintenance scheduling, work order coordination, maintenance system management and reporting activities. This is a permanent full-time role based at either North Ryde office, Seaham or Peppertree or Dunmore, with occasional travel across our NSW quarry sites.\nYour day will involve:\n- Coordinate preventative maintenance programs and manage monthly asset care activities across NSW quarry operations\n- Assist with the preparation and distribution of maintenance schedules and work plans\n- Create, prioritise and close out work orders while maintaining accurate maintenance records\n- Assist site teams with maintenance planning requirements and resource coordination\n- Maintain Maximo data integrity and produce reports on maintenance performance, equipment reliability and compliance\n- Partner with site teams to align maintenance plans with operational priorities and production requirements\n- Assist in identifying scheduling issues and support process improvements\nWhat are we looking for?\n- Proficiency in Microsoft Office / Microsoft 365, with strong spreadsheet and reporting skills\n- Working knowledge of a CMMS such as Maximo, SAP, MEX, Pronto, Oracle EAM or similar\n- A sound understanding of maintenance scheduling and work order management processes\n- Some exposure to a heavy industry environment such as quarrying, mining, manufacturing or construction materials\n- Strong communication, organisational and analytical skills\n- A genuine development pathway into senior maintenance planning and reliability roles"
+  },
+  {
+   "co": "ugl",
+   "t": "Senior Planner",
+   "loc": "Tullamarine VIC",
+   "d": "2026-10-29",
+   "u": "https://to.indeed.com/aa6pgllt2pxp",
+   "lvl": "Senior",
+   "src": "Indeed"
+  },
+  {
+   "co": "engie",
+   "cn": "ENGIE",
+   "sf": 12,
+   "sw": "Power generation",
+   "t": "Mechanical Engineer",
+   "loc": "Southbank VIC",
+   "d": "2026-10-29",
+   "u": "https://to.indeed.com/aam8fbgcdwym",
+   "lvl": "Mid",
+   "src": "Indeed"
+  },
+  {
+   "co": "equinox",
+   "cn": "Equinox Engineering",
+   "sf": 20,
+   "sw": "Oil & gas facilities EPC",
+   "t": "Senior Project Engineer – Brisbane, Australia",
+   "loc": "Brisbane QLD",
+   "d": "2026-10-29",
+   "u": "https://to.indeed.com/aa4m6nlzl6lt",
+   "lvl": "Senior",
+   "src": "Indeed"
+  },
+  {
+   "co": "grengineering",
+   "cn": "GR Engineering",
+   "sf": 21,
+   "sw": "EPC process-plant contractor",
+   "t": "Senior Mechanical Engineer",
+   "loc": "Perth WA",
+   "d": "2026-10-29",
+   "u": "https://to.indeed.com/aajyqfhk4wcm",
+   "lvl": "Senior",
+   "src": "Indeed"
+  },
+  {
+   "co": "equinox",
+   "cn": "Equinox Engineering",
+   "sf": 21,
+   "sw": "Oil & gas EPC contractor",
+   "t": "Project Engineer – Brisbane Australia",
+   "loc": "Brisbane QLD",
+   "d": "2026-10-29",
+   "u": "https://to.indeed.com/aaghtbzjphzy",
+   "lvl": "Mid",
+   "src": "Indeed"
+  },
+  {
+   "co": "orchardhro",
+   "cn": "Orchard HRO (recruiter)",
+   "sf": 15,
+   "sw": "Manufacturing processes",
+   "t": "Manufacturing Engineer",
+   "loc": "Ringwood, Melbourne VIC",
+   "d": "2026-10-28",
+   "u": "https://www.seek.com.au/job/95509721",
+   "lvl": "Mid",
+   "src": "Seek"
+  },
+  {
+   "co": "maxilift",
+   "cn": "Maxilift Australia",
+   "sf": 10,
+   "sw": "Lifting equipment manufacturer",
+   "t": "Mechanical Engineer",
+   "loc": "Dandenong South, Melbourne VIC",
+   "d": "2026-10-28",
+   "u": "https://www.seek.com.au/job/95513591",
+   "lvl": "Mid",
+   "src": "Seek"
+  },
+  {
+   "co": "snowy",
+   "cn": "Snowy Hydro",
+   "sf": 12,
+   "sw": "Power generation",
+   "t": "Operational Readiness Engineer",
+   "loc": "Melbourne VIC",
+   "d": "2026-10-28",
+   "u": "https://www.seek.com.au/job/95509004",
+   "lvl": "Mid / lead",
+   "src": "Seek"
+  },
+  {
+   "co": "airservices",
+   "cn": "Airservices Australia",
+   "sf": 8,
+   "sw": "Critical mechanical infrastructure",
+   "t": "Senior Engineering Specialist (Mechanical)",
+   "loc": "Melbourne Airport VIC",
+   "d": "2026-10-28",
+   "u": "https://www.seek.com.au/job/95507766",
+   "lvl": "Senior",
+   "src": "Seek"
+  },
+  {
+   "co": "nufarm",
+   "t": "Project Mechanical Engineer",
+   "loc": "Laverton North VIC",
+   "d": "2026-10-28",
+   "u": "https://to.indeed.com/aax4bjmw9qj9",
+   "lvl": "Mid",
+   "src": "Indeed",
+   "jd": "Based in Laverton North at our Pipe Road chemical manufacturing facility, we're looking to engage a Senior Project Engineer with mechanical specialisation within our Project Management Team. In the role you will be accountable for the activities and coordination of the project scoping, preliminary and detail design, cost estimation and execution plan of capital projects and act as subject matter expert in your field providing advice to Maintenance and the PMO. This role will have direct leadership experience with direct reports and mentoring.\nHow You'll Help Us Grow\n- Lead end-to-end CAPEX projects, from concept and design through to commissioning, handover and operational success.\n- Good knowledge of mechanical equipment, plant and equipment design (static equipment, pressure vessels and piping, rotating equipment) and relevant standards.\n- Experienced in tendering, contractor selection and construction management activities, including preparing and issuing scopes of work, procurement and tender documents and evaluating technical bids.\n- Experience applying Safety in Design principles and contributing to HAZOP, LOPA, hazardous area classification and other process safety studies, Management of Change (MOC) and pre-start-up safety reviews.\n- Drive smart engineering solutions by providing technical expertise, optimising asset performance and minimising total lifecycle costs.\n- Manage contractors, budgets and timelines to deliver projects safely, efficiently and on schedule.\n- Champion continuous improvement, reliability and best-practice standards through innovation, RCA and process optimisation.\n- Make a real impact by ensuring compliance, supporting process safety initiatives and delivering sustainable improvements across operations.\nCould This Be You?\nYou're Tertiary qualified in Engineering (Mechanical) and bring extensive experience in manufacturing equipment design, technical support, project delivery of small to medium-size projects will be highly regarded. You have a strong scientific approach to solving problems, the ability to make data-based decisions, and you're comfortable working in a team environment with a high degree of initiative and self-motivation.\nBenefits: Employee Share Plan, flexible role, health benefits, onsite cafe."
+  },
+  {
+   "co": "tdw",
+   "t": "Project Manager II",
+   "loc": "Melbourne VIC",
+   "d": "2026-10-28",
+   "u": "https://to.indeed.com/aacbtvr8r47v",
+   "lvl": "Manager",
+   "src": "Indeed",
+   "cn": "T.D. Williamson"
+  },
+  {
+   "co": "worley",
+   "t": "Project Engineer or Senior Project Engineer",
+   "loc": "Melbourne VIC",
+   "d": "2026-10-28",
+   "u": "https://to.indeed.com/aa87twsycc7v",
+   "lvl": "Senior",
+   "src": "Indeed",
+   "jd": "Worley is seeking an experienced Project Engineer or Senior Project Engineer to join our Melbourne team on an initial 12-month contract, with a strong likelihood of extension.\nWorking across a diverse portfolio of projects, you'll play a key role in supporting project delivery from planning and design through to execution and close-out. This is an excellent opportunity to work with a high-performing team delivering technically challenging projects while building strong relationships with customers, contractors and multidisciplinary stakeholders.\nWhat You'll Do\n- Support the delivery of projects across all phases of execution.\n- Coordinate engineering, procurement, construction and commissioning activities.\n- Manage project scope, schedule, cost and risk to support successful project outcomes.\n- Work closely with customers, contractors and internal project teams.\n- Facilitate project meetings, design reviews and stakeholder engagements.\n- Monitor project performance and contribute to project reporting and forecasting.\n- Promote safe, efficient and high-quality project delivery.\nWhat You'll Bring\n- Degree qualification in Engineering or a related discipline.\n- Demonstrated experience in a Senior Project Engineer or similar project delivery role.\n- Experience delivering projects within onshore energy sector.\n- Strong understanding of project delivery across studies, FEED, detailed design, construction and commissioning.\n- Excellent stakeholder management and communication skills.\n- Ability to work effectively within multidisciplinary project teams.\n- A proactive approach to problem-solving and project execution.\nWhy You Should Apply\n- Initial 12-month contract with strong potential for extension.\n- Opportunity to work on a diverse range of projects and industries.\n- Collaborative and supportive team environment.\n- Join a global company delivering sustainable change across the energy, chemicals and resources sectors."
+  },
+  {
+   "co": "chandler",
+   "cn": "Chandler Macleod",
+   "sf": 10,
+   "sw": "Recruiter for Hunter client",
+   "t": "Mechanical Enginneer",
+   "loc": "Rutherford NSW",
+   "d": "2026-10-28",
+   "u": "https://to.indeed.com/aaw8lmrm6hl7",
+   "lvl": "Mid",
+   "src": "Indeed"
+  },
+  {
+   "co": "minres",
+   "cn": "Mineral Resources",
+   "sf": 12,
+   "sw": "Mining and minerals processing",
+   "t": "Senior Mechanical Engineer",
+   "loc": "Osborne Park WA",
+   "d": "2026-10-28",
+   "u": "https://to.indeed.com/aagnbtnsvrmb",
+   "lvl": "Senior",
+   "src": "Indeed"
+  },
+  {
+   "co": "airliquide",
+   "cn": "Air Liquide",
+   "sf": 16,
+   "sw": "Industrial gases plant",
+   "t": "Production Engineer - WA",
+   "loc": "Henderson WA",
+   "d": "2026-10-28",
+   "u": "https://to.indeed.com/aa79zcs224r2",
+   "lvl": "Mid",
+   "src": "Indeed"
+  },
+  {
+   "co": "perthmint",
+   "cn": "The Perth Mint",
+   "sf": 15,
+   "sw": "Precious metals refinery",
+   "t": "Engineer Projects Decommissioning",
+   "loc": "Perth Eastern Suburbs WA",
+   "d": "2026-10-28",
+   "u": "https://to.indeed.com/aaymk4ts794m",
+   "lvl": "Mid",
+   "src": "Indeed"
+  },
   {
    "co": "furmanite",
    "t": "Mechanical Engineer",
@@ -8,6 +294,200 @@
    "d": "2026-10-27",
    "u": "https://www.seek.com.au/job/95502764",
    "lvl": "Mid",
+   "src": "Seek"
+  },
+  {
+   "co": "multiworks",
+   "cn": "Multiworks Australia",
+   "sf": 8,
+   "sw": "Infrastructure works",
+   "t": "Senior Project Engineer",
+   "loc": "Brooklyn, Melbourne VIC",
+   "d": "2026-10-27",
+   "u": "https://www.seek.com.au/job/95401388",
+   "lvl": "Senior",
+   "src": "Seek"
+  },
+  {
+   "co": "svhm",
+   "cn": "St Vincent's Hospital Melbourne",
+   "sf": 6,
+   "sw": "Hospital engineering services",
+   "t": "Engineering Supervisor",
+   "loc": "Fitzroy, Melbourne VIC",
+   "d": "2026-10-27",
+   "u": "https://www.seek.com.au/job/95488235",
+   "lvl": "Manager",
+   "src": "Seek"
+  },
+  {
+   "co": "monadelphous",
+   "t": "Project Engineer",
+   "loc": "Perth WA",
+   "d": "2026-10-27",
+   "u": "https://to.indeed.com/aagj4h4wgbsv",
+   "lvl": "Mid",
+   "src": "Indeed"
+  },
+  {
+   "co": "civmec",
+   "t": "Project Engineer SMP (contract)",
+   "loc": "South West WA",
+   "d": "2026-10-27",
+   "u": "https://to.indeed.com/aan78y7dwllr",
+   "lvl": "Mid",
+   "src": "Indeed",
+   "cn": "Civmec",
+   "sf": 17,
+   "sw": "SMP construction and shutdowns"
+  },
+  {
+   "co": "civmec",
+   "t": "Senior Project Engineer",
+   "loc": "South West WA",
+   "d": "2026-10-27",
+   "u": "https://to.indeed.com/aaygqrw2tnnx",
+   "lvl": "Senior",
+   "src": "Indeed",
+   "cn": "Civmec",
+   "sf": 17,
+   "sw": "SMP construction and shutdowns"
+  },
+  {
+   "co": "xenco",
+   "cn": "Xenco Services",
+   "sf": 12,
+   "sw": "Mining projects",
+   "t": "Project Engineers & Senior Project Managers – Mining",
+   "loc": "Melbourne VIC (FIFO)",
+   "d": "2026-10-26",
+   "u": "https://www.seek.com.au/job/95456256",
+   "lvl": "Senior",
+   "src": "Seek"
+  },
+  {
+   "co": "jvrec",
+   "cn": "JV Recruitment",
+   "sf": 8,
+   "sw": "Project sites",
+   "t": "Project Engineer",
+   "loc": "Melbourne VIC",
+   "d": "2026-10-26",
+   "u": "https://www.seek.com.au/job/95457683",
+   "lvl": "Mid",
+   "src": "Seek"
+  },
+  {
+   "co": "bhp",
+   "t": "Mine Scheduling Engineer – Olympic Dam",
+   "loc": "Olympic Dam SA",
+   "d": "2026-10-26",
+   "u": "https://to.indeed.com/aa2kknq4lmqp",
+   "lvl": "Mid",
+   "src": "Indeed"
+  },
+  {
+   "co": "acciona",
+   "t": "Site Engineer, Commissioning (contract)",
+   "loc": "Perth WA",
+   "d": "2026-10-26",
+   "u": "https://to.indeed.com/aaknb48nvx6y",
+   "lvl": "Mid",
+   "src": "Indeed",
+   "cn": "Acciona",
+   "sf": 14,
+   "sw": "Water and energy infrastructure"
+  },
+  {
+   "co": "furmanite",
+   "t": "Design Engineer",
+   "loc": "Laverton North VIC",
+   "d": "2026-10-26",
+   "u": "https://to.indeed.com/aa9bljm7yxpt",
+   "lvl": "Mid",
+   "src": "Indeed",
+   "cn": "Furmanite Australia"
+  },
+  {
+   "co": "kraftheinz",
+   "cn": "Kraft Heinz",
+   "sf": 17,
+   "sw": "Food manufacturing",
+   "t": "Project Engineer",
+   "loc": "Northgate, Brisbane QLD",
+   "d": "2026-10-25",
+   "u": "https://www.seek.com.au/job/95468344",
+   "lvl": "Mid",
+   "src": "Seek"
+  },
+  {
+   "co": "jameshardie",
+   "cn": "James Hardie",
+   "sf": 15,
+   "sw": "Building products manufacturing",
+   "t": "Process Engineer",
+   "loc": "Carole Park, Brisbane QLD",
+   "d": "2026-10-25",
+   "u": "https://www.seek.com.au/job/95423508",
+   "lvl": "Mid",
+   "src": "Seek"
+  },
+  {
+   "co": "primemining",
+   "cn": "Prime Mining",
+   "sf": 14,
+   "sw": "New processing operation",
+   "t": "Process Engineer, Business Readiness",
+   "loc": "Brisbane QLD",
+   "d": "2026-10-25",
+   "u": "https://www.seek.com.au/job/95432144",
+   "lvl": "Senior",
+   "src": "Seek"
+  },
+  {
+   "co": "cgcrec",
+   "cn": "CGC Recruitment",
+   "sf": 12,
+   "sw": "Major project mechanical",
+   "t": "Mechanical Site Engineer | 2 Month Contract | Major Project",
+   "loc": "Brisbane QLD",
+   "d": "2026-10-25",
+   "u": "https://www.seek.com.au/job/95462574",
+   "lvl": "Mid",
+   "src": "Seek"
+  },
+  {
+   "co": "downer",
+   "t": "Mechanical Supervisor – Eraring",
+   "loc": "Lake Macquarie NSW",
+   "d": "2026-10-25",
+   "u": "https://to.indeed.com/aa44nbw8fj66",
+   "lvl": "Mid / lead",
+   "src": "Indeed",
+   "cn": "Downer Group"
+  },
+  {
+   "co": "steritech",
+   "cn": "Steritech",
+   "sf": 14,
+   "sw": "Sterilisation processing plant",
+   "t": "Process Engineer",
+   "loc": "Mickleham, Melbourne VIC",
+   "d": "2026-10-24",
+   "u": "https://www.seek.com.au/job/95450037",
+   "lvl": "Mid",
+   "src": "Seek"
+  },
+  {
+   "co": "forefront",
+   "cn": "Forefront Recruitment",
+   "sf": 8,
+   "sw": "Construction project",
+   "t": "Senior Project Engineer",
+   "loc": "Hoppers Crossing, Melbourne VIC",
+   "d": "2026-10-24",
+   "u": "https://www.seek.com.au/job/95406860",
+   "lvl": "Senior",
    "src": "Seek"
   },
   {
@@ -32,42 +512,6 @@
    "d": "2026-10-23",
    "u": "https://www.seek.com.au/job/95305922",
    "lvl": "Mid / lead",
-   "src": "Seek"
-  },
-  {
-   "co": "steritech",
-   "cn": "Steritech",
-   "sf": 14,
-   "sw": "Sterilisation processing plant",
-   "t": "Process Engineer",
-   "loc": "Mickleham, Melbourne VIC",
-   "d": "2026-10-24",
-   "u": "https://www.seek.com.au/job/95450037",
-   "lvl": "Mid",
-   "src": "Seek"
-  },
-  {
-   "co": "kannegiesser",
-   "cn": "Kannegiesser Australia",
-   "sf": 14,
-   "sw": "Industrial machinery installation",
-   "t": "Project Engineer - Industrial Machinery",
-   "loc": "Melbourne VIC",
-   "d": "2026-10-29",
-   "u": "https://www.seek.com.au/job/95546573",
-   "lvl": "Mid",
-   "src": "Seek"
-  },
-  {
-   "co": "orchardhro",
-   "cn": "Orchard HRO (recruiter)",
-   "sf": 15,
-   "sw": "Manufacturing processes",
-   "t": "Manufacturing Engineer",
-   "loc": "Ringwood, Melbourne VIC",
-   "d": "2026-10-28",
-   "u": "https://www.seek.com.au/job/95509721",
-   "lvl": "Mid",
    "src": "Seek"
   },
   {
@@ -107,90 +551,6 @@
    "src": "Seek"
   },
   {
-   "co": "maxilift",
-   "cn": "Maxilift Australia",
-   "sf": 10,
-   "sw": "Lifting equipment manufacturer",
-   "t": "Mechanical Engineer",
-   "loc": "Dandenong South, Melbourne VIC",
-   "d": "2026-10-28",
-   "u": "https://www.seek.com.au/job/95513591",
-   "lvl": "Mid",
-   "src": "Seek"
-  },
-  {
-   "co": "snowy",
-   "cn": "Snowy Hydro",
-   "sf": 12,
-   "sw": "Power generation",
-   "t": "Operational Readiness Engineer",
-   "loc": "Melbourne VIC",
-   "d": "2026-10-28",
-   "u": "https://www.seek.com.au/job/95509004",
-   "lvl": "Mid / lead",
-   "src": "Seek"
-  },
-  {
-   "co": "xenco",
-   "cn": "Xenco Services",
-   "sf": 12,
-   "sw": "Mining projects",
-   "t": "Project Engineers & Senior Project Managers – Mining",
-   "loc": "Melbourne VIC (FIFO)",
-   "d": "2026-10-26",
-   "u": "https://www.seek.com.au/job/95456256",
-   "lvl": "Senior",
-   "src": "Seek"
-  },
-  {
-   "co": "airservices",
-   "cn": "Airservices Australia",
-   "sf": 8,
-   "sw": "Critical mechanical infrastructure",
-   "t": "Senior Engineering Specialist (Mechanical)",
-   "loc": "Melbourne Airport VIC",
-   "d": "2026-10-28",
-   "u": "https://www.seek.com.au/job/95507766",
-   "lvl": "Senior",
-   "src": "Seek"
-  },
-  {
-   "co": "multiworks",
-   "cn": "Multiworks Australia",
-   "sf": 8,
-   "sw": "Infrastructure works",
-   "t": "Senior Project Engineer",
-   "loc": "Brooklyn, Melbourne VIC",
-   "d": "2026-10-27",
-   "u": "https://www.seek.com.au/job/95401388",
-   "lvl": "Senior",
-   "src": "Seek"
-  },
-  {
-   "co": "forefront",
-   "cn": "Forefront Recruitment",
-   "sf": 8,
-   "sw": "Construction project",
-   "t": "Senior Project Engineer",
-   "loc": "Hoppers Crossing, Melbourne VIC",
-   "d": "2026-10-24",
-   "u": "https://www.seek.com.au/job/95406860",
-   "lvl": "Senior",
-   "src": "Seek"
-  },
-  {
-   "co": "jvrec",
-   "cn": "JV Recruitment",
-   "sf": 8,
-   "sw": "Project sites",
-   "t": "Project Engineer",
-   "loc": "Melbourne VIC",
-   "d": "2026-10-26",
-   "u": "https://www.seek.com.au/job/95457683",
-   "lvl": "Mid",
-   "src": "Seek"
-  },
-  {
    "co": "profound",
    "cn": "PROFOUND (recruiter)",
    "sf": 8,
@@ -203,40 +563,108 @@
    "src": "Seek"
   },
   {
-   "co": "svhm",
-   "cn": "St Vincent's Hospital Melbourne",
-   "sf": 6,
-   "sw": "Hospital engineering services",
-   "t": "Engineering Supervisor",
-   "loc": "Fitzroy, Melbourne VIC",
-   "d": "2026-10-27",
-   "u": "https://www.seek.com.au/job/95488235",
-   "lvl": "Manager",
-   "src": "Seek"
-  },
-  {
-   "co": "aurizon",
-   "cn": "Aurizon",
-   "sf": 10,
-   "sw": "Rail plant & equipment",
-   "t": "Plant & Equipment Engineer",
-   "loc": "Newcastle NSW",
-   "d": "2026-10-10",
-   "u": "https://www.seek.com.au/job/95160120",
+   "co": "bega",
+   "cn": "Bega Cheese",
+   "t": "Mechanical Engineer",
+   "loc": "Wetherill Park NSW",
+   "d": "2026-10-23",
+   "u": "https://to.indeed.com/aajkj869t8kn",
    "lvl": "Mid",
-   "src": "Seek"
+   "src": "Indeed",
+   "jd": "An opportunity currently exists for a Mechanical Engineer to join the Reliability Team based in our Wetherill Park Site, the home of Dare Iced Coffee, Dairy Farmers, Farmers Union, and Big M.\nOur Wetherill Park site in Sydney is our Milk Based Beverages (MBB) hub for the eastern seaboard. The site manufactures both Fresh and Extended Shelf-Life products, including UHT long-life milk, and produces 75 million litres of dairy products.\nReporting to the site leader, the Mechanical Engineer will plan the strategic direction for Packaging equipment & Continuous Improvement on-site, in line with current industry best practices, and instigate and lead improvement projects in data acquisition.\nResponsibilities\n- Deliver the implementation of site engineering, capital, and NPD projects and ensure project deliverables are met including safety, cost, quality, and benefits.\n- Identify and provide solutions for process improvement opportunities.\n- Mentor and provide technical expertise to the maintenance and production staff.\n- Lead and support continuous improvement and ad-hoc projects.\n- Support and assist in the development of HACCP, Safety, and Environmental plans.\nAbout you\n- Experience working in an FMCG manufacturing environment.\n- Solid analytical & problem-solving skills.\n- Knowledge of Continuous Improvement methodologies & tools.\n- Demonstrated experience in Project & change management.\n- Ability to work with a diverse range of team members and stakeholders.\n- Excellent written and verbal communication skills.\nThe successful applicant will be required to complete a pre-employment medical."
   },
   {
-   "co": "kraftheinz",
-   "cn": "Kraft Heinz",
+   "co": "acciona",
+   "t": "Project Engineer, Mechanical (contract)",
+   "loc": "Perth WA",
+   "d": "2026-10-23",
+   "u": "https://to.indeed.com/aaptfbwtqjlm",
+   "lvl": "Mid",
+   "src": "Indeed",
+   "cn": "Acciona",
+   "sf": 14,
+   "sw": "Water and energy infrastructure"
+  },
+  {
+   "co": "acciona",
+   "t": "Process Engineer (contract)",
+   "loc": "Perth WA",
+   "d": "2026-10-23",
+   "u": "https://to.indeed.com/aa4qqcn228bd",
+   "lvl": "Mid",
+   "src": "Indeed",
+   "cn": "Acciona",
+   "sf": 14,
+   "sw": "Water and energy infrastructure"
+  },
+  {
+   "co": "sanitarium",
+   "cn": "Sanitarium",
    "sf": 17,
-   "sw": "Food manufacturing",
-   "t": "Project Engineer",
-   "loc": "Northgate, Brisbane QLD",
-   "d": "2026-10-25",
-   "u": "https://www.seek.com.au/job/95468344",
+   "sw": "Food manufacturing plant",
+   "t": "Senior Maintenance Planner",
+   "loc": "Berkeley Vale NSW",
+   "d": "2026-10-23",
+   "u": "https://to.indeed.com/aaf7wt46fqvm",
+   "lvl": "Senior",
+   "src": "Indeed",
+   "jd": "Great maintenance starts with great planning.\nWe're looking for an experienced Senior Maintenance Planner to help keep our Berkeley Vale manufacturing site operating safely, reliably and efficiently.\nReporting to the Site Maintenance & Reliability Manager, you'll bring together the people, parts, systems and schedules needed to deliver effective maintenance. Your scope will include preventative and corrective maintenance planning, shutdown coordination, maintenance systems, contractor coordination and oversight of the maintenance stores team.\nWhat you'll be doing\n- Develop detailed work plans covering labour, materials, tools, permits and contractor requirements, while maintaining an organised and prioritised maintenance backlog.\n- Bring together work scopes, resources and schedules, ensuring contractors are prepared and site requirements are met.\n- Be the site's key contact for the Computerised Maintenance Management System (CMMS), supporting accurate asset records, quality work orders and practical training for users.\n- Lead and support the stores team, coordinate purchasing and maintain critical spare parts availability.\n- Use maintenance data and equipment history to identify recurring issues, strengthen preventative and predictive maintenance programs, and support continuous improvement.\n- Work closely with production and maintenance stakeholders to align priorities, monitor progress and report on maintenance performance.\n- Build site safety, food safety, hygiene and compliance requirements into maintenance planning and contractor activities.\nWhat you'll bring\n- A trade or engineering qualification, or equivalent maintenance industry experience.\n- At least five years' experience in maintenance planning, scheduling or coordination.\n- Demonstrated experience using a CMMS within an FMCG or manufacturing environment.\n- Strong practical knowledge of preventative maintenance, work order planning and backlog management.\n- Strong analytical and reporting skills, with advanced Microsoft Office capability, particularly Excel.\n- The ability to lead, coach and support the maintenance stores team.\n- Experience in food manufacturing, shutdown planning, reliability-centred maintenance, predictive maintenance or technical training would be highly regarded."
+  },
+  {
+   "co": "microbiomics",
+   "cn": "The Microbiomics Group",
+   "sf": 15,
+   "sw": "Manufacturing, new production line",
+   "t": "Process & Maintenance Engineer (Manufacturing & New Production Line)",
+   "loc": "Loganholme, Brisbane QLD",
+   "d": "2026-10-22",
+   "u": "https://www.seek.com.au/job/95402635",
    "lvl": "Mid",
    "src": "Seek"
+  },
+  {
+   "co": "innova",
+   "cn": "Innova Water",
+   "sf": 12,
+   "sw": "Water & wastewater treatment",
+   "t": "Process & Hydraulic Design Engineer",
+   "loc": "Hamilton, Brisbane QLD",
+   "d": "2026-10-22",
+   "u": "https://www.seek.com.au/job/95312046",
+   "lvl": "Senior",
+   "src": "Seek"
+  },
+  {
+   "co": "constructability",
+   "cn": "Constructability Recruitment",
+   "sf": 8,
+   "sw": "Tier 1 contractor",
+   "t": "Project Engineer & Senior Project Engineer | 14/7 FIFO",
+   "loc": "Brisbane QLD",
+   "d": "2026-10-22",
+   "u": "https://www.seek.com.au/job/95300654",
+   "lvl": "Senior",
+   "src": "Seek"
+  },
+  {
+   "co": "cleanaway",
+   "t": "Process Engineer",
+   "loc": "Kemps Creek NSW",
+   "d": "2026-10-22",
+   "u": "https://to.indeed.com/aakbzsg6tpzv",
+   "lvl": "Mid",
+   "src": "Indeed"
+  },
+  {
+   "co": "idt",
+   "cn": "IDT Australia",
+   "t": "Project Engineer",
+   "loc": "Boronia VIC",
+   "d": "2026-10-22",
+   "u": "https://to.indeed.com/aa2k2jqy8wf2",
+   "lvl": "Mid",
+   "src": "Indeed",
+   "jd": "IDT Australia is an Australian pharmaceutical contract development and manufacturing organisation (CDMO). Operating from our facility in Boronia, Victoria, we support the development and manufacture of Active Pharmaceutical Ingredients (APIs) and Finished Dosage Forms, working within a highly regulated GMP environment.\nAbout the Role\nReporting to the Engineering Services Lead, this is an excellent opportunity for an engineer with approximately 4 years' industry experience who enjoys a combination of project delivery, hands-on engineering, process improvement and validation. From project scoping and equipment installation through to commissioning, qualification and operational handover, you will play an important role in improving manufacturing capability, reliability and efficiency.\nKey Responsibilities\n- Coordinate engineering and capital projects from concept and design through to commissioning and handover.\n- Develop project scopes, technical specifications, schedules, budgets and engineering documentation.\n- Work with suppliers, contractors and internal teams to deliver safe, compliant and cost-effective project outcomes.\n- Support process engineering activities, including manufacturing improvements, troubleshooting, process trials and scale-up.\n- Participate in equipment, facility and utility commissioning, qualification and validation activities (DQ, IQ, OQ and PQ).\n- Prepare and review technical documentation, risk assessments, change controls and validation protocols.\n- Identify and implement opportunities to improve equipment performance, process efficiency, manufacturing reliability and operational safety.\n- Ensure engineering activities comply with GMP, quality systems and WHS requirements.\nAbout You\n- A bachelor's degree in Mechanical, Chemical, Process, Electrical Engineering or a related discipline.\n- Approximately 4 years' experience in project engineering, process engineering or a related technical role.\n- Experience within pharmaceutical, biotechnology, chemical processing or another regulated manufacturing environment, essential.\n- Exposure to commissioning, qualification and validation activities, preferably within a GMP environment, essential.\nPay: $75,000 - $85,000 per year."
   },
   {
    "co": "ccep",
@@ -263,18 +691,6 @@
    "src": "Seek"
   },
   {
-   "co": "microbiomics",
-   "cn": "The Microbiomics Group",
-   "sf": 15,
-   "sw": "Manufacturing, new production line",
-   "t": "Process & Maintenance Engineer (Manufacturing & New Production Line)",
-   "loc": "Loganholme, Brisbane QLD",
-   "d": "2026-10-22",
-   "u": "https://www.seek.com.au/job/95402635",
-   "lvl": "Mid",
-   "src": "Seek"
-  },
-  {
    "co": "knauf",
    "cn": "Knauf",
    "sf": 15,
@@ -283,18 +699,6 @@
    "loc": "Pinkenba, Brisbane QLD",
    "d": "2026-10-21",
    "u": "https://www.seek.com.au/job/95277442",
-   "lvl": "Mid",
-   "src": "Seek"
-  },
-  {
-   "co": "jameshardie",
-   "cn": "James Hardie",
-   "sf": 15,
-   "sw": "Building products manufacturing",
-   "t": "Process Engineer",
-   "loc": "Carole Park, Brisbane QLD",
-   "d": "2026-10-25",
-   "u": "https://www.seek.com.au/job/95423508",
    "lvl": "Mid",
    "src": "Seek"
   },
@@ -308,42 +712,6 @@
    "d": "2026-10-21",
    "u": "https://www.seek.com.au/job/95333093",
    "lvl": "Mid / lead",
-   "src": "Seek"
-  },
-  {
-   "co": "primemining",
-   "cn": "Prime Mining",
-   "sf": 14,
-   "sw": "New processing operation",
-   "t": "Process Engineer, Business Readiness",
-   "loc": "Brisbane QLD",
-   "d": "2026-10-25",
-   "u": "https://www.seek.com.au/job/95432144",
-   "lvl": "Senior",
-   "src": "Seek"
-  },
-  {
-   "co": "cgcrec",
-   "cn": "CGC Recruitment",
-   "sf": 12,
-   "sw": "Major project mechanical",
-   "t": "Mechanical Site Engineer | 2 Month Contract | Major Project",
-   "loc": "Brisbane QLD",
-   "d": "2026-10-25",
-   "u": "https://www.seek.com.au/job/95462574",
-   "lvl": "Mid",
-   "src": "Seek"
-  },
-  {
-   "co": "innova",
-   "cn": "Innova Water",
-   "sf": 12,
-   "sw": "Water & wastewater treatment",
-   "t": "Process & Hydraulic Design Engineer",
-   "loc": "Hamilton, Brisbane QLD",
-   "d": "2026-10-22",
-   "u": "https://www.seek.com.au/job/95312046",
-   "lvl": "Senior",
    "src": "Seek"
   },
   {
@@ -368,18 +736,6 @@
    "src": "Seek"
   },
   {
-   "co": "constructability",
-   "cn": "Constructability Recruitment",
-   "sf": 8,
-   "sw": "Tier 1 contractor",
-   "t": "Project Engineer & Senior Project Engineer | 14/7 FIFO",
-   "loc": "Brisbane QLD",
-   "d": "2026-10-22",
-   "u": "https://www.seek.com.au/job/95300654",
-   "lvl": "Senior",
-   "src": "Seek"
-  },
-  {
    "co": "acciona",
    "cn": "Acciona",
    "sf": 14,
@@ -392,65 +748,33 @@
    "src": "Seek"
   },
   {
-   "co": "cleanaway",
-   "t": "Reliability & Plant Maintenance Supervisor",
-   "loc": "Western Sydney MRF, Rooty Hill NSW",
-   "d": "2026-10-29",
-   "u": "https://lnkd.in/gYmd2ESw",
-   "lvl": "Mid / lead",
-   "src": "LinkedIn"
-  },
-  {
-   "co": "cleanaway",
-   "t": "Process Engineer",
-   "loc": "Kemps Creek NSW",
-   "d": "2026-10-22",
-   "u": "https://to.indeed.com/aakbzsg6tpzv",
-   "lvl": "Mid",
-   "src": "Indeed"
-  },
-  {
-   "co": "nufarm",
-   "t": "Project Mechanical Engineer",
-   "loc": "Laverton North VIC",
-   "d": "2026-10-28",
-   "u": "https://to.indeed.com/aax4bjmw9qj9",
-   "lvl": "Mid",
-   "src": "Indeed"
-  },
-  {
-   "co": "nufarm",
-   "t": "Shutdown Planner – E&I",
-   "loc": "Laverton North VIC",
+   "co": "psc",
+   "cn": "PSC Biotech",
+   "t": "Commissioning and Qualification (C&Q) Engineer",
+   "loc": "Melbourne VIC",
    "d": "2026-10-21",
-   "u": "https://to.indeed.com/aagyptwmdt6z",
+   "u": "https://to.indeed.com/aad4wvynbg6s",
    "lvl": "Mid",
    "src": "Indeed"
   },
   {
-   "co": "nufarm",
-   "t": "Maintenance Execution Manager",
-   "loc": "Laverton North VIC",
-   "d": "2026-09-16",
-   "u": "https://to.indeed.com/aacbw947y4zt",
-   "lvl": "Manager",
+   "co": "ugl",
+   "t": "Mechanical Planner",
+   "loc": "Brisbane QLD",
+   "d": "2026-10-21",
+   "u": "https://to.indeed.com/aaghbcyknnnh",
+   "lvl": "Mid",
    "src": "Indeed"
   },
   {
-   "co": "bhp",
-   "t": "Specialist and Senior Engineer Civil",
-   "loc": "Greater Adelaide SA",
-   "d": "2026-10-28",
-   "u": "https://to.indeed.com/aasdtfff4ybh",
-   "lvl": "Senior",
-   "src": "Indeed"
-  },
-  {
-   "co": "bhp",
-   "t": "Mine Scheduling Engineer – Olympic Dam",
-   "loc": "Olympic Dam SA",
-   "d": "2026-10-26",
-   "u": "https://to.indeed.com/aa2kknq4lmqp",
+   "co": "gfg",
+   "cn": "GFG Alliance",
+   "sf": 10,
+   "sw": "",
+   "t": "Process Engineer",
+   "loc": "Newcastle NSW",
+   "d": "2026-10-21",
+   "u": "https://to.indeed.com/aakkbr9j7kst",
    "lvl": "Mid",
    "src": "Indeed"
   },
@@ -460,6 +784,56 @@
    "loc": "Brisbane QLD",
    "d": "2026-10-20",
    "u": "https://to.indeed.com/aavyd8rlp4mz",
+   "lvl": "Senior",
+   "src": "Indeed"
+  },
+  {
+   "co": "monadelphous",
+   "t": "Project Engineer",
+   "loc": "Karratha WA",
+   "d": "2026-10-20",
+   "u": "https://to.indeed.com/aabvbn2z6gfb",
+   "lvl": "Mid",
+   "src": "Indeed"
+  },
+  {
+   "co": "dyno",
+   "t": "Senior MPU Engineer",
+   "loc": "Brisbane QLD",
+   "d": "2026-10-19",
+   "u": "https://to.indeed.com/aanvr9jddcpg",
+   "lvl": "Senior",
+   "src": "Indeed"
+  },
+  {
+   "co": "ixom",
+   "t": "Reliability Engineer",
+   "loc": "Hallam VIC",
+   "d": "2026-10-19",
+   "u": "https://to.indeed.com/aapjwhnhy4y4",
+   "lvl": "Mid",
+   "src": "Indeed",
+   "jd": "We're seeking a Reliability Engineer to join our Australian Botanical Products (ABP) business, based at our Hallam manufacturing operation. This role sits at the centre of asset reliability, maintenance strategy and continuous improvement, helping to improve equipment performance, reduce downtime and build a world-class maintenance culture across the site.\nReporting to the Operations Manager, you'll be the technical lead for asset reliability, maintenance strategy and plant performance improvement across the ABP business. The role combines reliability engineering, facilities management, maintenance planning and project work.\nKey Responsibilities\n- Develop and implement reliability, preventative and predictive maintenance strategies.\n- Analyse downtime, failures and equipment performance to identify improvement opportunities.\n- Lead root cause investigations and defect elimination activities.\n- Improve maintenance planning, shutdown scheduling and work execution processes.\n- Manage reliability and maintenance master data within CMMS systems including MEX.\n- Develop long-term asset replacement and reliability roadmaps.\n- Support automation, operational improvement and capital project activities.\n- Management of a small team of 2 to provide coaching and technical leadership.\nWho are we looking for?\n- Degree qualified in Mechanical Engineering or a related discipline.\n- 5+ years' experience in reliability engineering, maintenance or asset management within FMCG, pharmaceutical, food, chemical or other regulated manufacturing environments.\n- Exposure to automated filling, packaging or high-speed production lines.\n- Strong understanding of preventative and predictive maintenance, reliability engineering and asset management principles.\n- Experience with root cause analysis, failure mode analysis and continuous improvement methodologies.\n- Experience using CMMS platforms such as MEX, SAP or similar.\n- Strong stakeholder management skills.\n- Lean Six Sigma Green Belt or Black Belt certification.\nWhy this role stands out: lead reliability improvements across seven production lines, blending operations and site infrastructure."
+  },
+  {
+   "co": "downer",
+   "cn": "Downer Group",
+   "t": "Senior Planner | Major Projects",
+   "loc": "North Ryde NSW",
+   "d": "2026-10-19",
+   "u": "https://to.indeed.com/aadckb2fwbvp",
+   "lvl": "Senior",
+   "src": "Indeed"
+  },
+  {
+   "co": "cimic",
+   "cn": "CIMIC Group",
+   "sf": 8,
+   "sw": "Construction and infrastructure",
+   "t": "Senior Mechanical Engineer",
+   "loc": "Perth WA",
+   "d": "2026-10-18",
+   "u": "https://to.indeed.com/aapxbcld4kh4",
    "lvl": "Senior",
    "src": "Indeed"
   },
@@ -482,31 +856,36 @@
    "src": "Indeed"
   },
   {
-   "co": "dyno",
-   "t": "Senior MPU Engineer",
-   "loc": "Brisbane QLD",
-   "d": "2026-10-19",
-   "u": "https://to.indeed.com/aanvr9jddcpg",
+   "co": "csl",
+   "t": "Senior C&Q Principal",
+   "loc": "Broadmeadows VIC",
+   "d": "2026-10-16",
+   "u": "https://to.indeed.com/aa8dgbvbg82v",
    "lvl": "Senior",
    "src": "Indeed"
   },
   {
-   "co": "ixom",
-   "t": "Reliability Engineer",
-   "loc": "Hallam VIC",
-   "d": "2026-10-19",
-   "u": "https://to.indeed.com/aapjwhnhy4y4",
-   "lvl": "Mid",
-   "src": "Indeed"
+   "co": "hysata",
+   "cn": "Hysata",
+   "sf": 15,
+   "sw": "Electrolyser manufacturing",
+   "t": "Senior Mechanical Engineer - Tooling & Equipment",
+   "loc": "Port Kembla NSW",
+   "d": "2026-10-16",
+   "u": "https://to.indeed.com/aa2ck4nvy4cq",
+   "lvl": "Senior",
+   "src": "Indeed",
+   "jd": "We are seeking a Senior Mechanical Engineer to join our Manufacturing team, with direct responsibility for the design, build and improvement of the tooling, fixtures and equipment that underpin our in-house manufacturing capability. Working closely with our Design, Assembly and Process teams, you will help bridge the gap between lab scale, pilot and high-volume manufacturing.\nRole responsibilities\n- Lead the team responsible for design and implementation of in-house tooling to support our efforts to scale manufacturing;\n- Design, build and continuously improve in-house tooling, fixtures and equipment;\n- Take new tooling and equipment from concept through CAD design, fabrication, build and commissioning on the factory floor;\n- Provide hands-on support to the manufacturing team - troubleshooting, modifying and improving equipment;\n- Collaborate with Design, Assembly and Process teams to implement new cell architectures and manufacturing processes;\n- Meet design requirements through rapid, iterative prototyping;\n- Work with Hysata partners and vendors to define, develop, validate and commission manufacturing tools and equipment;\n- Define and execute validation plans;\n- Develop SOPs and safety protocols for new tools, equipment and processes.\nKey skills\n- Engineering degree in Mechanical, Manufacturing or a similar field;\n- Strong background in mechanical design engineering, with proven hands-on capability to build, modify and commission what you design;\n- Proficiency in computer-aided design (NX preferred);\n- Fabrication experience - hands-on R&D, design, build and test;\n- Contributed to delivering complex projects requiring new tooling, equipment and process development, including equipment specification;\n- Demonstrated experience with DFMA, DFMEA, validation testing, materials selection and process technology selection.\nValued skills\n- 5+ years of experience in a similar tooling, equipment or mechanical design role;\n- Experience introducing and optimising tooling and equipment in a manufacturing scale-up environment;\n- PFMEA, QA/QC, SOP, design and process validation;\n- Experience with electrolysers, battery or energy storage systems a plus."
   },
   {
-   "co": "ixom",
-   "t": "Junior Process Engineer",
-   "loc": "Matraville NSW",
-   "d": "2026-10-11",
-   "u": "https://to.indeed.com/aa48bvmgmd6t",
-   "lvl": "Junior",
-   "src": "Indeed"
+   "co": "csl",
+   "t": "C&Q Engineer",
+   "loc": "Broadmeadows VIC",
+   "d": "2026-10-15",
+   "u": "https://to.indeed.com/aazv7qjlw998",
+   "lvl": "Mid",
+   "src": "Indeed",
+   "jd": "Entity: CSL Behring. Location: Broadmeadows, Victoria. Employer Reference: R-293484.\nThe Commissioning & Qualification (C&Q) Engineer is responsible for supporting and executing the commissioning, qualification, and maintenance of manufacturing systems and equipment within a regulated GMP environment. The role ensures that equipment, facilities, and processes are commissioned and qualified in accordance with CSL quality standards, regulatory requirements, and health, safety, and environmental guidelines.\nThe position plays a key role in the preparation, execution, and maintenance of qualification and commissioning activities, while working closely with cross-functional teams including Process Engineering, Project Delivery, Validation, Stability, Quality Control, Value Streams, R&D, and Manufacturing Operations.\nThe Role:\n- Execute commissioning and qualification activities for facilities, equipment, utilities, and systems within a GMP-regulated environment.\n- Prepare, review, and maintain qualification/commissioning protocols, reports, and supporting documentation to ensure regulatory compliance.\n- Manage document control activities, including DMS maintenance and departmental documentation.\n- Maintain qualification and commissioning test equipment.\n- Collaborate with cross-functional teams to ensure efficient project delivery.\n- Ensure all activities are performed in accordance with CSL quality standards, cGMP requirements, regulatory guidelines, and HSE policies.\n- Participate in problem-solving, investigations, and continuous improvement initiatives.\n- Support HS&E risk assessments, maintain training compliance, and provide training and mentoring to new team members.\nThis is a Permanent full-time position.\nTo be successful:\n- Tertiary qualification in Science or Engineering, or equivalent commissioning/qualification experience.\n- Experience within a pharmaceutical manufacturing environment is highly desirable.\n- Sound understanding of cGMP requirements, commissioning and qualification principles, and relevant industry standards and guidelines.\n- Strong written, verbal, presentation, and interpersonal communication skills.\n- Demonstrated problem-solving, negotiation, and customer-focused mindset.\n- Highly organised and adaptable, with the ability to manage multiple priorities within project schedules.\nApplication Period: Applications open on 19th October and close on 19th November 2026."
   },
   {
    "co": "orica",
@@ -516,352 +895,6 @@
    "u": "https://to.indeed.com/aafmjywb2mk2",
    "lvl": "Mid",
    "src": "Indeed"
-  },
-  {
-   "co": "orica",
-   "t": "Mechanical Engineer – Product Development",
-   "loc": "Welshpool WA",
-   "d": "2026-10-06",
-   "u": "https://to.indeed.com/aaq79fqv8w7d",
-   "lvl": "Mid",
-   "src": "Indeed"
-  },
-  {
-   "co": "orica",
-   "t": "Mechanical Engineer",
-   "loc": "Lutwyche QLD",
-   "d": "2026-09-24",
-   "u": "https://to.indeed.com/aagtpdp9vhvc",
-   "lvl": "Mid",
-   "src": "Indeed"
-  },
-  {
-   "co": "orica",
-   "t": "Engineer – Field Support",
-   "loc": "Richmond NSW",
-   "d": "2026-09-22",
-   "u": "https://to.indeed.com/aaltmfvj862q",
-   "lvl": "Mid",
-   "src": "Indeed"
-  },
-  {
-   "co": "ampol",
-   "t": "Electrical Maintenance Planner (Wood)",
-   "loc": "Lytton QLD",
-   "d": "2026-10-11",
-   "u": "https://to.indeed.com/aa2gtnlpchfs",
-   "lvl": "Mid",
-   "src": "Indeed"
-  },
-  {
-   "co": "ampol",
-   "t": "Area Maintenance Scheduler (Wood)",
-   "loc": "Lytton QLD",
-   "d": "2026-09-17",
-   "u": "https://to.indeed.com/aahxw77x7ny2",
-   "lvl": "Mid",
-   "src": "Indeed"
-  },
-  {
-   "co": "graincorp",
-   "t": "Project Engineer",
-   "loc": "Numurkah VIC",
-   "d": "2026-10-06",
-   "u": "https://to.indeed.com/aaqtjjbynssn",
-   "lvl": "Mid",
-   "src": "Indeed"
-  },
-  {
-   "co": "coogee",
-   "t": "Electrical and Instrumentation Manager",
-   "loc": "Kwinana Beach WA",
-   "d": "2026-10-01",
-   "u": "https://to.indeed.com/aatkkrqhdwf4",
-   "lvl": "Manager",
-   "src": "Indeed"
-  },
-  {
-   "co": "perdaman",
-   "t": "Inspection & Condition Monitoring Senior Engineer",
-   "loc": "Karratha WA",
-   "d": "2026-09-30",
-   "u": "https://to.indeed.com/aavsn8ldpd77",
-   "lvl": "Senior",
-   "src": "Indeed"
-  },
-  {
-   "co": "perdaman",
-   "t": "Instrument Engineer – Urea & Offsites",
-   "loc": "Karratha WA",
-   "d": "2026-09-30",
-   "u": "https://to.indeed.com/aadjnxqvkc4f",
-   "lvl": "Mid",
-   "src": "Indeed"
-  },
-  {
-   "co": "clough",
-   "t": "Mechanical Supervisor",
-   "loc": "Perth WA",
-   "d": "2026-09-08",
-   "u": "https://to.indeed.com/aaxghkcqv9jc",
-   "lvl": "Mid / lead",
-   "src": "Indeed"
-  },
-  {
-   "co": "clough",
-   "t": "Piping Supervisor",
-   "loc": "Perth WA",
-   "d": "2026-09-08",
-   "u": "https://to.indeed.com/aa7jp49mhnxr",
-   "lvl": "Mid / lead",
-   "src": "Indeed"
-  },
-  {
-   "co": "worley",
-   "t": "Senior Mechanical Engineer",
-   "loc": "Greater Adelaide SA",
-   "d": "2026-09-23",
-   "u": "https://to.indeed.com/aamvy2trbrbf",
-   "lvl": "Senior",
-   "src": "Indeed"
-  },
-  {
-   "co": "worley",
-   "t": "Senior Mechanical Engineer",
-   "loc": "Bunbury WA",
-   "d": "2026-08-26",
-   "u": "https://to.indeed.com/aapv8vzhcqk8",
-   "lvl": "Senior",
-   "src": "Indeed"
-  },
-  {
-   "co": "worley",
-   "t": "Senior Piping Engineer",
-   "loc": "Brisbane QLD",
-   "d": "2026-08-24",
-   "u": "https://to.indeed.com/aays6bnn7pdl",
-   "lvl": "Senior",
-   "src": "Indeed"
-  },
-  {
-   "co": "worley",
-   "t": "Senior Project Engineer",
-   "loc": "Portland VIC",
-   "d": "2026-08-23",
-   "u": "https://to.indeed.com/aasddvx2jdrh",
-   "lvl": "Senior",
-   "src": "Indeed"
-  },
-  {
-   "co": "monadelphous",
-   "t": "Project Engineer",
-   "loc": "Perth WA",
-   "d": "2026-10-27",
-   "u": "https://to.indeed.com/aagj4h4wgbsv",
-   "lvl": "Mid",
-   "src": "Indeed"
-  },
-  {
-   "co": "monadelphous",
-   "t": "Project Engineer",
-   "loc": "Karratha WA",
-   "d": "2026-10-20",
-   "u": "https://to.indeed.com/aabvbn2z6gfb",
-   "lvl": "Mid",
-   "src": "Indeed"
-  },
-  {
-   "co": "monadelphous",
-   "t": "Senior E&I Project Engineer",
-   "loc": "Brisbane QLD",
-   "d": "2026-09-16",
-   "u": "https://to.indeed.com/aagnf2vxry6m",
-   "lvl": "Senior",
-   "src": "Indeed"
-  },
-  {
-   "co": "monadelphous",
-   "t": "SMP Project Engineer",
-   "loc": "Brisbane QLD",
-   "d": "2026-08-18",
-   "u": "https://to.indeed.com/aavnqjmypxyj",
-   "lvl": "Mid",
-   "src": "Indeed"
-  },
-  {
-   "co": "lycopodium",
-   "t": "Lead/Senior Project Engineers",
-   "loc": "Perth WA",
-   "d": "2026-10-02",
-   "u": "https://to.indeed.com/aaqd7l2ntlzy",
-   "lvl": "Senior / lead",
-   "src": "Indeed"
-  },
-  {
-   "co": "lycopodium",
-   "t": "Senior / Lead Project Engineer",
-   "loc": "Brisbane QLD",
-   "d": "2026-09-24",
-   "u": "https://to.indeed.com/aavr7nppwwjn",
-   "lvl": "Senior / lead",
-   "src": "Indeed"
-  },
-  {
-   "co": "lycopodium",
-   "t": "Senior Process Engineer",
-   "loc": "Perth WA",
-   "d": "2026-09-01",
-   "u": "https://to.indeed.com/aadqyjst46qp",
-   "lvl": "Senior",
-   "src": "Indeed"
-  },
-  {
-   "co": "lycopodium",
-   "t": "Lead Mechanical Engineer",
-   "loc": "Perth WA",
-   "d": "2026-08-21",
-   "u": "https://to.indeed.com/aav2zkgt6rmm",
-   "lvl": "Lead",
-   "src": "Indeed"
-  },
-  {
-   "co": "idt",
-   "cn": "IDT Australia",
-   "t": "Project Engineer",
-   "loc": "Boronia VIC",
-   "d": "2026-10-22",
-   "u": "https://to.indeed.com/aa2k2jqy8wf2",
-   "lvl": "Mid",
-   "src": "Indeed"
-  },
-  {
-   "co": "bega",
-   "cn": "Bega Cheese",
-   "t": "Mechanical Engineer",
-   "loc": "Wetherill Park NSW",
-   "d": "2026-10-23",
-   "u": "https://to.indeed.com/aajkj869t8kn",
-   "lvl": "Mid",
-   "src": "Indeed"
-  },
-  {
-   "co": "psc",
-   "cn": "PSC Biotech",
-   "t": "Commissioning and Qualification (C&Q) Engineer",
-   "loc": "Melbourne VIC",
-   "d": "2026-10-21",
-   "u": "https://to.indeed.com/aad4wvynbg6s",
-   "lvl": "Mid",
-   "src": "Indeed"
-  },
-  {
-   "co": "psc",
-   "cn": "PSC Biotech",
-   "t": "Process Engineer – Utilities (contract)",
-   "loc": "Melbourne VIC",
-   "d": "2026-09-17",
-   "u": "https://to.indeed.com/aahybx6pkd97",
-   "lvl": "Mid",
-   "src": "Indeed"
-  },
-  {
-   "co": "app",
-   "cn": "All Purpose Pumps",
-   "t": "Mechanical Engineer",
-   "loc": "Hoppers Crossing VIC",
-   "d": "2026-10-05",
-   "u": "https://to.indeed.com/aac7ptp9hmqn",
-   "lvl": "Mid",
-   "src": "Indeed"
-  },
-  {
-   "co": "visy",
-   "cn": "Visy",
-   "t": "Process Engineer",
-   "loc": "North Melbourne VIC",
-   "d": "2026-09-24",
-   "u": "https://to.indeed.com/aatmvnvzkl72",
-   "lvl": "Mid",
-   "src": "Indeed"
-  },
-  {
-   "co": "hdr",
-   "cn": "HDR",
-   "t": "Commissioning Engineer – Mechanical",
-   "loc": "Melbourne VIC",
-   "d": "2026-09-11",
-   "u": "https://to.indeed.com/aa9yplcs9wnv",
-   "lvl": "Mid",
-   "src": "Indeed"
-  },
-  {
-   "co": "jci",
-   "cn": "Johnson Controls (Gordon Brothers)",
-   "t": "Project Engineer – Industrial Refrigeration",
-   "loc": "Melbourne VIC",
-   "d": "2026-08-27",
-   "u": "https://to.indeed.com/aay24phtcnmk",
-   "lvl": "Mid",
-   "src": "Indeed"
-  },
-  {
-   "co": "sulzer",
-   "cn": "Sulzer",
-   "t": "Project Engineer",
-   "loc": "Melbourne VIC",
-   "d": "2026-08-12",
-   "u": "https://to.indeed.com/aaqrdk47fjhy",
-   "lvl": "Mid",
-   "src": "Indeed"
-  },
-  {
-   "co": "cpb",
-   "cn": "CPB Contractors",
-   "t": "Project Engineer, Mechanical – MEI (North East Link)",
-   "loc": "Melbourne VIC",
-   "d": "2026-10-29",
-   "u": "https://to.indeed.com/aanffndfwc67",
-   "lvl": "Mid",
-   "src": "Indeed"
-  },
-  {
-   "co": "lycopodium",
-   "t": "Process Engineers (All Levels)",
-   "loc": "Brisbane QLD",
-   "d": "2026-07-12",
-   "u": "https://to.indeed.com/aac9b6d464yd",
-   "lvl": "All levels",
-   "src": "Indeed"
-  },
-  {
-   "co": "lycopodium",
-   "t": "Senior Mechanical Engineer",
-   "loc": "Melbourne VIC",
-   "d": "2026-08-18",
-   "u": "https://to.indeed.com/aatxgkh8xlbw",
-   "lvl": "Senior",
-   "src": "Indeed"
-  },
-  {
-   "co": "psc",
-   "t": "Senior Process Engineer",
-   "loc": "Melbourne VIC",
-   "d": "2026-08-17",
-   "u": "https://to.indeed.com/aaxbkm4sfpmd",
-   "lvl": "Senior",
-   "src": "Indeed"
-  },
-  {
-   "co": "akzo",
-   "t": "Engineering Manager",
-   "loc": "Melbourne VIC",
-   "d": "2026-09-21",
-   "u": "https://to.indeed.com/aavvxftjw24y",
-   "lvl": "Manager",
-   "src": "Indeed",
-   "cn": "AkzoNobel",
-   "sf": 18,
-   "sw": "Chemical manufacturing plant"
   },
   {
    "co": "sgs",
@@ -876,39 +909,6 @@
    "sw": "Water treatment projects"
   },
   {
-   "co": "clough",
-   "t": "Commissioning Engineer – Mechanical",
-   "loc": "Sydney NSW",
-   "d": "2026-09-21",
-   "u": "https://to.indeed.com/aa9tnhqhxwk8",
-   "lvl": "Mid",
-   "src": "Indeed"
-  },
-  {
-   "co": "weir",
-   "t": "Mechanical Engineer",
-   "loc": "Sydney NSW",
-   "d": "2026-09-27",
-   "u": "https://to.indeed.com/aajzdqdllb9l",
-   "lvl": "Mid",
-   "src": "Indeed",
-   "cn": "Weir",
-   "sf": 19,
-   "sw": "Pumps, valves and minerals processing"
-  },
-  {
-   "co": "airtrunk",
-   "t": "Senior Mechanical Engineer",
-   "loc": "Sydney NSW",
-   "d": "2026-10-06",
-   "u": "https://to.indeed.com/aap6k4hvhrs9",
-   "lvl": "Senior",
-   "src": "Indeed",
-   "cn": "AirTrunk",
-   "sf": 8,
-   "sw": "Data centre facilities"
-  },
-  {
    "co": "soto",
    "t": "Mechanical Engineer (5+ years)",
    "loc": "Illawarra NSW",
@@ -921,76 +921,120 @@
    "sw": "Engineering consultancy"
   },
   {
-   "co": "aggreko",
-   "t": "Mechanical Project Engineer",
-   "loc": "Wacol QLD",
-   "d": "2026-08-31",
-   "u": "https://to.indeed.com/aadgkmsl4fsm",
-   "lvl": "Mid",
+   "co": "gfg",
+   "t": "Mechanical Planning Leader",
+   "loc": "Rooty Hill NSW",
+   "d": "2026-10-13",
+   "u": "https://to.indeed.com/aagyf6g9vcc2",
+   "lvl": "Lead",
    "src": "Indeed",
-   "cn": "Aggreko",
-   "sf": 12,
-   "sw": "Power and temperature equipment"
+   "cn": "GFG Alliance"
   },
   {
-   "co": "dulux",
+   "co": "trinzic",
+   "cn": "Trinzic",
+   "sf": 17,
+   "sw": "Chemicals manufacturing site",
+   "t": "Asset Management Specialist",
+   "loc": "Matraville NSW",
+   "d": "2026-10-13",
+   "u": "https://to.indeed.com/aaw4nt8rm4bn",
+   "lvl": "Mid",
+   "src": "Indeed"
+  },
+  {
+   "co": "ixom",
+   "t": "Junior Process Engineer",
+   "loc": "Matraville NSW",
+   "d": "2026-10-11",
+   "u": "https://to.indeed.com/aa48bvmgmd6t",
+   "lvl": "Junior",
+   "src": "Indeed"
+  },
+  {
+   "co": "aurizon",
+   "cn": "Aurizon",
+   "sf": 10,
+   "sw": "Rail plant & equipment",
+   "t": "Plant & Equipment Engineer",
+   "loc": "Newcastle NSW",
+   "d": "2026-10-10",
+   "u": "https://www.seek.com.au/job/95160120",
+   "lvl": "Mid",
+   "src": "Seek"
+  },
+  {
+   "co": "clough",
+   "t": "Engineer – Senior Mechanical Project",
+   "loc": "Cooma NSW",
+   "d": "2026-10-09",
+   "u": "https://to.indeed.com/aaf6nywc8p4m",
+   "lvl": "Senior",
+   "src": "Indeed"
+  },
+  {
+   "co": "acciona",
+   "cn": "Acciona",
+   "sf": 14,
+   "sw": "Water and energy infrastructure",
+   "t": "Reliability Engineer - Mechanical",
+   "loc": "Melbourne VIC",
+   "d": "2026-10-08",
+   "u": "https://to.indeed.com/aa27stk99rvv",
+   "lvl": "Mid",
+   "src": "Indeed",
+   "jd": "ACCIONA Energia is the biggest 100% renewable energy company with no fossil legacy in the world. The purpose of this role is to improve wind farm and other renewable asset reliability by maximising plant availability and efficiency with optimised maintenance practices. The role provides engineering expertise, focusing on the mechanical side, to assist maintenance activities and resolve technical issues.\nRole Responsibilities\n- Provide expert engineering support to all operational assets, focusing on the mechanical side, such as drivetrains and structures.\n- Manage reliability engineering programs across all operational sites, incorporating key principles of condition-based and optimised maintenance.\n- Undertake Root Cause Analysis investigations on failed or faulting equipment.\n- Analyse plant performance and maintenance data to identify and address issues and maximize efficiency.\n- Liaise with ACCIONA Energia Global Engineering, equipment suppliers and OEMs to resolve engineering issues.\n- Review operational data for purposes of trend analysis, fault finding and continuous improvement.\n- Manage programs of retrofits, upgrades and asset changes at all operational sites.\n- Maintain an engineering document library for knowledge sharing within the operations group.\n- Support internal asset management functions in the development, implementation, and review of the asset management plan.\nRequired Skills and Competencies\n- Bachelor degree or equivalent technical competence in mechanical engineering.\n- Relevant experience in a reliability engineering or related role, ideally within the renewable sector.\n- Exposure to other related engineering practice such as electrical, civil, or wind resource considered advantageous.\n- Advanced communication skills and proven interpersonal abilities.\n- Must be able to travel for training and meetings to various locations (including international).\n- Experience with Maximo or a similar maintenance management system an advantage.\n- Experience with AEMO operational requirements an advantage."
+  },
+  {
+   "co": "peabody",
+   "cn": "Peabody Energy",
+   "sf": 11,
+   "sw": "Coal mining, Hunter",
+   "t": "Complex Services Maintenance Planner",
+   "loc": "Singleton NSW",
+   "d": "2026-10-08",
+   "u": "https://to.indeed.com/aagv4kh2gykx",
+   "lvl": "Mid",
+   "src": "Indeed"
+  },
+  {
+   "co": "clough",
+   "t": "Mechanical/Piping Engineer",
+   "loc": "Perth WA",
+   "d": "2026-10-07",
+   "u": "https://to.indeed.com/aakrf6czq8qf",
+   "lvl": "Mid",
+   "src": "Indeed"
+  },
+  {
+   "co": "orica",
+   "t": "Mechanical Engineer – Product Development",
+   "loc": "Welshpool WA",
+   "d": "2026-10-06",
+   "u": "https://to.indeed.com/aaq79fqv8w7d",
+   "lvl": "Mid",
+   "src": "Indeed"
+  },
+  {
+   "co": "graincorp",
    "t": "Project Engineer",
-   "loc": "Rocklea QLD",
-   "d": "2026-09-29",
-   "u": "https://to.indeed.com/aadgl8dsj4jn",
+   "loc": "Numurkah VIC",
+   "d": "2026-10-06",
+   "u": "https://to.indeed.com/aaqtjjbynssn",
    "lvl": "Mid",
-   "src": "Indeed",
-   "cn": "DuluxGroup",
-   "sf": 18,
-   "sw": "Paint manufacturing plant"
+   "src": "Indeed"
   },
   {
-   "co": "bakerhughes",
-   "t": "Engineering Senior Specialist – Customer Project Engineering",
-   "loc": "Springfield Central QLD",
-   "d": "2026-10-05",
-   "u": "https://to.indeed.com/aaqx77dxn8tl",
+   "co": "airtrunk",
+   "t": "Senior Mechanical Engineer",
+   "loc": "Sydney NSW",
+   "d": "2026-10-06",
+   "u": "https://to.indeed.com/aap6k4hvhrs9",
    "lvl": "Senior",
    "src": "Indeed",
-   "cn": "Baker Hughes",
-   "sf": 15,
-   "sw": "Oil and gas equipment"
-  },
-  {
-   "co": "acciona",
-   "t": "Project Engineer, Mechanical (contract)",
-   "loc": "Perth WA",
-   "d": "2026-10-23",
-   "u": "https://to.indeed.com/aaptfbwtqjlm",
-   "lvl": "Mid",
-   "src": "Indeed",
-   "cn": "Acciona",
-   "sf": 14,
-   "sw": "Water and energy infrastructure"
-  },
-  {
-   "co": "acciona",
-   "t": "Site Engineer, Commissioning (contract)",
-   "loc": "Perth WA",
-   "d": "2026-10-26",
-   "u": "https://to.indeed.com/aaknb48nvx6y",
-   "lvl": "Mid",
-   "src": "Indeed",
-   "cn": "Acciona",
-   "sf": 14,
-   "sw": "Water and energy infrastructure"
-  },
-  {
-   "co": "acciona",
-   "t": "Process Engineer (contract)",
-   "loc": "Perth WA",
-   "d": "2026-10-23",
-   "u": "https://to.indeed.com/aa4qqcn228bd",
-   "lvl": "Mid",
-   "src": "Indeed",
-   "cn": "Acciona",
-   "sf": 14,
-   "sw": "Water and energy infrastructure"
+   "cn": "AirTrunk",
+   "sf": 8,
+   "sw": "Data centre facilities"
   },
   {
    "co": "metso",
@@ -1017,107 +1061,108 @@
    "sw": "Refinery shutdown services"
   },
   {
-   "co": "civmec",
-   "t": "Project Engineer SMP (contract)",
-   "loc": "South West WA",
-   "d": "2026-10-27",
-   "u": "https://to.indeed.com/aan78y7dwllr",
-   "lvl": "Mid",
-   "src": "Indeed",
-   "cn": "Civmec",
-   "sf": 17,
-   "sw": "SMP construction and shutdowns"
-  },
-  {
-   "co": "civmec",
-   "t": "Senior Project Engineer",
-   "loc": "South West WA",
-   "d": "2026-10-27",
-   "u": "https://to.indeed.com/aaygqrw2tnnx",
+   "co": "ausenco",
+   "cn": "Ausenco",
+   "sf": 21,
+   "sw": "EPCM process-plant contractor",
+   "t": "Senior Mechanical Engineer",
+   "loc": "Newcastle NSW",
+   "d": "2026-10-06",
+   "u": "https://to.indeed.com/aaddlmblfjcz",
    "lvl": "Senior",
    "src": "Indeed",
-   "cn": "Civmec",
-   "sf": 17,
-   "sw": "SMP construction and shutdowns"
+   "jd": "Our team is growing; we are currently recruiting for Senior Mechanical Engineers to join our Newcastle office.\nAbout the role\n- Contribute to the delivery of multi-disciplinary engineering designs and studies, from concept through to execution.\n- Prepare technical reports related to specific design issues.\n- Undertake design activities as part of larger multi-disciplinary design teams to deliver minerals processing and mine infrastructure projects.\n- Prepare equipment procurement packages, designs, calculations and cost estimates.\n- Develop networks and relationships within teams, across the organisation and with clients.\n- Assist with the preparation of proposals and tenders (such as estimating design hours).\n- Opportunities to lead design packages working with a team of mechanical engineers.\nAbout you\n- Degree qualification in Mechanical Engineering.\n- Experience in engineering consulting and EPC/EPCM projects preferably in the mining and resources sectors.\n- Technical expertise in designing wet mechanical systems such as process plant, pumps, piping, and pipelines.\n- Design experience using Hexagon, Fluidflow, Hammer etc highly regarded.\n- Ability to work collaboratively within a larger multi-disciplinary design team.\n- Project and/or site experience highly regarded.\n- Sound understanding of current codes and standards including Australian and ASME.\n- Proven ability to autonomously monitor workload, remaining within assigned budget and schedule constraints."
   },
   {
-   "co": "asahi",
+   "co": "csr",
+   "cn": "CSR",
+   "sf": 15,
+   "sw": "Building products manufacturing",
    "t": "Maintenance Planner",
-   "loc": "Melbourne VIC",
-   "d": "2026-09-30",
-   "u": "https://to.indeed.com/aak922zstplw",
-   "lvl": "Mid",
-   "src": "Indeed",
-   "cn": "Asahi Beverages"
-  },
-  {
-   "co": "ppg",
-   "t": "Maintenance Engineer",
-   "loc": "Clayton VIC",
-   "d": "2026-09-16",
-   "u": "https://to.indeed.com/aavjm7bxkqrt",
-   "lvl": "Mid",
-   "src": "Indeed",
-   "cn": "PPG"
-  },
-  {
-   "co": "ppg",
-   "t": "Maintenance Supervisor",
-   "loc": "Clayton VIC",
-   "d": "2026-09-17",
-   "u": "https://to.indeed.com/aahykrbnvqhp",
-   "lvl": "Mid / lead",
-   "src": "Indeed",
-   "cn": "PPG"
-  },
-  {
-   "co": "visy",
-   "t": "Reliability Engineer",
-   "loc": "North Melbourne VIC",
-   "d": "2026-08-12",
-   "u": "https://to.indeed.com/aaqxt2kxswkr",
+   "loc": "Bringelly NSW",
+   "d": "2026-10-06",
+   "u": "https://to.indeed.com/aajllbtcnzks",
    "lvl": "Mid",
    "src": "Indeed"
   },
   {
-   "co": "furmanite",
-   "t": "Design Engineer",
-   "loc": "Laverton North VIC",
-   "d": "2026-10-26",
-   "u": "https://to.indeed.com/aa9bljm7yxpt",
+   "co": "webuild",
+   "cn": "Webuild",
+   "sf": 8,
+   "sw": "Infrastructure contractor",
+   "t": "Mechanical/Piping Engineer",
+   "loc": "Perth WA",
+   "d": "2026-10-06",
+   "u": "https://to.indeed.com/aam8lqk6fvml",
    "lvl": "Mid",
-   "src": "Indeed",
-   "cn": "Furmanite Australia"
+   "src": "Indeed"
   },
   {
-   "co": "tdw",
-   "t": "Project Manager II",
-   "loc": "Melbourne VIC",
-   "d": "2026-10-28",
-   "u": "https://to.indeed.com/aacbtvr8r47v",
-   "lvl": "Manager",
-   "src": "Indeed",
-   "cn": "T.D. Williamson"
+   "co": "cbh",
+   "cn": "CBH Group",
+   "sf": 18,
+   "sw": "Grain handling, oilseed links",
+   "t": "Senior Mechanical Engineer",
+   "loc": "Perth WA",
+   "d": "2026-10-06",
+   "u": "https://to.indeed.com/aazm66h7q7tl",
+   "lvl": "Senior",
+   "src": "Indeed"
   },
   {
-   "co": "ansto",
-   "t": "Maintenance Planner",
-   "loc": "Lucas Heights NSW",
-   "d": "2026-10-29",
-   "u": "https://to.indeed.com/aadqnkvjpzpq",
+   "co": "ausenco",
+   "cn": "Ausenco",
+   "sf": 21,
+   "sw": "EPCM process-plant contractor",
+   "t": "Senior Project Engineer – Studies",
+   "loc": "Perth WA",
+   "d": "2026-10-06",
+   "u": "https://to.indeed.com/aa7jrfv9dyls",
+   "lvl": "Senior",
+   "src": "Indeed"
+  },
+  {
+   "co": "mosca",
+   "cn": "MOSCA Direct",
+   "sf": 12,
+   "sw": "Packaging machinery",
+   "t": "Mechanical Engineer – Field & Installation Engineering",
+   "loc": "Northgate, Brisbane QLD",
+   "d": "2026-10-06",
+   "u": "https://to.indeed.com/aalbyxgymcgh",
    "lvl": "Mid",
-   "src": "Indeed",
-   "cn": "ANSTO"
+   "src": "Indeed"
   },
   {
-   "co": "gfg",
-   "t": "Mechanical Planning Leader",
-   "loc": "Rooty Hill NSW",
-   "d": "2026-10-13",
-   "u": "https://to.indeed.com/aagyf6g9vcc2",
-   "lvl": "Lead",
+   "co": "app",
+   "cn": "All Purpose Pumps",
+   "t": "Mechanical Engineer",
+   "loc": "Hoppers Crossing VIC",
+   "d": "2026-10-05",
+   "u": "https://to.indeed.com/aac7ptp9hmqn",
+   "lvl": "Mid",
+   "src": "Indeed"
+  },
+  {
+   "co": "bakerhughes",
+   "t": "Engineering Senior Specialist – Customer Project Engineering",
+   "loc": "Springfield Central QLD",
+   "d": "2026-10-05",
+   "u": "https://to.indeed.com/aaqx77dxn8tl",
+   "lvl": "Senior",
    "src": "Indeed",
-   "cn": "GFG Alliance"
+   "cn": "Baker Hughes",
+   "sf": 15,
+   "sw": "Oil and gas equipment"
+  },
+  {
+   "co": "lycopodium",
+   "t": "Lead/Senior Project Engineers",
+   "loc": "Perth WA",
+   "d": "2026-10-02",
+   "u": "https://to.indeed.com/aaqd7l2ntlzy",
+   "lvl": "Senior / lead",
+   "src": "Indeed"
   },
   {
    "co": "gfg",
@@ -1127,26 +1172,8 @@
    "u": "https://to.indeed.com/aaf2gzrxmtvh",
    "lvl": "Mid",
    "src": "Indeed",
-   "cn": "GFG Alliance"
-  },
-  {
-   "co": "downer",
-   "t": "Mechanical Supervisor – Eraring",
-   "loc": "Lake Macquarie NSW",
-   "d": "2026-10-25",
-   "u": "https://to.indeed.com/aa44nbw8fj66",
-   "lvl": "Mid / lead",
-   "src": "Indeed",
-   "cn": "Downer Group"
-  },
-  {
-   "co": "clough",
-   "t": "Engineer – Senior Mechanical Project",
-   "loc": "Cooma NSW",
-   "d": "2026-10-09",
-   "u": "https://to.indeed.com/aaf6nywc8p4m",
-   "lvl": "Senior",
-   "src": "Indeed"
+   "cn": "GFG Alliance",
+   "jd": "Reporting to the Process and Reliability Engineer and based at our Newcastle Mesh Facility (InfraBuild) you will play a key role in maximising plant reliability by planning, scheduling and coordinating maintenance activities across the Newcastle Mesh site. You'll manage the maintenance backlog and planning horizon, ensuring work is safely and efficiently prepared with the right materials, resources, documentation and controls in place.\nThe role also provides hands-on technical and reliability support to maintenance and operations teams, including breakdown troubleshooting, shutdown planning and continuous improvement initiatives.\nWhat you will be doing:\n- Design, implement, and manage proactive maintenance planning and scheduling systems, both Mechanical and Electrical\n- Build preventative maintenance schedules for all equipment on site\n- Develop asset registers, job plans, bill of materials and maintenance procedures\n- Schedule preventive, corrective, and predictive maintenance activities including scheduled asset downtime activities\n- Coordinate with production teams to minimize disruption during maintenance windows\n- Collaborate with tradespeople, production, and leadership to drive continuous improvement in maintenance planning\nThis is a permanent full-time role.\nOur ideal candidate will have:\n- Relevant trade qualification and/or tertiary engineering qualification (ideally mechanical, electrical or similar), with formal maintenance planning or reliability qualifications highly regarded.\n- Proven experience in maintenance planning within an industrial or manufacturing environment.\n- Strong understanding of maintenance practices and asset management principles.\n- SAP PM experience, or other preventative maintenance systems experience.\n- Experience with risk assessment, contractor management and supervision, and maintenance execution highly regarded.\n- Strong analytical and problem-solving skills, with experience applying root-cause analysis, FMEA or other reliability methodologies."
   },
   {
    "co": "kcb",
@@ -1159,17 +1186,281 @@
    "cn": "Klohn Crippen Berger"
   },
   {
-   "co": "downer",
-   "cn": "Downer Group",
-   "t": "Senior Planner | Major Projects",
-   "loc": "North Ryde NSW",
-   "d": "2026-10-19",
-   "u": "https://to.indeed.com/aadckb2fwbvp",
+   "co": "programmed",
+   "cn": "Programmed",
+   "sf": 12,
+   "sw": "Maintenance services contractor",
+   "t": "Senior Piping Engineer",
+   "loc": "Perth WA",
+   "d": "2026-10-02",
+   "u": "https://to.indeed.com/aa426dsywjcq",
    "lvl": "Senior",
+   "src": "Indeed"
+  },
+  {
+   "co": "perdaman",
+   "t": "Inspection & Condition Monitoring Senior Engineer",
+   "loc": "Karratha WA",
+   "d": "2026-09-30",
+   "u": "https://to.indeed.com/aavsn8ldpd77",
+   "lvl": "Senior",
+   "src": "Indeed"
+  },
+  {
+   "co": "asahi",
+   "t": "Maintenance Planner",
+   "loc": "Melbourne VIC",
+   "d": "2026-09-30",
+   "u": "https://to.indeed.com/aak922zstplw",
+   "lvl": "Mid",
+   "src": "Indeed",
+   "cn": "Asahi Beverages"
+  },
+  {
+   "co": "alcoa",
+   "t": "Maintenance Planner",
+   "loc": "Portland VIC",
+   "d": "2026-09-30",
+   "u": "https://to.indeed.com/aaztdqkt2mj6",
+   "lvl": "Mid",
+   "src": "Indeed",
+   "jd": "We are seeking a Maintenance Planner to join our team at Portland Aluminium. As a Planner at our Portland Smelter, you are responsible for maximising maintenance and process effectiveness and efficiency by planning all scheduled activities prior to the commencement of a job. This involves safely integrating manufacturing and financial requirements into an effective Maintenance Plan.\nOther responsibilities include:\n- Developing weekly plans and facilitating weekly planning meetings in line with Alcoa planning processes.\n- Supporting daily planning processes, making information available to ensure successful work execution.\n- Ensuring people, parts and processes are available for maintenance activities in a timely manner.\n- Participating in reviews of major activities, seeking improvements and reporting on such activities.\n- Assisting in financial budget preparation, forecasting and maintenance strategies; ensuring long-term activity schedules are accurate and up to date.\n- Applying problem solving and analysing skills to isolate, diagnose and resolve equipment/process related problems.\n- Defining failure modes and understanding mean time to failure of systems.\n- Actively direct and participate in planned outages and performance improvement programs.\n- Oversee relevant Mechanical Maintenance Crews.\nWhat you can bring to the role\n- A Mechanical (Fitting & Turning) or Electrical Trade Certificate or Degree is advantageous however applicants with planning experience desirable.\n- Strong interpersonal skills.\n- Dedication to environment, health and safety in the workplace.\n- Excellent attention to detail, organisational and problem-solving skills.\n- The ability to co-ordinate multiple project/planning initiatives within the maintenance group.\n- Experience in heavy industry and the use of computer-based maintenance systems is advantageous."
+  },
+  {
+   "co": "dulux",
+   "t": "Project Engineer",
+   "loc": "Rocklea QLD",
+   "d": "2026-09-29",
+   "u": "https://to.indeed.com/aadgl8dsj4jn",
+   "lvl": "Mid",
+   "src": "Indeed",
+   "cn": "DuluxGroup",
+   "sf": 18,
+   "sw": "Paint manufacturing plant"
+  },
+  {
+   "co": "rheem",
+   "cn": "Rheem",
+   "sf": 16,
+   "sw": "Manufacturing plant",
+   "t": "Process Engineer",
+   "loc": "Rydalmere NSW",
+   "d": "2026-09-28",
+   "u": "https://to.indeed.com/aa72stjvkrh6",
+   "lvl": "Mid",
+   "src": "Indeed"
+  },
+  {
+   "co": "weir",
+   "t": "Mechanical Engineer",
+   "loc": "Sydney NSW",
+   "d": "2026-09-27",
+   "u": "https://to.indeed.com/aajzdqdllb9l",
+   "lvl": "Mid",
+   "src": "Indeed",
+   "cn": "Weir",
+   "sf": 19,
+   "sw": "Pumps, valves and minerals processing"
+  },
+  {
+   "co": "orica",
+   "t": "Mechanical Engineer",
+   "loc": "Lutwyche QLD",
+   "d": "2026-09-24",
+   "u": "https://to.indeed.com/aagtpdp9vhvc",
+   "lvl": "Mid",
+   "src": "Indeed"
+  },
+  {
+   "co": "lycopodium",
+   "t": "Senior / Lead Project Engineer",
+   "loc": "Brisbane QLD",
+   "d": "2026-09-24",
+   "u": "https://to.indeed.com/aavr7nppwwjn",
+   "lvl": "Senior / lead",
+   "src": "Indeed"
+  },
+  {
+   "co": "visy",
+   "cn": "Visy",
+   "t": "Process Engineer",
+   "loc": "North Melbourne VIC",
+   "d": "2026-09-24",
+   "u": "https://to.indeed.com/aatmvnvzkl72",
+   "lvl": "Mid",
+   "src": "Indeed"
+  },
+  {
+   "co": "worley",
+   "t": "Senior Mechanical Engineer",
+   "loc": "Greater Adelaide SA",
+   "d": "2026-09-23",
+   "u": "https://to.indeed.com/aamvy2trbrbf",
+   "lvl": "Senior",
+   "src": "Indeed"
+  },
+  {
+   "co": "hatch",
+   "t": "Senior Mechanical Engineer",
+   "loc": "Perth WA",
+   "d": "2026-09-23",
+   "u": "https://to.indeed.com/aavjqtlxf2vf",
+   "lvl": "Senior",
+   "src": "Indeed"
+  },
+  {
+   "co": "orica",
+   "t": "Engineer – Field Support",
+   "loc": "Richmond NSW",
+   "d": "2026-09-22",
+   "u": "https://to.indeed.com/aaltmfvj862q",
+   "lvl": "Mid",
+   "src": "Indeed"
+  },
+  {
+   "co": "akzo",
+   "t": "Engineering Manager",
+   "loc": "Melbourne VIC",
+   "d": "2026-09-21",
+   "u": "https://to.indeed.com/aavvxftjw24y",
+   "lvl": "Manager",
+   "src": "Indeed",
+   "cn": "AkzoNobel",
+   "sf": 18,
+   "sw": "Chemical manufacturing plant"
+  },
+  {
+   "co": "clough",
+   "t": "Commissioning Engineer – Mechanical",
+   "loc": "Sydney NSW",
+   "d": "2026-09-21",
+   "u": "https://to.indeed.com/aa9tnhqhxwk8",
+   "lvl": "Mid",
+   "src": "Indeed"
+  },
+  {
+   "co": "webuild",
+   "cn": "Webuild",
+   "sf": 8,
+   "sw": "Infrastructure contractor",
+   "t": "Commissioning Engineer - Mechanical",
+   "loc": "Sydney NSW",
+   "d": "2026-09-20",
+   "u": "https://to.indeed.com/aa2vmtpsdhb8",
+   "lvl": "Mid",
+   "src": "Indeed"
+  },
+  {
+   "co": "ampol",
+   "t": "Area Maintenance Scheduler (Wood)",
+   "loc": "Lytton QLD",
+   "d": "2026-09-17",
+   "u": "https://to.indeed.com/aahxw77x7ny2",
+   "lvl": "Mid",
+   "src": "Indeed"
+  },
+  {
+   "co": "psc",
+   "cn": "PSC Biotech",
+   "t": "Process Engineer – Utilities (contract)",
+   "loc": "Melbourne VIC",
+   "d": "2026-09-17",
+   "u": "https://to.indeed.com/aahybx6pkd97",
+   "lvl": "Mid",
+   "src": "Indeed"
+  },
+  {
+   "co": "ppg",
+   "t": "Maintenance Supervisor",
+   "loc": "Clayton VIC",
+   "d": "2026-09-17",
+   "u": "https://to.indeed.com/aahykrbnvqhp",
+   "lvl": "Mid / lead",
+   "src": "Indeed",
+   "cn": "PPG"
+  },
+  {
+   "co": "nufarm",
+   "t": "Maintenance Execution Manager",
+   "loc": "Laverton North VIC",
+   "d": "2026-09-16",
+   "u": "https://to.indeed.com/aacbw947y4zt",
+   "lvl": "Manager",
+   "src": "Indeed"
+  },
+  {
+   "co": "ppg",
+   "t": "Maintenance Engineer",
+   "loc": "Clayton VIC",
+   "d": "2026-09-16",
+   "u": "https://to.indeed.com/aavjm7bxkqrt",
+   "lvl": "Mid",
+   "src": "Indeed",
+   "cn": "PPG"
+  },
+  {
+   "co": "graincorp",
+   "t": "Maintenance Planner",
+   "loc": "Dubbo NSW",
+   "d": "2026-09-16",
+   "u": "https://to.indeed.com/aazspzvbt2wb",
+   "lvl": "Mid",
+   "src": "Indeed"
+  },
+  {
+   "co": "veolia",
+   "cn": "Veolia",
+   "sf": 12,
+   "sw": "Water and waste treatment",
+   "t": "Asset Engineer NSW",
+   "loc": "Tomago NSW",
+   "d": "2026-09-15",
+   "u": "https://to.indeed.com/aaqbpff6q2nr",
+   "lvl": "Mid",
    "src": "Indeed"
   }
  ],
  "news": [
+  {
+   "d": "2026-10-19",
+   "tag": "food",
+   "h": "Victoria funds $15M of regional industrial infrastructure",
+   "p": "The state is backing ten regional projects, including a water pipeline upgrade at Parwan near Bacchus Marsh that could open up to 190 hectares of industrial land for manufacturing and food processing.",
+   "src": "https://www.australianmanufacturing.com.au/victorian-govt-invests-15m-in-regional-infrastructure-to-support-manufacturing/",
+   "s": "Australian Manufacturing"
+  },
+  {
+   "d": "2026-10-19",
+   "tag": "saf",
+   "h": "Canberra consults on mandatory low-carbon fuel purchases",
+   "p": "The federal government is seeking views on requiring fuel suppliers to buy or supply set volumes of low-carbon liquid fuels such as biofuels, aiming to lift local demand and fuel resilience.",
+   "src": "https://ua.news/en/energetika/avstraliia-konsultuietsia-shchodo-vimogi-zakupovuvati-nizkovugletseve-palivo-abc-news-australia",
+   "s": "UA.News (ABC News)"
+  },
+  {
+   "d": "2026-10-18",
+   "tag": "ref",
+   "h": "Ampol Lytton margins surge but extended maintenance trims Q4 output",
+   "p": "Ampol's Lytton refiner margin more than doubled year on year in the September quarter, but extended cracking-unit maintenance will cut about 150 million litres of higher-value fuel output, with restart expected mid-November.",
+   "src": "https://oilprice.com/Company-News/Ampol-Refining-Margins-Jump-125-as-Lytton-Maintenance-Hits-Output.amp.html",
+   "s": "OilPrice.com"
+  },
+  {
+   "d": "2026-10-12",
+   "tag": "food",
+   "h": "SunRice to build rice cake plant in Leeton with federal funding",
+   "p": "Canberra is putting $14.5 million, matched by SunRice, into a new rice processing facility at Leeton in the Riverina, supporting more than 200 jobs.",
+   "src": "https://www.australianmanufacturing.com.au/14-5m-funding-to-support-riverina-rice-manufacturing-and-200-jobs/",
+   "s": "Australian Manufacturing"
+  },
+  {
+   "d": "2026-10-12",
+   "tag": "food",
+   "h": "$21.6M food manufacturing expansions in Melbourne's north",
+   "p": "The Victorian Government is backing food manufacturers in Melbourne's north with combined investments of $21.6 million to lift production and exports and add almost 50 jobs.",
+   "src": "https://www.australianmanufacturing.com.au/victorian-food-manufacturers-invest-21-6m-to-create-jobs-in-melbournes-north/",
+   "s": "Australian Manufacturing"
+  },
   {
    "d": "2026-10-10",
    "tag": "chem",
@@ -1195,12 +1486,36 @@
    "s": "NSW Government"
   },
   {
+   "d": "2026-10-08",
+   "tag": "eng",
+   "h": "Western Sydney Aerotropolis private investment reaches $34.6B",
+   "p": "The Bradfield Development Authority reports $34.6 billion of private investment, with new advanced manufacturing and technology facilities expanding the region's industrial base.",
+   "src": "https://www.australianmanufacturing.com.au/advanced-manufacturing-takes-centre-stage-as-aerotropolis-investment-reaches-34-6b/",
+   "s": "Australian Manufacturing"
+  },
+  {
+   "d": "2026-09-07",
+   "tag": "saf",
+   "h": "Jet Zero raises funds to finish FEED and approach FID",
+   "p": "Jet Zero Australia closed a funding round backed by Qantas, Airbus and others to complete front-end engineering design for Project Ulysses; POSCO International joined as investor and the project received its final development permit.",
+   "src": "https://biofuelsdigest.com/?p=1006876",
+   "s": "Biofuels Digest"
+  },
+  {
    "d": "2026-08-07",
    "tag": "spec",
    "h": "Nufarm to close Kwinana and expand Laverton",
    "p": "Nufarm will stop manufacturing at Kwinana in WA by May 2027 and move about 20 million litres a year of production to its Laverton plant in Victoria.",
    "src": "https://www.stockjournal.com.au/story/9325249/nufarm-kwinana-plant-closure-confirmed-production-shifts/",
    "s": "Stock Journal"
+  },
+  {
+   "d": "2026-07-30",
+   "tag": "ref",
+   "h": "Emissions rules now credit co-processed biofuels at refineries",
+   "p": "Revised NGER rules let renewable content co-processed at existing refineries count as zero Scope 1 emissions, supporting Viva's plan to run Cleanaway used cooking oil through Geelong.",
+   "src": "https://www.spglobal.com/energy/en/news-research/latest-news/agriculture/073026-australia-backs-co-processed-biofuels-at-refineries-with-new-carbon-rules",
+   "s": "S&P Global"
   },
   {
    "d": "2026-07-28",
@@ -1216,6 +1531,14 @@
    "h": "ARENA backs forestry by-products for jet fuel",
    "p": "Up to $32 million in conditional funding for a project converting forestry residues into sustainable aviation fuel.",
    "src": "https://www.australianmanufacturing.com.au/tag/sustainable-aviation-fuel/",
+   "s": "Australian Manufacturing"
+  },
+  {
+   "d": "2026-06-18",
+   "tag": "food",
+   "h": "Mars opens $112.6 million pet food plant in Wodonga",
+   "p": "Mars has commissioned a wet cat food pouch facility in Wodonga, Victoria, able to make up to 290 million pouches a year, with state support through Regional Development Victoria.",
+   "src": "https://www.australianmanufacturing.com.au/mars-opens-112-6m-manufacturing-facility-in-wodonga/",
    "s": "Australian Manufacturing"
   },
   {
@@ -1241,6 +1564,14 @@
    "p": "Lytton will co-process tallow and canola oil into up to 20 ML/yr of renewable diesel from 2028, with construction from 2027. A second stage could reach 750 ML/yr in the early 2030s.",
    "src": "https://www.abc.net.au/news/2026-04-22/queensland-funding-ampol-refinery-renewable-diesel/106591516",
    "s": "ABC News"
+  },
+  {
+   "d": "2026-04-22",
+   "tag": "food",
+   "h": "Victoria backs $92 million George Weston flour mill expansion in Ballarat",
+   "p": "The Victorian Investment Fund is supporting a $92 million upgrade of George Weston Foods' Ballarat flour mill, adding new milling technology and about 47 jobs.",
+   "src": "https://www.pulse.bot/supply-chain/news/manufacturing-boost-as-victorian-govt-backs-92m-flour-mill-expansion-in-ballarat-ae16a7eb-16f3-41b7-a872-d8730adacc99/",
+   "s": "Pulse (via Australian Manufacturing)"
   },
   {
    "d": "2026-04-17",
@@ -1275,6 +1606,14 @@
    "s": "Australian Aviation"
   },
   {
+   "d": "2026-02-11",
+   "tag": "saf",
+   "h": "HAMR Energy raises $10 million for Portland methanol-to-jet plant",
+   "p": "Qantas, Airbus and thyssenkrupp Uhde's SAF fund backed HAMR Energy's Series A, supporting its Portland Renewable Fuels project in Victoria targeting over 135 million litres of SAF a year.",
+   "src": "https://www.pulse.bot/entrepreneurship/news/hamr-energy-lands-10-million-runway-from-qantas-and-airbus-c1ce2f34-358b-428f-91fa-cd81ca274276",
+   "s": "Pulse"
+  },
+  {
    "d": "2026-01-22",
    "tag": "oil",
    "h": "Cargill lodges plans for a 1.1 Mt canola plant in WA",
@@ -1300,6 +1639,19 @@
    "why": "Posted the Reliability & Plant Maintenance Supervisor role at the Western Sydney MRF",
    "src": "LinkedIn post",
    "d": "2026-10-29"
+  }
+ ],
+ "runs": [
+  {
+   "at": "2026-10-30T20:28:30+11:00",
+   "added": 39,
+   "seek": 3,
+   "indeed": 36,
+   "removed": 22,
+   "news": 11,
+   "jd": 14,
+   "github": "ok (synced by Claude)",
+   "note": "Today's automatic updates had reached only the Claude copy; Claude synced them to your website."
   }
  ]
 }
