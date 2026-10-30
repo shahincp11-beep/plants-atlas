@@ -467,6 +467,46 @@ a{color:var(--ink);text-decoration-color:color-mix(in srgb,var(--ink) 30%,transp
 .ms time{color:var(--accent);font-weight:600}
 .avatar{border-radius:10px;font-weight:600}
 .badge{background:var(--accent)}
+
+/* detail pages */
+.detail{max-width:860px}
+.dback{display:inline-flex;align-items:center;gap:6px;border:0;background:none;padding:6px 0;margin:0 0 14px;font:500 14px var(--body);color:var(--soft);cursor:pointer}
+.dback:hover{color:var(--ink)}
+.dback svg{width:16px;height:16px}
+.dhead{display:grid;grid-template-columns:auto minmax(0,1fr);gap:16px;align-items:start;margin-bottom:18px}
+.dhead h1{font:650 clamp(26px,4vw,38px)/1.08 var(--display);letter-spacing:-.035em;margin:0 0 6px;text-wrap:balance}
+.dsub{color:var(--soft);font-size:15px;display:flex;flex-wrap:wrap;gap:4px 14px}
+.dsub a{color:var(--ink);font-weight:500}
+.dfacts{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 18px}
+.dfacts span{border:1px solid var(--line);border-radius:8px;padding:6px 10px;font-size:13.5px;color:var(--soft);background:#fff}
+.dfacts b{color:var(--ink);font-weight:600}
+.dfacts .sal{border-color:var(--ink)}
+.dacts{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:26px}
+.dacts .btn{padding:9px 14px;font-size:14px}
+.dsec{border-top:1px solid var(--line);padding:18px 0 4px}
+.dsec h2{font:600 18px/1.2 var(--display);letter-spacing:-.02em;margin:0 0 10px}
+.dsec p{margin:0 0 10px;color:var(--ink);max-width:68ch}
+.dlist{margin:0 0 10px;padding:0;list-style:none;display:grid;gap:7px;max-width:70ch}
+.dlist li{position:relative;padding-left:18px}
+.dlist li::before{content:"";position:absolute;left:2px;top:.62em;width:6px;height:6px;border-radius:1.5px;background:var(--ink)}
+.dlist.ok li::before{background:var(--ok);border-radius:50%}
+.kws{display:flex;flex-wrap:wrap;gap:6px}
+.kws span{background:var(--surface);border-radius:6px;padding:4px 9px;font-size:13px;font-weight:500}
+.dnote{background:var(--surface);border-radius:10px;padding:12px 14px;color:var(--soft);font-size:14px;max-width:68ch}
+.drows{display:flex;flex-direction:column;border-top:1px solid var(--line)}
+.drow{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px;align-items:center;padding:12px 2px;border-bottom:1px solid var(--line);text-decoration:none;color:var(--ink)}
+.drow:hover{background:linear-gradient(90deg,var(--surface),transparent 85%)}
+.drow>span{color:inherit}
+.drow b{display:block;font-weight:600;color:var(--ink);font-size:15px}
+.drow>span>span{color:var(--soft);font-size:13.5px}
+.drow .r{color:var(--faint);font-size:13px;text-align:right;white-space:nowrap}
+.dlogo .avatar{width:56px;height:56px;border-radius:14px;font-size:20px}
+.xl{color:inherit;text-decoration:underline;text-decoration-color:color-mix(in srgb,currentColor 30%,transparent);text-underline-offset:3px}
+.xl:hover{text-decoration-color:currentColor}
+.site h4 a,.co h4 a{color:inherit;text-decoration:none}
+.site h4 a:hover,.co h4 a:hover{text-decoration:underline;text-underline-offset:3px}
+.jobwrap .job{cursor:pointer}
+.sumtag{display:inline-flex;align-items:center;gap:5px;font-size:12px;color:var(--ok);font-weight:600;margin-left:8px}
 /* Leaflet core (inlined) */
 .leaflet-pane,.leaflet-tile,.leaflet-marker-icon,.leaflet-marker-shadow,.leaflet-tile-container,.leaflet-pane>svg,.leaflet-pane>canvas,.leaflet-zoom-box,.leaflet-image-layer,.leaflet-layer{position:absolute;left:0;top:0}
 .leaflet-container{overflow:hidden;-webkit-tap-highlight-color:transparent;font:13px/1.4 var(--body)}
@@ -572,6 +612,7 @@ html.locked #lock{display:grid;position:fixed;inset:0;z-index:5000;background:#f
   <section class="view" id="v-contacts" hidden></section>
   <section class="view" id="v-companies" hidden></section>
   <section class="view" id="v-news" hidden></section>
+  <section class="view detail" id="v-detail" hidden></section>
 </main>
 
 <nav class="tabbar" id="tabbar" aria-label="Sections"></nav>
@@ -994,19 +1035,20 @@ function popupHTML(it){
   const facts=it.kind==="plant"
    ?`<dt>Location</dt><dd>${esc(it.loc)}</dd><dt>Capacity</dt><dd>${esc(it.cap)}</dd><dt>Feedstock</dt><dd>${esc(it.feed)}</dd>`
    :`<dt>Location</dt><dd>${esc(it.loc)}</dd><dt>Scale</dt><dd>${esc(it.cap)}</dd><dt>Investment</dt><dd>${esc(it.inv)}</dd><dt>Timeline</dt><dd>${esc(it.tl)}</dd><dt>Contractor</dt><dd>${esc(it.epc)}</dd>`;
-  return `<div class="pop">${stageTag(it)}<h3>${esc(it.n)}</h3><p class="owner">${owners.map(k=>miniLogo(k)).join("")}${owners.length?owners.map(coName).map(esc).join(", "):"Owner not stated"}</p>
+  return `<div class="pop">${stageTag(it)}<h3>${esc(it.n)}</h3><p class="owner">${owners.map(k=>miniLogo(k)).join("")}${owners.length?owners.map(k=>coLink(k,coName(k))).join(", "):"Owner not stated"}</p>
    <div class="tags">${it.cats.map(c=>`<span class="tag" style="--c:${col(c)}"><i class="d"></i>${CATS[c].l}</span>`).join("")}</div>
    <dl class="facts">${facts}</dl>${it.note?`<p>${esc(it.note)}</p>`:""}${it.approx?`<p class="warn">Map position is approximate.</p>`:""}
+   <a class="btn" href="${siteHref(it)}" style="align-self:flex-start">Full details</a>
    ${it.src?`<a class="muted" href="${it.src}" target="_blank" rel="noopener">Read the source</a>`:it.kind==="project"?`<span class="muted">Source: your October 2026 project notes</span>`:""}
    <div class="joblist"><h4>${it.jobs.length?`${it.jobs.length} engineering job${it.jobs.length>1?"s":""} open`:"No engineering ads found this month"}</h4>
-   ${it.jobs.map(j=>`<a class="mini" href="${j.u}" target="_blank" rel="noopener"><b>${esc(j.t)}</b><span>${esc(jobCo(j))}, ${esc(j.loc)}, ${fmtD(j.d)}</span></a>`).join("")}
+   ${it.jobs.map(j=>`<a class="mini" href="${jobHref(j)}"><b>${esc(j.t)}</b><span>${esc(jobCo(j))}, ${esc(j.loc)}, ${fmtD(j.d)}</span></a>`).join("")}
    ${owners.map(k=>(owners.length>1?`<span class="muted">Search ${esc(coName(k))}</span>`:"")+searchLinks(k)).join("")}</div></div>`;
 }
 function siteCard(it){
-  return `<article class="site">${stageTag(it)}<h4>${esc(it.n)}</h4><div class="where">${esc(cos(it).map(coName).join(", ")||"Owner not stated")}<br>${esc(it.loc)}</div>
+  return `<article class="site">${stageTag(it)}<h4><a href="${siteHref(it)}">${esc(it.n)}</a></h4><div class="where">${cos(it).map(k=>coLink(k,coName(k))).join(", ")||"Owner not stated"}<br>${esc(it.loc)}</div>
    <div class="tags">${it.cats.map(c=>`<span class="tag" style="--c:${col(c)}"><i class="d"></i>${CATS[c].l}</span>`).join("")}</div>
    ${it.kind==="project"?`<dl class="facts"><dt>Scale</dt><dd>${esc(it.cap)}</dd><dt>Timeline</dt><dd>${esc(it.tl)}</dd></dl>`:`<dl class="facts"><dt>Capacity</dt><dd>${esc(it.cap)}</dd></dl>`}
-   <div class="row">${it.jobs.length?`<span class="hiring">${it.jobs.length} job${it.jobs.length>1?"s":""} open</span>`:"<span></span>"}<button class="btn" data-go="${it.i}">View on map</button></div></article>`;
+   <div class="row">${it.jobs.length?`<span class="hiring">${it.jobs.length} job${it.jobs.length>1?"s":""} open</span>`:"<span></span>"}<span style="display:flex;gap:6px"><a class="btn" href="${siteHref(it)}">Details</a><button class="btn" data-go="${it.i}">Map</button></span></div></article>`;
 }
 
 const LOGO_DOMAINS={"cleanaway": "cleanaway.com.au", "nufarm": "nufarm.com", "bhp": "bhp.com", "santos": "santos.com", "dyno": "dynonobel.com", "ixom": "ixom.com", "orica": "orica.com", "ampol": "ampol.com.au", "graincorp": "graincorp.com.au", "coogee": "coogee.com.au", "perdaman": "perdaman.com.au", "worley": "worley.com", "monadelphous": "monadelphous.com.au", "lycopodium": "lycopodium.com", "wood": "woodplc.com", "cargill": "cargill.com.au", "manildra": "manildra.com.au", "wilmar": "wilmarsugar-anz.com", "viva": "vivaenergy.com.au", "bp": "bp.com", "jetzero": "jetzero.com.au", "licella": "licella.com.au", "southernoil": "sor.com.au", "csbp": "csbp.com.au", "woodside": "woodside.com", "chevron": "chevron.com", "inpex": "inpex.com.au", "justbio": "justbiodiesel.com.au", "bega": "begacheese.com.au", "visy": "visy.com.au", "sulzer": "sulzer.com", "cpb": "cpbcon.com.au", "ppg": "ppg.com", "asahi": "asahibeverages.com.au", "gfg": "gfgalliance.com", "ansto": "ansto.gov.au", "downer": "downergroup.com", "akzo": "akzonobel.com", "sgs": "sgs.com", "airtrunk": "airtrunk.com", "aggreko": "aggreko.com", "dulux": "dulux.com.au", "bakerhughes": "bakerhughes.com", "acciona": "acciona.com.au", "metso": "metso.com", "civmec": "civmec.com.au", "qenos": "qenos.com", "dow": "dow.com", "basf": "basf.com", "unilever": "unilever.com.au", "csl": "csl.com", "mondelez": "mondelezinternational.com", "bluescope": "bluescope.com", "alcoa": "alcoa.com", "fonterra": "fonterra.com", "saputo": "saputo.com", "spc": "spc.com.au", "opal": "opalanz.com", "agl": "agl.com.au", "ea": "energyaustralia.com.au", "esso": "exxonmobil.com.au", "origin": "originenergy.com.au", "tomago": "tomago.com.au", "rio": "riotinto.com", "glencore": "glencore.com", "diageo": "diageo.com", "tronox": "tronox.com", "albemarle": "albemarle.com", "jacobs": "jacobs.com", "ghd": "ghd.com", "wsp": "wsp.com", "aurecon": "aurecongroup.com", "hatch": "hatch.com", "ugl": "ugl.com.au", "ventia": "ventia.com", "nyrstar": "nyrstar.com", "sydneywater": "sydneywater.com.au", "melbwater": "melbournewater.com.au", "kellanova": "kellanova.com", "swagelok": "swagelok.com", "marand": "marand.com.au", "eurekaag": "eurekaag.com.au", "yara": "yara.com", "sugaraus": "sugaraustralia.com.au", "tarac": "tarac.com.au", "united": "unitedpetroleum.com.au", "shell": "shell.com.au", "hazer": "hazergroup.com.au", "fortescue": "fortescue.com", "vopak": "vopak.com", "jemena": "jemena.com.au", "barwon": "barwonwater.vic.gov.au", "geelongport": "geelongport.com.au", "weir": "global.weir", "clough": "webuildgroup.com", "primero": "primero.com.au", "mondelez2": "mondelez.com"};
@@ -1032,7 +1074,13 @@ $("#spectrum").innerHTML=Object.keys(CATS).map(c=>{const n=ITEMS.filter(i=>i.cat
 /* ---------- router ---------- */
 let current=null;
 function route(){
-  const h=(location.hash||"#map").slice(1);const v=VIEWS.some(([k])=>k===h)?h:"map";
+  const h=(location.hash||"#map").slice(1);
+  if(/^(job|co|site)\//.test(h)){const tab=h.startsWith("job/")?"jobs":h.startsWith("co/")?"companies":"projects";current="detail";
+    VIEWS.forEach(([k])=>{$("#v-"+k).hidden=true});$("#v-detail").hidden=false;renderDetail(h);
+    document.querySelectorAll("[data-v]").forEach(a=>{if(a.dataset.v===tab)a.setAttribute("aria-current","page");else a.removeAttribute("aria-current")});
+    window.scrollTo(0,0);return}
+  $("#v-detail").hidden=true;
+  const v=VIEWS.some(([k])=>k===h)?h:"map";
   current=v;
   VIEWS.forEach(([k])=>{$("#v-"+k).hidden=k!==v});
   document.querySelectorAll("[data-v]").forEach(a=>{if(a.dataset.v===v)a.setAttribute("aria-current","page");else a.removeAttribute("aria-current")});
@@ -1202,7 +1250,7 @@ function cvPrompt(kind,j){const nm=jobCo(j);
   return `${intro} Compare my CV with this job description. I'll attach the CV I want checked. Give me the match score, strengths, weak points, missing ATS keywords and the questions I should answer; after I answer, revise the CV and give me .docx and .pdf.\n\n${head}${jd}`}
 function cvLink(kind,j){const base=CVPROJ||"https://claude.ai/new";return base+(base.includes("?")?"&":"?")+"q="+enc(cvPrompt(kind,j))}
 function jobRow(j){const nm=jobCo(j);const m=matchOf(j);const id=JOBS.indexOf(j);
-  return `<div class="jobwrap"><a class="job" href="${j.u}" target="_blank" rel="noopener">${jobF.sort==="match"?ring(m.score):coAvatar(j.co,nm)}<span><b>${esc(j.t)}</b><span class="sub">${miniLogo(j.co)}${esc(nm)}, ${esc(j.loc)}</span>${jobF.sort==="match"?`<span class="why">${m.why.slice(0,2).map(w=>`<i>${esc(w)}</i>`).join("")}</span>`:""}</span><span class="right"><span class="lvl ${lvlClass(j.lvl||"")}">${esc(j.lvl||"Level not stated")}</span><span>${fmtD(j.d)} on <span class="srcb${j.src==="Seek"?" seek":""}">${esc(j.src||"web")}</span></span></span></a>
+  return `<div class="jobwrap"><a class="job" href="${jobHref(j)}">${jobF.sort==="match"?ring(m.score):coAvatar(j.co,nm)}<span><b>${esc(j.t)}</b><span class="sub">${miniLogo(j.co)}${esc(nm)}, ${esc(j.loc)}${j.sum?'<span class="sumtag">Summary ready</span>':""}</span>${jobF.sort==="match"?`<span class="why">${m.why.slice(0,2).map(w=>`<i>${esc(w)}</i>`).join("")}</span>`:""}</span><span class="right"><span class="lvl ${lvlClass(j.lvl||"")}">${esc(j.lvl||"Level not stated")}</span><span>${fmtD(j.d)} on <span class="srcb${j.src==="Seek"?" seek":""}">${esc(j.src||"web")}</span></span></span></a>
    <div class="cvbar"><a class="cvb" data-cv="cv" data-j="${id}" href="${cvLink("cv",j)}" target="_blank" rel="noopener">Create CV</a><a class="cvb" data-cv="cl" data-j="${id}" href="${cvLink("cl",j)}" target="_blank" rel="noopener">Cover letter</a><a class="cvb" data-cv="cmp" data-j="${id}" href="${cvLink("cmp",j)}" target="_blank" rel="noopener">Compare with JD</a></div></div>`}
 document.addEventListener("click",e=>{const b=e.target.closest("[data-cv]");if(!b)return;const j=JOBS[+b.dataset.j];if(!j)return;const t=cvPrompt(b.dataset.cv,j);
   try{navigator.clipboard&&navigator.clipboard.writeText(t).catch(()=>{})}catch(_){}
@@ -1308,6 +1356,7 @@ async function loadLive(){
     ITEMS.forEach(it=>{it.jobs=jobsOf(cos(it));if(it.m)it.m.setIcon(pinIcon(it))});
     paintStatus();
     renderIndustries();renderProjects();renderJobs();renderCompanies();renderNews();renderContacts();updateBadge();
+    if(current==="detail")renderDetail(location.hash.slice(1));
   }catch(e){paintStatus()}
 }
 
@@ -1322,14 +1371,84 @@ function renderCompanies(){
    <div class="chips" style="margin-bottom:16px">${ch("all","All")}${ch("dev","Developers & technology")}${ch("own","Owners & operators")}${ch("con","EPC & EPCM contractors")}</div>
    <div class="grid">${list.map(c=>{const nm=c.n||coName(c.k);const js=jobsOf([c.k]);const linked=ITEMS.filter(i=>cos(i).includes(c.k));
     const fit=c.tier?`<span class="fit ${/top/i.test(c.tier)?"top":/hiring/i.test(c.tier)?"hire":""}">${esc(c.tier)}</span>`:"";
-    return `<article class="co"><div class="co-top">${coAvatar(c.k,nm)}<div><h4>${esc(nm)}</h4><div class="kind">${esc(c.t)}, ${esc(c.hq)}</div></div></div>${fit}
+    return `<article class="co"><div class="co-top">${coAvatar(c.k,nm)}<div><h4><a href="${coHref(c.k)}">${esc(nm)}</a></h4><div class="kind">${esc(c.t)}, ${esc(c.hq)}</div></div></div>${fit}
      <p style="margin:0;color:var(--soft)">${esc(c.f)}</p>
-     ${linked.length?`<div class="muted">On the map: ${linked.map(i=>`<a href="#map" data-go="${i.i}">${esc(i.n)}</a>`).join(", ")}</div>`:""}
-     ${js.length?`<div class="joblist" style="border:0;padding:0">${js.slice(0,3).map(j=>`<a class="mini" href="${j.u}" target="_blank" rel="noopener"><b>${esc(j.t)}</b><span>${esc(j.loc)}, ${fmtD(j.d)}</span></a>`).join("")}${js.length>3?`<span class="muted">and ${js.length-3} more in Jobs</span>`:""}</div>`:""}
-     ${searchLinks(c.k)}</article>`}).join("")}</div>`;
+     ${linked.length?`<div class="muted">Sites: ${linked.map(i=>`<a class="xl" href="${siteHref(i)}">${esc(i.n)}</a>`).join(", ")}</div>`:""}
+     ${js.length?`<div class="joblist" style="border:0;padding:0">${js.slice(0,3).map(j=>`<a class="mini" href="${jobHref(j)}"><b>${esc(j.t)}</b><span>${esc(j.loc)}, ${fmtD(j.d)}</span></a>`).join("")}${js.length>3?`<span class="muted">and ${js.length-3} more in Jobs</span>`:""}</div>`:""}
+     <div class="links"><a href="${coHref(c.k)}" style="border-color:var(--ink)">View company</a></div>${searchLinks(c.k)}</article>`}).join("")}</div>`;
 }
 $("#v-companies").addEventListener("click",e=>{const b=e.target.closest("[data-cf]");if(b){coF=b.dataset.cf;renderCompanies()}});
 
+
+/* ---------- detail pages: job, company, site/project ---------- */
+const jid=j=>{let h=7;for(const c of (j.u||j.t+j.loc))h=(h*31+c.charCodeAt(0))>>>0;return h.toString(36)};
+const jobHref=j=>"#job/"+jid(j);
+const coHref=k=>"#co/"+enc(k);
+const siteHref=it=>"#site/"+it.i;
+const coLink=(k,label)=>`<a class="xl" href="${coHref(k)}">${esc(label||coLabel(k))}</a>`;
+const BACK_SVG='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>';
+let prevHash="",lastList="jobs";
+window.addEventListener("hashchange",e=>{try{prevHash=new URL(e.oldURL).hash}catch(_){prevHash=""}});
+function backBtn(fallback,label){return `<button class="dback" type="button" data-back="${fallback}">${BACK_SVG}${esc(label)}</button>`}
+document.addEventListener("click",e=>{const b=e.target.closest("[data-back]");if(!b)return;if(prevHash&&prevHash!==location.hash)history.back();else location.hash=b.dataset.back});
+const coSites=k=>ITEMS.filter(i=>cos(i).includes(k));
+const coNews=k=>{const nm=coLabel(k).replace(/\(.*?\)/g,"").replace(/\b(Australia|Group|Pty|Ltd|Limited)\b/g,"").trim().toLowerCase();if(nm.length<3)return[];return NEWS.filter(n=>(n.h+" "+n.p).toLowerCase().includes(nm))};
+function dRowJob(j){const m=matchOf(j);return `<a class="drow" href="${jobHref(j)}"><span style="min-width:0"><b>${esc(j.t)}</b><span>${esc(jobCo(j))}, ${esc(j.loc)}${j.sum?'<span class="sumtag">Summary ready</span>':""}</span></span><span class="r">${m.score}% match<br>${fmtD(j.d)}</span></a>`}
+function dRowSite(it){return `<a class="drow" href="${siteHref(it)}"><span style="min-width:0"><b>${esc(it.n)}</b><span>${esc(it.loc)}, ${it.kind==="project"?esc(STAGES[it.sg]||"Project"):esc((PST[it.st]||"")+" plant")}</span></span><span class="r">${it.jobs.length?`${it.jobs.length} job${it.jobs.length>1?"s":""}`:""}</span></a>`}
+function secList(title,items,cls){return items&&items.length?`<section class="dsec"><h2>${title}</h2><ul class="dlist ${cls||""}">${items.map(x=>`<li>${esc(x)}</li>`).join("")}</ul></section>`:""}
+function renderJobDetail(id){
+  const j=JOBS.find(x=>jid(x)===id);const V=$("#v-detail");
+  if(!j){V.innerHTML=`${backBtn("#jobs","Jobs")}<div class="empty">This job is no longer listed. It may have closed or been removed in the latest update.</div>`;return}
+  const m=matchOf(j),s=j.sum||{},nm=jobCo(j),others=JOBS.filter(x=>x.co===j.co&&x!==j),sites=coSites(j.co),idx=JOBS.indexOf(j);
+  V.innerHTML=`${backBtn("#jobs","Jobs")}
+   <div class="dhead">${ring(m.score)}<div><h1>${esc(j.t)}</h1><div class="dsub"><span>${miniLogo(j.co)}${coLink(j.co,nm)}</span><span>${esc(j.loc)}</span></div></div></div>
+   <div class="dfacts"><span>Level <b>${esc(j.lvl||"Not stated")}</b></span>${s.type?`<span><b>${esc(s.type)}</b></span>`:""}<span class="sal">Salary <b>${esc(s.sal||(j.sum?"Not stated in the ad":"Not known yet"))}</b></span><span>Posted <b>${fmtD(j.d)}</b> on ${esc(j.src||"web")}</span></div>
+   <div class="dacts"><a class="btn primary" href="${j.u}" target="_blank" rel="noopener">Open the ad on ${esc(j.src||"the web")}</a><a class="btn" data-cv="cv" data-j="${idx}" href="${cvLink("cv",j)}" target="_blank" rel="noopener">Create CV</a><a class="btn" data-cv="cl" data-j="${idx}" href="${cvLink("cl",j)}" target="_blank" rel="noopener">Cover letter</a><a class="btn" data-cv="cmp" data-j="${idx}" href="${cvLink("cmp",j)}" target="_blank" rel="noopener">Compare with JD</a></div>
+   ${j.sum?`${s.about?`<section class="dsec"><h2>About the role</h2><p>${esc(s.about)}</p></section>`:""}
+     ${secList("Requirements",s.req)}${secList("Duties and responsibilities",s.duties)}
+     <section class="dsec"><h2>Benefits</h2>${s.ben&&s.ben.length?`<ul class="dlist ok">${s.ben.map(x=>`<li>${esc(x)}</li>`).join("")}</ul>`:`<p class="muted" style="font-size:14.5px">No benefits listed in the ad.</p>`}</section>
+     ${s.kw&&s.kw.length?`<section class="dsec"><h2>Keywords for your CV</h2><div class="kws">${s.kw.map(k=>`<span>${esc(k)}</span>`).join("")}</div></section>`:""}
+     ${s.note?`<section class="dsec"><h2>Good to know</h2><p class="dnote">${esc(s.note)}</p></section>`:""}`
+   :`<section class="dsec"><h2>Summary</h2><p class="dnote">There's no summary for this job yet. The automatic update reads the full ad and adds its requirements, duties, benefits, salary and keywords here, starting with your best matches. To read it now, open the ad.</p></section>`}
+   <section class="dsec"><h2>How it matches your CV</h2><ul class="dlist ok">${m.why.map(w=>`<li>${esc(w)}</li>`).join("")}</ul></section>
+   ${others.length?`<section class="dsec"><h2>More jobs at ${esc(nm)}</h2><div class="drows">${others.slice(0,8).map(dRowJob).join("")}</div></section>`:""}
+   ${sites.length?`<section class="dsec"><h2>${esc(nm)} sites and projects</h2><div class="drows">${sites.slice(0,8).map(dRowSite).join("")}</div></section>`:""}`;
+}
+function renderCoDetail(k){
+  const V=$("#v-detail");const c=COMPANIES.find(x=>x.k===k)||{};const nm=c.n||coLabel(k);const js=jobsOf([k]).sort((a,b)=>matchOf(b).score-matchOf(a).score);
+  const sites=coSites(k),plants=sites.filter(i=>i.kind==="plant"),projs=sites.filter(i=>i.kind==="project"),news=coNews(k),jj=JOBS.find(x=>x.co===k);
+  const kind=c.t?`${c.t}${c.hq?", "+c.hq:""}`:(jj&&jj.sw)?jj.sw:CONTRACTORS.has(k)?"Contractor":"";
+  V.innerHTML=`${backBtn("#companies","Companies")}
+   <div class="dhead"><span class="dlogo">${coAvatar(k,nm)}</span><div><h1>${esc(nm)}</h1><div class="dsub">${kind?`<span>${esc(kind)}</span>`:""}${c.tier?`<span>${esc(c.tier)}</span>`:""}</div></div></div>
+   ${c.f?`<p style="max-width:68ch;margin:0 0 16px">${esc(c.f)}</p>`:""}
+   <div class="dfacts"><span><b>${js.length}</b> open job${js.length===1?"":"s"}</span><span><b>${plants.length}</b> plant${plants.length===1?"":"s"}</span><span><b>${projs.length}</b> project${projs.length===1?"":"s"}</span></div>
+   <section class="dsec"><h2>Open jobs</h2>${js.length?`<div class="drows">${js.map(dRowJob).join("")}</div>`:`<p class="muted" style="font-size:14.5px">No engineering jobs listed right now. Use the job-board links below to check.</p>`}</section>
+   ${sites.length?`<section class="dsec"><h2>Plants and projects</h2><div class="drows">${sites.map(dRowSite).join("")}</div></section>`:""}
+   ${news.length?`<section class="dsec"><h2>In the news</h2><div class="drows">${news.slice(0,6).map(n=>`<a class="drow" href="${n.src}" target="_blank" rel="noopener"><span style="min-width:0"><b>${esc(n.h)}</b><span>${esc(n.s)}</span></span><span class="r">${fmtD(n.d)}</span></a>`).join("")}</div></section>`:""}
+   <section class="dsec"><h2>Search their jobs</h2>${searchLinks(k)}</section>
+   <section class="dsec"><h2>Find people at ${esc(nm)}</h2><div class="links">${ROLE_SEARCHES.map(([l,q])=>`<a class="li" href="${liPeople(q+" "+nm)}" target="_blank" rel="noopener">${l}</a>`).join("")}<a href="${liPosts(nm+" hiring engineer")}" target="_blank" rel="noopener">Their hiring posts</a></div></section>`;
+}
+function renderSiteDetail(i){
+  const it=ITEMS[i];const V=$("#v-detail");
+  if(!it){V.innerHTML=`${backBtn("#projects","Projects")}<div class="empty">This site isn't in the atlas any more.</div>`;return}
+  const owners=cos(it),proj=it.kind==="project";
+  const rows=proj?[["Location",it.loc],["Scale",it.cap],["Investment",it.inv],["Timeline",it.tl],["Contractor",it.epc]]:[["Location",it.loc],["Capacity",it.cap],["Feedstock",it.feed]];
+  const news=NEWS.filter(n=>{const w=it.n.toLowerCase().replace(/\(.*?\)/g,"").split(/\s+/).filter(x=>x.length>4);return w.length&&w.filter(x=>(n.h+" "+n.p).toLowerCase().includes(x)).length>=Math.min(2,w.length)});
+  V.innerHTML=`${backBtn(proj?"#projects":"#industries",proj?"Projects":"Industries")}
+   <div style="margin-bottom:8px">${stageTag(it)}</div><h1 style="font:650 clamp(26px,4vw,38px)/1.08 var(--display);letter-spacing:-.035em;margin:0 0 8px">${esc(it.n)}</h1>
+   <div class="dsub" style="margin-bottom:14px"><span>${owners.length?owners.map(k=>miniLogo(k)+coLink(k,coName(k))).join(", "):"Owner not stated"}</span></div>
+   <div class="tags" style="margin-bottom:18px">${it.cats.map(c=>`<span class="tag" style="--c:${col(c)}"><i class="d"></i>${CATS[c].l}</span>`).join("")}</div>
+   <div class="dacts"><button class="btn primary" data-go="${it.i}">Show on map</button>${it.src?`<a class="btn" href="${it.src}" target="_blank" rel="noopener">Read the source</a>`:""}</div>
+   <section class="dsec"><h2>Key facts</h2><dl class="facts" style="font-size:14.5px;grid-template-columns:110px minmax(0,1fr);gap:8px 14px">${rows.filter(r=>r[1]&&r[1]!=="—").map(([k,v])=>`<dt>${k}</dt><dd>${esc(v)}</dd>`).join("")}</dl>
+    ${it.note?`<p style="margin-top:12px">${esc(it.note)}</p>`:""}${it.approx?`<p class="warn">Map position is approximate.</p>`:""}</section>
+   <section class="dsec"><h2>Jobs at ${esc(owners.map(coName).join(" and ")||"this site")}</h2>${it.jobs.length?`<div class="drows">${it.jobs.map(dRowJob).join("")}</div>`:`<p class="muted" style="font-size:14.5px">No engineering jobs listed right now.</p>`}</section>
+   ${news.length?`<section class="dsec"><h2>In the news</h2><div class="drows">${news.slice(0,5).map(n=>`<a class="drow" href="${n.src}" target="_blank" rel="noopener"><span style="min-width:0"><b>${esc(n.h)}</b><span>${esc(n.s)}</span></span><span class="r">${fmtD(n.d)}</span></a>`).join("")}</div></section>`:""}
+   ${owners.map(k=>`<section class="dsec"><h2>Search ${esc(coName(k))} jobs</h2>${searchLinks(k)}</section>`).join("")}`;
+}
+function renderDetail(h){
+  const [kind,raw]=h.split("/");const arg=decodeURIComponent(raw||"");
+  if(kind==="job")renderJobDetail(arg);else if(kind==="co")renderCoDetail(arg);else renderSiteDetail(+arg);
+}
 /* ---------- news ---------- */
 function renderNews(){
   const V=$("#v-news");
@@ -1358,7 +1477,7 @@ const SECTOR_FEEDS=[["Refinery and renewable fuels","refinery project engineer A
 const ROLE_SEARCHES=[["Recruiters & HR","talent acquisition"],["Engineering managers","engineering manager"],["Project managers","project manager"],["Maintenance managers","maintenance manager"]];
 let peopleSeg="find";
 function personCard(p){const nm=coLabel(p.co);const j=bestJob(p.co);
-  return `<article class="ct"><div class="co-top"><span class="avatar person" style="--c:${coColor(p.co||p.name)}">${initials(p.name)}${miniLogo(p.co)}</span><div style="min-width:0"><h4>${esc(p.name)}</h4><div class="kind">${esc(p.role||"")}${p.role?", ":""}${esc(nm)}</div></div></div>
+  return `<article class="ct"><div class="co-top"><span class="avatar person" style="--c:${coColor(p.co||p.name)}">${initials(p.name)}${miniLogo(p.co)}</span><div style="min-width:0"><h4>${esc(p.name)}</h4><div class="kind">${esc(p.role||"")}${p.role?", ":""}${p.co?coLink(p.co,nm):esc(nm)}</div></div></div>
    ${p.why?`<p class="muted" style="margin:0">${esc(p.why)}</p>`:""}
    ${j?`<span class="hiring" style="align-self:flex-start">${esc(nm)} has ${JOBS.filter(x=>x.co===p.co).length} open role(s), best ${matchOf(j).score}%</span>`:""}
    <div class="links"><a class="li" href="${p.url||liPeople(p.name+" "+nm)}" target="_blank" rel="noopener">${p.url?"Open LinkedIn profile":"Open on LinkedIn"}</a><a href="${liPosts(p.name+" hiring")}" target="_blank" rel="noopener">Their recent posts</a>
@@ -1374,7 +1493,7 @@ function renderFind(){
    <div class="grid">${PEOPLE.map(personCard).join("")}</div></section>
   <section><h2 class="section-title">Right person at each employer</h2>
    <p class="muted" style="margin:0 0 12px">Ordered by your best job match. Each button opens LinkedIn showing that company's people in Australia.</p>
-   <div class="emps two">${emps.map(e=>{const nm=coLabel(e.k);const m=matchOf(e.best);return `<div class="emp"><div class="emp-h">${coAvatar(e.k,nm,"sm")}<div style="min-width:0"><b>${esc(nm)}</b><span class="muted">${e.n} role${e.n>1?"s":""}, best ${m.score}% (${esc(e.best.loc)})</span></div></div>
+   <div class="emps two">${emps.map(e=>{const nm=coLabel(e.k);const m=matchOf(e.best);return `<div class="emp"><div class="emp-h">${coAvatar(e.k,nm,"sm")}<div style="min-width:0"><b><a class="xl" href="${coHref(e.k)}">${esc(nm)}</a></b><span class="muted">${e.n} role${e.n>1?"s":""}, best ${m.score}% (${esc(e.best.loc)})</span></div></div>
     <div class="links">${ROLE_SEARCHES.map(([l,q])=>`<a class="li" href="${liPeople(q+" "+nm)}" target="_blank" rel="noopener">${l}</a>`).join("")}<a href="${liPosts(nm+" hiring engineer")}" target="_blank" rel="noopener">Their hiring posts</a><button class="linkbtn" data-addco="${e.k}">Save a person</button></div></div>`}).join("")}</div></section>`;
 }
 

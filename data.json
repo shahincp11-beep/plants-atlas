@@ -89,7 +89,38 @@
    "u": "https://to.indeed.com/aarswd6hwjr8",
    "lvl": "Mid",
    "src": "Indeed",
-   "jd": "Re.Group is an Australian-owned company focused on providing solutions for recycling and recovery of resources from waste.\nAbout the Role: As a Reliability Engineer, you will be responsible for improving equipment reliability, maintenance systems, site performance and personnel capability, developing strategies to improve equipment availability, safety and maintenance processes.\nKey Responsibilities:\n- Collaborate across the maintenance function to continuously improve and optimise safety, maintenance processes, operational efficiency, productivity and R & M costs.\n- Improve equipment reliability through process improvement, monitoring and analysis of equipment operation, maintenance and failures, and bad actor analysis with a focus on leading KPIs.\n- Enhance the technical competency of the maintenance function to support increasing equipment complexity and new technologies.\n- Identify, assess and quantify opportunities to improve processes and equipment performance.\n- Support site operations by interpreting OEM technical manuals and drawings and provide data-driven planning and reporting using the MEX Computerised Maintenance Management System.\n- Lead RCA investigations for technical issues resulting in equipment issues and plant downtime.\n- Liaise with third-party suppliers to coordinate technical support, critical maintenance activities and onsite supervision; verify completed work and ensure equipment is safely handed over to operations.\n- Manage small local improvement projects as requested.\n- Ensure all PM and CM activities are accurately recorded in MEX.\n- Maintain the MEX asset register and stores module, ensuring asset details, maintenance schedules, inventory records and spare parts data are accurate and up to date.\n- Conduct monthly stocktakes, monitor stock levels and reorder points, and ensure critical spare parts are available.\nAbout You:\n- Strong health and safety focus.\n- Mechanical or Industrial Engineering qualifications.\n- 3+ years' maintenance experience in recycling, manufacturing or heavy mechanical industries.\n- Ability to read and interpret OEM equipment manuals, technical documents and drawings.\n- Ability to lead and motivate staff and third-party contractors.\n- Willing to work weekends during shutdowns and major project installations, equipment refurbishments and commissioning activities.\n- Excellent written and verbal communication skills."
+   "jd": "Re.Group is an Australian-owned company focused on providing solutions for recycling and recovery of resources from waste.\nAbout the Role: As a Reliability Engineer, you will be responsible for improving equipment reliability, maintenance systems, site performance and personnel capability, developing strategies to improve equipment availability, safety and maintenance processes.\nKey Responsibilities:\n- Collaborate across the maintenance function to continuously improve and optimise safety, maintenance processes, operational efficiency, productivity and R & M costs.\n- Improve equipment reliability through process improvement, monitoring and analysis of equipment operation, maintenance and failures, and bad actor analysis with a focus on leading KPIs.\n- Enhance the technical competency of the maintenance function to support increasing equipment complexity and new technologies.\n- Identify, assess and quantify opportunities to improve processes and equipment performance.\n- Support site operations by interpreting OEM technical manuals and drawings and provide data-driven planning and reporting using the MEX Computerised Maintenance Management System.\n- Lead RCA investigations for technical issues resulting in equipment issues and plant downtime.\n- Liaise with third-party suppliers to coordinate technical support, critical maintenance activities and onsite supervision; verify completed work and ensure equipment is safely handed over to operations.\n- Manage small local improvement projects as requested.\n- Ensure all PM and CM activities are accurately recorded in MEX.\n- Maintain the MEX asset register and stores module, ensuring asset details, maintenance schedules, inventory records and spare parts data are accurate and up to date.\n- Conduct monthly stocktakes, monitor stock levels and reorder points, and ensure critical spare parts are available.\nAbout You:\n- Strong health and safety focus.\n- Mechanical or Industrial Engineering qualifications.\n- 3+ years' maintenance experience in recycling, manufacturing or heavy mechanical industries.\n- Ability to read and interpret OEM equipment manuals, technical documents and drawings.\n- Ability to lead and motivate staff and third-party contractors.\n- Willing to work weekends during shutdowns and major project installations, equipment refurbishments and commissioning activities.\n- Excellent written and verbal communication skills.",
+   "sum": {
+    "about": "Recycling and resource-recovery company. The role improves equipment reliability, maintenance systems and site performance at its Dandenong plant.",
+    "type": "Permanent, full-time",
+    "req": [
+     "Mechanical or industrial engineering qualification",
+     "3+ years' maintenance experience in recycling, manufacturing or heavy mechanical industry",
+     "Read OEM manuals, technical documents and drawings",
+     "Lead staff and third-party contractors",
+     "Available for weekend work during shutdowns, installations and commissioning"
+    ],
+    "duties": [
+     "Improve reliability through failure monitoring, bad-actor analysis and leading KPIs",
+     "Lead root cause analysis (RCA) on breakdowns and downtime",
+     "Run the MEX CMMS: PM/CM records, asset register, stores and spares",
+     "Coordinate suppliers for critical maintenance and verify safe handover",
+     "Deliver small local improvement projects",
+     "Monthly stocktakes and critical-spares control"
+    ],
+    "kw": [
+     "Reliability engineering",
+     "RCA",
+     "Bad actor analysis",
+     "MEX CMMS",
+     "Asset register",
+     "Critical spares",
+     "Shutdowns",
+     "Commissioning",
+     "OEM manuals",
+     "KPIs"
+    ]
+   }
   },
   {
    "co": "boral",
@@ -102,7 +133,39 @@
    "u": "https://to.indeed.com/aagldv4fvs4w",
    "lvl": "Mid",
    "src": "Indeed",
-   "jd": "Supporting the NSW Assets Team, this role focuses on coordinating maintenance planning and work management activities across quarry operations. Working closely with Quarry Managers, Maintenance Supervisors and site teams, the successful candidate will assist with maintenance scheduling, work order coordination, maintenance system management and reporting activities. This is a permanent full-time role based at either North Ryde office, Seaham or Peppertree or Dunmore, with occasional travel across our NSW quarry sites.\nYour day will involve:\n- Coordinate preventative maintenance programs and manage monthly asset care activities across NSW quarry operations\n- Assist with the preparation and distribution of maintenance schedules and work plans\n- Create, prioritise and close out work orders while maintaining accurate maintenance records\n- Assist site teams with maintenance planning requirements and resource coordination\n- Maintain Maximo data integrity and produce reports on maintenance performance, equipment reliability and compliance\n- Partner with site teams to align maintenance plans with operational priorities and production requirements\n- Assist in identifying scheduling issues and support process improvements\nWhat are we looking for?\n- Proficiency in Microsoft Office / Microsoft 365, with strong spreadsheet and reporting skills\n- Working knowledge of a CMMS such as Maximo, SAP, MEX, Pronto, Oracle EAM or similar\n- A sound understanding of maintenance scheduling and work order management processes\n- Some exposure to a heavy industry environment such as quarrying, mining, manufacturing or construction materials\n- Strong communication, organisational and analytical skills\n- A genuine development pathway into senior maintenance planning and reliability roles"
+   "jd": "Supporting the NSW Assets Team, this role focuses on coordinating maintenance planning and work management activities across quarry operations. Working closely with Quarry Managers, Maintenance Supervisors and site teams, the successful candidate will assist with maintenance scheduling, work order coordination, maintenance system management and reporting activities. This is a permanent full-time role based at either North Ryde office, Seaham or Peppertree or Dunmore, with occasional travel across our NSW quarry sites.\nYour day will involve:\n- Coordinate preventative maintenance programs and manage monthly asset care activities across NSW quarry operations\n- Assist with the preparation and distribution of maintenance schedules and work plans\n- Create, prioritise and close out work orders while maintaining accurate maintenance records\n- Assist site teams with maintenance planning requirements and resource coordination\n- Maintain Maximo data integrity and produce reports on maintenance performance, equipment reliability and compliance\n- Partner with site teams to align maintenance plans with operational priorities and production requirements\n- Assist in identifying scheduling issues and support process improvements\nWhat are we looking for?\n- Proficiency in Microsoft Office / Microsoft 365, with strong spreadsheet and reporting skills\n- Working knowledge of a CMMS such as Maximo, SAP, MEX, Pronto, Oracle EAM or similar\n- A sound understanding of maintenance scheduling and work order management processes\n- Some exposure to a heavy industry environment such as quarrying, mining, manufacturing or construction materials\n- Strong communication, organisational and analytical skills\n- A genuine development pathway into senior maintenance planning and reliability roles",
+   "sum": {
+    "about": "Construction-materials company. The planner coordinates maintenance planning and work management across Boral's NSW quarries.",
+    "type": "Permanent, full-time; based North Ryde, Seaham, Peppertree or Dunmore with travel",
+    "req": [
+     "CMMS experience (Maximo, SAP, MEX, Pronto or Oracle EAM)",
+     "Maintenance scheduling and work-order management",
+     "Some heavy-industry exposure (quarrying, mining, manufacturing)",
+     "Strong Excel and reporting skills",
+     "Organised, analytical communicator"
+    ],
+    "duties": [
+     "Coordinate preventative maintenance and monthly asset-care programs",
+     "Prepare and issue maintenance schedules and work plans",
+     "Create, prioritise and close out work orders",
+     "Keep Maximo data accurate and report on reliability and compliance",
+     "Align maintenance plans with production priorities"
+    ],
+    "ben": [
+     "Development pathway into senior planning and reliability roles"
+    ],
+    "kw": [
+     "Maintenance planning",
+     "Scheduling",
+     "Work orders",
+     "Maximo",
+     "Preventative maintenance",
+     "Backlog",
+     "Asset care",
+     "Reporting",
+     "Quarry operations"
+    ]
+   }
   },
   {
    "co": "ugl",
@@ -217,7 +280,50 @@
    "u": "https://to.indeed.com/aax4bjmw9qj9",
    "lvl": "Mid",
    "src": "Indeed",
-   "jd": "Based in Laverton North at our Pipe Road chemical manufacturing facility, we're looking to engage a Senior Project Engineer with mechanical specialisation within our Project Management Team. In the role you will be accountable for the activities and coordination of the project scoping, preliminary and detail design, cost estimation and execution plan of capital projects and act as subject matter expert in your field providing advice to Maintenance and the PMO. This role will have direct leadership experience with direct reports and mentoring.\nHow You'll Help Us Grow\n- Lead end-to-end CAPEX projects, from concept and design through to commissioning, handover and operational success.\n- Good knowledge of mechanical equipment, plant and equipment design (static equipment, pressure vessels and piping, rotating equipment) and relevant standards.\n- Experienced in tendering, contractor selection and construction management activities, including preparing and issuing scopes of work, procurement and tender documents and evaluating technical bids.\n- Experience applying Safety in Design principles and contributing to HAZOP, LOPA, hazardous area classification and other process safety studies, Management of Change (MOC) and pre-start-up safety reviews.\n- Drive smart engineering solutions by providing technical expertise, optimising asset performance and minimising total lifecycle costs.\n- Manage contractors, budgets and timelines to deliver projects safely, efficiently and on schedule.\n- Champion continuous improvement, reliability and best-practice standards through innovation, RCA and process optimisation.\n- Make a real impact by ensuring compliance, supporting process safety initiatives and delivering sustainable improvements across operations.\nCould This Be You?\nYou're Tertiary qualified in Engineering (Mechanical) and bring extensive experience in manufacturing equipment design, technical support, project delivery of small to medium-size projects will be highly regarded. You have a strong scientific approach to solving problems, the ability to make data-based decisions, and you're comfortable working in a team environment with a high degree of initiative and self-motivation.\nBenefits: Employee Share Plan, flexible role, health benefits, onsite cafe."
+   "jd": "Based in Laverton North at our Pipe Road chemical manufacturing facility, we're looking to engage a Senior Project Engineer with mechanical specialisation within our Project Management Team. In the role you will be accountable for the activities and coordination of the project scoping, preliminary and detail design, cost estimation and execution plan of capital projects and act as subject matter expert in your field providing advice to Maintenance and the PMO. This role will have direct leadership experience with direct reports and mentoring.\nHow You'll Help Us Grow\n- Lead end-to-end CAPEX projects, from concept and design through to commissioning, handover and operational success.\n- Good knowledge of mechanical equipment, plant and equipment design (static equipment, pressure vessels and piping, rotating equipment) and relevant standards.\n- Experienced in tendering, contractor selection and construction management activities, including preparing and issuing scopes of work, procurement and tender documents and evaluating technical bids.\n- Experience applying Safety in Design principles and contributing to HAZOP, LOPA, hazardous area classification and other process safety studies, Management of Change (MOC) and pre-start-up safety reviews.\n- Drive smart engineering solutions by providing technical expertise, optimising asset performance and minimising total lifecycle costs.\n- Manage contractors, budgets and timelines to deliver projects safely, efficiently and on schedule.\n- Champion continuous improvement, reliability and best-practice standards through innovation, RCA and process optimisation.\n- Make a real impact by ensuring compliance, supporting process safety initiatives and delivering sustainable improvements across operations.\nCould This Be You?\nYou're Tertiary qualified in Engineering (Mechanical) and bring extensive experience in manufacturing equipment design, technical support, project delivery of small to medium-size projects will be highly regarded. You have a strong scientific approach to solving problems, the ability to make data-based decisions, and you're comfortable working in a team environment with a high degree of initiative and self-motivation.\nBenefits: Employee Share Plan, flexible role, health benefits, onsite cafe.",
+   "sum": {
+    "about": "Senior mechanical project engineer at Nufarm's Laverton North chemical plant. Leads capital projects from scoping and design to commissioning, with direct reports.",
+    "type": "Permanent, full-time",
+    "req": [
+     "Mechanical engineering degree",
+     "Static equipment, pressure vessels, piping and rotating equipment, and the standards that apply",
+     "Tendering, contractor selection and construction management",
+     "Safety in Design, HAZOP, LOPA, hazardous areas, MOC and pre-start-up reviews",
+     "Small-to-medium project delivery in manufacturing",
+     "Data-driven problem solver who works well in a team"
+    ],
+    "duties": [
+     "Lead CAPEX projects end to end: concept, design, estimate, execution, commissioning, handover",
+     "Write scopes of work and tender documents; evaluate technical bids",
+     "Manage contractors, budgets and schedules",
+     "Be the mechanical subject-matter expert for maintenance and the PMO",
+     "Drive reliability, RCA and continuous improvement",
+     "Lead and mentor direct reports"
+    ],
+    "ben": [
+     "Employee share plan",
+     "Flexible working",
+     "Health benefits",
+     "Onsite cafe"
+    ],
+    "kw": [
+     "CAPEX",
+     "Brownfield",
+     "Pressure vessels",
+     "Piping",
+     "Rotating equipment",
+     "HAZOP",
+     "LOPA",
+     "Safety in Design",
+     "MOC",
+     "PSSR",
+     "Tendering",
+     "Scope of work",
+     "Contractor management",
+     "Cost estimation",
+     "Chemical plant"
+    ]
+   }
   },
   {
    "co": "tdw",
@@ -237,7 +343,43 @@
    "u": "https://to.indeed.com/aa87twsycc7v",
    "lvl": "Senior",
    "src": "Indeed",
-   "jd": "Worley is seeking an experienced Project Engineer or Senior Project Engineer to join our Melbourne team on an initial 12-month contract, with a strong likelihood of extension.\nWorking across a diverse portfolio of projects, you'll play a key role in supporting project delivery from planning and design through to execution and close-out. This is an excellent opportunity to work with a high-performing team delivering technically challenging projects while building strong relationships with customers, contractors and multidisciplinary stakeholders.\nWhat You'll Do\n- Support the delivery of projects across all phases of execution.\n- Coordinate engineering, procurement, construction and commissioning activities.\n- Manage project scope, schedule, cost and risk to support successful project outcomes.\n- Work closely with customers, contractors and internal project teams.\n- Facilitate project meetings, design reviews and stakeholder engagements.\n- Monitor project performance and contribute to project reporting and forecasting.\n- Promote safe, efficient and high-quality project delivery.\nWhat You'll Bring\n- Degree qualification in Engineering or a related discipline.\n- Demonstrated experience in a Senior Project Engineer or similar project delivery role.\n- Experience delivering projects within onshore energy sector.\n- Strong understanding of project delivery across studies, FEED, detailed design, construction and commissioning.\n- Excellent stakeholder management and communication skills.\n- Ability to work effectively within multidisciplinary project teams.\n- A proactive approach to problem-solving and project execution.\nWhy You Should Apply\n- Initial 12-month contract with strong potential for extension.\n- Opportunity to work on a diverse range of projects and industries.\n- Collaborative and supportive team environment.\n- Join a global company delivering sustainable change across the energy, chemicals and resources sectors."
+   "jd": "Worley is seeking an experienced Project Engineer or Senior Project Engineer to join our Melbourne team on an initial 12-month contract, with a strong likelihood of extension.\nWorking across a diverse portfolio of projects, you'll play a key role in supporting project delivery from planning and design through to execution and close-out. This is an excellent opportunity to work with a high-performing team delivering technically challenging projects while building strong relationships with customers, contractors and multidisciplinary stakeholders.\nWhat You'll Do\n- Support the delivery of projects across all phases of execution.\n- Coordinate engineering, procurement, construction and commissioning activities.\n- Manage project scope, schedule, cost and risk to support successful project outcomes.\n- Work closely with customers, contractors and internal project teams.\n- Facilitate project meetings, design reviews and stakeholder engagements.\n- Monitor project performance and contribute to project reporting and forecasting.\n- Promote safe, efficient and high-quality project delivery.\nWhat You'll Bring\n- Degree qualification in Engineering or a related discipline.\n- Demonstrated experience in a Senior Project Engineer or similar project delivery role.\n- Experience delivering projects within onshore energy sector.\n- Strong understanding of project delivery across studies, FEED, detailed design, construction and commissioning.\n- Excellent stakeholder management and communication skills.\n- Ability to work effectively within multidisciplinary project teams.\n- A proactive approach to problem-solving and project execution.\nWhy You Should Apply\n- Initial 12-month contract with strong potential for extension.\n- Opportunity to work on a diverse range of projects and industries.\n- Collaborative and supportive team environment.\n- Join a global company delivering sustainable change across the energy, chemicals and resources sectors.",
+   "sum": {
+    "about": "Worley's Melbourne team needs a project engineer or senior project engineer to deliver onshore energy projects from planning through execution and close-out.",
+    "type": "12-month contract, likely extension",
+    "req": [
+     "Engineering degree",
+     "Senior project engineer or similar delivery experience",
+     "Onshore energy-sector projects",
+     "Studies, FEED, detailed design, construction and commissioning",
+     "Strong stakeholder management"
+    ],
+    "duties": [
+     "Coordinate engineering, procurement, construction and commissioning",
+     "Manage scope, schedule, cost and risk",
+     "Run project meetings and design reviews",
+     "Report on and forecast project performance",
+     "Work with customers, contractors and multidisciplinary teams"
+    ],
+    "ben": [
+     "Likely contract extension",
+     "Diverse projects and industries",
+     "Global energy, chemicals and resources company"
+    ],
+    "kw": [
+     "Project engineering",
+     "EPC",
+     "FEED",
+     "Detailed design",
+     "Procurement",
+     "Construction",
+     "Commissioning",
+     "Scope, schedule, cost",
+     "Risk",
+     "Reporting",
+     "Onshore energy"
+    ]
+   }
   },
   {
    "co": "chandler",
@@ -571,7 +713,36 @@
    "u": "https://to.indeed.com/aajkj869t8kn",
    "lvl": "Mid",
    "src": "Indeed",
-   "jd": "An opportunity currently exists for a Mechanical Engineer to join the Reliability Team based in our Wetherill Park Site, the home of Dare Iced Coffee, Dairy Farmers, Farmers Union, and Big M.\nOur Wetherill Park site in Sydney is our Milk Based Beverages (MBB) hub for the eastern seaboard. The site manufactures both Fresh and Extended Shelf-Life products, including UHT long-life milk, and produces 75 million litres of dairy products.\nReporting to the site leader, the Mechanical Engineer will plan the strategic direction for Packaging equipment & Continuous Improvement on-site, in line with current industry best practices, and instigate and lead improvement projects in data acquisition.\nResponsibilities\n- Deliver the implementation of site engineering, capital, and NPD projects and ensure project deliverables are met including safety, cost, quality, and benefits.\n- Identify and provide solutions for process improvement opportunities.\n- Mentor and provide technical expertise to the maintenance and production staff.\n- Lead and support continuous improvement and ad-hoc projects.\n- Support and assist in the development of HACCP, Safety, and Environmental plans.\nAbout you\n- Experience working in an FMCG manufacturing environment.\n- Solid analytical & problem-solving skills.\n- Knowledge of Continuous Improvement methodologies & tools.\n- Demonstrated experience in Project & change management.\n- Ability to work with a diverse range of team members and stakeholders.\n- Excellent written and verbal communication skills.\nThe successful applicant will be required to complete a pre-employment medical."
+   "jd": "An opportunity currently exists for a Mechanical Engineer to join the Reliability Team based in our Wetherill Park Site, the home of Dare Iced Coffee, Dairy Farmers, Farmers Union, and Big M.\nOur Wetherill Park site in Sydney is our Milk Based Beverages (MBB) hub for the eastern seaboard. The site manufactures both Fresh and Extended Shelf-Life products, including UHT long-life milk, and produces 75 million litres of dairy products.\nReporting to the site leader, the Mechanical Engineer will plan the strategic direction for Packaging equipment & Continuous Improvement on-site, in line with current industry best practices, and instigate and lead improvement projects in data acquisition.\nResponsibilities\n- Deliver the implementation of site engineering, capital, and NPD projects and ensure project deliverables are met including safety, cost, quality, and benefits.\n- Identify and provide solutions for process improvement opportunities.\n- Mentor and provide technical expertise to the maintenance and production staff.\n- Lead and support continuous improvement and ad-hoc projects.\n- Support and assist in the development of HACCP, Safety, and Environmental plans.\nAbout you\n- Experience working in an FMCG manufacturing environment.\n- Solid analytical & problem-solving skills.\n- Knowledge of Continuous Improvement methodologies & tools.\n- Demonstrated experience in Project & change management.\n- Ability to work with a diverse range of team members and stakeholders.\n- Excellent written and verbal communication skills.\nThe successful applicant will be required to complete a pre-employment medical.",
+   "sum": {
+    "about": "Mechanical engineer in the reliability team at Bega's Wetherill Park dairy beverage site (UHT and fresh milk). Leads packaging-equipment strategy and improvement projects.",
+    "type": "Permanent, full-time",
+    "req": [
+     "FMCG manufacturing experience",
+     "Project and change management",
+     "Continuous-improvement tools",
+     "Strong analytical and problem-solving skills",
+     "Pre-employment medical"
+    ],
+    "duties": [
+     "Deliver site engineering, capital and new-product projects",
+     "Find and fix process-improvement opportunities",
+     "Mentor maintenance and production staff",
+     "Lead continuous-improvement projects",
+     "Support HACCP, safety and environmental plans"
+    ],
+    "kw": [
+     "FMCG",
+     "Dairy processing",
+     "UHT",
+     "Packaging equipment",
+     "Capital projects",
+     "Continuous improvement",
+     "HACCP",
+     "Reliability",
+     "Change management"
+    ]
+   }
   },
   {
    "co": "acciona",
@@ -608,7 +779,40 @@
    "u": "https://to.indeed.com/aaf7wt46fqvm",
    "lvl": "Senior",
    "src": "Indeed",
-   "jd": "Great maintenance starts with great planning.\nWe're looking for an experienced Senior Maintenance Planner to help keep our Berkeley Vale manufacturing site operating safely, reliably and efficiently.\nReporting to the Site Maintenance & Reliability Manager, you'll bring together the people, parts, systems and schedules needed to deliver effective maintenance. Your scope will include preventative and corrective maintenance planning, shutdown coordination, maintenance systems, contractor coordination and oversight of the maintenance stores team.\nWhat you'll be doing\n- Develop detailed work plans covering labour, materials, tools, permits and contractor requirements, while maintaining an organised and prioritised maintenance backlog.\n- Bring together work scopes, resources and schedules, ensuring contractors are prepared and site requirements are met.\n- Be the site's key contact for the Computerised Maintenance Management System (CMMS), supporting accurate asset records, quality work orders and practical training for users.\n- Lead and support the stores team, coordinate purchasing and maintain critical spare parts availability.\n- Use maintenance data and equipment history to identify recurring issues, strengthen preventative and predictive maintenance programs, and support continuous improvement.\n- Work closely with production and maintenance stakeholders to align priorities, monitor progress and report on maintenance performance.\n- Build site safety, food safety, hygiene and compliance requirements into maintenance planning and contractor activities.\nWhat you'll bring\n- A trade or engineering qualification, or equivalent maintenance industry experience.\n- At least five years' experience in maintenance planning, scheduling or coordination.\n- Demonstrated experience using a CMMS within an FMCG or manufacturing environment.\n- Strong practical knowledge of preventative maintenance, work order planning and backlog management.\n- Strong analytical and reporting skills, with advanced Microsoft Office capability, particularly Excel.\n- The ability to lead, coach and support the maintenance stores team.\n- Experience in food manufacturing, shutdown planning, reliability-centred maintenance, predictive maintenance or technical training would be highly regarded."
+   "jd": "Great maintenance starts with great planning.\nWe're looking for an experienced Senior Maintenance Planner to help keep our Berkeley Vale manufacturing site operating safely, reliably and efficiently.\nReporting to the Site Maintenance & Reliability Manager, you'll bring together the people, parts, systems and schedules needed to deliver effective maintenance. Your scope will include preventative and corrective maintenance planning, shutdown coordination, maintenance systems, contractor coordination and oversight of the maintenance stores team.\nWhat you'll be doing\n- Develop detailed work plans covering labour, materials, tools, permits and contractor requirements, while maintaining an organised and prioritised maintenance backlog.\n- Bring together work scopes, resources and schedules, ensuring contractors are prepared and site requirements are met.\n- Be the site's key contact for the Computerised Maintenance Management System (CMMS), supporting accurate asset records, quality work orders and practical training for users.\n- Lead and support the stores team, coordinate purchasing and maintain critical spare parts availability.\n- Use maintenance data and equipment history to identify recurring issues, strengthen preventative and predictive maintenance programs, and support continuous improvement.\n- Work closely with production and maintenance stakeholders to align priorities, monitor progress and report on maintenance performance.\n- Build site safety, food safety, hygiene and compliance requirements into maintenance planning and contractor activities.\nWhat you'll bring\n- A trade or engineering qualification, or equivalent maintenance industry experience.\n- At least five years' experience in maintenance planning, scheduling or coordination.\n- Demonstrated experience using a CMMS within an FMCG or manufacturing environment.\n- Strong practical knowledge of preventative maintenance, work order planning and backlog management.\n- Strong analytical and reporting skills, with advanced Microsoft Office capability, particularly Excel.\n- The ability to lead, coach and support the maintenance stores team.\n- Experience in food manufacturing, shutdown planning, reliability-centred maintenance, predictive maintenance or technical training would be highly regarded.",
+   "sum": {
+    "about": "Senior planner at Sanitarium's Berkeley Vale food plant. Covers PM/CM planning, shutdown coordination, the CMMS, contractors and the maintenance stores team.",
+    "type": "Permanent, full-time",
+    "req": [
+     "Trade or engineering qualification, or equivalent experience",
+     "5+ years in maintenance planning, scheduling or coordination",
+     "CMMS use in FMCG or manufacturing",
+     "Preventative maintenance and backlog management",
+     "Advanced Excel",
+     "Highly regarded: food manufacturing, shutdown planning, RCM, predictive maintenance"
+    ],
+    "duties": [
+     "Build detailed work plans: labour, materials, tools, permits, contractors",
+     "Manage a prioritised maintenance backlog",
+     "Own the CMMS: asset records, work-order quality, user training",
+     "Lead the stores team and critical spares",
+     "Use failure history to strengthen PM and predictive programs",
+     "Build food safety and hygiene into maintenance"
+    ],
+    "kw": [
+     "Maintenance planning",
+     "Scheduling",
+     "Shutdown planning",
+     "CMMS",
+     "Backlog",
+     "Critical spares",
+     "Stores",
+     "RCM",
+     "Predictive maintenance",
+     "Food safety",
+     "FMCG"
+    ]
+   }
   },
   {
    "co": "microbiomics",
@@ -664,7 +868,39 @@
    "u": "https://to.indeed.com/aa2k2jqy8wf2",
    "lvl": "Mid",
    "src": "Indeed",
-   "jd": "IDT Australia is an Australian pharmaceutical contract development and manufacturing organisation (CDMO). Operating from our facility in Boronia, Victoria, we support the development and manufacture of Active Pharmaceutical Ingredients (APIs) and Finished Dosage Forms, working within a highly regulated GMP environment.\nAbout the Role\nReporting to the Engineering Services Lead, this is an excellent opportunity for an engineer with approximately 4 years' industry experience who enjoys a combination of project delivery, hands-on engineering, process improvement and validation. From project scoping and equipment installation through to commissioning, qualification and operational handover, you will play an important role in improving manufacturing capability, reliability and efficiency.\nKey Responsibilities\n- Coordinate engineering and capital projects from concept and design through to commissioning and handover.\n- Develop project scopes, technical specifications, schedules, budgets and engineering documentation.\n- Work with suppliers, contractors and internal teams to deliver safe, compliant and cost-effective project outcomes.\n- Support process engineering activities, including manufacturing improvements, troubleshooting, process trials and scale-up.\n- Participate in equipment, facility and utility commissioning, qualification and validation activities (DQ, IQ, OQ and PQ).\n- Prepare and review technical documentation, risk assessments, change controls and validation protocols.\n- Identify and implement opportunities to improve equipment performance, process efficiency, manufacturing reliability and operational safety.\n- Ensure engineering activities comply with GMP, quality systems and WHS requirements.\nAbout You\n- A bachelor's degree in Mechanical, Chemical, Process, Electrical Engineering or a related discipline.\n- Approximately 4 years' experience in project engineering, process engineering or a related technical role.\n- Experience within pharmaceutical, biotechnology, chemical processing or another regulated manufacturing environment, essential.\n- Exposure to commissioning, qualification and validation activities, preferably within a GMP environment, essential.\nPay: $75,000 - $85,000 per year."
+   "jd": "IDT Australia is an Australian pharmaceutical contract development and manufacturing organisation (CDMO). Operating from our facility in Boronia, Victoria, we support the development and manufacture of Active Pharmaceutical Ingredients (APIs) and Finished Dosage Forms, working within a highly regulated GMP environment.\nAbout the Role\nReporting to the Engineering Services Lead, this is an excellent opportunity for an engineer with approximately 4 years' industry experience who enjoys a combination of project delivery, hands-on engineering, process improvement and validation. From project scoping and equipment installation through to commissioning, qualification and operational handover, you will play an important role in improving manufacturing capability, reliability and efficiency.\nKey Responsibilities\n- Coordinate engineering and capital projects from concept and design through to commissioning and handover.\n- Develop project scopes, technical specifications, schedules, budgets and engineering documentation.\n- Work with suppliers, contractors and internal teams to deliver safe, compliant and cost-effective project outcomes.\n- Support process engineering activities, including manufacturing improvements, troubleshooting, process trials and scale-up.\n- Participate in equipment, facility and utility commissioning, qualification and validation activities (DQ, IQ, OQ and PQ).\n- Prepare and review technical documentation, risk assessments, change controls and validation protocols.\n- Identify and implement opportunities to improve equipment performance, process efficiency, manufacturing reliability and operational safety.\n- Ensure engineering activities comply with GMP, quality systems and WHS requirements.\nAbout You\n- A bachelor's degree in Mechanical, Chemical, Process, Electrical Engineering or a related discipline.\n- Approximately 4 years' experience in project engineering, process engineering or a related technical role.\n- Experience within pharmaceutical, biotechnology, chemical processing or another regulated manufacturing environment, essential.\n- Exposure to commissioning, qualification and validation activities, preferably within a GMP environment, essential.\nPay: $75,000 - $85,000 per year.",
+   "sum": {
+    "about": "Project engineer at IDT, a pharmaceutical manufacturer in Boronia. Runs capital projects from scoping and installation to commissioning and validation under GMP.",
+    "type": "Permanent, full-time",
+    "sal": "$75,000 – $85,000 a year",
+    "req": [
+     "Degree in mechanical, chemical, process or related engineering",
+     "About 4 years in project or process engineering",
+     "Regulated manufacturing (pharma, biotech, chemical): essential",
+     "Commissioning, qualification and validation exposure: essential"
+    ],
+    "duties": [
+     "Coordinate capital projects from concept to handover",
+     "Write scopes, specifications, schedules and budgets",
+     "Manage suppliers and contractors",
+     "Support troubleshooting, trials and scale-up",
+     "Run DQ/IQ/OQ/PQ qualification",
+     "Prepare risk assessments, change controls and protocols"
+    ],
+    "kw": [
+     "Project engineering",
+     "Equipment installation",
+     "Commissioning",
+     "Qualification",
+     "Validation",
+     "DQ/IQ/OQ/PQ",
+     "GMP",
+     "Change control",
+     "Pharmaceutical",
+     "Scope and specifications"
+    ],
+    "note": "The salary is below what your experience usually earns."
+   }
   },
   {
    "co": "ccep",
@@ -813,7 +1049,43 @@
    "u": "https://to.indeed.com/aapjwhnhy4y4",
    "lvl": "Mid",
    "src": "Indeed",
-   "jd": "We're seeking a Reliability Engineer to join our Australian Botanical Products (ABP) business, based at our Hallam manufacturing operation. This role sits at the centre of asset reliability, maintenance strategy and continuous improvement, helping to improve equipment performance, reduce downtime and build a world-class maintenance culture across the site.\nReporting to the Operations Manager, you'll be the technical lead for asset reliability, maintenance strategy and plant performance improvement across the ABP business. The role combines reliability engineering, facilities management, maintenance planning and project work.\nKey Responsibilities\n- Develop and implement reliability, preventative and predictive maintenance strategies.\n- Analyse downtime, failures and equipment performance to identify improvement opportunities.\n- Lead root cause investigations and defect elimination activities.\n- Improve maintenance planning, shutdown scheduling and work execution processes.\n- Manage reliability and maintenance master data within CMMS systems including MEX.\n- Develop long-term asset replacement and reliability roadmaps.\n- Support automation, operational improvement and capital project activities.\n- Management of a small team of 2 to provide coaching and technical leadership.\nWho are we looking for?\n- Degree qualified in Mechanical Engineering or a related discipline.\n- 5+ years' experience in reliability engineering, maintenance or asset management within FMCG, pharmaceutical, food, chemical or other regulated manufacturing environments.\n- Exposure to automated filling, packaging or high-speed production lines.\n- Strong understanding of preventative and predictive maintenance, reliability engineering and asset management principles.\n- Experience with root cause analysis, failure mode analysis and continuous improvement methodologies.\n- Experience using CMMS platforms such as MEX, SAP or similar.\n- Strong stakeholder management skills.\n- Lean Six Sigma Green Belt or Black Belt certification.\nWhy this role stands out: lead reliability improvements across seven production lines, blending operations and site infrastructure."
+   "jd": "We're seeking a Reliability Engineer to join our Australian Botanical Products (ABP) business, based at our Hallam manufacturing operation. This role sits at the centre of asset reliability, maintenance strategy and continuous improvement, helping to improve equipment performance, reduce downtime and build a world-class maintenance culture across the site.\nReporting to the Operations Manager, you'll be the technical lead for asset reliability, maintenance strategy and plant performance improvement across the ABP business. The role combines reliability engineering, facilities management, maintenance planning and project work.\nKey Responsibilities\n- Develop and implement reliability, preventative and predictive maintenance strategies.\n- Analyse downtime, failures and equipment performance to identify improvement opportunities.\n- Lead root cause investigations and defect elimination activities.\n- Improve maintenance planning, shutdown scheduling and work execution processes.\n- Manage reliability and maintenance master data within CMMS systems including MEX.\n- Develop long-term asset replacement and reliability roadmaps.\n- Support automation, operational improvement and capital project activities.\n- Management of a small team of 2 to provide coaching and technical leadership.\nWho are we looking for?\n- Degree qualified in Mechanical Engineering or a related discipline.\n- 5+ years' experience in reliability engineering, maintenance or asset management within FMCG, pharmaceutical, food, chemical or other regulated manufacturing environments.\n- Exposure to automated filling, packaging or high-speed production lines.\n- Strong understanding of preventative and predictive maintenance, reliability engineering and asset management principles.\n- Experience with root cause analysis, failure mode analysis and continuous improvement methodologies.\n- Experience using CMMS platforms such as MEX, SAP or similar.\n- Strong stakeholder management skills.\n- Lean Six Sigma Green Belt or Black Belt certification.\nWhy this role stands out: lead reliability improvements across seven production lines, blending operations and site infrastructure.",
+   "sum": {
+    "about": "Reliability engineer for Ixom's Australian Botanical Products plant in Hallam. Technical lead for reliability, maintenance strategy and improvement across seven production lines, with 2 direct reports.",
+    "type": "Permanent, full-time",
+    "req": [
+     "Mechanical engineering degree",
+     "5+ years in reliability, maintenance or asset management (FMCG, pharma, food or chemical)",
+     "Automated filling, packaging or high-speed lines",
+     "Preventive and predictive maintenance",
+     "RCA and FMEA",
+     "CMMS (MEX, SAP)",
+     "Lean Six Sigma Green or Black Belt"
+    ],
+    "duties": [
+     "Set reliability, PM and predictive maintenance strategies",
+     "Analyse downtime and failures",
+     "Lead root cause and defect-elimination work",
+     "Improve planning and shutdown scheduling",
+     "Own CMMS master data (MEX)",
+     "Build asset-replacement roadmaps",
+     "Support capital projects",
+     "Coach a team of 2"
+    ],
+    "kw": [
+     "Reliability engineering",
+     "Predictive maintenance",
+     "RCA",
+     "FMEA",
+     "Defect elimination",
+     "Shutdown scheduling",
+     "MEX",
+     "SAP",
+     "Asset management",
+     "Lean Six Sigma",
+     "Botanical extracts"
+    ]
+   }
   },
   {
    "co": "downer",
@@ -875,7 +1147,42 @@
    "u": "https://to.indeed.com/aa2ck4nvy4cq",
    "lvl": "Senior",
    "src": "Indeed",
-   "jd": "We are seeking a Senior Mechanical Engineer to join our Manufacturing team, with direct responsibility for the design, build and improvement of the tooling, fixtures and equipment that underpin our in-house manufacturing capability. Working closely with our Design, Assembly and Process teams, you will help bridge the gap between lab scale, pilot and high-volume manufacturing.\nRole responsibilities\n- Lead the team responsible for design and implementation of in-house tooling to support our efforts to scale manufacturing;\n- Design, build and continuously improve in-house tooling, fixtures and equipment;\n- Take new tooling and equipment from concept through CAD design, fabrication, build and commissioning on the factory floor;\n- Provide hands-on support to the manufacturing team - troubleshooting, modifying and improving equipment;\n- Collaborate with Design, Assembly and Process teams to implement new cell architectures and manufacturing processes;\n- Meet design requirements through rapid, iterative prototyping;\n- Work with Hysata partners and vendors to define, develop, validate and commission manufacturing tools and equipment;\n- Define and execute validation plans;\n- Develop SOPs and safety protocols for new tools, equipment and processes.\nKey skills\n- Engineering degree in Mechanical, Manufacturing or a similar field;\n- Strong background in mechanical design engineering, with proven hands-on capability to build, modify and commission what you design;\n- Proficiency in computer-aided design (NX preferred);\n- Fabrication experience - hands-on R&D, design, build and test;\n- Contributed to delivering complex projects requiring new tooling, equipment and process development, including equipment specification;\n- Demonstrated experience with DFMA, DFMEA, validation testing, materials selection and process technology selection.\nValued skills\n- 5+ years of experience in a similar tooling, equipment or mechanical design role;\n- Experience introducing and optimising tooling and equipment in a manufacturing scale-up environment;\n- PFMEA, QA/QC, SOP, design and process validation;\n- Experience with electrolysers, battery or energy storage systems a plus."
+   "jd": "We are seeking a Senior Mechanical Engineer to join our Manufacturing team, with direct responsibility for the design, build and improvement of the tooling, fixtures and equipment that underpin our in-house manufacturing capability. Working closely with our Design, Assembly and Process teams, you will help bridge the gap between lab scale, pilot and high-volume manufacturing.\nRole responsibilities\n- Lead the team responsible for design and implementation of in-house tooling to support our efforts to scale manufacturing;\n- Design, build and continuously improve in-house tooling, fixtures and equipment;\n- Take new tooling and equipment from concept through CAD design, fabrication, build and commissioning on the factory floor;\n- Provide hands-on support to the manufacturing team - troubleshooting, modifying and improving equipment;\n- Collaborate with Design, Assembly and Process teams to implement new cell architectures and manufacturing processes;\n- Meet design requirements through rapid, iterative prototyping;\n- Work with Hysata partners and vendors to define, develop, validate and commission manufacturing tools and equipment;\n- Define and execute validation plans;\n- Develop SOPs and safety protocols for new tools, equipment and processes.\nKey skills\n- Engineering degree in Mechanical, Manufacturing or a similar field;\n- Strong background in mechanical design engineering, with proven hands-on capability to build, modify and commission what you design;\n- Proficiency in computer-aided design (NX preferred);\n- Fabrication experience - hands-on R&D, design, build and test;\n- Contributed to delivering complex projects requiring new tooling, equipment and process development, including equipment specification;\n- Demonstrated experience with DFMA, DFMEA, validation testing, materials selection and process technology selection.\nValued skills\n- 5+ years of experience in a similar tooling, equipment or mechanical design role;\n- Experience introducing and optimising tooling and equipment in a manufacturing scale-up environment;\n- PFMEA, QA/QC, SOP, design and process validation;\n- Experience with electrolysers, battery or energy storage systems a plus.",
+   "sum": {
+    "about": "Senior mechanical engineer at Hysata, a hydrogen electrolyser maker in Port Kembla. Leads design, build and commissioning of manufacturing tooling and equipment for scale-up.",
+    "type": "Permanent, full-time",
+    "req": [
+     "Mechanical or manufacturing engineering degree",
+     "Hands-on mechanical design, build and commissioning",
+     "CAD (NX preferred)",
+     "Fabrication and prototyping",
+     "DFMA, DFMEA, validation testing, materials selection",
+     "Valued: 5+ years in tooling or equipment design; electrolyser or battery experience"
+    ],
+    "duties": [
+     "Lead the tooling and equipment team",
+     "Design and improve tooling, fixtures and equipment",
+     "Take equipment from CAD to fabrication and factory commissioning",
+     "Troubleshoot and modify production equipment",
+     "Write validation plans, SOPs and safety protocols"
+    ],
+    "kw": [
+     "Mechanical design",
+     "Tooling",
+     "Fixtures",
+     "CAD",
+     "NX",
+     "Fabrication",
+     "Commissioning",
+     "DFMA",
+     "DFMEA",
+     "Validation",
+     "SOPs",
+     "Hydrogen",
+     "Electrolysers"
+    ],
+    "note": "Heavy on CAD design and hands-on fabrication, less on process plant."
+   }
   },
   {
    "co": "csl",
@@ -885,7 +1192,39 @@
    "u": "https://to.indeed.com/aazv7qjlw998",
    "lvl": "Mid",
    "src": "Indeed",
-   "jd": "Entity: CSL Behring. Location: Broadmeadows, Victoria. Employer Reference: R-293484.\nThe Commissioning & Qualification (C&Q) Engineer is responsible for supporting and executing the commissioning, qualification, and maintenance of manufacturing systems and equipment within a regulated GMP environment. The role ensures that equipment, facilities, and processes are commissioned and qualified in accordance with CSL quality standards, regulatory requirements, and health, safety, and environmental guidelines.\nThe position plays a key role in the preparation, execution, and maintenance of qualification and commissioning activities, while working closely with cross-functional teams including Process Engineering, Project Delivery, Validation, Stability, Quality Control, Value Streams, R&D, and Manufacturing Operations.\nThe Role:\n- Execute commissioning and qualification activities for facilities, equipment, utilities, and systems within a GMP-regulated environment.\n- Prepare, review, and maintain qualification/commissioning protocols, reports, and supporting documentation to ensure regulatory compliance.\n- Manage document control activities, including DMS maintenance and departmental documentation.\n- Maintain qualification and commissioning test equipment.\n- Collaborate with cross-functional teams to ensure efficient project delivery.\n- Ensure all activities are performed in accordance with CSL quality standards, cGMP requirements, regulatory guidelines, and HSE policies.\n- Participate in problem-solving, investigations, and continuous improvement initiatives.\n- Support HS&E risk assessments, maintain training compliance, and provide training and mentoring to new team members.\nThis is a Permanent full-time position.\nTo be successful:\n- Tertiary qualification in Science or Engineering, or equivalent commissioning/qualification experience.\n- Experience within a pharmaceutical manufacturing environment is highly desirable.\n- Sound understanding of cGMP requirements, commissioning and qualification principles, and relevant industry standards and guidelines.\n- Strong written, verbal, presentation, and interpersonal communication skills.\n- Demonstrated problem-solving, negotiation, and customer-focused mindset.\n- Highly organised and adaptable, with the ability to manage multiple priorities within project schedules.\nApplication Period: Applications open on 19th October and close on 19th November 2026."
+   "jd": "Entity: CSL Behring. Location: Broadmeadows, Victoria. Employer Reference: R-293484.\nThe Commissioning & Qualification (C&Q) Engineer is responsible for supporting and executing the commissioning, qualification, and maintenance of manufacturing systems and equipment within a regulated GMP environment. The role ensures that equipment, facilities, and processes are commissioned and qualified in accordance with CSL quality standards, regulatory requirements, and health, safety, and environmental guidelines.\nThe position plays a key role in the preparation, execution, and maintenance of qualification and commissioning activities, while working closely with cross-functional teams including Process Engineering, Project Delivery, Validation, Stability, Quality Control, Value Streams, R&D, and Manufacturing Operations.\nThe Role:\n- Execute commissioning and qualification activities for facilities, equipment, utilities, and systems within a GMP-regulated environment.\n- Prepare, review, and maintain qualification/commissioning protocols, reports, and supporting documentation to ensure regulatory compliance.\n- Manage document control activities, including DMS maintenance and departmental documentation.\n- Maintain qualification and commissioning test equipment.\n- Collaborate with cross-functional teams to ensure efficient project delivery.\n- Ensure all activities are performed in accordance with CSL quality standards, cGMP requirements, regulatory guidelines, and HSE policies.\n- Participate in problem-solving, investigations, and continuous improvement initiatives.\n- Support HS&E risk assessments, maintain training compliance, and provide training and mentoring to new team members.\nThis is a Permanent full-time position.\nTo be successful:\n- Tertiary qualification in Science or Engineering, or equivalent commissioning/qualification experience.\n- Experience within a pharmaceutical manufacturing environment is highly desirable.\n- Sound understanding of cGMP requirements, commissioning and qualification principles, and relevant industry standards and guidelines.\n- Strong written, verbal, presentation, and interpersonal communication skills.\n- Demonstrated problem-solving, negotiation, and customer-focused mindset.\n- Highly organised and adaptable, with the ability to manage multiple priorities within project schedules.\nApplication Period: Applications open on 19th October and close on 19th November 2026.",
+   "sum": {
+    "about": "Commissioning and qualification engineer at CSL Behring's Broadmeadows plasma plant. Commissions and qualifies GMP equipment, facilities and utilities.",
+    "type": "Permanent, full-time",
+    "req": [
+     "Science or engineering degree, or equivalent C&Q experience",
+     "Pharmaceutical manufacturing (highly desirable)",
+     "cGMP and C&Q principles",
+     "Strong written and verbal communication",
+     "Organised across multiple priorities"
+    ],
+    "duties": [
+     "Commission and qualify facilities, equipment, utilities and systems",
+     "Write and maintain protocols and reports",
+     "Manage document control (DMS)",
+     "Maintain C&Q test equipment",
+     "Work with process engineering, validation, QC and operations",
+     "Support investigations, HSE risk assessments and training"
+    ],
+    "kw": [
+     "Commissioning",
+     "Qualification",
+     "C&Q",
+     "cGMP",
+     "Validation",
+     "Protocols",
+     "Document control",
+     "Utilities",
+     "Pharmaceutical",
+     "Biotech"
+    ],
+    "note": "Applications close 19 November 2026."
+   }
   },
   {
    "co": "orica",
@@ -983,7 +1322,39 @@
    "u": "https://to.indeed.com/aa27stk99rvv",
    "lvl": "Mid",
    "src": "Indeed",
-   "jd": "ACCIONA Energia is the biggest 100% renewable energy company with no fossil legacy in the world. The purpose of this role is to improve wind farm and other renewable asset reliability by maximising plant availability and efficiency with optimised maintenance practices. The role provides engineering expertise, focusing on the mechanical side, to assist maintenance activities and resolve technical issues.\nRole Responsibilities\n- Provide expert engineering support to all operational assets, focusing on the mechanical side, such as drivetrains and structures.\n- Manage reliability engineering programs across all operational sites, incorporating key principles of condition-based and optimised maintenance.\n- Undertake Root Cause Analysis investigations on failed or faulting equipment.\n- Analyse plant performance and maintenance data to identify and address issues and maximize efficiency.\n- Liaise with ACCIONA Energia Global Engineering, equipment suppliers and OEMs to resolve engineering issues.\n- Review operational data for purposes of trend analysis, fault finding and continuous improvement.\n- Manage programs of retrofits, upgrades and asset changes at all operational sites.\n- Maintain an engineering document library for knowledge sharing within the operations group.\n- Support internal asset management functions in the development, implementation, and review of the asset management plan.\nRequired Skills and Competencies\n- Bachelor degree or equivalent technical competence in mechanical engineering.\n- Relevant experience in a reliability engineering or related role, ideally within the renewable sector.\n- Exposure to other related engineering practice such as electrical, civil, or wind resource considered advantageous.\n- Advanced communication skills and proven interpersonal abilities.\n- Must be able to travel for training and meetings to various locations (including international).\n- Experience with Maximo or a similar maintenance management system an advantage.\n- Experience with AEMO operational requirements an advantage."
+   "jd": "ACCIONA Energia is the biggest 100% renewable energy company with no fossil legacy in the world. The purpose of this role is to improve wind farm and other renewable asset reliability by maximising plant availability and efficiency with optimised maintenance practices. The role provides engineering expertise, focusing on the mechanical side, to assist maintenance activities and resolve technical issues.\nRole Responsibilities\n- Provide expert engineering support to all operational assets, focusing on the mechanical side, such as drivetrains and structures.\n- Manage reliability engineering programs across all operational sites, incorporating key principles of condition-based and optimised maintenance.\n- Undertake Root Cause Analysis investigations on failed or faulting equipment.\n- Analyse plant performance and maintenance data to identify and address issues and maximize efficiency.\n- Liaise with ACCIONA Energia Global Engineering, equipment suppliers and OEMs to resolve engineering issues.\n- Review operational data for purposes of trend analysis, fault finding and continuous improvement.\n- Manage programs of retrofits, upgrades and asset changes at all operational sites.\n- Maintain an engineering document library for knowledge sharing within the operations group.\n- Support internal asset management functions in the development, implementation, and review of the asset management plan.\nRequired Skills and Competencies\n- Bachelor degree or equivalent technical competence in mechanical engineering.\n- Relevant experience in a reliability engineering or related role, ideally within the renewable sector.\n- Exposure to other related engineering practice such as electrical, civil, or wind resource considered advantageous.\n- Advanced communication skills and proven interpersonal abilities.\n- Must be able to travel for training and meetings to various locations (including international).\n- Experience with Maximo or a similar maintenance management system an advantage.\n- Experience with AEMO operational requirements an advantage.",
+   "sum": {
+    "about": "Mechanical reliability engineer for ACCIONA Energía's wind farms and renewable assets. Maximises availability through optimised and condition-based maintenance.",
+    "type": "Permanent, full-time",
+    "req": [
+     "Mechanical engineering degree or equivalent",
+     "Reliability engineering experience, ideally renewables",
+     "Maximo or similar CMMS (advantage)",
+     "Travel, including overseas",
+     "Strong communication"
+    ],
+    "duties": [
+     "Mechanical support for operating assets (drivetrains, structures)",
+     "Run reliability programs with condition-based maintenance",
+     "RCA on failed equipment",
+     "Analyse performance and maintenance data",
+     "Work with OEMs and global engineering",
+     "Manage retrofits and upgrades",
+     "Support the asset management plan"
+    ],
+    "kw": [
+     "Reliability engineering",
+     "Condition monitoring",
+     "RCA",
+     "Drivetrains",
+     "Wind turbines",
+     "Maximo",
+     "Asset management plan",
+     "Retrofits",
+     "OEM liaison",
+     "Renewables"
+    ]
+   }
   },
   {
    "co": "peabody",
@@ -1071,7 +1442,39 @@
    "u": "https://to.indeed.com/aaddlmblfjcz",
    "lvl": "Senior",
    "src": "Indeed",
-   "jd": "Our team is growing; we are currently recruiting for Senior Mechanical Engineers to join our Newcastle office.\nAbout the role\n- Contribute to the delivery of multi-disciplinary engineering designs and studies, from concept through to execution.\n- Prepare technical reports related to specific design issues.\n- Undertake design activities as part of larger multi-disciplinary design teams to deliver minerals processing and mine infrastructure projects.\n- Prepare equipment procurement packages, designs, calculations and cost estimates.\n- Develop networks and relationships within teams, across the organisation and with clients.\n- Assist with the preparation of proposals and tenders (such as estimating design hours).\n- Opportunities to lead design packages working with a team of mechanical engineers.\nAbout you\n- Degree qualification in Mechanical Engineering.\n- Experience in engineering consulting and EPC/EPCM projects preferably in the mining and resources sectors.\n- Technical expertise in designing wet mechanical systems such as process plant, pumps, piping, and pipelines.\n- Design experience using Hexagon, Fluidflow, Hammer etc highly regarded.\n- Ability to work collaboratively within a larger multi-disciplinary design team.\n- Project and/or site experience highly regarded.\n- Sound understanding of current codes and standards including Australian and ASME.\n- Proven ability to autonomously monitor workload, remaining within assigned budget and schedule constraints."
+   "jd": "Our team is growing; we are currently recruiting for Senior Mechanical Engineers to join our Newcastle office.\nAbout the role\n- Contribute to the delivery of multi-disciplinary engineering designs and studies, from concept through to execution.\n- Prepare technical reports related to specific design issues.\n- Undertake design activities as part of larger multi-disciplinary design teams to deliver minerals processing and mine infrastructure projects.\n- Prepare equipment procurement packages, designs, calculations and cost estimates.\n- Develop networks and relationships within teams, across the organisation and with clients.\n- Assist with the preparation of proposals and tenders (such as estimating design hours).\n- Opportunities to lead design packages working with a team of mechanical engineers.\nAbout you\n- Degree qualification in Mechanical Engineering.\n- Experience in engineering consulting and EPC/EPCM projects preferably in the mining and resources sectors.\n- Technical expertise in designing wet mechanical systems such as process plant, pumps, piping, and pipelines.\n- Design experience using Hexagon, Fluidflow, Hammer etc highly regarded.\n- Ability to work collaboratively within a larger multi-disciplinary design team.\n- Project and/or site experience highly regarded.\n- Sound understanding of current codes and standards including Australian and ASME.\n- Proven ability to autonomously monitor workload, remaining within assigned budget and schedule constraints.",
+   "sum": {
+    "about": "Senior mechanical engineer in Ausenco's Newcastle office, designing minerals-processing and mine-infrastructure plants on EPC/EPCM projects.",
+    "type": "Permanent, full-time",
+    "req": [
+     "Mechanical engineering degree",
+     "EPC/EPCM consulting experience, preferably mining",
+     "Wet mechanical design: process plant, pumps, piping, pipelines",
+     "Hexagon, Fluidflow or Hammer (highly regarded)",
+     "Australian and ASME codes",
+     "Project or site experience"
+    ],
+    "duties": [
+     "Deliver multidisciplinary designs and studies from concept to execution",
+     "Write technical reports",
+     "Prepare procurement packages, calculations and estimates",
+     "Support proposals and tenders",
+     "Lead mechanical design packages"
+    ],
+    "kw": [
+     "EPCM",
+     "Mechanical design",
+     "Pumps",
+     "Piping",
+     "Pipelines",
+     "Process plant",
+     "Hydraulic design",
+     "Fluidflow",
+     "ASME",
+     "Procurement packages",
+     "Minerals processing"
+    ]
+   }
   },
   {
    "co": "csr",
@@ -1173,7 +1576,39 @@
    "lvl": "Mid",
    "src": "Indeed",
    "cn": "GFG Alliance",
-   "jd": "Reporting to the Process and Reliability Engineer and based at our Newcastle Mesh Facility (InfraBuild) you will play a key role in maximising plant reliability by planning, scheduling and coordinating maintenance activities across the Newcastle Mesh site. You'll manage the maintenance backlog and planning horizon, ensuring work is safely and efficiently prepared with the right materials, resources, documentation and controls in place.\nThe role also provides hands-on technical and reliability support to maintenance and operations teams, including breakdown troubleshooting, shutdown planning and continuous improvement initiatives.\nWhat you will be doing:\n- Design, implement, and manage proactive maintenance planning and scheduling systems, both Mechanical and Electrical\n- Build preventative maintenance schedules for all equipment on site\n- Develop asset registers, job plans, bill of materials and maintenance procedures\n- Schedule preventive, corrective, and predictive maintenance activities including scheduled asset downtime activities\n- Coordinate with production teams to minimize disruption during maintenance windows\n- Collaborate with tradespeople, production, and leadership to drive continuous improvement in maintenance planning\nThis is a permanent full-time role.\nOur ideal candidate will have:\n- Relevant trade qualification and/or tertiary engineering qualification (ideally mechanical, electrical or similar), with formal maintenance planning or reliability qualifications highly regarded.\n- Proven experience in maintenance planning within an industrial or manufacturing environment.\n- Strong understanding of maintenance practices and asset management principles.\n- SAP PM experience, or other preventative maintenance systems experience.\n- Experience with risk assessment, contractor management and supervision, and maintenance execution highly regarded.\n- Strong analytical and problem-solving skills, with experience applying root-cause analysis, FMEA or other reliability methodologies."
+   "jd": "Reporting to the Process and Reliability Engineer and based at our Newcastle Mesh Facility (InfraBuild) you will play a key role in maximising plant reliability by planning, scheduling and coordinating maintenance activities across the Newcastle Mesh site. You'll manage the maintenance backlog and planning horizon, ensuring work is safely and efficiently prepared with the right materials, resources, documentation and controls in place.\nThe role also provides hands-on technical and reliability support to maintenance and operations teams, including breakdown troubleshooting, shutdown planning and continuous improvement initiatives.\nWhat you will be doing:\n- Design, implement, and manage proactive maintenance planning and scheduling systems, both Mechanical and Electrical\n- Build preventative maintenance schedules for all equipment on site\n- Develop asset registers, job plans, bill of materials and maintenance procedures\n- Schedule preventive, corrective, and predictive maintenance activities including scheduled asset downtime activities\n- Coordinate with production teams to minimize disruption during maintenance windows\n- Collaborate with tradespeople, production, and leadership to drive continuous improvement in maintenance planning\nThis is a permanent full-time role.\nOur ideal candidate will have:\n- Relevant trade qualification and/or tertiary engineering qualification (ideally mechanical, electrical or similar), with formal maintenance planning or reliability qualifications highly regarded.\n- Proven experience in maintenance planning within an industrial or manufacturing environment.\n- Strong understanding of maintenance practices and asset management principles.\n- SAP PM experience, or other preventative maintenance systems experience.\n- Experience with risk assessment, contractor management and supervision, and maintenance execution highly regarded.\n- Strong analytical and problem-solving skills, with experience applying root-cause analysis, FMEA or other reliability methodologies.",
+   "sum": {
+    "about": "Planner and engineer at InfraBuild's Newcastle Mesh plant (GFG Alliance). Plans and schedules all maintenance and gives hands-on reliability support.",
+    "type": "Permanent, full-time",
+    "req": [
+     "Trade and/or engineering qualification (mechanical or electrical)",
+     "Maintenance planning in industry or manufacturing",
+     "Asset management principles",
+     "SAP PM or similar",
+     "RCA and FMEA",
+     "Valued: contractor management and supervision"
+    ],
+    "duties": [
+     "Set up proactive mechanical and electrical planning and scheduling",
+     "Build PM schedules for all site equipment",
+     "Develop asset registers, job plans, BOMs and procedures",
+     "Schedule PM, CM and predictive work and shutdowns",
+     "Support breakdowns and continuous improvement"
+    ],
+    "kw": [
+     "Maintenance planning",
+     "Scheduling",
+     "SAP PM",
+     "Asset register",
+     "Job plans",
+     "Bill of materials",
+     "Shutdown planning",
+     "RCA",
+     "FMEA",
+     "Steel manufacturing"
+    ],
+    "note": "Building the asset register and PM system matches your CMMS set-up work."
+   }
   },
   {
    "co": "kcb",
@@ -1224,7 +1659,39 @@
    "u": "https://to.indeed.com/aaztdqkt2mj6",
    "lvl": "Mid",
    "src": "Indeed",
-   "jd": "We are seeking a Maintenance Planner to join our team at Portland Aluminium. As a Planner at our Portland Smelter, you are responsible for maximising maintenance and process effectiveness and efficiency by planning all scheduled activities prior to the commencement of a job. This involves safely integrating manufacturing and financial requirements into an effective Maintenance Plan.\nOther responsibilities include:\n- Developing weekly plans and facilitating weekly planning meetings in line with Alcoa planning processes.\n- Supporting daily planning processes, making information available to ensure successful work execution.\n- Ensuring people, parts and processes are available for maintenance activities in a timely manner.\n- Participating in reviews of major activities, seeking improvements and reporting on such activities.\n- Assisting in financial budget preparation, forecasting and maintenance strategies; ensuring long-term activity schedules are accurate and up to date.\n- Applying problem solving and analysing skills to isolate, diagnose and resolve equipment/process related problems.\n- Defining failure modes and understanding mean time to failure of systems.\n- Actively direct and participate in planned outages and performance improvement programs.\n- Oversee relevant Mechanical Maintenance Crews.\nWhat you can bring to the role\n- A Mechanical (Fitting & Turning) or Electrical Trade Certificate or Degree is advantageous however applicants with planning experience desirable.\n- Strong interpersonal skills.\n- Dedication to environment, health and safety in the workplace.\n- Excellent attention to detail, organisational and problem-solving skills.\n- The ability to co-ordinate multiple project/planning initiatives within the maintenance group.\n- Experience in heavy industry and the use of computer-based maintenance systems is advantageous."
+   "jd": "We are seeking a Maintenance Planner to join our team at Portland Aluminium. As a Planner at our Portland Smelter, you are responsible for maximising maintenance and process effectiveness and efficiency by planning all scheduled activities prior to the commencement of a job. This involves safely integrating manufacturing and financial requirements into an effective Maintenance Plan.\nOther responsibilities include:\n- Developing weekly plans and facilitating weekly planning meetings in line with Alcoa planning processes.\n- Supporting daily planning processes, making information available to ensure successful work execution.\n- Ensuring people, parts and processes are available for maintenance activities in a timely manner.\n- Participating in reviews of major activities, seeking improvements and reporting on such activities.\n- Assisting in financial budget preparation, forecasting and maintenance strategies; ensuring long-term activity schedules are accurate and up to date.\n- Applying problem solving and analysing skills to isolate, diagnose and resolve equipment/process related problems.\n- Defining failure modes and understanding mean time to failure of systems.\n- Actively direct and participate in planned outages and performance improvement programs.\n- Oversee relevant Mechanical Maintenance Crews.\nWhat you can bring to the role\n- A Mechanical (Fitting & Turning) or Electrical Trade Certificate or Degree is advantageous however applicants with planning experience desirable.\n- Strong interpersonal skills.\n- Dedication to environment, health and safety in the workplace.\n- Excellent attention to detail, organisational and problem-solving skills.\n- The ability to co-ordinate multiple project/planning initiatives within the maintenance group.\n- Experience in heavy industry and the use of computer-based maintenance systems is advantageous.",
+   "sum": {
+    "about": "Maintenance planner at Alcoa's Portland aluminium smelter. Plans all scheduled work, runs weekly planning and supervises mechanical maintenance crews.",
+    "type": "Permanent, full-time",
+    "req": [
+     "Mechanical (fitting & turning) or electrical trade, or a degree (advantageous)",
+     "Planning experience",
+     "Heavy industry and CMMS (advantageous)",
+     "Strong safety focus",
+     "Detail-oriented organiser"
+    ],
+    "duties": [
+     "Build weekly plans and run planning meetings",
+     "Make sure people, parts and procedures are ready",
+     "Help with budgets, forecasts and long-term schedules",
+     "Analyse failure modes and MTBF",
+     "Direct planned outages",
+     "Oversee mechanical maintenance crews"
+    ],
+    "kw": [
+     "Maintenance planning",
+     "Weekly scheduling",
+     "Planned outages",
+     "Shutdowns",
+     "Failure modes",
+     "MTBF",
+     "Budget forecasting",
+     "CMMS",
+     "Smelter",
+     "Heavy industry"
+    ],
+    "note": "Portland is in far south-west Victoria, about 4 hours from Melbourne."
+   }
   },
   {
    "co": "dulux",
