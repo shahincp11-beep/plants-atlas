@@ -1348,8 +1348,15 @@ $("#menu").addEventListener("click",async e=>{const t=e.target.closest("button")
   if(t.id==="mshare"){try{await navigator.share({title:"Plants Atlas",url:SITE_URL})}catch(err){}}});
 setInterval(paintStatus,60000);
 document.addEventListener("visibilitychange",()=>{if(document.visibilityState==="visible")loadLive();else markSeen()});
+/* Data comes from GitHub (data.json) and, when set, a Google Sheet the scheduled update writes to
+   (cell A1 = updated time, A2..An = the JSON in chunks). Whichever is newer wins. */
+const SHEET_ID="";
+async function fetchGithubData(){try{const r=await fetch("data.json?t="+Date.now(),{cache:"no-store"});return r.ok?await r.json():null}catch(e){return null}}
+async function fetchSheetData(){if(!SHEET_ID)return null;try{const r=await fetch(`https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tqx=out:csv&headers=0&range=A1:A60&t=${Date.now()}`,{cache:"no-store"});if(!r.ok)return null;
+  const rows=parseCSV(await r.text()).map(x=>x[0]||"");if(rows.length<2)return null;const d=JSON.parse(rows.slice(1).join(""));return d&&Array.isArray(d.jobs)?d:null}catch(e){return null}}
 async function loadLive(){
-  try{const r=await fetch("data.json?t="+Date.now(),{cache:"no-store"});if(!r.ok){paintStatus();return}const d=await r.json();LIVE=d;LOADED_AT=new Date();
+  try{const [g,s]=await Promise.all([fetchGithubData(),fetchSheetData()]);const t=x=>x&&x.updated?new Date(x.updated).getTime()||0:0;
+    const d=t(s)>t(g)?s:g;if(!d){paintStatus();return}LIVE=d;LOADED_AT=new Date();
     if(Array.isArray(d.jobs)&&d.jobs.length){JOBS.length=0;JOBS.push(...d.jobs)}
     if(Array.isArray(d.news)&&d.news.length){NEWS.length=0;NEWS.push(...d.news.filter(n=>CATS[n.tag]))}
     if(Array.isArray(d.people)&&d.people.length){PEOPLE.length=0;PEOPLE.push(...d.people)}
