@@ -1129,6 +1129,8 @@ $("#mapchips").addEventListener("click",e=>{const b=e.target.closest("[data-act]
   else if(a.startsWith("cat:"))mapFilter.cat=a.slice(4)||null;
   mapChips();drawMarkers()});
 $("#mq").addEventListener("input",e=>{mapFilter.q=e.target.value.trim().toLowerCase();drawMarkers()});
+function addMarker(it){const small=window.innerWidth<600;it.m=L.marker([it.lat,it.lon],{icon:pinIcon(it),title:it.n,riseOnHover:true,zIndexOffset:it.kind==="project"?400:0});
+  it.m.bindPopup(()=>popupHTML(it),{maxWidth:small?290:350,minWidth:small?250:300,maxHeight:small?Math.round(window.innerHeight*.55):460,autoPanPaddingTopLeft:[20,120],autoPanPaddingBottomRight:[20,40]})}
 function initMap(){
   if(typeof L==="undefined"){$("#map").innerHTML='<p style="padding:90px 20px">The map could not load. Check your internet connection and reload the page.</p>';return}
   map=L.map("map",{zoomControl:false,minZoom:3,maxBounds:[[-52,92],[2,178]]}).setView([-27,134],4);
@@ -1352,8 +1354,14 @@ async function loadLive(){
     if(Array.isArray(d.news)&&d.news.length){NEWS.length=0;NEWS.push(...d.news.filter(n=>CATS[n.tag]))}
     if(Array.isArray(d.people)&&d.people.length){PEOPLE.length=0;PEOPLE.push(...d.people)}
     if(d.updated)UPDATED=d.updated;
+    /* LIVE_SITES: extra companies and sites added by the daily research run */
+    if(Array.isArray(d.companies))d.companies.forEach(c=>{if(!c||!c.k)return;if(!CO[c.k])CO[c.k]={n:c.n||c.k};if(c.dom&&!LOGO_DOMAINS[c.k])LOGO_DOMAINS[c.k]=c.dom;if(c.list&&!COMPANIES.some(x=>x.k===c.k))COMPANIES.push({k:c.k,n:c.n,t:c.t||"",hq:c.hq||"",f:c.f||"",tier:c.tier||undefined})});
+    if(Array.isArray(d.sites))d.sites.forEach(s=>{if(!s||!s.n||typeof s.lat!=="number"||typeof s.lon!=="number"||!Array.isArray(s.cats))return;const cats=s.cats.filter(c=>CATS[c]);if(!cats.length)return;const key=s.n.toLowerCase();if(ITEMS.some(i=>i.n.toLowerCase()===key))return;
+      const it={...s,cats,kind:s.kind==="project"?"project":"plant"};if(it.kind==="project"){it.st="prop";if(!STAGES[it.sg])it.sg="feas"}else if(!PST[it.st])it.st="op";
+      it.i=ITEMS.length;it.jobs=jobsOf(cos(it));ITEMS.push(it);if(map&&typeof L!=="undefined")addMarker(it)});
     try{if(!localStorage.getItem(SEENKEY))markSeen()}catch(e){}
     ITEMS.forEach(it=>{it.jobs=jobsOf(cos(it));if(it.m)it.m.setIcon(pinIcon(it))});
+    drawMarkers();
     paintStatus();
     renderIndustries();renderProjects();renderJobs();renderCompanies();renderNews();renderContacts();updateBadge();
     if(current==="detail")renderDetail(location.hash.slice(1));

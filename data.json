@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-30T21:24:59+11:00",
+ "updated": "2026-10-31T16:26:42+11:00",
  "jobs": [
   {
    "co": "scalzo",
@@ -24,6 +24,103 @@
    "u": "https://www.seek.com.au/job/95546746",
    "lvl": "Mid",
    "src": "Seek"
+  },
+  {
+   "co": "engie",
+   "cn": "ENGIE",
+   "sf": 12,
+   "sw": "Power generation",
+   "t": "Senior Mechanical Engineer",
+   "loc": "Southbank, Melbourne VIC",
+   "d": "2026-10-30",
+   "u": "https://to.indeed.com/aatr6h8x9ykg",
+   "lvl": "Senior",
+   "src": "Indeed",
+   "jd": "About the Role\nAs a Senior Mechanical Engineer, you'll play a key role in the reliability, performance and long-term asset management of critical power generation assets at Pelican Point Power Station. You'll work closely with operations and maintenance teams to optimise plant performance, provide technical guidance, lead outage activities and take broader technical accountability for engineering outcomes.\nLead mechanical engineering activities for gas turbines, steam turbines, heat recovery steam generators (HRSGs) and balance of plant equipment.\nLead investigations into equipment issues, identify root causes and implement sustainable solutions.\nPlan, coordinate and oversee mechanical outage activities, inspections and maintenance programs.\nManage engineering projects, plant modifications and capital improvement initiatives from scope through to delivery.\nMonitor asset performance and reliability, implementing improvement strategies to minimise unplanned outages.\nContribute to budgeting, business case development, contractor management and ongoing asset management plans.\nAbout You\nYou're a fully qualified senior mechanical engineer with at least 10 to 15 years post Graduate Engineer experience with a strong background in power generation or heavy industrial operations. You'll bring a practical approach to asset management and reliability, established technical judgement and readiness to take on broader technical accountability.\nBachelor's degree in mechanical engineering, with eligibility to pursue Chartered Professional Engineer status, along with a current driver's licence and White Card.\nDemonstrated mechanical engineering experience in power generation or a comparable heavy industrial environment.\nStrong knowledge of asset management, maintenance and reliability principles for turbines, HRSGs, rotating equipment and associated plant systems.\nExperience planning and coordinating outages, overhauls and maintenance activities while managing contractors and external service providers.\nCommercial awareness with experience managing budgets, monitoring expenditure and contributing to capital project business cases.\nDemonstrated ability to lead technical outcomes, provide technical guidance and mentor others, manage competing priorities and work collaboratively across operations, maintenance and engineering teams.\nAt ENGIE, every talent has a role to play in accelerating the energy transition. Make a difference and enjoy a fulfilling professional experience. Take on exciting challenges and build a career path that reflects who you are.\nENGIE is an equal opportunity employer, promoting diversity and committed to creating an inclusive environment for all.",
+   "sum": {
+    "about": "ENGIE needs a senior mechanical engineer for Pelican Point Power Station, owning reliability, outages and asset management of gas and steam turbine plant.",
+    "req": [
+     "Mechanical engineering degree; eligible for CPEng",
+     "10–15 years post-graduate experience",
+     "Power generation or heavy industrial background",
+     "Asset management and reliability of turbines, HRSGs, rotating equipment",
+     "Outage, overhaul and contractor management experience",
+     "Driver's licence and White Card"
+    ],
+    "duties": [
+     "Lead mechanical engineering for GT, ST, HRSG and balance of plant",
+     "Run root-cause investigations and fix recurring issues",
+     "Plan and oversee mechanical outages and inspections",
+     "Deliver plant modifications and capital improvements",
+     "Track reliability to cut unplanned outages",
+     "Support budgets, business cases and asset plans"
+    ],
+    "kw": [
+     "gas turbine",
+     "steam turbine",
+     "HRSG",
+     "balance of plant",
+     "root cause analysis",
+     "outage planning",
+     "asset management",
+     "reliability",
+     "rotating equipment",
+     "capital projects",
+     "contractor management",
+     "CPEng"
+    ],
+    "note": "Advertised from Southbank VIC but the plant (Pelican Point) is in Adelaide, SA."
+   }
+  },
+  {
+   "co": "glencore",
+   "cn": "Glencore",
+   "sf": 17,
+   "sw": "Minerals processing and smelting",
+   "t": "Senior Mechanical Engineer – Pyrometallurgy",
+   "loc": "Brisbane QLD",
+   "d": "2026-10-30",
+   "u": "https://to.indeed.com/aa9rwln9xsmv",
+   "lvl": "Senior",
+   "src": "Indeed",
+   "jd": "Senior Mechanical Engineer - Pyrometallurgy, Glencore Technology, Brisbane. Ref. No. GT1636. Closing date 30/11/2026.\nGlencore Technology delivers world-leading mineral processing, leaching, electrolytic and smelting solutions to clients globally. Our products include the ISASMELT, IsaMill, Jameson Cell, Jameson Concentrator, Albion Process and ISAKIDD technologies. We partner with clients to deliver solutions that combine process design, engineering design, training, commissioning, and ongoing support for the life of their projects.\nWe are seeking a motivated Senior Mechanical Engineer to join our engineering team, delivering innovative solutions for pyrometallurgical and smelting projects. This role offers the opportunity to work across the full engineering lifecycle, from concept development through to detailed design, commissioning support, and site implementation. The Senior Mechanical Engineer will report to the Principal Mechanical Engineer and will be engaged on a full-time basis.\nYou will be responsible for:\nCoordinating and mentoring a small team of engineers and draughtsmen working on multiple projects\nPrepare engineering calculations, technical specifications, design documentation, drawings, and equipment data sheets.\nDevelopment of project scopes, specifications, plant designs, detailed layouts, equipment design, procurement and commissioning plans\nDeveloping project estimates and budgets\nEnsuring designs are properly optimised and all proposal cost estimates and associated inputs are accurate and competitively priced while maintaining technical integrity\nIdentify and evaluate opportunities for alternative solutions, design innovation and improvements\nDealings with various vendors, suppliers and fabricators to cover aspects of quality assurance and factory testing requirements\nOverseas travel will be required.\nCollaborate effectively with multidisciplinary teams including process, structural, piping, electrical, and project engineers.\nTo thrive in this role, you will have:\nBachelor's degree in Mechanical Engineering.\nA minimum of 8 years relevant post-grad experience. Demonstrated mechanical design experience within pyrometallurgical engineering will be viewed favourably.\nEligible for obtaining Registered Professional Engineer of Queensland (RPEQ) status\nPractical understanding of mechanical equipment used in high-temperature processing plants, including furnaces, material handling systems, process equipment and associated plant infrastructure.\nProven ability to safely perform work in industrial and smelter environments while complying with all site health and safety requirements.\nProven ability to deliver engineering designs with minimal supervision.\nExcellent written and verbal communication skills.\nWillingness and availability to travel internationally for site inspections, commissioning, and project support as required.\nWhy you should choose us: End of year performance bonus scheme; Above industry standard superannuation; External Education Assistance Program; Hybrid working arrangement; Car leasing opportunities; Glencore Rewards Program.\nApplications close: 7am Monday 30th November 2026. Applications will only be accepted via our Careers Page at glencore.com/careers.",
+   "sum": {
+    "about": "Glencore Technology (ISASMELT, IsaMill) in Brisbane wants a senior mechanical engineer for smelting and pyrometallurgy plant design.",
+    "type": "Full-time",
+    "req": [
+     "Mechanical engineering degree",
+     "8+ years post-graduate experience",
+     "Eligible for RPEQ",
+     "Knowledge of furnaces, materials handling and high-temperature plant",
+     "Willing to travel overseas"
+    ],
+    "duties": [
+     "Lead a small team of engineers and drafters",
+     "Prepare calculations, specs, datasheets and layouts",
+     "Develop scopes, estimates and commissioning plans",
+     "Manage vendors, fabricators and factory testing",
+     "Support site implementation and commissioning"
+    ],
+    "ben": [
+     "Performance bonus",
+     "Above-standard super",
+     "Education assistance",
+     "Hybrid work"
+    ],
+    "kw": [
+     "pyrometallurgy",
+     "smelting",
+     "ISASMELT",
+     "furnaces",
+     "equipment datasheets",
+     "plant layout",
+     "cost estimates",
+     "factory acceptance testing",
+     "commissioning",
+     "RPEQ"
+    ],
+    "note": "Applications close 30 Nov 2026; apply via glencore.com/careers."
+   }
   },
   {
    "co": "kannegiesser",
@@ -54,7 +151,46 @@
    "d": "2026-10-29",
    "u": "https://to.indeed.com/aanffndfwc67",
    "lvl": "Mid",
-   "src": "Indeed"
+   "src": "Indeed",
+   "jd": "Job Type: Maximum Term > 12 Months. Location: Aus - Melbourne. Categories: Engineering - Mechanical. Applications close 30 Nov 2026 AUS Eastern Daylight Time.\nAbout North East Link\nThe Spark Consortium has been selected to deliver the Central Package of the North East Link Project - Victoria's biggest road project. The Spark Consortium's Design and Construction Contractor - which comprises Webuild, CPB Contractors, GS Engineering and Construction and China Construction Oceania - will deliver the twin three-lane tunnels and key interchanges for the project.\nAbout the Opportunity:\nAre you a skilled MEI Mechanical Project Engineer with a passion for large-scale infrastructure projects? Spark North East Link is seeking a dedicated MEI Project Engineer in the mechanical space to join our dynamic construction team. This role offers an exciting opportunity to oversee the mechanical aspects of the North East Link project, ensuring that all systems are designed, implemented and maintained to the highest standards of quality and safety. Including the MVAC, Tunnel Ventilation Systems, plumbing, and fire protection, throughout all phases of the project. This position requires a combination of technical expertise, project management skills, and a commitment to upholding safety standards.\nKey Responsibilities:\nProject Lifecycle Management: Lead and contribute to all phases of the project, from preliminary planning and procurement to construction, commissioning, and handover of MVAC (Mechanical Ventilation and Air Conditioning), TVS (Tunnel Ventilation System), Hydraulics and Wet/Dry Fire systems.\nSystem Design & Engineering: Review design documents, perform constructability and commissioning reviews, and ensure compliance with project-specific requirements, codes, and regulations while optimizing project performance.\nProject Delivery & Management: Develop and submit construction and commissioning work packs, manage subcontractor budgets, and ensure seamless coordination between internal teams, subcontractors, and stakeholders. Provide technical support and innovative solutions to onsite technical issues.\nCompliance & Quality Assurance: Ensure adherence to relevant codes, standards, and regulations. Conduct quality assurance inspections and prepare documentation to demonstrate compliance with regulatory requirements.\nQualifications:\nMaster's or bachelor's degree in mechanical engineering.\nProven delivery experience on large scale infrastructure project(>$50M) in construction\nMinimum 5 years of experience in mechanical engineering, preferably in the infrastructure or construction industry\nProficiency in engineering software tools.\nStrong project management skills, including the ability to prioritise tasks and manage deadlines effectively.\nExcellent communication and interpersonal skills, with the ability to collaborate effectively with diverse teams and stakeholders.\nKnowledge of relevant industry codes, standards and regulations.\nWhat we Offer:\nOngoing career support and development opportunities; Generous parental leave; Strong culture charter; Quarterly social events; Reward and recognition program; Flexible working arrangements; Competitive salary.\nWhilst we are keen to hear from candidates with proven infrastructure project experience or experience working for a Tier 1 or Tier 2 Contractor to be a part of an iconic construction project in Melbourne, Victoria, we also will consider applicants who are seeking to enter or re-enter the industry.",
+   "sum": {
+    "about": "Spark JV (Webuild, CPB and partners) on Melbourne's North East Link tunnels needs a mechanical MEI project engineer for tunnel ventilation, MVAC, hydraulics and fire systems.",
+    "type": "Maximum-term contract, over 12 months",
+    "req": [
+     "Mechanical engineering degree",
+     "5+ years mechanical engineering, ideally infrastructure/construction",
+     "Delivery on a $50M+ infrastructure project",
+     "Knowledge of relevant codes and standards",
+     "Strong project management and communication"
+    ],
+    "duties": [
+     "Manage MVAC, TVS, hydraulics and fire systems from procurement to handover",
+     "Review designs for constructability and commissioning",
+     "Prepare construction and commissioning work packs",
+     "Manage subcontractor budgets and coordination",
+     "Run QA inspections and compliance documentation"
+    ],
+    "ben": [
+     "Parental leave",
+     "Flexible working",
+     "Reward and recognition program",
+     "Career development"
+    ],
+    "kw": [
+     "MEI",
+     "tunnel ventilation",
+     "MVAC",
+     "hydraulics",
+     "fire protection",
+     "commissioning",
+     "work packs",
+     "subcontractor management",
+     "constructability review",
+     "QA inspections",
+     "Tier 1 contractor"
+    ],
+    "note": "Applications close 30 Nov 2026; building-services style systems, not process plant."
+   }
   },
   {
    "co": "ansto",
@@ -168,25 +304,48 @@
    }
   },
   {
-   "co": "ugl",
-   "t": "Senior Planner",
-   "loc": "Tullamarine VIC",
-   "d": "2026-10-29",
-   "u": "https://to.indeed.com/aa6pgllt2pxp",
-   "lvl": "Senior",
-   "src": "Indeed"
-  },
-  {
    "co": "engie",
    "cn": "ENGIE",
    "sf": 12,
    "sw": "Power generation",
    "t": "Mechanical Engineer",
-   "loc": "Southbank VIC",
+   "loc": "Southbank, Melbourne VIC",
    "d": "2026-10-29",
    "u": "https://to.indeed.com/aam8fbgcdwym",
    "lvl": "Mid",
-   "src": "Indeed"
+   "src": "Indeed",
+   "jd": "About the Role\nJoin our team at Pelican Point Power Station as a Mechanical Engineer, supporting the reliability, performance and integrity of critical generation assets. You'll deliver assigned engineering activities and contribute to asset management, maintenance, outages and engineering projects, while continuing to build your technical expertise and professional capability.\nSupport the asset management of gas turbines, steam turbines, heat recovery steam generators and balance of plant systems.\nWork collaboratively with maintenance and operations teams to support plant reliability and performance.\nInvestigate equipment issues, identify root causes and contribute to the development and implementation of practical engineering solutions.\nAssist with the planning, coordination and delivery of major and minor plant outages.\nManage assigned engineering deliverables and contribute to engineering projects, plant modifications and continuous improvement initiatives.\nSupport budget development, expenditure management and engineering reporting activities.\nAbout You\nYou're a motivated mechanical engineering professional with at least 1 to 5 years post Graduate Engineer experience who enjoys solving technical challenges and working with operational teams. You'll bring sound engineering fundamentals, a proactive approach to asset reliability and a commitment to safe, high-quality outcomes.\nBachelor's degree in mechanical engineering, with eligibility to pursue Chartered Professional Engineer status, along with a current driver's licence and White Card.\nExperience or exposure to power generation, renewables or a heavy industrial mechanical engineering environment.\nUnderstanding of asset management and maintenance principles for rotating equipment and critical plant assets.\nExperience supporting outage planning, maintenance activities and engineering project delivery.\nKnowledge of procurement processes, contractor management and budget monitoring.\nStrong analytical and problem-solving capability, with the ability to work with maintenance management systems and engineering software.\nIf you don't meet every requirement but believe your skills and experience could be a strong fit, we'd still encourage you to apply.\nENGIE is an equal opportunity employer, promoting diversity and committed to creating an inclusive environment for all.",
+   "sum": {
+    "about": "ENGIE wants a mechanical engineer at Pelican Point Power Station supporting reliability, outages and engineering projects on generation assets.",
+    "req": [
+     "Mechanical engineering degree; eligible for CPEng",
+     "1–5 years post-graduate experience",
+     "Power generation, renewables or heavy industrial exposure",
+     "Rotating equipment maintenance principles",
+     "Procurement, contractor and budget awareness",
+     "Driver's licence and White Card"
+    ],
+    "duties": [
+     "Support asset management of turbines, HRSGs and BOP",
+     "Investigate equipment issues and find root causes",
+     "Help plan and deliver major and minor outages",
+     "Deliver assigned engineering projects and modifications",
+     "Support budgets and engineering reporting"
+    ],
+    "kw": [
+     "gas turbine",
+     "steam turbine",
+     "HRSG",
+     "outages",
+     "root cause analysis",
+     "asset management",
+     "rotating equipment",
+     "CMMS",
+     "plant modifications",
+     "continuous improvement"
+    ],
+    "note": "Junior-to-mid level; plant (Pelican Point) is in Adelaide, SA."
+   }
   },
   {
    "co": "equinox",
@@ -261,18 +420,6 @@
    "d": "2026-10-28",
    "u": "https://www.seek.com.au/job/95509004",
    "lvl": "Mid / lead",
-   "src": "Seek"
-  },
-  {
-   "co": "airservices",
-   "cn": "Airservices Australia",
-   "sf": 8,
-   "sw": "Critical mechanical infrastructure",
-   "t": "Senior Engineering Specialist (Mechanical)",
-   "loc": "Melbourne Airport VIC",
-   "d": "2026-10-28",
-   "u": "https://www.seek.com.au/job/95507766",
-   "lvl": "Senior",
    "src": "Seek"
   },
   {
@@ -433,6 +580,57 @@
    "src": "Indeed"
   },
   {
+   "co": "gpa",
+   "cn": "GPA Engineering",
+   "sf": 21,
+   "sw": "EPCM process-plant consultancy",
+   "t": "Lead Mechanical Engineer (Mining, Minerals Processing & Industrial) – Perth",
+   "loc": "Perth WA",
+   "d": "2026-10-28",
+   "u": "https://to.indeed.com/aal4bsqbhmlx",
+   "lvl": "Lead",
+   "src": "Indeed",
+   "jd": "Posted: 29/10/2026. Closing Date: 13/11/2026. Job Type: Permanent - Full Time. Location: Perth. Job Category: Mechanical.\nAbout Us: For over 35 years, GPA Engineering has been a trusted, Australian-owned consultancy delivering engineering, procurement and construction management services across water, energy, renewables, defence, mining, and hydrogen industries. With offices nationwide (Adelaide, Brisbane, Melbourne, Sydney, Darwin, Perth).\nAbout the Role:\nJoin GPA as a Lead Mechanical Engineer and play a key role in delivering projects across the Mining, Minerals Processing & Industrial sectors. You'll lead technical engineering delivery, build enduring client partnerships, and mentor engineers while helping shape the future growth of our Perth team. This role offers a clear pathway to broader leadership opportunities across team leadership, client engagement, and technical excellence.\nWe're looking for a seasoned engineer with 10+ years of relevant experience, ideally gained across consulting and operational environments.\nKey Duties:\nLead the mechanical design and delivery of mining and mineral processing projects from concept through to detailed design, construction, and commissioning.\nDevelop engineering solutions for a range of mining plants and equipment, ensuring compliance with relevant standards and Safety in Design principles.\nPrepare and review key deliverables, including specifications, scopes of work, calculations, reports, and drawings.\nLead design reviews and collaborate with multidisciplinary teams to deliver integrated project outcomes.\nSupport proposal development, client engagement, and business growth initiatives.\nBuild strong relationships with clients, contractors, suppliers, and industry stakeholders.\nMentor and develop engineers, supporting team capability, succession planning, and recruitment activities.\nContribute to the growth, leadership, and resource management of GPA's Perth Mechanical team.\nSkills and Experience\nMechanical design experience within a consulting, EPCM, or project delivery environment.\nStrong technical and project leadership capability.\nExperience mentoring and developing engineers.\nKnowledge of equipment specification, procurement, and vendor management.\nSite experience across consulting, contractor, or owner-side roles.\nExcellent problem-solving, communication, and stakeholder engagement skills.\nExperience delivering greenfield and/or brownfield mining projects.\nSound knowledge of relevant Australian standards and legislative requirements.\nA requirement for this role is to complete a satisfactory pre-employment medical and Australian police clearance.\nWhat we offer: Competitive Salary & Rewards with paid overtime; Career Growth & Development including support towards professional membership and Chartership; Flexibility - hybrid working options and cultural leave swap days; Health & Wellbeing programs and EAP; Paid parental leave for primary and secondary carers.\nSubmit your application online before 13th November 2026. GPA Engineering does not accept resumes submitted by third-party recruitment agencies.",
+   "sum": {
+    "about": "GPA Engineering, an Australian EPCM consultancy, needs a lead mechanical engineer for mining, minerals processing and industrial projects in Perth.",
+    "type": "Permanent, full-time",
+    "req": [
+     "10+ years mechanical engineering experience",
+     "Design in consulting, EPCM or project delivery",
+     "Equipment specification, procurement and vendor management",
+     "Greenfield or brownfield project delivery",
+     "Site experience on owner or contractor side",
+     "Pre-employment medical and police check"
+    ],
+    "duties": [
+     "Lead mechanical design from concept to commissioning",
+     "Prepare and review specs, scopes, calculations and drawings",
+     "Lead design reviews with other disciplines",
+     "Support proposals and client relationships",
+     "Mentor engineers and grow the Perth team"
+    ],
+    "ben": [
+     "Paid overtime",
+     "Hybrid work",
+     "Chartership support",
+     "Parental leave for both carers"
+    ],
+    "kw": [
+     "EPCM",
+     "mechanical design",
+     "minerals processing",
+     "brownfield",
+     "greenfield",
+     "equipment specification",
+     "vendor management",
+     "Safety in Design",
+     "design review",
+     "commissioning"
+    ],
+    "note": "Applications close 13 Nov 2026."
+   }
+  },
+  {
    "co": "furmanite",
    "t": "Mechanical Engineer",
    "loc": "Laverton North, Melbourne VIC",
@@ -499,6 +697,101 @@
    "sw": "SMP construction and shutdowns"
   },
   {
+   "co": "kbr",
+   "t": "Senior Mechanical Engineer - Industrial",
+   "loc": "Perth WA",
+   "d": "2026-10-27",
+   "u": "https://to.indeed.com/aanp2nqchjph",
+   "lvl": "Senior",
+   "src": "Indeed",
+   "jd": "Senior Mechanical Engineer - Industrial (Perth, Western Australia, Full time, req R2131384)\nAre you a Senior Mechanical Engineer with a passion for leading high-quality engineering design across complex industrial projects? Do you enjoy combining hands on technical expertise with leadership, mentoring, and client engagement?\nDue to continued growth and project wins, we are seeking a Senior Mechanical Engineer - Industrial to join our Perth team, supporting the delivery of multidisciplinary projects across Australia.\nAs a Senior Mechanical Engineer, you will play a key technical and leadership role in the delivery of mechanical engineering design across a diverse portfolio of industrial projects. You will function as a technical authority within the discipline, providing design leadership, oversight, and governance while supporting and mentoring less experienced engineers and designers.\nYour experience will span detailed mechanical and piping design within industries such as process, mining, water, and heavy industrial infrastructure. Projects will range from concept and feasibility through to detailed design and construction support.\nKey Responsibilities:\nLead and deliver mechanical engineering design across industrial projects, providing technical direction and discipline leadership\nAct as a technical authority for mechanical and piping design, ensuring engineering quality, compliance, and fitness for purpose\nPlan, coordinate, and undertake complex engineering tasks across multiple projects or work packages\nPrepare, review, and approve mechanical designs, calculations, specifications, reports, and engineering deliverables\nProvide mentorship, guidance, and technical support to engineers, designers, and drafters\nReview and verify design calculations and drawings, including independent checking and design assurance\nCollaborate closely with multidisciplinary teams, including process, piping, electrical, and civil disciplines\nConsult with clients, OEMs, suppliers, statutory authorities, and other stakeholders as required\nContribute to continuous improvement of design processes, standards, and engineering procedures\nSkills & Experience Required:\nAccredited Bachelor of Mechanical Engineering (or equivalent)\nChartered Professional Engineer (CPEng) status, or eligibility to obtain\nSignificant post graduate experience in mechanical engineering design within industrial sectors\nDemonstrated experience leading mechanical design on multidisciplinary projects\nStrong understanding of Australian standards, codes, and industry practices\nProven experience preparing and checking engineering calculations using manual methods and industry standard software\nPractical experience with mechanical and piping design tools, such as AutoCAD / Plant 3D, E3D, Caesar II, AFT (or equivalent packages)\nExperience working with OEMs on equipment selection, specification, and integration into plant designs\nAbility to manage work to scope, schedule, and budget while maintaining high engineering quality\nEffective communication skills, with the ability to engage effectively with clients and project stakeholders\nExperience mentoring engineers and contributing to team capability development\nSecurity & Eligibility Requirements:\nAustralian Citizenship preferred, with the ability to obtain Defence clearance would be look upon favourably.\nAbout KBR: Work on high-profile industrial and defence projects; Industry-recognised technical leadership and expertise; Flexible working arrangem",
+   "sum": {
+    "about": "KBR's Perth office needs a senior mechanical engineer to lead mechanical and piping design on process, mining, water and heavy industrial projects.",
+    "type": "Full-time",
+    "req": [
+     "Mechanical engineering degree; CPEng or eligible",
+     "Significant industrial mechanical design experience",
+     "Lead mechanical design on multidisciplinary projects",
+     "Plant 3D / E3D, Caesar II, AFT or similar",
+     "OEM equipment selection and integration",
+     "Australian citizenship preferred (Defence clearance a plus)"
+    ],
+    "duties": [
+     "Lead mechanical design and act as discipline authority",
+     "Prepare and approve designs, calculations and specs",
+     "Independently check drawings and calculations",
+     "Mentor engineers, designers and drafters",
+     "Work with clients, OEMs and authorities"
+    ],
+    "ben": [
+     "Flexible working",
+     "Clear leadership or technical pathways"
+    ],
+    "kw": [
+     "mechanical design",
+     "piping design",
+     "Caesar II",
+     "E3D",
+     "Plant 3D",
+     "AFT",
+     "equipment specification",
+     "OEM",
+     "CPEng",
+     "design verification",
+     "process plant"
+    ],
+    "note": "Citizenship is preferred, which may limit PR holders on Defence work."
+   }
+  },
+  {
+   "co": "coogee",
+   "t": "Senior Process Engineer",
+   "loc": "Lytton, Brisbane QLD",
+   "d": "2026-10-27",
+   "u": "https://to.indeed.com/aafywqlzjvsd",
+   "lvl": "Senior",
+   "src": "Indeed",
+   "jd": "Posted: 27/10/2026. Closing Date: 24/11/2026. Job Type: Permanent - Full Time. Location: Lytton QLD. Job Category: Engineering.\nWhy Join Coogee: Founded in 1971, Coogee is a team of passionate professionals delivering high-quality industrial, agricultural, and mineral processing chemicals across Australia and internationally. With expanding operations in WA, Queensland, New South Wales, and Victoria, and continued investment in new projects and capabilities, Coogee is experiencing strong growth.\nAt Coogee, we're looking for an experienced Senior Process Engineer to become a key technical leader within our Queensland Chlor Alkali operations. This role offers the opportunity to apply your process engineering expertise across plant operations, continuous improvement initiatives and capital projects, helping to optimise safety, reliability and performance across a critical manufacturing facility.\nAbout the Role\nReporting to the Plant Manager, you will be a key member of the Queensland Management Team, responsible for ensuring safe, reliable and sustainable plant operations while providing process engineering expertise and supporting the successful delivery of capital projects from concept through to commissioning.\nKey Responsibilities:\nProvide process engineering support and technical leadership across manufacturing operations.\nLead process safety initiatives and Management of Change (MOC) activities.\nProvide guidance on engineering standards, compliance requirements, and industry best practice.\nCoach and mentor engineers and operational personnel to support capability development.\nDrive troubleshooting and resolution of complex process issues.\nLead capital and operational improvement projects from feasibility through to execution and commissioning.\nDevelop business cases, project scopes, budgets, schedules, and capital approval documentation.\nManage multidisciplinary project teams, contractors, consultants, and vendors.\nMonitor project performance, ensuring delivery against safety, quality, cost, and schedule objectives.\nIdentify and manage project risks while maintaining stakeholder engagement throughout the project lifecycle.\nAbout You\nYou are a technically strong Chemical Engineer with proven experience leading both plant improvement initiatives and capital projects in a complex industrial environment.\nEssential Skills & Experience\nDegree qualification in Chemical Engineering.\nMinimum 10 years' engineering experience within chemical manufacturing, petrochemical, mineral processing, or other heavy industrial environments.\nStrong understanding of process engineering principles and process safety management.\nExperience leading risk assessments including HAZID, HAZOP, LOPA and similar methodologies.\nDemonstrated project management experience, including capital project delivery from feasibility through commissioning.\nProven ability to manage contractors, consultants, and cross-functional teams.\nDesirable: Experience within chlor-alkali, chemical manufacturing, or dangerous goods operations. Exposure to Major Hazard Facility (MHF) regulations, Safety Case development. RPEQ accreditation or eligibility to obtain.\nWhat We Offer: Competitive annual salary and financial incentives; Company Superannuation including Income Protection; Company Paid Parental Leave; Annual fitness reimbursement; Free annual flu vaccinations and skin checks; Employee Assistance Program (EAP).\nTo apply for this position, you must have the legal right to live and work in",
+   "sum": {
+    "about": "Coogee's Lytton chlor-alkali plant needs a senior process engineer covering plant support, process safety and capital projects.",
+    "type": "Permanent, full-time",
+    "req": [
+     "Chemical engineering degree",
+     "10+ years in chemical, petrochemical or heavy industry",
+     "HAZID, HAZOP and LOPA leadership",
+     "Capital project delivery to commissioning",
+     "MHF / chlor-alkali experience desirable",
+     "RPEQ or eligible"
+    ],
+    "duties": [
+     "Provide process engineering leadership",
+     "Lead process safety and MOC",
+     "Troubleshoot complex process issues",
+     "Lead capital projects from feasibility to commissioning",
+     "Prepare business cases, budgets and schedules",
+     "Manage contractors and vendors"
+    ],
+    "ben": [
+     "Financial incentives",
+     "Paid parental leave",
+     "Fitness reimbursement"
+    ],
+    "kw": [
+     "chlor-alkali",
+     "process safety",
+     "MOC",
+     "HAZOP",
+     "LOPA",
+     "capital projects",
+     "commissioning",
+     "Major Hazard Facility",
+     "business case",
+     "RPEQ"
+    ],
+    "note": "Asks for a chemical engineering degree; closes 24 Nov 2026."
+   }
+  },
+  {
    "co": "xenco",
    "cn": "Xenco Services",
    "sf": 12,
@@ -554,6 +847,18 @@
    "cn": "Furmanite Australia"
   },
   {
+   "co": "fortescue",
+   "cn": "Fortescue",
+   "sf": 12,
+   "sw": "Mining project construction",
+   "t": "Lead Construction Planner - Blacksmith",
+   "loc": "Perth WA",
+   "d": "2026-10-26",
+   "u": "https://to.indeed.com/aaps7zqhzqvc",
+   "lvl": "Lead",
+   "src": "Indeed"
+  },
+  {
    "co": "kraftheinz",
    "cn": "Kraft Heinz",
    "sf": 17,
@@ -602,14 +907,54 @@
    "src": "Seek"
   },
   {
-   "co": "downer",
-   "t": "Mechanical Supervisor – Eraring",
-   "loc": "Lake Macquarie NSW",
+   "co": "glencore",
+   "cn": "Glencore",
+   "sf": 17,
+   "sw": "Minerals processing and smelting",
+   "t": "Maintenance Superintendent – Refinery",
+   "loc": "Murrin Murrin (FIFO ex Perth) WA",
    "d": "2026-10-25",
-   "u": "https://to.indeed.com/aa44nbw8fj66",
-   "lvl": "Mid / lead",
+   "u": "https://to.indeed.com/aamv8s94xzgz",
+   "lvl": "Manager",
    "src": "Indeed",
-   "cn": "Downer Group"
+   "jd": "Maintenance Superintendent - Refinery. 8:6 / 4:3 Family Friendly Roster | FIFO Ex Perth. Superannuation paid at 15%. Job ID MMO - MSR1026. Closing date 26/11/2026.\nMurrin Murrin Operations has an opportunity for a Maintenance Superintendent - Refinery to join our established and dedicated team. Murrin Murrin Operations is Australia's largest cobalt producer and a major world producer of nickel. Our Murrin Murrin site in WA's northern Goldfields is an integrated nickel and cobalt mining and processing operation employing over 1,000 people. Murrin Murrin Operations is wholly owned by Glencore.\nThe Role\nThe successful candidate will become a member of a hardworking and committed team who manages and directs the activities of mechanical maintenance teams within our refinery area. They will also maintain the maintenance management systems and procedures, while effectively meeting all productivity requirements.\nYou will be responsible for:\nCoordinate the activities of the shift and day maintenance personnel to minimise plant disruptions due to mechanical failures.\nSchedule maintenance work to minimise impact on production.\nOversee all area ongoing maintenance and ensure all planned maintenance activities are carried out efficiently and in the shortest time frame.\nDirect the supervision of maintenance fitters working within the area of responsibility.\nDirect the supervision of sub-contractors working within the area of responsibility.\nEnsure suitability and availability of equipment spares.\nClose liaison with maintenance planners and schedulers.\nControl and accountability of approved maintenance operating budgets.\nActively contribute to our safety and environmental policy and implement change as directed by the management team.\nDirect responsibility for Refinery Shutdowns and Execution of work.\nDirect responsibility of Statutory/SCE compliance of the Refinery.\nAbout You\nReporting directly to the Maintenance Manager this role would suit a detailed and process oriented person who can provide clear and supportive leadership to the team.\nYou will also have:\nMechanical engineering degree or mechanical trades certificate.\nSuccessful completion of an approved WHS Risk management unit for statutory supervisors.\nEvidence of successfully passing an applicable legislation examination for statutory supervisors.\nExtensive experience within a complex metallurgical plant environment in a maintenance role.\nMinimum of 2 years' experience as a Superintendent/Coordinator or worker in a similar operation or industry.\nExperience in safety, quality, environmental and maintenance management systems.\nExperience in development managing costs and budgeting.\nExperience in SAP/Coupa systems.\nWhat We Offer\nA permanent position working directly for Murrin Murrin Operations; high safety standards; Employee Assistance Program; recognition and reward programs; variable compensation program; on-site gym facilities; above industry standard superannuation contribution of 15%; generous private health insurance allowance; on-the-job training and development programs; salary sacrifice for flights, parking, super and novated leasing.",
+   "sum": {
+    "about": "Glencore's Murrin Murrin nickel-cobalt operation needs a superintendent to run mechanical maintenance in its refinery area.",
+    "type": "Permanent, FIFO ex Perth (8:6 / 4:3)",
+    "req": [
+     "Mechanical engineering degree or mechanical trade",
+     "Statutory supervisor WHS and legislation exams",
+     "Extensive metallurgical plant maintenance experience",
+     "2+ years as superintendent or coordinator",
+     "Budget management",
+     "SAP/Coupa"
+    ],
+    "duties": [
+     "Direct mechanical maintenance crews and contractors",
+     "Schedule work to limit production impact",
+     "Lead refinery shutdowns and execution",
+     "Own statutory and SCE compliance",
+     "Manage maintenance budget and spares"
+    ],
+    "ben": [
+     "15% super",
+     "Health insurance allowance",
+     "Variable pay",
+     "On-site gym"
+    ],
+    "kw": [
+     "maintenance superintendent",
+     "refinery",
+     "hydrometallurgy",
+     "shutdowns",
+     "SCE compliance",
+     "SAP",
+     "maintenance scheduling",
+     "contractor supervision",
+     "budget control"
+    ],
+    "note": "Remote FIFO site in WA Goldfields; closes 26 Nov 2026."
+   }
   },
   {
    "co": "steritech",
@@ -1191,6 +1536,18 @@
    }
   },
   {
+   "co": "urbanutilities",
+   "cn": "Urban Utilities",
+   "sf": 12,
+   "sw": "Water and wastewater utility",
+   "t": "Reliability Engineer",
+   "loc": "Fortitude Valley, Brisbane QLD",
+   "d": "2026-10-16",
+   "u": "https://to.indeed.com/aagqtvyk6sx4",
+   "lvl": "Mid",
+   "src": "Indeed"
+  },
+  {
    "co": "csl",
    "t": "C&Q Engineer",
    "loc": "Broadmeadows VIC",
@@ -1230,6 +1587,48 @@
      "Biotech"
     ],
     "note": "Applications close 19 November 2026."
+   }
+  },
+  {
+   "co": "monadelphous",
+   "t": "Maintenance Planner",
+   "loc": "Muja Power Station, Collie WA",
+   "d": "2026-10-14",
+   "u": "https://to.indeed.com/aayfsm9q2spb",
+   "lvl": "Mid",
+   "src": "Indeed",
+   "jd": "Maintenance Planner. Ref # 300060481. Region: Perth, WA. Classification: Professionals. Date Posted: 13-Oct-2026.\nAn exciting opportunity exists for a Maintenance Planner to join our team based at Muja Power Station. Reporting to the Site Manager, you will be responsible for planning and coordinating maintenance activities to ensure work is safely executed, efficiently scheduled, and ready for delivery.\nThis role would suit an experienced Maintenance Planner or a trade-qualified Mechanical professional looking to transition into planning. Training and development support will be provided.\nKey Responsibilities\nDevelop and maintain maintenance and shutdown schedules\nCoordinate labour, materials, tooling and equipment requirements\nBuild planning packages from work orders and job scopes\nLiaise with operations and maintenance teams to prioritise work\nMonitor schedule progress and manage risks and delays\nSupport shutdowns, outages and project activities\nMaintain planning data within SAP/CMMS systems\nDrive continuous improvement initiatives\nAbout You\nMechanical trade qualification highly regarded\nMaintenance planning/scheduling experience or keen to develop in planning\nSAP or CMMS experience advantageous\nStrong organisational and stakeholder management skills\nCommitment to safety and continuous improvement\nWhat's on Offer\nPermanent position\nOffice-based role at Muja Power Station\nLifestyle-friendly 4:3 roster\nOngoing training and career development\nSupportive and collaborative team environment\nAbout us: Monadelphous is an ASX-200 company providing multidisciplinary construction, maintenance and industrial services to many of the largest companies in the resources, energy and infrastructure sectors. Established in 1972.",
+   "sum": {
+    "about": "Monadelphous wants a maintenance planner at Muja Power Station (Collie, WA) to plan and schedule maintenance and shutdown work.",
+    "type": "Permanent",
+    "req": [
+     "Mechanical trade qualification highly regarded",
+     "Maintenance planning/scheduling experience",
+     "SAP or CMMS experience",
+     "Organisational and stakeholder skills"
+    ],
+    "duties": [
+     "Build maintenance and shutdown schedules",
+     "Prepare work packages from work orders",
+     "Coordinate labour, materials and tooling",
+     "Track progress, risks and delays",
+     "Keep planning data in SAP/CMMS"
+    ],
+    "ben": [
+     "4:3 roster",
+     "Training and development"
+    ],
+    "kw": [
+     "maintenance planning",
+     "shutdown scheduling",
+     "SAP",
+     "CMMS",
+     "work packages",
+     "power station",
+     "outages",
+     "continuous improvement"
+    ],
+    "note": "Site is at Collie, about 2 hours south of Perth."
    }
   },
   {
@@ -1284,6 +1683,30 @@
    "loc": "Matraville NSW",
    "d": "2026-10-13",
    "u": "https://to.indeed.com/aaw4nt8rm4bn",
+   "lvl": "Mid",
+   "src": "Indeed"
+  },
+  {
+   "co": "amazon",
+   "cn": "Amazon (AWS)",
+   "sf": 7,
+   "sw": "Data centre operations",
+   "t": "CMMS Engineer, InfraOps",
+   "loc": "Melbourne VIC",
+   "d": "2026-10-13",
+   "u": "https://to.indeed.com/aaz8c76h9w2p",
+   "lvl": "Mid",
+   "src": "Indeed"
+  },
+  {
+   "co": "catalyst",
+   "cn": "Catalyst Metals",
+   "sf": 11,
+   "sw": "Gold mining and processing",
+   "t": "Shutdown Planner | 8:6 FIFO from Perth | Gold Mining | Permanent Full-time",
+   "loc": "Perth WA (FIFO)",
+   "d": "2026-10-12",
+   "u": "https://to.indeed.com/aajd6wzg9q88",
    "lvl": "Mid",
    "src": "Indeed"
   },
@@ -1375,6 +1798,53 @@
    "src": "Indeed"
   },
   {
+   "co": "veolia",
+   "cn": "Veolia",
+   "sf": 12,
+   "sw": "Water treatment plants",
+   "t": "Asset & Projects Lead",
+   "loc": "Bendigo VIC",
+   "d": "2026-10-08",
+   "u": "https://to.indeed.com/aa74ygtfnrch",
+   "lvl": "Lead",
+   "src": "Indeed",
+   "jd": "Asset & Projects Lead. Location: Bendigo, VIC, AU, 3550.\nThe Opportunity\nVeolia is seeking an Asset & Projects Lead to improve the reliability, renewal and performance of water treatment plants and transmission networks across Central Victoria.\nBased in Bendigo 3550 and reporting to the Asset Investment and Systems Lead, this hands on role combines asset lifecycle management, technical problem-solving, reliability improvement and project delivery.\nYou will lead through technical expertise and project ownership rather than direct people management, working closely with operations, maintenance teams, engineers, contractors and delivery partners.\nWhat's on offer\nOwnership of varied asset renewal and improvement projects\nMeaningful work supporting safe and reliable water services\nInfluence over asset performance and lifecycle decisions\nCareer development within a stable, global organisation\nPaid parental leave, Fitness Passport and a paid volunteer day\nWhat You'll Do\nLead asset condition assessments and determine asset health and remaining life\nPlan and deliver minor capital, refurbishment and renewal projects\nPrepare project scopes, business cases, estimates, schedules and risk assessments\nManage contractors and coordinate work with operational teams\nInvestigate equipment failures and develop long-term reliability solutions\nUse criticality, maintenance and performance data to guide asset decisions\nMaintain engineering drawings, asset records and Management of Change documents\nEnsure projects meet safety, quality, environmental and contractual requirements\nWhat You'll Bring\nWater, wastewater or infrastructure asset management experience\nProject delivery and technical problem solving skills\nKnowledge of maintenance strategy and root cause analysis\nExperience with drawings, MOC processes and CMMS/EAM platforms\nWhy Veolia? Veolia is a global leader in environmental solutions, working to protect and renew the resources essential to life. Across Australia and New Zealand, our teams deliver water, waste and energy services that support communities, industries and the environment.",
+   "sum": {
+    "about": "Veolia in Bendigo needs an asset and projects lead for water treatment plants and pipelines across Central Victoria.",
+    "req": [
+     "Water, wastewater or infrastructure asset management",
+     "Project delivery experience",
+     "Maintenance strategy and root cause analysis",
+     "Drawings, MOC and CMMS/EAM experience"
+    ],
+    "duties": [
+     "Run asset condition assessments",
+     "Deliver minor capital and renewal projects",
+     "Prepare scopes, estimates, schedules and risk assessments",
+     "Manage contractors with operations",
+     "Investigate failures and fix reliability issues",
+     "Maintain drawings and asset records"
+    ],
+    "ben": [
+     "Paid parental leave",
+     "Fitness Passport",
+     "Paid volunteer day"
+    ],
+    "kw": [
+     "asset management",
+     "condition assessment",
+     "water treatment",
+     "renewals",
+     "root cause analysis",
+     "criticality",
+     "CMMS",
+     "EAM",
+     "MOC",
+     "minor capital projects"
+    ]
+   }
+  },
+  {
    "co": "clough",
    "t": "Mechanical/Piping Engineer",
    "loc": "Perth WA",
@@ -1389,15 +1859,6 @@
    "loc": "Welshpool WA",
    "d": "2026-10-06",
    "u": "https://to.indeed.com/aaq79fqv8w7d",
-   "lvl": "Mid",
-   "src": "Indeed"
-  },
-  {
-   "co": "graincorp",
-   "t": "Project Engineer",
-   "loc": "Numurkah VIC",
-   "d": "2026-10-06",
-   "u": "https://to.indeed.com/aaqtjjbynssn",
    "lvl": "Mid",
    "src": "Indeed"
   },
@@ -1550,7 +2011,38 @@
    "d": "2026-10-05",
    "u": "https://to.indeed.com/aac7ptp9hmqn",
    "lvl": "Mid",
-   "src": "Indeed"
+   "src": "Indeed",
+   "jd": "All Purpose Pumps is seeking a self-motivated, autonomous Mechanical Engineer to join our Operations team in Hoppers Crossing. In this role, you will support the design and improvement of our high-quality pump products and plumbing solutions. You will create 3D CAD models, translate them into 2D manufacturing drafts, conduct engineering calculations, and produce build specifications for manufacturing.\n* CAD Modeling & Drafting: Create detailed 3D CAD models using SolidWorks and produce high-quality 2D drafts suitable for manufacturing.\n* Product Design & Validation: Provide sound mechanical designs for new products, updates, and improvements. Perform calculations to validate designs and ensure compliance with relevant Australian Standards.\n* Documentation & Support: Produce Bills of Materials (BOM) and build specifications. Update or author technical documentation, including user manuals, risk assessments, technical datasheets, and commissioning plans.\n* Technical Assistance & Compliance: Provide technical support to internal departments and customers while maintaining OH&S standards and continuous improvement goals.\nSelection Criteria (Skills & Qualifications Required)\nMandatory Qualifications & Experience\n* Tertiary Qualification: Bachelor's degree in Mechanical Engineering or related field (ANZSCO Skill Level 1).\n* Work Experience: Minimum of 5 years' experience in a similar mechanical engineering role within manufacturing, mining, or related industries.\n* Technical Knowledge: Strong understanding of pumps, plumbing solutions, hydraulic systems, and relevant Australian Standards for design.\nHard Skills\n* Proficiency in CAD Software: Expert level in SolidWorks and AutoCAD.\n* General IT: Proficient in Microsoft Office suite.\nSoft Skills\n* Self-starter capable of working autonomously and managing multiple priorities.\n* Strong organizational, negotiation, and time-management capabilities\nPay: $100,000.00 per year\nWork Location: In person",
+   "sum": {
+    "about": "All Purpose Pumps in Hoppers Crossing wants a mechanical engineer to design and improve pump and plumbing products.",
+    "type": "Full-time",
+    "sal": "$100,000 per year",
+    "req": [
+     "Mechanical engineering degree",
+     "5+ years in manufacturing, mining or similar",
+     "Pumps, hydraulic systems and Australian Standards knowledge",
+     "Expert SolidWorks and AutoCAD"
+    ],
+    "duties": [
+     "Build 3D CAD models and 2D manufacturing drawings",
+     "Run design calculations and validation",
+     "Produce BOMs and build specifications",
+     "Write manuals, datasheets and commissioning plans",
+     "Provide technical support to customers"
+    ],
+    "kw": [
+     "pumps",
+     "SolidWorks",
+     "AutoCAD",
+     "BOM",
+     "product design",
+     "hydraulic systems",
+     "Australian Standards",
+     "commissioning plans",
+     "manufacturing drawings"
+    ],
+    "note": "Mainly a product-design role; salary is at the lower end for 10+ years' experience."
+   }
   },
   {
    "co": "bakerhughes",
@@ -1636,6 +2128,18 @@
    "d": "2026-10-02",
    "u": "https://to.indeed.com/aa426dsywjcq",
    "lvl": "Senior",
+   "src": "Indeed"
+  },
+  {
+   "co": "daifuku",
+   "cn": "Daifuku",
+   "sf": 11,
+   "sw": "Materials handling machinery",
+   "t": "Maintenance Planner - Melbourne Airport",
+   "loc": "Melbourne Airport VIC",
+   "d": "2026-10-02",
+   "u": "https://to.indeed.com/aa827tyj44xj",
+   "lvl": "Mid",
    "src": "Indeed"
   },
   {
@@ -1733,7 +2237,44 @@
    "src": "Indeed",
    "cn": "Weir",
    "sf": 19,
-   "sw": "Pumps, valves and minerals processing"
+   "sw": "Pumps, valves and minerals processing",
+   "jd": "Mechanical Engineer - Cyclones\nLocation: Brisbane, Artarmon NSW or Perth WA\nWhat we do at Weir: We are a global leader in mining technology for a sustainable future. We help our customers extract the resources the world needs more efficiently and more sustainably.\nWhat you'll do\nTechnical Expertise: Become a subject matter expert in cyclone and cyclone cluster process equipment design, collaborating closely with designers, draftspeople, and discipline engineers to ensure technical excellence.\nCustomer & Regulatory Compliance: Evaluate equipment against customer requirements and regulatory standards, including Australian and international codes, to identify and close compliance gaps.\nProject Delivery: Facilitate on-time delivery of equipment within budget by maintaining project documentation, conducting design reviews at key project milestones, and providing timely technical advice to internal and external stakeholders.\nStakeholder Collaboration: Support technical discussions and manage customer queries, working effectively with technical sales teams, project managers, designers, and engineering leadership to translate customer needs into engineering solutions.\nField Engagement: Participate in site visits, commissioning, testing, and development activities at mines, mineral processing plants, and factories, ensuring practical insights inform engineering decisions.\nContinuous Improvement: Contribute to enhancing Weir Minerals Australia's product stewardship program for process equipment and support design analysis tasks as required.\nTravel Requirements: Occasional local and overseas travel to customer sites, factories, and mines to support commissioning, service, and stakeholder engagement.\nSafety First: Demonstrate 100% commitment to our zero harm behaviors.\nWhat you'll bring\nMust-haves:\nBachelor's degree in mechanical engineering.\n2-5 years of practical experience with cyclone or cyclone cluster equipment in mining or related industries.\nStrong communication skills with the ability to engage effectively with customers, technical teams, and leadership.\nExperience in project engineering, including reviewing GA drawings, managing technical queries, and participating in design reviews.\nNice-to-haves:\nExposure to mine-site operations through site visits, commissioning, or field support.\nFamiliarity with FEA and CAD tools, preferably NX/Teamcenter.\nExperience in mineral process equipment such as mill liners and screens.\nCustomer-facing engineering experience and stakeholder management skills.\nBenefits: Competitive pay; Career development and learning support; Access to global inclusion networks; Regional and team-specific benefits; Sharebuilder scheme; Wellness support for you and your family; Collaboration with global teams; Study support.",
+   "sum": {
+    "about": "Weir Minerals needs a mechanical engineer specialising in cyclone process equipment for mining customers.",
+    "type": "Full-time",
+    "req": [
+     "Mechanical engineering degree",
+     "2–5 years with cyclone or cyclone cluster equipment",
+     "Project engineering incl. GA drawing reviews",
+     "Strong customer communication",
+     "FEA/CAD (NX/Teamcenter) is a plus"
+    ],
+    "duties": [
+     "Become SME for cyclone equipment design",
+     "Check equipment against customer specs and codes",
+     "Run design reviews and keep project documents",
+     "Support commissioning and testing at mines and factories",
+     "Work with sales, PMs and designers"
+    ],
+    "ben": [
+     "Sharebuilder scheme",
+     "Study support",
+     "Wellness support"
+    ],
+    "kw": [
+     "hydrocyclones",
+     "mineral processing",
+     "GA drawings",
+     "design review",
+     "commissioning",
+     "Australian Standards",
+     "FEA",
+     "NX",
+     "Teamcenter",
+     "project engineering"
+    ],
+    "note": "Can be based in Artarmon NSW, Brisbane or Perth."
+   }
   },
   {
    "co": "orica",
@@ -1803,15 +2344,6 @@
    "sw": "Chemical manufacturing plant"
   },
   {
-   "co": "clough",
-   "t": "Commissioning Engineer – Mechanical",
-   "loc": "Sydney NSW",
-   "d": "2026-09-21",
-   "u": "https://to.indeed.com/aa9tnhqhxwk8",
-   "lvl": "Mid",
-   "src": "Indeed"
-  },
-  {
    "co": "webuild",
    "cn": "Webuild",
    "sf": 8,
@@ -1821,7 +2353,45 @@
    "d": "2026-09-20",
    "u": "https://to.indeed.com/aa2vmtpsdhb8",
    "lvl": "Mid",
-   "src": "Indeed"
+   "src": "Indeed",
+   "jd": "About the Project:\nParklife Metro JV is leading the delivery of the Sydney Metro - Western Sydney Airport project, a landmark transport initiative that will link St Marys to Bradfield and seamlessly connect with the new Western Sydney Airport. This visionary project driven by a joint venture between Plenary, RATP Dev, Siemens, and Webuild includes the construction of six new stations, 12 state-of-the-art metro trains, advanced rail systems, and a modern stabling and maintenance facility at Orchard Hills.\nBenefits: Competitive remuneration package; Diversity & inclusion initiatives; Employee recognition programs; Growth and development opportunities within a large-scale project; Health & wellbeing initiatives; Novated leases; Supportive and collaborative work culture.\nThe Opportunity:\nEmployed by Webuild, Parklife Metro is seeking a Commissioning Engineer - Mechanical to join our team based at Badgerys Creek.\nAs a Commissioning Engineer - Mechanical, you are responsible for overseeing and managing the testing & commissioning (T&C) process of mechanical systems, including Environmental Control Systems (ECS - i.e. HVAC), hydraulic services, fire systems (detection & protection), Tunnel Ventilation Systems (TVS), Lifts & Escalators, other related mechanical installations and interface with other systems (e.g. BMCS).\nDuties & Responsibilities:\nReview project drawings, specifications, and system designs to understand the scope and commissionability of mechanical systems\nDevelop and implement commissioning plans, procedures, and checklists for mechanical systems\nCoordinate with project managers, supervisors, contractors, and subcontractors to ensure alignment on T&C activities and timelines\nEnsure necessary documentation is prepared, including manuals, testing protocols, and schedules\nOversee the T&C and V&V of all mechanical systems, including testing, adjusting, and balancing (TAB) of (ECS) HVAC systems, hydraulic services, fire systems, TVS, Lifts & Escalators, and related equipment. Conduct functional tests to ensure systems operate according to design intent, performance criteria, and safety regulations\nTroubleshoot mechanical systems and resolve issues identified during T&C or operation\nCoordinate, facilitate and document outcomes of witness testing for mechanical systems\nRaise, track and manage the resolution of T&C related punch list, non-conformance & defect items of mechanical systems\nAct as the main point of contact for all T&C related matters for mechanical systems\nProvide regular updates on T&C progress, challenges, and resolutions to the T&C Team and project management teams\nSupport the T&C of interfacing systems (e.g. BMCS, TVCS, etc) in conjunction with other T&C engineers, contractors & vendors\nMaintain accurate records of T&C activities, including test results, equipment settings, as-built conditions & witnessing activities\nCompile and submit final Test Reports detailing system performance, issues resolved, and compliance with project specifications\nAssist in the preparation and handover of mechanical systems to the client or operational teams upon successful T&C\nCriteria:\nBachelor's degree in Mechanical Engineering or related field\nMinimum of 3-5 years of experience in mechanical system commissioning or a related field, with a strong focus on (ECS) HVAC, hydraulic services, and fire systems\nExperience in commissioning for commercial, industrial, or large-scale construction projects is preferred. Strong knowledge of mechanica",
+   "sum": {
+    "about": "Webuild, for Parklife Metro JV on Sydney Metro – Western Sydney Airport, needs a mechanical commissioning engineer based at Badgerys Creek.",
+    "req": [
+     "Mechanical engineering degree",
+     "3–5 years mechanical systems commissioning",
+     "Strong HVAC, hydraulics and fire systems focus",
+     "Large-scale construction commissioning preferred",
+     "Good troubleshooting and documentation"
+    ],
+    "duties": [
+     "Write commissioning plans, procedures and checklists",
+     "Oversee T&C of HVAC, TVS, hydraulics, fire, lifts",
+     "Coordinate witness testing and punch lists",
+     "Troubleshoot issues found during T&C",
+     "Compile test reports and hand over systems"
+    ],
+    "ben": [
+     "Novated leases",
+     "Health and wellbeing initiatives",
+     "Recognition programs"
+    ],
+    "kw": [
+     "testing and commissioning",
+     "T&C",
+     "V&V",
+     "HVAC",
+     "TAB",
+     "tunnel ventilation",
+     "hydraulic services",
+     "fire systems",
+     "witness testing",
+     "punch list",
+     "BMCS",
+     "handover"
+    ],
+    "note": "Infrastructure building-services commissioning rather than process plant."
+   }
   },
   {
    "co": "ampol",
@@ -1859,7 +2429,45 @@
    "d": "2026-09-16",
    "u": "https://to.indeed.com/aacbw947y4zt",
    "lvl": "Manager",
-   "src": "Indeed"
+   "src": "Indeed",
+   "jd": "Nufarm is a global crop protection and seeds technologies company that helps farmers and businesses meet the global challenges of food, feed, fibre and fuel production.\nWe're looking for an experienced Maintenance Execution Manager to join our Manufacturing team based in Laverton North.\nReporting to the Engineering & Maintenance Lead, you'll be responsible for leading the site maintenance execution team and ensuring the safe, efficient and compliant delivery of all planned, preventative, predictive and breakdown maintenance activities across our Major Hazard Facility. Working closely with Operations, Planning, Reliability and Engineering, you'll play a critical role in maintaining asset integrity, improving plant performance and delivering successful shutdown and turnaround programs.\nWhat's in it for you?\nAccess to Share Plan (Shares in Nufarm!)\nAttractive salary and benefits package\nOpportunity to lead critical maintenance and reliability initiatives\nFlexible hybrid working arrangements and ability to work for a proudly Australian AgriChem business!\nJoin a collaborative and safety-focused leadership team\nCareer growth within a global organisation committed to innovation and continuous improvement\nHow You'll Help Us Grow\nLead and inspire a high-performing maintenance team, creating a culture built on safety, accountability, collaboration, and continuous improvement.\nDrive asset reliability and operational performance by overseeing preventative, corrective, and breakdown maintenance across the site.\nPartner with Operations, Engineering, Reliability, and Planning teams to maximise plant availability, optimise maintenance outcomes, and support business growth.\nChampion shutdowns, turnarounds, and continuous improvement initiatives, ensuring work is delivered safely, efficiently, and in line with performance and compliance expectations while leveraging your extensive technical leadership experience.\nBring your experience working in unionised and chemical manufacturing environments to help drive safe, efficient, and reliable plant operations while fostering strong stakeholder relationships.\nLead by example through strong leadership, clear communication, and effective collaboration, helping build a high-performing culture that empowers teams to achieve operational excellence.\nLeverage your knowledge of CMMS platforms (MEX preferred) and maintenance best practices, including Permit to Work, LOTO, and JSEA processes, to enhance asset reliability, safety, and continuous improvement across the site.\nCould This Be You?\nYou're a highly experienced maintenance leader (10+ years) with a strong engineering background and a proven track record of delivering safe, reliable and efficient maintenance outcomes in complex manufacturing or process industry environments. A hands-on and visible leader, you thrive on leading frontline teams, driving operational performance and managing maintenance execution, shutdowns, turnarounds and asset integrity programs.\nWith an Engineering degree (and preferably holding a Charted Engineer status) and experience leading unionised workforces, supervisors, tradespeople and contractors, you're equally comfortable hands on in the plant and engaging with senior stakeholders. You're passionate about safety, developing people and delivering results in high-risk environments. Experience within a Major Hazard Facility (MHF), chemical manufacturing or other high-hazard industries, together with knowledge of Safety Case requirements",
+   "sum": {
+    "about": "Nufarm's Laverton North agrichemical Major Hazard Facility needs a leader for all maintenance execution, shutdowns and turnarounds.",
+    "req": [
+     "Engineering degree; Chartered status preferred",
+     "10+ years maintenance leadership in manufacturing/process",
+     "Experience leading unionised trades and contractors",
+     "CMMS knowledge (MEX preferred)",
+     "Permit to Work, LOTO and JSEA practice",
+     "MHF / Safety Case experience highly regarded"
+    ],
+    "duties": [
+     "Lead the site maintenance execution team",
+     "Deliver planned, predictive and breakdown maintenance",
+     "Run shutdowns and turnarounds",
+     "Partner with operations, planning and reliability",
+     "Drive asset integrity and continuous improvement"
+    ],
+    "ben": [
+     "Share plan",
+     "Hybrid working",
+     "Attractive salary package"
+    ],
+    "kw": [
+     "maintenance execution",
+     "shutdowns",
+     "turnarounds",
+     "Major Hazard Facility",
+     "Safety Case",
+     "process safety",
+     "CMMS",
+     "MEX",
+     "permit to work",
+     "LOTO",
+     "asset integrity",
+     "chemical manufacturing"
+    ]
+   }
   },
   {
    "co": "ppg",
@@ -1869,7 +2477,38 @@
    "u": "https://to.indeed.com/aavjm7bxkqrt",
    "lvl": "Mid",
    "src": "Indeed",
-   "cn": "PPG"
+   "cn": "PPG",
+   "jd": "Maintenance Engineer - PPG Industries, Clayton\nThe Maintenance Engineer is an important technical leadership role responsible for ensuring the safe, compliant, and reliable operation of all site mechanical systems and process equipment. You will provide governance of mechanical integrity, statutory compliance, and asset reliability, while driving maintenance effectiveness, regulatory compliance, and continuous improvement in equipment performance and lifecycle management.\nKey Responsibilities\nLead and govern the reliability, safety, and compliance of site mechanical infrastructure, ensuring the availability and performance of rotating and static equipment\nOversees Mechanical Integrity programs, ensuring compliance with pressure equipment, piping systems, tanks, and lifting equipment requirements\nEnsure compliance with all mechanical regulatory and safety systems, maintaining safe work practices and statutory inspection programs\nManage and optimise mechanical maintenance systems (CMMS/MES), ensuring planning support, accurate data, and efficient backlog control\nProvide technical governance of mechanical standards, drawings, specifications, and procedures to ensure consistency, compliance, and quality across the site\nDrive continuous improvement in mechanical performance, including defect elimination, reliability improvements, and asset upgrades\nEnsures workforce competency and compliance for mechanical activities, identifying and addressing capability gaps\nAct as the site technical authority for mechanical engineering, supporting risk assessments, HAZOPs, and operational troubleshooting\nQualifications\nDegree in Mechanical Engineering or equivalent\nExperience in industrial or manufacturing environment\nKnowledge of rotating equipment, piping systems, tanks, and pressure systems\nExperience in mechanical safety and regulatory compliance\nAbout us: PPG: WE PROTECT AND BEAUTIFY THE WORLD. Through leadership in innovation, sustainability and color, PPG helps customers in industrial, transportation, consumer products, and construction markets and aftermarkets to enhance more surfaces in more ways than does any other company.\nAt PPG we use AI in the hiring process to make the process more efficient. AI tools do not make hiring decisions.",
+   "sum": {
+    "about": "PPG's Clayton paint plant wants a site mechanical technical authority covering integrity, compliance and reliability of process equipment.",
+    "type": "Full-time",
+    "req": [
+     "Mechanical engineering degree",
+     "Industrial or manufacturing experience",
+     "Rotating equipment, piping, tanks and pressure systems knowledge",
+     "Mechanical safety and regulatory compliance experience"
+    ],
+    "duties": [
+     "Govern reliability and compliance of mechanical assets",
+     "Run mechanical integrity programs for pressure equipment and piping",
+     "Manage CMMS data, planning support and backlog",
+     "Own mechanical standards, drawings and procedures",
+     "Support HAZOPs, risk assessments and troubleshooting",
+     "Drive defect elimination and upgrades"
+    ],
+    "kw": [
+     "mechanical integrity",
+     "pressure equipment",
+     "piping systems",
+     "rotating equipment",
+     "CMMS",
+     "statutory inspection",
+     "HAZOP",
+     "defect elimination",
+     "reliability",
+     "backlog management"
+    ]
+   }
   },
   {
    "co": "graincorp",
@@ -1879,21 +2518,25 @@
    "u": "https://to.indeed.com/aazspzvbt2wb",
    "lvl": "Mid",
    "src": "Indeed"
-  },
-  {
-   "co": "veolia",
-   "cn": "Veolia",
-   "sf": 12,
-   "sw": "Water and waste treatment",
-   "t": "Asset Engineer NSW",
-   "loc": "Tomago NSW",
-   "d": "2026-09-15",
-   "u": "https://to.indeed.com/aaqbpff6q2nr",
-   "lvl": "Mid",
-   "src": "Indeed"
   }
  ],
  "news": [
+  {
+   "d": "2026-10-26",
+   "tag": "metals",
+   "h": "Generation Steel signs BHP renewable power deal for Collie mill",
+   "p": "Generation Steel agreed a binding power purchase deal with BHP to supply wind and solar electricity for its proposed lower-carbon steel mill at Collie, WA. Capacity and timing details are still to come.",
+   "src": "https://www.australianmanufacturing.com.au/generation-steel-secures-renewable-energy-agreement-with-bhp-for-proposed-collie-steel-mill/",
+   "s": "Australian Manufacturing"
+  },
+  {
+   "d": "2026-10-20",
+   "tag": "eng",
+   "h": "NSW picks Teralba ex-mine site for state train factory",
+   "p": "The NSW Government named Glencore's former Teralba mine near Lake Macquarie as the preferred site for a state-owned train manufacturing plant, part of a $12B fleet program, with about 550 ongoing jobs expected.",
+   "src": "https://www.australianmanufacturing.com.au/hunter-train-manufacturing-facility-planned-for-former-teralba-mine-site/",
+   "s": "Australian Manufacturing"
+  },
   {
    "d": "2026-10-19",
    "tag": "food",
@@ -1960,10 +2603,26 @@
   },
   {
    "d": "2026-10-08",
+   "tag": "chem",
+   "h": "Air Liquide plans new air separation unit at Yennora, NSW",
+   "p": "Air Liquide will add an air separation unit at its Fairfield site in Yennora to make nitrogen and oxygen for industrial and medical users, with start-up targeted for 2028.",
+   "src": "https://www.australianmanufacturing.com.au/?p=196483",
+   "s": "Australian Manufacturing"
+  },
+  {
+   "d": "2026-10-08",
    "tag": "eng",
    "h": "Western Sydney Aerotropolis private investment reaches $34.6B",
    "p": "The Bradfield Development Authority reports $34.6 billion of private investment, with new advanced manufacturing and technology facilities expanding the region's industrial base.",
    "src": "https://www.australianmanufacturing.com.au/advanced-manufacturing-takes-centre-stage-as-aerotropolis-investment-reaches-34-6b/",
+   "s": "Australian Manufacturing"
+  },
+  {
+   "d": "2026-09-22",
+   "tag": "food",
+   "h": "Baiada opens large poultry processing plant in Tamworth",
+   "p": "Baiada's new Tamworth facility combines automated processing, packaging and logistics, handling about 1.5 million birds weekly, with approval to double that if a second line is added.",
+   "src": "https://www.australianmanufacturing.com.au/baiada-opens-new-manufacturing-facility-in-tamworth/",
    "s": "Australian Manufacturing"
   },
   {
@@ -1977,10 +2636,26 @@
   {
    "d": "2026-09-07",
    "tag": "saf",
+   "h": "Jet Zero's Townsville SAF refinery gets final development approval",
+   "p": "Project Ulysses in Townsville cleared its final development approval and closed a $30 million raise backed by Qantas and Airbus, with Posco International joining; about 1,000 construction jobs are expected.",
+   "src": "https://australianaviation.com.au/2026/09/jet-zero-wins-approval-for-major-townsville-saf-plant/",
+   "s": "Australian Aviation"
+  },
+  {
+   "d": "2026-09-07",
+   "tag": "saf",
    "h": "Jet Zero raises funds to finish FEED and approach FID",
    "p": "Jet Zero Australia closed a funding round backed by Qantas, Airbus and others to complete front-end engineering design for Project Ulysses; POSCO International joined as investor and the project received its final development permit.",
    "src": "https://biofuelsdigest.com/?p=1006876",
    "s": "Biofuels Digest"
+  },
+  {
+   "d": "2026-08-26",
+   "tag": "ref",
+   "h": "Geelong refinery near 90% while fire-hit alkylation unit awaits replacement",
+   "p": "Viva Energy's Corio refinery runs at about 90 per cent capacity after April's fire; full output needs a new alkylation unit, with technology options and insurer talks still under way.",
+   "src": "https://geelongindy.com.au/news/26-08-2026/geelong-refinery-long-way-from-return-to-full-capacity/",
+   "s": "Geelong Independent"
   },
   {
    "d": "2026-08-07",
@@ -2085,54 +2760,6 @@
    "p": "Resilient Energy Australia has secured 400 ha for a 210,000 bbl/day refinery producing mostly diesel. Queensland is in talks with several developers.",
    "src": "https://www.abc.net.au/news/2026-04-17/new-refinery-gladstone-proposal-oil-crisis/106576458",
    "s": "ABC News"
-  },
-  {
-   "d": "2026-04-15",
-   "tag": "ref",
-   "h": "Fire hits the Geelong refinery",
-   "p": "A fire at Viva Energy's Corio refinery, one of only two left in Australia, slowed production during a global fuel shock.",
-   "src": "https://www.portnews.com.au/story/9225113/fuel-production-slows-as-flames-engulf-refinery/",
-   "s": "AAP via Port News"
-  },
-  {
-   "d": "2026-03-20",
-   "tag": "ref",
-   "h": "Ampol pushes back the Lytton turnaround",
-   "p": "Scheduled maintenance at the 109,000 bbl/day refinery moves to August 2026 for about six weeks.",
-   "src": "https://www.argusmedia.com/en/news-and-insights/latest-market-news/2803760-australia-s-ampol-to-delay-lytton-refinery-turnaround",
-   "s": "Argus"
-  },
-  {
-   "d": "2026-03-19",
-   "tag": "ref",
-   "h": "Canberra revises refiner support trigger for Lytton and Geelong",
-   "p": "The government kept the 1.8 c/L payment cap but changed the trigger for refinery support payments, helping Ampol's Lytton and Viva's Geelong refineries at no extra cost.",
-   "src": "https://www.pulse.bot/energy/news/australia-extends-subsidy-plan-for-refiners-to-2030-0b6aad49-8dcc-40e8-98ad-830d6772a4dd/",
-   "s": "Pulse"
-  },
-  {
-   "d": "2026-03-10",
-   "tag": "saf",
-   "h": "South Australia to host HAMR's SAF plant",
-   "p": "HAMR Energy's planned $700–800 million methanol-to-jet facility has state government backing. The site is still being selected.",
-   "src": "https://australianaviation.com.au/2026/03/south-australia-to-host-major-sustainable-aviation-fuel-plant/",
-   "s": "Australian Aviation"
-  },
-  {
-   "d": "2026-02-11",
-   "tag": "saf",
-   "h": "HAMR Energy raises $10 million for Portland methanol-to-jet plant",
-   "p": "Qantas, Airbus and thyssenkrupp Uhde's SAF fund backed HAMR Energy's Series A, supporting its Portland Renewable Fuels project in Victoria targeting over 135 million litres of SAF a year.",
-   "src": "https://www.pulse.bot/entrepreneurship/news/hamr-energy-lands-10-million-runway-from-qantas-and-airbus-c1ce2f34-358b-428f-91fa-cd81ca274276",
-   "s": "Pulse"
-  },
-  {
-   "d": "2026-01-22",
-   "tag": "oil",
-   "h": "Cargill lodges plans for a 1.1 Mt canola plant in WA",
-   "p": "Project Crux would sit next to CBH's Kwinana Grain Terminal. WA grows more than half of Australia's canola but crushes only about a tenth of it.",
-   "src": "https://www.graincentral.com/news/cargill-progresses-plans-for-1-1mt-wa-crush-plant/",
-   "s": "Grain Central"
   }
  ],
  "people": [
@@ -2147,6 +2774,50 @@
   }
  ],
  "runs": [
+  {
+   "at": "2026-10-31T16:26:42+11:00",
+   "added": 13,
+   "seek": 0,
+   "indeed": 13,
+   "removed": 5,
+   "news": 2,
+   "jd": 29,
+   "github": "ok (synced by Claude)",
+   "note": "Indeed back online; 15 summaries written; Seek emails had no new relevant roles; removed 4 non-mechanical/building-services roles and 1 duplicate."
+  },
+  {
+   "at": "2026-10-31T12:21:05+11:00",
+   "added": 0,
+   "seek": 0,
+   "indeed": 0,
+   "removed": 0,
+   "news": 1,
+   "jd": 14,
+   "github": "failed: no push access (403, repo not authorized)",
+   "note": "Indeed connector failed to connect; Seek emails had no new relevant roles; web search found no new confirmable ads."
+  },
+  {
+   "at": "2026-10-31T08:20:57+11:00",
+   "added": 0,
+   "seek": 0,
+   "indeed": 0,
+   "removed": 0,
+   "news": 1,
+   "jd": 14,
+   "github": "failed: no push access (403, repo not authorized)",
+   "note": "Indeed connector failed to connect; Seek emails had no new relevant roles (AkzoNobel and North East Link roles already listed)."
+  },
+  {
+   "at": "2026-10-31T04:20:39+11:00",
+   "added": 0,
+   "seek": 0,
+   "indeed": 0,
+   "removed": 1,
+   "news": 2,
+   "jd": 14,
+   "github": "failed: no push access (403, repo not authorized)",
+   "note": "Indeed connector failed to connect; Seek email had no new relevant roles (AkzoNobel Engineering Manager already listed)."
+  },
   {
    "at": "2026-10-30T21:24:59+11:00",
    "added": 0,
