@@ -1,6 +1,113 @@
 {
- "updated": "2026-10-31T16:26:42+11:00",
+ "updated": "2026-11-02T00:21:12+11:00",
  "jobs": [
+  {
+   "co": "bayside",
+   "cn": "Bayside Group",
+   "sf": 16,
+   "sw": "Food manufacturing maintenance",
+   "t": "Maintenance Manager | Food Manufacturing",
+   "loc": "Chelsea Heights, Melbourne VIC",
+   "d": "2026-11-01",
+   "u": "https://www.seek.com.au/job/95258335",
+   "lvl": "Manager",
+   "src": "Seek"
+  },
+  {
+   "co": "godfreyhirst",
+   "cn": "Godfrey Hirst Australia",
+   "sf": 17,
+   "sw": "Carpet manufacturing plant",
+   "t": "Mechanical Engineer",
+   "loc": "South Geelong, Geelong VIC",
+   "d": "2026-11-01",
+   "u": "https://www.seek.com.au/job/95313461",
+   "lvl": "Mid",
+   "src": "Seek",
+   "sum": {
+    "sal": "Annual Salary + Superannuation",
+    "note": "Recommended by Seek on 1 Nov 2026 as a job matching your experience."
+   }
+  },
+  {
+   "co": "babbage",
+   "cn": "Babbage (recruiter)",
+   "sf": 15,
+   "sw": "Process project engineering",
+   "t": "Process Project Engineer",
+   "loc": "Melbourne VIC",
+   "d": "2026-11-01",
+   "u": "https://www.seek.com.au/job/95152711",
+   "lvl": "Mid",
+   "src": "Seek",
+   "sum": {
+    "note": "Recruiter ad (Babbage.co.nz); Seek rated you a very strong applicant. Check the ad for the end client."
+   }
+  },
+  {
+   "co": "profoundqld",
+   "cn": "PROFOUND (recruiter)",
+   "sf": 18,
+   "sw": "Recruiter, process plant role",
+   "t": "Mechanical Engineer",
+   "loc": "Brisbane QLD",
+   "d": "2026-11-01",
+   "u": "https://www.seek.com.au/job/95519501",
+   "lvl": "Senior",
+   "src": "Seek",
+   "sum": {
+    "sal": "AUD 140000 - 200000 per annum",
+    "note": "Seek recommendation tagged Process Plant; Seek rated you a strong applicant."
+   }
+  },
+  {
+   "co": "unicorn",
+   "cn": "Unicorn Speciality Foods",
+   "sf": 16,
+   "sw": "Food manufacturing plant",
+   "t": "maintenance and mechanical engineer",
+   "loc": "Rocklea, Brisbane QLD",
+   "d": "2026-11-01",
+   "u": "https://www.seek.com.au/job/95546689",
+   "lvl": "Mid",
+   "src": "Seek"
+  },
+  {
+   "co": "apa",
+   "cn": "APA Group",
+   "sf": 13,
+   "sw": "Gas pipelines and plants",
+   "t": "Senior Mechanical Engineer - Project",
+   "loc": "Brisbane QLD",
+   "d": "2026-11-01",
+   "u": "https://www.seek.com.au/job/95602616",
+   "lvl": "Senior",
+   "src": "Seek"
+  },
+  {
+   "co": "cimic",
+   "cn": "CIMIC Group",
+   "sf": 8,
+   "sw": "Construction and infrastructure",
+   "t": "Project Engineer - Mechanical",
+   "loc": "Laverton North, Melbourne VIC",
+   "d": "2026-11-01",
+   "u": "https://www.seek.com.au/job/95084996",
+   "lvl": "Mid",
+   "src": "Seek"
+  },
+  {
+   "co": "manildra",
+   "t": "Mechanical Engineer",
+   "loc": "Bomaderry (Nowra), NSW",
+   "d": "2026-10-31",
+   "u": "https://www.seek.com.au/job/95600879",
+   "lvl": "Mid",
+   "src": "Seek",
+   "sum": {
+    "note": "You applied on 31 Oct 2026 via Seek"
+   }
+  },
   {
    "co": "scalzo",
    "cn": "Scalzo Food Industries",
@@ -123,6 +230,18 @@
    }
   },
   {
+   "co": "equans",
+   "cn": "Equans",
+   "sf": 14,
+   "sw": "EPC energy and services",
+   "t": "Planner EPC F/M",
+   "loc": "Sydney NSW",
+   "d": "2026-10-30",
+   "u": "https://to.indeed.com/aaynpclgcxc2",
+   "lvl": "Mid",
+   "src": "Indeed"
+  },
+  {
    "co": "kannegiesser",
    "cn": "Kannegiesser Australia",
    "sf": 14,
@@ -141,7 +260,10 @@
    "d": "2026-10-29",
    "u": "https://lnkd.in/gYmd2ESw",
    "lvl": "Mid / lead",
-   "src": "LinkedIn"
+   "src": "LinkedIn",
+   "sum": {
+    "note": "Cleanaway careers site lists this as opened 28 Oct 2026, closing 6 Nov 2026."
+   }
   },
   {
    "co": "cpb",
@@ -255,7 +377,8 @@
      "Commissioning",
      "OEM manuals",
      "KPIs"
-    ]
+    ],
+    "note": "You applied on 1 Nov 2026 via Seek"
    }
   },
   {
@@ -380,6 +503,36 @@
    "loc": "Brisbane QLD",
    "d": "2026-10-29",
    "u": "https://to.indeed.com/aaghtbzjphzy",
+   "lvl": "Mid",
+   "src": "Indeed"
+  },
+  {
+   "co": "airservices",
+   "cn": "Airservices Australia",
+   "sf": 7,
+   "sw": "Airport mechanical infrastructure",
+   "t": "Senior Engineering Specialist (Mechanical)",
+   "loc": "Melbourne Airport, Melbourne VIC",
+   "d": "2026-10-29",
+   "u": "https://www.seek.com.au/job/95507766",
+   "lvl": "Senior",
+   "src": "Seek"
+  },
+  {
+   "co": "ugl",
+   "t": "Senior Planner",
+   "loc": "Tullamarine, Melbourne VIC",
+   "d": "2026-10-29",
+   "u": "https://to.indeed.com/aa4d6hz2rh4n",
+   "lvl": "Senior",
+   "src": "Indeed"
+  },
+  {
+   "co": "santos",
+   "t": "Mechanical Maintenance Planner",
+   "loc": "Brisbane QLD",
+   "d": "2026-10-29",
+   "u": "https://to.indeed.com/aa6ch74g7vdb",
    "lvl": "Mid",
    "src": "Indeed"
   },
@@ -637,7 +790,10 @@
    "d": "2026-10-27",
    "u": "https://www.seek.com.au/job/95502764",
    "lvl": "Mid",
-   "src": "Seek"
+   "src": "Seek",
+   "sum": {
+    "note": "You applied on 2026-10-29 via Seek; Seek said on 1 Nov the application is unlikely to progress."
+   }
   },
   {
    "co": "multiworks",
@@ -790,6 +946,15 @@
     ],
     "note": "Asks for a chemical engineering degree; closes 24 Nov 2026."
    }
+  },
+  {
+   "co": "monadelphous",
+   "t": "Mechanical Supervisor",
+   "loc": "Perth WA",
+   "d": "2026-10-27",
+   "u": "https://to.indeed.com/aazmtnykxfhs",
+   "lvl": "Lead",
+   "src": "Indeed"
   },
   {
    "co": "xenco",
@@ -955,6 +1120,16 @@
     ],
     "note": "Remote FIFO site in WA Goldfields; closes 26 Nov 2026."
    }
+  },
+  {
+   "co": "downer",
+   "t": "Mechanical Supervisor - Eraring",
+   "loc": "Eraring, Lake Macquarie NSW",
+   "d": "2026-10-25",
+   "u": "https://to.indeed.com/aav9fg2796kx",
+   "lvl": "Lead",
+   "src": "Indeed",
+   "cn": "Downer Group"
   },
   {
    "co": "steritech",
@@ -1164,6 +1339,24 @@
      "FMCG"
     ]
    }
+  },
+  {
+   "co": "monadelphous",
+   "t": "Offshore Mechanical Coordinator",
+   "loc": "Perth WA",
+   "d": "2026-10-23",
+   "u": "https://to.indeed.com/aah8rgyrcrcc",
+   "lvl": "Mid / lead",
+   "src": "Indeed"
+  },
+  {
+   "co": "sulzer",
+   "t": "Mechanical Supervisor",
+   "loc": "Perth WA",
+   "d": "2026-10-23",
+   "u": "https://to.indeed.com/aas4y4t4s2pq",
+   "lvl": "Lead",
+   "src": "Indeed"
   },
   {
    "co": "microbiomics",
@@ -1382,6 +1575,18 @@
    "u": "https://to.indeed.com/aabvbn2z6gfb",
    "lvl": "Mid",
    "src": "Indeed"
+  },
+  {
+   "co": "civmec",
+   "t": "Engineer Fabrication",
+   "loc": "Tomago, Newcastle NSW",
+   "d": "2026-10-20",
+   "u": "https://to.indeed.com/aay9kfgvjqyz",
+   "lvl": "Mid",
+   "src": "Indeed",
+   "cn": "Civmec",
+   "sf": 17,
+   "sw": "SMP construction and shutdowns"
   },
   {
    "co": "dyno",
@@ -1632,6 +1837,18 @@
    }
   },
   {
+   "co": "webuild",
+   "t": "Hydrotest Supervisor",
+   "loc": "Perth WA",
+   "d": "2026-10-14",
+   "u": "https://to.indeed.com/aajq24mxjn8y",
+   "lvl": "Lead",
+   "src": "Indeed",
+   "cn": "Webuild",
+   "sf": 8,
+   "sw": "Infrastructure contractor"
+  },
+  {
    "co": "orica",
    "t": "Engineer – Product Development",
    "loc": "Lutwyche QLD",
@@ -1697,6 +1914,18 @@
    "u": "https://to.indeed.com/aaz8c76h9w2p",
    "lvl": "Mid",
    "src": "Indeed"
+  },
+  {
+   "co": "trinzic",
+   "t": "Mechanical Engineer",
+   "loc": "Matraville, Sydney NSW",
+   "d": "2026-10-13",
+   "u": "https://to.indeed.com/aa6vjjhvnh7r",
+   "lvl": "Mid",
+   "src": "Indeed",
+   "cn": "Trinzic",
+   "sf": 17,
+   "sw": "Chemicals manufacturing site"
   },
   {
    "co": "catalyst",
@@ -1854,6 +2083,27 @@
    "src": "Indeed"
   },
   {
+   "co": "monadelphous",
+   "t": "Senior Planner",
+   "loc": "Brisbane QLD",
+   "d": "2026-10-07",
+   "u": "https://to.indeed.com/aaj4hzls666h",
+   "lvl": "Senior",
+   "src": "Indeed"
+  },
+  {
+   "co": "graincorp",
+   "t": "Project Engineer - Numurkah",
+   "loc": "Numurkah VIC",
+   "d": "2026-10-06",
+   "u": "https://www.seek.com.au/job/95106719",
+   "lvl": "Mid",
+   "src": "Seek",
+   "sum": {
+    "note": "GrainCorp's Numurkah oilseed crush plant, Australia's largest. Listed on Seek and earlier on Indeed (6 Oct); check it's still open."
+   }
+  },
+  {
    "co": "orica",
    "t": "Mechanical Engineer – Product Development",
    "loc": "Welshpool WA",
@@ -2001,6 +2251,27 @@
    "d": "2026-10-06",
    "u": "https://to.indeed.com/aalbyxgymcgh",
    "lvl": "Mid",
+   "src": "Indeed"
+  },
+  {
+   "co": "civmec",
+   "t": "Engineer Project",
+   "loc": "Port Hedland WA",
+   "d": "2026-10-06",
+   "u": "https://to.indeed.com/aahcmpzqnzkn",
+   "lvl": "Mid",
+   "src": "Indeed",
+   "cn": "Civmec",
+   "sf": 17,
+   "sw": "SMP construction and shutdowns"
+  },
+  {
+   "co": "ixom",
+   "t": "Project Manager",
+   "loc": "East Melbourne VIC",
+   "d": "2026-10-06",
+   "u": "https://to.indeed.com/aaxpv2rwbcdw",
+   "lvl": "Manager",
    "src": "Indeed"
   },
   {
@@ -2392,135 +2663,17 @@
     ],
     "note": "Infrastructure building-services commissioning rather than process plant."
    }
-  },
-  {
-   "co": "ampol",
-   "t": "Area Maintenance Scheduler (Wood)",
-   "loc": "Lytton QLD",
-   "d": "2026-09-17",
-   "u": "https://to.indeed.com/aahxw77x7ny2",
-   "lvl": "Mid",
-   "src": "Indeed"
-  },
-  {
-   "co": "psc",
-   "cn": "PSC Biotech",
-   "t": "Process Engineer – Utilities (contract)",
-   "loc": "Melbourne VIC",
-   "d": "2026-09-17",
-   "u": "https://to.indeed.com/aahybx6pkd97",
-   "lvl": "Mid",
-   "src": "Indeed"
-  },
-  {
-   "co": "ppg",
-   "t": "Maintenance Supervisor",
-   "loc": "Clayton VIC",
-   "d": "2026-09-17",
-   "u": "https://to.indeed.com/aahykrbnvqhp",
-   "lvl": "Mid / lead",
-   "src": "Indeed",
-   "cn": "PPG"
-  },
-  {
-   "co": "nufarm",
-   "t": "Maintenance Execution Manager",
-   "loc": "Laverton North VIC",
-   "d": "2026-09-16",
-   "u": "https://to.indeed.com/aacbw947y4zt",
-   "lvl": "Manager",
-   "src": "Indeed",
-   "jd": "Nufarm is a global crop protection and seeds technologies company that helps farmers and businesses meet the global challenges of food, feed, fibre and fuel production.\nWe're looking for an experienced Maintenance Execution Manager to join our Manufacturing team based in Laverton North.\nReporting to the Engineering & Maintenance Lead, you'll be responsible for leading the site maintenance execution team and ensuring the safe, efficient and compliant delivery of all planned, preventative, predictive and breakdown maintenance activities across our Major Hazard Facility. Working closely with Operations, Planning, Reliability and Engineering, you'll play a critical role in maintaining asset integrity, improving plant performance and delivering successful shutdown and turnaround programs.\nWhat's in it for you?\nAccess to Share Plan (Shares in Nufarm!)\nAttractive salary and benefits package\nOpportunity to lead critical maintenance and reliability initiatives\nFlexible hybrid working arrangements and ability to work for a proudly Australian AgriChem business!\nJoin a collaborative and safety-focused leadership team\nCareer growth within a global organisation committed to innovation and continuous improvement\nHow You'll Help Us Grow\nLead and inspire a high-performing maintenance team, creating a culture built on safety, accountability, collaboration, and continuous improvement.\nDrive asset reliability and operational performance by overseeing preventative, corrective, and breakdown maintenance across the site.\nPartner with Operations, Engineering, Reliability, and Planning teams to maximise plant availability, optimise maintenance outcomes, and support business growth.\nChampion shutdowns, turnarounds, and continuous improvement initiatives, ensuring work is delivered safely, efficiently, and in line with performance and compliance expectations while leveraging your extensive technical leadership experience.\nBring your experience working in unionised and chemical manufacturing environments to help drive safe, efficient, and reliable plant operations while fostering strong stakeholder relationships.\nLead by example through strong leadership, clear communication, and effective collaboration, helping build a high-performing culture that empowers teams to achieve operational excellence.\nLeverage your knowledge of CMMS platforms (MEX preferred) and maintenance best practices, including Permit to Work, LOTO, and JSEA processes, to enhance asset reliability, safety, and continuous improvement across the site.\nCould This Be You?\nYou're a highly experienced maintenance leader (10+ years) with a strong engineering background and a proven track record of delivering safe, reliable and efficient maintenance outcomes in complex manufacturing or process industry environments. A hands-on and visible leader, you thrive on leading frontline teams, driving operational performance and managing maintenance execution, shutdowns, turnarounds and asset integrity programs.\nWith an Engineering degree (and preferably holding a Charted Engineer status) and experience leading unionised workforces, supervisors, tradespeople and contractors, you're equally comfortable hands on in the plant and engaging with senior stakeholders. You're passionate about safety, developing people and delivering results in high-risk environments. Experience within a Major Hazard Facility (MHF), chemical manufacturing or other high-hazard industries, together with knowledge of Safety Case requirements",
-   "sum": {
-    "about": "Nufarm's Laverton North agrichemical Major Hazard Facility needs a leader for all maintenance execution, shutdowns and turnarounds.",
-    "req": [
-     "Engineering degree; Chartered status preferred",
-     "10+ years maintenance leadership in manufacturing/process",
-     "Experience leading unionised trades and contractors",
-     "CMMS knowledge (MEX preferred)",
-     "Permit to Work, LOTO and JSEA practice",
-     "MHF / Safety Case experience highly regarded"
-    ],
-    "duties": [
-     "Lead the site maintenance execution team",
-     "Deliver planned, predictive and breakdown maintenance",
-     "Run shutdowns and turnarounds",
-     "Partner with operations, planning and reliability",
-     "Drive asset integrity and continuous improvement"
-    ],
-    "ben": [
-     "Share plan",
-     "Hybrid working",
-     "Attractive salary package"
-    ],
-    "kw": [
-     "maintenance execution",
-     "shutdowns",
-     "turnarounds",
-     "Major Hazard Facility",
-     "Safety Case",
-     "process safety",
-     "CMMS",
-     "MEX",
-     "permit to work",
-     "LOTO",
-     "asset integrity",
-     "chemical manufacturing"
-    ]
-   }
-  },
-  {
-   "co": "ppg",
-   "t": "Maintenance Engineer",
-   "loc": "Clayton VIC",
-   "d": "2026-09-16",
-   "u": "https://to.indeed.com/aavjm7bxkqrt",
-   "lvl": "Mid",
-   "src": "Indeed",
-   "cn": "PPG",
-   "jd": "Maintenance Engineer - PPG Industries, Clayton\nThe Maintenance Engineer is an important technical leadership role responsible for ensuring the safe, compliant, and reliable operation of all site mechanical systems and process equipment. You will provide governance of mechanical integrity, statutory compliance, and asset reliability, while driving maintenance effectiveness, regulatory compliance, and continuous improvement in equipment performance and lifecycle management.\nKey Responsibilities\nLead and govern the reliability, safety, and compliance of site mechanical infrastructure, ensuring the availability and performance of rotating and static equipment\nOversees Mechanical Integrity programs, ensuring compliance with pressure equipment, piping systems, tanks, and lifting equipment requirements\nEnsure compliance with all mechanical regulatory and safety systems, maintaining safe work practices and statutory inspection programs\nManage and optimise mechanical maintenance systems (CMMS/MES), ensuring planning support, accurate data, and efficient backlog control\nProvide technical governance of mechanical standards, drawings, specifications, and procedures to ensure consistency, compliance, and quality across the site\nDrive continuous improvement in mechanical performance, including defect elimination, reliability improvements, and asset upgrades\nEnsures workforce competency and compliance for mechanical activities, identifying and addressing capability gaps\nAct as the site technical authority for mechanical engineering, supporting risk assessments, HAZOPs, and operational troubleshooting\nQualifications\nDegree in Mechanical Engineering or equivalent\nExperience in industrial or manufacturing environment\nKnowledge of rotating equipment, piping systems, tanks, and pressure systems\nExperience in mechanical safety and regulatory compliance\nAbout us: PPG: WE PROTECT AND BEAUTIFY THE WORLD. Through leadership in innovation, sustainability and color, PPG helps customers in industrial, transportation, consumer products, and construction markets and aftermarkets to enhance more surfaces in more ways than does any other company.\nAt PPG we use AI in the hiring process to make the process more efficient. AI tools do not make hiring decisions.",
-   "sum": {
-    "about": "PPG's Clayton paint plant wants a site mechanical technical authority covering integrity, compliance and reliability of process equipment.",
-    "type": "Full-time",
-    "req": [
-     "Mechanical engineering degree",
-     "Industrial or manufacturing experience",
-     "Rotating equipment, piping, tanks and pressure systems knowledge",
-     "Mechanical safety and regulatory compliance experience"
-    ],
-    "duties": [
-     "Govern reliability and compliance of mechanical assets",
-     "Run mechanical integrity programs for pressure equipment and piping",
-     "Manage CMMS data, planning support and backlog",
-     "Own mechanical standards, drawings and procedures",
-     "Support HAZOPs, risk assessments and troubleshooting",
-     "Drive defect elimination and upgrades"
-    ],
-    "kw": [
-     "mechanical integrity",
-     "pressure equipment",
-     "piping systems",
-     "rotating equipment",
-     "CMMS",
-     "statutory inspection",
-     "HAZOP",
-     "defect elimination",
-     "reliability",
-     "backlog management"
-    ]
-   }
-  },
-  {
-   "co": "graincorp",
-   "t": "Maintenance Planner",
-   "loc": "Dubbo NSW",
-   "d": "2026-09-16",
-   "u": "https://to.indeed.com/aazspzvbt2wb",
-   "lvl": "Mid",
-   "src": "Indeed"
   }
  ],
  "news": [
+  {
+   "d": "2026-10-28",
+   "tag": "metals",
+   "h": "Aluminium Council wants bauxite and alumina on critical minerals list",
+   "p": "The industry body's new report argues bauxite, alumina and aluminium should be listed as critical minerals, warning refinery closures and rising Indonesian capacity threaten a $7.9 billion alumina refining sector.",
+   "src": "https://www.australianmanufacturing.com.au/aluminium-council-calls-for-bauxite-alumina-and-aluminium-to-join-critical-minerals-list/",
+   "s": "Australian Manufacturing"
+  },
   {
    "d": "2026-10-26",
    "tag": "metals",
@@ -2752,14 +2905,6 @@
    "p": "The Victorian Investment Fund is supporting a $92 million upgrade of George Weston Foods' Ballarat flour mill, adding new milling technology and about 47 jobs.",
    "src": "https://www.pulse.bot/supply-chain/news/manufacturing-boost-as-victorian-govt-backs-92m-flour-mill-expansion-in-ballarat-ae16a7eb-16f3-41b7-a872-d8730adacc99/",
    "s": "Pulse (via Australian Manufacturing)"
-  },
-  {
-   "d": "2026-04-17",
-   "tag": "ref",
-   "h": "An $11 billion refinery is proposed for Gladstone",
-   "p": "Resilient Energy Australia has secured 400 ha for a 210,000 bbl/day refinery producing mostly diesel. Queensland is in talks with several developers.",
-   "src": "https://www.abc.net.au/news/2026-04-17/new-refinery-gladstone-proposal-oil-crisis/106576458",
-   "s": "ABC News"
   }
  ],
  "people": [
@@ -2774,6 +2919,72 @@
   }
  ],
  "runs": [
+  {
+   "at": "2026-11-02T00:21:12+11:00",
+   "added": 0,
+   "seek": 0,
+   "indeed": 0,
+   "removed": 3,
+   "news": 0,
+   "jd": 27,
+   "github": "ok (synced by Claude)",
+   "note": "Indeed connector failed to connect; Seek emails and 13 web searches found no new relevant roles; dropped roles older than 45 days."
+  },
+  {
+   "at": "2026-11-01T20:28:37+11:00",
+   "added": 5,
+   "seek": 4,
+   "indeed": 1,
+   "removed": 0,
+   "news": 0,
+   "jd": 27,
+   "github": "failed: no push access (403, repo not authorized)",
+   "note": "Indeed hit a persistent rate limit after 12 searches, so no new descriptions; 4 Seek recommendations added; no new news found."
+  },
+  {
+   "at": "2026-11-01T16:35:52+11:00",
+   "added": 12,
+   "seek": 0,
+   "indeed": 12,
+   "removed": 0,
+   "news": 1,
+   "jd": 27,
+   "github": "failed: no push access (403, repo not authorized)",
+   "note": "Indeed job-details hit a persistent rate limit, so no new descriptions or summaries; Seek emails had no new relevant roles (applied-job notes updated)."
+  },
+  {
+   "at": "2026-11-01T12:20:37+11:00",
+   "added": 2,
+   "seek": 2,
+   "indeed": 0,
+   "removed": 0,
+   "news": 0,
+   "jd": 27,
+   "github": "failed: no push access (403, repo not authorized)",
+   "note": "Indeed connector failed to connect; 12 web searches found only expired or filled priority-employer ads; no new news items."
+  },
+  {
+   "at": "2026-11-01T08:23:17+11:00",
+   "added": 2,
+   "seek": 2,
+   "indeed": 0,
+   "removed": 0,
+   "news": 0,
+   "jd": 27,
+   "github": "failed: no push access (403, repo not authorized)",
+   "note": "Indeed connector failed to connect; 10+ web searches found only expired priority-employer ads; marked Re.Group Reliability Engineer as applied."
+  },
+  {
+   "at": "2026-11-01T04:20:31+11:00",
+   "added": 2,
+   "seek": 2,
+   "indeed": 0,
+   "removed": 3,
+   "news": 0,
+   "jd": 27,
+   "github": "failed: no push access (403, repo not authorized)",
+   "note": "Manual check of priority employers: added Manildra Mechanical Engineer (you applied 31 Oct) and GrainCorp Numurkah Project Engineer. Indeed connector down."
+  },
   {
    "at": "2026-10-31T16:26:42+11:00",
    "added": 13,
