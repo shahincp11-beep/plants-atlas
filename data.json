@@ -1,6 +1,34 @@
 {
- "updated": "2026-11-02T00:21:12+11:00",
+ "updated": "2026-11-03T04:28:35+11:00",
  "jobs": [
+  {
+   "co": "synertec",
+   "cn": "Synertec",
+   "sf": 20,
+   "sw": "Process engineering & piping design",
+   "t": "Mechanical Piping Designer",
+   "loc": "Camberwell, Melbourne VIC",
+   "d": "2026-11-02",
+   "u": "https://www.seek.com.au/job/95541744",
+   "lvl": "Mid",
+   "src": "Seek"
+  },
+  {
+   "co": "coretalent",
+   "cn": "Core Talent (recruiter)",
+   "sf": 12,
+   "sw": "Recruiter, sector not stated",
+   "t": "Mechanical Engineer",
+   "loc": "Sydney NSW",
+   "d": "2026-11-01",
+   "u": "https://www.seek.com.au/job/95508086",
+   "lvl": "Senior",
+   "src": "Seek",
+   "sum": {
+    "sal": "AUD 210000 - 340000 per annum",
+    "note": "Seen in Seek's 'jobs that match your experience' list on 1 Nov 2026."
+   }
+  },
   {
    "co": "bayside",
    "cn": "Bayside Group",
@@ -95,6 +123,15 @@
    "u": "https://www.seek.com.au/job/95084996",
    "lvl": "Mid",
    "src": "Seek"
+  },
+  {
+   "co": "ugl",
+   "t": "Mid Term Scheduler",
+   "loc": "Perth WA",
+   "d": "2026-11-01",
+   "u": "https://to.indeed.com/aa4sc2zk2dk4",
+   "lvl": "Mid",
+   "src": "Indeed"
   },
   {
    "co": "manildra",
@@ -507,18 +544,6 @@
    "src": "Indeed"
   },
   {
-   "co": "airservices",
-   "cn": "Airservices Australia",
-   "sf": 7,
-   "sw": "Airport mechanical infrastructure",
-   "t": "Senior Engineering Specialist (Mechanical)",
-   "loc": "Melbourne Airport, Melbourne VIC",
-   "d": "2026-10-29",
-   "u": "https://www.seek.com.au/job/95507766",
-   "lvl": "Senior",
-   "src": "Seek"
-  },
-  {
    "co": "ugl",
    "t": "Senior Planner",
    "loc": "Tullamarine, Melbourne VIC",
@@ -808,18 +833,6 @@
    "src": "Seek"
   },
   {
-   "co": "svhm",
-   "cn": "St Vincent's Hospital Melbourne",
-   "sf": 6,
-   "sw": "Hospital engineering services",
-   "t": "Engineering Supervisor",
-   "loc": "Fitzroy, Melbourne VIC",
-   "d": "2026-10-27",
-   "u": "https://www.seek.com.au/job/95488235",
-   "lvl": "Manager",
-   "src": "Seek"
-  },
-  {
    "co": "monadelphous",
    "t": "Project Engineer",
    "loc": "Perth WA",
@@ -979,15 +992,6 @@
    "u": "https://www.seek.com.au/job/95457683",
    "lvl": "Mid",
    "src": "Seek"
-  },
-  {
-   "co": "bhp",
-   "t": "Mine Scheduling Engineer – Olympic Dam",
-   "loc": "Olympic Dam SA",
-   "d": "2026-10-26",
-   "u": "https://to.indeed.com/aa2kknq4lmqp",
-   "lvl": "Mid",
-   "src": "Indeed"
   },
   {
    "co": "acciona",
@@ -1355,6 +1359,15 @@
    "loc": "Perth WA",
    "d": "2026-10-23",
    "u": "https://to.indeed.com/aas4y4t4s2pq",
+   "lvl": "Lead",
+   "src": "Indeed"
+  },
+  {
+   "co": "clough",
+   "t": "SMP Supervisor",
+   "loc": "Perth WA",
+   "d": "2026-10-23",
+   "u": "https://to.indeed.com/aabfkrtsfmzp",
    "lvl": "Lead",
    "src": "Indeed"
   },
@@ -1753,6 +1766,18 @@
    "src": "Indeed"
   },
   {
+   "co": "grengineering",
+   "cn": "GR Engineering",
+   "sf": 21,
+   "sw": "EPC process-plant contractor",
+   "t": "Senior Project Engineer",
+   "loc": "Brisbane QLD",
+   "d": "2026-10-16",
+   "u": "https://to.indeed.com/aaw2gyzngczh",
+   "lvl": "Senior",
+   "src": "Indeed"
+  },
+  {
    "co": "csl",
    "t": "C&Q Engineer",
    "loc": "Broadmeadows VIC",
@@ -1793,6 +1818,18 @@
     ],
     "note": "Applications close 19 November 2026."
    }
+  },
+  {
+   "co": "thales",
+   "cn": "Thales",
+   "sf": 15,
+   "sw": "Munitions manufacturing plant",
+   "t": "Project Engineer",
+   "loc": "Benalla VIC",
+   "d": "2026-10-15",
+   "u": "https://to.indeed.com/aa2byx8dhfgj",
+   "lvl": "Mid",
+   "src": "Indeed"
   },
   {
    "co": "monadelphous",
@@ -1904,18 +1941,6 @@
    "src": "Indeed"
   },
   {
-   "co": "amazon",
-   "cn": "Amazon (AWS)",
-   "sf": 7,
-   "sw": "Data centre operations",
-   "t": "CMMS Engineer, InfraOps",
-   "loc": "Melbourne VIC",
-   "d": "2026-10-13",
-   "u": "https://to.indeed.com/aaz8c76h9w2p",
-   "lvl": "Mid",
-   "src": "Indeed"
-  },
-  {
    "co": "trinzic",
    "t": "Mechanical Engineer",
    "loc": "Matraville, Sydney NSW",
@@ -1928,6 +1953,18 @@
    "sw": "Chemicals manufacturing site"
   },
   {
+   "co": "graymont",
+   "cn": "Graymont",
+   "sf": 16,
+   "sw": "Lime manufacturing plant",
+   "t": "Maintenance Planner",
+   "loc": "Attunga NSW",
+   "d": "2026-10-13",
+   "u": "https://to.indeed.com/aaqfm6hkxkts",
+   "lvl": "Mid",
+   "src": "Indeed"
+  },
+  {
    "co": "catalyst",
    "cn": "Catalyst Metals",
    "sf": 11,
@@ -1936,6 +1973,18 @@
    "loc": "Perth WA (FIFO)",
    "d": "2026-10-12",
    "u": "https://to.indeed.com/aajd6wzg9q88",
+   "lvl": "Mid",
+   "src": "Indeed"
+  },
+  {
+   "co": "steris",
+   "cn": "STERIS",
+   "sf": 12,
+   "sw": "Sterilisation equipment and services",
+   "t": "Project Engineer",
+   "loc": "Sydney NSW",
+   "d": "2026-10-12",
+   "u": "https://to.indeed.com/aadkjyhcssff",
    "lvl": "Mid",
    "src": "Indeed"
   },
@@ -2111,18 +2160,6 @@
    "u": "https://to.indeed.com/aaq79fqv8w7d",
    "lvl": "Mid",
    "src": "Indeed"
-  },
-  {
-   "co": "airtrunk",
-   "t": "Senior Mechanical Engineer",
-   "loc": "Sydney NSW",
-   "d": "2026-10-06",
-   "u": "https://to.indeed.com/aap6k4hvhrs9",
-   "lvl": "Senior",
-   "src": "Indeed",
-   "cn": "AirTrunk",
-   "sf": 8,
-   "sw": "Data centre facilities"
   },
   {
    "co": "metso",
@@ -2414,6 +2451,18 @@
    "src": "Indeed"
   },
   {
+   "co": "webuild",
+   "cn": "Webuild",
+   "sf": 8,
+   "sw": "Infrastructure contractor",
+   "t": "Senior Project Engineer",
+   "loc": "Perth WA",
+   "d": "2026-10-02",
+   "u": "https://to.indeed.com/aajp2lt6gntn",
+   "lvl": "Senior",
+   "src": "Indeed"
+  },
+  {
    "co": "perdaman",
    "t": "Inspection & Condition Monitoring Senior Engineer",
    "loc": "Karratha WA",
@@ -2475,6 +2524,15 @@
    }
   },
   {
+   "co": "visy",
+   "t": "Project Engineer - Visy Tumut",
+   "loc": "Tumut NSW",
+   "d": "2026-09-30",
+   "u": "https://to.indeed.com/aa2jl684c8k9",
+   "lvl": "Mid",
+   "src": "Indeed"
+  },
+  {
    "co": "dulux",
    "t": "Project Engineer",
    "loc": "Rocklea QLD",
@@ -2495,6 +2553,18 @@
    "loc": "Rydalmere NSW",
    "d": "2026-09-28",
    "u": "https://to.indeed.com/aa72stjvkrh6",
+   "lvl": "Mid",
+   "src": "Indeed"
+  },
+  {
+   "co": "ampcontrol",
+   "cn": "Ampcontrol",
+   "sf": 15,
+   "sw": "Industrial equipment manufacturer",
+   "t": "Mechanical Engineer",
+   "loc": "Tomago, Newcastle NSW",
+   "d": "2026-09-28",
+   "u": "https://to.indeed.com/aabpv2mmwrvz",
    "lvl": "Mid",
    "src": "Indeed"
   },
@@ -2615,6 +2685,15 @@
    "sw": "Chemical manufacturing plant"
   },
   {
+   "co": "clough",
+   "t": "Commissioning Engineer - Mechanical",
+   "loc": "Sydney NSW",
+   "d": "2026-09-21",
+   "u": "https://to.indeed.com/aat668zkybcq",
+   "lvl": "Mid / lead",
+   "src": "Indeed"
+  },
+  {
    "co": "webuild",
    "cn": "Webuild",
    "sf": 8,
@@ -2675,11 +2754,27 @@
    "s": "Australian Manufacturing"
   },
   {
+   "d": "2026-10-27",
+   "tag": "power",
+   "h": "WA opens $153M low-interest energy loan scheme for manufacturers",
+   "p": "Western Australia's Made in WA Energy Affordability Investment Program offers loans of $300,000 to $15 million for manufacturers' efficiency, renewables, storage and electrification projects; applications close 23 February 2027.",
+   "src": "https://www.australianmanufacturing.com.au/wa-opens-manufacturing-energy-investment-loan-program/",
+   "s": "Australian Manufacturing"
+  },
+  {
    "d": "2026-10-26",
    "tag": "metals",
    "h": "Generation Steel signs BHP renewable power deal for Collie mill",
    "p": "Generation Steel agreed a binding power purchase deal with BHP to supply wind and solar electricity for its proposed lower-carbon steel mill at Collie, WA. Capacity and timing details are still to come.",
    "src": "https://www.australianmanufacturing.com.au/generation-steel-secures-renewable-energy-agreement-with-bhp-for-proposed-collie-steel-mill/",
+   "s": "Australian Manufacturing"
+  },
+  {
+   "d": "2026-10-21",
+   "tag": "metals",
+   "h": "ARENA funds thermal-storage steam for Rio Tinto Yarwun refinery",
+   "p": "ARENA will provide up to $41.6 million in staged funding for an electric thermal energy storage system at the Yarwun alumina refinery near Gladstone, generating process steam from stored renewable heat.",
+   "src": "https://www.australianmanufacturing.com.au/arena-backs-large-scale-industrial-heat-electrification-project-at-rio-tinto-refinery/",
    "s": "Australian Manufacturing"
   },
   {
@@ -2713,6 +2808,14 @@
    "p": "Ampol's Lytton refiner margin more than doubled year on year in the September quarter, but extended cracking-unit maintenance will cut about 150 million litres of higher-value fuel output, with restart expected mid-November.",
    "src": "https://oilprice.com/Company-News/Ampol-Refining-Margins-Jump-125-as-Lytton-Maintenance-Hits-Output.amp.html",
    "s": "OilPrice.com"
+  },
+  {
+   "d": "2026-10-15",
+   "tag": "food",
+   "h": "Coca-Cola Europacific adds $39.7M can line at Kewdale, WA",
+   "p": "CCEP installed a new can production line at its Kewdale plant, lifting capacity by more than 40 per cent to about 1,500 cans per minute.",
+   "src": "https://www.australianmanufacturing.com.au/coca-cola-europacific-partners-invests-39-7m-in-wa-manufacturing-upgrade/",
+   "s": "Australian Manufacturing"
   },
   {
    "d": "2026-10-12",
@@ -2881,30 +2984,6 @@
    "p": "Hazer will provide methane-pyrolysis hydrogen to Continual Renewable Ventures' New Rise ANZ project targeting 175 million litres a year of SAF and renewable diesel.",
    "src": "https://www.pulse.bot/energy/news/australias-hazer-crv-mull-saf-clean-fuels-plant-d8ab0fdf-a0a1-4960-8dd1-8f8136e0d78d/",
    "s": "Pulse"
-  },
-  {
-   "d": "2026-04-27",
-   "tag": "oil",
-   "h": "GrainCorp eyes a $500 million crush plant to feed Lytton",
-   "p": "GrainCorp is weighing sites for a plant of up to 1 Mt/yr to supply canola oil to the proposed Brisbane Renewable Fuels refinery with Ampol and IFM.",
-   "src": "https://www.farmweekly.com.au/story/9232886/qld-refining-move-is-this-he-moment-biofuel-actually-takes-off/",
-   "s": "Farm Weekly"
-  },
-  {
-   "d": "2026-04-22",
-   "tag": "saf",
-   "h": "Queensland puts $25 million into Ampol's renewable diesel",
-   "p": "Lytton will co-process tallow and canola oil into up to 20 ML/yr of renewable diesel from 2028, with construction from 2027. A second stage could reach 750 ML/yr in the early 2030s.",
-   "src": "https://www.abc.net.au/news/2026-04-22/queensland-funding-ampol-refinery-renewable-diesel/106591516",
-   "s": "ABC News"
-  },
-  {
-   "d": "2026-04-22",
-   "tag": "food",
-   "h": "Victoria backs $92 million George Weston flour mill expansion in Ballarat",
-   "p": "The Victorian Investment Fund is supporting a $92 million upgrade of George Weston Foods' Ballarat flour mill, adding new milling technology and about 47 jobs.",
-   "src": "https://www.pulse.bot/supply-chain/news/manufacturing-boost-as-victorian-govt-backs-92m-flour-mill-expansion-in-ballarat-ae16a7eb-16f3-41b7-a872-d8730adacc99/",
-   "s": "Pulse (via Australian Manufacturing)"
   }
  ],
  "people": [
@@ -2919,6 +2998,83 @@
   }
  ],
  "runs": [
+  {
+   "at": "2026-11-03T04:28:35+11:00",
+   "added": 0,
+   "seek": 0,
+   "indeed": 0,
+   "removed": 0,
+   "news": 0,
+   "jd": 27,
+   "github": "ok (synced by Claude)",
+   "note": "Indeed connector failed to connect; Seek emails had no new relevant roles (Austcorp Project Engineer application skipped: location not shown), and 17 web searches found no open priority-employer ads or new news."
+  },
+  {
+   "at": "2026-11-03T00:49:52+11:00",
+   "added": 1,
+   "seek": 1,
+   "indeed": 0,
+   "removed": 1,
+   "news": 0,
+   "jd": 27,
+   "github": "failed: no push access (403, repo not authorized)",
+   "note": "Indeed connector was rate-limited for the whole run, so no Indeed searches or new descriptions; 1 new Seek role, 14 web searches found no open priority-employer ads or new relevant news."
+  },
+  {
+   "at": "2026-11-02T20:31:04+11:00",
+   "added": 10,
+   "seek": 0,
+   "indeed": 10,
+   "removed": 4,
+   "news": 2,
+   "jd": 27,
+   "github": "failed: no push access (403, repo not authorized)",
+   "note": "Indeed search worked (about 50 searches) but job-details hit a persistent rate limit, so no new descriptions; Seek emails had no new relevant roles."
+  },
+  {
+   "at": "2026-11-02T16:23:18+11:00",
+   "added": 0,
+   "seek": 0,
+   "indeed": 0,
+   "removed": 0,
+   "news": 0,
+   "jd": 27,
+   "github": "failed: no push access (403, repo not authorized)",
+   "note": "Indeed connector failed to connect; Seek emails had no new relevant roles and 15 web searches found no new open, dated priority-employer roles; no new news."
+  },
+  {
+   "at": "2026-11-02T12:24:16+11:00",
+   "added": 0,
+   "seek": 0,
+   "indeed": 0,
+   "removed": 0,
+   "news": 0,
+   "jd": 27,
+   "github": "failed: no push access (403, repo not authorized)",
+   "note": "Indeed connector failed to connect; Seek emails (all roles already listed) and 16 web searches found no new open, dated relevant roles; no new news."
+  },
+  {
+   "at": "2026-11-02T08:20:57+11:00",
+   "added": 1,
+   "seek": 1,
+   "indeed": 0,
+   "removed": 0,
+   "news": 1,
+   "jd": 27,
+   "github": "failed: no push access (403, repo not authorized)",
+   "note": "Indeed connector failed to connect and job pages blocked fetching, so no new descriptions; 1 Seek recommendation added after 13 web searches found no new dated priority-employer ads."
+  },
+  {
+   "at": "2026-11-02T04:22:31+11:00",
+   "added": 0,
+   "seek": 0,
+   "indeed": 0,
+   "removed": 0,
+   "news": 0,
+   "jd": 27,
+   "github": "failed: no push access (403, repo not authorized)",
+   "note": "Indeed connector failed to connect; Seek emails and 12 web searches found no new relevant roles (priority-employer ads found were expired or filled)."
+  },
   {
    "at": "2026-11-02T00:21:12+11:00",
    "added": 0,
