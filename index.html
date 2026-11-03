@@ -1348,15 +1348,26 @@ $("#menu").addEventListener("click",async e=>{const t=e.target.closest("button")
   if(t.id==="mshare"){try{await navigator.share({title:"Plants Atlas",url:SITE_URL})}catch(err){}}});
 setInterval(paintStatus,60000);
 document.addEventListener("visibilitychange",()=>{if(document.visibilityState==="visible")loadLive();else markSeen()});
-/* Data comes from GitHub (data.json) and, when set, a Google Sheet the scheduled update writes to
-   (cell A1 = updated time, A2..An = the JSON in chunks). Whichever is newer wins. */
-const SHEET_ID="";
+/* Data: GitHub data.json is the base. The 4-hourly update can't push to GitHub, so it also appends small
+   "overlay" rows to a Google Sheet (one JSON object per row in column A): meta (update time + run log),
+   job (new job), sum (summary for an existing job), del (job removed), news, person. The app applies them on top. */
+const SHEET_ID="1sZ9wcwU3ad52ADah6bBvrXCQ4xDteTOSa2naP-R41CM";
 async function fetchGithubData(){try{const r=await fetch("data.json?t="+Date.now(),{cache:"no-store"});return r.ok?await r.json():null}catch(e){return null}}
-async function fetchSheetData(){if(!SHEET_ID)return null;try{const r=await fetch(`https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tqx=out:csv&headers=0&range=A1:A60&t=${Date.now()}`,{cache:"no-store"});if(!r.ok)return null;
-  const rows=parseCSV(await r.text()).map(x=>x[0]||"");if(rows.length<2)return null;const d=JSON.parse(rows.slice(1).join(""));return d&&Array.isArray(d.jobs)?d:null}catch(e){return null}}
+async function fetchSheetRows(){if(!SHEET_ID)return [];try{const r=await fetch(`https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tqx=out:csv&headers=0&range=A1:A3000&t=${Date.now()}`,{cache:"no-store"});if(!r.ok)return [];
+  return parseCSV(await r.text()).map(x=>{try{const v=(x[0]||"").trim();return v.startsWith("{")?JSON.parse(v):null}catch(e){return null}}).filter(Boolean)}catch(e){return []}}
+function applyOverlay(d,rows){if(!rows.length)return d;d.jobs=d.jobs||[];d.news=d.news||[];d.people=d.people||[];
+  const meta=rows.filter(r=>r.k==="meta").pop();
+  if(meta&&meta.updated&&(!d.updated||new Date(meta.updated)>new Date(d.updated))){d.updated=meta.updated;const seen=new Set();d.runs=[...(meta.runs||[]),...(d.runs||[])].filter(r=>r&&r.at&&!seen.has(r.at)&&seen.add(r.at)).slice(0,20)}
+  rows.forEach(r=>{const{k,...v}=r;
+    if(k==="job"&&v.u&&v.t){const i=d.jobs.findIndex(j=>j.u===v.u);if(i<0)d.jobs.unshift(v);else d.jobs[i]={...d.jobs[i],...v,jd:d.jobs[i].jd||v.jd}}
+    else if(k==="sum"&&v.u&&v.sum){const j=d.jobs.find(j=>j.u===v.u);if(j)j.sum={...(j.sum||{}),...v.sum}}
+    else if(k==="del"&&v.u){d.jobs=d.jobs.filter(j=>j.u!==v.u)}
+    else if(k==="news"&&v.src&&v.h){if(!d.news.some(n=>n.src===v.src))d.news.unshift(v)}
+    else if(k==="person"&&v.name){if(!d.people.some(p=>p.name===v.name&&p.co===v.co))d.people.unshift(v)}});
+  d.news.sort((a,b)=>(b.d||"").localeCompare(a.d||""));d.news=d.news.slice(0,40);return d}
 async function loadLive(){
-  try{const [g,s]=await Promise.all([fetchGithubData(),fetchSheetData()]);const t=x=>x&&x.updated?new Date(x.updated).getTime()||0:0;
-    const d=t(s)>t(g)?s:g;if(!d){paintStatus();return}LIVE=d;LOADED_AT=new Date();
+  try{const [g,rows]=await Promise.all([fetchGithubData(),fetchSheetRows()]);if(!g){paintStatus();return}
+    const d=applyOverlay(g,rows);LIVE=d;LOADED_AT=new Date();
     if(Array.isArray(d.jobs)&&d.jobs.length){JOBS.length=0;JOBS.push(...d.jobs)}
     if(Array.isArray(d.news)&&d.news.length){NEWS.length=0;NEWS.push(...d.news.filter(n=>CATS[n.tag]))}
     if(Array.isArray(d.people)&&d.people.length){PEOPLE.length=0;PEOPLE.push(...d.people)}
