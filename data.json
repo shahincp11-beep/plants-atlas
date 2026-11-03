@@ -1,6 +1,30 @@
 {
- "updated": "2026-11-03T04:28:35+11:00",
+ "updated": "2026-11-04T00:22:00+11:00",
  "jobs": [
+  {
+   "co": "airservices",
+   "cn": "Airservices Australia",
+   "sf": 7,
+   "sw": "Airport infrastructure mechanical",
+   "t": "Senior Engineering Specialist (Mechanical)",
+   "loc": "Melbourne Airport, Melbourne VIC",
+   "d": "2026-11-03",
+   "u": "https://www.seek.com.au/job/95507766",
+   "lvl": "Senior",
+   "src": "Seek"
+  },
+  {
+   "co": "peters",
+   "cn": "Peters Ice Cream",
+   "sf": 17,
+   "sw": "Ice cream manufacturing plant",
+   "t": "Maintenance Engineer",
+   "loc": "Mulgrave, Melbourne VIC",
+   "d": "2026-11-03",
+   "u": "https://www.seek.com.au/job/95140424",
+   "lvl": "Mid",
+   "src": "Seek"
+  },
   {
    "co": "synertec",
    "cn": "Synertec",
@@ -143,6 +167,58 @@
    "src": "Seek",
    "sum": {
     "note": "You applied on 31 Oct 2026 via Seek"
+   }
+  },
+  {
+   "co": "aristocrat",
+   "cn": "Aristocrat",
+   "sf": 15,
+   "sw": "Gaming machine manufacturing plant",
+   "t": "Manager Advanced Manufacturing Engineering",
+   "loc": "Greystanes, Sydney NSW",
+   "d": "2026-10-31",
+   "u": "https://to.indeed.com/aa4ns6dl9kxb",
+   "lvl": "Manager",
+   "src": "Indeed",
+   "jd": "At Aristocrat, we are passionate about advancing gaming technology and innovation. As a Manager of Advanced Manufacturing Engineering, you will lead the development of world-class manufacturing processes that guarantee outstanding product functionality and cost efficiency.\n\nThis is a fulltime onsite position based at Aristocrat's integration center at Sydney, NSW and reports directly to the Vice President, Advanced Manufacturing Engineering based at Aristocrat, Henderson, Nevada, USA. The position works collaboratively with the Integration centre head at Sydney in a matrixed reporting structure.\n\nWhat You'll Do\nLead and develop a high-performing manufacturing engineering team comprising of mechanical engineers, industrial engineers, electronics engineers and production support personnel.\nEstablish and sustain Manufacturing Engineering important metrics to drive departmental performance and achieve safety, quality, delivery, and cost goals.\nCollaborate with key partners in manufacturing operations, design and development to ensure compliance with the manufacturing strategy.\nDrive continuous improvement and optimisation of business systems, manufacturing processes, and electronic repair center procedures.\nSupport design and development projects from an NPI scope to ensure they are completed on time and within budget.\nCoordinate the plant maintenance program to meet all maintenance requirements.\nPromote a safety culture across the site and actively engage with safety initiatives.\nIdentify and address quality and development issues impacting production processes, field performance, and costs through Engineering Change Requests.\nManage new product activities to ensure timely delivery and alignment with quality standards.\nManage the manufacturing engineering team based at Sydney and provide engineering support remotely to the manufacturing site at Barcelona, Spain\n\nWhat We're Looking For\nBachelor's degree in mechanical, industrial engineering or production engineering, or equivalent. Master's degree with proven experience may be considered.\n6+ years of proven experience in an engineering division with a recent supervisory role leading a team of engineers.\nStrong leadership skills with a proven track record.\nDemonstrated experience with Lean Manufacturing and Operational Excellence concepts with a passion for crafting efficiencies and improving systems and automation.\nExcellent social skills, with the ability to mentor and lead staff.\nStrong financial and commercial manufacturing competence.\nHands-on technical problem solver by nature.\nRelated studies in Industrial Engineering or a similar field are highly regarded.\nExperience working in a matrixed environment in collaboration with a globally distributed team.\n\nWe offer flexible working options, including a hybrid work model. Depending on your role and location, you may be eligible for annual bonuses and incentives, health and wellbeing benefits, paid time off, retirement plans, insurance coverage, and other local or statutory benefits.",
+   "sum": {
+    "about": "Leads the manufacturing engineering team at Aristocrat's Sydney integration centre, improving production processes for gaming machines and supporting a Barcelona site.",
+    "type": "Full-time, onsite",
+    "req": [
+     "Degree in mechanical, industrial or production engineering",
+     "6+ years in engineering with recent team-lead experience",
+     "Lean manufacturing and operational excellence experience",
+     "Strong financial and commercial manufacturing skills",
+     "Hands-on technical problem solving",
+     "Matrix and global team experience"
+    ],
+    "duties": [
+     "Lead mechanical, industrial and electronics engineers",
+     "Set and track safety, quality, delivery and cost metrics",
+     "Drive continuous improvement of manufacturing processes",
+     "Coordinate the plant maintenance program",
+     "Support NPI projects and engineering change requests",
+     "Provide remote engineering support to Spain"
+    ],
+    "ben": [
+     "Hybrid work options",
+     "Possible annual bonus and incentives",
+     "Health and wellbeing benefits"
+    ],
+    "kw": [
+     "manufacturing engineering",
+     "engineering manager",
+     "lean manufacturing",
+     "operational excellence",
+     "NPI",
+     "continuous improvement",
+     "plant maintenance",
+     "engineering change request",
+     "KPIs",
+     "team leadership",
+     "industrial engineering",
+     "mechanical engineering"
+    ]
    }
   },
   {
@@ -559,7 +635,44 @@
    "d": "2026-10-29",
    "u": "https://to.indeed.com/aa6ch74g7vdb",
    "lvl": "Mid",
-   "src": "Indeed"
+   "src": "Indeed",
+   "jd": "Join our Reliability and Maintenance team in Brisbane as a Mechanical Maintenance Planner, where you will play a key role in keeping our Midstream and Hydrocarbon Facilities running safely and reliably.\n\nReporting to the Planning and Scheduling Lead within Midstream and Energy Solutions, you will develop and manage mechanical maintenance work scopes, plans, and execution-ready work packs. You will ensure all activities align with the Santos Management System, maintenance and reliability strategies, and EHS standards - supporting safe, efficient, and cost-effective operations across our assets.\n\nKey responsibilities\nDevelop execution-ready work orders and work packs covering all technical, safety, resource, and logistics requirements.\nMaintain a two-week calendar of work activities by operational area.\nPlan and prioritise mechanical maintenance activities aligned with asset criticality, risk assessments, and operational requirements.\nReview work requests for completeness, scope, and resource requirements.\nCoordinate procurement and materials to support schedule compliance.\nCollaborate with Operations, Engineering, Supply Chain, Shutdowns, and Contractor Partners to optimise maintenance delivery.\nContribute to continuous improvement in planning processes and work management practices.\n\nWhat you'll bring\nEssential\nKnowledge of planning and scheduling processes, tools, and/or logistics coordination.\nBroad oil and gas background with significant operational and engineering experience.\nFive or more years in maintenance activity planning.\nDesirable\nTrade Certificate or Tertiary Qualification in Mechanical, Electrical, or Instrumentation (preferred but not mandatory).\nExperience in SAP ERP and Prometheus.\n\nIn Brisbane this includes Onsite Gym facilities, Onsite GP services and many more employee benefits.\n\nHow to Apply: Applications must be submitted via the online recruitment system before COB 13 November 2026. A requirement of this role is that you will need to have in place the legal work rights for Australia to apply.",
+   "sum": {
+    "about": "Planner in Santos' Brisbane reliability and maintenance team supporting midstream and hydrocarbon facilities.",
+    "req": [
+     "Knowledge of planning and scheduling processes and tools",
+     "Broad oil and gas operational and engineering background",
+     "5+ years in maintenance planning",
+     "Mechanical trade or degree preferred",
+     "SAP ERP and Prometheus experience desirable"
+    ],
+    "duties": [
+     "Build execution-ready work orders and work packs",
+     "Keep a two-week work calendar by area",
+     "Prioritise mechanical work by criticality and risk",
+     "Review work requests for scope and resources",
+     "Coordinate materials for schedule compliance",
+     "Work with operations, shutdowns and contractors"
+    ],
+    "ben": [
+     "Onsite gym and GP in Brisbane"
+    ],
+    "kw": [
+     "maintenance planner",
+     "work packs",
+     "work orders",
+     "scheduling",
+     "SAP",
+     "Prometheus",
+     "asset criticality",
+     "oil and gas",
+     "midstream",
+     "shutdowns",
+     "reliability",
+     "schedule compliance"
+    ],
+    "note": "Applications close COB 13 November 2026."
+   }
   },
   {
    "co": "orchardhro",
@@ -742,18 +855,6 @@
    "loc": "Henderson WA",
    "d": "2026-10-28",
    "u": "https://to.indeed.com/aa79zcs224r2",
-   "lvl": "Mid",
-   "src": "Indeed"
-  },
-  {
-   "co": "perthmint",
-   "cn": "The Perth Mint",
-   "sf": 15,
-   "sw": "Precious metals refinery",
-   "t": "Engineer Projects Decommissioning",
-   "loc": "Perth Eastern Suburbs WA",
-   "d": "2026-10-28",
-   "u": "https://to.indeed.com/aaymk4ts794m",
    "lvl": "Mid",
    "src": "Indeed"
   },
@@ -1028,6 +1129,18 @@
    "src": "Indeed"
   },
   {
+   "co": "airservices",
+   "cn": "Airservices Australia",
+   "sf": 7,
+   "sw": "Airport infrastructure mechanical",
+   "t": "Engineering Specialist (Mechanical)",
+   "loc": "Victoria VIC",
+   "d": "2026-10-25",
+   "u": "https://to.indeed.com/aaxqscsdvwth",
+   "lvl": "Mid",
+   "src": "Indeed"
+  },
+  {
    "co": "kraftheinz",
    "cn": "Kraft Heinz",
    "sf": 17,
@@ -1049,18 +1162,6 @@
    "d": "2026-10-25",
    "u": "https://www.seek.com.au/job/95423508",
    "lvl": "Mid",
-   "src": "Seek"
-  },
-  {
-   "co": "primemining",
-   "cn": "Prime Mining",
-   "sf": 14,
-   "sw": "New processing operation",
-   "t": "Process Engineer, Business Readiness",
-   "loc": "Brisbane QLD",
-   "d": "2026-10-25",
-   "u": "https://www.seek.com.au/job/95432144",
-   "lvl": "Senior",
    "src": "Seek"
   },
   {
@@ -1133,7 +1234,41 @@
    "u": "https://to.indeed.com/aav9fg2796kx",
    "lvl": "Lead",
    "src": "Indeed",
-   "cn": "Downer Group"
+   "cn": "Downer Group",
+   "jd": "WHAT WE OFFER\nCasual Opportunity: Join Downer's maintenance team supporting works at Eraring Power Station.\nCompetitive Conditions: Attractive casual rates.\nResidential Roster: Monday to Friday, 7:00 AM - 3:30 PM + RDOs.\nConvenient Location: Based at Eraring Power Station, Lake Macquarie, NSW.\nLeadership Opportunity: Lead and coordinate experienced mechanical tradespeople and subcontractors in a major power generation environment.\n\nDowner's Energy & Utilities business has an opportunity for an experienced Mechanical Supervisor to join our maintenance team at Eraring Power Station.\nReporting to the Superintendent, you will provide day-to-day supervision of mechanical tradespeople and subcontractors, ensuring maintenance and project activities are completed safely, efficiently and to a high standard.\nYou will lead pre-starts and toolbox meetings, coordinate labour and resources, review work scopes and monitor progress against the schedule. You'll also work closely with the client and wider Downer team to identify potential delays, resolve site issues and maintain a productive, safety-focused work environment.\n\nABOUT YOU\nTrade Qualified: Hold a recognised trade qualification in Boilermaking or Mechanical Fitting.\nExperienced Leader: At least five years' experience in the same or a similar industrial environment, with demonstrated experience leading teams to achieve safety, productivity and delivery targets.\nPower Generation Experience: Previous experience within a power station, heavy industrial maintenance or shutdown environment will be highly regarded.\nSafety Focused: Demonstrated experience promoting a Zero Harm culture, leading toolbox meetings and ensuring site risks and critical controls are understood and managed.\nStrong Planner: Able to review work scopes, coordinate daily activities and effectively manage labour, plant and resources against the work schedule.\nTeam Oriented: A clear communicator who can build effective relationships with employees, subcontractors, the client and support teams.\nSystems Capable: Competent using Microsoft Office applications, with knowledge of SAP work order management highly regarded.\nSite Qualifications: Hold a current C Class Driver Licence, White or Blue Card.\nWork Rights: Hold full working rights in Australia and be willing to undertake a pre-employment medical, functional assessment and drug and alcohol screening.",
+   "sum": {
+    "about": "Casual supervisor on Downer's maintenance team at Eraring Power Station, Lake Macquarie.",
+    "type": "Casual",
+    "req": [
+     "Boilermaker or mechanical fitter trade",
+     "5+ years in similar industrial work leading teams",
+     "Power station or shutdown experience highly regarded",
+     "Able to review scopes and manage resources to schedule",
+     "SAP work order knowledge highly regarded",
+     "C class licence and White or Blue Card"
+    ],
+    "duties": [
+     "Supervise mechanical trades and subcontractors",
+     "Run pre-starts and toolbox talks",
+     "Coordinate labour, plant and resources",
+     "Review scopes and track progress",
+     "Resolve site issues with the client"
+    ],
+    "kw": [
+     "mechanical supervisor",
+     "power station",
+     "maintenance",
+     "shutdown",
+     "boilermaker",
+     "mechanical fitter",
+     "SAP",
+     "toolbox",
+     "Zero Harm",
+     "subcontractors",
+     "work scopes"
+    ],
+    "note": "Requires a mechanical trade qualification."
+   }
   },
   {
    "co": "steritech",
@@ -1384,18 +1519,6 @@
    "src": "Seek"
   },
   {
-   "co": "innova",
-   "cn": "Innova Water",
-   "sf": 12,
-   "sw": "Water & wastewater treatment",
-   "t": "Process & Hydraulic Design Engineer",
-   "loc": "Hamilton, Brisbane QLD",
-   "d": "2026-10-22",
-   "u": "https://www.seek.com.au/job/95312046",
-   "lvl": "Senior",
-   "src": "Seek"
-  },
-  {
    "co": "constructability",
    "cn": "Constructability Recruitment",
    "sf": 8,
@@ -1557,7 +1680,45 @@
    "d": "2026-10-21",
    "u": "https://to.indeed.com/aaghbcyknnnh",
    "lvl": "Mid",
-   "src": "Indeed"
+   "src": "Indeed",
+   "jd": "Plan and deliver critical shutdown activities across major industrial sites\n\nWhy this role\nJoin a high-performing shutdown and maintenance team supporting critical process plant operations.\nTake ownership of planning activities that directly impact plant reliability, safety, and operational performance.\nDevelop your expertise across shutdown planning, CMMS systems, cost control, contractor coordination, procurement, and maintenance execution.\n\nAbout the role\nWe are seeking an experienced Mechanical Planner to support ongoing shutdown and maintenance activities across multiple sites. Based in Brisbane, this role will involve site visits as required and is responsible for developing detailed maintenance plans, coordinating resources, managing work packs, and ensuring shutdown activities are delivered safely, efficiently, and in line with operational requirements.\nLocation: Brisbane, QLD (site visits as required). Start Date: ASAP. Duration: Ongoing. Hours: Monday to Friday, 8 hours per day.\n\nWhat we offer\nOngoing role with long-term project opportunities\nIndividual Development Plan\nComplimentary salary continuance insurance\nDiscounted Medibank health insurance\nWellness Program with AIA Vitality\n16 weeks paid primary parental leave\n\nKey Responsibilities\nDevelop detailed shutdown and maintenance work packs including labour estimates, materials, tooling, scaffolding, cleaning and access requirements.\nCoordinate maintenance planning activities, ensuring work orders, schedules and scopes are accurately prepared to support safe execution.\nManage procurement activities including material reservations, purchase requisitions and contractor engagement to ensure timely delivery of services and parts.\nMonitor shutdown costs, provide progress reporting, and support the management of budget performance through effective planning and change control.\nCollaborate with operations, maintenance and contractor teams to optimise shutdown execution, improve reliability outcomes and capture lessons learned for future improvements.\n\nAbout You\nExperience in Mechanical Planning, Shutdown Planning or Maintenance Planning within industrial, oil & gas, resources, petrochemical, energy or heavy industry environments.\nDemonstrated experience developing work packs, maintenance scopes and shutdown schedules.\nStrong knowledge of CMMS systems and work order management processes.\nAbility to coordinate multiple stakeholders, contractors and suppliers while maintaining high levels of safety and quality.\nStrong communication, organisational and problem-solving skills with a collaborative approach to planning activities.\n\nDiscipline: Engineer - Mechanical. Primary Location: Australia-QLD-Brisbane CBD & Inner Suburbs. Work Type: Full-time",
+   "sum": {
+    "about": "Brisbane-based planner for UGL's shutdown and maintenance team serving process plants across several sites.",
+    "type": "Ongoing, full-time",
+    "req": [
+     "Mechanical, shutdown or maintenance planning in heavy industry",
+     "Experience writing work packs, scopes and shutdown schedules",
+     "Strong CMMS and work order knowledge",
+     "Coordinating contractors and suppliers safely",
+     "Good communication and organisation"
+    ],
+    "duties": [
+     "Prepare shutdown work packs with labour, materials and access",
+     "Prepare work orders, schedules and scopes",
+     "Raise reservations and purchase requisitions",
+     "Track shutdown costs and report progress",
+     "Capture lessons learned after shutdowns"
+    ],
+    "ben": [
+     "Salary continuance insurance",
+     "Discounted Medibank cover",
+     "16 weeks paid parental leave"
+    ],
+    "kw": [
+     "mechanical planner",
+     "shutdown planning",
+     "maintenance planning",
+     "work packs",
+     "CMMS",
+     "work orders",
+     "cost control",
+     "procurement",
+     "scaffolding",
+     "contractor coordination",
+     "process plant",
+     "petrochemical"
+    ]
+   }
   },
   {
    "co": "gfg",
@@ -1667,6 +1828,57 @@
    "src": "Indeed"
   },
   {
+   "co": "ixom",
+   "t": "Site Supervisor",
+   "loc": "Port Kembla, Wollongong NSW",
+   "d": "2026-10-19",
+   "u": "https://to.indeed.com/aay84hdfx46b",
+   "lvl": "Lead",
+   "src": "Indeed",
+   "jd": "Port Kembla, NSW, AU, 2505 - Permanent\n\nAbout your role\nReporting to the Regional Manufacturing Lead/Site Manager, you will lead the safe, compliant, and efficient operation of our Port Kembla site. In this hands-on leadership role, you will oversee production activities, maintenance programs, contractor management, and the day-to-day supervision of site personnel, while driving strong SHEQ performance across the facility. As the Process Operators do, you will be required to manufacture products, including the running of plant from using an automated control system and the blending of raw materials to produce final products\n\nKey Responsibilities\nLead and promote a strong safety-first culture across site operations.\nCoordinate daily manufacturing, terminal and dispatch activities.\nSupervise, coach and support Process Operators.\nConduct pre-start meetings, workplace inspections and safety observations.\nCoordinate maintenance works, shutdown activities and contractor management.\nMonitor plant performance and resolve operational issues.\nEnsure compliance with permits, risk assessments and regulatory requirements.\nMaintain operational, production and quality documentation.\nDrive continuous improvement initiatives across the site.\n\nWho are we looking for?\n5+ years' experience in manufacturing, industrial processing or similar operations environments.\nExperience leading or supervising frontline operational teams.\nDemonstrated experience coordinating operational and contractor activities.\nSound understanding of safety, quality and environmental requirements.\nStrong problem-solving and decision-making skills.\nAbility to manage competing priorities in a fast-paced operational environment.\nCurrent Driver's Licence.\nCurrent Forklift Licence.\n\nHighly regarded:\nCertificate III in Process Plant Operations or similar.\nTrade qualification (Mechanical, Electrical, Instrumentation, Boilermaker or related).\nMaritime Security Identification card\n\nBenefits at IXOM\nCompetitive salary aligned to market and experience\nStable, full-time role within a global organisation\nStructured onboarding and transition support\nClear internal career pathways\nFlexible working arrangements where possible\nHealth, wellbeing and employee assistance programs",
+   "sum": {
+    "about": "Hands-on leader of IXOM's Port Kembla chemical manufacturing and terminal site, covering production, maintenance programs and contractors.",
+    "type": "Permanent, full-time",
+    "req": [
+     "5+ years in manufacturing or industrial processing operations",
+     "Experience supervising frontline teams",
+     "Coordinating operations and contractor activities",
+     "Sound safety, quality and environmental knowledge",
+     "Driver's and forklift licences",
+     "Process plant cert or trade qualification highly regarded"
+    ],
+    "duties": [
+     "Coordinate daily manufacturing, terminal and dispatch work",
+     "Supervise and coach process operators",
+     "Coordinate maintenance, shutdowns and contractors",
+     "Run pre-starts, inspections and safety observations",
+     "Ensure permits, risk assessments and compliance",
+     "Monitor plant performance and drive improvements"
+    ],
+    "ben": [
+     "Competitive salary",
+     "Structured onboarding",
+     "Internal career pathways",
+     "Wellbeing and EAP programs"
+    ],
+    "kw": [
+     "site supervisor",
+     "chemical manufacturing",
+     "process operators",
+     "maintenance coordination",
+     "shutdown",
+     "contractor management",
+     "SHEQ",
+     "permit to work",
+     "risk assessment",
+     "continuous improvement",
+     "terminal operations",
+     "MSIC"
+    ],
+    "note": "Mostly an operations supervisor role; trade or process-operator background is preferred."
+   }
+  },
+  {
    "co": "cimic",
    "cn": "CIMIC Group",
    "sf": 8,
@@ -1677,6 +1889,58 @@
    "u": "https://to.indeed.com/aapxbcld4kh4",
    "lvl": "Senior",
    "src": "Indeed"
+  },
+  {
+   "co": "cimic",
+   "cn": "CIMIC Group",
+   "sf": 8,
+   "t": "Mechanical Engineer",
+   "loc": "Perth WA",
+   "d": "2026-10-18",
+   "u": "https://to.indeed.com/aawr4qyd77fj",
+   "lvl": "Mid",
+   "src": "Indeed",
+   "sw": "Construction and infrastructure",
+   "jd": "Sedgman is seeking a Mechanical Engineer to join our growing team in Perth on a 12-month contract. With a strong pipeline of multi-discipline projects across the Minerals Processing sector, this role offers the opportunity to provide technical leadership and mentor engineering teams.\n\nYou will work closely with clients and multi-discipline stakeholders to deliver high-quality engineering solutions across both greenfield and brownfield projects.\n\nKey responsibilities:\nMechanical engineering scopes for minerals processing and mining projects, ensuring technical compliance with client standards, and seamless integration into new and existing facilities.\nProvide mechanical design and analysis for piping systems, tanks, vessels, pressure equipment, materials handling, and rotating equipment, including calculation, risk assessments and failure investigations to enhance reliability and safety.\nCoordinate mechanical equipment, aligning with client/industry requirements and Australian/international standards where applicable.\nContribute to the mechanical and piping discipline project delivery within scope, budget, and schedule, while maintaining safety and quality standards.\nCollaborate with multi-discipline teams, clients, and site personnel to develop and implement practical engineering solutions.\n\nSkills and experience:\nTertiary degree in Mechanical Engineering, CPEng/RPEng or RPEQ as preferred\nA minimum of 3 years of industry experience, including project delivery and work on multi-discipline projects across various engineering phases.\nDemonstrated experience in mechanical and piping engineering, including the design of tanks and vessels following industry codes and FEA (mandatory) and performing pipe stress analysis (desirable).\nProven ability to lead teams, mentor engineers, and engage stakeholders effectively.\nProficiency in engineering design tools, MS Office, and technical documentation.\nStrong verbal and written communication skills.\nThe successful candidate should be willing and able to travel to remote sites or interstate as required.\n\nWhat we can offer you:\nFlexible arrangements to help you achieve work-life balance\nA focus on your professional development and opportunities to grow your career within Sedgman\nA collaborative focus on continuous improvement and innovation in our safety culture\nHealth and Wellbeing: Sonder safety and wellbeing app available 24/7\nCompetitive remuneration package",
+   "sum": {
+    "about": "12-month contract with Sedgman (CIMIC Group) in Perth on greenfield and brownfield minerals processing projects.",
+    "type": "12-month contract",
+    "req": [
+     "Mechanical engineering degree; CPEng/RPEng/RPEQ preferred",
+     "3+ years on multi-discipline projects",
+     "Tank and vessel design to codes with FEA (mandatory)",
+     "Pipe stress analysis desirable",
+     "Able to lead and mentor engineers",
+     "Willing to travel to remote sites"
+    ],
+    "duties": [
+     "Deliver mechanical scopes for minerals processing projects",
+     "Design piping, tanks, vessels, pressure and rotating equipment",
+     "Prepare calculations, risk assessments and failure investigations",
+     "Coordinate mechanical equipment to standards",
+     "Work with clients and site teams on solutions"
+    ],
+    "ben": [
+     "Flexible work arrangements",
+     "Professional development",
+     "24/7 wellbeing app"
+    ],
+    "kw": [
+     "mechanical engineer",
+     "piping",
+     "pressure vessels",
+     "tanks",
+     "FEA",
+     "pipe stress",
+     "rotating equipment",
+     "materials handling",
+     "minerals processing",
+     "brownfield",
+     "greenfield",
+     "CPEng",
+     "RPEQ"
+    ]
+   }
   },
   {
    "co": "santos",
@@ -1820,18 +2084,6 @@
    }
   },
   {
-   "co": "thales",
-   "cn": "Thales",
-   "sf": 15,
-   "sw": "Munitions manufacturing plant",
-   "t": "Project Engineer",
-   "loc": "Benalla VIC",
-   "d": "2026-10-15",
-   "u": "https://to.indeed.com/aa2byx8dhfgj",
-   "lvl": "Mid",
-   "src": "Indeed"
-  },
-  {
    "co": "monadelphous",
    "t": "Maintenance Planner",
    "loc": "Muja Power Station, Collie WA",
@@ -1872,18 +2124,6 @@
     ],
     "note": "Site is at Collie, about 2 hours south of Perth."
    }
-  },
-  {
-   "co": "webuild",
-   "t": "Hydrotest Supervisor",
-   "loc": "Perth WA",
-   "d": "2026-10-14",
-   "u": "https://to.indeed.com/aajq24mxjn8y",
-   "lvl": "Lead",
-   "src": "Indeed",
-   "cn": "Webuild",
-   "sf": 8,
-   "sw": "Infrastructure contractor"
   },
   {
    "co": "orica",
@@ -1965,18 +2205,6 @@
    "src": "Indeed"
   },
   {
-   "co": "catalyst",
-   "cn": "Catalyst Metals",
-   "sf": 11,
-   "sw": "Gold mining and processing",
-   "t": "Shutdown Planner | 8:6 FIFO from Perth | Gold Mining | Permanent Full-time",
-   "loc": "Perth WA (FIFO)",
-   "d": "2026-10-12",
-   "u": "https://to.indeed.com/aajd6wzg9q88",
-   "lvl": "Mid",
-   "src": "Indeed"
-  },
-  {
    "co": "steris",
    "cn": "STERIS",
    "sf": 12,
@@ -2016,7 +2244,48 @@
    "d": "2026-10-09",
    "u": "https://to.indeed.com/aaf6nywc8p4m",
    "lvl": "Senior",
-   "src": "Indeed"
+   "src": "Indeed",
+   "jd": "The Future Generation Joint Venture brings together WeBuild, Clough and Lane and has been selected to design construct Snowy 2.0, one of the largest pumped hydro schemes in the world.\n\nThe Senior Project Engineer - Mechanical is responsible for the end-to-end delivery of assigned mechanical systems, including Potable Water and Water Purification, Fire Fighting, HVAC / Mechanical Ventilation, and Lifts. The role manages the packages from shop drawing and technical review through construction, testing and commissioning, client acceptance and final handover.\n\nKey Responsibilities\nLead the review and coordination of mechanical shop drawings, technical submissions, Material Approval Requests, equipment data sheets, RFIs and design clarifications.\nEnsure compliance with approved design documentation, project requirements, applicable Australian Standards, manufacturer requirements and relevant statutory obligations.\nCoordinate multidisciplinary interfaces with electrical, controls/BMS, fire detection, civil, structural, architectural, communications and BIM teams.\nIdentify and resolve design gaps, clashes, constructability issues and site constraints before they affect installation.\nProvide technical support to procurement, including review of supplier/subcontractor proposals, technical departures and long-lead equipment requirements.\nManage and coordinate subcontractors, suppliers and site teams during construction and installation.\nConduct site inspections, monitor progress, resolve technical/site issues and ensure work is installed in accordance with approved drawings, ITPs, specifications and quality requirements.\nPotable Water & Water Purification: manage installation and coordination of potable water distribution, pumps, tanks, valves, treatment/purification equipment; manage pressure testing, flushing, cleaning, disinfection, water-quality testing and final commissioning.\nFire Fighting: manage installation of firefighting pipework, pumps, hydrants, hose reels and valves; coordinate hydrostatic testing, flushing, functional testing and certification.\nHVAC & Mechanical Ventilation: manage installation and commissioning of ductwork, pipework, fans, air-handling equipment and dampers; air/water balancing and performance verification.\nLifts / Elevators: technical and site coordination of lift installation, testing, statutory inspections and handover.\nTesting, Commissioning & Handover: review ITPs, commissioning procedures and check sheets; confirm mechanical completion; track and close defects; manage as-built drawings, O&M manuals and handover records.\n\nQualifications & Experience\nBachelor's degree in mechanical engineering or equivalent recognized qualification.\nSignificant experience delivering mechanical systems on major infrastructure, industrial, power, tunnelling, building services or similar projects.\nDemonstrated experience managing systems from shop drawings through installation, testing, commissioning and handover.\nAbility to interpret mechanical drawings, P&IDs, schematics, equipment schedules and technical specifications.\nStrong understanding of multidisciplinary MEP coordination, quality systems, commissioning processes and applicable Australian Standards.\nExperience with BIM/federated models, Aconex or similar document-control systems is desirable.\n\nReports to the EM Project Manager. Benefits include competitive salary, EAP, paid parental leave, Qantas Club discounts and professional development. These positions are in remote ",
+   "sum": {
+    "about": "Senior mechanical project engineer on the Snowy 2.0 pumped hydro project, owning water, firefighting, HVAC and lift systems to handover.",
+    "type": "Permanent",
+    "req": [
+     "Mechanical engineering degree",
+     "Major project experience on infrastructure, power or industrial",
+     "Delivered systems from shop drawings to handover",
+     "Read P&IDs, schematics and specifications",
+     "MEP coordination and commissioning knowledge",
+     "Aconex or BIM experience desirable"
+    ],
+    "duties": [
+     "Review shop drawings, data sheets and RFIs",
+     "Manage subcontractors during installation",
+     "Run pressure testing, flushing and commissioning",
+     "Coordinate interfaces with other disciplines",
+     "Close defects and hand over O&M records"
+    ],
+    "ben": [
+     "EAP and paid parental leave",
+     "Qantas Club discounts",
+     "Professional development"
+    ],
+    "kw": [
+     "senior project engineer",
+     "mechanical",
+     "Snowy 2.0",
+     "pumped hydro",
+     "pressure testing",
+     "flushing",
+     "commissioning",
+     "shop drawings",
+     "ITP",
+     "HVAC",
+     "firefighting",
+     "water treatment",
+     "Aconex"
+    ],
+    "note": "Remote site with very cold conditions."
+   }
   },
   {
    "co": "acciona",
@@ -2129,7 +2398,46 @@
    "d": "2026-10-07",
    "u": "https://to.indeed.com/aakrf6czq8qf",
    "lvl": "Mid",
-   "src": "Indeed"
+   "src": "Indeed",
+   "jd": "We have an exciting opportunity for a Mechanical/Piping Engineer to join the Kwinana Gas Power Generation 2 Team in Perth! In this role, you will effectively provide mechanical and piping engineering delivery and site support for the K2 Project, assisting with implementation of approved mechanical and piping designs to support safe construction, testing, commissioning and handover.\n\nClough is delivering the design and construction of the Kwinana Gas Power Generation 2 project (K2), a new 220 MW gas fired power station to be built in Kwinana, south of Perth.\n\nYour focus will include:\nPrepare mechanical and piping engineering deliverables, including calculations, equipment and line data sheets, specifications and layouts, under direction of senior and principal engineers.\nSupport construction and commissioning activities by responding to mechanical and piping RFIs, site technical queries and non-conformances.\nAssist with coordination of mechanical and piping interfaces with process, electrical, I&C and civil/structural disciplines.\nReview vendor, fabricator and subcontractor documentation for compliance with approved mechanical and piping designs as directed.\nSupport Safety in Design activities by identifying mechanical and piping hazards and assisting with implementation of agreed design risk controls.\nAssist with mechanical and piping engineering change processes, including preparation of technical assessments and updates to design documentation.\nSupport inspections, pressure testing, flushing, mechanical completion and commissioning activities as required.\nContribute to preparation of as-built documentation and mechanical/piping engineering handover records.\n\nWhat you will bring to the team:\nDegree in Mechanical Engineering or equivalent professional experience\nMinimum 3-5 years' experience in mechanical and piping engineering roles on major EPC, infrastructure or power generation projects\nEngineers Australia Accreditation (if applicable)\nStrong written and verbal communication skills\nCollaborative approach and ability to drive project outcomes\n\nClough's people enjoy: a competitive remuneration package; industry leading paid parental leave from the day you join; end of trip facilities and free gym onsite; mental health and well-being programs; offers on private health insurance, salary packaging and more.",
+   "sum": {
+    "about": "Mechanical and piping engineer supporting construction and commissioning of Clough's K2 220 MW gas power station in Kwinana.",
+    "type": "Full-time",
+    "req": [
+     "Mechanical engineering degree or equivalent",
+     "3–5 years in mechanical/piping on EPC or power projects",
+     "Engineers Australia accreditation if applicable",
+     "Strong written and verbal communication"
+    ],
+    "duties": [
+     "Prepare calcs, data sheets, specs and layouts",
+     "Answer site RFIs and non-conformances",
+     "Review vendor and fabricator documents",
+     "Support pressure testing, flushing and commissioning",
+     "Assist Safety in Design and change control",
+     "Prepare as-built and handover records"
+    ],
+    "ben": [
+     "Competitive pay",
+     "Paid parental leave from day one",
+     "Onsite gym",
+     "Health and salary packaging offers"
+    ],
+    "kw": [
+     "mechanical engineer",
+     "piping engineer",
+     "EPC",
+     "power station",
+     "line data sheets",
+     "vendor documents",
+     "RFI",
+     "pressure testing",
+     "flushing",
+     "mechanical completion",
+     "commissioning",
+     "Safety in Design"
+    ]
+   }
   },
   {
    "co": "monadelphous",
@@ -2309,7 +2617,44 @@
    "d": "2026-10-06",
    "u": "https://to.indeed.com/aaxpv2rwbcdw",
    "lvl": "Manager",
-   "src": "Indeed"
+   "src": "Indeed",
+   "jd": "East Melbourne, VIC - Permanent\nWe're looking for a Project Manager to join our Project Management Office (PMO), supporting a diverse portfolio of technology, transformation and business projects across IXOM. This newly created role offers exposure to everything from business acquisitions and systems implementations through to supply chain, manufacturing and operational improvement initiatives.\n\nAs a Project Manager, you'll be responsible for managing projects from initiation through to delivery, ensuring outcomes are achieved safely, on time and within budget. You'll establish project plans, manage stakeholder engagement, coordinate project teams and provide governance, reporting and risk management throughout the project lifecycle.\nWe're looking for a true project management practitioner: someone who enjoys leading outcomes, coordinating teams and keeping projects on track, rather than being the technical expert delivering the solution themselves.\n\nKey Responsibilities\nLead the end-to-end delivery of business, technology and transformation projects.\nDevelop project plans, schedules, budgets and resource forecasts.\nManage project risks, issues, dependencies and governance requirements.\nFacilitate project team meetings, workshops and stakeholder engagement activities.\nPrepare project reporting, steering committee packs and executive updates.\nManage vendors and external delivery partners where required.\n\nWho are we looking for?\nProject Management experience delivering medium to large business, technology or transformation projects.\nStrong stakeholder management and communication skills.\nDemonstrated experience managing project schedules, budgets, risks and dependencies.\nExperience working with Waterfall or hybrid project delivery methodologies.\nPRINCE2, PMP or similar project management certification.\nExperience within manufacturing, supply chain, logistics or industrial environments.\nQualifications in Business, Technology, Engineering or a related discipline would be good, but not essential.",
+   "sum": {
+    "about": "PMO project manager at IXOM's head office for business, technology and transformation projects.",
+    "type": "Permanent, full-time",
+    "req": [
+     "Delivered medium to large business or tech projects",
+     "Managing schedules, budgets, risks and dependencies",
+     "Waterfall or hybrid methods",
+     "PRINCE2, PMP or similar",
+     "Manufacturing, supply chain or industrial background"
+    ],
+    "duties": [
+     "Lead projects from start to delivery",
+     "Prepare plans, schedules, budgets and forecasts",
+     "Manage risks, issues and governance",
+     "Run workshops and steering committee reporting",
+     "Manage vendors and delivery partners"
+    ],
+    "ben": [
+     "Competitive salary",
+     "Structured onboarding",
+     "Wellbeing programs"
+    ],
+    "kw": [
+     "project manager",
+     "PMO",
+     "transformation",
+     "governance",
+     "PRINCE2",
+     "PMP",
+     "risk management",
+     "stakeholder engagement",
+     "budgets",
+     "schedules"
+    ],
+    "note": "Business/IT PMO role, not an engineering project role."
+   }
   },
   {
    "co": "app",
@@ -2439,18 +2784,6 @@
    "src": "Indeed"
   },
   {
-   "co": "daifuku",
-   "cn": "Daifuku",
-   "sf": 11,
-   "sw": "Materials handling machinery",
-   "t": "Maintenance Planner - Melbourne Airport",
-   "loc": "Melbourne Airport VIC",
-   "d": "2026-10-02",
-   "u": "https://to.indeed.com/aa827tyj44xj",
-   "lvl": "Mid",
-   "src": "Indeed"
-  },
-  {
    "co": "webuild",
    "cn": "Webuild",
    "sf": 8,
@@ -2530,7 +2863,94 @@
    "d": "2026-09-30",
    "u": "https://to.indeed.com/aa2jl684c8k9",
    "lvl": "Mid",
-   "src": "Indeed"
+   "src": "Indeed",
+   "jd": "515693 - Tumut, NSW - Full Time\nTake ownership of projects from concept through to delivery.\nWork with major plant and equipment across one of Australia's largest pulp and paper manufacturing operations\nJoin a growing engineering team delivering multi-million-dollar investments in safety, reliability and operational performance\n\nWe're looking for an experienced Project Engineer to join Visy's Build, Run, Repair (BRR) team at Tumut, in the beautiful Snowy Mountains. Working closely with operations, maintenance and engineering teams, you'll lead the delivery of capital projects across one of Australia's largest integrated pulp and paper manufacturing sites. From equipment upgrades and plant improvements through to major capital investments, your work will directly enhance the site's safety, reliability and production capability.\n\nWhat you'll do:\nManage capital projects from concept development through to completion and handover.\nDevelop scopes of work, budgets, schedules and contractor packages.\nCoordinate contractors, suppliers and site stakeholders to ensure safe project execution.\nOversee installation and commissioning activities across mechanical plant and equipment.\nMonitor project performance to deliver outcomes aligned with budget, schedule and safety targets.\n\nWhat You Will Bring:\nDegree-qualified Mechanical Engineer or equivalent project engineering experience.\nExperience delivering projects within manufacturing, pulp and paper, mining, chemicals, energy or another heavy industrial environment.\nStrong understanding of mechanical equipment, piping systems and process plant infrastructure.\nAbility to manage contractors and multiple stakeholders in a live operating environment.\nStrong communication, planning and problem-solving skills.\n\nWhat you'll love when you join us:\nPurpose-Driven Work: Be part of a business powering the circular economy\nLifestyle Benefits: Enjoy a better work-life balance in a stunning regional location\nLeave Benefits: Purchase leave options for extra flexibility\nStaff Discounts at RSEA, Avis, Harvey Norman and other retailers\n\nYou will be required to meet Visy's employment criteria which will include a criminal history check and pre-employment medical (including drug & alcohol testing). Only applications with the right to live and work in Australia will be considered.",
+   "sum": {
+    "about": "Capital projects role in Visy's Build, Run, Repair team at its large integrated pulp and paper mill in Tumut.",
+    "type": "Full-time",
+    "req": [
+     "Mechanical engineering degree or equivalent experience",
+     "Projects in manufacturing, pulp and paper, chemicals or heavy industry",
+     "Good grasp of mechanical equipment, piping and process plant",
+     "Managing contractors in a live operating site",
+     "Strong planning and communication"
+    ],
+    "duties": [
+     "Run capital projects from concept to handover",
+     "Prepare scopes, budgets, schedules and contract packages",
+     "Coordinate contractors and site stakeholders",
+     "Oversee mechanical installation and commissioning",
+     "Track cost, schedule and safety"
+    ],
+    "ben": [
+     "Regional lifestyle location",
+     "Purchased leave options",
+     "Retail staff discounts"
+    ],
+    "kw": [
+     "project engineer",
+     "capital projects",
+     "pulp and paper",
+     "mechanical installation",
+     "commissioning",
+     "piping",
+     "scope of work",
+     "contractor management",
+     "budget",
+     "schedule",
+     "brownfield",
+     "handover"
+    ]
+   }
+  },
+  {
+   "co": "graincorp",
+   "t": "Project Manager",
+   "loc": "Marong, Bendigo VIC",
+   "d": "2026-09-30",
+   "u": "https://to.indeed.com/aasxwvps49bn",
+   "lvl": "Manager",
+   "src": "Indeed",
+   "jd": "Package comprising competitive base, super and vehicle\n\nAbout the role\nBased at our site in Marong we are looking for a Project Manager to join us permanently. You will be responsible for the delivery to plan of a wide variety of exciting multi-discipline capital projects that range from small maintenance projects, to complex multi-million dollar infrastructure builds. Your Project Management skill set will be tested to the full in this client side role. As an advisor and service provider, you will be required to identify opportunities to improve the business assets and functions, as well as run projects from their inception to their conclusion. This will done while maintaining a transparent and stakeholder inclusive communications program. This is a diverse, challenging, yet satisfying role, where you will not only be delivering projects in a resource constrained environment across a large geographically area, you will also be managing a broad range of internal and external stakeholders.\n\nAbout your experience\nOur ideal candidate will hold qualifications in Project Management with practical experience in supporting and delivering projects in any industry. Project management experience, including management of site staff, contractors, budgets, project expenditure, schedules, safety, compliance and project records in an industrial construction environment. Your skill set could be from a project management, design, site engineering or maintenance background with experience in on-site management of contractors and project activities. Finally, any experience in the design and construction of bulk handling infrastructure including ports, material storage, conveyors, rail, roads, control systems, power systems, and relevant infrastructure will be looked upon favourably.\n\nOther key attributes we are looking for are;\nExceptional communication skills - both written and verbal\nA demonstrated ability to effectively manage and resolve issues that arise during all phases of projects\nA willingness to travel - projects will be based across local Victoria and Victorian ports\nComputer literacy skills (MS suite including MS Project, Excel and Word)\nOutstanding stakeholder management skills\nAbility to work autonomously\nProven experience managing projects from initiation to completion\n\nFinally, you should be willing and able to travel in the role: 1-2 day trips / month during planning phase; 2 days / week for a few consecutive weeks during construction phase; a little more than this for larger commissioning projects.\n\nWhat we offer\nProfessional development & leadership programs\nHybrid work and flexible leave options\nHealth & wellbeing support including birthday leave\nFamily Inclusive Workplace accredited employer\nInclusive, values-driven culture\n\nIn addition to providing proof of working rights and suitable professional referees a pre-employment medical and drivers license are required for this position.",
+   "sum": {
+    "about": "Client-side role at GrainCorp's Marong site delivering multi-discipline capital projects, from small maintenance jobs to multi-million-dollar infrastructure builds.",
+    "type": "Permanent",
+    "sal": "Competitive base, super and vehicle",
+    "req": [
+     "Project management qualification and proven end-to-end project delivery",
+     "Managing contractors, budgets, schedules, safety and records in industrial construction",
+     "Background in PM, design, site engineering or maintenance accepted",
+     "Bulk handling infrastructure experience (conveyors, storage, ports) favoured",
+     "MS Project, Excel and Word skills",
+     "Driver's licence and willingness to travel across Victoria and ports"
+    ],
+    "duties": [
+     "Deliver capital projects from inception to close-out",
+     "Identify improvement opportunities for site assets",
+     "Manage site staff, contractors and project spend",
+     "Run stakeholder communications across a wide region",
+     "Support larger commissioning projects on site"
+    ],
+    "ben": [
+     "Leadership and development programs",
+     "Hybrid work and flexible leave",
+     "Birthday leave and wellbeing support"
+    ],
+    "kw": [
+     "project management",
+     "capital projects",
+     "multi-discipline",
+     "contractor management",
+     "budget control",
+     "scheduling",
+     "MS Project",
+     "bulk handling",
+     "conveyors",
+     "commissioning",
+     "stakeholder management",
+     "client side"
+    ]
+   }
   },
   {
    "co": "dulux",
@@ -2542,7 +2962,59 @@
    "src": "Indeed",
    "cn": "DuluxGroup",
    "sf": 18,
-   "sw": "Paint manufacturing plant"
+   "sw": "Paint manufacturing plant",
+   "jd": "What You'll Be Doing:\nReporting to the Engineering Manager, you'll take ownership of multiple capital and plant optimisation projects from scoping and design through to engineering procurement, installation, commissioning and operational handover. Working closely with site teams, contractors and suppliers, you'll deliver practical improvements that reduce safety risks, generate cost savings and strengthen plant capability. You'll be empowered to solve complex problems, lead continuous improvement and manage projects as if they were your own business.\n\nOur Benefits:\nUp to $1,000 net annually to cover private health extras gap costs\nExclusive discounts on DuluxGroup products and partner offers\nFitness Passport\n20 weeks paid parental leave (primary carers) and 2 weeks partner leave from day one\nMarket leading learning, development and career pathways\nAccess to our Wellbeing Hub and full EAP support\n\nWhat We're Looking for:\nExperience delivering small to mid-sized capital and operational improvement projects from concept through to commissioning and operational handover within manufacturing, process, or industrial environments.\nStrong project management skills with the ability to independently manage multiple priorities and deliver projects safely, on time, and within budget.\nExposure to manufacturing or process plant environments, with the ability to interpret and update P&IDs, layout drawings, and Functional Descriptions. Experience interpreting electrical schematics is advantageous.\nA solid understanding of industrial equipment and systems, including tanks, piping, valves, pumps, and instrumentation.\nProficiency with AutoCAD and technical drawing interpretation. Exposure to 3D design software such as Navisworks or Inventor is advantageous but not essential.\nA recognised/accredited Bachelor's degree (by Engineers Australia) in Mechanical, Electrical, Mechatronic, Process, or Chemical Engineering, along with 2-5 years post-graduate industry experience.\nDemonstrated ability to develop scopes of work and manage contractors, suppliers, consultants, and all required site-based activities to successfully deliver capital projects.",
+   "sum": {
+    "about": "Capital and plant optimisation projects at DuluxGroup's Rocklea manufacturing site, reporting to the Engineering Manager.",
+    "type": "Full-time",
+    "req": [
+     "Delivering small to mid capital projects to handover",
+     "Can read and update P&IDs and layout drawings",
+     "Knowledge of tanks, piping, valves, pumps and instruments",
+     "AutoCAD skills; Navisworks or Inventor a plus",
+     "Engineering degree (mechanical, process, chemical etc.) with 2–5 years",
+     "Scoping work and managing contractors"
+    ],
+    "duties": [
+     "Own projects from scoping through commissioning",
+     "Manage procurement, installation and handover",
+     "Work with site teams, contractors and suppliers",
+     "Reduce safety risks and deliver cost savings",
+     "Lead continuous improvement"
+    ],
+    "ben": [
+     "Up to $1,000 a year for health extras",
+     "Product discounts",
+     "20 weeks paid parental leave",
+     "Fitness Passport"
+    ],
+    "kw": [
+     "project engineer",
+     "capital projects",
+     "P&ID",
+     "layout drawings",
+     "AutoCAD",
+     "tanks",
+     "piping",
+     "valves",
+     "pumps",
+     "commissioning",
+     "manufacturing",
+     "plant optimisation"
+    ]
+   }
+  },
+  {
+   "co": "emergent",
+   "cn": "Emergent Group",
+   "sf": 12,
+   "sw": "Engineering consultancy, Hunter",
+   "t": "Senior Mechanical Engineer",
+   "loc": "Newcastle NSW",
+   "d": "2026-09-28",
+   "u": "https://to.indeed.com/aamhvl6vh6vd",
+   "lvl": "Senior",
+   "src": "Indeed"
   },
   {
    "co": "rheem",
@@ -2633,7 +3105,44 @@
    "d": "2026-09-24",
    "u": "https://to.indeed.com/aavr7nppwwjn",
    "lvl": "Senior / lead",
-   "src": "Indeed"
+   "src": "Indeed",
+   "jd": "International EPCM Company. Supportive and friendly team culture.\n\nLycopodium delivers professional engineering and project delivery services globally, across the resources, infrastructure and industrial processes sectors.\n\nReporting to the Group Manager - Project Delivery, the Lead/Senior Project Engineers will provide technical assistance in the planning, designing, evaluating, executing and handover of the assigned projects in accordance with Company, Client and Project requirements.\n\nThe tasks you'll perform\nAssisting with ensuring compliance with the project specific requirements and current industry work codes and standards.\nContributing to project control activities including scheduling, forecasting and other deliverables to a consistently high standard.\nAssisting with and perform procurement, inspection and expediting activities.\nCarrying out assigned project activities, including site engineer duties, in a manner that priorities safety, environment, community and industrial relations.\nAssisting the Project Manager in developing and maintaining the project quality management facility to ensure project quality targets and reporting are met.\nContributing to the preparation of construction reports, contracts and schedules, managing tender and contract documentation for review in accordance with quality assurance.\n\nThe expertise you'll bring\nBachelor of Engineering, preferably mechanical engineering.\nMin 7 years' postgraduate experience in a similar position, ideally within an EPCM environment.\nExperience working on Mineral Processing Plants (gold, lithium, copper, nickel) or similar capital projects will be highly regarded.\nDemonstrated experience working with modularisation including in design, procurement, transport and project implementation\nWell-developed written and verbal communication skills.\nAbility to build and sustain positive relationships with all stakeholders, including Clients, Vendors and Co-workers.\n\nThe benefits we'll provide\nCareer progression and technical skill development; flexible work arrangements; a benefits, rewards and recognition platform with retail discounts.",
+   "sum": {
+    "about": "Senior or lead project engineer with EPCM firm Lycopodium in Brisbane, mainly on minerals processing plant projects.",
+    "type": "Permanent",
+    "req": [
+     "Engineering degree, preferably mechanical",
+     "7+ years postgraduate, ideally EPCM",
+     "Minerals processing or similar capital projects favoured",
+     "Modularisation experience",
+     "Strong communication and stakeholder skills"
+    ],
+    "duties": [
+     "Support planning, design, execution and handover",
+     "Contribute to scheduling and forecasting",
+     "Do procurement, inspection and expediting",
+     "Act as site engineer where needed",
+     "Prepare construction reports, contracts and schedules"
+    ],
+    "ben": [
+     "Flexible work",
+     "Career development",
+     "Rewards and discounts platform"
+    ],
+    "kw": [
+     "senior project engineer",
+     "lead project engineer",
+     "EPCM",
+     "minerals processing",
+     "modularisation",
+     "procurement",
+     "expediting",
+     "scheduling",
+     "project controls",
+     "site engineer",
+     "quality management"
+    ]
+   }
   },
   {
    "co": "visy",
@@ -2692,59 +3201,33 @@
    "u": "https://to.indeed.com/aat668zkybcq",
    "lvl": "Mid / lead",
    "src": "Indeed"
-  },
-  {
-   "co": "webuild",
-   "cn": "Webuild",
-   "sf": 8,
-   "sw": "Infrastructure contractor",
-   "t": "Commissioning Engineer - Mechanical",
-   "loc": "Sydney NSW",
-   "d": "2026-09-20",
-   "u": "https://to.indeed.com/aa2vmtpsdhb8",
-   "lvl": "Mid",
-   "src": "Indeed",
-   "jd": "About the Project:\nParklife Metro JV is leading the delivery of the Sydney Metro - Western Sydney Airport project, a landmark transport initiative that will link St Marys to Bradfield and seamlessly connect with the new Western Sydney Airport. This visionary project driven by a joint venture between Plenary, RATP Dev, Siemens, and Webuild includes the construction of six new stations, 12 state-of-the-art metro trains, advanced rail systems, and a modern stabling and maintenance facility at Orchard Hills.\nBenefits: Competitive remuneration package; Diversity & inclusion initiatives; Employee recognition programs; Growth and development opportunities within a large-scale project; Health & wellbeing initiatives; Novated leases; Supportive and collaborative work culture.\nThe Opportunity:\nEmployed by Webuild, Parklife Metro is seeking a Commissioning Engineer - Mechanical to join our team based at Badgerys Creek.\nAs a Commissioning Engineer - Mechanical, you are responsible for overseeing and managing the testing & commissioning (T&C) process of mechanical systems, including Environmental Control Systems (ECS - i.e. HVAC), hydraulic services, fire systems (detection & protection), Tunnel Ventilation Systems (TVS), Lifts & Escalators, other related mechanical installations and interface with other systems (e.g. BMCS).\nDuties & Responsibilities:\nReview project drawings, specifications, and system designs to understand the scope and commissionability of mechanical systems\nDevelop and implement commissioning plans, procedures, and checklists for mechanical systems\nCoordinate with project managers, supervisors, contractors, and subcontractors to ensure alignment on T&C activities and timelines\nEnsure necessary documentation is prepared, including manuals, testing protocols, and schedules\nOversee the T&C and V&V of all mechanical systems, including testing, adjusting, and balancing (TAB) of (ECS) HVAC systems, hydraulic services, fire systems, TVS, Lifts & Escalators, and related equipment. Conduct functional tests to ensure systems operate according to design intent, performance criteria, and safety regulations\nTroubleshoot mechanical systems and resolve issues identified during T&C or operation\nCoordinate, facilitate and document outcomes of witness testing for mechanical systems\nRaise, track and manage the resolution of T&C related punch list, non-conformance & defect items of mechanical systems\nAct as the main point of contact for all T&C related matters for mechanical systems\nProvide regular updates on T&C progress, challenges, and resolutions to the T&C Team and project management teams\nSupport the T&C of interfacing systems (e.g. BMCS, TVCS, etc) in conjunction with other T&C engineers, contractors & vendors\nMaintain accurate records of T&C activities, including test results, equipment settings, as-built conditions & witnessing activities\nCompile and submit final Test Reports detailing system performance, issues resolved, and compliance with project specifications\nAssist in the preparation and handover of mechanical systems to the client or operational teams upon successful T&C\nCriteria:\nBachelor's degree in Mechanical Engineering or related field\nMinimum of 3-5 years of experience in mechanical system commissioning or a related field, with a strong focus on (ECS) HVAC, hydraulic services, and fire systems\nExperience in commissioning for commercial, industrial, or large-scale construction projects is preferred. Strong knowledge of mechanica",
-   "sum": {
-    "about": "Webuild, for Parklife Metro JV on Sydney Metro – Western Sydney Airport, needs a mechanical commissioning engineer based at Badgerys Creek.",
-    "req": [
-     "Mechanical engineering degree",
-     "3–5 years mechanical systems commissioning",
-     "Strong HVAC, hydraulics and fire systems focus",
-     "Large-scale construction commissioning preferred",
-     "Good troubleshooting and documentation"
-    ],
-    "duties": [
-     "Write commissioning plans, procedures and checklists",
-     "Oversee T&C of HVAC, TVS, hydraulics, fire, lifts",
-     "Coordinate witness testing and punch lists",
-     "Troubleshoot issues found during T&C",
-     "Compile test reports and hand over systems"
-    ],
-    "ben": [
-     "Novated leases",
-     "Health and wellbeing initiatives",
-     "Recognition programs"
-    ],
-    "kw": [
-     "testing and commissioning",
-     "T&C",
-     "V&V",
-     "HVAC",
-     "TAB",
-     "tunnel ventilation",
-     "hydraulic services",
-     "fire systems",
-     "witness testing",
-     "punch list",
-     "BMCS",
-     "handover"
-    ],
-    "note": "Infrastructure building-services commissioning rather than process plant."
-   }
   }
  ],
  "news": [
+  {
+   "d": "2026-11-03",
+   "tag": "chem",
+   "h": "Queensland grant helps MooGoo bring skincare production to Gold Coast",
+   "p": "A $1.3M Transforming Queensland Manufacturing grant will fund new equipment so MooGoo can make more products at its Gold Coast plant instead of outsourcing interstate, adding about 25 jobs.",
+   "src": "https://www.australianmanufacturing.com.au/qld-grant-backs-moogoo-expansion-and-local-skincare-manufacturing/",
+   "s": "Australian Manufacturing"
+  },
+  {
+   "d": "2026-11-02",
+   "tag": "eng",
+   "h": "NSW calls for developer of Bradfield City manufacturing precinct",
+   "p": "The NSW Government is seeking a private developer for an advanced-manufacturing enterprise precinct at Bradfield City in Western Sydney, starting with about 6.7 hectares and possibly seven more later.",
+   "src": "https://www.australianmanufacturing.com.au/nsw-govt-seeks-developer-for-bradfield-city-manufacturing-and-business-precinct/",
+   "s": "Australian Manufacturing"
+  },
+  {
+   "d": "2026-11-02",
+   "tag": "eng",
+   "h": "Australian manufacturing PMI stays in contraction at 49.6",
+   "p": "S&P Global's October index was unchanged at 49.6, with new orders falling at the fastest pace in almost two years and supplier delays and input costs rising.",
+   "src": "https://www.australianmanufacturing.com.au/sp-global-australian-manufacturing-contraction-continues-in-october/",
+   "s": "Australian Manufacturing"
+  },
   {
    "d": "2026-10-28",
    "tag": "metals",
@@ -2767,6 +3250,14 @@
    "h": "Generation Steel signs BHP renewable power deal for Collie mill",
    "p": "Generation Steel agreed a binding power purchase deal with BHP to supply wind and solar electricity for its proposed lower-carbon steel mill at Collie, WA. Capacity and timing details are still to come.",
    "src": "https://www.australianmanufacturing.com.au/generation-steel-secures-renewable-energy-agreement-with-bhp-for-proposed-collie-steel-mill/",
+   "s": "Australian Manufacturing"
+  },
+  {
+   "d": "2026-10-22",
+   "tag": "paper",
+   "h": "Visy spends $30M upgrading Smithfield corrugated box plant",
+   "p": "Visy is installing new cardboard equipment at its Smithfield factory in Western Sydney, led by a 2.8-metre corrugator expected to lift board output by a third at a site employing over 400 staff.",
+   "src": "https://www.australianmanufacturing.com.au/visy-invests-30m-in-western-sydney-cardboard-box-manufacturing-upgrade/",
    "s": "Australian Manufacturing"
   },
   {
@@ -2874,6 +3365,14 @@
    "s": "Australian Manufacturing"
   },
   {
+   "d": "2026-09-23",
+   "tag": "metals",
+   "h": "Queensland fast-tracks three steel and metals projects worth $1.9B",
+   "p": "Queensland declared the Alter and Swanbank steel mills and Sims Metal's Pinkenba redevelopment Prescribed Projects, backing over $1.9 billion of private investment and an estimated 2,000 construction jobs.",
+   "src": "https://www.australianmanufacturing.com.au/1-9b-investment-targets-australias-steel-and-manufacturing-supply-chain/",
+   "s": "Australian Manufacturing"
+  },
+  {
    "d": "2026-09-22",
    "tag": "food",
    "h": "Baiada opens large poultry processing plant in Tamworth",
@@ -2944,46 +3443,6 @@
    "p": "Up to $32 million in conditional funding for a project converting forestry residues into sustainable aviation fuel.",
    "src": "https://www.australianmanufacturing.com.au/tag/sustainable-aviation-fuel/",
    "s": "Australian Manufacturing"
-  },
-  {
-   "d": "2026-06-18",
-   "tag": "food",
-   "h": "Mars opens $112.6 million pet food plant in Wodonga",
-   "p": "Mars has commissioned a wet cat food pouch facility in Wodonga, Victoria, able to make up to 290 million pouches a year, with state support through Regional Development Victoria.",
-   "src": "https://www.australianmanufacturing.com.au/mars-opens-112-6m-manufacturing-facility-in-wodonga/",
-   "s": "Australian Manufacturing"
-  },
-  {
-   "d": "2026-06-18",
-   "tag": "chem",
-   "h": "First carbon refinery opens on Kooragang Island, Newcastle",
-   "p": "MCI Carbon opened a plant capturing CO2 from Orica's ammonia operations and turning it into materials for concrete, paper and glass.",
-   "src": "https://www.miningweekly.com/article/australia-opens-first-carbon-refinery-making-new-products-from-captured-carbon-dioxide-2026-06-18",
-   "s": "Mining Weekly"
-  },
-  {
-   "d": "2026-06-02",
-   "tag": "chem",
-   "h": "Mapei invests about $60M in new Truganina plant",
-   "p": "Mapei is building an automated, solar-powered Truganina factory that will add more than 100 product lines for Australian construction projects.",
-   "src": "https://www.pulse.bot/supply-chain/news/from-truganina-to-major-projects-mapeis-push-to-localise-manufacturing-in-australia-a0368b21-101a-4631-b1d0-8e647185c959/",
-   "s": "Pulse"
-  },
-  {
-   "d": "2026-05-15",
-   "tag": "saf",
-   "h": "ARENA to run the $1.1 billion Cleaner Fuels Program",
-   "p": "The program funds local production of renewable diesel and SAF over the next decade, aimed at freight, aviation and heavy transport.",
-   "src": "https://www.hydrocarbonprocessing.com/news/2026/05/arena-to-drive-australias-11-b-cleaner-fuels-program/",
-   "s": "Hydrocarbon Processing"
-  },
-  {
-   "d": "2026-05-12",
-   "tag": "saf",
-   "h": "Hazer to supply hydrogen for 175 ML/yr SAF and renewable diesel project",
-   "p": "Hazer will provide methane-pyrolysis hydrogen to Continual Renewable Ventures' New Rise ANZ project targeting 175 million litres a year of SAF and renewable diesel.",
-   "src": "https://www.pulse.bot/energy/news/australias-hazer-crv-mull-saf-clean-fuels-plant-d8ab0fdf-a0a1-4960-8dd1-8f8136e0d78d/",
-   "s": "Pulse"
   }
  ],
  "people": [
@@ -2998,6 +3457,61 @@
   }
  ],
  "runs": [
+  {
+   "at": "2026-11-04T00:22:00+11:00",
+   "added": 3,
+   "seek": 1,
+   "indeed": 2,
+   "removed": 3,
+   "news": 0,
+   "jd": 39,
+   "github": "ok (synced by Claude)",
+   "note": "Indeed rate-limited after 23 searches so no job descriptions fetched; Seek emails had 1 new relevant role; Viva and Cargill careers ads were expired; no new news found."
+  },
+  {
+   "at": "2026-11-03T20:20:36+11:00",
+   "added": 5,
+   "seek": 0,
+   "indeed": 5,
+   "removed": 5,
+   "news": 1,
+   "jd": 39,
+   "github": "failed: 403 no push access",
+   "note": "Indeed connector back online (40+ searches, then rate-limited on details); Seek emails had no new relevant roles; Viva and Cargill ads found online were expired or filled."
+  },
+  {
+   "at": "2026-11-03T16:20:27+11:00",
+   "added": 0,
+   "seek": 0,
+   "indeed": 0,
+   "removed": 0,
+   "news": 1,
+   "jd": 26,
+   "github": "failed: 403 no push access",
+   "note": "Indeed connector failed to connect, so 15 web searches were used instead (priority-employer ads found were filled, expired or undated); Seek emails had no new relevant roles."
+  },
+  {
+   "at": "2026-11-03T12:23:34+11:00",
+   "added": 1,
+   "seek": 1,
+   "indeed": 0,
+   "removed": 1,
+   "news": 1,
+   "jd": 26,
+   "github": "failed: 403 no push access",
+   "note": "Indeed connector failed to connect, so 15 web searches were used instead (open priority-employer ads found had no confirmed date or had expired); 1 new Seek role from a Seek activity email."
+  },
+  {
+   "at": "2026-11-03T08:21:06+11:00",
+   "added": 0,
+   "seek": 0,
+   "indeed": 0,
+   "removed": 0,
+   "news": 2,
+   "jd": 27,
+   "github": "failed: 403 no push access",
+   "note": "Indeed connector failed to connect; Seek emails had no new relevant roles, and 16 web searches found no dated open priority-employer ads (GrainCorp, Viva and Ampol ads found were closed)."
+  },
   {
    "at": "2026-11-03T04:28:35+11:00",
    "added": 0,
@@ -3162,62 +3676,6 @@
    "jd": 14,
    "github": "failed: no push access (403, repo not authorized)",
    "note": "Indeed connector failed to connect; Seek emails had no new relevant roles; web search found no new confirmable ads."
-  },
-  {
-   "at": "2026-10-31T08:20:57+11:00",
-   "added": 0,
-   "seek": 0,
-   "indeed": 0,
-   "removed": 0,
-   "news": 1,
-   "jd": 14,
-   "github": "failed: no push access (403, repo not authorized)",
-   "note": "Indeed connector failed to connect; Seek emails had no new relevant roles (AkzoNobel and North East Link roles already listed)."
-  },
-  {
-   "at": "2026-10-31T04:20:39+11:00",
-   "added": 0,
-   "seek": 0,
-   "indeed": 0,
-   "removed": 1,
-   "news": 2,
-   "jd": 14,
-   "github": "failed: no push access (403, repo not authorized)",
-   "note": "Indeed connector failed to connect; Seek email had no new relevant roles (AkzoNobel Engineering Manager already listed)."
-  },
-  {
-   "at": "2026-10-30T21:24:59+11:00",
-   "added": 0,
-   "seek": 0,
-   "indeed": 0,
-   "removed": 0,
-   "news": 0,
-   "jd": 14,
-   "github": "ok (synced by Claude)",
-   "note": "Summary run: Indeed connector unavailable and Seek/LinkedIn/Indeed pages block fetching, so no new descriptions; all 14 existing descriptions already have summaries. Daily site research started: 12 sites and 3 companies added.",
-   "sites": 12
-  },
-  {
-   "at": "2026-10-30T21:13:36+11:00",
-   "added": 0,
-   "seek": 0,
-   "indeed": 0,
-   "removed": 0,
-   "news": 5,
-   "jd": 14,
-   "github": "failed: no push access (403, repo not authorized)",
-   "note": "Indeed connector unavailable; Seek emails had no new relevant roles; 2 Seek salaries added."
-  },
-  {
-   "at": "2026-10-30T20:28:30+11:00",
-   "added": 39,
-   "seek": 3,
-   "indeed": 36,
-   "removed": 22,
-   "news": 11,
-   "jd": 14,
-   "github": "ok (synced by Claude)",
-   "note": "Today's automatic updates had reached only the Claude copy; Claude synced them to your website."
   }
  ],
  "sites": [
