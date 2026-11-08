@@ -1298,7 +1298,7 @@ let LIVE=null,LOADED_AT=null,MENU_MSG="";
 const SEENKEY="pa_seen_v1";
 function ageH(){const t=new Date(UPDATED).getTime();return isNaN(t)?null:(Date.now()-t)/36e5}
 function relAge(){const h=ageH();if(h==null)return "";if(h<1/60)return "just now";if(h<1)return Math.round(h*60)+" min ago";if(h<48)return Math.round(h)+" h ago";return Math.round(h/24)+" days ago"}
-function health(){const h=ageH();if(h==null)return ["","Unknown"];if(h<=5.5)return ["ok","Up to date"];if(h<=9.5)return ["warn","An update was missed"];return ["bad","Not updating"]}
+function health(){const h=ageH();if(h==null)return ["","Unknown"];if(h<=24)return ["ok","Up to date"];return ["warn","Ready for a refresh"]}
 function nextRun(){const n=new Date(),t=new Date(n);t.setMinutes(20,0,0);while(t<=n||t.getHours()%4!==0)t.setHours(t.getHours()+1);return t}
 const fmtT=d=>d.toLocaleString("en-AU",{weekday:"short",day:"numeric",month:"short",hour:"numeric",minute:"2-digit"});
 function newSinceVisit(){let seen=null;try{seen=JSON.parse(localStorage.getItem(SEENKEY)||"null")}catch(e){}return seen?JOBS.filter(j=>!seen.includes(j.u)).length:null}
@@ -1308,7 +1308,7 @@ function renderMenu(){
   const [c,label]=health();const by={};JOBS.forEach(j=>by[j.src||"web"]=(by[j.src||"web"]||0)+1);
   const jd=JOBS.filter(j=>j.jd).length;const runs=(LIVE&&Array.isArray(LIVE.runs))?LIVE.runs.slice(0,8):[];const nv=newSinceVisit();
   const lastRun=runs[0];const ghBad=lastRun&&lastRun.github&&!/^ok/i.test(lastRun.github);
-  const help=c==="ok"?`Next automatic update about ${esc(fmtT(nextRun()))}.`:c==="warn"?`Updates run every 4 hours. One was missed; the next is due about ${esc(fmtT(nextRun()))}.`:`No new data for over 9 hours. Tell Claude "my app isn't updating" so it can fix it.`;
+  const help=`Updates only when you ask. Tell Claude “update now” for the latest jobs.`;
   $("#menu").innerHTML=`<section><h3>Data status</h3>
     <div class="st"><i class="dot ${c}"></i><div><b>${esc(label)}</b><p>Last updated ${esc(fmtT(new Date(UPDATED)))} (${esc(relAge())})</p><p>${help}</p></div></div>
     <div class="counts"><span><b>${JOBS.length}</b> jobs</span>${Object.entries(by).sort((a,b)=>b[1]-a[1]).map(([s,n])=>`<span>${esc(s)} <b>${n}</b></span>`).join("")}<span><b>${NEWS.length}</b> news</span><span><b>${jd}</b> job descriptions</span>${nv?`<span style="background:#dcfce7;color:#166534"><b>${nv}</b> new since your last visit</span>`:""}</div>
@@ -1351,7 +1351,7 @@ document.addEventListener("visibilitychange",()=>{if(document.visibilityState===
 /* Data: GitHub data.json is the base. The 4-hourly update can't push to GitHub, so it also appends small
    "overlay" rows to a Google Sheet (one JSON object per row in column A): meta (update time + run log),
    job (new job), sum (summary for an existing job), del (job removed), news, person. The app applies them on top. */
-const SHEET_ID="1sZ9wcwU3ad52ADah6bBvrXCQ4xDteTOSa2naP-R41CM";
+const SHEET_ID="";
 async function fetchGithubData(){try{const r=await fetch("data.json?t="+Date.now(),{cache:"no-store"});return r.ok?await r.json():null}catch(e){return null}}
 async function fetchSheetRows(){if(!SHEET_ID)return [];try{const r=await fetch(`https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tqx=out:csv&headers=0&range=A1:A3000&t=${Date.now()}`,{cache:"no-store"});if(!r.ok)return [];
   return parseCSV(await r.text()).map(x=>{try{const v=(x[0]||"").trim();return v.startsWith("{")?JSON.parse(v):null}catch(e){return null}}).filter(Boolean)}catch(e){return []}}
