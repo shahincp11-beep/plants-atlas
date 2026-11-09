@@ -1,6 +1,63 @@
 {
- "updated": "2026-11-09T04:21:18+11:00",
+ "updated": "2026-11-10T05:37:51+11:00",
  "jobs": [
+  {
+   "co": "csl",
+   "t": "Senior Plant Engineer",
+   "loc": "Melbourne VIC",
+   "d": "2026-11-08",
+   "u": "https://to.indeed.com/aax8ff9qy9td",
+   "lvl": "Senior",
+   "src": "Indeed"
+  },
+  {
+   "co": "ansto",
+   "t": "System Engineer (Mechanical/Process)",
+   "loc": "Lucas Heights NSW",
+   "d": "2026-11-08",
+   "u": "https://to.indeed.com/aam22prjgrbf",
+   "lvl": "Mid",
+   "src": "Indeed",
+   "cn": "ANSTO",
+   "sf": null,
+   "sw": null
+  },
+  {
+   "co": "seegroup",
+   "t": "Mechanical Engineer",
+   "loc": "Yatala QLD",
+   "d": "2026-11-01",
+   "u": "https://to.indeed.com/aacfzdzkjt7t",
+   "lvl": "Mid",
+   "src": "Indeed",
+   "cn": "SEE Group",
+   "sf": 12,
+   "sw": "Engineering and fabrication"
+  },
+  {
+   "co": "pacnat",
+   "t": "Infrastructure Maintenance Engineer",
+   "loc": "Tighes Hill, Newcastle NSW",
+   "d": "2026-11-01",
+   "u": "https://to.indeed.com/aa6lpkxy982c",
+   "lvl": "Mid",
+   "src": "Indeed",
+   "cn": "Pacific National",
+   "sf": 10,
+   "sw": "Rail maintenance facilities"
+  },
+  {
+   "co": "cimic",
+   "t": "Senior Project Engineer",
+   "loc": "Brisbane QLD",
+   "d": "2026-11-09",
+   "u": "https://to.indeed.com/aaccksdf8vyy",
+   "lvl": "Senior",
+   "src": "Indeed",
+   "cn": "CIMIC Group",
+   "sf": 8,
+   "sw": "Construction and infrastructure"
+  },
   {
    "co": "embedded",
    "cn": "Embedded Expertise",
@@ -4095,237 +4152,6 @@
    "u": "https://to.indeed.com/aavsn8ldpd77",
    "lvl": "Senior",
    "src": "Indeed"
-  },
-  {
-   "co": "alcoa",
-   "t": "Maintenance Planner",
-   "loc": "Portland VIC",
-   "d": "2026-09-30",
-   "u": "https://to.indeed.com/aaztdqkt2mj6",
-   "lvl": "Mid",
-   "src": "Indeed",
-   "jd": "We are seeking a Maintenance Planner to join our team at Portland Aluminium. As a Planner at our Portland Smelter, you are responsible for maximising maintenance and process effectiveness and efficiency by planning all scheduled activities prior to the commencement of a job. This involves safely integrating manufacturing and financial requirements into an effective Maintenance Plan.\nOther responsibilities include:\n- Developing weekly plans and facilitating weekly planning meetings in line with Alcoa planning processes.\n- Supporting daily planning processes, making information available to ensure successful work execution.\n- Ensuring people, parts and processes are available for maintenance activities in a timely manner.\n- Participating in reviews of major activities, seeking improvements and reporting on such activities.\n- Assisting in financial budget preparation, forecasting and maintenance strategies; ensuring long-term activity schedules are accurate and up to date.\n- Applying problem solving and analysing skills to isolate, diagnose and resolve equipment/process related problems.\n- Defining failure modes and understanding mean time to failure of systems.\n- Actively direct and participate in planned outages and performance improvement programs.\n- Oversee relevant Mechanical Maintenance Crews.\nWhat you can bring to the role\n- A Mechanical (Fitting & Turning) or Electrical Trade Certificate or Degree is advantageous however applicants with planning experience desirable.\n- Strong interpersonal skills.\n- Dedication to environment, health and safety in the workplace.\n- Excellent attention to detail, organisational and problem-solving skills.\n- The ability to co-ordinate multiple project/planning initiatives within the maintenance group.\n- Experience in heavy industry and the use of computer-based maintenance systems is advantageous.",
-   "sum": {
-    "about": "Maintenance planner at Alcoa's Portland aluminium smelter. Plans all scheduled work, runs weekly planning and supervises mechanical maintenance crews.",
-    "type": "Permanent, full-time",
-    "req": [
-     "Mechanical (fitting & turning) or electrical trade, or a degree (advantageous)",
-     "Planning experience",
-     "Heavy industry and CMMS (advantageous)",
-     "Strong safety focus",
-     "Detail-oriented organiser"
-    ],
-    "duties": [
-     "Build weekly plans and run planning meetings",
-     "Make sure people, parts and procedures are ready",
-     "Help with budgets, forecasts and long-term schedules",
-     "Analyse failure modes and MTBF",
-     "Direct planned outages",
-     "Oversee mechanical maintenance crews"
-    ],
-    "kw": [
-     "Maintenance planning",
-     "Weekly scheduling",
-     "Planned outages",
-     "Shutdowns",
-     "Failure modes",
-     "MTBF",
-     "Budget forecasting",
-     "CMMS",
-     "Smelter",
-     "Heavy industry"
-    ],
-    "note": "Portland is in far south-west Victoria, about 4 hours from Melbourne."
-   }
-  },
-  {
-   "co": "visy",
-   "t": "Project Engineer - Visy Tumut",
-   "loc": "Tumut NSW",
-   "d": "2026-09-30",
-   "u": "https://to.indeed.com/aa2jl684c8k9",
-   "lvl": "Mid",
-   "src": "Indeed",
-   "jd": "515693 - Tumut, NSW - Full Time\nTake ownership of projects from concept through to delivery.\nWork with major plant and equipment across one of Australia's largest pulp and paper manufacturing operations\nJoin a growing engineering team delivering multi-million-dollar investments in safety, reliability and operational performance\n\nWe're looking for an experienced Project Engineer to join Visy's Build, Run, Repair (BRR) team at Tumut, in the beautiful Snowy Mountains. Working closely with operations, maintenance and engineering teams, you'll lead the delivery of capital projects across one of Australia's largest integrated pulp and paper manufacturing sites. From equipment upgrades and plant improvements through to major capital investments, your work will directly enhance the site's safety, reliability and production capability.\n\nWhat you'll do:\nManage capital projects from concept development through to completion and handover.\nDevelop scopes of work, budgets, schedules and contractor packages.\nCoordinate contractors, suppliers and site stakeholders to ensure safe project execution.\nOversee installation and commissioning activities across mechanical plant and equipment.\nMonitor project performance to deliver outcomes aligned with budget, schedule and safety targets.\n\nWhat You Will Bring:\nDegree-qualified Mechanical Engineer or equivalent project engineering experience.\nExperience delivering projects within manufacturing, pulp and paper, mining, chemicals, energy or another heavy industrial environment.\nStrong understanding of mechanical equipment, piping systems and process plant infrastructure.\nAbility to manage contractors and multiple stakeholders in a live operating environment.\nStrong communication, planning and problem-solving skills.\n\nWhat you'll love when you join us:\nPurpose-Driven Work: Be part of a business powering the circular economy\nLifestyle Benefits: Enjoy a better work-life balance in a stunning regional location\nLeave Benefits: Purchase leave options for extra flexibility\nStaff Discounts at RSEA, Avis, Harvey Norman and other retailers\n\nYou will be required to meet Visy's employment criteria which will include a criminal history check and pre-employment medical (including drug & alcohol testing). Only applications with the right to live and work in Australia will be considered.",
-   "sum": {
-    "about": "Capital projects role in Visy's Build, Run, Repair team at its large integrated pulp and paper mill in Tumut.",
-    "type": "Full-time",
-    "req": [
-     "Mechanical engineering degree or equivalent experience",
-     "Projects in manufacturing, pulp and paper, chemicals or heavy industry",
-     "Good grasp of mechanical equipment, piping and process plant",
-     "Managing contractors in a live operating site",
-     "Strong planning and communication"
-    ],
-    "duties": [
-     "Run capital projects from concept to handover",
-     "Prepare scopes, budgets, schedules and contract packages",
-     "Coordinate contractors and site stakeholders",
-     "Oversee mechanical installation and commissioning",
-     "Track cost, schedule and safety"
-    ],
-    "ben": [
-     "Regional lifestyle location",
-     "Purchased leave options",
-     "Retail staff discounts"
-    ],
-    "kw": [
-     "project engineer",
-     "capital projects",
-     "pulp and paper",
-     "mechanical installation",
-     "commissioning",
-     "piping",
-     "scope of work",
-     "contractor management",
-     "budget",
-     "schedule",
-     "brownfield",
-     "handover"
-    ]
-   }
-  },
-  {
-   "co": "dulux",
-   "t": "Project Engineer",
-   "loc": "Rocklea QLD",
-   "d": "2026-09-29",
-   "u": "https://to.indeed.com/aadgl8dsj4jn",
-   "lvl": "Mid",
-   "src": "Indeed",
-   "cn": "DuluxGroup",
-   "sf": 18,
-   "sw": "Paint manufacturing plant",
-   "jd": "What You'll Be Doing:\nReporting to the Engineering Manager, you'll take ownership of multiple capital and plant optimisation projects from scoping and design through to engineering procurement, installation, commissioning and operational handover. Working closely with site teams, contractors and suppliers, you'll deliver practical improvements that reduce safety risks, generate cost savings and strengthen plant capability. You'll be empowered to solve complex problems, lead continuous improvement and manage projects as if they were your own business.\n\nOur Benefits:\nUp to $1,000 net annually to cover private health extras gap costs\nExclusive discounts on DuluxGroup products and partner offers\nFitness Passport\n20 weeks paid parental leave (primary carers) and 2 weeks partner leave from day one\nMarket leading learning, development and career pathways\nAccess to our Wellbeing Hub and full EAP support\n\nWhat We're Looking for:\nExperience delivering small to mid-sized capital and operational improvement projects from concept through to commissioning and operational handover within manufacturing, process, or industrial environments.\nStrong project management skills with the ability to independently manage multiple priorities and deliver projects safely, on time, and within budget.\nExposure to manufacturing or process plant environments, with the ability to interpret and update P&IDs, layout drawings, and Functional Descriptions. Experience interpreting electrical schematics is advantageous.\nA solid understanding of industrial equipment and systems, including tanks, piping, valves, pumps, and instrumentation.\nProficiency with AutoCAD and technical drawing interpretation. Exposure to 3D design software such as Navisworks or Inventor is advantageous but not essential.\nA recognised/accredited Bachelor's degree (by Engineers Australia) in Mechanical, Electrical, Mechatronic, Process, or Chemical Engineering, along with 2-5 years post-graduate industry experience.\nDemonstrated ability to develop scopes of work and manage contractors, suppliers, consultants, and all required site-based activities to successfully deliver capital projects.",
-   "sum": {
-    "about": "Capital and plant optimisation projects at DuluxGroup's Rocklea manufacturing site, reporting to the Engineering Manager.",
-    "type": "Full-time",
-    "req": [
-     "Delivering small to mid capital projects to handover",
-     "Can read and update P&IDs and layout drawings",
-     "Knowledge of tanks, piping, valves, pumps and instruments",
-     "AutoCAD skills; Navisworks or Inventor a plus",
-     "Engineering degree (mechanical, process, chemical etc.) with 2–5 years",
-     "Scoping work and managing contractors"
-    ],
-    "duties": [
-     "Own projects from scoping through commissioning",
-     "Manage procurement, installation and handover",
-     "Work with site teams, contractors and suppliers",
-     "Reduce safety risks and deliver cost savings",
-     "Lead continuous improvement"
-    ],
-    "ben": [
-     "Up to $1,000 a year for health extras",
-     "Product discounts",
-     "20 weeks paid parental leave",
-     "Fitness Passport"
-    ],
-    "kw": [
-     "project engineer",
-     "capital projects",
-     "P&ID",
-     "layout drawings",
-     "AutoCAD",
-     "tanks",
-     "piping",
-     "valves",
-     "pumps",
-     "commissioning",
-     "manufacturing",
-     "plant optimisation"
-    ]
-   }
-  },
-  {
-   "co": "ampcontrol",
-   "cn": "Ampcontrol",
-   "sf": 15,
-   "sw": "Industrial equipment manufacturer",
-   "t": "Mechanical Engineer",
-   "loc": "Tomago, Newcastle NSW",
-   "d": "2026-09-28",
-   "u": "https://to.indeed.com/aabpv2mmwrvz",
-   "lvl": "Mid",
-   "src": "Indeed",
-   "jd": "We're looking for a Mechanical Engineer to join our growing Data Centres and Critical Power team. This is an opportunity to work on complex mechanical designs and contribute to the delivery of switchrooms and critical power infrastructure for data centre environments.\n\nWhat you'll do\nDevelop and deliver mechanical designs in accordance with customer specifications, project requirements, contracts, relevant standards and regulatory requirements.\nDesign and detail mechanical systems and components for switchrooms and critical power infrastructure.\nProduce accurate 3D models and engineering drawings using Autodesk Inventor and AutoCAD.\nParticipate in risk assessments, order reviews and design reviews.\nPrepare work packages, inspection and test plans, product quality documentation and other project deliverables.\nWork closely with Project Managers, Engineers, Assembly and Workshop teams.\nProvide mechanical design advice, technical support and engineering calculations to other Ampcontrol divisions as required.\n\nAbout you\nTertiary qualifications in Mechanical Engineering, Mechatronics Engineering or a related discipline.\nExperience designing switchrooms, electrical enclosures or similar industrial equipment.\nProficiency in Autodesk Inventor and AutoCAD.\nStrong understanding of mechanical design principles, engineering standards and documentation.\nExperience preparing engineering calculations, drawings and technical documentation.",
-   "sum": {
-    "about": "Ampcontrol's Data Centres and Critical Power team in Tomago wants a mechanical engineer to design switchrooms and critical power enclosures.",
-    "req": [
-     "Mechanical or mechatronics degree",
-     "Switchroom or enclosure design experience",
-     "Autodesk Inventor and AutoCAD",
-     "Engineering calculations and documentation"
-    ],
-    "duties": [
-     "Design switchroom and critical power mechanical systems",
-     "Produce 3D models and drawings",
-     "Join design, order and risk reviews",
-     "Prepare work packs, ITPs and quality documents",
-     "Support workshop and assembly teams"
-    ],
-    "kw": [
-     "Mechanical Engineer",
-     "Autodesk Inventor",
-     "AutoCAD",
-     "switchrooms",
-     "data centres",
-     "critical power",
-     "ITP",
-     "design review",
-     "calculations"
-    ],
-    "note": "Product design for data centre equipment rather than process plant."
-   }
-  },
-  {
-   "co": "weir",
-   "t": "Mechanical Engineer",
-   "loc": "Sydney NSW",
-   "d": "2026-09-27",
-   "u": "https://to.indeed.com/aajzdqdllb9l",
-   "lvl": "Mid",
-   "src": "Indeed",
-   "cn": "Weir",
-   "sf": 19,
-   "sw": "Pumps, valves and minerals processing",
-   "jd": "Mechanical Engineer - Cyclones\nLocation: Brisbane, Artarmon NSW or Perth WA\nWhat we do at Weir: We are a global leader in mining technology for a sustainable future. We help our customers extract the resources the world needs more efficiently and more sustainably.\nWhat you'll do\nTechnical Expertise: Become a subject matter expert in cyclone and cyclone cluster process equipment design, collaborating closely with designers, draftspeople, and discipline engineers to ensure technical excellence.\nCustomer & Regulatory Compliance: Evaluate equipment against customer requirements and regulatory standards, including Australian and international codes, to identify and close compliance gaps.\nProject Delivery: Facilitate on-time delivery of equipment within budget by maintaining project documentation, conducting design reviews at key project milestones, and providing timely technical advice to internal and external stakeholders.\nStakeholder Collaboration: Support technical discussions and manage customer queries, working effectively with technical sales teams, project managers, designers, and engineering leadership to translate customer needs into engineering solutions.\nField Engagement: Participate in site visits, commissioning, testing, and development activities at mines, mineral processing plants, and factories, ensuring practical insights inform engineering decisions.\nContinuous Improvement: Contribute to enhancing Weir Minerals Australia's product stewardship program for process equipment and support design analysis tasks as required.\nTravel Requirements: Occasional local and overseas travel to customer sites, factories, and mines to support commissioning, service, and stakeholder engagement.\nSafety First: Demonstrate 100% commitment to our zero harm behaviors.\nWhat you'll bring\nMust-haves:\nBachelor's degree in mechanical engineering.\n2-5 years of practical experience with cyclone or cyclone cluster equipment in mining or related industries.\nStrong communication skills with the ability to engage effectively with customers, technical teams, and leadership.\nExperience in project engineering, including reviewing GA drawings, managing technical queries, and participating in design reviews.\nNice-to-haves:\nExposure to mine-site operations through site visits, commissioning, or field support.\nFamiliarity with FEA and CAD tools, preferably NX/Teamcenter.\nExperience in mineral process equipment such as mill liners and screens.\nCustomer-facing engineering experience and stakeholder management skills.\nBenefits: Competitive pay; Career development and learning support; Access to global inclusion networks; Regional and team-specific benefits; Sharebuilder scheme; Wellness support for you and your family; Collaboration with global teams; Study support.",
-   "sum": {
-    "about": "Weir Minerals needs a mechanical engineer specialising in cyclone process equipment for mining customers.",
-    "type": "Full-time",
-    "req": [
-     "Mechanical engineering degree",
-     "2–5 years with cyclone or cyclone cluster equipment",
-     "Project engineering incl. GA drawing reviews",
-     "Strong customer communication",
-     "FEA/CAD (NX/Teamcenter) is a plus"
-    ],
-    "duties": [
-     "Become SME for cyclone equipment design",
-     "Check equipment against customer specs and codes",
-     "Run design reviews and keep project documents",
-     "Support commissioning and testing at mines and factories",
-     "Work with sales, PMs and designers"
-    ],
-    "ben": [
-     "Sharebuilder scheme",
-     "Study support",
-     "Wellness support"
-    ],
-    "kw": [
-     "hydrocyclones",
-     "mineral processing",
-     "GA drawings",
-     "design review",
-     "commissioning",
-     "Australian Standards",
-     "FEA",
-     "NX",
-     "Teamcenter",
-     "project engineering"
-    ],
-    "note": "Can be based in Artarmon NSW, Brisbane or Perth."
-   }
   }
  ],
  "news": [
@@ -4592,6 +4418,17 @@
  ],
  "runs": [
   {
+   "at": "2026-11-10T05:37:51+11:00",
+   "added": 5,
+   "seek": 0,
+   "indeed": 5,
+   "removed": 0,
+   "news": 0,
+   "jd": 56,
+   "github": "ok",
+   "note": "Update now: no new Seek alert emails; 6 Indeed searches."
+  },
+  {
    "at": "2026-11-09T04:21:18+11:00",
    "added": 4,
    "seek": 0,
@@ -4799,17 +4636,6 @@
    "jd": 39,
    "github": "ok (saved via Google Sheet; GitHub website copy not updated — no push access)",
    "note": "Indeed connector failed to connect, so 15 web searches were used (priority-employer ads found were filled or expired); Seek emails had 1 new relevant role."
-  },
-  {
-   "at": "2026-11-04T08:24:16+11:00",
-   "added": 0,
-   "seek": 0,
-   "indeed": 0,
-   "removed": 0,
-   "news": 1,
-   "jd": 39,
-   "github": "ok (saved via Google Sheet; GitHub website copy not updated — no push access)",
-   "note": "Indeed connector failed to connect, so 17 web searches were used (priority-employer ads found were expired, filled or undated); Seek emails had no new relevant roles."
   }
  ],
  "sites": [
