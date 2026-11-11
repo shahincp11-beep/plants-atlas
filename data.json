@@ -1,6 +1,57 @@
 {
- "updated": "2026-11-10T05:37:51+11:00",
+ "updated": "2026-11-11T14:47:18+11:00",
  "jobs": [
+  {
+   "co": "cargill",
+   "t": "Process Engineer",
+   "loc": "Newcastle NSW",
+   "d": "2026-11-09",
+   "u": "https://to.indeed.com/aakwj8f9p7m4",
+   "lvl": "Mid",
+   "src": "Indeed"
+  },
+  {
+   "co": "pilbarapps",
+   "t": "Project Engineer / PM | Brownfield Projects | Pt Hedland Resi or Perth FIFO",
+   "loc": "Port Hedland WA",
+   "d": "2026-11-10",
+   "u": "https://www.seek.com.au/job/95616135",
+   "lvl": "Senior",
+   "src": "Seek",
+   "cn": "Pilbara Project Specialists",
+   "sf": 15,
+   "sw": "Brownfield project delivery",
+   "sum": {
+    "sal": "$180,000 – $250,000 per year"
+   }
+  },
+  {
+   "co": "astrum",
+   "t": "Mechanical Preservation Engineer - FIFO",
+   "loc": "Cooma, Snowy & Monaro NSW",
+   "d": "2026-11-10",
+   "u": "https://www.seek.com.au/job/95496404",
+   "lvl": "Mid",
+   "src": "Seek",
+   "cn": "Astrum",
+   "sf": 12,
+   "sw": "Major hydro project mechanical"
+  },
+  {
+   "co": "d2process",
+   "t": "Project Engineer",
+   "loc": "Australia",
+   "d": "2026-10-18",
+   "u": "https://www.seek.com.au/job/95326465",
+   "lvl": "Mid",
+   "src": "Seek",
+   "cn": "D2 Process",
+   "sf": 20,
+   "sw": "Process plant engineering",
+   "sum": {
+    "note": "You applied on 18 Oct 2026 via Seek"
+   }
+  },
   {
    "co": "csl",
    "t": "Senior Plant Engineer",
@@ -4042,116 +4093,6 @@
    "cn": "Baker Hughes",
    "sf": 15,
    "sw": "Oil and gas equipment"
-  },
-  {
-   "co": "lycopodium",
-   "t": "Lead/Senior Project Engineers",
-   "loc": "Perth WA",
-   "d": "2026-10-02",
-   "u": "https://to.indeed.com/aaqd7l2ntlzy",
-   "lvl": "Senior / lead",
-   "src": "Indeed"
-  },
-  {
-   "co": "gfg",
-   "t": "Maintenance Planner and Engineer",
-   "loc": "Mayfield NSW",
-   "d": "2026-10-02",
-   "u": "https://to.indeed.com/aaf2gzrxmtvh",
-   "lvl": "Mid",
-   "src": "Indeed",
-   "cn": "GFG Alliance",
-   "jd": "Reporting to the Process and Reliability Engineer and based at our Newcastle Mesh Facility (InfraBuild) you will play a key role in maximising plant reliability by planning, scheduling and coordinating maintenance activities across the Newcastle Mesh site. You'll manage the maintenance backlog and planning horizon, ensuring work is safely and efficiently prepared with the right materials, resources, documentation and controls in place.\nThe role also provides hands-on technical and reliability support to maintenance and operations teams, including breakdown troubleshooting, shutdown planning and continuous improvement initiatives.\nWhat you will be doing:\n- Design, implement, and manage proactive maintenance planning and scheduling systems, both Mechanical and Electrical\n- Build preventative maintenance schedules for all equipment on site\n- Develop asset registers, job plans, bill of materials and maintenance procedures\n- Schedule preventive, corrective, and predictive maintenance activities including scheduled asset downtime activities\n- Coordinate with production teams to minimize disruption during maintenance windows\n- Collaborate with tradespeople, production, and leadership to drive continuous improvement in maintenance planning\nThis is a permanent full-time role.\nOur ideal candidate will have:\n- Relevant trade qualification and/or tertiary engineering qualification (ideally mechanical, electrical or similar), with formal maintenance planning or reliability qualifications highly regarded.\n- Proven experience in maintenance planning within an industrial or manufacturing environment.\n- Strong understanding of maintenance practices and asset management principles.\n- SAP PM experience, or other preventative maintenance systems experience.\n- Experience with risk assessment, contractor management and supervision, and maintenance execution highly regarded.\n- Strong analytical and problem-solving skills, with experience applying root-cause analysis, FMEA or other reliability methodologies.",
-   "sum": {
-    "about": "Planner and engineer at InfraBuild's Newcastle Mesh plant (GFG Alliance). Plans and schedules all maintenance and gives hands-on reliability support.",
-    "type": "Permanent, full-time",
-    "req": [
-     "Trade and/or engineering qualification (mechanical or electrical)",
-     "Maintenance planning in industry or manufacturing",
-     "Asset management principles",
-     "SAP PM or similar",
-     "RCA and FMEA",
-     "Valued: contractor management and supervision"
-    ],
-    "duties": [
-     "Set up proactive mechanical and electrical planning and scheduling",
-     "Build PM schedules for all site equipment",
-     "Develop asset registers, job plans, BOMs and procedures",
-     "Schedule PM, CM and predictive work and shutdowns",
-     "Support breakdowns and continuous improvement"
-    ],
-    "kw": [
-     "Maintenance planning",
-     "Scheduling",
-     "SAP PM",
-     "Asset register",
-     "Job plans",
-     "Bill of materials",
-     "Shutdown planning",
-     "RCA",
-     "FMEA",
-     "Steel manufacturing"
-    ],
-    "note": "Building the asset register and PM system matches your CMMS set-up work."
-   }
-  },
-  {
-   "co": "graincorp",
-   "t": "Project Manager",
-   "loc": "Marong, Bendigo VIC",
-   "d": "2026-09-30",
-   "u": "https://to.indeed.com/aasxwvps49bn",
-   "lvl": "Manager",
-   "src": "Indeed",
-   "jd": "Package comprising competitive base, super and vehicle\n\nAbout the role\nBased at our site in Marong we are looking for a Project Manager to join us permanently. You will be responsible for the delivery to plan of a wide variety of exciting multi-discipline capital projects that range from small maintenance projects, to complex multi-million dollar infrastructure builds. Your Project Management skill set will be tested to the full in this client side role. As an advisor and service provider, you will be required to identify opportunities to improve the business assets and functions, as well as run projects from their inception to their conclusion. This will done while maintaining a transparent and stakeholder inclusive communications program. This is a diverse, challenging, yet satisfying role, where you will not only be delivering projects in a resource constrained environment across a large geographically area, you will also be managing a broad range of internal and external stakeholders.\n\nAbout your experience\nOur ideal candidate will hold qualifications in Project Management with practical experience in supporting and delivering projects in any industry. Project management experience, including management of site staff, contractors, budgets, project expenditure, schedules, safety, compliance and project records in an industrial construction environment. Your skill set could be from a project management, design, site engineering or maintenance background with experience in on-site management of contractors and project activities. Finally, any experience in the design and construction of bulk handling infrastructure including ports, material storage, conveyors, rail, roads, control systems, power systems, and relevant infrastructure will be looked upon favourably.\n\nOther key attributes we are looking for are;\nExceptional communication skills - both written and verbal\nA demonstrated ability to effectively manage and resolve issues that arise during all phases of projects\nA willingness to travel - projects will be based across local Victoria and Victorian ports\nComputer literacy skills (MS suite including MS Project, Excel and Word)\nOutstanding stakeholder management skills\nAbility to work autonomously\nProven experience managing projects from initiation to completion\n\nFinally, you should be willing and able to travel in the role: 1-2 day trips / month during planning phase; 2 days / week for a few consecutive weeks during construction phase; a little more than this for larger commissioning projects.\n\nWhat we offer\nProfessional development & leadership programs\nHybrid work and flexible leave options\nHealth & wellbeing support including birthday leave\nFamily Inclusive Workplace accredited employer\nInclusive, values-driven culture\n\nIn addition to providing proof of working rights and suitable professional referees a pre-employment medical and drivers license are required for this position.",
-   "sum": {
-    "about": "Client-side role at GrainCorp's Marong site delivering multi-discipline capital projects, from small maintenance jobs to multi-million-dollar infrastructure builds.",
-    "type": "Permanent",
-    "sal": "Competitive base, super and vehicle",
-    "req": [
-     "Project management qualification and proven end-to-end project delivery",
-     "Managing contractors, budgets, schedules, safety and records in industrial construction",
-     "Background in PM, design, site engineering or maintenance accepted",
-     "Bulk handling infrastructure experience (conveyors, storage, ports) favoured",
-     "MS Project, Excel and Word skills",
-     "Driver's licence and willingness to travel across Victoria and ports"
-    ],
-    "duties": [
-     "Deliver capital projects from inception to close-out",
-     "Identify improvement opportunities for site assets",
-     "Manage site staff, contractors and project spend",
-     "Run stakeholder communications across a wide region",
-     "Support larger commissioning projects on site"
-    ],
-    "ben": [
-     "Leadership and development programs",
-     "Hybrid work and flexible leave",
-     "Birthday leave and wellbeing support"
-    ],
-    "kw": [
-     "project management",
-     "capital projects",
-     "multi-discipline",
-     "contractor management",
-     "budget control",
-     "scheduling",
-     "MS Project",
-     "bulk handling",
-     "conveyors",
-     "commissioning",
-     "stakeholder management",
-     "client side"
-    ]
-   }
-  },
-  {
-   "co": "perdaman",
-   "t": "Inspection & Condition Monitoring Senior Engineer",
-   "loc": "Karratha WA",
-   "d": "2026-09-30",
-   "u": "https://to.indeed.com/aavsn8ldpd77",
-   "lvl": "Senior",
-   "src": "Indeed"
   }
  ],
  "news": [
@@ -4418,6 +4359,17 @@
  ],
  "runs": [
   {
+   "at": "2026-11-11T14:47:18+11:00",
+   "added": 4,
+   "seek": 3,
+   "indeed": 1,
+   "removed": 4,
+   "news": 0,
+   "jd": 54,
+   "github": "ok",
+   "note": "Update now: Seek activity email + 5 Indeed searches."
+  },
+  {
    "at": "2026-11-10T05:37:51+11:00",
    "added": 5,
    "seek": 0,
@@ -4625,17 +4577,6 @@
    "jd": 39,
    "github": "ok (saved via Google Sheet; GitHub website copy not updated — no push access)",
    "note": "Indeed connector failed to connect, so 11 web searches were used (priority-employer ads found were filled, expired or already listed); Seek emails had 1 new relevant role; the Austcorp Project Engineer you applied to was skipped as its location wasn't shown."
-  },
-  {
-   "at": "2026-11-04T12:21:02+11:00",
-   "added": 1,
-   "seek": 1,
-   "indeed": 0,
-   "removed": 1,
-   "news": 0,
-   "jd": 39,
-   "github": "ok (saved via Google Sheet; GitHub website copy not updated — no push access)",
-   "note": "Indeed connector failed to connect, so 15 web searches were used (priority-employer ads found were filled or expired); Seek emails had 1 new relevant role."
   }
  ],
  "sites": [
