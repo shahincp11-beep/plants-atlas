@@ -1,6 +1,42 @@
 {
- "updated": "2026-11-11T14:47:18+11:00",
+ "updated": "2026-11-12T08:29:19+11:00",
  "jobs": [
+  {
+   "co": "idt",
+   "t": "Maintenance Planner & Reliability Engineer",
+   "loc": "Boronia VIC",
+   "d": "2026-11-10",
+   "u": "https://to.indeed.com/aa4zpkgg98nh",
+   "lvl": "Mid",
+   "src": "Indeed",
+   "cn": "IDT Australia",
+   "sf": null,
+   "sw": null
+  },
+  {
+   "co": "biotecheng",
+   "t": "Process Engineer",
+   "loc": "Port Melbourne VIC",
+   "d": "2026-11-09",
+   "u": "https://to.indeed.com/aavcnbqx7wm4",
+   "lvl": "Mid",
+   "src": "Indeed",
+   "cn": "Biotech Engineering",
+   "sf": 16,
+   "sw": "Process equipment engineering"
+  },
+  {
+   "co": "downer",
+   "t": "Senior Engineer",
+   "loc": "Cardiff, Newcastle NSW",
+   "d": "2026-11-11",
+   "u": "https://to.indeed.com/aam9zbymxqqc",
+   "lvl": "Senior",
+   "src": "Indeed",
+   "cn": "Downer Group",
+   "sf": null,
+   "sw": null
+  },
   {
    "co": "cargill",
    "t": "Process Engineer",
@@ -4028,71 +4064,6 @@
    "cn": "Contract Resources",
    "sf": 18,
    "sw": "Refinery shutdown services"
-  },
-  {
-   "co": "cbh",
-   "cn": "CBH Group",
-   "sf": 18,
-   "sw": "Grain handling, oilseed links",
-   "t": "Senior Mechanical Engineer",
-   "loc": "Perth WA",
-   "d": "2026-10-06",
-   "u": "https://to.indeed.com/aazm66h7q7tl",
-   "lvl": "Senior",
-   "src": "Indeed"
-  },
-  {
-   "co": "app",
-   "cn": "All Purpose Pumps",
-   "t": "Mechanical Engineer",
-   "loc": "Hoppers Crossing VIC",
-   "d": "2026-10-05",
-   "u": "https://to.indeed.com/aac7ptp9hmqn",
-   "lvl": "Mid",
-   "src": "Indeed",
-   "jd": "All Purpose Pumps is seeking a self-motivated, autonomous Mechanical Engineer to join our Operations team in Hoppers Crossing. In this role, you will support the design and improvement of our high-quality pump products and plumbing solutions. You will create 3D CAD models, translate them into 2D manufacturing drafts, conduct engineering calculations, and produce build specifications for manufacturing.\n* CAD Modeling & Drafting: Create detailed 3D CAD models using SolidWorks and produce high-quality 2D drafts suitable for manufacturing.\n* Product Design & Validation: Provide sound mechanical designs for new products, updates, and improvements. Perform calculations to validate designs and ensure compliance with relevant Australian Standards.\n* Documentation & Support: Produce Bills of Materials (BOM) and build specifications. Update or author technical documentation, including user manuals, risk assessments, technical datasheets, and commissioning plans.\n* Technical Assistance & Compliance: Provide technical support to internal departments and customers while maintaining OH&S standards and continuous improvement goals.\nSelection Criteria (Skills & Qualifications Required)\nMandatory Qualifications & Experience\n* Tertiary Qualification: Bachelor's degree in Mechanical Engineering or related field (ANZSCO Skill Level 1).\n* Work Experience: Minimum of 5 years' experience in a similar mechanical engineering role within manufacturing, mining, or related industries.\n* Technical Knowledge: Strong understanding of pumps, plumbing solutions, hydraulic systems, and relevant Australian Standards for design.\nHard Skills\n* Proficiency in CAD Software: Expert level in SolidWorks and AutoCAD.\n* General IT: Proficient in Microsoft Office suite.\nSoft Skills\n* Self-starter capable of working autonomously and managing multiple priorities.\n* Strong organizational, negotiation, and time-management capabilities\nPay: $100,000.00 per year\nWork Location: In person",
-   "sum": {
-    "about": "All Purpose Pumps in Hoppers Crossing wants a mechanical engineer to design and improve pump and plumbing products.",
-    "type": "Full-time",
-    "sal": "$100,000 per year",
-    "req": [
-     "Mechanical engineering degree",
-     "5+ years in manufacturing, mining or similar",
-     "Pumps, hydraulic systems and Australian Standards knowledge",
-     "Expert SolidWorks and AutoCAD"
-    ],
-    "duties": [
-     "Build 3D CAD models and 2D manufacturing drawings",
-     "Run design calculations and validation",
-     "Produce BOMs and build specifications",
-     "Write manuals, datasheets and commissioning plans",
-     "Provide technical support to customers"
-    ],
-    "kw": [
-     "pumps",
-     "SolidWorks",
-     "AutoCAD",
-     "BOM",
-     "product design",
-     "hydraulic systems",
-     "Australian Standards",
-     "commissioning plans",
-     "manufacturing drawings"
-    ],
-    "note": "Mainly a product-design role; salary is at the lower end for 10+ years' experience."
-   }
-  },
-  {
-   "co": "bakerhughes",
-   "t": "Engineering Senior Specialist – Customer Project Engineering",
-   "loc": "Springfield Central QLD",
-   "d": "2026-10-05",
-   "u": "https://to.indeed.com/aaqx77dxn8tl",
-   "lvl": "Senior",
-   "src": "Indeed",
-   "cn": "Baker Hughes",
-   "sf": 15,
-   "sw": "Oil and gas equipment"
   }
  ],
  "news": [
@@ -4359,6 +4330,17 @@
  ],
  "runs": [
   {
+   "at": "2026-11-12T08:29:19+11:00",
+   "added": 3,
+   "seek": 0,
+   "indeed": 3,
+   "removed": 3,
+   "news": 0,
+   "jd": 53,
+   "github": "ok",
+   "note": "Update now: no new Seek emails; 5 Indeed searches."
+  },
+  {
    "at": "2026-11-11T14:47:18+11:00",
    "added": 4,
    "seek": 3,
@@ -4566,17 +4548,6 @@
    "jd": 47,
    "github": "ok (synced by Claude)",
    "note": "Indeed searches found 4 new roles (Perdaman, Aurecon, Stantec, CBRE) and 8 job descriptions were added; Seek emails had no new relevant roles; no new news found."
-  },
-  {
-   "at": "2026-11-04T16:20:51+11:00",
-   "added": 1,
-   "seek": 1,
-   "indeed": 0,
-   "removed": 1,
-   "news": 0,
-   "jd": 39,
-   "github": "ok (saved via Google Sheet; GitHub website copy not updated — no push access)",
-   "note": "Indeed connector failed to connect, so 11 web searches were used (priority-employer ads found were filled, expired or already listed); Seek emails had 1 new relevant role; the Austcorp Project Engineer you applied to was skipped as its location wasn't shown."
   }
  ],
  "sites": [
