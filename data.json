@@ -1,6 +1,69 @@
 {
- "updated": "2026-11-13T08:02:09+11:00",
+ "updated": "2026-11-15T10:19:47+11:00",
  "jobs": [
+  {
+   "co": "cargill",
+   "t": "Process Engineer",
+   "loc": "Footscray, Melbourne VIC",
+   "d": "2026-11-12",
+   "u": "https://to.indeed.com/aasr2j47hb49",
+   "lvl": "Mid",
+   "src": "Indeed"
+  },
+  {
+   "co": "ansto",
+   "t": "Radioactive Plant Engineer",
+   "loc": "Lucas Heights NSW",
+   "d": "2026-11-12",
+   "u": "https://to.indeed.com/aasqysp6fsgf",
+   "lvl": "Mid",
+   "src": "Indeed",
+   "cn": "ANSTO",
+   "sf": null,
+   "sw": null
+  },
+  {
+   "co": "mss",
+   "t": "Reliability Engineer",
+   "loc": "Melbourne VIC (FIFO/DIDO)",
+   "d": "2026-11-13",
+   "u": "https://www.seek.com.au/job/95820848",
+   "lvl": "Mid",
+   "src": "Seek",
+   "cn": "Maintenance Systems Solutions",
+   "sf": 14,
+   "sw": "Maintenance & reliability services",
+   "sum": {
+    "sal": "Hourly rate + super (temp to perm)"
+   }
+  },
+  {
+   "co": "vacupack",
+   "t": "Mechanical Engineer-full time",
+   "loc": "Moorabbin, Melbourne VIC",
+   "d": "2026-11-13",
+   "u": "https://www.seek.com.au/job/95816414",
+   "lvl": "Mid",
+   "src": "Seek",
+   "cn": "Vacupack",
+   "sf": 12,
+   "sw": "Packaging machinery manufacturer",
+   "sum": {
+    "sal": "$80,000 – $85,000 per year"
+   }
+  },
+  {
+   "co": "goalindig",
+   "t": "Asset Engineer",
+   "loc": "Williamstown, Melbourne VIC",
+   "d": "2026-11-13",
+   "u": "https://www.seek.com.au/job/95787322",
+   "lvl": "Mid",
+   "src": "Seek",
+   "cn": "Goal Indigenous Services",
+   "sf": 8,
+   "sw": "Infrastructure asset management"
+  },
   {
    "co": "csl",
    "t": "Senior Project Engineer",
@@ -3866,130 +3929,6 @@
    "u": "https://to.indeed.com/aagv4kh2gykx",
    "lvl": "Mid",
    "src": "Indeed"
-  },
-  {
-   "co": "clough",
-   "t": "Mechanical/Piping Engineer",
-   "loc": "Perth WA",
-   "d": "2026-10-07",
-   "u": "https://to.indeed.com/aakrf6czq8qf",
-   "lvl": "Mid",
-   "src": "Indeed",
-   "jd": "We have an exciting opportunity for a Mechanical/Piping Engineer to join the Kwinana Gas Power Generation 2 Team in Perth! In this role, you will effectively provide mechanical and piping engineering delivery and site support for the K2 Project, assisting with implementation of approved mechanical and piping designs to support safe construction, testing, commissioning and handover.\n\nClough is delivering the design and construction of the Kwinana Gas Power Generation 2 project (K2), a new 220 MW gas fired power station to be built in Kwinana, south of Perth.\n\nYour focus will include:\nPrepare mechanical and piping engineering deliverables, including calculations, equipment and line data sheets, specifications and layouts, under direction of senior and principal engineers.\nSupport construction and commissioning activities by responding to mechanical and piping RFIs, site technical queries and non-conformances.\nAssist with coordination of mechanical and piping interfaces with process, electrical, I&C and civil/structural disciplines.\nReview vendor, fabricator and subcontractor documentation for compliance with approved mechanical and piping designs as directed.\nSupport Safety in Design activities by identifying mechanical and piping hazards and assisting with implementation of agreed design risk controls.\nAssist with mechanical and piping engineering change processes, including preparation of technical assessments and updates to design documentation.\nSupport inspections, pressure testing, flushing, mechanical completion and commissioning activities as required.\nContribute to preparation of as-built documentation and mechanical/piping engineering handover records.\n\nWhat you will bring to the team:\nDegree in Mechanical Engineering or equivalent professional experience\nMinimum 3-5 years' experience in mechanical and piping engineering roles on major EPC, infrastructure or power generation projects\nEngineers Australia Accreditation (if applicable)\nStrong written and verbal communication skills\nCollaborative approach and ability to drive project outcomes\n\nClough's people enjoy: a competitive remuneration package; industry leading paid parental leave from the day you join; end of trip facilities and free gym onsite; mental health and well-being programs; offers on private health insurance, salary packaging and more.",
-   "sum": {
-    "about": "Mechanical and piping engineer supporting construction and commissioning of Clough's K2 220 MW gas power station in Kwinana.",
-    "type": "Full-time",
-    "req": [
-     "Mechanical engineering degree or equivalent",
-     "3–5 years in mechanical/piping on EPC or power projects",
-     "Engineers Australia accreditation if applicable",
-     "Strong written and verbal communication"
-    ],
-    "duties": [
-     "Prepare calcs, data sheets, specs and layouts",
-     "Answer site RFIs and non-conformances",
-     "Review vendor and fabricator documents",
-     "Support pressure testing, flushing and commissioning",
-     "Assist Safety in Design and change control",
-     "Prepare as-built and handover records"
-    ],
-    "ben": [
-     "Competitive pay",
-     "Paid parental leave from day one",
-     "Onsite gym",
-     "Health and salary packaging offers"
-    ],
-    "kw": [
-     "mechanical engineer",
-     "piping engineer",
-     "EPC",
-     "power station",
-     "line data sheets",
-     "vendor documents",
-     "RFI",
-     "pressure testing",
-     "flushing",
-     "mechanical completion",
-     "commissioning",
-     "Safety in Design"
-    ]
-   }
-  },
-  {
-   "co": "monadelphous",
-   "t": "Senior Planner",
-   "loc": "Brisbane QLD",
-   "d": "2026-10-07",
-   "u": "https://to.indeed.com/aaj4hzls666h",
-   "lvl": "Senior",
-   "src": "Indeed"
-  },
-  {
-   "co": "ixom",
-   "t": "Project Manager",
-   "loc": "East Melbourne VIC",
-   "d": "2026-10-06",
-   "u": "https://to.indeed.com/aaxpv2rwbcdw",
-   "lvl": "Manager",
-   "src": "Indeed",
-   "jd": "East Melbourne, VIC - Permanent\nWe're looking for a Project Manager to join our Project Management Office (PMO), supporting a diverse portfolio of technology, transformation and business projects across IXOM. This newly created role offers exposure to everything from business acquisitions and systems implementations through to supply chain, manufacturing and operational improvement initiatives.\n\nAs a Project Manager, you'll be responsible for managing projects from initiation through to delivery, ensuring outcomes are achieved safely, on time and within budget. You'll establish project plans, manage stakeholder engagement, coordinate project teams and provide governance, reporting and risk management throughout the project lifecycle.\nWe're looking for a true project management practitioner: someone who enjoys leading outcomes, coordinating teams and keeping projects on track, rather than being the technical expert delivering the solution themselves.\n\nKey Responsibilities\nLead the end-to-end delivery of business, technology and transformation projects.\nDevelop project plans, schedules, budgets and resource forecasts.\nManage project risks, issues, dependencies and governance requirements.\nFacilitate project team meetings, workshops and stakeholder engagement activities.\nPrepare project reporting, steering committee packs and executive updates.\nManage vendors and external delivery partners where required.\n\nWho are we looking for?\nProject Management experience delivering medium to large business, technology or transformation projects.\nStrong stakeholder management and communication skills.\nDemonstrated experience managing project schedules, budgets, risks and dependencies.\nExperience working with Waterfall or hybrid project delivery methodologies.\nPRINCE2, PMP or similar project management certification.\nExperience within manufacturing, supply chain, logistics or industrial environments.\nQualifications in Business, Technology, Engineering or a related discipline would be good, but not essential.",
-   "sum": {
-    "about": "PMO project manager at IXOM's head office for business, technology and transformation projects.",
-    "type": "Permanent, full-time",
-    "req": [
-     "Delivered medium to large business or tech projects",
-     "Managing schedules, budgets, risks and dependencies",
-     "Waterfall or hybrid methods",
-     "PRINCE2, PMP or similar",
-     "Manufacturing, supply chain or industrial background"
-    ],
-    "duties": [
-     "Lead projects from start to delivery",
-     "Prepare plans, schedules, budgets and forecasts",
-     "Manage risks, issues and governance",
-     "Run workshops and steering committee reporting",
-     "Manage vendors and delivery partners"
-    ],
-    "ben": [
-     "Competitive salary",
-     "Structured onboarding",
-     "Wellbeing programs"
-    ],
-    "kw": [
-     "project manager",
-     "PMO",
-     "transformation",
-     "governance",
-     "PRINCE2",
-     "PMP",
-     "risk management",
-     "stakeholder engagement",
-     "budgets",
-     "schedules"
-    ],
-    "note": "Business/IT PMO role, not an engineering project role."
-   }
-  },
-  {
-   "co": "civmec",
-   "t": "Engineer Project",
-   "loc": "Port Hedland WA",
-   "d": "2026-10-06",
-   "u": "https://to.indeed.com/aahcmpzqnzkn",
-   "lvl": "Mid",
-   "src": "Indeed",
-   "cn": "Civmec",
-   "sf": 17,
-   "sw": "SMP construction and shutdowns"
-  },
-  {
-   "co": "orica",
-   "t": "Mechanical Engineer – Product Development",
-   "loc": "Welshpool WA",
-   "d": "2026-10-06",
-   "u": "https://to.indeed.com/aaq79fqv8w7d",
-   "lvl": "Mid",
-   "src": "Indeed"
   }
  ],
  "news": [
@@ -4256,6 +4195,17 @@
  ],
  "runs": [
   {
+   "at": "2026-11-15T10:19:47+11:00",
+   "added": 5,
+   "seek": 3,
+   "indeed": 2,
+   "removed": 5,
+   "news": 0,
+   "jd": 49,
+   "github": "ok",
+   "note": "Update now: 1 Seek recommendation email + 5 Indeed searches."
+  },
+  {
    "at": "2026-11-13T08:02:09+11:00",
    "added": 5,
    "seek": 0,
@@ -4463,17 +4413,6 @@
    "jd": 41,
    "github": "ok (saved via Google Sheet; GitHub website copy not updated — no push access)",
    "note": "Indeed connector failed to connect, so 12 web searches were used instead (priority-employer ads found were expired, filled or undated); Seek emails had no new relevant roles."
-  },
-  {
-   "at": "2026-11-05T00:22:26+11:00",
-   "added": 3,
-   "seek": 0,
-   "indeed": 3,
-   "removed": 3,
-   "news": 0,
-   "jd": 41,
-   "github": "ok (saved via Google Sheet; GitHub website copy not updated — no push access)",
-   "note": "Seek emails had no new relevant roles; Indeed searches found 3 new roles but rate-limited job details after 4 lookups; no new news found."
   }
  ],
  "sites": [
