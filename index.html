@@ -507,6 +507,16 @@ a{color:var(--ink);text-decoration-color:color-mix(in srgb,var(--ink) 30%,transp
 .site h4 a:hover,.co h4 a:hover{text-decoration:underline;text-underline-offset:3px}
 .jobwrap .job{cursor:pointer}
 .sumtag{display:inline-flex;align-items:center;gap:5px;font-size:12px;color:var(--ok);font-weight:600;margin-left:8px}
+
+/* job toolbar */
+.jtools{display:flex;flex-wrap:wrap;gap:8px 10px;align-items:flex-end;margin:0 0 14px;padding:0 0 14px;border-bottom:1px solid var(--line)}
+.jsel{display:flex;flex-direction:column;gap:3px;font-size:12px;color:var(--faint);font-weight:500}
+.jsel select{font:500 14px var(--body);color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:7px 28px 7px 10px;background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%235d6662' stroke-width='2'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E") no-repeat right 8px center/14px;appearance:none;-webkit-appearance:none;min-width:120px}
+.jsel select:focus{outline:none;border-color:var(--ink)}
+.jcount{margin-left:auto;font-size:13px;color:var(--faint);padding-bottom:8px}
+.salx{display:inline-block;margin-top:4px;font-size:12.5px;font-weight:600;color:var(--ok)}
+@media (max-width:860px){.jobs-layout>.side{order:2;margin-top:28px}}
+@media (max-width:560px){.jsel{flex:1 1 calc(50% - 10px)}.jsel select{width:100%;min-width:0}.jcount{width:100%;margin:0;padding:0}}
 /* Leaflet core (inlined) */
 .leaflet-pane,.leaflet-tile,.leaflet-marker-icon,.leaflet-marker-shadow,.leaflet-tile-container,.leaflet-pane>svg,.leaflet-pane>canvas,.leaflet-zoom-box,.leaflet-image-layer,.leaflet-layer{position:absolute;left:0;top:0}
 .leaflet-container{overflow:hidden;-webkit-tap-highlight-color:transparent;font:13px/1.4 var(--body)}
@@ -1192,10 +1202,10 @@ const TITLE_FIT=[
  [/piping/i,31,"Piping, ASME B31.3 / AS4041"],
  [/project engineer|capital project/i,30,"Project engineering role"],
  [/commissioning/i,30,"Commissioning role"],
- [/installation|construction engineer|brownfield/i,28,"Installation and brownfield work"],
+ [/installation|construction engineer|brownfield|site engineer/i,30,"Installation and brownfield work"],
  [/mechanical engineer/i,28,"Mechanical engineering role"],
  [/maintenance engineer|plant engineer/i,27,"Plant maintenance engineering"],
- [/reliability/i,26,"Reliability role"],
+ [/reliability/i,30,"Reliability role"],
  [/planning engineer|project control|project planner|senior planner|scheduler|wbs/i,26,"Project planning and scheduling"],
  [/planner/i,22,"Planning role"],
  [/engineering coordinator|document control|design review|drawing/i,20,"Drawing and document review"],
@@ -1224,22 +1234,46 @@ const NSW_METRO=/sydney|kemps creek|rooty hill|matraville|botany|richmond nsw|we
 const BNE=/brisbane|lutwyche|lytton|narangba|wynnum|pinkenba|ipswich|logan|redcliffe|eagle farm|wacol|rocklea|springfield|northgate|milton|ipswich/i;
 const PER=/perth|kwinana|welshpool|rockingham|fremantle|malaga|kewdale|henderson|bibra lake|bayswater|osborne park|canning vale/i;
 function tierOf(loc){const l=loc||"";if(/\bVIC\b|victoria/i.test(l))return 1;if(NSW_METRO.test(l))return 2;if(BNE.test(l))return 3;if(PER.test(l))return 4;return 5}
+/* CV match = role fit (title) + core-skill fit (title, summary and ad text) + sector fit + seniority + priority employer.
+   Core skills from Shahin: piping, equipment installation, contractor supervision, project & reliability engineering,
+   maintenance planning & CMMS, refinery / plant operations, fluid mechanics (pumps, valves, heat exchangers). */
+const CORE_SKILLS=[
+ ["Piping",/\bpiping|pipework|pipe ?line|b31\.3|as ?4041|pressure piping/i,6],
+ ["Equipment installation",/install|mechanical completion|erection|equipment setting/i,5],
+ ["Contractor supervision",/contractor|supervis|site management|construction management|subcontract/i,4],
+ ["Project engineering",/capex|capital (project|works)|project engineer|brownfield|greenfield|scope of works?|feed\b|epcm?\b/i,5],
+ ["Reliability",/reliabilit|root cause|\brca\b|fmea|condition monitoring|defect elimination|bad actor/i,5],
+ ["Maintenance planning",/maintenance plan|shutdown|turnaround|outage|work orders?|backlog|preventive|preventative|scheduling/i,5],
+ ["CMMS / asset systems",/cmms|sap ?pm|maximo|\bmex\b|pronto|asset register|equipment hierarch|asset management/i,5],
+ ["Refinery & plant operations",/refiner|refining|process plant|petrochem|chemical plant|oilseed|crush|ethanol|biodiesel|renewable diesel|\bsaf\b|plant operations/i,5],
+ ["Fluid mechanics",/pump|valve|fluid|hydraulic|heat exchanger|pressure vessel|compressor|vacuum|rotating equipment|static equipment/i,5]
+];
+const PRIORITY_COS=new Set(["manildra","graincorp","cargill","wilmar","aoh","riverina","peerless","justbio","southernoil","viva","ampol","bp","jetzero","hamr","licella","wildfire","hazer","perdaman","nufarm","ixom","orica","coogee","csbp","cleanaway","worley","lycopodium","monadelphous","clough","wood","ugl","civmec","ldc"]);
+function jobText(j){const s=j.sum||{};return [j.t,s.about,(s.req||[]).join(" "),(s.duties||[]).join(" "),(s.kw||[]).join(" "),j.jd||""].join(" ")}
 function matchOf(j){
   if(j._m)return j._m;
   let t=[0,"Role not matched"];for(const [re,s,why] of TITLE_FIT){if(re.test(j.t)){t=[s,why];break}}
+  const txt=jobText(j);const hits=CORE_SKILLS.filter(([,re])=>re.test(txt));
+  const sk=Math.min(25,hits.reduce((n,[,,w])=>n+w,0)+(j.jd||j.sum?0:Math.min(6,hits.length*2)));
   const s=SECTOR_FIT[j.co]||(j.sf?[j.sf,j.sw||"Process industry"]:[8,"Process industry"]);
-  const lv=lvlClass(j.lvl||"");const lvPts=lv==="senior"||lv==="mid"?10:lv==="manager"?5:0;
-  const score=Math.max(5,Math.min(99,Math.round((t[0]+s[0]+lvPts)/69*100)));
+  const lv=lvlClass(j.lvl||"");const lvPts=lv==="senior"||lv==="mid"?10:lv==="manager"?6:2;
+  const pr=PRIORITY_COS.has(j.co)?5:0;
+  const bad=/\b(e&i|electrical|instrument|civil|structural|software|hvac|building services)\b/i.test(j.t)?-20:0;
+  const score=Math.max(5,Math.min(99,Math.round((t[0]+sk+s[0]+lvPts+pr+bad)/99*100)));
   const tier=tierOf(j.loc);
-  const why=[t[1],s[1]];if(tier<5)why.push(TIERS[tier-1].l);
-  return j._m={score,tier,why};
+  const why=[t[1]];if(hits.length)why.push("Skills: "+hits.slice(0,3).map(h=>h[0].toLowerCase()).join(", "));why.push(s[1]);if(pr)why.push("Priority employer");if(tier<5)why.push(TIERS[tier-1].l);
+  return j._m={score,tier,why,skills:hits.map(h=>h[0])};
 }
+function salaryOf(j){const s=((j.sum&&j.sum.sal)||"").toLowerCase();if(!s)return 0;
+  const nums=[...s.matchAll(/\$?\s*(\d[\d,]*(?:\.\d+)?)\s*(k\b)?/g)].map(m=>parseFloat(m[1].replace(/,/g,""))*(m[2]?1000:1)).filter(n=>n>=20);
+  if(!nums.length)return 0;let v=Math.max(...nums);if(/hour|hr\b|ph\b/.test(s)&&v<500)v*=1976;else if(/day/.test(s)&&v<3000)v*=230;return v<20000?0:v}
+function stateOf(loc){const l=loc||"";if(/\bVIC\b|victoria/i.test(l))return "vic";if(/\bNSW\b/i.test(l)||NSW_METRO.test(l))return "nsw";if(/\bQLD\b/i.test(l)||BNE.test(l))return "qld";if(/\bWA\b/i.test(l)||PER.test(l))return "wa";return "other"}
 function ring(score){const c=score>=80?"var(--ok)":score>=65?"var(--ink)":score>=45?"var(--amber)":"#b4bab6";
   return `<span class="ring" style="--p:${score};--rc:${c}" title="${score}% match to your CV"><b>${score}</b></span>`}
 
 /* ---------- jobs ---------- */
 const SEEK_SEARCHES=[["Melbourne","https://www.seek.com.au/mechanical-project-engineer-jobs/in-All-Melbourne-VIC?daterange=14"],["Geelong","https://www.seek.com.au/project-engineer-jobs/in-Geelong-VIC?daterange=14"],["Sydney","https://www.seek.com.au/mechanical-project-engineer-jobs/in-All-Sydney-NSW?daterange=14"],["Newcastle & Hunter","https://www.seek.com.au/mechanical-engineer-jobs/in-Newcastle,-Maitland-&-Hunter-NSW?daterange=14"],["Wollongong","https://www.seek.com.au/mechanical-engineer-jobs/in-Wollongong,-Illawarra-&-South-Coast-NSW?daterange=14"],["Brisbane","https://www.seek.com.au/mechanical-project-engineer-jobs/in-All-Brisbane-QLD?daterange=14"],["Perth","https://www.seek.com.au/mechanical-project-engineer-jobs/in-All-Perth-WA?daterange=14"],["Maintenance planner, VIC","https://www.seek.com.au/maintenance-planner-jobs/in-Victoria-VIC?daterange=14"],["Shutdown planner, all AU","https://www.seek.com.au/shutdown-planner-jobs?daterange=14"]];
-let jobF={type:"all",lvl:"all",src:"all",q:"",sort:"match"};
+let jobF={type:"all",lvl:"all",src:"all",q:"",sort:"match",age:"all",st:"all",min:"0",sum:"all"};
 const jobCo=j=>j.cn||coName(j.co);
 const CVPKEY="pa_cvproj_v1";
 let CVPROJ=(()=>{try{return localStorage.getItem(CVPKEY)||""}catch(e){return ""}})();
@@ -1252,29 +1286,38 @@ function cvPrompt(kind,j){const nm=jobCo(j);
   return `${intro} Compare my CV with this job description. I'll attach the CV I want checked. Give me the match score, strengths, weak points, missing ATS keywords and the questions I should answer; after I answer, revise the CV and give me .docx and .pdf.\n\n${head}${jd}`}
 function cvLink(kind,j){const base=CVPROJ||"https://claude.ai/new";return base+(base.includes("?")?"&":"?")+"q="+enc(cvPrompt(kind,j))}
 function jobRow(j){const nm=jobCo(j);const m=matchOf(j);const id=JOBS.indexOf(j);
-  return `<div class="jobwrap"><a class="job" href="${jobHref(j)}">${jobF.sort==="match"?ring(m.score):coAvatar(j.co,nm)}<span><b>${esc(j.t)}</b><span class="sub">${miniLogo(j.co)}${esc(nm)}, ${esc(j.loc)}${j.sum?'<span class="sumtag">Summary ready</span>':""}</span>${jobF.sort==="match"?`<span class="why">${m.why.slice(0,2).map(w=>`<i>${esc(w)}</i>`).join("")}</span>`:""}</span><span class="right"><span class="lvl ${lvlClass(j.lvl||"")}">${esc(j.lvl||"Level not stated")}</span><span>${fmtD(j.d)} on <span class="srcb${j.src==="Seek"?" seek":""}">${esc(j.src||"web")}</span></span></span></a>
+  return `<div class="jobwrap"><a class="job" href="${jobHref(j)}">${ring(m.score)}<span><b>${esc(j.t)}</b><span class="sub">${miniLogo(j.co)}${esc(nm)}, ${esc(j.loc)}${j.sum?'<span class="sumtag">Summary ready</span>':""}</span><span class="why">${m.why.slice(0,3).map(w=>`<i>${esc(w)}</i>`).join("")}</span>${salaryOf(j)?`<span class="salx">${esc(j.sum.sal)}</span>`:""}</span><span class="right"><span class="lvl ${lvlClass(j.lvl||"")}">${esc(j.lvl||"Level not stated")}</span><span>${fmtD(j.d)} on <span class="srcb${j.src==="Seek"?" seek":""}">${esc(j.src||"web")}</span></span></span></a>
    <div class="cvbar"><a class="cvb" data-cv="cv" data-j="${id}" href="${cvLink("cv",j)}" target="_blank" rel="noopener">Create CV</a><a class="cvb" data-cv="cl" data-j="${id}" href="${cvLink("cl",j)}" target="_blank" rel="noopener">Cover letter</a><a class="cvb" data-cv="cmp" data-j="${id}" href="${cvLink("cmp",j)}" target="_blank" rel="noopener">Compare with JD</a></div></div>`}
 document.addEventListener("click",e=>{const b=e.target.closest("[data-cv]");if(!b)return;const j=JOBS[+b.dataset.j];if(!j)return;const t=cvPrompt(b.dataset.cv,j);
   try{navigator.clipboard&&navigator.clipboard.writeText(t).catch(()=>{})}catch(_){}
   const o=b.textContent;b.textContent="Opening Claude…";setTimeout(()=>b.textContent=o,2500)});
 function renderJobs(){
-  const V=$("#v-jobs");
-  const base=[...JOBS].filter(j=>(jobF.type==="all"||(jobF.type==="con")===CONTRACTORS.has(j.co))&&(jobF.lvl==="all"||lvlClass(j.lvl||"")===jobF.lvl)&&(jobF.src==="all"||(j.src||"").toLowerCase()===jobF.src)&&(!jobF.q||(j.t+" "+jobCo(j)+" "+j.loc).toLowerCase().includes(jobF.q)));
+  const V=$("#v-jobs");const today=new Date();const ageOk=j=>{if(jobF.age==="all")return true;const dd=(today-new Date(j.d+"T00:00:00"))/864e5;return dd<=+jobF.age};
+  const base=[...JOBS].filter(j=>(jobF.type==="all"||(jobF.type==="con")===CONTRACTORS.has(j.co))&&(jobF.lvl==="all"||lvlClass(j.lvl||"")===jobF.lvl)&&(jobF.src==="all"||(j.src||"").toLowerCase()===jobF.src)
+    &&(jobF.st==="all"||stateOf(j.loc)===jobF.st)&&ageOk(j)&&matchOf(j).score>=+jobF.min&&(jobF.sum==="all"||(jobF.sum==="yes"?!!(j.sum&&j.sum.req):jobF.sum==="pri"?PRIORITY_COS.has(j.co):true))
+    &&(!jobF.q||(j.t+" "+jobCo(j)+" "+j.loc+" "+((j.sum&&j.sum.kw)||[]).join(" ")).toLowerCase().includes(jobF.q)));
   const ch=(grp,val,label,cur)=>`<button class="chip" data-jf="${grp}:${val}" aria-pressed="${cur===val}">${label}</button>`;
-  let body="";
-  if(jobF.sort==="match"){
-    body=TIERS.map(t=>{const js=base.filter(j=>matchOf(j).tier===t.k).sort((a,b)=>matchOf(b).score-matchOf(a).score||b.d.localeCompare(a.d));if(!js.length)return"";
-      return `<section class="tier"><h2><span class="tn">${t.k}</span>${esc(t.l)}<small>${js.length} role${js.length>1?"s":""}</small></h2><p class="muted" style="margin:0 0 10px">${esc(t.d)}</p><div class="joblist2">${js.map(jobRow).join("")}</div></section>`}).join("")||`<div class="empty">No roles match. Clear a filter or search a different city.</div>`;
-  } else {
-    const js=base.sort((a,b)=>b.d.localeCompare(a.d));
-    body=js.length?`<div class="joblist2">${js.map(jobRow).join("")}</div>`:`<div class="empty">No roles match. Clear a filter or search a different city.</div>`;
-  }
-  V.innerHTML=`<div class="vhead"><div class="grow"><h1>Engineering jobs</h1><p>${JOBS.length} live roles, ranked against your CV and grouped by your preferred locations.</p></div>
+  const sel=(id,cur,opts,label)=>`<label class="jsel"><span>${label}</span><select data-js="${id}">${opts.map(([v,l])=>`<option value="${v}"${cur===v?" selected":""}>${l}</option>`).join("")}</select></label>`;
+  const byMatch=(a,b)=>matchOf(b).score-matchOf(a).score||matchOf(a).tier-matchOf(b).tier||b.d.localeCompare(a.d);
+  const sorts={match:byMatch,new:(a,b)=>b.d.localeCompare(a.d)||byMatch(a,b),sal:(a,b)=>salaryOf(b)-salaryOf(a)||byMatch(a,b),loc:(a,b)=>matchOf(a).tier-matchOf(b).tier||byMatch(a,b),pri:(a,b)=>(PRIORITY_COS.has(b.co)-PRIORITY_COS.has(a.co))||byMatch(a,b)};
+  const js=base.sort(sorts[jobF.sort]||byMatch);
+  let body;
+  if(!js.length)body=`<div class="empty">No roles match these filters. Clear a filter to see more.</div>`;
+  else if(jobF.sort==="loc"){body=TIERS.map(t=>{const g=js.filter(j=>matchOf(j).tier===t.k);if(!g.length)return"";
+      return `<section class="tier"><h2><span class="tn">${t.k}</span>${esc(t.l)}<small>${g.length} role${g.length>1?"s":""}</small></h2><div class="joblist2">${g.map(jobRow).join("")}</div></section>`}).join("")}
+  else body=`<div class="joblist2">${js.map(jobRow).join("")}</div>`;
+  const toolbar=`<div class="jtools">${sel("sort",jobF.sort,[["match","Best match first"],["new","Newest first"],["sal","Highest salary first"],["pri","Priority employers first"],["loc","Grouped by location"]],"Sort")}
+    ${sel("st",jobF.st,[["all","All states"],["vic","Victoria"],["nsw","NSW"],["qld","Queensland"],["wa","WA"],["other","Other"]],"Location")}
+    ${sel("age",jobF.age,[["all","Any time"],["3","Last 3 days"],["7","Last 7 days"],["14","Last 14 days"],["30","Last 30 days"]],"Posted")}
+    ${sel("min",jobF.min,[["0","Any match"],["60","60% and up"],["70","70% and up"],["80","80% and up"]],"Match")}
+    ${sel("sum",jobF.sum,[["all","All jobs"],["yes","With summary"],["pri","Priority employers"]],"Show")}
+    <span class="jcount">${js.length} of ${JOBS.length}</span></div>`;
+  body=toolbar+body;
+  V.innerHTML=`<div class="vhead"><div class="grow"><h1>Engineering jobs</h1><p>${JOBS.length} live roles, best matches to your CV first.</p></div>
     <label class="search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input id="jq" type="search" placeholder="Search roles, companies, cities" value="${esc(jobF.q)}" aria-label="Search jobs"></label></div>
    <div class="jobs-layout"><aside class="side">
-     <div class="me"><h3>Matched to your CV</h3><p>${esc(PROFILE.summary)}</p><p class="muted" style="margin:6px 0 0">The score combines role fit, sector fit and seniority. Location sets the order of the groups.</p></div>
+     <div class="me"><h3>Matched to your CV</h3><p>${esc(PROFILE.summary)}</p><p class="muted" style="margin:6px 0 0">The score weighs your core skills (piping, equipment installation, contractor supervision, project and reliability engineering, maintenance planning and CMMS, refinery and plant operations, fluid mechanics) found in the job title and ad, plus role, sector, seniority and your priority employers.</p></div>
      <div class="cvset"><h3>Your CV project</h3>${CVPROJ?`<p class="muted" style="margin:0 0 6px">CV buttons open your Claude project.</p>`:`<p class="muted" style="margin:0 0 6px">Paste the link to your Claude CV project so the CV buttons open it.</p>`}<div class="cvrow"><input id="cvproj" type="url" placeholder="https://claude.ai/project/…" value="${esc(CVPROJ)}"><button class="btn" id="cvsave">${CVPROJ?"Update":"Save"}</button></div></div>
-     <div><h3>Order</h3><div class="chips">${ch("sort","match","Best for you",jobF.sort)}${ch("sort","new","Newest",jobF.sort)}</div></div>
      <div><h3>Employer</h3><div class="chips">${ch("type","all","All",jobF.type)}${ch("type","own","Owners & developers",jobF.type)}${ch("type","con","Contractors",jobF.type)}</div></div>
      <div><h3>Level</h3><div class="chips">${ch("lvl","all","All levels",jobF.lvl)}${ch("lvl","junior","Junior",jobF.lvl)}${ch("lvl","mid","Mid",jobF.lvl)}${ch("lvl","senior","Senior & lead",jobF.lvl)}${ch("lvl","manager","Manager",jobF.lvl)}</div></div>
      <div><h3>Source</h3><div class="chips">${ch("src","all","All",jobF.src)}${["Seek","Indeed","LinkedIn"].map(s=>{const n=JOBS.filter(j=>j.src===s).length;return n?ch("src",s.toLowerCase(),`${s} <span class="n">${n}</span>`,jobF.src):""}).join("")}</div></div>
@@ -1289,6 +1332,8 @@ function renderJobs(){
   const qi=$("#jq");qi.oninput=e=>{jobF.q=e.target.value.trim().toLowerCase();const pos=qi.selectionStart;renderJobs();const n=$("#jq");n.focus();n.setSelectionRange(pos,pos)};
 }
 $("#v-jobs").addEventListener("click",e=>{const b=e.target.closest("[data-jf]");if(!b)return;const[g,v]=b.dataset.jf.split(":");jobF[g]=v;renderJobs()});
+$("#v-jobs").addEventListener("change",e=>{const s=e.target.closest("[data-js]");if(!s)return;jobF[s.dataset.js]=s.value;try{localStorage.setItem("pa_jobf_v1",JSON.stringify({sort:jobF.sort,st:jobF.st,age:jobF.age,min:jobF.min,sum:jobF.sum}))}catch(_){}renderJobs()});
+try{Object.assign(jobF,JSON.parse(localStorage.getItem("pa_jobf_v1")||"{}"))}catch(_){}
 
 /* ---------- live data (refreshed by the scheduled task) ---------- */
 let UPDATED="2026-10-29T22:00:00+11:00";
