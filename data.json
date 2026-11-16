@@ -1,6 +1,36 @@
 {
- "updated": "2026-11-16T12:32:08+11:00",
+ "updated": "2026-11-16T22:45:02+11:00",
  "jobs": [
+  {
+   "co": "wood",
+   "t": "Project Engineer",
+   "loc": "Broadmeadows, Melbourne VIC",
+   "d": "2026-11-15",
+   "u": "https://to.indeed.com/aa4kt7kdmc4w",
+   "lvl": "Mid",
+   "src": "Indeed"
+  },
+  {
+   "co": "bureauveritas",
+   "t": "Mechanical Commissioning Engineer | Melbourne",
+   "loc": "Melbourne VIC",
+   "d": "2026-11-16",
+   "u": "https://to.indeed.com/aa6skj9gknkk",
+   "lvl": "Mid",
+   "src": "Indeed",
+   "cn": "Bureau Veritas",
+   "sf": 12,
+   "sw": "Inspection & commissioning services"
+  },
+  {
+   "co": "aurecon",
+   "t": "Mechanical/ Piping Engineer",
+   "loc": "Greater Adelaide SA",
+   "d": "2026-11-06",
+   "u": "https://to.indeed.com/aaj2j2vbtz4m",
+   "lvl": "Mid",
+   "src": "Indeed"
+  },
   {
    "co": "stanbroke",
    "t": "Maintenance Planner",
@@ -3787,113 +3817,6 @@
    "u": "https://to.indeed.com/aa48bvmgmd6t",
    "lvl": "Junior",
    "src": "Indeed"
-  },
-  {
-   "co": "aurizon",
-   "cn": "Aurizon",
-   "sf": 10,
-   "sw": "Rail plant & equipment",
-   "t": "Plant & Equipment Engineer",
-   "loc": "Newcastle NSW",
-   "d": "2026-10-10",
-   "u": "https://www.seek.com.au/job/95160120",
-   "lvl": "Mid",
-   "src": "Seek"
-  },
-  {
-   "co": "clough",
-   "t": "Engineer – Senior Mechanical Project",
-   "loc": "Cooma NSW",
-   "d": "2026-10-09",
-   "u": "https://to.indeed.com/aaf6nywc8p4m",
-   "lvl": "Senior",
-   "src": "Indeed",
-   "jd": "The Future Generation Joint Venture brings together WeBuild, Clough and Lane and has been selected to design construct Snowy 2.0, one of the largest pumped hydro schemes in the world.\n\nThe Senior Project Engineer - Mechanical is responsible for the end-to-end delivery of assigned mechanical systems, including Potable Water and Water Purification, Fire Fighting, HVAC / Mechanical Ventilation, and Lifts. The role manages the packages from shop drawing and technical review through construction, testing and commissioning, client acceptance and final handover.\n\nKey Responsibilities\nLead the review and coordination of mechanical shop drawings, technical submissions, Material Approval Requests, equipment data sheets, RFIs and design clarifications.\nEnsure compliance with approved design documentation, project requirements, applicable Australian Standards, manufacturer requirements and relevant statutory obligations.\nCoordinate multidisciplinary interfaces with electrical, controls/BMS, fire detection, civil, structural, architectural, communications and BIM teams.\nIdentify and resolve design gaps, clashes, constructability issues and site constraints before they affect installation.\nProvide technical support to procurement, including review of supplier/subcontractor proposals, technical departures and long-lead equipment requirements.\nManage and coordinate subcontractors, suppliers and site teams during construction and installation.\nConduct site inspections, monitor progress, resolve technical/site issues and ensure work is installed in accordance with approved drawings, ITPs, specifications and quality requirements.\nPotable Water & Water Purification: manage installation and coordination of potable water distribution, pumps, tanks, valves, treatment/purification equipment; manage pressure testing, flushing, cleaning, disinfection, water-quality testing and final commissioning.\nFire Fighting: manage installation of firefighting pipework, pumps, hydrants, hose reels and valves; coordinate hydrostatic testing, flushing, functional testing and certification.\nHVAC & Mechanical Ventilation: manage installation and commissioning of ductwork, pipework, fans, air-handling equipment and dampers; air/water balancing and performance verification.\nLifts / Elevators: technical and site coordination of lift installation, testing, statutory inspections and handover.\nTesting, Commissioning & Handover: review ITPs, commissioning procedures and check sheets; confirm mechanical completion; track and close defects; manage as-built drawings, O&M manuals and handover records.\n\nQualifications & Experience\nBachelor's degree in mechanical engineering or equivalent recognized qualification.\nSignificant experience delivering mechanical systems on major infrastructure, industrial, power, tunnelling, building services or similar projects.\nDemonstrated experience managing systems from shop drawings through installation, testing, commissioning and handover.\nAbility to interpret mechanical drawings, P&IDs, schematics, equipment schedules and technical specifications.\nStrong understanding of multidisciplinary MEP coordination, quality systems, commissioning processes and applicable Australian Standards.\nExperience with BIM/federated models, Aconex or similar document-control systems is desirable.\n\nReports to the EM Project Manager. Benefits include competitive salary, EAP, paid parental leave, Qantas Club discounts and professional development. These positions are in remote ",
-   "sum": {
-    "about": "Senior mechanical project engineer on the Snowy 2.0 pumped hydro project, owning water, firefighting, HVAC and lift systems to handover.",
-    "type": "Permanent",
-    "req": [
-     "Mechanical engineering degree",
-     "Major project experience on infrastructure, power or industrial",
-     "Delivered systems from shop drawings to handover",
-     "Read P&IDs, schematics and specifications",
-     "MEP coordination and commissioning knowledge",
-     "Aconex or BIM experience desirable"
-    ],
-    "duties": [
-     "Review shop drawings, data sheets and RFIs",
-     "Manage subcontractors during installation",
-     "Run pressure testing, flushing and commissioning",
-     "Coordinate interfaces with other disciplines",
-     "Close defects and hand over O&M records"
-    ],
-    "ben": [
-     "EAP and paid parental leave",
-     "Qantas Club discounts",
-     "Professional development"
-    ],
-    "kw": [
-     "senior project engineer",
-     "mechanical",
-     "Snowy 2.0",
-     "pumped hydro",
-     "pressure testing",
-     "flushing",
-     "commissioning",
-     "shop drawings",
-     "ITP",
-     "HVAC",
-     "firefighting",
-     "water treatment",
-     "Aconex"
-    ],
-    "note": "Remote site with very cold conditions."
-   }
-  },
-  {
-   "co": "acciona",
-   "cn": "Acciona",
-   "sf": 14,
-   "sw": "Water and energy infrastructure",
-   "t": "Reliability Engineer - Mechanical",
-   "loc": "Melbourne VIC",
-   "d": "2026-10-08",
-   "u": "https://to.indeed.com/aa27stk99rvv",
-   "lvl": "Mid",
-   "src": "Indeed",
-   "jd": "ACCIONA Energia is the biggest 100% renewable energy company with no fossil legacy in the world. The purpose of this role is to improve wind farm and other renewable asset reliability by maximising plant availability and efficiency with optimised maintenance practices. The role provides engineering expertise, focusing on the mechanical side, to assist maintenance activities and resolve technical issues.\nRole Responsibilities\n- Provide expert engineering support to all operational assets, focusing on the mechanical side, such as drivetrains and structures.\n- Manage reliability engineering programs across all operational sites, incorporating key principles of condition-based and optimised maintenance.\n- Undertake Root Cause Analysis investigations on failed or faulting equipment.\n- Analyse plant performance and maintenance data to identify and address issues and maximize efficiency.\n- Liaise with ACCIONA Energia Global Engineering, equipment suppliers and OEMs to resolve engineering issues.\n- Review operational data for purposes of trend analysis, fault finding and continuous improvement.\n- Manage programs of retrofits, upgrades and asset changes at all operational sites.\n- Maintain an engineering document library for knowledge sharing within the operations group.\n- Support internal asset management functions in the development, implementation, and review of the asset management plan.\nRequired Skills and Competencies\n- Bachelor degree or equivalent technical competence in mechanical engineering.\n- Relevant experience in a reliability engineering or related role, ideally within the renewable sector.\n- Exposure to other related engineering practice such as electrical, civil, or wind resource considered advantageous.\n- Advanced communication skills and proven interpersonal abilities.\n- Must be able to travel for training and meetings to various locations (including international).\n- Experience with Maximo or a similar maintenance management system an advantage.\n- Experience with AEMO operational requirements an advantage.",
-   "sum": {
-    "about": "Mechanical reliability engineer for ACCIONA Energía's wind farms and renewable assets. Maximises availability through optimised and condition-based maintenance.",
-    "type": "Permanent, full-time",
-    "req": [
-     "Mechanical engineering degree or equivalent",
-     "Reliability engineering experience, ideally renewables",
-     "Maximo or similar CMMS (advantage)",
-     "Travel, including overseas",
-     "Strong communication"
-    ],
-    "duties": [
-     "Mechanical support for operating assets (drivetrains, structures)",
-     "Run reliability programs with condition-based maintenance",
-     "RCA on failed equipment",
-     "Analyse performance and maintenance data",
-     "Work with OEMs and global engineering",
-     "Manage retrofits and upgrades",
-     "Support the asset management plan"
-    ],
-    "kw": [
-     "Reliability engineering",
-     "Condition monitoring",
-     "RCA",
-     "Drivetrains",
-     "Wind turbines",
-     "Maximo",
-     "Asset management plan",
-     "Retrofits",
-     "OEM liaison",
-     "Renewables"
-    ]
-   }
   }
  ],
  "news": [
@@ -4160,6 +4083,17 @@
  ],
  "runs": [
   {
+   "at": "2026-11-16T22:45:02+11:00",
+   "added": 3,
+   "seek": 0,
+   "indeed": 3,
+   "removed": 3,
+   "news": 0,
+   "jd": 46,
+   "github": "ok",
+   "note": "Update now: no new Seek emails since 12:32; 5 Indeed searches; LinkedIn/careers web searches (GrainCorp Fisherman Islands planner already filled)."
+  },
+  {
    "at": "2026-11-16T12:32:08+11:00",
    "added": 2,
    "seek": 1,
@@ -4367,17 +4301,6 @@
    "jd": 41,
    "github": "ok (saved via Google Sheet; GitHub website copy not updated — no push access)",
    "note": "Indeed connector failed to connect, so 13 web searches were used instead (priority-employer ads found were filled, expired or undated); 1 new Seek role."
-  },
-  {
-   "at": "2026-11-05T08:20:25+11:00",
-   "added": 1,
-   "seek": 1,
-   "indeed": 0,
-   "removed": 1,
-   "news": 0,
-   "jd": 41,
-   "github": "ok (saved via Google Sheet; GitHub website copy not updated — no push access)",
-   "note": "Indeed connector failed to connect, so 14 web searches were used instead (priority-employer ads found were expired or filled); 1 new Seek role; no new dated news found."
   }
  ],
  "sites": [
