@@ -1,6 +1,30 @@
 {
- "updated": "2026-11-15T10:19:47+11:00",
+ "updated": "2026-11-16T12:32:08+11:00",
  "jobs": [
+  {
+   "co": "stanbroke",
+   "t": "Maintenance Planner",
+   "loc": "Grantham QLD",
+   "d": "2026-11-13",
+   "u": "https://to.indeed.com/aaxnxkyj94fx",
+   "lvl": "Mid",
+   "src": "Indeed",
+   "cn": "Stanbroke Beef",
+   "sf": 16,
+   "sw": "Meat processing plant"
+  },
+  {
+   "co": "defendtex",
+   "t": "Mechanical Engineers",
+   "loc": "Dandenong South, Melbourne VIC",
+   "d": "2026-11-15",
+   "u": "https://www.seek.com.au/job/95881995",
+   "lvl": "Mid",
+   "src": "Seek",
+   "cn": "DefendTex",
+   "sf": 10,
+   "sw": "Defence manufacturing"
+  },
   {
    "co": "cargill",
    "t": "Process Engineer",
@@ -3870,65 +3894,6 @@
      "Renewables"
     ]
    }
-  },
-  {
-   "co": "veolia",
-   "cn": "Veolia",
-   "sf": 12,
-   "sw": "Water treatment plants",
-   "t": "Asset & Projects Lead",
-   "loc": "Bendigo VIC",
-   "d": "2026-10-08",
-   "u": "https://to.indeed.com/aa74ygtfnrch",
-   "lvl": "Lead",
-   "src": "Indeed",
-   "jd": "Asset & Projects Lead. Location: Bendigo, VIC, AU, 3550.\nThe Opportunity\nVeolia is seeking an Asset & Projects Lead to improve the reliability, renewal and performance of water treatment plants and transmission networks across Central Victoria.\nBased in Bendigo 3550 and reporting to the Asset Investment and Systems Lead, this hands on role combines asset lifecycle management, technical problem-solving, reliability improvement and project delivery.\nYou will lead through technical expertise and project ownership rather than direct people management, working closely with operations, maintenance teams, engineers, contractors and delivery partners.\nWhat's on offer\nOwnership of varied asset renewal and improvement projects\nMeaningful work supporting safe and reliable water services\nInfluence over asset performance and lifecycle decisions\nCareer development within a stable, global organisation\nPaid parental leave, Fitness Passport and a paid volunteer day\nWhat You'll Do\nLead asset condition assessments and determine asset health and remaining life\nPlan and deliver minor capital, refurbishment and renewal projects\nPrepare project scopes, business cases, estimates, schedules and risk assessments\nManage contractors and coordinate work with operational teams\nInvestigate equipment failures and develop long-term reliability solutions\nUse criticality, maintenance and performance data to guide asset decisions\nMaintain engineering drawings, asset records and Management of Change documents\nEnsure projects meet safety, quality, environmental and contractual requirements\nWhat You'll Bring\nWater, wastewater or infrastructure asset management experience\nProject delivery and technical problem solving skills\nKnowledge of maintenance strategy and root cause analysis\nExperience with drawings, MOC processes and CMMS/EAM platforms\nWhy Veolia? Veolia is a global leader in environmental solutions, working to protect and renew the resources essential to life. Across Australia and New Zealand, our teams deliver water, waste and energy services that support communities, industries and the environment.",
-   "sum": {
-    "about": "Veolia in Bendigo needs an asset and projects lead for water treatment plants and pipelines across Central Victoria.",
-    "req": [
-     "Water, wastewater or infrastructure asset management",
-     "Project delivery experience",
-     "Maintenance strategy and root cause analysis",
-     "Drawings, MOC and CMMS/EAM experience"
-    ],
-    "duties": [
-     "Run asset condition assessments",
-     "Deliver minor capital and renewal projects",
-     "Prepare scopes, estimates, schedules and risk assessments",
-     "Manage contractors with operations",
-     "Investigate failures and fix reliability issues",
-     "Maintain drawings and asset records"
-    ],
-    "ben": [
-     "Paid parental leave",
-     "Fitness Passport",
-     "Paid volunteer day"
-    ],
-    "kw": [
-     "asset management",
-     "condition assessment",
-     "water treatment",
-     "renewals",
-     "root cause analysis",
-     "criticality",
-     "CMMS",
-     "EAM",
-     "MOC",
-     "minor capital projects"
-    ]
-   }
-  },
-  {
-   "co": "peabody",
-   "cn": "Peabody Energy",
-   "sf": 11,
-   "sw": "Coal mining, Hunter",
-   "t": "Complex Services Maintenance Planner",
-   "loc": "Singleton NSW",
-   "d": "2026-10-08",
-   "u": "https://to.indeed.com/aagv4kh2gykx",
-   "lvl": "Mid",
-   "src": "Indeed"
   }
  ],
  "news": [
@@ -4195,6 +4160,17 @@
  ],
  "runs": [
   {
+   "at": "2026-11-16T12:32:08+11:00",
+   "added": 2,
+   "seek": 1,
+   "indeed": 1,
+   "removed": 2,
+   "news": 0,
+   "jd": 48,
+   "github": "ok",
+   "note": "Update now: Seek email, 5 Indeed searches, Jora/LinkedIn/careers-site web searches (career-site ads found were already filled)."
+  },
+  {
    "at": "2026-11-15T10:19:47+11:00",
    "added": 5,
    "seek": 3,
@@ -4402,17 +4378,6 @@
    "jd": 41,
    "github": "ok (saved via Google Sheet; GitHub website copy not updated — no push access)",
    "note": "Indeed connector failed to connect, so 14 web searches were used instead (priority-employer ads found were expired or filled); 1 new Seek role; no new dated news found."
-  },
-  {
-   "at": "2026-11-05T04:20:26+11:00",
-   "added": 0,
-   "seek": 0,
-   "indeed": 0,
-   "removed": 0,
-   "news": 1,
-   "jd": 41,
-   "github": "ok (saved via Google Sheet; GitHub website copy not updated — no push access)",
-   "note": "Indeed connector failed to connect, so 12 web searches were used instead (priority-employer ads found were expired, filled or undated); Seek emails had no new relevant roles."
   }
  ],
  "sites": [
