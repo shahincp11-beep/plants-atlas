@@ -1,6 +1,47 @@
 {
- "updated": "2026-11-16T22:45:02+11:00",
+ "updated": "2026-11-17T23:26:09+11:00",
  "jobs": [
+  {
+   "co": "orica",
+   "t": "Engineer - Maintenance",
+   "loc": "Mayfield, Newcastle NSW",
+   "d": "2026-11-15",
+   "u": "https://to.indeed.com/aab9yywwgswt",
+   "lvl": "Mid",
+   "src": "Indeed"
+  },
+  {
+   "co": "gpa",
+   "t": "Project Engineer (Mechanical or Process) - 12 Month Contract",
+   "loc": "Brisbane QLD",
+   "d": "2026-11-13",
+   "u": "https://to.indeed.com/aabjrhqbtdls",
+   "lvl": "Mid",
+   "src": "Indeed",
+   "cn": "GPA Engineering",
+   "sf": 21,
+   "sw": "EPCM process-plant consultancy"
+  },
+  {
+   "co": "gough",
+   "t": "Senior Project Engineer",
+   "loc": "Port Kembla, Wollongong NSW",
+   "d": "2026-11-17",
+   "u": "https://www.seek.com.au/job/95916100",
+   "lvl": "Senior",
+   "src": "Seek",
+   "cn": "Gough Recruitment (client undisclosed)",
+   "sf": 15,
+   "sw": "Major industrial construction project",
+   "sum": {
+    "kw": [
+     "technical delivery",
+     "industrial construction",
+     "project engineering"
+    ],
+    "note": "Recruiter ad via Gough Recruitment; client not named."
+   }
+  },
   {
    "co": "wood",
    "t": "Project Engineer",
@@ -3784,39 +3825,6 @@
    "lvl": "Lead",
    "src": "Indeed",
    "cn": "GFG Alliance"
-  },
-  {
-   "co": "sgs",
-   "t": "WWTP & Water Reuse Project Engineer (contract)",
-   "loc": "Bandiana VIC",
-   "d": "2026-10-13",
-   "u": "https://to.indeed.com/aayvygmbfvcr",
-   "lvl": "Mid",
-   "src": "Indeed",
-   "cn": "SGS",
-   "sf": 12,
-   "sw": "Water treatment projects"
-  },
-  {
-   "co": "steris",
-   "cn": "STERIS",
-   "sf": 12,
-   "sw": "Sterilisation equipment and services",
-   "t": "Project Engineer",
-   "loc": "Sydney NSW",
-   "d": "2026-10-12",
-   "u": "https://to.indeed.com/aadkjyhcssff",
-   "lvl": "Mid",
-   "src": "Indeed"
-  },
-  {
-   "co": "ixom",
-   "t": "Junior Process Engineer",
-   "loc": "Matraville NSW",
-   "d": "2026-10-11",
-   "u": "https://to.indeed.com/aa48bvmgmd6t",
-   "lvl": "Junior",
-   "src": "Indeed"
   }
  ],
  "news": [
@@ -4083,6 +4091,17 @@
  ],
  "runs": [
   {
+   "at": "2026-11-17T23:26:09+11:00",
+   "added": 3,
+   "seek": 1,
+   "indeed": 2,
+   "removed": 3,
+   "news": 0,
+   "jd": 46,
+   "github": "ok",
+   "note": "Update now: 1 Seek email, 5 Indeed searches, 1 careers-site web search (only undated listings, none added)."
+  },
+  {
    "at": "2026-11-16T22:45:02+11:00",
    "added": 3,
    "seek": 0,
@@ -4290,17 +4309,6 @@
    "jd": 41,
    "github": "ok (saved via Google Sheet; GitHub website copy not updated — no push access)",
    "note": "Indeed connector failed to connect, so 14 web searches were used instead (priority-employer ads found were filled, expired or undated); 1 new Seek role; no new news found."
-  },
-  {
-   "at": "2026-11-05T12:20:42+11:00",
-   "added": 1,
-   "seek": 1,
-   "indeed": 0,
-   "removed": 1,
-   "news": 1,
-   "jd": 41,
-   "github": "ok (saved via Google Sheet; GitHub website copy not updated — no push access)",
-   "note": "Indeed connector failed to connect, so 13 web searches were used instead (priority-employer ads found were filled, expired or undated); 1 new Seek role."
   }
  ],
  "sites": [
