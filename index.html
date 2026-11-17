@@ -1418,7 +1418,7 @@ async function loadLive(){
     if(Array.isArray(d.people)&&d.people.length){PEOPLE.length=0;PEOPLE.push(...d.people)}
     if(d.updated)UPDATED=d.updated;
     /* LIVE_SITES: extra companies and sites added by the daily research run */
-    if(Array.isArray(d.companies))d.companies.forEach(c=>{if(!c||!c.k)return;if(!CO[c.k])CO[c.k]={n:c.n||c.k};if(c.dom&&!LOGO_DOMAINS[c.k])LOGO_DOMAINS[c.k]=c.dom;if(c.list&&!COMPANIES.some(x=>x.k===c.k))COMPANIES.push({k:c.k,n:c.n,t:c.t||"",hq:c.hq||"",f:c.f||"",tier:c.tier||undefined})});
+    if(Array.isArray(d.companies))d.companies.forEach(c=>{if(!c||!c.k)return;if(!CO[c.k])CO[c.k]={n:c.n||c.k};if(c.dom&&!LOGO_DOMAINS[c.k])LOGO_DOMAINS[c.k]=c.dom;if(c.watch)PRIORITY_COS.add(c.k);const ex=COMPANIES.find(x=>x.k===c.k);if(ex){if(c.watch)ex.watch=true}else if(c.list)COMPANIES.push({k:c.k,n:c.n,t:c.t||"",hq:c.hq||"",f:c.f||"",tier:c.tier||undefined,watch:!!c.watch})});
     if(Array.isArray(d.sites))d.sites.forEach(s=>{if(!s||!s.n||typeof s.lat!=="number"||typeof s.lon!=="number"||!Array.isArray(s.cats))return;const cats=s.cats.filter(c=>CATS[c]);if(!cats.length)return;const key=s.n.toLowerCase();if(ITEMS.some(i=>i.n.toLowerCase()===key))return;
       const it={...s,cats,kind:s.kind==="project"?"project":"plant"};if(it.kind==="project"){it.st="prop";if(!STAGES[it.sg])it.sg="feas"}else if(!PST[it.st])it.st="op";
       it.i=ITEMS.length;it.jobs=jobsOf(cos(it));ITEMS.push(it);if(map&&typeof L!=="undefined")addMarker(it)});
@@ -1436,10 +1436,10 @@ let coF="all";
 function renderCompanies(){
   const V=$("#v-companies");
   const grp=c=>CONTRACTORS.has(c.k)?"con":/developer|technology/i.test(c.t)?"dev":"own";
-  const list=COMPANIES.filter(c=>coF==="all"||grp(c)===coF);
+  const list=COMPANIES.filter(c=>coF==="all"||(coF==="watch"?c.watch:grp(c)===coF));
   const ch=(v,l)=>`<button class="chip" data-cf="${v}" aria-pressed="${coF===v}">${l}</button>`;
   V.innerHTML=`<div class="vhead"><div class="grow"><h1>Companies</h1><p>Developers, plant owners and EPC contractors from your research, with the sites they are tied to and the roles they have open.</p></div></div>
-   <div class="chips" style="margin-bottom:16px">${ch("all","All")}${ch("dev","Developers & technology")}${ch("own","Owners & operators")}${ch("con","EPC & EPCM contractors")}</div>
+   <div class="chips" style="margin-bottom:16px">${ch("all","All")}${ch("watch","Watchlist")}${ch("dev","Developers & technology")}${ch("own","Owners & operators")}${ch("con","EPC & EPCM contractors")}</div>
    <div class="grid">${list.map(c=>{const nm=c.n||coName(c.k);const js=jobsOf([c.k]);const linked=ITEMS.filter(i=>cos(i).includes(c.k));
     const fit=c.tier?`<span class="fit ${/top/i.test(c.tier)?"top":/hiring/i.test(c.tier)?"hire":""}">${esc(c.tier)}</span>`:"";
     return `<article class="co"><div class="co-top">${coAvatar(c.k,nm)}<div><h4><a href="${coHref(c.k)}">${esc(nm)}</a></h4><div class="kind">${esc(c.t)}, ${esc(c.hq)}</div></div></div>${fit}

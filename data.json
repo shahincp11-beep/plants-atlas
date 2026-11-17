@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-17T23:26:09+11:00",
+ "updated": "2026-11-18T02:27:11+11:00",
  "jobs": [
   {
    "co": "orica",
@@ -4535,6 +4535,232 @@
    "src": "https://www.mining-technology.com/contractors/project-management-and-consultancy/wave-int/",
    "approx": true,
    "added": "2026-10-30"
+  },
+  {
+   "n": "Victorian Chemical Company Coolaroo",
+   "co": "vicchem",
+   "loc": "Coolaroo, VIC",
+   "lat": -37.655,
+   "lon": 144.93,
+   "cats": [
+    "spec"
+   ],
+   "kind": "plant",
+   "st": "op",
+   "cap": "Specialty chemical manufacturing",
+   "feed": "—",
+   "note": "On your Melbourne watchlist. Map pin is at the suburb, not the exact site.",
+   "approx": true,
+   "added": "2026-11-18"
+  },
+  {
+   "n": "DuBois Chemicals Dandenong South",
+   "co": "dubois",
+   "loc": "Dandenong South, VIC",
+   "lat": -38.02,
+   "lon": 145.22,
+   "cats": [
+    "spec"
+   ],
+   "kind": "plant",
+   "st": "op",
+   "cap": "Specialty chemicals, blending and process chemistry",
+   "feed": "—",
+   "note": "On your Melbourne watchlist. Map pin is at the suburb, not the exact site.",
+   "approx": true,
+   "added": "2026-11-18"
+  },
+  {
+   "n": "Mera Chemicals Laverton North",
+   "co": "mera",
+   "loc": "Laverton North, VIC",
+   "lat": -37.829,
+   "lon": 144.788,
+   "cats": [
+    "chem"
+   ],
+   "kind": "plant",
+   "st": "op",
+   "cap": "Chemical manufacturing and blending",
+   "feed": "—",
+   "note": "On your Melbourne watchlist. Map pin is at the suburb, not the exact site.",
+   "approx": true,
+   "added": "2026-11-18"
+  },
+  {
+   "n": "Solenis Springvale",
+   "co": "solenis",
+   "loc": "Springvale, VIC",
+   "lat": -37.95,
+   "lon": 145.15,
+   "cats": [
+    "spec",
+    "water"
+   ],
+   "kind": "plant",
+   "st": "op",
+   "cap": "Water-treatment and industrial process chemicals",
+   "feed": "—",
+   "note": "On your Melbourne watchlist. Map pin is at the suburb, not the exact site.",
+   "approx": true,
+   "added": "2026-11-18"
+  },
+  {
+   "n": "CHT Australia Dandenong South",
+   "co": "cht",
+   "loc": "Dandenong South, VIC",
+   "lat": -38.026,
+   "lon": 145.212,
+   "cats": [
+    "spec"
+   ],
+   "kind": "plant",
+   "st": "op",
+   "cap": "Specialty chemicals for textile and industrial applications",
+   "feed": "—",
+   "note": "On your Melbourne watchlist. Map pin is at the suburb, not the exact site.",
+   "approx": true,
+   "added": "2026-11-18"
+  },
+  {
+   "n": "Wagon Paints Bayswater North",
+   "co": "wagon",
+   "loc": "Bayswater North, VIC",
+   "lat": -37.825,
+   "lon": 145.29,
+   "cats": [
+    "spec"
+   ],
+   "kind": "plant",
+   "st": "op",
+   "cap": "Industrial protective coatings",
+   "feed": "—",
+   "note": "On your Melbourne watchlist. Map pin is at the suburb, not the exact site.",
+   "approx": true,
+   "added": "2026-11-18"
+  },
+  {
+   "n": "Daabon Organic Australia Laverton North",
+   "co": "daabon",
+   "loc": "Laverton North, VIC",
+   "lat": -37.834,
+   "lon": 144.8,
+   "cats": [
+    "oil",
+    "food"
+   ],
+   "kind": "plant",
+   "st": "op",
+   "cap": "Vegetable oils, oil blends and ingredients",
+   "feed": "—",
+   "note": "On your Melbourne watchlist. Map pin is at the suburb, not the exact site.",
+   "approx": true,
+   "added": "2026-11-18"
+  },
+  {
+   "n": "100% Bottling Company Cheltenham",
+   "co": "bottling100",
+   "loc": "Cheltenham, VIC",
+   "lat": -37.96,
+   "lon": 145.05,
+   "cats": [
+    "oil",
+    "food"
+   ],
+   "kind": "plant",
+   "st": "op",
+   "cap": "Edible-oil processing and bottling",
+   "feed": "—",
+   "note": "On your Melbourne watchlist. Map pin is at the suburb, not the exact site.",
+   "approx": true,
+   "added": "2026-11-18"
+  },
+  {
+   "n": "Australian Botanical Products Hallam",
+   "co": "abp",
+   "loc": "Hallam, VIC",
+   "lat": -38.005,
+   "lon": 145.27,
+   "cats": [
+    "spec",
+    "food"
+   ],
+   "kind": "plant",
+   "st": "op",
+   "cap": "Botanical extracts and ingredient manufacturing",
+   "feed": "—",
+   "note": "On your Melbourne watchlist. Map pin is at the suburb, not the exact site.",
+   "approx": true,
+   "added": "2026-11-18"
+  },
+  {
+   "n": "Orica Deer Park",
+   "co": "orica",
+   "loc": "Deer Park, VIC",
+   "lat": -37.775,
+   "lon": 144.77,
+   "cats": [
+    "chem"
+   ],
+   "kind": "plant",
+   "st": "op",
+   "cap": "Large-scale chemical manufacturing",
+   "feed": "—",
+   "note": "On your Melbourne watchlist. Map pin is at the suburb, not the exact site.",
+   "approx": true,
+   "added": "2026-11-18"
+  },
+  {
+   "n": "Catalyst Chemicals Footscray",
+   "co": "catalystchem",
+   "loc": "Footscray, VIC",
+   "lat": -37.8,
+   "lon": 144.9,
+   "cats": [
+    "chem"
+   ],
+   "kind": "plant",
+   "st": "op",
+   "cap": "Chemical blending and manufacturing",
+   "feed": "—",
+   "note": "On your Melbourne watchlist. Map pin is at the suburb, not the exact site.",
+   "approx": true,
+   "added": "2026-11-18"
+  },
+  {
+   "n": "Chiron Chemicals Dandenong South",
+   "co": "chiron",
+   "loc": "Dandenong South, VIC",
+   "lat": -38.032,
+   "lon": 145.228,
+   "cats": [
+    "spec"
+   ],
+   "kind": "plant",
+   "st": "op",
+   "cap": "Specialty chemical manufacturing",
+   "feed": "—",
+   "note": "On your Melbourne watchlist. Map pin is at the suburb, not the exact site.",
+   "approx": true,
+   "added": "2026-11-18"
+  },
+  {
+   "n": "Whiteley Corporation Laverton North",
+   "co": "whiteley",
+   "loc": "Laverton North, VIC",
+   "lat": -37.838,
+   "lon": 144.796,
+   "cats": [
+    "chem",
+    "spec"
+   ],
+   "kind": "plant",
+   "st": "op",
+   "cap": "Chemical and hygiene-product manufacturing",
+   "feed": "—",
+   "note": "On your Melbourne watchlist. Map pin is at the suburb, not the exact site.",
+   "approx": true,
+   "added": "2026-11-18"
   }
  ],
  "companies": [
@@ -4614,6 +4840,187 @@
    "hq": "Perth, WA",
    "f": "Process engineering, studies and project delivery",
    "added": "2026-10-30"
+  },
+  {
+   "k": "dow",
+   "n": "Dow",
+   "t": "Owner / operator",
+   "hq": "Altona, VIC",
+   "f": "Chemical and materials operations",
+   "tier": "Melbourne watchlist",
+   "list": true,
+   "watch": true,
+   "added": "2026-11-18",
+   "dom": "dow.com"
+  },
+  {
+   "k": "vicchem",
+   "n": "Victorian Chemical Company",
+   "t": "Owner / operator",
+   "hq": "Coolaroo, VIC",
+   "f": "Specialty chemical manufacturing",
+   "tier": "Melbourne watchlist",
+   "list": true,
+   "watch": true,
+   "added": "2026-11-18"
+  },
+  {
+   "k": "dubois",
+   "n": "DuBois Chemicals",
+   "t": "Owner / operator",
+   "hq": "Dandenong South, VIC",
+   "f": "Specialty chemicals, blending and process chemistry",
+   "tier": "Melbourne watchlist",
+   "list": true,
+   "watch": true,
+   "added": "2026-11-18",
+   "dom": "duboischemicals.com"
+  },
+  {
+   "k": "mera",
+   "n": "Mera Chemicals",
+   "t": "Owner / operator",
+   "hq": "Laverton North, VIC",
+   "f": "Chemical manufacturing and blending",
+   "tier": "Melbourne watchlist",
+   "list": true,
+   "watch": true,
+   "added": "2026-11-18"
+  },
+  {
+   "k": "solenis",
+   "n": "Solenis",
+   "t": "Owner / operator",
+   "hq": "Springvale, VIC",
+   "f": "Water-treatment and industrial process chemicals",
+   "tier": "Melbourne watchlist",
+   "list": true,
+   "watch": true,
+   "added": "2026-11-18",
+   "dom": "solenis.com"
+  },
+  {
+   "k": "cht",
+   "n": "CHT Australia",
+   "t": "Owner / operator",
+   "hq": "Dandenong South, VIC",
+   "f": "Specialty chemicals for textile and industrial applications",
+   "tier": "Melbourne watchlist",
+   "list": true,
+   "watch": true,
+   "added": "2026-11-18",
+   "dom": "cht.com"
+  },
+  {
+   "k": "wagon",
+   "n": "Wagon Paints",
+   "t": "Owner / operator",
+   "hq": "Bayswater North, VIC",
+   "f": "Industrial protective coatings",
+   "tier": "Melbourne watchlist",
+   "list": true,
+   "watch": true,
+   "added": "2026-11-18"
+  },
+  {
+   "k": "graincorp",
+   "n": "GrainCorp Foods",
+   "t": "Owner / operator",
+   "hq": "West Footscray, VIC",
+   "f": "Edible-oil refinery and processing",
+   "tier": "Melbourne watchlist",
+   "list": true,
+   "watch": true,
+   "added": "2026-11-18"
+  },
+  {
+   "k": "peerless",
+   "n": "Peerless Foods",
+   "t": "Owner / operator",
+   "hq": "Braybrook, VIC",
+   "f": "Edible oils and fats: refinery and packaging",
+   "tier": "Melbourne watchlist",
+   "list": true,
+   "watch": true,
+   "added": "2026-11-18"
+  },
+  {
+   "k": "daabon",
+   "n": "Daabon Organic Australia",
+   "t": "Owner / operator",
+   "hq": "Laverton North, VIC",
+   "f": "Vegetable oils, oil blends and ingredients",
+   "tier": "Melbourne watchlist",
+   "list": true,
+   "watch": true,
+   "added": "2026-11-18"
+  },
+  {
+   "k": "bottling100",
+   "n": "100% Bottling Company",
+   "t": "Owner / operator",
+   "hq": "Cheltenham, VIC",
+   "f": "Edible-oil processing and bottling",
+   "tier": "Melbourne watchlist",
+   "list": true,
+   "watch": true,
+   "added": "2026-11-18"
+  },
+  {
+   "k": "abp",
+   "n": "Australian Botanical Products",
+   "t": "Owner / operator",
+   "hq": "Hallam, VIC",
+   "f": "Botanical extracts and ingredient manufacturing",
+   "tier": "Melbourne watchlist",
+   "list": true,
+   "watch": true,
+   "added": "2026-11-18"
+  },
+  {
+   "k": "orica",
+   "n": "Orica",
+   "t": "Owner / operator",
+   "hq": "Deer Park, VIC",
+   "f": "Large-scale chemical manufacturing",
+   "tier": "Melbourne watchlist",
+   "list": true,
+   "watch": true,
+   "added": "2026-11-18"
+  },
+  {
+   "k": "catalystchem",
+   "n": "Catalyst Chemicals",
+   "t": "Owner / operator",
+   "hq": "Footscray, VIC",
+   "f": "Chemical blending and manufacturing",
+   "tier": "Melbourne watchlist",
+   "list": true,
+   "watch": true,
+   "added": "2026-11-18"
+  },
+  {
+   "k": "chiron",
+   "n": "Chiron Chemicals",
+   "t": "Owner / operator",
+   "hq": "Dandenong South, VIC",
+   "f": "Specialty chemical manufacturing",
+   "tier": "Melbourne watchlist",
+   "list": true,
+   "watch": true,
+   "added": "2026-11-18"
+  },
+  {
+   "k": "whiteley",
+   "n": "Whiteley Corporation",
+   "t": "Owner / operator",
+   "hq": "Laverton North, VIC",
+   "f": "Chemical and hygiene-product manufacturing",
+   "tier": "Melbourne watchlist",
+   "list": true,
+   "watch": true,
+   "added": "2026-11-18",
+   "dom": "whiteley.com.au"
   }
  ]
 }
