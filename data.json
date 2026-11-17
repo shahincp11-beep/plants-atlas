@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-18T02:27:11+11:00",
+ "updated": "2026-11-18T02:36:41+11:00",
  "jobs": [
   {
    "co": "orica",
@@ -4761,6 +4761,261 @@
    "note": "On your Melbourne watchlist. Map pin is at the suburb, not the exact site.",
    "approx": true,
    "added": "2026-11-18"
+  },
+  {
+   "n": "Ampol Spotswood Terminal",
+   "co": "ampol",
+   "loc": "Spotswood, VIC",
+   "lat": -37.832,
+   "lon": 144.885,
+   "cats": [
+    "term"
+   ],
+   "kind": "plant",
+   "st": "op",
+   "cap": "Spotswood fuel terminal",
+   "feed": "—",
+   "note": "On your Melbourne watchlist. Map pin is at the suburb, not the exact site.",
+   "approx": true,
+   "added": "2026-11-18"
+  },
+  {
+   "n": "Quantem Geelong North Shore",
+   "co": "quantem",
+   "loc": "Geelong North Shore, VIC",
+   "lat": -38.09,
+   "lon": 144.36,
+   "cats": [
+    "term"
+   ],
+   "kind": "plant",
+   "st": "op",
+   "cap": "Bulk liquids and fuel storage terminal",
+   "feed": "—",
+   "note": "On your Melbourne watchlist. Map pin is at the suburb, not the exact site.",
+   "approx": true,
+   "added": "2026-11-18"
+  },
+  {
+   "n": "Cleanaway Laverton North",
+   "co": "cleanaway",
+   "loc": "Laverton North, VIC",
+   "lat": -37.836,
+   "lon": 144.786,
+   "cats": [
+    "con"
+   ],
+   "kind": "plant",
+   "st": "op",
+   "cap": "Waste and liquid-waste treatment",
+   "feed": "—",
+   "note": "On your Melbourne watchlist. Map pin is at the suburb, not the exact site.",
+   "approx": true,
+   "added": "2026-11-18"
+  },
+  {
+   "n": "Dow Moolap",
+   "co": "dow",
+   "loc": "Moolap, Geelong, VIC",
+   "lat": -38.17,
+   "lon": 144.42,
+   "cats": [
+    "chem"
+   ],
+   "kind": "plant",
+   "st": "op",
+   "cap": "Chemical operations",
+   "feed": "—",
+   "note": "On your Melbourne watchlist. Map pin is at the suburb, not the exact site.",
+   "approx": true,
+   "added": "2026-11-18"
+  },
+  {
+   "n": "SNF Australia Geelong",
+   "co": "snf",
+   "loc": "Geelong, VIC",
+   "lat": -38.1,
+   "lon": 144.37,
+   "cats": [
+    "spec"
+   ],
+   "kind": "plant",
+   "st": "op",
+   "cap": "Water-treatment polymers and process chemicals",
+   "feed": "—",
+   "note": "On your Melbourne watchlist. Map pin is at the suburb, not the exact site.",
+   "approx": true,
+   "added": "2026-11-18"
+  },
+  {
+   "n": "Pfizer Mulgrave",
+   "co": "pfizer",
+   "loc": "Mulgrave, VIC",
+   "lat": -37.925,
+   "lon": 145.17,
+   "cats": [
+    "pharma"
+   ],
+   "kind": "plant",
+   "st": "op",
+   "cap": "Pharmaceutical manufacturing",
+   "feed": "—",
+   "note": "On your Melbourne watchlist. Map pin is at the suburb, not the exact site.",
+   "approx": true,
+   "added": "2026-11-18"
+  },
+  {
+   "n": "Aspen Pharmacare Dandenong South",
+   "co": "aspen",
+   "loc": "Dandenong South, VIC",
+   "lat": -38.018,
+   "lon": 145.205,
+   "cats": [
+    "pharma"
+   ],
+   "kind": "plant",
+   "st": "op",
+   "cap": "Pharmaceutical manufacturing",
+   "feed": "—",
+   "note": "On your Melbourne watchlist. Map pin is at the suburb, not the exact site.",
+   "approx": true,
+   "added": "2026-11-18"
+  },
+  {
+   "n": "Probiotec Laverton North",
+   "co": "probiotec",
+   "loc": "Laverton North, VIC",
+   "lat": -37.828,
+   "lon": 144.792,
+   "cats": [
+    "pharma"
+   ],
+   "kind": "plant",
+   "st": "op",
+   "cap": "Pharmaceutical and consumer-health manufacturing",
+   "feed": "—",
+   "note": "On your Melbourne watchlist. Map pin is at the suburb, not the exact site.",
+   "approx": true,
+   "added": "2026-11-18"
+  },
+  {
+   "n": "Cyclotek Bundoora",
+   "co": "cyclotek",
+   "loc": "Bundoora, VIC",
+   "lat": -37.7,
+   "lon": 145.06,
+   "cats": [
+    "pharma"
+   ],
+   "kind": "plant",
+   "st": "op",
+   "cap": "Radiopharmaceutical manufacturing",
+   "feed": "—",
+   "note": "On your Melbourne watchlist. Map pin is at the suburb, not the exact site.",
+   "approx": true,
+   "added": "2026-11-18"
+  },
+  {
+   "n": "Baxter Healthcare Brunswick",
+   "co": "baxter",
+   "loc": "Brunswick, VIC",
+   "lat": -37.766,
+   "lon": 144.96,
+   "cats": [
+    "pharma"
+   ],
+   "kind": "plant",
+   "st": "op",
+   "cap": "Medical and pharmaceutical products",
+   "feed": "—",
+   "note": "On your Melbourne watchlist. Map pin is at the suburb, not the exact site.",
+   "approx": true,
+   "added": "2026-11-18"
+  },
+  {
+   "n": "Ensign Laboratories Mulgrave",
+   "co": "ensign",
+   "loc": "Mulgrave, VIC",
+   "lat": -37.929,
+   "lon": 145.176,
+   "cats": [
+    "pharma"
+   ],
+   "kind": "plant",
+   "st": "op",
+   "cap": "Pharmaceutical manufacturing",
+   "feed": "—",
+   "note": "On your Melbourne watchlist. Map pin is at the suburb, not the exact site.",
+   "approx": true,
+   "added": "2026-11-18"
+  },
+  {
+   "n": "Australian Pharmaceutical Manufacturers Keysborough",
+   "co": "apm",
+   "loc": "Keysborough, VIC",
+   "lat": -37.99,
+   "lon": 145.17,
+   "cats": [
+    "pharma"
+   ],
+   "kind": "plant",
+   "st": "op",
+   "cap": "Pharmaceutical manufacturing",
+   "feed": "—",
+   "note": "On your Melbourne watchlist. Map pin is at the suburb, not the exact site.",
+   "approx": true,
+   "added": "2026-11-18"
+  },
+  {
+   "n": "Hanwha Defence H-ACE Avalon",
+   "co": "hanwha",
+   "loc": "Avalon, Greater Geelong, VIC",
+   "lat": -38.03,
+   "lon": 144.44,
+   "cats": [
+    "eng"
+   ],
+   "kind": "plant",
+   "st": "op",
+   "cap": "Armoured-vehicle manufacturing (H-ACE)",
+   "feed": "—",
+   "note": "On your Melbourne watchlist. Map pin is at the suburb, not the exact site.",
+   "approx": true,
+   "added": "2026-11-18"
+  },
+  {
+   "n": "Thornton Engineering Corio",
+   "co": "thornton",
+   "loc": "Corio, Geelong, VIC",
+   "lat": -38.07,
+   "lon": 144.36,
+   "cats": [
+    "con"
+   ],
+   "kind": "plant",
+   "st": "op",
+   "cap": "Engineering, fabrication and maintenance services",
+   "feed": "—",
+   "note": "On your Melbourne watchlist. Map pin is at the suburb, not the exact site.",
+   "approx": true,
+   "added": "2026-11-18"
+  },
+  {
+   "n": "Loy Yang B Power Station",
+   "co": "alinta",
+   "loc": "Loy Yang B, Latrobe Valley, VIC",
+   "lat": -38.257,
+   "lon": 146.59,
+   "cats": [
+    "power"
+   ],
+   "kind": "plant",
+   "st": "op",
+   "cap": "Loy Yang B power station",
+   "feed": "—",
+   "note": "On your Melbourne watchlist. Map pin is at the suburb, not the exact site.",
+   "approx": true,
+   "added": "2026-11-18"
   }
  ],
  "companies": [
@@ -5021,6 +5276,270 @@
    "watch": true,
    "added": "2026-11-18",
    "dom": "whiteley.com.au"
+  },
+  {
+   "k": "viva",
+   "n": "Viva Energy",
+   "t": "Owner / operator",
+   "hq": "Corio, Geelong, VIC",
+   "f": "Geelong Refinery: fuels refining and SAF plans",
+   "tier": "Melbourne watchlist",
+   "list": true,
+   "watch": true,
+   "added": "2026-11-18"
+  },
+  {
+   "k": "woodside",
+   "n": "Woodside Energy",
+   "t": "Owner / operator",
+   "hq": "Longford, Gippsland, VIC",
+   "f": "Longford gas plants (shown on the map as Esso Longford)",
+   "tier": "Melbourne watchlist",
+   "list": true,
+   "watch": true,
+   "added": "2026-11-18"
+  },
+  {
+   "k": "mobil",
+   "n": "Mobil Refining Australia",
+   "t": "Owner / operator",
+   "hq": "Altona, VIC",
+   "f": "Altona fuel terminal (former refinery)",
+   "tier": "Melbourne watchlist",
+   "list": true,
+   "watch": true,
+   "added": "2026-11-18"
+  },
+  {
+   "k": "ampol",
+   "n": "Ampol",
+   "t": "Owner / operator",
+   "hq": "Spotswood, VIC",
+   "f": "Spotswood fuel terminal",
+   "tier": "Melbourne watchlist",
+   "list": true,
+   "watch": true,
+   "added": "2026-11-18"
+  },
+  {
+   "k": "quantem",
+   "n": "Quantem",
+   "t": "Owner / operator",
+   "hq": "Geelong North Shore, VIC",
+   "f": "Bulk liquids and fuel storage terminal",
+   "tier": "Melbourne watchlist",
+   "list": true,
+   "watch": true,
+   "added": "2026-11-18"
+  },
+  {
+   "k": "cleanaway",
+   "n": "Cleanaway",
+   "t": "Owner / operator",
+   "hq": "Laverton North, VIC",
+   "f": "Waste and liquid-waste treatment",
+   "tier": "Melbourne watchlist",
+   "list": true,
+   "watch": true,
+   "added": "2026-11-18"
+  },
+  {
+   "k": "snf",
+   "n": "SNF Australia",
+   "t": "Owner / operator",
+   "hq": "Geelong, VIC",
+   "f": "Water-treatment polymers and process chemicals",
+   "tier": "Melbourne watchlist",
+   "list": true,
+   "watch": true,
+   "added": "2026-11-18"
+  },
+  {
+   "k": "csl",
+   "n": "CSL",
+   "t": "Pharma manufacturer",
+   "hq": "Broadmeadows & Tullamarine, VIC",
+   "f": "CSL Behring plasma products and CSL Seqirus vaccines",
+   "tier": "Melbourne watchlist",
+   "list": true,
+   "watch": true,
+   "added": "2026-11-18"
+  },
+  {
+   "k": "pfizer",
+   "n": "Pfizer",
+   "t": "Pharma manufacturer",
+   "hq": "Mulgrave, VIC",
+   "f": "Pharmaceutical manufacturing",
+   "tier": "Melbourne watchlist",
+   "list": true,
+   "watch": true,
+   "added": "2026-11-18"
+  },
+  {
+   "k": "moderna",
+   "n": "Moderna",
+   "t": "Pharma manufacturer",
+   "hq": "Clayton, VIC",
+   "f": "mRNA vaccine manufacturing",
+   "tier": "Melbourne watchlist",
+   "list": true,
+   "watch": true,
+   "added": "2026-11-18"
+  },
+  {
+   "k": "aspen",
+   "n": "Aspen Pharmacare",
+   "t": "Pharma manufacturer",
+   "hq": "Dandenong South, VIC",
+   "f": "Pharmaceutical manufacturing",
+   "tier": "Melbourne watchlist",
+   "list": true,
+   "watch": true,
+   "added": "2026-11-18"
+  },
+  {
+   "k": "probiotec",
+   "n": "Probiotec",
+   "t": "Pharma manufacturer",
+   "hq": "Laverton North, VIC",
+   "f": "Pharmaceutical and consumer-health manufacturing",
+   "tier": "Melbourne watchlist",
+   "list": true,
+   "watch": true,
+   "added": "2026-11-18"
+  },
+  {
+   "k": "idt",
+   "n": "IDT Australia",
+   "t": "Pharma manufacturer",
+   "hq": "Boronia, VIC",
+   "f": "Pharmaceutical manufacturing",
+   "tier": "Melbourne watchlist",
+   "list": true,
+   "watch": true,
+   "added": "2026-11-18"
+  },
+  {
+   "k": "cyclotek",
+   "n": "Cyclotek",
+   "t": "Pharma manufacturer",
+   "hq": "Bundoora, VIC",
+   "f": "Radiopharmaceutical manufacturing",
+   "tier": "Melbourne watchlist",
+   "list": true,
+   "watch": true,
+   "added": "2026-11-18"
+  },
+  {
+   "k": "baxter",
+   "n": "Baxter Healthcare",
+   "t": "Pharma manufacturer",
+   "hq": "Brunswick, VIC",
+   "f": "Medical and pharmaceutical products",
+   "tier": "Melbourne watchlist",
+   "list": true,
+   "watch": true,
+   "added": "2026-11-18"
+  },
+  {
+   "k": "ensign",
+   "n": "Ensign Laboratories",
+   "t": "Pharma manufacturer",
+   "hq": "Mulgrave, VIC",
+   "f": "Pharmaceutical manufacturing",
+   "tier": "Melbourne watchlist",
+   "list": true,
+   "watch": true,
+   "added": "2026-11-18"
+  },
+  {
+   "k": "apm",
+   "n": "Australian Pharmaceutical Manufacturers",
+   "t": "Pharma manufacturer",
+   "hq": "Keysborough, VIC",
+   "f": "Pharmaceutical manufacturing",
+   "tier": "Melbourne watchlist",
+   "list": true,
+   "watch": true,
+   "added": "2026-11-18"
+  },
+  {
+   "k": "bluescope",
+   "n": "BlueScope Steel",
+   "t": "Owner / operator",
+   "hq": "Western Port, Hastings, VIC",
+   "f": "Steelworks: coating and rolling",
+   "tier": "Melbourne watchlist",
+   "list": true,
+   "watch": true,
+   "added": "2026-11-18"
+  },
+  {
+   "k": "carbonrev",
+   "n": "Carbon Revolution",
+   "t": "Owner / operator",
+   "hq": "Waurn Ponds, Geelong, VIC",
+   "f": "Carbon-fibre wheel manufacturing",
+   "tier": "Melbourne watchlist",
+   "list": true,
+   "watch": true,
+   "added": "2026-11-18"
+  },
+  {
+   "k": "hanwha",
+   "n": "Hanwha Defence Australia",
+   "t": "Owner / operator",
+   "hq": "Avalon, Greater Geelong, VIC",
+   "f": "Armoured-vehicle manufacturing (H-ACE)",
+   "tier": "Melbourne watchlist",
+   "list": true,
+   "watch": true,
+   "added": "2026-11-18"
+  },
+  {
+   "k": "thornton",
+   "n": "Thornton Engineering",
+   "t": "Owner / operator",
+   "hq": "Corio, Geelong, VIC",
+   "f": "Engineering, fabrication and maintenance services",
+   "tier": "Melbourne watchlist",
+   "list": true,
+   "watch": true,
+   "added": "2026-11-18"
+  },
+  {
+   "k": "agl",
+   "n": "AGL",
+   "t": "Owner / operator",
+   "hq": "Loy Yang A, Latrobe Valley, VIC",
+   "f": "Loy Yang A power station and mine",
+   "tier": "Melbourne watchlist",
+   "list": true,
+   "watch": true,
+   "added": "2026-11-18"
+  },
+  {
+   "k": "ea",
+   "n": "EnergyAustralia",
+   "t": "Owner / operator",
+   "hq": "Yallourn, Latrobe Valley, VIC",
+   "f": "Yallourn power station",
+   "tier": "Melbourne watchlist",
+   "list": true,
+   "watch": true,
+   "added": "2026-11-18"
+  },
+  {
+   "k": "alinta",
+   "n": "Alinta Energy",
+   "t": "Owner / operator",
+   "hq": "Loy Yang B, Latrobe Valley, VIC",
+   "f": "Loy Yang B power station",
+   "tier": "Melbourne watchlist",
+   "list": true,
+   "watch": true,
+   "added": "2026-11-18"
   }
  ]
 }
