@@ -1,6 +1,118 @@
 {
- "updated": "2026-11-18T02:36:41+11:00",
+ "updated": "2026-11-18T17:20:19+11:00",
  "jobs": [
+  {
+   "co": "jadestone",
+   "t": "Mechanical Project Engineer",
+   "loc": "Perth WA",
+   "d": "2026-11-18",
+   "u": "https://www.seek.com.au/job/95878640",
+   "lvl": "Mid",
+   "src": "Seek",
+   "cn": "Jadestone Energy",
+   "sf": 13,
+   "sw": "Oil & gas production",
+   "sum": {
+    "note": "You applied on 18 Nov 2026 via Seek. Location taken from Seek's similar-jobs search (Perth)."
+   }
+  },
+  {
+   "co": "austcorp",
+   "t": "Senior Process Engineer",
+   "loc": "Orange NSW",
+   "d": "2026-11-18",
+   "u": "https://www.seek.com.au/job/95943704",
+   "lvl": "Senior",
+   "src": "Seek",
+   "cn": "Austcorp Executive (client undisclosed)",
+   "sf": 12,
+   "sw": "Recruiter, process plant role",
+   "sum": {
+    "note": "You applied on 18 Nov 2026 via Seek. Location taken from Seek's similar-jobs search (Orange NSW)."
+   }
+  },
+  {
+   "co": "enscope",
+   "t": "Mechanical Engineer - Onshore Pipelines",
+   "loc": "Spring Hill, Brisbane QLD",
+   "d": "2026-11-18",
+   "u": "https://www.seek.com.au/job/95858379",
+   "lvl": "Mid",
+   "src": "Seek",
+   "cn": "Enscope",
+   "sf": 20,
+   "sw": "Pipelines & process engineering",
+   "sum": {
+    "sal": "$120,000 – $150,000 per year",
+    "kw": [
+     "piping",
+     "pipelines",
+     "mechanical"
+    ],
+    "note": "Posting date not shown; date is when Seek emailed it."
+   }
+  },
+  {
+   "co": "interquip",
+   "t": "Project Engineer (Mechanical)",
+   "loc": "West Perth, Perth WA",
+   "d": "2026-11-18",
+   "u": "https://www.seek.com.au/job/95853160",
+   "lvl": "Mid",
+   "src": "Seek",
+   "cn": "Interquip",
+   "sf": 15,
+   "sw": "Process equipment supplier",
+   "sum": {
+    "note": "Posting date not shown; date is when Seek emailed it."
+   }
+  },
+  {
+   "co": "coretalent",
+   "t": "Mechanical Project Engineer",
+   "loc": "Perth WA",
+   "d": "2026-11-18",
+   "u": "https://www.seek.com.au/job/95772415",
+   "lvl": "Mid",
+   "src": "Seek",
+   "cn": "Core Talent (client undisclosed)",
+   "sf": 12,
+   "sw": "Recruiter, project role",
+   "sum": {
+    "sal": "AUD 90 - 100 per hour",
+    "note": "Posting date not shown; date is when Seek emailed it."
+   }
+  },
+  {
+   "co": "khg",
+   "t": "Mechanical Engineer",
+   "loc": "Perth WA",
+   "d": "2026-11-18",
+   "u": "https://www.seek.com.au/job/95855469",
+   "lvl": "Mid",
+   "src": "Seek",
+   "cn": "KHG Contracting",
+   "sf": 14,
+   "sw": "Industrial contractor",
+   "sum": {
+    "note": "Posting date not shown; date is when Seek emailed it."
+   }
+  },
+  {
+   "co": "alstom",
+   "t": "Reliability Engineer",
+   "loc": "Melbourne VIC",
+   "d": "2026-11-17",
+   "u": "https://to.indeed.com/aa8vnxxzpzqb",
+   "lvl": "Mid",
+   "src": "Indeed",
+   "cn": "Alstom",
+   "sf": 8,
+   "sw": "Rail rolling stock",
+   "sum": {
+    "note": "Contract role."
+   }
+  },
   {
    "co": "orica",
    "t": "Engineer - Maintenance",
@@ -3606,225 +3718,6 @@
     ],
     "note": "Applications close 19 November 2026."
    }
-  },
-  {
-   "co": "stantec",
-   "cn": "Stantec",
-   "sf": 12,
-   "sw": "Minerals processing piping design",
-   "t": "Senior Mechanical Engineer - Energy & Resources",
-   "loc": "South Brisbane, Brisbane QLD",
-   "d": "2026-10-15",
-   "u": "https://to.indeed.com/aaypgspnnkc4",
-   "lvl": "Senior",
-   "src": "Indeed",
-   "sum": {
-    "about": "Stantec's Brisbane Energy & Resources design team needs a senior mechanical engineer for sustaining capital and major mining projects from study to execution.",
-    "type": "Permanent, full-time (flexible options)",
-    "req": [
-     "5 years in mining and resources",
-     "Minerals processing, pumping and piping, materials handling experience",
-     "Project delivery from feasibility to detailed design and execution",
-     "Preparing and checking reports, calculations and specifications",
-     "Mentoring junior engineers",
-     "RPEQ held or eligible; FluidFlow/Helix/Sidewinder a plus"
-    ],
-    "duties": [
-     "Deliver mechanical design across the project lifecycle",
-     "Work on sustaining capital and major resource projects",
-     "Prepare and review calculations, specifications and design documents",
-     "Collaborate with multidisciplinary design teams",
-     "Guide and develop junior team members"
-    ],
-    "ben": [
-     "Flexible working incl. WFH and job sharing",
-     "Buy up to 4 extra weeks leave",
-     "Salary continuance insurance and EAP",
-     "Paid professional memberships"
-    ],
-    "kw": [
-     "Senior Mechanical Engineer",
-     "minerals processing",
-     "pumping systems",
-     "piping systems",
-     "plant design",
-     "materials handling",
-     "comminution",
-     "sustaining capital",
-     "feasibility study",
-     "detailed design",
-     "FluidFlow",
-     "RPEQ",
-     "specifications",
-     "calculations"
-    ],
-    "note": "Indeed lists it as part-time but the ad itself says full-time with flexibility."
-   }
-  },
-  {
-   "co": "monadelphous",
-   "t": "Maintenance Planner",
-   "loc": "Muja Power Station, Collie WA",
-   "d": "2026-10-14",
-   "u": "https://to.indeed.com/aayfsm9q2spb",
-   "lvl": "Mid",
-   "src": "Indeed",
-   "jd": "Maintenance Planner. Ref # 300060481. Region: Perth, WA. Classification: Professionals. Date Posted: 13-Oct-2026.\nAn exciting opportunity exists for a Maintenance Planner to join our team based at Muja Power Station. Reporting to the Site Manager, you will be responsible for planning and coordinating maintenance activities to ensure work is safely executed, efficiently scheduled, and ready for delivery.\nThis role would suit an experienced Maintenance Planner or a trade-qualified Mechanical professional looking to transition into planning. Training and development support will be provided.\nKey Responsibilities\nDevelop and maintain maintenance and shutdown schedules\nCoordinate labour, materials, tooling and equipment requirements\nBuild planning packages from work orders and job scopes\nLiaise with operations and maintenance teams to prioritise work\nMonitor schedule progress and manage risks and delays\nSupport shutdowns, outages and project activities\nMaintain planning data within SAP/CMMS systems\nDrive continuous improvement initiatives\nAbout You\nMechanical trade qualification highly regarded\nMaintenance planning/scheduling experience or keen to develop in planning\nSAP or CMMS experience advantageous\nStrong organisational and stakeholder management skills\nCommitment to safety and continuous improvement\nWhat's on Offer\nPermanent position\nOffice-based role at Muja Power Station\nLifestyle-friendly 4:3 roster\nOngoing training and career development\nSupportive and collaborative team environment\nAbout us: Monadelphous is an ASX-200 company providing multidisciplinary construction, maintenance and industrial services to many of the largest companies in the resources, energy and infrastructure sectors. Established in 1972.",
-   "sum": {
-    "about": "Monadelphous wants a maintenance planner at Muja Power Station (Collie, WA) to plan and schedule maintenance and shutdown work.",
-    "type": "Permanent",
-    "req": [
-     "Mechanical trade qualification highly regarded",
-     "Maintenance planning/scheduling experience",
-     "SAP or CMMS experience",
-     "Organisational and stakeholder skills"
-    ],
-    "duties": [
-     "Build maintenance and shutdown schedules",
-     "Prepare work packages from work orders",
-     "Coordinate labour, materials and tooling",
-     "Track progress, risks and delays",
-     "Keep planning data in SAP/CMMS"
-    ],
-    "ben": [
-     "4:3 roster",
-     "Training and development"
-    ],
-    "kw": [
-     "maintenance planning",
-     "shutdown scheduling",
-     "SAP",
-     "CMMS",
-     "work packages",
-     "power station",
-     "outages",
-     "continuous improvement"
-    ],
-    "note": "Site is at Collie, about 2 hours south of Perth."
-   }
-  },
-  {
-   "co": "orica",
-   "t": "Engineer – Product Development",
-   "loc": "Lutwyche QLD",
-   "d": "2026-10-13",
-   "u": "https://to.indeed.com/aafmjywb2mk2",
-   "lvl": "Mid",
-   "src": "Indeed"
-  },
-  {
-   "co": "trinzic",
-   "cn": "Trinzic",
-   "sf": 17,
-   "sw": "Chemicals manufacturing site",
-   "t": "Asset Management Specialist",
-   "loc": "Matraville NSW",
-   "d": "2026-10-13",
-   "u": "https://to.indeed.com/aaw4nt8rm4bn",
-   "lvl": "Mid",
-   "src": "Indeed"
-  },
-  {
-   "co": "trinzic",
-   "t": "Mechanical Engineer",
-   "loc": "Matraville, Sydney NSW",
-   "d": "2026-10-13",
-   "u": "https://to.indeed.com/aa6vjjhvnh7r",
-   "lvl": "Mid",
-   "src": "Indeed",
-   "cn": "Trinzic",
-   "sf": 17,
-   "sw": "Chemicals manufacturing site",
-   "jd": "Mechanical Engineer – KBR (Trinzic). Location Sydney, New South Wales. Job Type Full time. Job Id R2130273.\n\nCapability Life Cycle Manager (CLCM): The CLCM is integrated into the System Program Office (SPO) and contracted to deliver through-life asset management of Products being supported (PBS). The CLCM performs asset, sustainment and engineering functions to optimise availability and Total Cost of Ownership (TCO) and minimise risk through life of the PBS. The CLCM works collaboratively via the SPO with Regional Maintenance Centre's (RMC) to plan maintenance activities and installation of capability upgrades.\n\nThe Opportunity:\nJoin KBR as a Mechanical Engineer and play a key role in supporting the delivery of engineering services across critical ship mechanical and auxiliary systems. Working closely with the Engineering Lead, you will provide trusted technical advice to Commonwealth representatives, stakeholders and fellow CLCM Engineers, helping to ensure safe, effective and sustainable platform outcomes.\n\nAs a recognised SME, you will contribute expert guidance across a broad range of platform systems, including Sea Water, Fresh Water, Oily Waste, Sewage, HVAC, hydraulic and pneumatic systems, as well as mechanical handling and lifting equipment on the PBS.\n\nResponsibilities:\nUnder general supervision provide Mechanical Engineering Subject Matter Expertise, technical guidance, leadership and direction in support of the Engineering activities required of the CLCM.\nDeliver engineering activities to ensure compliance with approved policy, plans and processes. Conduct work to the requirements of the Engineering Management Plan.\nDevelop tasking statements for design tasks to be executed in accordance with the planned schedule.\nWork within a multidisciplinary team to develop design solutions and requirements in the context of Engineering Change Management, Configuration management, Systems Safety and Certification.\nReview engineering design task deliverables and conduct associated technical Design Reviews.\nConduct technical risk assessments within the limits of engineering delegation.\nWork within and to the requirements of Navy Seaworthiness framework and the ACSSPO Authorised Engineering Organisation (AEO).\nManage Request for Variations (RFV) assigned prior to expiry date to Return to Standard (RTS), Make Permanent or cancellation.\n\nEssential:\nBachelor of Engineering, or equivalent, qualification in a recognised Engineering related discipline;\nExperience with Requirements Development, Design Review and Acceptance within a regulated technical framework, example Department of Defence.\nHold, or be eligible for, membership of a recognised professional body and registration as Chartered Engineering;\nA minimum of 10 years related experience.\nMust be eligible for ITAR clearance of relevant ship systems.\nDesirable: Experience in a Department of Defence design delivery. Experience in marine design or maintenance.\nAll candidates will be required to hold and maintain an active Baseline Defence Security Clearance.\n\nWhat we will offer you: Great Place To Work certified culture, flexible working, competitive salary (including annual reviews), paid parental leave, income protection, salary packaging/novated leasing, employee stock purchase plans, career development.",
-   "sum": {
-    "about": "KBR (via Trinzic) needs a Mechanical Engineer to support through-life sustainment of naval ship mechanical and auxiliary systems.",
-    "type": "Full-time",
-    "req": [
-     "Bachelor of Engineering",
-     "10+ years related experience",
-     "Requirements and design review in a regulated framework (e.g. Defence)",
-     "Eligible for Chartered Engineer registration",
-     "Baseline Defence clearance and ITAR eligibility"
-    ],
-    "duties": [
-     "Mechanical SME advice on ship auxiliary systems",
-     "Write design tasking statements",
-     "Run technical design reviews",
-     "Technical risk assessments within delegation",
-     "Manage engineering changes and variations"
-    ],
-    "ben": [
-     "Flexible working",
-     "Paid parental leave and income protection",
-     "Salary packaging and employee share plan"
-    ],
-    "kw": [
-     "mechanical engineer",
-     "asset management",
-     "sustainment",
-     "engineering change",
-     "configuration management",
-     "design review",
-     "seaworthiness",
-     "hydraulic",
-     "pneumatic",
-     "Defence",
-     "CPEng"
-    ],
-    "note": "Requires an active Baseline security clearance."
-   }
-  },
-  {
-   "co": "graymont",
-   "cn": "Graymont",
-   "sf": 16,
-   "sw": "Lime manufacturing plant",
-   "t": "Maintenance Planner",
-   "loc": "Attunga NSW",
-   "d": "2026-10-13",
-   "u": "https://to.indeed.com/aaqfm6hkxkts",
-   "lvl": "Mid",
-   "src": "Indeed",
-   "jd": "We are looking for a Maintenance Planner or an experienced maintenance professional who is looking for a career move into maintenance planning. The role is based at our lime processing facility in Attunga NSW.\n\nKey focus areas:\nConduct detailed preventive & corrective maintenance planning for the Attunga plant.\nProviding detailed job plans that ensure safe and efficient execution of maintenance jobs.\nWorking with site maintenance team members to develop new maintenance procedures for standard jobs.\nConduct maintenance scheduling for the Attunga, Charbon and Riverton plants.\nCoordinate with supervisors to understand labour availability, plant availability and priorities.\nDevelop weekly/daily schedules based on negotiated production priorities; ensure appropriate balance of preventative versus corrective work.\nFollow a planning and scheduling process for major shutdowns, including Gantt charts, role definitions, shutdown risk identification and controls.\nTake part in continuous improvement projects to improve maintenance costs per tonne and plant reliability.\n\nAttributes and qualifications:\nMechanical Fitter (or similar) trade qualification\nExperience of 5 years or more in a mechanical trade or planning role\nExperience in CMMS software and Microsoft Suite\nExperience in maintenance planning within operations & understanding of reliability practices\nKnowledge and experience with spare parts management\nExperience coordinating 3rd party contractors and suppliers\n\nGraymont is a global leader in lime and limestone solutions with operations throughout Asia-Pacific and the Americas.",
-   "sum": {
-    "about": "Graymont wants a maintenance planner at its Attunga lime processing plant, also scheduling for its Charbon and Riverton plants.",
-    "req": [
-     "Mechanical trade or similar",
-     "5+ years in trade or planning",
-     "CMMS experience",
-     "Maintenance planning and reliability practices",
-     "Spare parts and contractor coordination"
-    ],
-    "duties": [
-     "Plan preventive and corrective work with job plans",
-     "Write standard maintenance procedures",
-     "Schedule maintenance across three plants",
-     "Plan major shutdowns with Gantt charts and risk controls",
-     "Support reliability and cost improvement projects"
-    ],
-    "kw": [
-     "Maintenance Planner",
-     "CMMS",
-     "preventive maintenance",
-     "job plans",
-     "scheduling",
-     "shutdown planning",
-     "Gantt",
-     "reliability",
-     "spare parts",
-     "lime plant"
-    ]
-   }
-  },
-  {
-   "co": "gfg",
-   "t": "Mechanical Planning Leader",
-   "loc": "Rooty Hill NSW",
-   "d": "2026-10-13",
-   "u": "https://to.indeed.com/aagyf6g9vcc2",
-   "lvl": "Lead",
-   "src": "Indeed",
-   "cn": "GFG Alliance"
   }
  ],
  "news": [
@@ -4091,6 +3984,17 @@
  ],
  "runs": [
   {
+   "at": "2026-11-18T17:20:19+11:00",
+   "added": 7,
+   "seek": 6,
+   "indeed": 1,
+   "removed": 7,
+   "news": 0,
+   "jd": 43,
+   "github": "ok",
+   "note": "Update now: Seek application emails (2 applied roles logged + similar jobs), 5 Indeed searches incl. Geelong, pharma/chemical and Latrobe Valley."
+  },
+  {
    "at": "2026-11-17T23:26:09+11:00",
    "added": 3,
    "seek": 1,
@@ -4298,17 +4202,6 @@
    "jd": 41,
    "github": "ok (saved via Google Sheet; GitHub website copy not updated — no push access)",
    "note": "Indeed connector failed to connect, so 13 web searches were used instead (Ampol, Viva and Cargill ads found were expired or old); Seek emails had no new relevant roles; no new news found."
-  },
-  {
-   "at": "2026-11-05T16:20:51+11:00",
-   "added": 1,
-   "seek": 1,
-   "indeed": 0,
-   "removed": 1,
-   "news": 0,
-   "jd": 41,
-   "github": "ok (saved via Google Sheet; GitHub website copy not updated — no push access)",
-   "note": "Indeed connector failed to connect, so 14 web searches were used instead (priority-employer ads found were filled, expired or undated); 1 new Seek role; no new news found."
   }
  ],
  "sites": [
