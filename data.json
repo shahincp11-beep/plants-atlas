@@ -1,6 +1,27 @@
 {
- "updated": "2026-11-18T17:20:19+11:00",
+ "updated": "2026-11-20T00:04:38+11:00",
  "jobs": [
+  {
+   "co": "viva",
+   "t": "Operations Maintenance Coordinator",
+   "loc": "Corio, Geelong VIC",
+   "d": "2026-11-18",
+   "u": "https://to.indeed.com/aa6qbjylth8b",
+   "lvl": "Mid",
+   "src": "Indeed"
+  },
+  {
+   "co": "minres",
+   "t": "Maintenance Planner",
+   "loc": "Onslow WA",
+   "d": "2026-11-16",
+   "u": "https://to.indeed.com/aafgstg2f6mr",
+   "lvl": "Mid",
+   "src": "Indeed",
+   "cn": "Mineral Resources",
+   "sf": 12,
+   "sw": "Mining and processing"
+  },
   {
    "co": "jadestone",
    "t": "Mechanical Project Engineer",
@@ -3664,60 +3685,6 @@
    "u": "https://to.indeed.com/aacjtg28drbs",
    "lvl": "Senior",
    "src": "Indeed"
-  },
-  {
-   "co": "urbanutilities",
-   "cn": "Urban Utilities",
-   "sf": 12,
-   "sw": "Water/wastewater asset reliability",
-   "t": "Reliability Engineer",
-   "loc": "Fortitude Valley, Brisbane QLD",
-   "d": "2026-10-16",
-   "u": "https://to.indeed.com/aa4nbwl6qwkt",
-   "lvl": "Mid",
-   "src": "Indeed"
-  },
-  {
-   "co": "csl",
-   "t": "C&Q Engineer",
-   "loc": "Broadmeadows VIC",
-   "d": "2026-10-15",
-   "u": "https://to.indeed.com/aazv7qjlw998",
-   "lvl": "Mid",
-   "src": "Indeed",
-   "jd": "Entity: CSL Behring. Location: Broadmeadows, Victoria. Employer Reference: R-293484.\nThe Commissioning & Qualification (C&Q) Engineer is responsible for supporting and executing the commissioning, qualification, and maintenance of manufacturing systems and equipment within a regulated GMP environment. The role ensures that equipment, facilities, and processes are commissioned and qualified in accordance with CSL quality standards, regulatory requirements, and health, safety, and environmental guidelines.\nThe position plays a key role in the preparation, execution, and maintenance of qualification and commissioning activities, while working closely with cross-functional teams including Process Engineering, Project Delivery, Validation, Stability, Quality Control, Value Streams, R&D, and Manufacturing Operations.\nThe Role:\n- Execute commissioning and qualification activities for facilities, equipment, utilities, and systems within a GMP-regulated environment.\n- Prepare, review, and maintain qualification/commissioning protocols, reports, and supporting documentation to ensure regulatory compliance.\n- Manage document control activities, including DMS maintenance and departmental documentation.\n- Maintain qualification and commissioning test equipment.\n- Collaborate with cross-functional teams to ensure efficient project delivery.\n- Ensure all activities are performed in accordance with CSL quality standards, cGMP requirements, regulatory guidelines, and HSE policies.\n- Participate in problem-solving, investigations, and continuous improvement initiatives.\n- Support HS&E risk assessments, maintain training compliance, and provide training and mentoring to new team members.\nThis is a Permanent full-time position.\nTo be successful:\n- Tertiary qualification in Science or Engineering, or equivalent commissioning/qualification experience.\n- Experience within a pharmaceutical manufacturing environment is highly desirable.\n- Sound understanding of cGMP requirements, commissioning and qualification principles, and relevant industry standards and guidelines.\n- Strong written, verbal, presentation, and interpersonal communication skills.\n- Demonstrated problem-solving, negotiation, and customer-focused mindset.\n- Highly organised and adaptable, with the ability to manage multiple priorities within project schedules.\nApplication Period: Applications open on 19th October and close on 19th November 2026.",
-   "sum": {
-    "about": "Commissioning and qualification engineer at CSL Behring's Broadmeadows plasma plant. Commissions and qualifies GMP equipment, facilities and utilities.",
-    "type": "Permanent, full-time",
-    "req": [
-     "Science or engineering degree, or equivalent C&Q experience",
-     "Pharmaceutical manufacturing (highly desirable)",
-     "cGMP and C&Q principles",
-     "Strong written and verbal communication",
-     "Organised across multiple priorities"
-    ],
-    "duties": [
-     "Commission and qualify facilities, equipment, utilities and systems",
-     "Write and maintain protocols and reports",
-     "Manage document control (DMS)",
-     "Maintain C&Q test equipment",
-     "Work with process engineering, validation, QC and operations",
-     "Support investigations, HSE risk assessments and training"
-    ],
-    "kw": [
-     "Commissioning",
-     "Qualification",
-     "C&Q",
-     "cGMP",
-     "Validation",
-     "Protocols",
-     "Document control",
-     "Utilities",
-     "Pharmaceutical",
-     "Biotech"
-    ],
-    "note": "Applications close 19 November 2026."
-   }
   }
  ],
  "news": [
@@ -3984,6 +3951,17 @@
  ],
  "runs": [
   {
+   "at": "2026-11-20T00:04:38+11:00",
+   "added": 2,
+   "seek": 0,
+   "indeed": 2,
+   "removed": 2,
+   "news": 0,
+   "jd": 42,
+   "github": "ok",
+   "note": "Update now: Seek email (repeat recommendation only), 5 Indeed searches incl. Geelong."
+  },
+  {
    "at": "2026-11-18T17:20:19+11:00",
    "added": 7,
    "seek": 6,
@@ -4191,17 +4169,6 @@
    "jd": 51,
    "github": "ok (saved via Google Sheet; GitHub website copy not updated — no push access)",
    "note": "Manual 'update now' run: Indeed back online (24 searches); 11 job descriptions and 11 summaries added; no new Seek emails or news."
-  },
-  {
-   "at": "2026-11-05T20:23:07+11:00",
-   "added": 0,
-   "seek": 0,
-   "indeed": 0,
-   "removed": 0,
-   "news": 0,
-   "jd": 41,
-   "github": "ok (saved via Google Sheet; GitHub website copy not updated — no push access)",
-   "note": "Indeed connector failed to connect, so 13 web searches were used instead (Ampol, Viva and Cargill ads found were expired or old); Seek emails had no new relevant roles; no new news found."
   }
  ],
  "sites": [
