@@ -1,6 +1,39 @@
 {
- "updated": "2026-11-20T00:04:38+11:00",
+ "updated": "2026-11-21T02:09:28+11:00",
  "jobs": [
+  {
+   "co": "cargill",
+   "t": "Plant Engineer",
+   "loc": "Newcastle NSW",
+   "d": "2026-11-18",
+   "u": "https://to.indeed.com/aavq6b6k4psj",
+   "lvl": "Mid",
+   "src": "Indeed"
+  },
+  {
+   "co": "bega",
+   "t": "Reliability Engineer",
+   "loc": "Port Melbourne VIC",
+   "d": "2026-11-19",
+   "u": "https://to.indeed.com/aanz6yqlgblf",
+   "lvl": "Mid",
+   "src": "Indeed",
+   "cn": "Bega Cheese",
+   "sf": null,
+   "sw": null
+  },
+  {
+   "co": "atwell",
+   "t": "Mechanical Engineer - Pipelines and Facilities",
+   "loc": "Perth WA",
+   "d": "2026-11-12",
+   "u": "https://to.indeed.com/aawlr4rxqlhz",
+   "lvl": "Mid",
+   "src": "Indeed",
+   "cn": "Atwell",
+   "sf": 14,
+   "sw": "Pipelines & facilities engineering"
+  },
   {
    "co": "viva",
    "t": "Operations Maintenance Coordinator",
@@ -3619,72 +3652,6 @@
    "u": "https://to.indeed.com/aa8dgbvbg82v",
    "lvl": "Senior",
    "src": "Indeed"
-  },
-  {
-   "co": "hysata",
-   "cn": "Hysata",
-   "sf": 15,
-   "sw": "Electrolyser manufacturing",
-   "t": "Senior Mechanical Engineer - Tooling & Equipment",
-   "loc": "Port Kembla NSW",
-   "d": "2026-10-16",
-   "u": "https://to.indeed.com/aa2ck4nvy4cq",
-   "lvl": "Senior",
-   "src": "Indeed",
-   "jd": "We are seeking a Senior Mechanical Engineer to join our Manufacturing team, with direct responsibility for the design, build and improvement of the tooling, fixtures and equipment that underpin our in-house manufacturing capability. Working closely with our Design, Assembly and Process teams, you will help bridge the gap between lab scale, pilot and high-volume manufacturing.\nRole responsibilities\n- Lead the team responsible for design and implementation of in-house tooling to support our efforts to scale manufacturing;\n- Design, build and continuously improve in-house tooling, fixtures and equipment;\n- Take new tooling and equipment from concept through CAD design, fabrication, build and commissioning on the factory floor;\n- Provide hands-on support to the manufacturing team - troubleshooting, modifying and improving equipment;\n- Collaborate with Design, Assembly and Process teams to implement new cell architectures and manufacturing processes;\n- Meet design requirements through rapid, iterative prototyping;\n- Work with Hysata partners and vendors to define, develop, validate and commission manufacturing tools and equipment;\n- Define and execute validation plans;\n- Develop SOPs and safety protocols for new tools, equipment and processes.\nKey skills\n- Engineering degree in Mechanical, Manufacturing or a similar field;\n- Strong background in mechanical design engineering, with proven hands-on capability to build, modify and commission what you design;\n- Proficiency in computer-aided design (NX preferred);\n- Fabrication experience - hands-on R&D, design, build and test;\n- Contributed to delivering complex projects requiring new tooling, equipment and process development, including equipment specification;\n- Demonstrated experience with DFMA, DFMEA, validation testing, materials selection and process technology selection.\nValued skills\n- 5+ years of experience in a similar tooling, equipment or mechanical design role;\n- Experience introducing and optimising tooling and equipment in a manufacturing scale-up environment;\n- PFMEA, QA/QC, SOP, design and process validation;\n- Experience with electrolysers, battery or energy storage systems a plus.",
-   "sum": {
-    "about": "Senior mechanical engineer at Hysata, a hydrogen electrolyser maker in Port Kembla. Leads design, build and commissioning of manufacturing tooling and equipment for scale-up.",
-    "type": "Permanent, full-time",
-    "req": [
-     "Mechanical or manufacturing engineering degree",
-     "Hands-on mechanical design, build and commissioning",
-     "CAD (NX preferred)",
-     "Fabrication and prototyping",
-     "DFMA, DFMEA, validation testing, materials selection",
-     "Valued: 5+ years in tooling or equipment design; electrolyser or battery experience"
-    ],
-    "duties": [
-     "Lead the tooling and equipment team",
-     "Design and improve tooling, fixtures and equipment",
-     "Take equipment from CAD to fabrication and factory commissioning",
-     "Troubleshoot and modify production equipment",
-     "Write validation plans, SOPs and safety protocols"
-    ],
-    "kw": [
-     "Mechanical design",
-     "Tooling",
-     "Fixtures",
-     "CAD",
-     "NX",
-     "Fabrication",
-     "Commissioning",
-     "DFMA",
-     "DFMEA",
-     "Validation",
-     "SOPs",
-     "Hydrogen",
-     "Electrolysers"
-    ],
-    "note": "Heavy on CAD design and hands-on fabrication, less on process plant."
-   }
-  },
-  {
-   "co": "santos",
-   "t": "Senior Mechanical Engineer",
-   "loc": "Brisbane QLD",
-   "d": "2026-10-16",
-   "u": "https://to.indeed.com/aa9dr96z76v8",
-   "lvl": "Senior",
-   "src": "Indeed"
-  },
-  {
-   "co": "santos",
-   "t": "Senior Rotating Equipment Engineer",
-   "loc": "Brisbane QLD",
-   "d": "2026-10-16",
-   "u": "https://to.indeed.com/aacjtg28drbs",
-   "lvl": "Senior",
-   "src": "Indeed"
   }
  ],
  "news": [
@@ -3951,6 +3918,17 @@
  ],
  "runs": [
   {
+   "at": "2026-11-21T02:09:28+11:00",
+   "added": 3,
+   "seek": 0,
+   "indeed": 3,
+   "removed": 3,
+   "news": 0,
+   "jd": 41,
+   "github": "ok",
+   "note": "Update now: no new Seek emails; 5 Indeed searches incl. Newcastle, Wollongong, piping."
+  },
+  {
    "at": "2026-11-20T00:04:38+11:00",
    "added": 2,
    "seek": 0,
@@ -4158,17 +4136,6 @@
    "jd": 58,
    "github": "ok (synced by Claude)",
    "note": "30 Indeed searches: 3 new roles, 7 job descriptions and 7 summaries added; GrainCorp Numurkah role dropped (electrical/automation); Seek emails and web ads had nothing new; no new news found."
-  },
-  {
-   "at": "2026-11-05T20:50:22+11:00",
-   "added": 4,
-   "seek": 0,
-   "indeed": 4,
-   "removed": 4,
-   "news": 0,
-   "jd": 51,
-   "github": "ok (saved via Google Sheet; GitHub website copy not updated — no push access)",
-   "note": "Manual 'update now' run: Indeed back online (24 searches); 11 job descriptions and 11 summaries added; no new Seek emails or news."
   }
  ],
  "sites": [
