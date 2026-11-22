@@ -1,30 +1,6 @@
 {
- "updated": "2026-11-22T19:16:03+11:00",
+ "updated": "2026-11-22T19:16:15+11:00",
  "jobs": [
-  {
-   "co": "ansto",
-   "t": "System Engineer (Mechanical/Process)",
-   "loc": "Lucas Heights, Sydney NSW",
-   "d": "2026-11-08",
-   "u": "https://to.indeed.com/aa6qxklhcnc7",
-   "lvl": "Mid",
-   "src": "Indeed",
-   "cn": "ANSTO",
-   "sf": null,
-   "sw": null
-  },
-  {
-   "co": "sanitarium",
-   "t": "Senior Maintenance Planner",
-   "loc": "Berkeley Vale, Central Coast NSW",
-   "d": "2026-10-23",
-   "u": "https://to.indeed.com/aapy9272qnjk",
-   "lvl": "Senior",
-   "src": "Indeed",
-   "cn": "Sanitarium Health Food Company",
-   "sf": 15,
-   "sw": "Food manufacturing plant"
-  },
   {
    "co": "sharpcarter",
    "cn": "Sharp & Carter (client undisclosed)",
@@ -3521,6 +3497,103 @@
    "u": "https://to.indeed.com/aavyd8rlp4mz",
    "lvl": "Senior",
    "src": "Indeed"
+  },
+  {
+   "co": "ixom",
+   "t": "Reliability Engineer",
+   "loc": "Hallam VIC",
+   "d": "2026-10-19",
+   "u": "https://to.indeed.com/aapjwhnhy4y4",
+   "lvl": "Mid",
+   "src": "Indeed",
+   "jd": "We're seeking a Reliability Engineer to join our Australian Botanical Products (ABP) business, based at our Hallam manufacturing operation. This role sits at the centre of asset reliability, maintenance strategy and continuous improvement, helping to improve equipment performance, reduce downtime and build a world-class maintenance culture across the site.\nReporting to the Operations Manager, you'll be the technical lead for asset reliability, maintenance strategy and plant performance improvement across the ABP business. The role combines reliability engineering, facilities management, maintenance planning and project work.\nKey Responsibilities\n- Develop and implement reliability, preventative and predictive maintenance strategies.\n- Analyse downtime, failures and equipment performance to identify improvement opportunities.\n- Lead root cause investigations and defect elimination activities.\n- Improve maintenance planning, shutdown scheduling and work execution processes.\n- Manage reliability and maintenance master data within CMMS systems including MEX.\n- Develop long-term asset replacement and reliability roadmaps.\n- Support automation, operational improvement and capital project activities.\n- Management of a small team of 2 to provide coaching and technical leadership.\nWho are we looking for?\n- Degree qualified in Mechanical Engineering or a related discipline.\n- 5+ years' experience in reliability engineering, maintenance or asset management within FMCG, pharmaceutical, food, chemical or other regulated manufacturing environments.\n- Exposure to automated filling, packaging or high-speed production lines.\n- Strong understanding of preventative and predictive maintenance, reliability engineering and asset management principles.\n- Experience with root cause analysis, failure mode analysis and continuous improvement methodologies.\n- Experience using CMMS platforms such as MEX, SAP or similar.\n- Strong stakeholder management skills.\n- Lean Six Sigma Green Belt or Black Belt certification.\nWhy this role stands out: lead reliability improvements across seven production lines, blending operations and site infrastructure.",
+   "sum": {
+    "about": "Reliability engineer for Ixom's Australian Botanical Products plant in Hallam. Technical lead for reliability, maintenance strategy and improvement across seven production lines, with 2 direct reports.",
+    "type": "Permanent, full-time",
+    "req": [
+     "Mechanical engineering degree",
+     "5+ years in reliability, maintenance or asset management (FMCG, pharma, food or chemical)",
+     "Automated filling, packaging or high-speed lines",
+     "Preventive and predictive maintenance",
+     "RCA and FMEA",
+     "CMMS (MEX, SAP)",
+     "Lean Six Sigma Green or Black Belt"
+    ],
+    "duties": [
+     "Set reliability, PM and predictive maintenance strategies",
+     "Analyse downtime and failures",
+     "Lead root cause and defect-elimination work",
+     "Improve planning and shutdown scheduling",
+     "Own CMMS master data (MEX)",
+     "Build asset-replacement roadmaps",
+     "Support capital projects",
+     "Coach a team of 2"
+    ],
+    "kw": [
+     "Reliability engineering",
+     "Predictive maintenance",
+     "RCA",
+     "FMEA",
+     "Defect elimination",
+     "Shutdown scheduling",
+     "MEX",
+     "SAP",
+     "Asset management",
+     "Lean Six Sigma",
+     "Botanical extracts"
+    ]
+   }
+  },
+  {
+   "co": "ixom",
+   "t": "Site Supervisor",
+   "loc": "Port Kembla, Wollongong NSW",
+   "d": "2026-10-19",
+   "u": "https://to.indeed.com/aay84hdfx46b",
+   "lvl": "Lead",
+   "src": "Indeed",
+   "jd": "Port Kembla, NSW, AU, 2505 - Permanent\n\nAbout your role\nReporting to the Regional Manufacturing Lead/Site Manager, you will lead the safe, compliant, and efficient operation of our Port Kembla site. In this hands-on leadership role, you will oversee production activities, maintenance programs, contractor management, and the day-to-day supervision of site personnel, while driving strong SHEQ performance across the facility. As the Process Operators do, you will be required to manufacture products, including the running of plant from using an automated control system and the blending of raw materials to produce final products\n\nKey Responsibilities\nLead and promote a strong safety-first culture across site operations.\nCoordinate daily manufacturing, terminal and dispatch activities.\nSupervise, coach and support Process Operators.\nConduct pre-start meetings, workplace inspections and safety observations.\nCoordinate maintenance works, shutdown activities and contractor management.\nMonitor plant performance and resolve operational issues.\nEnsure compliance with permits, risk assessments and regulatory requirements.\nMaintain operational, production and quality documentation.\nDrive continuous improvement initiatives across the site.\n\nWho are we looking for?\n5+ years' experience in manufacturing, industrial processing or similar operations environments.\nExperience leading or supervising frontline operational teams.\nDemonstrated experience coordinating operational and contractor activities.\nSound understanding of safety, quality and environmental requirements.\nStrong problem-solving and decision-making skills.\nAbility to manage competing priorities in a fast-paced operational environment.\nCurrent Driver's Licence.\nCurrent Forklift Licence.\n\nHighly regarded:\nCertificate III in Process Plant Operations or similar.\nTrade qualification (Mechanical, Electrical, Instrumentation, Boilermaker or related).\nMaritime Security Identification card\n\nBenefits at IXOM\nCompetitive salary aligned to market and experience\nStable, full-time role within a global organisation\nStructured onboarding and transition support\nClear internal career pathways\nFlexible working arrangements where possible\nHealth, wellbeing and employee assistance programs",
+   "sum": {
+    "about": "Hands-on leader of IXOM's Port Kembla chemical manufacturing and terminal site, covering production, maintenance programs and contractors.",
+    "type": "Permanent, full-time",
+    "req": [
+     "5+ years in manufacturing or industrial processing operations",
+     "Experience supervising frontline teams",
+     "Coordinating operations and contractor activities",
+     "Sound safety, quality and environmental knowledge",
+     "Driver's and forklift licences",
+     "Process plant cert or trade qualification highly regarded"
+    ],
+    "duties": [
+     "Coordinate daily manufacturing, terminal and dispatch work",
+     "Supervise and coach process operators",
+     "Coordinate maintenance, shutdowns and contractors",
+     "Run pre-starts, inspections and safety observations",
+     "Ensure permits, risk assessments and compliance",
+     "Monitor plant performance and drive improvements"
+    ],
+    "ben": [
+     "Competitive salary",
+     "Structured onboarding",
+     "Internal career pathways",
+     "Wellbeing and EAP programs"
+    ],
+    "kw": [
+     "site supervisor",
+     "chemical manufacturing",
+     "process operators",
+     "maintenance coordination",
+     "shutdown",
+     "contractor management",
+     "SHEQ",
+     "permit to work",
+     "risk assessment",
+     "continuous improvement",
+     "terminal operations",
+     "MSIC"
+    ],
+    "note": "Mostly an operations supervisor role; trade or process-operator background is preferred."
+   }
   }
  ],
  "news": [
@@ -3787,15 +3860,15 @@
  ],
  "runs": [
   {
-   "at": "2026-11-22T19:16:03+11:00",
-   "added": 2,
+   "at": "2026-11-22T19:16:15+11:00",
+   "added": 0,
    "seek": 0,
-   "indeed": 2,
-   "removed": 2,
+   "indeed": 0,
+   "removed": 0,
    "news": 0,
-   "jd": 37,
+   "jd": 39,
    "github": "ok",
-   "note": "Update now: Gmail scan (no new application emails), 4 Indeed searches, 1 LinkedIn search (only listing pages)."
+   "note": "Update now: Gmail scan (no new application emails), 4 Indeed searches (only jobs already listed), 1 LinkedIn search (listing pages only)."
   },
   {
    "at": "2026-11-22T17:54:05+11:00",
