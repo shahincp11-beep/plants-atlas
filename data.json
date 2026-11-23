@@ -1,6 +1,54 @@
 {
- "updated": "2026-11-23T16:35:19+11:00",
+ "updated": "2026-11-24T06:51:27+11:00",
  "jobs": [
+  {
+   "co": "gm3",
+   "cn": "GM³",
+   "sf": 12,
+   "sw": "Mine gas abatement projects",
+   "t": "Project Engineer - VAM Project",
+   "loc": "Wollongong, Illawarra NSW",
+   "d": "2026-11-23",
+   "u": "https://www.seek.com.au/job/95908310",
+   "lvl": "Mid",
+   "src": "Seek",
+   "cat": "mine",
+   "sum": {
+    "kw": [
+     "contractor management",
+     "site delivery",
+     "construction",
+     "commissioning",
+     "demonstration project"
+    ]
+   }
+  },
+  {
+   "co": "ppg",
+   "cn": "PPG",
+   "sf": 17,
+   "sw": "Coatings & chemical plant",
+   "t": "Maintenance Planner",
+   "loc": "Clayton, Melbourne VIC",
+   "d": "2026-11-23",
+   "u": "https://to.indeed.com/aayxy6b7wndc",
+   "lvl": "Mid",
+   "src": "Indeed",
+   "cat": "chem"
+  },
+  {
+   "co": "sundrive",
+   "cn": "SunDrive",
+   "sf": 15,
+   "sw": "Solar cell manufacturing",
+   "t": "Senior Manufacturing Engineer - Process, Quality & Systems",
+   "loc": "Kurnell, Sydney NSW",
+   "d": "2026-11-23",
+   "u": "https://to.indeed.com/aaky8g26ck7k",
+   "lvl": "Senior",
+   "src": "Indeed",
+   "cat": "mfg"
+  },
   {
    "co": "arnotts",
    "cn": "The Arnott's Group",
@@ -3152,53 +3200,6 @@
    "src": "Seek"
   },
   {
-   "co": "ugl",
-   "t": "Mechanical Planner",
-   "loc": "Brisbane QLD",
-   "d": "2026-10-21",
-   "u": "https://to.indeed.com/aaghbcyknnnh",
-   "lvl": "Mid",
-   "src": "Indeed",
-   "jd": "Plan and deliver critical shutdown activities across major industrial sites\n\nWhy this role\nJoin a high-performing shutdown and maintenance team supporting critical process plant operations.\nTake ownership of planning activities that directly impact plant reliability, safety, and operational performance.\nDevelop your expertise across shutdown planning, CMMS systems, cost control, contractor coordination, procurement, and maintenance execution.\n\nAbout the role\nWe are seeking an experienced Mechanical Planner to support ongoing shutdown and maintenance activities across multiple sites. Based in Brisbane, this role will involve site visits as required and is responsible for developing detailed maintenance plans, coordinating resources, managing work packs, and ensuring shutdown activities are delivered safely, efficiently, and in line with operational requirements.\nLocation: Brisbane, QLD (site visits as required). Start Date: ASAP. Duration: Ongoing. Hours: Monday to Friday, 8 hours per day.\n\nWhat we offer\nOngoing role with long-term project opportunities\nIndividual Development Plan\nComplimentary salary continuance insurance\nDiscounted Medibank health insurance\nWellness Program with AIA Vitality\n16 weeks paid primary parental leave\n\nKey Responsibilities\nDevelop detailed shutdown and maintenance work packs including labour estimates, materials, tooling, scaffolding, cleaning and access requirements.\nCoordinate maintenance planning activities, ensuring work orders, schedules and scopes are accurately prepared to support safe execution.\nManage procurement activities including material reservations, purchase requisitions and contractor engagement to ensure timely delivery of services and parts.\nMonitor shutdown costs, provide progress reporting, and support the management of budget performance through effective planning and change control.\nCollaborate with operations, maintenance and contractor teams to optimise shutdown execution, improve reliability outcomes and capture lessons learned for future improvements.\n\nAbout You\nExperience in Mechanical Planning, Shutdown Planning or Maintenance Planning within industrial, oil & gas, resources, petrochemical, energy or heavy industry environments.\nDemonstrated experience developing work packs, maintenance scopes and shutdown schedules.\nStrong knowledge of CMMS systems and work order management processes.\nAbility to coordinate multiple stakeholders, contractors and suppliers while maintaining high levels of safety and quality.\nStrong communication, organisational and problem-solving skills with a collaborative approach to planning activities.\n\nDiscipline: Engineer - Mechanical. Primary Location: Australia-QLD-Brisbane CBD & Inner Suburbs. Work Type: Full-time",
-   "sum": {
-    "about": "Brisbane-based planner for UGL's shutdown and maintenance team serving process plants across several sites.",
-    "type": "Ongoing, full-time",
-    "req": [
-     "Mechanical, shutdown or maintenance planning in heavy industry",
-     "Experience writing work packs, scopes and shutdown schedules",
-     "Strong CMMS and work order knowledge",
-     "Coordinating contractors and suppliers safely",
-     "Good communication and organisation"
-    ],
-    "duties": [
-     "Prepare shutdown work packs with labour, materials and access",
-     "Prepare work orders, schedules and scopes",
-     "Raise reservations and purchase requisitions",
-     "Track shutdown costs and report progress",
-     "Capture lessons learned after shutdowns"
-    ],
-    "ben": [
-     "Salary continuance insurance",
-     "Discounted Medibank cover",
-     "16 weeks paid parental leave"
-    ],
-    "kw": [
-     "mechanical planner",
-     "shutdown planning",
-     "maintenance planning",
-     "work packs",
-     "CMMS",
-     "work orders",
-     "cost control",
-     "procurement",
-     "scaffolding",
-     "contractor coordination",
-     "process plant",
-     "petrochemical"
-    ]
-   }
-  },
-  {
    "co": "psc",
    "cn": "PSC Biotech",
    "t": "Commissioning and Qualification (C&Q) Engineer",
@@ -3401,53 +3402,6 @@
    "sw": "SMP construction and shutdowns"
   },
   {
-   "co": "monadelphous",
-   "t": "Project Engineer",
-   "loc": "Karratha WA",
-   "d": "2026-10-20",
-   "u": "https://to.indeed.com/aabvbn2z6gfb",
-   "lvl": "Mid",
-   "src": "Indeed",
-   "sum": {
-    "about": "Monadelphous' Karratha projects team is looking for SMP project engineers to support a pipeline of brownfield and sustaining capital work.",
-    "type": "Permanent, FIFO from Perth",
-    "req": [
-     "3 years in a similar role",
-     "Brownfields, mining construction or RTIO sustaining capital site experience",
-     "Engineering degree or trade background",
-     "Attention to detail and problem solving",
-     "Australian work rights"
-    ],
-    "duties": [
-     "Prepare RFQs, review quotes and handle technical queries",
-     "Check internal and subcontractor quality documents",
-     "Write daily, weekly and monthly reports",
-     "Scope, estimate, deliver and close out work packages",
-     "Engage and manage subcontractors"
-    ],
-    "ben": [
-     "FIFO 5:2/4:3 or 8:6 rosters",
-     "Yearly salary reviews",
-     "Discounted health insurance and gym"
-    ],
-    "kw": [
-     "SMP Project Engineer",
-     "brownfields",
-     "sustaining capital",
-     "RFQ",
-     "estimating",
-     "scope of work",
-     "QA/QC",
-     "subcontractor management",
-     "reporting",
-     "close out",
-     "FIFO",
-     "Karratha"
-    ]
-   },
-   "jd": "Ref # 300060872. Region: Karratha, WA. Date Posted: 20-Oct-2026.\n\nMonadelphous is seeking interest from SMP Project Engineers and Project Coordinators to join our Karratha Projects team, supporting a strong pipeline of current and upcoming works. The role is responsible for providing comprehensive engineering support the projects, including tasks such as leading the team, building client relationships, preparing high quality reporting and defining scope of work.\n\nWorking with Monadelphous offers many benefits, some of which include:\nFIFO 5:2 4:3 and 8:6 rosters from Perth, WA\nOn the job mentoring and coaching\nPermanent long-term opportunity offering yearly salary reviews\nAccess to discounted health insurance, gym memberships, hotels, car hire and Microsoft 365 for your home\n\nKey Responsibilities:\nDevelopment of RFQ's, review of quotations, manage technical queries\nReview of internal and subcontractor quality documentation\nCollation of daily, weekly and monthly reports\nScoping, estimating, delivery and close out of services including some QA/QC and commercial requirements\nBuild and foster positive relationships with key stakeholders\nEngage and manage sub-contractors\n\nWhat you'll bring:\n3 years' experience in a similar role\nPrevious on-site experience in brownfields, mining construction or RTIO Sustaining Capital\nStrong technical knowledge with an ability to influence scope development and adapt to changing conditions\nDemonstrated problem solving ability and high attention to detail\nExcellent written and verbal communication skills paired with strong interpersonal skills\nEither a relevant trade background or tertiary qualification in engineering (preferred)\nProof of right to work in Australia\n\nOur Maintenance and Industrial Services division specialises in providing comprehensive, multidisciplinary maintenance and improvement solutions for customers across Australia and internationally, through a network of supporting workshops and operations in key regional areas, within the resources, energy and industrial sectors."
-  },
-  {
    "co": "mcmahon",
    "cn": "McMahon Services",
    "sf": 17,
@@ -3500,15 +3454,6 @@
     ],
     "note": "Pitched at 2–5 years' experience, so it may be junior for you."
    }
-  },
-  {
-   "co": "santos",
-   "t": "Senior Staff Process Engineer",
-   "loc": "Brisbane QLD",
-   "d": "2026-10-20",
-   "u": "https://to.indeed.com/aavyd8rlp4mz",
-   "lvl": "Senior",
-   "src": "Indeed"
   },
   {
    "co": "ixom",
@@ -3821,6 +3766,17 @@
  ],
  "runs": [
   {
+   "at": "2026-11-24T06:51:27+11:00",
+   "added": 3,
+   "seek": 1,
+   "indeed": 2,
+   "removed": 3,
+   "news": 0,
+   "jd": 36,
+   "github": "ok",
+   "note": "Gmail tracking, 6 Indeed searches"
+  },
+  {
    "at": "2026-11-23T16:35:19+11:00",
    "added": 1,
    "seek": 0,
@@ -4028,17 +3984,6 @@
    "jd": 59,
    "github": "ok (synced by Claude)",
    "note": "Indeed connector failed to connect, so 12 web searches were used; priority-employer ads found (GrainCorp Numurkah/West Footscray, Viva asset engineer, Cargill Newcastle) were filled or expired; Seek emails had nothing new relevant; no new news."
-  },
-  {
-   "at": "2026-11-06T16:20:24+11:00",
-   "added": 0,
-   "seek": 0,
-   "indeed": 0,
-   "removed": 0,
-   "news": 0,
-   "jd": 59,
-   "github": "ok (synced by Claude)",
-   "note": "Indeed connector failed to connect, so 14 web searches were used; priority-employer ads found (GrainCorp planner, Ixom, Viva, Ampol) were filled or expired; Seek emails had nothing new relevant; no new news."
   }
  ],
  "sites": [
