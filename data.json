@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-27T15:15:12+11:00",
+ "updated": "2026-11-27T15:49:50+11:00",
  "jobs": [
   {
    "co": "chobani",
@@ -3706,6 +3706,17 @@
  ],
  "runs": [
   {
+   "at": "2026-11-27T15:49:50+11:00",
+   "added": 0,
+   "seek": 0,
+   "indeed": 0,
+   "removed": 0,
+   "news": 0,
+   "jd": 33,
+   "github": "ok",
+   "note": "No new Seek alerts or Gmail activity since last run; 6 Indeed searches (no ads posted after last run); LinkedIn web search found no usable links"
+  },
+  {
    "at": "2026-11-27T15:15:12+11:00",
    "added": 5,
    "seek": 5,
@@ -3913,17 +3924,6 @@
    "jd": 54,
    "github": "ok",
    "note": "Update now: Seek activity email + 5 Indeed searches."
-  },
-  {
-   "at": "2026-11-10T05:37:51+11:00",
-   "added": 5,
-   "seek": 0,
-   "indeed": 5,
-   "removed": 0,
-   "news": 0,
-   "jd": 56,
-   "github": "ok",
-   "note": "Update now: no new Seek alert emails; 6 Indeed searches."
   }
  ],
  "sites": [
