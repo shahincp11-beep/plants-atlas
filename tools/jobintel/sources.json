@@ -1,0 +1,30 @@
+{
+  "_note": "Collection permissions per source. 'allowed' methods may be ingested; 'blocked' are quarantined. Zero-cost, no scraping.",
+  "seek": {
+    "display": "Seek",
+    "hosts": ["seek.com.au", "www.seek.com.au"],
+    "id_pattern": "^\\d{7,10}$",
+    "allowed": {"alert_email": "high", "user_supplied": "medium", "manual_entry": "medium", "saved_export": "medium"},
+    "blocked": ["scrape", "third_party_scrape", "bulk_crawl"],
+    "verify_via": ["alert_email", "user_check"],
+    "terms": "SEEK terms prohibit automated scraping; use job-alert emails or listings Shahin opens/pastes himself."
+  },
+  "jobposting": {
+    "display": "Careers page",
+    "hosts": [],
+    "id_pattern": ".+",
+    "allowed": {"careers_page_jsonld": "high", "user_supplied": "medium", "alert_email": "high"},
+    "blocked": ["bulk_crawl"],
+    "verify_via": ["careers_page_jsonld", "user_check"],
+    "terms": "Employer's own published JSON-LD; read one page at a time, respect robots.txt."
+  },
+  "jora": {
+    "display": "Jora",
+    "hosts": ["au.jora.com", "jora.com"],
+    "id_pattern": ".+",
+    "allowed": {"alert_email": "high", "user_supplied": "medium"},
+    "blocked": ["scrape", "third_party_scrape", "bulk_crawl"],
+    "verify_via": ["alert_email", "user_check"],
+    "terms": "Adapter not built yet; alert emails only."
+  }
+}

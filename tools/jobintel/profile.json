@@ -1,0 +1,56 @@
+{
+  "_note": "Matching profile (no personal identifiers). Mirrors file 03. Location order and $140k target are PROPOSED, pending approval.",
+  "years": 10,
+  "weights": {"tech": 0.25, "exp": 0.15, "ind": 0.15, "loc": 0.20, "sal": 0.10, "emp": 0.15},
+  "bands": {"high": 75, "good": 60, "fair": 45},
+  "roles": {
+    "core": ["mechanical engineer", "mechanical project engineer", "project engineer", "capital projects engineer",
+             "plant engineer", "maintenance engineer", "reliability engineer", "asset engineer", "integrity engineer",
+             "piping engineer", "installation engineer", "commissioning engineer", "package engineer"],
+    "secondary": ["maintenance planner", "shutdown planner", "maintenance coordinator", "engineering coordinator",
+                  "cmms", "asset management", "engineering supervisor", "maintenance supervisor", "process engineer"]
+  },
+  "skills": {
+    "strong": ["pumps", "gearbox", "compressor", "conveyor", "heat exchanger", "vacuum", "piping", "as 4041", "asme b31.3",
+               "commissioning", "installation", "shutdown", "turnaround", "brownfield", "capital project", "mechanical design",
+               "rotating equipment", "static equipment", "pressure vessel", "maintenance", "reliability", "cmms", "maintainx",
+               "root cause", "rca", "preventive maintenance", "condition monitoring", "fmea", "haccp", "iso 9001", "gmp",
+               "process plant", "refinery", "solvent extraction", "oilseed", "edible oil", "boiler", "steam", "utilities",
+               "p&id", "feed", "epcm", "scope of work", "vendor", "contractor management", "handover", "autocad", "budget"],
+    "nice": ["sap", "pm module", "lean", "six sigma", "permit to work", "risk assessment", "hazop", "mechanical integrity",
+             "spare parts", "cost estimate", "schedule", "ms project", "primavera", "inventor", "solidworks"]
+  },
+  "sectors": [
+    [100, ["oilseed", "edible oil", "canola", "biodiesel", "ethanol", "oleochemical", "crushing"]],
+    [88, ["refinery", "refining", "renewable fuel", "renewable diesel", "saf", "biofuel", "epcm", "pump", "valve"]],
+    [68, ["chemical", "food", "beverage", "dairy", "brewery", "mineral", "processing plant", "shutdown", "manufacturing", "flour", "milling", "sugar"]],
+    [48, ["water", "wastewater", "oil and gas", "pharma", "power", "energy", "mining"]],
+    [28, ["building services", "infrastructure", "construction"]]
+  ],
+  "locations": [
+    [100, ["sydney", "parramatta", "western sydney", "blacktown", "penrith", "liverpool", "campbelltown", "botany", "smithfield", "wetherill park", "ingleburn"]],
+    [92, ["wollongong", "illawarra", "port kembla"]],
+    [86, ["nowra", "bomaderry", "shoalhaven"]],
+    [82, ["newcastle", "hunter", "maitland", "kurri"]],
+    [80, ["melbourne", "laverton", "altona", "dandenong", "geelong"]],
+    [70, ["brisbane", "gold coast", "ipswich", "toowoomba", "sunshine coast", "seq"]],
+    [55, ["griffith", "riverina", "wagga"]],
+    [45, ["perth", "kwinana", "henderson"]]
+  ],
+  "salary": {"floor": 120000, "target": 140000, "ceiling": 150000},
+  "priority_employers": ["manildra", "graincorp", "cargill", "wilmar", "cq oilseeds", "riverina oils", "peerless",
+    "just biodiesel", "southern oil", "viva energy", "ampol", "bp", "jet zero", "hamr", "licella", "perdaman", "nufarm",
+    "ixom", "orica", "coogee", "csbp", "cleanaway", "worley", "lycopodium", "monadelphous", "clough", "wood", "ugl", "civmec", "bunge", "viterra"],
+  "exclude": {
+    "title": ["graduate", "intern", "internship", "apprentice", "technician", "fitter", "tradesperson", "boilermaker",
+              "sales", "business development", "account manager", "service engineer", "field service",
+              "hvac design", "building services", "software", "developer", "forward deployed", "data engineer",
+              "electrical", "instrumentation", "e&i", "controls", "automation", "protection", "high voltage", "hv ",
+              "civil", "structural", "general manager", "director", "head of", "chief", "vp "],
+    "anywhere": ["fifo", "dido", "fly in fly out", "drive in drive out", "meat processing", "abattoir", "poultry", "ice cream", "ice-cream"],
+    "classification": ["information & communication technology", "information and communication technology",
+                       "sales", "trades & services", "call centre"],
+    "location": ["remote area", "pilbara", "port hedland", "karratha", "mount isa", "kalgoorlie"],
+    "work_rights": ["australian citizen only", "must be an australian citizen", "nv1", "nv2", "negative vetting"]
+  }
+}
