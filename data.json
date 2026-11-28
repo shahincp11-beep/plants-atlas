@@ -1,6 +1,44 @@
 {
- "updated": "2026-11-27T15:49:50+11:00",
+ "updated": "2026-11-28T13:09:55+11:00",
  "jobs": [
+  {
+   "co": "repurposeit",
+   "cn": "Repurpose It",
+   "sf": 17,
+   "sw": "Recycling and resource recovery plant",
+   "t": "Project Engineer",
+   "loc": "Epping, Melbourne VIC",
+   "d": "2026-11-27",
+   "u": "https://www.seek.com.au/job/96129981",
+   "lvl": "Mid",
+   "src": "Seek",
+   "sum": {
+    "kw": [
+     "capital projects",
+     "circular economy",
+     "recycling"
+    ]
+   }
+  },
+  {
+   "co": "iff",
+   "cn": "International Flavours & Fragrances",
+   "sf": 17,
+   "sw": "Food ingredients manufacturing",
+   "t": "Process Engineer",
+   "loc": "Dandenong South, Melbourne VIC",
+   "d": "2026-11-27",
+   "u": "https://www.seek.com.au/job/96039379",
+   "lvl": "Mid",
+   "src": "Seek",
+   "sum": {
+    "sal": "$85,000 – $105,000 per year",
+    "kw": [
+     "process engineering",
+     "food ingredients"
+    ]
+   }
+  },
   {
    "co": "chobani",
    "cn": "Chobani",
@@ -3026,21 +3064,6 @@
    "src": "Seek"
   },
   {
-   "co": "forefront",
-   "cn": "Forefront Recruitment",
-   "sf": 8,
-   "sw": "Construction project",
-   "t": "Senior Project Engineer",
-   "loc": "Hoppers Crossing, Melbourne VIC",
-   "d": "2026-10-24",
-   "u": "https://www.seek.com.au/job/95406860",
-   "lvl": "Senior",
-   "src": "Seek",
-   "sum": {
-    "sal": "Up to $240k salary package"
-   }
-  },
-  {
    "co": "monadelphous",
    "t": "Offshore Mechanical Coordinator",
    "loc": "Perth WA",
@@ -3378,18 +3401,6 @@
    }
   },
   {
-   "co": "profound",
-   "cn": "PROFOUND (recruiter)",
-   "sf": 8,
-   "sw": "Heavy vehicle manufacturing",
-   "t": "Mechanical Project Engineer",
-   "loc": "Auburn, Melbourne VIC",
-   "d": "2026-10-23",
-   "u": "https://www.seek.com.au/job/95315492",
-   "lvl": "Mid",
-   "src": "Seek"
-  },
-  {
    "co": "cleanaway",
    "t": "Process Engineer",
    "loc": "Kemps Creek NSW",
@@ -3706,6 +3717,17 @@
  ],
  "runs": [
   {
+   "at": "2026-11-28T13:09:55+11:00",
+   "added": 2,
+   "seek": 2,
+   "indeed": 0,
+   "removed": 2,
+   "news": 0,
+   "jd": 33,
+   "github": "ok",
+   "note": "Seek recs email; 6 Indeed searches (no relevant ads posted after last run); no web search needed; Gmail: no new application emails"
+  },
+  {
    "at": "2026-11-27T15:49:50+11:00",
    "added": 0,
    "seek": 0,
@@ -3913,17 +3935,6 @@
    "jd": 53,
    "github": "ok",
    "note": "Update now: no new Seek emails; 5 Indeed searches."
-  },
-  {
-   "at": "2026-11-11T14:47:18+11:00",
-   "added": 4,
-   "seek": 3,
-   "indeed": 1,
-   "removed": 4,
-   "news": 0,
-   "jd": 54,
-   "github": "ok",
-   "note": "Update now: Seek activity email + 5 Indeed searches."
   }
  ],
  "sites": [
